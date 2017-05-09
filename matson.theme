@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @file
+ * Preprocess functions for matson.
+ */
+
+use Drupal\Core\Cache\CacheableMetadata;
+
+/**
+ * Prepares variables for the html.html.twig template.
+ */
+function matson_preprocess_html(&$variables) {
+
+}
+
+/**
+ * Prepares variables for the field.html.twig template.
+ */
+function matson_preprocess_field(&$variables, $hook) {
+
+}
+
+/**
+ * Prepares non node/panel pages to be in a single column.
+ */
+function matson_preprocess_page(&$vars) {
+
+}
+
+/**
+ * Block template suggestions.
+ * @param  array  $suggestions [description]
+ * @param  array  $variables   [description]
+ * @return [type]              [description]
+ */
+// function matson_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+//   $block = $variables['elements'];
+//   $blockType = $block['#configuration']['provider'];
+//   if ($blockType == "block_content") {
+//     $bundle = $block['content']['#block_content']->bundle();
+//     array_splice($suggestions, 2, 0, 'block__' . $bundle);
+//   }
+// }

@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+///
+// Configuration Settings.
+///
+
+// Parent theme config.
+@import "stanford_basic/scss/config/config";
+
+// matson theme config.
+@import
+  'global-settings',
+  'colors';

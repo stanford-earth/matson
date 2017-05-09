@@ -1,0 +1,29 @@
+////
+/// Component — discrete, reusable UI elements.
+///
+/// Components should not be responsible for their positioning or layout within
+/// the site. Never apply widths or heights except to elements that natively have
+/// these properties (e.g. images have these properties, so it's okay to use CSS
+/// to modify their width and height). Within components, separate structural
+/// rules from stylistic rules.
+///
+/// Component Naming Convention
+/// .component-name
+/// .component-name--variant
+/// .component-name__sub-object
+///
+////
+
+// This is my and the parent theme's config.
+@import "config/config";
+
+// Dependencies.
+@import 'decanter/core/utilities/decanter-utilities';
+@import "stanford_basic/scss/config/typography";
+
+// Parent components
+@import "stanford_basic/scss/components/components";
+
+// MY components.
+//@import
+//  "example-component/example";

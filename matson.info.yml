@@ -1,0 +1,33 @@
+name: Matson
+type: theme
+base theme: stanford_basic
+description: 'Matson Theme.'
+package: Core
+version: 8.x-1.0-dev
+core: 8.x
+# Add our library
+libraries:
+  - matson/matson
+# Remove parent stylesheets so that we don't have duplication.
+libraries-override:
+  stanford_basic/basic:
+    css:
+      base:
+        css/base/base.css: false
+      layout:
+        css/layout/layout.css: false
+      component:
+        css/components/components.css: false
+      state:
+        css/states/states.css: false
+      theme:
+        css/theme/theme.css: false
+        css/theme/print.css: false
+regions:
+  header: Header
+  help: Help
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  content: Content
+  footer: Footer

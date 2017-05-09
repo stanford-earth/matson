@@ -1,0 +1,10 @@
+{
+  "name": "stanford-earth/matson",
+  "description": "Stanford Earth Matson Drupal 8 Theme.",
+  "type": "stanford-theme",
+  "homepage": "https://github.com/stanford-earth/matson",
+  "authors": [],
+  "license": "proprietary",
+  "minimum-stability": "dev",
+  "require": {}
+}
