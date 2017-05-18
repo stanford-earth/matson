@@ -1,1 +1,80 @@
 @charset "UTF-8";
+
+body {
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+  @include font-size($base-font-size, $root-font-size);
+
+  // Responsive font sizes:
+  @include grid-media($media-sm-max) {
+    @include font-size(16px, $root-font-size)
+  }
+
+  @include grid-media($media-xl) {
+    @include font-size(19px, $root-font-size)
+  }
+
+  @include grid-media($media-print) {
+    @include font-size(12px, $root-font-size)
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}  
+
+h1, 
+.h1, 
+%h1 {
+  @include font-size(38px)
+  @include grid-media($media-sm) {
+    @include font-size(40px);
+  }
+}
+
+h2, 
+.h2,
+%h2 {
+  @include font-size(28px)
+  @include grid-media($media-sm) {
+    @include font-size(30px);
+  }
+}
+
+h3,
+.h3,
+%h3 {
+  @include font-size(24px)
+  @include grid-media($media-sm) {
+    @include font-size(26px);
+  }
+}
+
+h4, 
+.h4,
+%h4 {
+  @include font-size(16px)
+  @include grid-media($media-sm) {
+    @include font-size(23px);
+  }
+}
+
+h5,
+.h5,
+%h5 {
+  @include font-size(13px)
+  @include grid-media($media-sm) {
+    @include font-size(16px);
+  }
+}
+
+h6,
+.h6,
+%h6 {
+  @include font-size(13px);
+}
