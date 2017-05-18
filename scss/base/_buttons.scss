@@ -1,0 +1,107 @@
+%button__generic {
+  $_spacing: em(26px);
+
+  box-shadow: none;
+  font-family: $base-font-family;
+  padding: em(10px) em($_spacing) em(10px);
+  text-transform: uppercase;
+}
+
+%button__primary {
+  $_spacing: em(26px);
+
+  @extend %button__generic;
+
+  background-color: $primary-color;
+  color: color(reverse-text);
+  font-weight: 600;
+  padding: em(10px) em($_spacing) em(10px);
+
+  @include on-event {
+    background-color: darken($primary-color, 10%);
+    color: color(reverse-text);
+  }
+}
+
+%button__secondary {
+  $_spacing: em(26px);
+
+  @extend %button__generic;
+
+  background-color: color(action);
+  color: color(reverse-text);
+  font-weight: 600;
+  padding: em(10px) em($_spacing) em(10px);
+
+  @include on-event {
+    background-color: darken(color(action), 10%);
+    color: color(reverse-text);
+  }
+}
+
+%button__hollow {
+  $_spacing: em(26px);
+  $_color: $emphasis-color;
+
+  @extend %button__generic;
+
+  background-color: transparent;
+  border: 1px solid $_color;
+  color: $_color;
+  font-weight: 300;
+  padding: em(10px) em($_spacing) em(10px);
+
+  @include on-event {
+    background-color: $_color;
+    color: color(reverse-text);
+  }
+}
+
+%button__large {
+  font-weight: 600;
+  padding: em(22px);
+}
+
+%button__expand {
+  width: 100%;
+  display: block;
+}
+
+/// Apply all button styles.
+.button,
+.button__primary {
+  @extend %button__generic;
+  @extend %button__primary;
+}
+
+.button__primary--expanded {
+  @extend %button__generic;
+  @extend %button__primary;
+  @extend %button__large;
+  @extend %button__expand;
+}
+
+.button,
+.button__secondary {
+  @extend %button__generic;
+  @extend %button__secondary;
+}
+
+.button__secondary--expanded {
+  @extend %button__generic;
+  @extend %button__secondary;
+  @extend %button__large;
+  @extend %button__expand;
+}
+
+.button__hollow {
+  @extend %button__generic;
+  @extend %button__hollow;
+}
+
+.button__hollow--expanded {
+  @extend %button__generic;
+  @extend %button__hollow;
+  @extend %button__large;
+  @extend %button__expand;
+}
