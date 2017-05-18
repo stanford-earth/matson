@@ -1,4 +1,14 @@
 @charset "UTF-8";
 
+/// @type length
+///
+/// @group settings
 $root-font-size: 10px;
 $base-font-size: 13px;
+
+/// @name Bourbon Settings
+///
+/// @group settings
+$bourbon: (
+  "modular-scale-ratio": 1.333,
+);

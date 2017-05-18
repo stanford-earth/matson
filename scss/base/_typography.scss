@@ -7,11 +7,11 @@ body {
 
   // Responsive font sizes:
   @include grid-media($media-sm-max) {
-    @include font-size(16px, $root-font-size)
+    @include font-size(13px, $root-font-size)
   }
 
   @include grid-media($media-xl) {
-    @include font-size(19px, $root-font-size)
+    @include font-size(13px, $root-font-size)
   }
 
   @include grid-media($media-print) {
@@ -58,7 +58,7 @@ h3,
 h4, 
 .h4,
 %h4 {
-  @include font-size(16px)
+  @include font-size(20px)
   @include grid-media($media-sm) {
     @include font-size(23px);
   }
@@ -67,7 +67,7 @@ h4,
 h5,
 .h5,
 %h5 {
-  @include font-size(13px)
+  @include font-size(14px)
   @include grid-media($media-sm) {
     @include font-size(16px);
   }
@@ -77,4 +77,24 @@ h6,
 .h6,
 %h6 {
   @include font-size(13px);
+}
+
+pre {
+  @include font-size(13px);
+  line-height: $base-line-height;
+  margin-bottom: modular-scale(2);
+}
+
+code, kbd, tt, var {
+  @include font-size(13px);
+}
+
+small,
+.small-text {
+  @include font-size(12px);
+}
+
+big,
+.large-text {
+  @include font-size(16px)
 }
