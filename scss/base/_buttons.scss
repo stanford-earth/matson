@@ -8,14 +8,11 @@
 }
 
 %button__primary {
-  $_spacing: em(26px);
-
   @extend %button__generic;
 
   background-color: $primary-color;
   color: color(reverse-text);
   font-weight: 600;
-  padding: em(10px) em($_spacing) em(10px);
 
   @include on-event {
     background-color: darken($primary-color, 10%);
@@ -24,14 +21,11 @@
 }
 
 %button__secondary {
-  $_spacing: em(26px);
-
   @extend %button__generic;
 
   background-color: color(action);
   color: color(reverse-text);
   font-weight: 600;
-  padding: em(10px) em($_spacing) em(10px);
 
   @include on-event {
     background-color: darken(color(action), 10%);
@@ -40,7 +34,6 @@
 }
 
 %button__hollow {
-  $_spacing: em(26px);
   $_color: $emphasis-color;
 
   @extend %button__generic;
@@ -49,7 +42,6 @@
   border: 1px solid $_color;
   color: $_color;
   font-weight: 300;
-  padding: em(10px) em($_spacing) em(10px);
 
   @include on-event {
     background-color: $_color;
