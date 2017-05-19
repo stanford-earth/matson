@@ -20,7 +20,18 @@ $hero-max-width: 1380px;
 }  
 
 .hero-banner {
-  background: color(charcoal);
+  background-color: color(charcoal);
+  background-size: cover;
+  position: relative;
+
+  &.has-tint {
+    &:before {
+      @extend %absolute-fill;
+      content: "";
+      display: block;
+      background-color: rgba(0, 0, 0, 0.35);
+    }
+  }  
 }
 
 .hero-banner__inner {
@@ -36,6 +47,16 @@ $hero-max-width: 1380px;
 
   @include grid-media($media-lg) {
     min-height: 400px;
+  }
+
+  &.is-tall {
+    @include grid-media($media-md) {
+      min-height: 500px;
+    } 
+
+    @include grid-media($media-lg) {
+      min-height: 660px;
+    }
   }
 }
 
@@ -63,6 +84,7 @@ $hero-max-width: 1380px;
   color: color(white);
   letter-spacing: .5px;
   text-align: center;
+  width: 80%;
 
   @include grid-media($media-md) {
     width: 50%;
@@ -72,12 +94,35 @@ $hero-max-width: 1380px;
     width: 25%;
   }
 
+  &.is-right {
+    @include grid-media($media-md) {
+      @include center-transform(y);
+      text-align: right;
+      right: 0;
+      left: auto;
+      margin-left: 0;
+      margin-right: 60px;
+      width: 50%;
+    }
+
+    @include grid-media($media-lg) {
+      margin-right: 100px;
+    }  
+  }
+
   h1 {
     
   }
 
   p {
+    line-height: 2;
+  }
 
+  .cite {
+    @include font-size(10px);
+    padding-top: 2em;
+    margin-bottom: 1em;
+    opacity: 0.8;
   }
 }
 
