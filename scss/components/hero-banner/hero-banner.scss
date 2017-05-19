@@ -9,17 +9,24 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-$border-color: color(white);
+$hero-max-width: 1380px;
+
+%absolute-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}  
 
 .hero-banner {
   background: color(charcoal);
-
 }
 
 .hero-banner__inner {
   @include grid-container;
   position: relative;
-  max-width: 1380px;
+  max-width: $hero-max-width;
   margin: 0 auto;
   min-height: 500px;
 
@@ -33,12 +40,7 @@ $border-color: color(white);
 }
 
 .hero-banner__container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
+  @extend %absolute-fill;
   border: 1px solid color(white);
   margin-top: 90px;
   margin-bottom: 30px;
@@ -50,7 +52,7 @@ $border-color: color(white);
     margin-right: 40px;
   }
 
-  @media only screen and (min-width: 1380px) {
+  @media (min-width: $hero-max-width) {
     margin-left: 0;
     margin-right: 0;
   }
