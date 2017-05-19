@@ -9,7 +9,8 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-$hero-max-width: 1380px;
+$hero-max-width-md: 1380px;
+$hero-max-width-lg: 1500px;
 
 %absolute-fill {
   position: absolute;
@@ -17,7 +18,7 @@ $hero-max-width: 1380px;
   bottom: 0;
   left: 0;
   right: 0;
-}  
+}
 
 .hero-banner {
   background-color: color(charcoal);
@@ -37,9 +38,9 @@ $hero-max-width: 1380px;
 .hero-banner__inner {
   @include grid-container;
   position: relative;
-  max-width: $hero-max-width;
   margin: 0 auto;
   min-height: 500px;
+
 
   @include grid-media($media-md) {
     min-height: 300px;
@@ -48,6 +49,10 @@ $hero-max-width: 1380px;
   @include grid-media($media-lg) {
     min-height: 400px;
   }
+
+  @media (min-width: $hero-max-width-lg) {
+    max-width: $hero-max-width-md;
+  }  
 
   &.is-tall {
     @include grid-media($media-md) {
@@ -73,13 +78,14 @@ $hero-max-width: 1380px;
     margin-right: 40px;
   }
 
-  @media (min-width: $hero-max-width) {
+  @media (min-width: $hero-max-width-lg) {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
 .hero-banner__header {
+  @include fade-type;
   @include center-transform;
   color: color(white);
   letter-spacing: .5px;
@@ -103,15 +109,32 @@ $hero-max-width: 1380px;
       margin-left: 0;
       margin-right: 60px;
       width: 50%;
+
+      h1 {
+        position: relative;
+        padding-right: 40px;
+
+        &:after {
+          background-color: color(white);
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: .5em;
+          height: 2px;
+          width: 30px;
+        }
+      }
     }
 
     @include grid-media($media-lg) {
       margin-right: 100px;
-    }  
+    }
+
+
   }
 
   h1 {
-    
+
   }
 
   p {
