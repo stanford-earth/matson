@@ -1,0 +1,81 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities.scss";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+$border-color: color(white);
+
+.hero-banner {
+  background: color(charcoal);
+
+}
+
+.hero-banner__inner {
+  @include grid-container;
+  position: relative;
+  max-width: 1380px;
+  margin: 0 auto;
+  min-height: 500px;
+
+  @include grid-media($media-md) {
+    min-height: 300px;
+  } 
+
+  @include grid-media($media-lg) {
+    min-height: 400px;
+  }
+}
+
+.hero-banner__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  border: 1px solid color(white);
+  margin-top: 90px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @include grid-media($media-md) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @media only screen and (min-width: 1380px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.hero-banner__header {
+  @include center-transform;
+  color: color(white);
+  letter-spacing: .5px;
+  text-align: center;
+
+  @include grid-media($media-md) {
+    width: 50%;
+  } 
+
+  @include grid-media($media-lg) {
+    width: 25%;
+  }
+
+  h1 {
+    
+  }
+
+  p {
+
+  }
+}
+
