@@ -1,5 +1,7 @@
+//
+// Inline SVG
 // <svg>
-//     <use xlink:href="#i-{{default icon 'info'}}"></use>
+//     <use xlink:href="#i-svg-{{icon}}"></use>
 // </svg>
 
 .i-svg {
@@ -21,6 +23,18 @@
       fill: color(white);
     }
   }
+
+  &.is-mist {
+    use {
+      fill: color(mist);
+    }
+  }
+
+  &.is-fog {
+    use {
+      fill: color(fog);
+    }
+  }
 }
 
 .i-svg--twitter,
@@ -32,7 +46,7 @@
 
 
 .i-svg--search {
-  
+
 }
 
 .i-svg--menu {
@@ -48,8 +62,8 @@
 }
 
 .i-svg--quote {
-  height: em(19px);
-  width: em(29px);
+  height: em(20px);
+  width: em(30px);
 }
 
 .i-svg--plus,
@@ -65,4 +79,10 @@
 .i-svg--arrow-right {
   height: em(25px);
   width: em(25px);
+}
+
+// Image SRC SVG 
+.img-svg {
+  height: em(52px);
+  width: em(52px);
 }
