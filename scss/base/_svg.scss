@@ -9,6 +9,18 @@
   stroke-width: 0;
   height: 1em;
   width: 1em;
+
+  &.is-red {
+    use {
+      fill: color(brand);
+    }
+  }
+
+  &.is-white {
+    use {
+      fill: color(white);
+    }
+  }
 }
 
 .i-svg--twitter,
@@ -53,16 +65,4 @@
 .i-svg--arrow-right {
   height: em(25px);
   width: em(25px);
-
-  &.is-red {
-    use {
-      fill: color(brand);
-    }
-  }
-
-  &.is-white {
-    use {
-      fill: color(white);
-    }
-  }
 }
