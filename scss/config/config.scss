@@ -11,16 +11,3 @@
 @import
   'global-settings',
   'colors';
-
-// Temp utilities to show color palette
-.color-emphasis {
-    color: $emphasis-color;
-}
-
-.color {
-  @each $color-name, $color-value in $palette-matson {
-    &-#{"" + $color-name} {
-      color: $color-value;
-    }
-  }
-}

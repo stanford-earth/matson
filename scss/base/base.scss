@@ -15,8 +15,14 @@
 // matson Theme Config.
 @import 'config/config';
 
-// Stanford Basic Styles
-@import 'stanford_basic/scss/base/base';
+// Decanter config.
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Variable overides.
+@import 'config/typography';
+
+// Decanter base styles.
+@import 'decanter/core/base/decanter-base';
 
 // matson Theme Overides.
 @import
