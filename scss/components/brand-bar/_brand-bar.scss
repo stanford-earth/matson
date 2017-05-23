@@ -19,7 +19,7 @@
     md: ( columns: 12, grid-media: $media-md,          v-space: 10px, max-width: false, grid-collapse: false ),
     xl: ( columns: 12, grid-media: $media-xl,          v-space: 10px, max-width: true,  grid-collapse: false ),
     print: ( columns: 12, grid-media: $media-print,    v-space: 10px, max-width: false, grid-collapse: false ),
-  ) !default;
+  );
 
   @include responsive-container($_brand-container);
   height: 40px;

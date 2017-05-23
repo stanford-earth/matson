@@ -1,0 +1,155 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities.scss";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+#footer__global-footer {
+  $_brand-container: (
+    sm-max: ( columns: 12, grid-media: $media-sm-max,  v-space: 30px, max-width: false, grid-collapse: false ),
+    md: ( columns: 12, grid-media: $media-md,          v-space: 30px, max-width: false, grid-collapse: false ),
+    xl: ( columns: 12, grid-media: $media-xl,          v-space: 30px, max-width: true,  grid-collapse: false ),
+    print: ( columns: 12, grid-media: $media-print,    v-space: 30px, max-width: false, grid-collapse: false ),
+  );
+
+  $brand-grid--small: (
+    columns: 2,
+    gutter: 1%,
+  );
+
+  @include responsive-container($_brand-container);
+  background-color: color(brand);
+  box-shadow: inset 0px 4px 8px -2px rgba(0, 0, 0, .2);
+  color: color(reverse-text);
+  min-height: em(118px);
+  width: 100%;
+
+  a {
+    color: color(reverse-text);
+    opacity: .75;
+
+    @include on-event {
+      opacity: 1;
+    }  
+  }
+
+  #global-footer__brand {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    @include grid-media($media-sm) {
+      @include grid-column(1, $brand-grid--small);
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 2%;
+      margin-top: em(30px);
+    }
+
+    @include grid-media($media-md) {
+      margin-right: em(30px);
+      margin-top: 0;
+      width: em(104px);
+    }
+
+    @include grid-media($media-lg) {
+      margin-right: em(60px);
+    }
+
+    @include grid-media($media-lg) {
+      margin-right: em(90px);
+    }
+  }
+
+  #global-footer__nav {
+    color: color(reverse-text);
+    font-weight: normal;
+    margin: 0;
+
+    @include grid-media($media-sm) {
+      @include grid-column(1, $brand-grid--small);
+    }
+
+    @include grid-media($media-md) {
+      overflow: hidden;
+      padding-top: em(5px);
+      width: em(550px);
+    }
+
+    @include grid-media($media-lg) {
+      width: em(750px);
+    }  
+
+    #nav__global-links,
+    #nav__policy-links {
+      @include font-size(15px);
+      overflow: hidden;
+
+      a {
+        display: block;
+        float: none;
+        text-align: center;
+
+        @include grid-media($media-sm) {
+          margin-right: 1em;
+          text-align: left;
+        }  
+
+        @include grid-media($media-md) {
+          float: left;
+        }
+      }
+    }  
+
+    #nav__global-links {
+      margin-bottom: 0.125em;
+
+      @include grid-media($media-md) {
+        overflow: hidden;
+      }
+    }
+
+    #nav__policy-links {
+      margin-bottom: (25px);
+
+      @include grid-media($media-md) {
+        margin-bottom: 0.275em;
+      }  
+    }
+  }
+
+  #global-footer__info {
+    text-align: center;
+    font-weight: normal;
+
+    @include grid-media($media-md) {
+      float: left;
+      text-align: left;
+      width: em(550px);
+      margin-left: em(135px);
+    }
+
+    @include grid-media($media-lg) {
+      margin-left: em(165px);
+    }
+
+    @include grid-media($media-lg) {
+      margin-left: em(195px);
+    }
+
+    .vcard {
+      @include font-size(13px);
+      font-weight: normal;
+      opacity: .75;
+
+      .adr {
+        margin-left: $small-spacing / 2;
+        margin-right: $small-spacing / 2;
+      }
+    }
+  }
+}
