@@ -1,0 +1,91 @@
+engines:
+  # https://docs.codeclimate.com/docs/eslint
+  # ES Linting requires an .eslintrc file to tweak checks.
+  eslint:
+    enabled: false
+  csslint:
+    enabled: false
+  # We don't lint our coffee. Eew.
+  coffeelint:
+    enabled: false
+  # SCSS Lint requires a .scss-lint.yml file in the repo in order to tweak settings.
+  # Withouth the .scss-lint.yml file it will run with the defaults.
+  # Defaults file: https://github.com/brigade/scss-lint/blob/master/config/default.yml
+  scss-lint:
+    enabled: true
+    checks:
+      IdSelector:
+        enabled: false
+      ColorVariable:
+        enabled: false
+      PropertySortOrder:
+        enabled: false
+      SelectorDepth:
+        enabled: false
+      QualifyingElement:
+        enabled: false
+      VendorPrefix:
+        enabled: false
+      LeadingZero:
+        enabled: false
+      import:
+        enabled: false
+      ColorKeyword:
+        enabled: false
+      SelectorFormat:
+        enabled: false
+      StringQuotes:
+        enabled: false
+      HexNotation:
+        enabled: false
+      Shorthand:
+        enabled: false
+  # https://docs.codeclimate.com/docs/duplication
+  duplication:
+    enabled: true
+    # exclude_paths:
+    #   - examples/
+    config:
+      languages:
+        javascript:
+          mass_threshold: 50
+          # count_threshold: 3
+        php:
+          mass_threshold: 60
+  fixme:
+    enabled: true
+    config:
+      strings:
+      - FIXME
+      - BUG
+      - TODO
+      - todo
+      - dpm
+      - dsm
+ratings:
+  paths:
+  - "**.inc"
+  - "**.module"
+  - "**.profile"
+  - "**.php"
+  - "**.install"
+  - "**.scss"
+  - "**.sass"
+  - "**.js"
+# exclude these files/paths
+exclude_paths:
+- "**.features.**"
+- "**.views_default.inc"
+- "**.field_group.inc"
+- "**.ds.inc"
+- "**.bean.inc"
+- "**.context.inc"
+- "test/**/*"
+- "**/vendor/**/*"
+- "**.min.*"
+- "tests/"
+- "spec/"
+- "**/vendor/"
+- "**.api.php"
+- "*.twig"
+- "node_modules/"
