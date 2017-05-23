@@ -28,6 +28,15 @@ function matson_preprocess_page(&$vars) {
 
 }
 
+/*
+ * Passes custom variables to blocks, eg. the main menu
+ * To print a custom variable (eg. foo) in twig: {{ foo }}
+ */
+function matson_preprocess_block(&$vars) {
+  $vars['foo'] = 'bar';
+  return $vars;
+}
+
 /**
  * Block template suggestions.
  * @param  array  $suggestions [description]
