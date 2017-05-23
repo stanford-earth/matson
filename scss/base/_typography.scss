@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 body {
+  @include font-size($base-font-size, $root-font-size);
   font-family: $base-font-family;
   line-height: $base-line-height;
-  @include font-size($base-font-size, $root-font-size);
 
   // Responsive font sizes:
   @include grid-media($media-sm-max) {
@@ -26,10 +26,10 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-}  
+}
 
-h1, 
-.h1, 
+h1,
+.h1,
 %h1 {
   @include font-size(38px);
   @include grid-media($media-sm) {
@@ -37,7 +37,7 @@ h1,
   }
 }
 
-h2, 
+h2,
 .h2,
 %h2 {
   @include font-size(28px);
@@ -55,7 +55,7 @@ h3,
   }
 }
 
-h4, 
+h4,
 .h4,
 %h4 {
   @include font-size(20px);
@@ -85,7 +85,10 @@ pre {
   margin-bottom: modular-scale(2);
 }
 
-code, kbd, tt, var {
+code, 
+kbd, 
+tt, 
+var {
   @include font-size(13px);
 }
 
