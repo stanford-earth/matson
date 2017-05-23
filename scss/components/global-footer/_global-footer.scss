@@ -50,7 +50,7 @@
     }
 
     @include grid-media($media-md) {
-      margin-right: em(30px);
+      margin-right: em(20px);
       margin-top: 0;
       width: em(104px);
     }
@@ -77,7 +77,7 @@
     @include grid-media($media-md) {
       overflow: hidden;
       padding-top: em(5px);
-      width: em(600px);
+      width: em(560px);
     }
 
     @include grid-media($media-lg) {
@@ -95,13 +95,17 @@
         text-align: center;
 
         @include grid-media($media-sm) {
-          margin-right: 1em;
+          margin-right: .5em;
           text-align: left;
         }  
 
         @include grid-media($media-md) {
           float: left;
         }
+
+        @include grid-media($media-lg) {
+          margin-right: 1em;
+        }  
       }
     }  
 
@@ -114,8 +118,6 @@
     }
 
     #nav__policy-links {
-      margin-bottom: (25px);
-
       @include grid-media($media-md) {
         margin-bottom: 0.275em;
       }  
@@ -123,24 +125,31 @@
   }
 
   #global-footer__info {
-    text-align: center;
     font-weight: normal;
+    overflow: hidden;
+    padding-top: (25px);
+    text-align: center;
+    width: 100%;
 
     @include grid-media($media-md) {
       float: left;
       text-align: left;
-      margin-left: em(135px);
+      margin-left: em(125px);
+      padding-top: 0;
       width: em(685px);
+
+      &.offset-top {
+        margin-top: em(-20px);
+      }
     }
 
     @include grid-media($media-lg) {
       margin-left: em(165px);
-      width: em(800px);
+      width: em(1200px);
     }
 
     @include grid-media($media-xl) {
       margin-left: em(195px);
-      width: em(1200px);
     }
 
     .vcard {
@@ -150,6 +159,14 @@
       .adr {
         margin-left: $small-spacing / 2;
         margin-right: $small-spacing / 2;
+      }
+
+      .copyright-links {
+        display: block;
+
+        @include grid-media($media-md) {
+          display: inline;
+        }
       }
     }
   }
