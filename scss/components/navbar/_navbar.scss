@@ -1,0 +1,51 @@
+$nav-container: (
+  xs: ( columns: 12, grid-media: $media-xs-only,  v-space: 0, max-width: false, grid-collapse: false ),
+  sm: ( columns: 12, grid-media: $media-sm-only,  v-space: 0, max-width: false, grid-collapse: false ),
+  md: ( columns: 12, grid-media: $media-md-only,  v-space: 0, max-width: false, grid-collapse: false ),
+  lg: ( columns: 12, grid-media: $media-lg-only,  v-space: 0, max-width: false, grid-collapse: false ),
+  xl: ( columns: 12, grid-media: $media-xl,       v-space: 0, max-width: true,  grid-collapse: false ),
+  print: ( columns: 12, grid-media: $media-print, v-space: 0, max-width: false, grid-collapse: false ),
+) !default;
+
+$navbar-height: em(65px);
+
+.navbar {
+
+}
+
+.navbar__container {
+  @include responsive-container($nav-container);
+}
+
+.navbar__inner {
+  position: relative;
+}
+
+.navbar__group {
+  float: right;
+  margin-right: em(65px);
+}
+
+.navbar__button {
+  display: none;
+}
+
+.navbar__search {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.search-toggle { 
+  background: transparent;
+  height: em(65px);
+  width: em(65px);
+
+  @include on-event {
+    background: color(fog);
+  }  
+}
+
+.search-toggle__text {
+  @include hide-visually;
+}

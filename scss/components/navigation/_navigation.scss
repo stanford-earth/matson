@@ -1,7 +1,33 @@
 // Navigation styles
 #navigation {
+  margin-bottom: 0;
+
+  .menu {
+    @include clearfix;
+  }
+
   li {
+    display: block;
+    float: left;
+
     list-style-type: none;
     display: inline-block;
+
+    a {
+      display: block;
+      font-size: 12px;
+      letter-spacing: .9px;
+      padding: 2em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    ul {
+      display: none;
+    }
+  }
+
+  li li {
+    display: block;
   }
 }
