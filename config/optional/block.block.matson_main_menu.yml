@@ -20,4 +20,5 @@ settings:
   label_display: '0'
   level: 1
   depth: 1
+  foo: 'bar'
 visibility: {  }
