@@ -42,11 +42,9 @@
     margin-bottom: 2rem;
 
     @include grid-media($media-sm) {
-      @include grid-column(1, $brand-grid--small);
-      margin-bottom: 0;
-      margin-left: 0;
-      margin-right: 2%;
-      margin-top: em(30px);
+      float: left;
+      width: 49%;
+      margin: em(30px) 2% 0 0;
     }
 
     @include grid-media($media-md) {
@@ -70,7 +68,8 @@
     margin: 0;
 
     @include grid-media($media-sm) {
-      @include grid-column(1, $brand-grid--small);
+      float: left;
+      width: 49%;
       margin-left: 0;
     }
 
