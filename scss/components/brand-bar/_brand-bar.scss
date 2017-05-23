@@ -29,12 +29,16 @@
   position: relative;
 
   a {
-    display: inline-block;
-    width: 123px;
+    color: color(reverse-text);
 
-    @include grid-media($media-sm) {
-      width: 153px;
-    }
+    &:first-child {
+      display: inline-block;
+      width: 123px;
+
+      @include grid-media($media-sm) {
+        width: 153px;
+      }
+    }  
   }
 }
 
@@ -42,4 +46,10 @@
 .brand-bar {
   @include stanford-brand-bar;
   order: -100;
+}
+
+.brand-bar__login {
+  float: right;
+  font-size: em(12px);
+  font-weight: 600; 
 }
