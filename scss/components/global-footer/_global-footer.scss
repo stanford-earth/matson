@@ -25,16 +25,15 @@
   @include responsive-container($_brand-container);
   background-color: color(brand);
   box-shadow: inset 0px 4px 8px -2px rgba(0, 0, 0, .2);
-  color: color(reverse-text);
+  color: color(light-red);
   min-height: em(118px);
   width: 100%;
 
   a {
-    color: color(reverse-text);
-    opacity: .75;
+    color: color(light-red);
 
     @include on-event {
-      opacity: 1;
+      color: color(white);
     }  
   }
 
@@ -78,12 +77,12 @@
     @include grid-media($media-md) {
       overflow: hidden;
       padding-top: em(5px);
-      width: em(550px);
+      width: em(600px);
     }
 
     @include grid-media($media-lg) {
       width: em(750px);
-    }  
+    }
 
     #nav__global-links,
     #nav__policy-links {
@@ -130,22 +129,23 @@
     @include grid-media($media-md) {
       float: left;
       text-align: left;
-      width: em(550px);
       margin-left: em(135px);
+      width: em(685px);
     }
 
     @include grid-media($media-lg) {
       margin-left: em(165px);
+      width: em(800px);
     }
 
     @include grid-media($media-xl) {
       margin-left: em(195px);
+      width: em(1200px);
     }
 
     .vcard {
       @include font-size(13px);
       font-weight: normal;
-      opacity: .75;
 
       .adr {
         margin-left: $small-spacing / 2;
