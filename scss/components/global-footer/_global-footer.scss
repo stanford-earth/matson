@@ -60,7 +60,7 @@
       margin-right: em(60px);
     }
 
-    @include grid-media($media-lg) {
+    @include grid-media($media-xl) {
       margin-right: em(90px);
     }
   }
@@ -72,6 +72,7 @@
 
     @include grid-media($media-sm) {
       @include grid-column(1, $brand-grid--small);
+      margin-left: 0;
     }
 
     @include grid-media($media-md) {
@@ -137,7 +138,7 @@
       margin-left: em(165px);
     }
 
-    @include grid-media($media-lg) {
+    @include grid-media($media-xl) {
       margin-left: em(195px);
     }
 
