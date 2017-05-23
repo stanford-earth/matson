@@ -38,6 +38,8 @@ engines:
         enabled: false
       HexNotation:
         enabled: false
+      Shorthand:
+        enabled: false
   # https://docs.codeclimate.com/docs/duplication
   duplication:
     enabled: true
