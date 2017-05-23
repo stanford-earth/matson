@@ -30,6 +30,14 @@ engines:
         enabled: false
       import:
         enabled: false
+      ColorKeyword:
+        enabled: false
+      SelectorFormat:
+        enabled: false
+      StringQuotes:
+        enabled: false
+      HexNotation:
+        enabled: false
   # https://docs.codeclimate.com/docs/duplication
   duplication:
     enabled: true
