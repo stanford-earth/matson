@@ -125,7 +125,7 @@
 
 @media only screen and (min-width: 1500px) {
   .block--page-title {
-    padding: 1em calc(50% - (600px - 60px)); }
+    padding: 1em calc(50% - (750px - 60px)); }
     .block--page-title::after {
       clear: both;
       content: "";
