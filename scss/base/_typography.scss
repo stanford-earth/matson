@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 body {
+  @include font-size($base-font-size, $root-font-size);
   font-family: $base-font-family;
   line-height: $base-line-height;
-  @include font-size($base-font-size, $root-font-size);
 
   // Responsive font sizes:
   @include grid-media($media-sm-max) {
@@ -55,19 +55,19 @@ h6 {
   font-weight: normal;
 }
 
-h1, 
-.h1, 
+h1,
+.h1,
 %h1 {
-  @include font-size(38px)
+  @include font-size(38px);
   @include grid-media($media-sm) {
     @include font-size(40px);
   }
 }
 
-h2, 
+h2,
 .h2,
 %h2 {
-  @include font-size(28px)
+  @include font-size(28px);
   @include grid-media($media-sm) {
     @include font-size(30px);
   }
@@ -76,16 +76,16 @@ h2,
 h3,
 .h3,
 %h3 {
-  @include font-size(24px)
+  @include font-size(24px);
   @include grid-media($media-sm) {
     @include font-size(26px);
   }
 }
 
-h4, 
+h4,
 .h4,
 %h4 {
-  @include font-size(20px)
+  @include font-size(20px);
   @include grid-media($media-sm) {
     @include font-size(23px);
   }
@@ -94,7 +94,7 @@ h4,
 h5,
 .h5,
 %h5 {
-  @include font-size(14px)
+  @include font-size(14px);
   @include grid-media($media-sm) {
     @include font-size(16px);
   }
@@ -139,7 +139,10 @@ pre {
   padding: 1.6em;
 }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: $font-family-monospace;
   @include font-size(13px);
 }

@@ -1,0 +1,87 @@
+//
+// Inline SVG
+// <svg>
+//     <use xlink:href="#i-svg-{{icon}}"></use>
+// </svg>
+
+.i-svg {
+  display: inline-block;
+  fill: currentcolor;
+  position: relative;
+  stroke-width: 0;
+  height: 1em;
+  width: 1em;
+
+  &.is-red {
+    use {
+      fill: color(brand);
+    }
+  }
+
+  &.is-white {
+    use {
+      fill: color(white);
+    }
+  }
+
+  &.is-mist {
+    use {
+      fill: color(mist);
+    }
+  }
+
+  &.is-fog {
+    use {
+      fill: color(fog);
+    }
+  }
+}
+
+.i-svg--twitter,
+.i-svg--fb,
+.i-svg--instagram {
+  height: em(18px);
+  width: em(18px);
+}
+//
+// .i-svg--search {
+
+// }
+
+// .i-svg--menu {
+
+// }
+
+// .i-svg--cloud {
+
+// }
+
+// .i-svg--clock {
+
+// }
+
+.i-svg--quote {
+  height: em(20px);
+  width: em(30px);
+}
+
+.i-svg--plus,
+.i-svg--minus {
+  height: em(20px);
+  width: em(20px);
+
+  use {
+    fill: color(brand);
+  }
+}
+
+.i-svg--arrow-right {
+  height: em(25px);
+  width: em(25px);
+}
+
+// Image SRC SVG
+.img-svg {
+  height: em(52px);
+  width: em(52px);
+}
