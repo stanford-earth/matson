@@ -9,16 +9,16 @@
 @import "config/config";
 
 // Decanter config.
-@import "decanter/core/utilities/decanter-utilities.scss";
+@import "decanter/core/utilities/decanter-utilities";
 
 // Separated out as a mixin for easy re-use and possible move to Decanter.
 @mixin stanford-brand-bar {
 
   $_brand-container: (
-    sm-max: ( columns: 12, grid-media: $media-sm-max,  v-space: 12px, max-width: false, grid-collapse: false ),
-    md: ( columns: 12, grid-media: $media-md,          v-space: 10px, max-width: false, grid-collapse: false ),
-    xl: ( columns: 12, grid-media: $media-xl,          v-space: 10px, max-width: true,  grid-collapse: false ),
-    print: ( columns: 12, grid-media: $media-print,    v-space: 10px, max-width: false, grid-collapse: false ),
+    sm-max: (columns: 12, grid-media: $media-sm-max,  v-space: 12px, max-width: false, grid-collapse: false),
+    md: (columns: 12, grid-media: $media-md,          v-space: 10px, max-width: false, grid-collapse: false),
+    xl: (columns: 12, grid-media: $media-xl,          v-space: 10px, max-width: true,  grid-collapse: false),
+    print: (columns: 12, grid-media: $media-print,    v-space: 10px, max-width: false, grid-collapse: false),
   ) !default;
 
   @include responsive-container($_brand-container);
@@ -38,7 +38,7 @@
       @include grid-media($media-sm) {
         width: 153px;
       }
-    }  
+    }
   }
 }
 
@@ -51,5 +51,5 @@
 .brand-bar__login {
   float: right;
   font-size: em(12px);
-  font-weight: 600; 
+  font-weight: 600;
 }

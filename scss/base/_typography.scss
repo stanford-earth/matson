@@ -110,7 +110,10 @@ p {
   margin: 0 0 modular-scale(1);
 }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic;
 }
 
@@ -118,8 +121,8 @@ blockquote, q {
   margin: 0 modular-scale(2);
   quotes: "" "";
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: "";
   }
 }
@@ -129,9 +132,9 @@ address {
 }
 
 pre {
+  @include font-size(13px);
   background: shade(color(border), 10%);
   font-family: $font-family-monospace;
-  @include font-size(13px);
   line-height: $base-line-height;
   margin-bottom: modular-scale(2);
   max-width: 100%;
@@ -143,23 +146,26 @@ code,
 kbd,
 tt,
 var {
-  font-family: $font-family-monospace;
   @include font-size(13px);
+  font-family: $font-family-monospace;
 }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted color(border);
   cursor: help;
 }
 
-mark, ins, del {
+mark,
+ins,
+del {
   padding: 0 .25em .15em
 }
 
 del {
   color: color(text);
   background: color(light-red);
-  dext-decoration: line-through;
+  text-decoration: line-through;
   text-decoration-color: color(light-red);
 }
 
@@ -209,8 +215,9 @@ $su-brand-University: "\1f57e";
 $su-brand-Stanford-University: "\1f57c";
 $su-brand-Stanford: "\1f57d";
 
-[class^="su-brand"], [class*=" su-brand"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
+[class^="su-brand"],
+[class*=" su-brand"] {
+  // use !important to prevent issues with browser extensions that change fonts
   font-family: 'Stanford', $font-family-serif !important;
   font-style: normal;
   font-weight: normal;
@@ -219,7 +226,7 @@ $su-brand-Stanford: "\1f57d";
   line-height: 1;
   transform: translateZ(0); //enables hardware acceleration. Makes performance much smoother on resize.
 
-  /* Enable Ligatures ================ */
+  // Enable Ligatures
   letter-spacing: 0;
   -webkit-font-feature-settings: "liga";
   -moz-font-feature-settings: "liga=1";
@@ -229,7 +236,7 @@ $su-brand-Stanford: "\1f57d";
   -webkit-font-variant-ligatures: discretionary-ligatures;
   font-variant-ligatures: discretionary-ligatures;
 
-  /* Better Font Rendering =========== */
+  // Better Font Rendering
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
