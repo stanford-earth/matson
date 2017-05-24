@@ -78,9 +78,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'images/source/',
+          cwd: 'img/source/',
           src: ['{,*/}*.svg' ],
-          dest: 'images/optimized/'
+          dest: 'img/optimized/'
         }]
       }
     },
@@ -102,7 +102,7 @@ module.exports = function(grunt) {
         ],
         sourceMap: true,
         // This controls the compiled css and can be changed to nested, compact or compressed.
-        outputStyle: 'compressed',
+        outputStyle: 'nested',
         precision: 10
       },
       dist: {

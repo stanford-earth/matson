@@ -1,13 +1,9 @@
 <div class="navbar">
   <div class="navbar__container">
     <div class="navbar__inner">
-      <div class="navbar__search">
-        <button type="button" class="search-toggle" aria-expanded="false" aria-controls="nav-search"><span class="search-toggle__text">search</span>
-        </button>
-      </div>
-
       <button class="navbar__button">
         <span class="search-toggle__text">menu</span>
+        <svg class="i-svg i-svg--menu"><use xlink:href="#i-menu" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
       </button>
 
       <div class="navbar__group">
@@ -15,6 +11,23 @@
           <ul class="basic-main-menu menu">
             <li class="menu-item menu-item--collapsed">
               <a href="" class="is-active">About</a>
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="" target="">About Us</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" target="">Who We Are</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" target="">Departments & Programs</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" target="">Our Community</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" target=""> Contact Us</a>
+                </li>
+              </ul>
             </li>
             <li class="menu-item menu-item--collapsed">
               <a href="" class="is-active">Academics</a>
@@ -27,6 +40,13 @@
             </li>
           </ul>
         </nav> 
+
+        <div class="navbar__search">
+          <button type="button" class="search-toggle" aria-expanded="false" aria-controls="nav-search">
+            <span class="search-toggle__text">search</span>
+            <svg class="i-svg i-svg--search"><use xlink:href="#i-search" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>

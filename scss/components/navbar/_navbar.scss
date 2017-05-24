@@ -10,7 +10,17 @@ $nav-container: (
 $navbar-height: em(65px);
 
 .navbar {
+  background: color(fog);
+  height: $navbar-height;
 
+  &.is-expanded {
+    height: auto;
+    padding-top: $navbar-height;
+
+    @include grid-media($media-md) {
+      padding-top: 0;
+    }
+  }
 }
 
 .navbar__container {
@@ -22,28 +32,81 @@ $navbar-height: em(65px);
 }
 
 .navbar__group {
-  float: right;
-  margin-right: em(65px);
+  display: block;
+  padding-bottom: $navbar-height;
+
+  @include grid-media($media-md) {
+    display: block;
+    float: right;
+    padding-bottom: 0;
+    margin-right: $navbar-height;
+  }
 }
 
 .navbar__button {
-  display: none;
+  position: absolute;
+  background: color(fog);
+  height: $navbar-height;
+  width: $navbar-height;
+  right: 0;
+  top: em(-65px);
+
+  @include on-event {
+    background: color(fog);
+  }
+
+  @include grid-media($media-md) {
+    display: none;
+  }
+
+  .i-svg {
+    height: em(17px);
+    width: em(17px);
+    margin-bottom: -2px;
+
+    use {
+      fill: color(action);
+    }
+  }
 }
 
 .navbar__search {
   position: absolute;
+  bottom: 0;
+  left: 0;
   right: 0;
-  top: 0;
+
+  @include grid-media($media-md) {
+    bottom: auto;
+    left: auto;
+    top: 0;
+  }
 }
 
 .search-toggle { 
   background: transparent;
-  height: em(65px);
-  width: em(65px);
+  height: $navbar-height;
+  line-height: $navbar-height;
+  padding: 0;
+  width: 100%;
 
   @include on-event {
-    background: color(fog);
-  }  
+    background: transparent;
+  }
+
+  @include grid-media($media-md) {
+    width: $navbar-height;
+  }
+
+  .i-svg {
+    height: em(17px);
+    width: em(17px);
+    margin-bottom: -2px;
+
+    use {
+      fill: color(action);
+    }
+  }
 }
 
 .search-toggle__text {
