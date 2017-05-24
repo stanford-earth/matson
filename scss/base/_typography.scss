@@ -117,7 +117,8 @@ i {
   font-style: italic;
 }
 
-blockquote, q {
+blockquote,
+q {
   margin: 0 modular-scale(2);
   quotes: "" "";
 
@@ -159,7 +160,7 @@ acronym {
 mark,
 ins,
 del {
-  padding: 0 .25em .15em
+  padding: 0 .25em .15em;
 }
 
 del {
