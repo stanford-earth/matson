@@ -2,7 +2,7 @@
   <div class="navbar__container">
     <div class="navbar__inner">
       <button class="navbar__button">
-        <span class="search-toggle__text">menu</span>
+        <span class="navbar__text">menu</span>
         <svg class="i-svg i-svg--menu"><use xlink:href="#i-menu" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
       </button>
 
@@ -42,10 +42,10 @@
         </nav> 
 
         <div class="navbar__search">
-          <button type="button" class="search-toggle" aria-expanded="false" aria-controls="nav-search">
-            <span class="search-toggle__text">search</span>
-            <svg class="i-svg i-svg--search"><use xlink:href="#i-search" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
-          </button>
+          <form class="search-toggle">
+            <input type="search" placeholder="Search">
+            <span class="search-toggle__icon"><svg class="i-svg i-svg--search"><use xlink:href="#i-search" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
+          </form>
         </div>
       </div>
     </div>

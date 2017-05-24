@@ -615,7 +615,7 @@
   background: rgba(0, 0, 0, 0.5); }
 
 .navbar {
-  background: #dad7cb;
+  background: rgba(0, 0, 0, 0.5);
   height: 5em; }
   .navbar.is-expanded {
     height: auto;
@@ -687,22 +687,24 @@
 
 .navbar__button {
   position: absolute;
-  background: #dad7cb;
+  background: transparent;
+  padding-left: 0;
+  padding-right: 0;
   height: 5em;
   width: 5em;
   right: 0;
   top: -5em; }
   .navbar__button:hover, .navbar__button:active, .navbar__button:focus {
-    background: #dad7cb; }
+    background: transparent; }
   @media only screen and (min-width: 768px) {
     .navbar__button {
       display: none; } }
   .navbar__button .i-svg {
-    height: 1.3076923077em;
-    width: 1.3076923077em;
+    height: 1.6923076923em;
+    width: 1.6923076923em;
     margin-bottom: -2px; }
     .navbar__button .i-svg use {
-      fill: #017c92; }
+      fill: #fff; }
 
 .navbar__search {
   position: absolute;
@@ -714,35 +716,6 @@
       bottom: auto;
       left: auto;
       top: 0; } }
-
-.search-toggle {
-  background: transparent;
-  height: 5em;
-  line-height: 5em;
-  padding: 0;
-  width: 100%; }
-  .search-toggle:hover, .search-toggle:active, .search-toggle:focus {
-    background: transparent; }
-  @media only screen and (min-width: 768px) {
-    .search-toggle {
-      width: 5em; } }
-  .search-toggle .i-svg {
-    height: 1.3076923077em;
-    width: 1.3076923077em;
-    margin-bottom: -2px; }
-    .search-toggle .i-svg use {
-      fill: #017c92; }
-
-.search-toggle__text {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: circle(1% at 1% 1%);
-  height: 1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px; }
 
 #navigation,
 #block-matson-main-menu {
@@ -795,7 +768,6 @@
           text-align: left; } }
   #navigation ul ul,
   #block-matson-main-menu ul ul {
-    opacity: 0;
     transition: all .5s ease-out;
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -816,9 +788,64 @@
       #block-matson-main-menu ul ul a:active,
       #block-matson-main-menu ul ul a:focus {
         box-shadow: none; }
-  @media only screen and (min-width: 768px) {
-    #navigation ul li:hover > ul,
-    #block-matson-main-menu ul li:hover > ul {
-      opacity: 1; } }
+
+.search-toggle__icon {
+  position: absolute;
+  left: 12px;
+  top: 12px; }
+  .search-toggle__icon .i-svg {
+    height: 1.3076923077em;
+    width: 1.3076923077em;
+    margin-bottom: -2px; }
+    .search-toggle__icon .i-svg use {
+      fill: #fff; }
+
+.search-toggle {
+  position: relative; }
+  .search-toggle input {
+    outline: none;
+    margin: 13px 0; }
+  .search-toggle input[type=search] {
+    background: transparent;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+    box-shadow: none;
+    color: #fff;
+    font-family: inherit;
+    font-size: 100%;
+    padding: 10px 10px 10px 40px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s; }
+    @media only screen and (min-width: 768px) {
+      .search-toggle input[type=search] {
+        background-color: transparent;
+        border: none;
+        width: 0; } }
+  .search-toggle input::-webkit-search-decoration,
+  .search-toggle input::-webkit-search-cancel-button {
+    display: none; }
+  .search-toggle input[type=search]:focus {
+    background-color: #000;
+    border: solid 1px #ccc; }
+    @media only screen and (min-width: 768px) {
+      .search-toggle input[type=search]:focus {
+        border: solid 1px #ccc;
+        width: 240px; } }
+  .search-toggle input:-moz-placeholder {
+    color: #fff; }
+  .search-toggle input::-webkit-input-placeholder {
+    color: #fff; }
+
+.search-toggle__text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: circle(1% at 1% 1%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 /*# sourceMappingURL=components.css.map */
