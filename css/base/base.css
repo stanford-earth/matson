@@ -693,8 +693,6 @@ address {
   margin: 0 0 1.776889em; }
 
 pre {
-  background: #b8b8b8;
-  font-family: "Source Code Pro", "Monaco", "Consolas", "Lucida Console", monospace;
   font-size: 1em;
   background: #b8b8b8;
   font-family: "Source Code Pro", "Monaco", "Consolas", "Lucida Console", monospace;
@@ -737,17 +735,20 @@ mark {
   background: #fafa55;
   text-decoration: none; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #ccc;
   cursor: help; }
 
-mark, ins, del {
+mark,
+ins,
+del {
   padding: 0 .25em .15em; }
 
 del {
   color: #222328;
   background: #e3dfd5;
-  dext-decoration: line-through;
+  text-decoration: line-through;
   text-decoration-color: #e3dfd5; }
 
 ins {

@@ -10,7 +10,6 @@
 @import "utilities/utilities";
 
 #footer__global-footer {
-
   $_brand-container: (
     sm-max: (columns: 12, grid-media: $media-sm-max,  v-space: 30px, max-width: false, grid-collapse: false),
     md: (columns: 12, grid-media: $media-md,          v-space: 30px, max-width: false, grid-collapse: false),
@@ -33,6 +32,10 @@
     }
   }
 
+  .global-footer__inner {
+    position: relative;
+  }
+  
   #global-footer__brand {
     text-align: center;
     margin-bottom: 2rem;
@@ -44,17 +47,17 @@
     }
 
     @include grid-media($media-md) {
-      margin-right: em(20px);
+      position: absolute;
       margin-top: 0;
       width: em(104px);
     }
 
     @include grid-media($media-lg) {
-      margin-right: em(60px);
+
     }
 
     @include grid-media($media-xl) {
-      margin-right: em(90px);
+
     }
   }
 
@@ -66,18 +69,11 @@
     @include grid-media($media-sm) {
       float: left;
       width: 49%;
-      margin-left: 25%;
     }
 
     @include grid-media($media-md) {
-      overflow: hidden;
+      width: 100%;
       padding-top: em(5px);
-      width: em(560px);
-      margin-left: 25%;
-    }
-
-    @include grid-media($media-lg) {
-      width: em(750px);
     }
 
     #nav__global-links,
@@ -130,22 +126,7 @@
     @include grid-media($media-md) {
       float: left;
       text-align: left;
-      margin-left: em(125px);
       padding-top: 0;
-      width: em(685px);
-
-      &.offset-top {
-        margin-top: em(-20px);
-      }
-    }
-
-    @include grid-media($media-lg) {
-      margin-left: em(165px);
-      width: em(1200px);
-    }
-
-    @include grid-media($media-xl) {
-      margin-left: em(195px);
     }
 
     .vcard {
@@ -165,5 +146,61 @@
         }
       }
     }
+  }
+
+  #global-footer__nav,
+  #global-footer__info {
+    @include grid-media($media-md) {
+      margin-left: em(125px);
+    }
+
+    @include grid-media($media-lg) {
+      margin-left: em(165px);
+    }
+
+    @include grid-media($media-xl) {
+      margin-left: em(195px);
+    }
+  }
+}
+
+//
+// Sticky footer
+//
+$global-footer-base-height: 320px;
+$global-footer-sm-height: 228px;
+$global-footer-md-height: 118px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  min-height: auto;
+  margin: 0 0 $global-footer-base-height; /* bottom = footer height */
+
+  @include grid-media($media-sm) {
+    margin-bottom: $global-footer-sm-height;
+  }
+
+  @include grid-media($media-md) {
+    margin-bottom: $global-footer-md-height;
+  }
+}
+
+#footer__global-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: $global-footer-base-height;
+  width: 100%;
+
+  @include grid-media($media-sm) {
+    height: $global-footer-sm-height;
+  }
+
+  @include grid-media($media-md) {
+    height: $global-footer-md-height;
   }
 }

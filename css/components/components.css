@@ -855,7 +855,7 @@
 
 #footer__global-footer {
   background-color: #8c1515;
-  box-shadow: inset 0px 4px 8px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 4px 8px -2px rgba(0, 0, 0, 0.2);
   color: #e3dfd5;
   min-height: 9.0769230769em;
   width: 100%; }
@@ -891,6 +891,8 @@
     color: #e3dfd5; }
     #footer__global-footer a:hover, #footer__global-footer a:active, #footer__global-footer a:focus {
       color: #fff; }
+  #footer__global-footer .global-footer__inner {
+    position: relative; }
   #footer__global-footer #global-footer__brand {
     text-align: center;
     margin-bottom: 2rem; }
@@ -901,15 +903,9 @@
         margin: 2.3076923077em 2% 0 0; } }
     @media only screen and (min-width: 768px) {
       #footer__global-footer #global-footer__brand {
-        margin-right: 1.5384615385em;
+        position: absolute;
         margin-top: 0;
         width: 8em; } }
-    @media only screen and (min-width: 1024px) {
-      #footer__global-footer #global-footer__brand {
-        margin-right: 4.6153846154em; } }
-    @media only screen and (min-width: 1500px) {
-      #footer__global-footer #global-footer__brand {
-        margin-right: 6.9230769231em; } }
   #footer__global-footer #global-footer__nav {
     color: #fff;
     font-weight: normal;
@@ -917,17 +913,11 @@
     @media only screen and (min-width: 576px) {
       #footer__global-footer #global-footer__nav {
         float: left;
-        width: 49%;
-        margin-left: 25%; } }
+        width: 49%; } }
     @media only screen and (min-width: 768px) {
       #footer__global-footer #global-footer__nav {
-        overflow: hidden;
-        padding-top: 0.3846153846em;
-        width: 43.0769230769em;
-        margin-left: 25%; } }
-    @media only screen and (min-width: 1024px) {
-      #footer__global-footer #global-footer__nav {
-        width: 57.6923076923em; } }
+        width: 100%;
+        padding-top: 0.3846153846em; } }
     #footer__global-footer #global-footer__nav #nav__global-links,
     #footer__global-footer #global-footer__nav #nav__policy-links {
       font-size: 1.1538461538em;
@@ -968,18 +958,7 @@
       #footer__global-footer #global-footer__info {
         float: left;
         text-align: left;
-        margin-left: 9.6153846154em;
-        padding-top: 0;
-        width: 52.6923076923em; }
-        #footer__global-footer #global-footer__info.offset-top {
-          margin-top: -1.5384615385em; } }
-    @media only screen and (min-width: 1024px) {
-      #footer__global-footer #global-footer__info {
-        margin-left: 12.6923076923em;
-        width: 92.3076923077em; } }
-    @media only screen and (min-width: 1500px) {
-      #footer__global-footer #global-footer__info {
-        margin-left: 15em; } }
+        padding-top: 0; } }
     #footer__global-footer #global-footer__info .vcard {
       font-size: 1em;
       font-weight: normal; }
@@ -991,5 +970,45 @@
         @media only screen and (min-width: 768px) {
           #footer__global-footer #global-footer__info .vcard .copyright-links {
             display: inline; } }
+  @media only screen and (min-width: 768px) {
+    #footer__global-footer #global-footer__nav,
+    #footer__global-footer #global-footer__info {
+      margin-left: 9.6153846154em; } }
+  @media only screen and (min-width: 1024px) {
+    #footer__global-footer #global-footer__nav,
+    #footer__global-footer #global-footer__info {
+      margin-left: 12.6923076923em; } }
+  @media only screen and (min-width: 1500px) {
+    #footer__global-footer #global-footer__nav,
+    #footer__global-footer #global-footer__info {
+      margin-left: 15em; } }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  min-height: auto;
+  margin: 0 0 320px;
+  /* bottom = footer height */ }
+  @media only screen and (min-width: 576px) {
+    body {
+      margin-bottom: 228px; } }
+  @media only screen and (min-width: 768px) {
+    body {
+      margin-bottom: 118px; } }
+
+#footer__global-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 320px;
+  width: 100%; }
+  @media only screen and (min-width: 576px) {
+    #footer__global-footer {
+      height: 228px; } }
+  @media only screen and (min-width: 768px) {
+    #footer__global-footer {
+      height: 118px; } }
 
 /*# sourceMappingURL=components.css.map */
