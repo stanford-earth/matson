@@ -930,16 +930,12 @@
         @media only screen and (min-width: 576px) {
           #footer__global-footer #global-footer__nav #nav__global-links a,
           #footer__global-footer #global-footer__nav #nav__policy-links a {
-            margin-right: .5em;
-            text-align: left; } }
+            text-align: left;
+            margin-right: 1.3076923077em; } }
         @media only screen and (min-width: 768px) {
           #footer__global-footer #global-footer__nav #nav__global-links a,
           #footer__global-footer #global-footer__nav #nav__policy-links a {
             float: left; } }
-        @media only screen and (min-width: 1024px) {
-          #footer__global-footer #global-footer__nav #nav__global-links a,
-          #footer__global-footer #global-footer__nav #nav__policy-links a {
-            margin-right: 1em; } }
     #footer__global-footer #global-footer__nav #nav__global-links {
       margin-bottom: 0.125em; }
       @media only screen and (min-width: 768px) {
@@ -964,12 +960,14 @@
       font-weight: normal; }
       #footer__global-footer #global-footer__info .vcard .adr {
         margin-left: 0.3750937734em;
-        margin-right: 0.3750937734em; }
+        margin-right: 0.7501875469em; }
       #footer__global-footer #global-footer__info .vcard .copyright-links {
         display: block; }
         @media only screen and (min-width: 768px) {
           #footer__global-footer #global-footer__info .vcard .copyright-links {
             display: inline; } }
+        #footer__global-footer #global-footer__info .vcard .copyright-links a {
+          margin-right: 0.3750937734em; }
   @media only screen and (min-width: 768px) {
     #footer__global-footer #global-footer__nav,
     #footer__global-footer #global-footer__info {
@@ -989,8 +987,7 @@ html {
 
 body {
   min-height: auto;
-  margin: 0 0 320px;
-  /* bottom = footer height */ }
+  margin: 0 0 320px; }
   @media only screen and (min-width: 576px) {
     body {
       margin-bottom: 228px; } }
