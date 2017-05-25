@@ -109,7 +109,7 @@ body {
   /*!*/
   line-height: 1.425;
   font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 1.8em; }
+  font-size: 1.3em; }
 
 h1, h2, h3, h4, h5, h6 {
   /*!*/
@@ -175,7 +175,7 @@ pre {
   /*!*/
   background: rgba(221, 221, 221, 0.6);
   font-family: 'Source Code Pro', Monaco, Consolas, Lucida Console, monospace;
-  font-size: 0.8888888889em;
+  font-size: 1.2307692308em;
   line-height: 1.425;
   margin-bottom: 1.776889em;
   max-width: 100%;
@@ -187,7 +187,7 @@ pre {
 code, kbd, var, samp {
   /*!*/
   font-family: 'Source Code Pro', Monaco, Consolas, Lucida Console, monospace;
-  font-size: 0.8888888889em;
+  font-size: 1.2307692308em;
   padding: 0.0564544923em 0.237601541em;
   position: relative;
   background-color: rgba(221, 221, 221, 0.6);
@@ -343,8 +343,8 @@ ol {
   /*!*/
   list-style: decimal; }
   ol li {
-    padding-left: 0.2222222222em;
-    margin-left: -0.2222222222em; }
+    padding-left: 0.3076923077em;
+    margin-left: -0.3076923077em; }
   ol ol {
     list-style: upper-alpha; }
     ol ol ol {
@@ -421,7 +421,7 @@ figure {
   -webkit-font-smoothing: antialiased;
   font-weight: inherit;
   line-height: 1.425;
-  padding: 0.3333333333em 0.7501875469em 0.3888888889em;
+  padding: 0.4615384615em 0.7501875469em 0.5384615385em;
   text-align: center;
   text-decoration: none;
   user-select: none;
@@ -459,7 +459,7 @@ figure {
   background-color: #004991;
   color: #fff;
   font-weight: 600;
-  padding: 0.5555555556em 1em 0.6666666667em; }
+  padding: 0.7692307692em 1em 0.9230769231em; }
   .button:hover,
   .button__primary:hover, .button__primary--expanded:hover, .button:active,
   .button__primary:active, .button__primary--expanded:active, .button:focus,
@@ -475,7 +475,7 @@ figure {
   border: 1px solid #ccc;
   color: #222328;
   font-weight: 600;
-  padding: 0.3888888889em 1em 0.5em; }
+  padding: 0.5384615385em 1em 0.6923076923em; }
   .button:hover,
   .button__secondary:hover, .button__secondary--expanded:hover, .button:active,
   .button__secondary:active, .button__secondary--expanded:active, .button:focus,
@@ -492,7 +492,7 @@ button, [type='button'], [type='reset'], [type='submit'] {
 .button__secondary, .button__secondary--expanded, button, [type='button'], [type='reset'], [type='submit'], .button__hollow, .button__hollow--expanded {
   box-shadow: none;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  padding: 0.5555555556em 1.4444444444em 0.5555555556em;
+  padding: 0.7692307692em 2em 0.7692307692em;
   text-transform: uppercase; }
 
 .button,
@@ -530,7 +530,7 @@ button, [type='button'], [type='reset'], [type='submit'] {
 
 .button__primary--expanded, .button__secondary--expanded, .button__hollow--expanded {
   font-weight: 600;
-  padding: 1.2222222222em; }
+  padding: 1.6923076923em; }
 
 .button__primary--expanded, .button__secondary--expanded, .button__hollow--expanded {
   width: 100%;
@@ -555,31 +555,31 @@ button, [type='button'], [type='reset'], [type='submit'] {
 .i-svg--twitter,
 .i-svg--fb,
 .i-svg--instagram {
-  height: 1em;
-  width: 1em; }
+  height: 1.3846153846em;
+  width: 1.3846153846em; }
 
 .i-svg--quote {
-  height: 1.1111111111em;
-  width: 1.6666666667em; }
+  height: 1.5384615385em;
+  width: 2.3076923077em; }
 
 .i-svg--plus,
 .i-svg--minus {
-  height: 1.1111111111em;
-  width: 1.1111111111em; }
+  height: 1.5384615385em;
+  width: 1.5384615385em; }
   .i-svg--plus use,
   .i-svg--minus use {
     fill: #8c1515; }
 
 .i-svg--arrow-right {
-  height: 1.3888888889em;
-  width: 1.3888888889em; }
+  height: 1.9230769231em;
+  width: 1.9230769231em; }
 
 .img-svg {
-  height: 2.8888888889em;
-  width: 2.8888888889em; }
+  height: 4em;
+  width: 4em; }
 
 body {
-  font-size: 1.8em;
+  font-size: 1.3em;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.425; }
   @media only screen and (max-width: 767px) {
@@ -626,47 +626,47 @@ h6 {
 
 h1,
 .h1 {
-  font-size: 2.1111111111em; }
+  font-size: 2.9230769231em; }
   @media only screen and (min-width: 576px) {
     h1,
     .h1 {
-      font-size: 2.2222222222em; } }
+      font-size: 3.0769230769em; } }
 
 h2,
 .h2 {
-  font-size: 1.5555555556em; }
+  font-size: 2.1538461538em; }
   @media only screen and (min-width: 576px) {
     h2,
     .h2 {
-      font-size: 1.6666666667em; } }
+      font-size: 2.3076923077em; } }
 
 h3,
 .h3 {
-  font-size: 1.3333333333em; }
+  font-size: 1.8461538462em; }
   @media only screen and (min-width: 576px) {
     h3,
     .h3 {
-      font-size: 1.4444444444em; } }
+      font-size: 2em; } }
 
 h4,
 .h4 {
-  font-size: 1.1111111111em; }
+  font-size: 1.5384615385em; }
   @media only screen and (min-width: 576px) {
     h4,
     .h4 {
-      font-size: 1.2777777778em; } }
+      font-size: 1.7692307692em; } }
 
 h5,
 .h5 {
-  font-size: 0.7777777778em; }
+  font-size: 1.0769230769em; }
   @media only screen and (min-width: 576px) {
     h5,
     .h5 {
-      font-size: 0.8888888889em; } }
+      font-size: 1.2307692308em; } }
 
 h6,
 .h6 {
-  font-size: 0.7222222222em; }
+  font-size: 1em; }
 
 p {
   margin: 0 0 1.333em; }
@@ -690,7 +690,7 @@ address {
   margin: 0 0 1.776889em; }
 
 pre {
-  font-size: 0.7222222222em;
+  font-size: 1em;
   background: #b8b8b8;
   font-family: "Source Code Pro", "Monaco", "Consolas", "Lucida Console", monospace;
   line-height: 1.425;
@@ -703,7 +703,7 @@ code,
 kbd,
 tt,
 var {
-  font-size: 0.7222222222em;
+  font-size: 1em;
   font-family: "Source Code Pro", "Monaco", "Consolas", "Lucida Console", monospace; }
 
 abbr,
@@ -734,11 +734,11 @@ mark {
 
 small,
 .small-text {
-  font-size: 0.6666666667em; }
+  font-size: 0.9230769231em; }
 
 big,
 .large-text {
-  font-size: 0.8888888889em; }
+  font-size: 1.2307692308em; }
 
 a {
   color: #017c92;

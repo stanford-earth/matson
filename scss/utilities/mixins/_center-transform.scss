@@ -1,7 +1,4 @@
-@mixin center-transform (
-  $axis: false // or x or y
-) {
-
+@mixin center-transform ($axis: false) { // or x or y
   position: absolute;
 
   @if $axis != x {
@@ -20,11 +17,9 @@
 
   @if not($axis) {
     $translate-val: translate(-50%, -50%);
-  }
-  @else if $axis != x {
+  } @else if $axis != x {
     $translate-val: translateY(-50%);
-  }
-  @else if $axis != y {
+  } @else if $axis != y {
     $translate-val: translateX(-50%);
   }
 
