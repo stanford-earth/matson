@@ -40,17 +40,37 @@
   ]
 %}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
-  {# Label. If not displayed, we still provide it for screen readers. #}
-  {% if not configuration.label_display %}
-    {% set title_attributes = title_attributes.addClass('visually-hidden') %}
-  {% endif %}
-  {{ title_prefix }}
-  <h2{{ title_attributes.setAttribute('id', heading_id) }}>{{ configuration.label }}</h2>
-  {{ title_suffix }}
 
-  {# Menu. #}
-  {% block content %}
-    {{ content }}
-  {% endblock %}
-</nav>
+<div class="navbar">
+  <div class="navbar__container">
+    <div class="navbar__inner">
+      <button class="navbar__button">
+        <span class="navbar__text visually-hidden">menu</span>
+        <svg class="i-svg i-svg--menu"><use xlink:href="#i-menu" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
+        <svg class="i-svg i-svg--close"><use xlink:href="#i-close" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
+      </button>
+
+      <div class="navbar__group">
+        <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
+          {# Label. If not displayed, we still provide it for screen readers. #}
+          {% if not configuration.label_display %}
+            {% set title_attributes = title_attributes.addClass('visually-hidden') %}
+          {% endif %}
+          {{ title_prefix }}
+          <h2{{ title_attributes.setAttribute('id', heading_id) }}>{{ configuration.label }}</h2>
+          {{ title_suffix }}
+
+          {# Menu. #}
+          {% block content %}
+            {{ content }}
+          {% endblock %}
+        </nav>
+        <div class="navbar__search">
+          <form class="search-toggle">
+            <input type="search" placeholder="Search">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -35,8 +35,9 @@
 
         $(".navbar__button").on('click',function(e) {
           e.preventDefault();
-          $(this).toggleClass("active");
+          $(this).toggleClass("is-active");
           $(this).next(".navbar__group").toggle();
+          $(".navbar").toggleClass("is-expanded");
           adjustMenu();
         });
 
@@ -53,32 +54,29 @@
           console.log(ww, toggleWidth);
 
           if (ww < toggleWidth) {
-            $(".navbar__button").css("display", "inline-block");
-            if (!$(".navbar__button").hasClass("active")) {
+            if (!$(".navbar__button").hasClass("is-active")) {
               $(".navbar__group").hide();
             } else {
               $(".navbar__group").show();
             }
-            $(".basic-main-menu li").unbind('mouseenter mouseleave');
+            $(".basic-main-menu li").unbind('click');
             $(".basic-main-menu li a.parent").unbind('click').bind('click', function(e) {
               // must be attached to anchor element to prevent bubbling
               e.preventDefault();
-              $(this).parent("li").toggleClass("hover");
+              $(this).parent("li").toggleClass("is-open");
             });
           } 
           else if (ww >= toggleWidth) {
-            $(".navbar__group").css("display", "none");
             $(".navbar__group").show();
-            $(".basic-main-menu li").removeClass("hover");
-            $(".basic-main-menu li a").unbind('click');
-            $(".basic-main-menu li").unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function() {
-              // must be attached to li so that mouseleave is not triggered when hover over submenu
-              $(this).toggleClass('hover');
+            
+            $(".basic-main-menu li").unbind('click');    
+            $(".basic-main-menu li a.parent").unbind('click').bind('click', function(e) {
+              // must be attached to anchor element to prevent bubbling
+              e.preventDefault();
+              $(this).parent("li").toggleClass('is-open').siblings("li").removeClass('is-open');
             });
           }
         }
-
-
       });
 
       $(window).resize(function () {

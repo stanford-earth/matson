@@ -1,21 +1,23 @@
 $nav-container: (
-  xs: ( columns: 12, grid-media: $media-xs-only,  v-space: 0, max-width: false, grid-collapse: false ),
-  sm: ( columns: 12, grid-media: $media-sm-only,  v-space: 0, max-width: false, grid-collapse: false ),
-  md: ( columns: 12, grid-media: $media-md-only,  v-space: 0, max-width: false, grid-collapse: false ),
-  lg: ( columns: 12, grid-media: $media-lg-only,  v-space: 0, max-width: false, grid-collapse: false ),
-  xl: ( columns: 12, grid-media: $media-xl,       v-space: 0, max-width: true,  grid-collapse: false ),
-  print: ( columns: 12, grid-media: $media-print, v-space: 0, max-width: false, grid-collapse: false ),
+xs: ( columns: 12, grid-media: $media-xs-only,  v-space: 0, max-width: false, grid-collapse: false ),
+sm: ( columns: 12, grid-media: $media-sm-only,  v-space: 0, max-width: false, grid-collapse: false ),
+md: ( columns: 12, grid-media: $media-md-only,  v-space: 0, max-width: false, grid-collapse: false ),
+lg: ( columns: 12, grid-media: $media-lg-only,  v-space: 0, max-width: false, grid-collapse: false ),
+xl: ( columns: 12, grid-media: $media-xl,       v-space: 0, max-width: true,  grid-collapse: false ),
+print: ( columns: 12, grid-media: $media-print, v-space: 0, max-width: false, grid-collapse: false ),
 ) !default;
 
-$navbar-height: em(65px);
+$nav-bar-height: em(65px);
 
 .navbar {
   background: rgba(0,0,0,.5);
-  height: $navbar-height;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
 
   &.is-expanded {
     height: auto;
-    padding-top: $navbar-height;
 
     @include grid-media($media-md) {
       padding-top: 0;
@@ -33,13 +35,15 @@ $navbar-height: em(65px);
 
 .navbar__group {
   display: block;
-  padding-bottom: $navbar-height;
+  padding-bottom: $nav-bar-height;
+  padding-top: $nav-bar-height;
 
   @include grid-media($media-md) {
     display: block;
     float: right;
     padding-bottom: 0;
-    margin-right: $navbar-height;
+    padding-top: 0;
+    margin-right: $nav-bar-height;
   }
 }
 
@@ -48,10 +52,10 @@ $navbar-height: em(65px);
   background: transparent;
   padding-left: 0;
   padding-right: 0;
-  height: $navbar-height;
-  width: $navbar-height;
+  height: $nav-bar-height;
+  width: $nav-bar-height;
   right: 0;
-  top: em(-65px);
+  z-index: 4;
 
   @include on-event {
     background: transparent;
@@ -70,17 +74,36 @@ $navbar-height: em(65px);
       fill: color(white);
     }
   }
+
+  .i-svg--close {
+    display: none;
+  }
+
+  &.is-active {
+    .i-svg--menu {
+      display: none;
+    }
+
+    .i-svg--close {
+      display: inline-block;
+    }
+  }
 }
 
 .navbar__search {
+  background: rgba(0,0,0,.5);
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: -20px;
+  right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include grid-media($media-md) {
+    background: transparent;
     bottom: auto;
     left: auto;
     top: 0;
+    right: 0;
   }
 }

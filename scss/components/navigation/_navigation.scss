@@ -8,8 +8,20 @@
   }
 
   ul {
-    margin-left: 0;
-    margin-bottom: 0;
+    width: 200px;
+    margin: 0 auto;
+    padding: 40px 0;
+
+    @include grid-media($media-md) {
+      width: auto;
+      margin-left: 0;
+      margin-bottom: 0;
+      padding: 0;
+    }
+
+    li:first-child > a {
+      border-top: none;
+    }
   }
 
   li {
@@ -25,39 +37,48 @@
     }
 
     a {
+      border-top: 1px solid color(white);
       color: color(white);
       display: block;
-      font-size: em(12px);
+      font-size: em(14px);
       letter-spacing: em(.9px);
-      padding: 2em 1em;
+      padding: 1em 0;
       text-align: center;
       text-transform: uppercase;
       text-decoration: none;
 
       @include on-event {
-        border-bottom: 0;
-
         @include grid-media($media-md) {
           box-shadow: inset 0px -3px 0px 0px rgba(249,176,2,1);
         }  
       }
 
       @include grid-media($media-md) {
+        border-top: 0;
+        border-bottom: none;
+        padding: 2em 1em;
         text-align: left;
-      }  
+        font-size: em(12px);
+      }
     }
   }
 
   ul ul {
-    // opacity: 0;
+    display: none;
     transition: all .5s ease-out;
     background: rgba(0,0,0,.5);
-    position:absolute;
-    top: 100%;
-    left: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
     margin-top: 0;
-    width: 220px;
+    width: 100%;
     z-index: 2;
+
+    @include grid-media($media-md) {
+      position:absolute;
+      top: 100%;
+      left: 0;
+      width: 220px;
+    }  
 
     li {
       float: none;
@@ -65,6 +86,7 @@
     }
 
     a {
+      border-top: 0;
       padding: 1em 1em;
 
       @include on-event {
@@ -73,9 +95,9 @@
     }
   }
 
-  ul li:hover > ul {
-    @include grid-media($media-md) {
-      // opacity: 1;
+  ul li {
+    &.is-open ul {
+      display: block;
     }
   }
 }
