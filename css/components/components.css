@@ -29,10 +29,13 @@
   color: #ffcdcd; }
 
 .color-bright-red {
-  color: #B1040E; }
+  color: #b1040e; }
 
 .color-dark-red {
   color: #8c1414; }
+
+.color-light-red {
+  color: #e3dfd5; }
 
 .color-black {
   color: #000; }
@@ -122,10 +125,13 @@
   color: #ffcdcd; }
 
 .color-bright-red {
-  color: #B1040E; }
+  color: #b1040e; }
 
 .color-dark-red {
   color: #8c1414; }
+
+.color-light-red {
+  color: #e3dfd5; }
 
 .color-black {
   color: #000; }
@@ -306,10 +312,13 @@
   color: #ffcdcd; }
 
 .color-bright-red {
-  color: #B1040E; }
+  color: #b1040e; }
 
 .color-dark-red {
   color: #8c1414; }
+
+.color-light-red {
+  color: #e3dfd5; }
 
 .color-black {
   color: #000; }
@@ -451,10 +460,13 @@
   color: #ffcdcd; }
 
 .color-bright-red {
-  color: #B1040E; }
+  color: #b1040e; }
 
 .color-dark-red {
   color: #8c1414; }
+
+.color-light-red {
+  color: #e3dfd5; }
 
 .color-black {
   color: #000; }
@@ -609,10 +621,13 @@
   color: #ffcdcd; }
 
 .color-bright-red {
-  color: #B1040E; }
+  color: #b1040e; }
 
 .color-dark-red {
   color: #8c1414; }
+
+.color-light-red {
+  color: #e3dfd5; }
 
 .color-black {
   color: #000; }
@@ -672,7 +687,7 @@
   white-space: nowrap; }
 
 #footer__global-footer {
-  background-color: #B1040E;
+  background-color: #b1040e;
   color: #fff;
   width: 100%; }
   @media only screen and (max-width: 575px) {
@@ -839,10 +854,13 @@
   color: #ffcdcd; }
 
 .color-bright-red {
-  color: #B1040E; }
+  color: #b1040e; }
 
 .color-dark-red {
   color: #8c1414; }
+
+.color-light-red {
+  color: #e3dfd5; }
 
 .color-black {
   color: #000; }
