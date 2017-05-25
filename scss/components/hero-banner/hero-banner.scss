@@ -4,7 +4,7 @@
 @import "config/config";
 
 // Decanter config.
-@import "decanter/core/utilities/decanter-utilities.scss";
+@import "decanter/core/utilities/decanter-utilities";
 
 // Grab our mixins.
 @import "utilities/utilities";
@@ -32,7 +32,7 @@ $hero-max-width-lg: 1500px;
       display: block;
       background-color: rgba(0, 0, 0, 0.35);
     }
-  }  
+  }
 }
 
 .hero-banner__inner {
@@ -44,7 +44,7 @@ $hero-max-width-lg: 1500px;
 
   @include grid-media($media-md) {
     min-height: 300px;
-  } 
+  }
 
   @include grid-media($media-lg) {
     min-height: 400px;
@@ -52,12 +52,12 @@ $hero-max-width-lg: 1500px;
 
   @media (min-width: $hero-max-width-lg) {
     max-width: $hero-max-width-md;
-  }  
+  }
 
   &.is-tall {
     @include grid-media($media-md) {
       min-height: 500px;
-    } 
+    }
 
     @include grid-media($media-lg) {
       min-height: 660px;
@@ -94,7 +94,7 @@ $hero-max-width-lg: 1500px;
 
   @include grid-media($media-md) {
     width: 50%;
-  } 
+  }
 
   @include grid-media($media-lg) {
     width: 25%;
