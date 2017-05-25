@@ -879,11 +879,11 @@
   .search-toggle input::-webkit-search-decoration,
   .search-toggle input::-webkit-search-cancel-button {
     display: none; }
-  .search-toggle input[type=search]::focus {
+  .search-toggle input[type=search]:focus {
     background-color: #6e6f72;
     border: 0; }
     @media only screen and (min-width: 768px) {
-      .search-toggle input[type=search]::focus {
+      .search-toggle input[type=search]:focus {
         background-color: #6e6f72;
         width: 560px; } }
   .search-toggle input::-moz-placeholder {
