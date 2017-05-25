@@ -18,14 +18,12 @@
 // Decanter config.
 @import 'decanter/core/utilities/decanter-utilities';
 
-// Variable overides.
-@import 'config/typography';
-
 // Decanter base styles.
 @import 'decanter/core/base/decanter-base';
 
 // matson Theme Overides.
 @import
+  'buttons',
   'fonts',
-  'typography',
-  'buttons';
+  'svg',
+  'typography';

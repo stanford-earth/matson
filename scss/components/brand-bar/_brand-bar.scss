@@ -9,32 +9,48 @@
 @import "config/config";
 
 // Decanter config.
-@import "decanter/core/utilities/decanter-utilities.scss";
+@import "decanter/core/utilities/decanter-utilities";
 
 // Separated out as a mixin for easy re-use and possible move to Decanter.
 @mixin stanford-brand-bar {
 
-  $_brand-container: (
-    sm-max: ( columns: 12, grid-media: $media-sm-max,  v-space: 10px, max-width: false, grid-collapse: false ),
-    md: ( columns: 12, grid-media: $media-md,          v-space: 10px, max-width: false, grid-collapse: false ),
-    xl: ( columns: 12, grid-media: $media-xl,          v-space: 10px, max-width: true,  grid-collapse: false ),
-    print: ( columns: 12, grid-media: $media-print,    v-space: 10px, max-width: false, grid-collapse: false ),
-  );
+  //$_brand-container: (
+  //  sm-max: (columns: 12, grid-media: $media-sm-max,  v-space: 12px, max-width: false, grid-collapse: false),
+  //  md: (columns: 12, grid-media: $media-md,          v-space: 10px, max-width: false, grid-collapse: false),
+  //  xl: (columns: 12, grid-media: $media-xl,          v-space: 10px, max-width: true,  grid-collapse: false),
+  //  print: (columns: 12, grid-media: $media-print,    v-space: 10px, max-width: false, grid-collapse: false),
+  //) !default;
 
-  @include responsive-container($_brand-container);
+  @include responsive-container($default-container);
   height: 40px;
   max-height: 40px;
   color: color(reverse-text);
   background: color(brand);
-  
-  img {
-    width: 153px;
+  position: relative;
+
+  a {
+    color: color(reverse-text);
+
+    &:first-child {
+      display: inline-block;
+      width: 123px;
+
+      @include grid-media($media-sm) {
+        width: 153px;
+      }
+    }
   }
+
+  .brand-bar__login {
+    float: right;
+    font-size: em(12px);
+    font-weight: 600;
+  }
+
 }
 
 // Separation of class from mixin.
 .brand-bar {
   @include stanford-brand-bar;
-  padding-top: em(10px);
   order: -100;
 }

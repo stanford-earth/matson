@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
+$base-font-size: _retrieve-decanter-setting(base-font-size);
+$root-font-size: _retrieve-decanter-setting(root-font-size);
+
 body {
+  @include font-size($base-font-size, $root-font-size);
   font-family: $base-font-family;
   line-height: $base-line-height;
-  @include font-size($base-font-size, $root-font-size);
 
   // Responsive font sizes:
   @include grid-media($media-sm-max) {
@@ -55,19 +58,19 @@ h6 {
   font-weight: normal;
 }
 
-h1, 
-.h1, 
+h1,
+.h1,
 %h1 {
-  @include font-size(38px)
+  @include font-size(38px);
   @include grid-media($media-sm) {
     @include font-size(40px);
   }
 }
 
-h2, 
+h2,
 .h2,
 %h2 {
-  @include font-size(28px)
+  @include font-size(28px);
   @include grid-media($media-sm) {
     @include font-size(30px);
   }
@@ -76,16 +79,16 @@ h2,
 h3,
 .h3,
 %h3 {
-  @include font-size(24px)
+  @include font-size(24px);
   @include grid-media($media-sm) {
     @include font-size(26px);
   }
 }
 
-h4, 
+h4,
 .h4,
 %h4 {
-  @include font-size(20px)
+  @include font-size(20px);
   @include grid-media($media-sm) {
     @include font-size(23px);
   }
@@ -94,7 +97,7 @@ h4,
 h5,
 .h5,
 %h5 {
-  @include font-size(14px)
+  @include font-size(14px);
   @include grid-media($media-sm) {
     @include font-size(16px);
   }
@@ -110,16 +113,20 @@ p {
   margin: 0 0 modular-scale(1);
 }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic;
 }
 
-blockquote, q {
+blockquote,
+q {
   margin: 0 modular-scale(2);
   quotes: "" "";
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: "";
   }
 }
@@ -132,6 +139,8 @@ pre {
   background: shade(color(border), 10%);
   font-family: $font-family-monospace;
   @include font-size(13px);
+  background: shade(color(border), 10%);
+  font-family: $font-family-monospace;
   line-height: $base-line-height;
   margin-bottom: modular-scale(2);
   max-width: 100%;
@@ -139,9 +148,43 @@ pre {
   padding: 1.6em;
 }
 
-code, kbd, tt, var {
-  font-family: $font-family-monospace;
+code,
+kbd,
+tt,
+var {
   @include font-size(13px);
+  font-family: $font-family-monospace;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted color(border);
+  cursor: help;
+}
+
+mark,
+ins,
+del {
+  padding: 0 .25em .15em;
+}
+
+del {
+  color: color(text);
+  background: color(light-red);
+  text-decoration: line-through;
+  text-decoration-color: color(light-red);
+}
+
+ins {
+  color: color(text);
+  background: color(light-green);
+  text-decoration: none;
+}
+
+mark {
+  color: color(text);
+  background: color(light-yellow);
+  text-decoration: none;
 }
 
 abbr, acronym {
@@ -206,8 +249,9 @@ $su-brand-University: "\1f57e";
 $su-brand-Stanford-University: "\1f57c";
 $su-brand-Stanford: "\1f57d";
 
-[class^="su-brand"], [class*=" su-brand"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
+[class^="su-brand"],
+[class*=" su-brand"] {
+  // use !important to prevent issues with browser extensions that change fonts
   font-family: 'Stanford', $font-family-serif !important;
   font-style: normal;
   font-weight: normal;
@@ -216,7 +260,7 @@ $su-brand-Stanford: "\1f57d";
   line-height: 1;
   transform: translateZ(0); //enables hardware acceleration. Makes performance much smoother on resize.
 
-  /* Enable Ligatures ================ */
+  // Enable Ligatures
   letter-spacing: 0;
   -webkit-font-feature-settings: "liga";
   -moz-font-feature-settings: "liga=1";
@@ -226,7 +270,7 @@ $su-brand-Stanford: "\1f57d";
   -webkit-font-variant-ligatures: discretionary-ligatures;
   font-variant-ligatures: discretionary-ligatures;
 
-  /* Better Font Rendering =========== */
+  // Better Font Rendering
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
