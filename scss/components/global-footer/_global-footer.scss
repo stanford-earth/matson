@@ -1,0 +1,206 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+#footer__global-footer {
+  $_brand-container: (
+    sm-max: (columns: 12, grid-media: $media-sm-max,  v-space: 30px, max-width: false, grid-collapse: false),
+    md: (columns: 12, grid-media: $media-md,          v-space: 30px, max-width: false, grid-collapse: false),
+    xl: (columns: 12, grid-media: $media-xl,          v-space: 30px, max-width: true,  grid-collapse: false),
+    print: (columns: 12, grid-media: $media-print,    v-space: 30px, max-width: false, grid-collapse: false),
+  );
+
+  @include responsive-container($_brand-container);
+  background-color: color(brand);
+  box-shadow: inset 0 4px 8px -2px rgba(0, 0, 0, .2);
+  color: color(light-red);
+  min-height: em(118px);
+  width: 100%;
+
+  a {
+    color: color(light-red);
+
+    @include on-event {
+      color: color(white);
+    }
+  }
+
+  .global-footer__inner {
+    position: relative;
+  }
+
+  #global-footer__brand {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    @include grid-media($media-sm) {
+      float: left;
+      width: 49%;
+      margin: em(30px) 2% 0 0;
+    }
+
+    @include grid-media($media-md) {
+      position: absolute;
+      margin-top: 0;
+      width: em(104px);
+    }
+
+    @include grid-media($media-lg) {
+
+    }
+
+    @include grid-media($media-xl) {
+
+    }
+  }
+
+  #global-footer__nav {
+    color: color(reverse-text);
+    font-weight: normal;
+    margin: 0;
+
+    @include grid-media($media-sm) {
+      float: left;
+      width: 49%;
+    }
+
+    @include grid-media($media-md) {
+      width: 100%;
+      padding-top: em(5px);
+    }
+
+    #nav__global-links,
+    #nav__policy-links {
+      @include font-size(15px);
+      overflow: hidden;
+
+      a {
+        display: block;
+        float: none;
+        text-align: center;
+
+        @include grid-media($media-sm) {
+          text-align: left;
+          margin-right: em(17px);
+        }
+
+        @include grid-media($media-md) {
+          float: left;
+        }
+      }
+    }
+
+    #nav__global-links {
+      margin-bottom: 0.125em;
+
+      @include grid-media($media-md) {
+        overflow: hidden;
+      }
+    }
+
+    #nav__policy-links {
+      @include grid-media($media-md) {
+        margin-bottom: 0.275em;
+      }
+    }
+  }
+
+  #global-footer__info {
+    font-weight: normal;
+    overflow: hidden;
+    padding-top: (25px);
+    text-align: center;
+    width: 100%;
+
+    @include grid-media($media-md) {
+      float: left;
+      text-align: left;
+      padding-top: 0;
+    }
+
+    .vcard {
+      @include font-size(13px);
+      font-weight: normal;
+
+      .adr {
+        margin-left: $small-spacing / 2;
+        margin-right: $small-spacing;
+      }
+
+      .copyright-links {
+        display: block;
+
+        @include grid-media($media-md) {
+          display: inline;
+        }
+
+        a {
+          margin-right: $small-spacing / 2;
+        }
+      }
+    }
+  }
+
+  #global-footer__nav,
+  #global-footer__info {
+    @include grid-media($media-md) {
+      margin-left: em(125px);
+    }
+
+    @include grid-media($media-lg) {
+      margin-left: em(165px);
+    }
+
+    @include grid-media($media-xl) {
+      margin-left: em(195px);
+    }
+  }
+}
+
+//
+// Sticky footer
+//
+$global-footer-base-height: 320px;
+$global-footer-sm-height: 228px;
+$global-footer-md-height: 118px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  min-height: auto;
+  margin: 0 0 $global-footer-base-height; // margin-bottom = footer height
+
+  @include grid-media($media-sm) {
+    margin-bottom: $global-footer-sm-height;
+  }
+
+  @include grid-media($media-md) {
+    margin-bottom: $global-footer-md-height;
+  }
+}
+
+#footer__global-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: $global-footer-base-height;
+  width: 100%;
+
+  @include grid-media($media-sm) {
+    height: $global-footer-sm-height;
+  }
+
+  @include grid-media($media-md) {
+    height: $global-footer-md-height;
+  }
+}
