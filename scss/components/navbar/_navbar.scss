@@ -1,10 +1,10 @@
 $nav-container: (
-xs: ( columns: 12, grid-media: $media-xs-only,  v-space: 0, max-width: false, grid-collapse: false ),
-sm: ( columns: 12, grid-media: $media-sm-only,  v-space: 0, max-width: false, grid-collapse: false ),
-md: ( columns: 12, grid-media: $media-md-only,  v-space: 0, max-width: false, grid-collapse: false ),
-lg: ( columns: 12, grid-media: $media-lg-only,  v-space: 0, max-width: false, grid-collapse: false ),
-xl: ( columns: 12, grid-media: $media-xl,       v-space: 0, max-width: true,  grid-collapse: false ),
-print: ( columns: 12, grid-media: $media-print, v-space: 0, max-width: false, grid-collapse: false ),
+  xs: ( columns: 12, grid-media: $media-xs-only,  v-space: 0, max-width: false, grid-collapse: false ),
+  sm: ( columns: 12, grid-media: $media-sm-only,  v-space: 0, max-width: false, grid-collapse: false ),
+  md: ( columns: 12, grid-media: $media-md-only,  v-space: 0, max-width: false, grid-collapse: false ),
+  lg: ( columns: 12, grid-media: $media-lg-only,  v-space: 0, max-width: false, grid-collapse: false ),
+  xl: ( columns: 12, grid-media: $media-xl,       v-space: 0, max-width: true,  grid-collapse: false ),
+  print: ( columns: 12, grid-media: $media-print, v-space: 0, max-width: false, grid-collapse: false ),
 ) !default;
 
 $nav-bar-height: em(65px);

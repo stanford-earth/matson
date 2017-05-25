@@ -20,20 +20,24 @@
     }
 
     li:first-child > a {
-      border-top: none;
+      border-top: 0;
     }
   }
 
   li {
     display: block;
     margin-bottom: 0;
-    position:relative;
+    position: relative;
 
     @include grid-media($media-md) {
       float: left;
       list-style-type: none;
       display: inline-block;
       padding: 0 1em;
+    }
+
+    &.is-open ul {
+      display: block;
     }
 
     a {
@@ -49,13 +53,13 @@
 
       @include on-event {
         @include grid-media($media-md) {
-          box-shadow: inset 0px -3px 0px 0px rgba(249,176,2,1);
-        }  
+          box-shadow: inset 0 -3px 0 0 rgba(249,176,2,1);
+        }
       }
 
       @include grid-media($media-md) {
         border-top: 0;
-        border-bottom: none;
+        border-bottom: 0;
         padding: 2em 1em;
         text-align: left;
         font-size: em(12px);
@@ -74,11 +78,11 @@
     z-index: 2;
 
     @include grid-media($media-md) {
-      position:absolute;
+      position: absolute;
       top: 100%;
       left: 0;
       width: 220px;
-    }  
+    }
 
     li {
       float: none;
@@ -91,13 +95,7 @@
 
       @include on-event {
         box-shadow: none;
-      }  
-    }
-  }
-
-  ul li {
-    &.is-open ul {
-      display: block;
+      }
     }
   }
 }

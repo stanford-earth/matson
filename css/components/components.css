@@ -770,7 +770,7 @@
         padding: 0; } }
     #navigation ul li:first-child > a,
     #block-matson-main-menu ul li:first-child > a {
-      border-top: none; }
+      border-top: 0; }
   #navigation li,
   #block-matson-main-menu li {
     display: block;
@@ -783,6 +783,9 @@
         list-style-type: none;
         display: inline-block;
         padding: 0 1em; } }
+    #navigation li.is-open ul,
+    #block-matson-main-menu li.is-open ul {
+      display: block; }
     #navigation li a,
     #block-matson-main-menu li a {
       border-top: 1px solid #fff;
@@ -799,12 +802,12 @@
         #block-matson-main-menu li a:hover,
         #block-matson-main-menu li a:active,
         #block-matson-main-menu li a:focus {
-          box-shadow: inset 0px -3px 0px 0px #f9b002; } }
+          box-shadow: inset 0 -3px 0 0 #f9b002; } }
       @media only screen and (min-width: 768px) {
         #navigation li a,
         #block-matson-main-menu li a {
           border-top: 0;
-          border-bottom: none;
+          border-bottom: 0;
           padding: 2em 1em;
           text-align: left;
           font-size: 0.6666666667em; } }
@@ -838,9 +841,6 @@
       #block-matson-main-menu ul ul a:active,
       #block-matson-main-menu ul ul a:focus {
         box-shadow: none; }
-  #navigation ul li.is-open ul,
-  #block-matson-main-menu ul li.is-open ul {
-    display: block; }
 
 .search-toggle__icon {
   position: absolute;
@@ -859,10 +859,10 @@
     outline: none;
     margin: 13px 0; }
   .search-toggle input[type=search] {
-    background: #6e6f72 url(/themes/stanford/matson/img/source/search-white.svg) no-repeat 9px center;
+    background: #6e6f72 url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px center;
     background-size: 17px 17px;
     box-sizing: border-box;
-    border: none;
+    border: 0;
     box-shadow: none;
     color: #fff;
     font-family: inherit;
@@ -874,19 +874,19 @@
     @media only screen and (min-width: 768px) {
       .search-toggle input[type=search] {
         background-color: transparent;
-        border: none;
+        border: 0;
         width: 0; } }
   .search-toggle input::-webkit-search-decoration,
   .search-toggle input::-webkit-search-cancel-button {
     display: none; }
-  .search-toggle input[type=search]:focus {
+  .search-toggle input[type=search]::focus {
     background-color: #6e6f72;
-    border: none; }
+    border: 0; }
     @media only screen and (min-width: 768px) {
-      .search-toggle input[type=search]:focus {
+      .search-toggle input[type=search]::focus {
         background-color: #6e6f72;
         width: 560px; } }
-  .search-toggle input:-moz-placeholder {
+  .search-toggle input::-moz-placeholder {
     color: #fff; }
   .search-toggle input::-webkit-input-placeholder {
     color: #fff; }
