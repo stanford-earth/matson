@@ -4,22 +4,18 @@
 @import "config/config";
 
 // Decanter config.
-@import "decanter/core/utilities/decanter-utilities.scss";
+@import "decanter/core/utilities/decanter-utilities";
 
 // Grab our mixins.
 @import "utilities/utilities";
 
 #footer__global-footer {
+
   $_brand-container: (
     sm-max: ( columns: 12, grid-media: $media-sm-max,  v-space: 30px, max-width: false, grid-collapse: false ),
     md: ( columns: 12, grid-media: $media-md,          v-space: 30px, max-width: false, grid-collapse: false ),
     xl: ( columns: 12, grid-media: $media-xl,          v-space: 30px, max-width: true,  grid-collapse: false ),
     print: ( columns: 12, grid-media: $media-print,    v-space: 30px, max-width: false, grid-collapse: false ),
-  );
-
-  $brand-grid--small: (
-    columns: 2,
-    gutter: 1%,
   );
 
   @include responsive-container($_brand-container);
@@ -34,7 +30,7 @@
 
     @include on-event {
       color: color(white);
-    }  
+    }
   }
 
   #global-footer__brand {
@@ -70,13 +66,14 @@
     @include grid-media($media-sm) {
       float: left;
       width: 49%;
-      margin-left: 0;
+      margin-left: 25%;
     }
 
     @include grid-media($media-md) {
       overflow: hidden;
       padding-top: em(5px);
       width: em(560px);
+      margin-left: 25%;
     }
 
     @include grid-media($media-lg) {
@@ -96,7 +93,7 @@
         @include grid-media($media-sm) {
           margin-right: .5em;
           text-align: left;
-        }  
+        }
 
         @include grid-media($media-md) {
           float: left;
@@ -104,9 +101,9 @@
 
         @include grid-media($media-lg) {
           margin-right: 1em;
-        }  
+        }
       }
-    }  
+    }
 
     #nav__global-links {
       margin-bottom: 0.125em;
@@ -119,7 +116,7 @@
     #nav__policy-links {
       @include grid-media($media-md) {
         margin-bottom: 0.275em;
-      }  
+      }
     }
   }
 
