@@ -136,8 +136,6 @@ address {
 }
 
 pre {
-  background: shade(color(border), 10%);
-  font-family: $font-family-monospace;
   @include font-size(13px);
   background: shade(color(border), 10%);
   font-family: $font-family-monospace;
@@ -187,19 +185,22 @@ mark {
   text-decoration: none;
 }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted color(border);
   cursor: help;
 }
 
-mark, ins, del {
+mark,
+ins,
+del {
   padding: 0 .25em .15em
 }
 
 del {
   color: color(text);
   background: color(light-red);
-  dext-decoration: line-through;
+  text-decoration: line-through;
   text-decoration-color: color(light-red);
 }
 

@@ -12,15 +12,15 @@
 #footer__global-footer {
 
   $_brand-container: (
-    sm-max: ( columns: 12, grid-media: $media-sm-max,  v-space: 30px, max-width: false, grid-collapse: false ),
-    md: ( columns: 12, grid-media: $media-md,          v-space: 30px, max-width: false, grid-collapse: false ),
-    xl: ( columns: 12, grid-media: $media-xl,          v-space: 30px, max-width: true,  grid-collapse: false ),
-    print: ( columns: 12, grid-media: $media-print,    v-space: 30px, max-width: false, grid-collapse: false ),
+    sm-max: (columns: 12, grid-media: $media-sm-max,  v-space: 30px, max-width: false, grid-collapse: false),
+    md: (columns: 12, grid-media: $media-md,          v-space: 30px, max-width: false, grid-collapse: false),
+    xl: (columns: 12, grid-media: $media-xl,          v-space: 30px, max-width: true,  grid-collapse: false),
+    print: (columns: 12, grid-media: $media-print,    v-space: 30px, max-width: false, grid-collapse: false),
   );
 
   @include responsive-container($_brand-container);
   background-color: color(brand);
-  box-shadow: inset 0px 4px 8px -2px rgba(0, 0, 0, .2);
+  box-shadow: inset 0 4px 8px -2px rgba(0, 0, 0, .2);
   color: color(light-red);
   min-height: em(118px);
   width: 100%;
