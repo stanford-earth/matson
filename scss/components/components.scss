@@ -19,19 +19,16 @@
 
 // Dependencies.
 @import 'decanter/core/utilities/decanter-utilities';
-@import "stanford_basic/scss/config/typography";
 
 // Parent components
 @import
-  "stanford_basic/scss/components/brand-bar/brand-bar",
   "stanford_basic/scss/components/brand-lockup/brand-lockup",
   "stanford_basic/scss/components/breadcrumb/breadcrumb",
-  "stanford_basic/scss/components/global-footer/global-footer",
+  "stanford_basic/scss/components/main-menu/main-menu",
+  "stanford_basic/scss/components/navigation/navigation",
   "stanford_basic/scss/components/pager/pager";
 
 // MY components.
 @import
-  "header/header",
-  "navbar/navbar",
-  "navigation/navigation",
-  "search-toggle/search-toggle";
+  "brand-bar/brand-bar",
+  "global-footer/global-footer";

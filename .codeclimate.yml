@@ -40,6 +40,10 @@ engines:
         enabled: false
       Shorthand:
         enabled: false
+      NameFormat:
+        enabled: false
+      MergeableSelector:
+        enabled: false
   # https://docs.codeclimate.com/docs/duplication
   duplication:
     enabled: true

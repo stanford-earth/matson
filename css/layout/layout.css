@@ -29,10 +29,13 @@
   color: #ffcdcd; }
 
 .color-bright-red {
-  color: #B1040E; }
+  color: #b1040e; }
 
 .color-dark-red {
   color: #8c1414; }
+
+.color-light-red {
+  color: #e3dfd5; }
 
 .color-black {
   color: #000; }
@@ -42,9 +45,6 @@
 
 .color-stone {
   color: #4d4f53; }
-
-.color-steel {
-  color: #6e6f72; }
 
 .color-ash {
   color: #9c9d9e; }

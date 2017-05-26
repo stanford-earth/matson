@@ -1,10 +1,16 @@
 @charset "UTF-8";
 
-/// @type length
-///
-/// @group settings
-$root-font-size: 10px;
-$base-font-size: 13px;
+/// Decanter global default settings
+$decanter-default-settings: (
+  root-font-size: 10px,
+  base-font-size: 13px,
+  modular-scale-ratio: 1.333,
+  columns: 12,
+  gutter: 20px,
+  max-container-width: 1500px,
+  breakpoint-helper: false,
+  breakpoint-helper-selector: #breakpoint-helper,
+);
 
 /// @name Bourbon Settings
 ///
