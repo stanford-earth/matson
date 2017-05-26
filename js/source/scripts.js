@@ -72,8 +72,13 @@
             $(".basic-main-menu li").unbind('click');    
             $(".basic-main-menu li a.parent").unbind('click').bind('click', function(e) {
               // must be attached to anchor element to prevent bubbling
+              event.stopPropagation();
               e.preventDefault();
               $(this).parent("li").toggleClass('is-open').siblings("li").removeClass('is-open');
+            });
+
+            $(document).click( function(){
+              $('.basic-main-menu li').removeClass('is-open');
             });
           }
         }
