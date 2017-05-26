@@ -12,6 +12,20 @@
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
  (function ($) {
 
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
 
   // To understand behaviors, see https://www.drupal.org/node/2269515
   Drupal.behaviors.basic = {
@@ -35,13 +49,40 @@
 
         $(".navbar__button").on('click',function(e) {
           e.preventDefault();
-          $(this).toggleClass("is-active");
-          $(this).next(".navbar__group").toggle();
-          $(".navbar").toggleClass("is-expanded");
-          $(".navbar").css({'min-height':($(".hero-banner").height()+'px')});
-          $(".hero-banner__header").toggle();
-          adjustMenu();
+          var $this = $(this)
+
+          if ($this.hasClass("is-active")) {
+            $this.trigger("navbar:close")
+          } else {
+            $this.trigger("navbar:open")
+          }
         });
+
+        $(document).on('navbar:open', function(e) {
+          var $navbar = $('.navbar');
+          var $navbarButton = $('.navbar__button');
+
+          $navbarButton.addClass("is-active");
+          $navbarButton.next(".navbar__group").show();
+          $navbar.css({'min-height':($(".hero-banner").height()+'px')});
+          $navbar.addClass("is-expanded");
+          $(".hero-banner__header").show();
+          adjustMenu();
+        })
+
+        $(document).on('navbar:close', function(e) {
+          var $navbar = $(".navbar")
+          var $navbarButton = $('.navbar__button');
+
+          $navbarButton.removeClass("is-active");
+          $navbar.css({'min-height': '65'+'px'});
+          $navbar.removeClass('is-expanded');
+          console.log(e)
+          if (!e.navbarExpanded) {
+            $navbarButton.next(".navbar__group").hide();
+          }
+          $(".hero-banner__header").hide();
+        })
 
         function addParents() {
           $(".basic-main-menu li a").each(function() {
@@ -52,9 +93,6 @@
         }
 
         function adjustMenu(ww, toggleWidth) {
-
-          console.log(ww, toggleWidth);
-
           if (ww < toggleWidth) {
             if (!$(".navbar__button").hasClass("is-active")) {
               $(".navbar__group").hide();
@@ -71,7 +109,6 @@
           } 
           else if (ww >= toggleWidth) {
             $(".navbar__group").show();
-            
             $(".basic-main-menu li").unbind('click');    
             $(".basic-main-menu li a.parent").unbind('click').bind('click', function(e) {
               // must be attached to anchor element to prevent bubbling
@@ -87,9 +124,14 @@
         }
       });
 
-      $(window).resize(function () {
+      $(window).resize(debounce(function () {
         // Execute code when the window is resized.
-      });
+        var viewportWidth = $(window).width();
+        if (viewportWidth > 768) {
+          $(document).trigger({ type: "navbar:close", navbarExpanded: true })
+        //   $(".navbar").removeClass("is-expanded");
+        }
+      }, 400));
 
       $(window).scroll(function () {
         // Execute code when the window scrolls.
