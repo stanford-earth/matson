@@ -77,7 +77,6 @@
           $navbarButton.removeClass("is-active");
           $navbar.css({'min-height': '65'+'px'});
           $navbar.removeClass('is-expanded');
-          console.log(e)
           if (!e.navbarExpanded) {
             $navbarButton.next(".navbar__group").hide();
           }
@@ -126,8 +125,8 @@
 
       $(window).resize(debounce(function () {
         // Execute code when the window is resized.
-        var viewportWidth = $(window).width();
-        if (viewportWidth > 768) {
+        var vw = $(window).width();
+        if (vw > 768) {
           $(document).trigger({ type: "navbar:close", navbarExpanded: true })
         //   $(".navbar").removeClass("is-expanded");
         }
