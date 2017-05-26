@@ -2,19 +2,15 @@
 
 /// Decanter global default settings
 $decanter-default-settings: (
-  // Configure global units
   root-font-size: 10px,
   base-font-size: 13px,
-  // Configure Bourbon Modular Scale
   modular-scale-ratio: 1.333,
-  // Configure Default Neat Grid
   columns: 12,
   gutter: 20px,
-  // Configure Decanter Functions and settings
   max-container-width: 1500px,
   breakpoint-helper: false,
   breakpoint-helper-selector: #breakpoint-helper,
-) !default;
+);
 
 /// @name Bourbon Settings
 ///

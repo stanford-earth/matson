@@ -42,7 +42,9 @@ engines:
         enabled: false
       NameFormat:
         enabled: false
-    # https://docs.codeclimate.com/docs/duplication
+      MergeableSelector:
+        enabled: false
+  # https://docs.codeclimate.com/docs/duplication
   duplication:
     enabled: true
     # exclude_paths:

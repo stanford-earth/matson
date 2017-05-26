@@ -185,6 +185,37 @@ mark {
   text-decoration: none;
 }
 
+abbr,
+acronym {
+  border-bottom: 1px dotted color(border);
+  cursor: help;
+}
+
+mark,
+ins,
+del {
+  padding: 0 .25em .15em;
+}
+
+del {
+  color: color(text);
+  background: color(light-red);
+  text-decoration: line-through;
+  text-decoration-color: color(light-red);
+}
+
+ins {
+  color: color(text);
+  background: color(light-green);
+  text-decoration: none;
+}
+
+mark {
+  color: color(text);
+  background: color(light-yellow);
+  text-decoration: none;
+}
+
 small,
 .small-text {
   @include font-size(12px);

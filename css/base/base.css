@@ -36,10 +36,13 @@
   color: #ffcdcd; }
 
 .color-bright-red {
-  color: #B1040E; }
+  color: #b1040e; }
 
 .color-dark-red {
   color: #8c1414; }
+
+.color-light-red {
+  color: #e3dfd5; }
 
 .color-black {
   color: #000; }
@@ -205,7 +208,7 @@ mark, ins, del {
 del {
   /*!*/
   color: #222328;
-  background: #ffcdcd;
+  background: #e3dfd5;
   text-decoration: line-through;
   text-decoration-color: #ff4136; }
 
@@ -718,9 +721,35 @@ del {
 
 del {
   color: #222328;
-  background: #ffcdcd;
+  background: #e3dfd5;
   text-decoration: line-through;
-  text-decoration-color: #ffcdcd; }
+  text-decoration-color: #e3dfd5; }
+
+ins {
+  color: #222328;
+  background: #90ff90;
+  text-decoration: none; }
+
+mark {
+  color: #222328;
+  background: #fafa55;
+  text-decoration: none; }
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #ccc;
+  cursor: help; }
+
+mark,
+ins,
+del {
+  padding: 0 .25em .15em; }
+
+del {
+  color: #222328;
+  background: #e3dfd5;
+  text-decoration: line-through;
+  text-decoration-color: #e3dfd5; }
 
 ins {
   color: #222328;
