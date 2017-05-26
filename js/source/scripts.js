@@ -38,6 +38,8 @@
           $(this).toggleClass("is-active");
           $(this).next(".navbar__group").toggle();
           $(".navbar").toggleClass("is-expanded");
+          $(".navbar").css({'min-height':($(".hero-banner").height()+'px')});
+          $(".hero-banner__header").toggle();
           adjustMenu();
         });
 
@@ -62,8 +64,9 @@
             $(".basic-main-menu li").unbind('click');
             $(".basic-main-menu li a.parent").unbind('click').bind('click', function(e) {
               // must be attached to anchor element to prevent bubbling
+              event.stopPropagation();
               e.preventDefault();
-              $(this).parent("li").toggleClass("is-open");
+              $(this).parent("li").toggleClass('is-open').siblings("li").removeClass('is-open');
             });
           } 
           else if (ww >= toggleWidth) {

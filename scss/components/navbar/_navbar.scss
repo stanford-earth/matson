@@ -1,16 +1,7 @@
-$nav-container: (
-  xs: ( columns: 12, grid-media: $media-xs-only,  v-space: 0, max-width: false, grid-collapse: false ),
-  sm: ( columns: 12, grid-media: $media-sm-only,  v-space: 0, max-width: false, grid-collapse: false ),
-  md: ( columns: 12, grid-media: $media-md-only,  v-space: 0, max-width: false, grid-collapse: false ),
-  lg: ( columns: 12, grid-media: $media-lg-only,  v-space: 0, max-width: false, grid-collapse: false ),
-  xl: ( columns: 12, grid-media: $media-xl,       v-space: 0, max-width: true,  grid-collapse: false ),
-  print: ( columns: 12, grid-media: $media-print, v-space: 0, max-width: false, grid-collapse: false ),
-) !default;
-
 $nav-bar-height: em(65px);
 
 .navbar {
-  background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.5); // tmp background color
   position: absolute;
   top: 0;
   width: 100%;
@@ -26,11 +17,22 @@ $nav-bar-height: em(65px);
 }
 
 .navbar__container {
+  $nav-container: (
+    xs: ( columns: 12, grid-media: $media-xs-only,  v-space: 0, max-width: false, grid-collapse: false ),
+    sm: ( columns: 12, grid-media: $media-sm-only,  v-space: 0, max-width: false, grid-collapse: false ),
+    md: ( columns: 12, grid-media: $media-md-only,  v-space: 0, max-width: false, grid-collapse: false ),
+    lg: ( columns: 12, grid-media: $media-lg-only,  v-space: 0, max-width: false, grid-collapse: false ),
+    xl: ( columns: 12, grid-media: $media-xl,       v-space: 0, max-width: true,  grid-collapse: false ),
+    print: ( columns: 12, grid-media: $media-print, v-space: 0, max-width: false, grid-collapse: false ),
+  ) !default;
+
   @include responsive-container($nav-container);
 }
 
 .navbar__inner {
-  position: relative;
+  @include grid-media($media-md) {
+    position: relative;
+  }
 }
 
 .navbar__group {
@@ -94,8 +96,8 @@ $nav-bar-height: em(65px);
   background: rgba(0,0,0,.5);
   position: absolute;
   bottom: 0;
-  left: -20px;
-  right: -20px;
+  left: 0;
+  right: 0;
   padding-left: 20px;
   padding-right: 20px;
 

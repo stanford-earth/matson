@@ -468,8 +468,9 @@
       content: "";
       display: block; } }
 
-.navbar__inner {
-  position: relative; }
+@media only screen and (min-width: 768px) {
+  .navbar__inner {
+    position: relative; } }
 
 .navbar__group {
   display: block;
@@ -514,8 +515,8 @@
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 0;
-  left: -20px;
-  right: -20px;
+  left: 0;
+  right: 0;
   padding-left: 20px;
   padding-right: 20px; }
   @media only screen and (min-width: 768px) {
@@ -564,6 +565,10 @@
     #navigation li.is-open ul,
     #block-matson-main-menu li.is-open ul {
       display: block; }
+    #navigation li.is-open,
+    #block-matson-main-menu li.is-open {
+      background: transparent url("/themes/stanford/matson/img/source/carrot-white.svg") no-repeat right center;
+      background-size: 8px 8px; }
     #navigation li a,
     #block-matson-main-menu li a {
       border-top: 1px solid #fff;
