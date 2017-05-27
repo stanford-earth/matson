@@ -1,5 +1,5 @@
-.navbar {
-  &.js-is-expanded {
+.js-nav-expandable {
+  &.is-expanded {
     height: auto;
     background: rgba(0, 0, 0, .5);
 
@@ -10,8 +10,8 @@
   }
 }
 
-.navbar__button {
-  &.js-is-active {
+.js-nav-mobile-closable {
+  &.is-active {
     .i-svg--menu {
       display: none;
     }

@@ -518,35 +518,35 @@
       top: 0;
       right: 0; } }
 
-#block-matson-main-menu {
+.navigation {
   margin-bottom: 0; }
-  #block-matson-main-menu .menu::after {
+  .navigation .menu::after {
     clear: both;
     content: "";
     display: block; }
-  #block-matson-main-menu ul {
+  .navigation ul {
     width: 200px;
     margin: 0 auto;
     padding: 40px 0; }
     @media only screen and (min-width: 768px) {
-      #block-matson-main-menu ul {
+      .navigation ul {
         width: auto;
         margin-left: 0;
         margin-bottom: 0;
         padding: 0; } }
-    #block-matson-main-menu ul li:first-child > a {
+    .navigation ul li:first-child > a {
       border-top: 0; }
-  #block-matson-main-menu li {
+  .navigation li {
     display: block;
     margin-bottom: 0;
     position: relative; }
     @media only screen and (min-width: 768px) {
-      #block-matson-main-menu li {
+      .navigation li {
         float: left;
         list-style-type: none;
         display: inline-block;
         padding: 0 1em; } }
-    #block-matson-main-menu li a {
+    .navigation li a {
       border-top: 1px solid rgba(255, 255, 255, 0.5);
       color: #fff;
       display: block;
@@ -557,17 +557,17 @@
       text-transform: uppercase;
       text-decoration: none; }
       @media only screen and (min-width: 768px) {
-        #block-matson-main-menu li a:hover, #block-matson-main-menu li a:active, #block-matson-main-menu li a:focus {
+        .navigation li a:hover, .navigation li a:active, .navigation li a:focus {
           box-shadow: inset 0 -3px 0 0 #f9b002; } }
       @media only screen and (min-width: 768px) {
-        #block-matson-main-menu li a {
+        .navigation li a {
           border-top: 0;
           border-bottom: 0;
           letter-spacing: 0.0692307692em;
           padding: 2em 1em;
           text-align: left;
           font-size: 0.9230769231em; } }
-  #block-matson-main-menu ul ul {
+  .navigation ul ul {
     display: none;
     transition: all .5s ease-out;
     background: rgba(0, 0, 0, 0.25);
@@ -577,18 +577,18 @@
     width: 100%;
     z-index: 2; }
     @media only screen and (min-width: 768px) {
-      #block-matson-main-menu ul ul {
+      .navigation ul ul {
         position: absolute;
         top: 100%;
         left: 0;
         width: 220px; } }
-    #block-matson-main-menu ul ul li {
+    .navigation ul ul li {
       float: none;
       display: block; }
-    #block-matson-main-menu ul ul a {
+    .navigation ul ul a {
       border-top: 0;
       padding: 1em 1em; }
-      #block-matson-main-menu ul ul a:hover, #block-matson-main-menu ul ul a:active, #block-matson-main-menu ul ul a:focus {
+      .navigation ul ul a:hover, .navigation ul ul a:active, .navigation ul ul a:focus {
         box-shadow: none; }
 
 .color-brand {

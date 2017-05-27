@@ -64,24 +64,24 @@
 .color-emphasis {
   color: #f9b002; }
 
-.navbar.js-is-expanded {
+.js-nav-expandable.is-expanded {
   height: auto;
   background: rgba(0, 0, 0, 0.5); }
   @media only screen and (min-width: 768px) {
-    .navbar.js-is-expanded {
+    .js-nav-expandable.is-expanded {
       background: transparent;
       padding-top: 0; } }
 
-.navbar__button.js-is-active .i-svg--menu {
+.js-nav-mobile-closable.is-active .i-svg--menu {
   display: none; }
 
-.navbar__button.js-is-active .i-svg--close {
+.js-nav-mobile-closable.is-active .i-svg--close {
   display: inline-block; }
 
-#block-matson-main-menu li.js-is-open ul {
+.js-nav-item-expandable li.is-open ul {
   display: block; }
 
-#block-matson-main-menu li.js-is-open {
+.js-nav-item-expandable li.is-open {
   background: transparent url("/themes/stanford/matson/img/source/carrot-white.svg") no-repeat right center;
   background-size: 8px 8px; }
 

@@ -1,10 +1,10 @@
-#block-matson-main-menu {
+.js-nav-item-expandable {
   li {
-    &.js-is-open ul {
+    &.is-open ul {
       display: block;
     }
 
-    &.js-is-open {
+    &.is-open {
       background: transparent url('/themes/stanford/matson/img/source/carrot-white.svg') no-repeat right center;
       background-size: 8px 8px;
     }
