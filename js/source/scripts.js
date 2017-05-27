@@ -10,6 +10,8 @@
 // wrapping it with an "anonymous closure". See:
 // - https://drupal.org/node/1446420
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
+ 
+  // Debounce https://davidwalsh.name/javascript-debounce-function
  (function ($) {
 
   function debounce(func, wait, immediate) {
@@ -51,30 +53,30 @@
           e.preventDefault();
           var $this = $(this)
 
-          if ($this.hasClass("is-active")) {
-            $this.trigger("navbar:close")
+          if ($this.hasClass('is-active')) {
+            $this.trigger('navbar:close')
           } else {
-            $this.trigger("navbar:open")
+            $this.trigger('navbar:open')
           }
         });
 
         $(document).on('navbar:open', function(e) {
-          var $navbar = $('.navbar');
-          var $navbarButton = $('.navbar__button');
+          var $navbar = $(".navbar");
+          var $navbarButton = $(".navbar__button");
 
-          $navbarButton.addClass("is-active");
+          $navbarButton.addClass('is-active');
           $navbarButton.next(".navbar__group").show();
           $navbar.css({'min-height':($(".hero-banner").height()+'px')});
-          $navbar.addClass("is-expanded");
+          $navbar.addClass('is-expanded');
           $(".hero-banner__header").show();
           adjustMenu();
         })
 
         $(document).on('navbar:close', function(e) {
           var $navbar = $(".navbar")
-          var $navbarButton = $('.navbar__button');
+          var $navbarButton = $(".navbar__button");
 
-          $navbarButton.removeClass("is-active");
+          $navbarButton.removeClass('is-active');
           $navbar.css({'min-height': '65'+'px'});
           $navbar.removeClass('is-expanded');
           if (!e.navbarExpanded) {
@@ -86,38 +88,33 @@
         function addParents() {
           $(".basic-main-menu li a").each(function() {
             if ($(this).next().length > 0) {
-              $(this).addClass("parent");
+              $(this).addClass('parent');
             }
           });
         }
 
         function adjustMenu(ww, toggleWidth) {
+          $(".basic-main-menu li").unbind('click');
+          $(".basic-main-menu li a.parent").unbind('click').bind('click', function(e) {
+            // must be attached to anchor element to prevent bubbling
+            event.stopPropagation();
+            e.preventDefault();
+            $(this).parent("li").toggleClass('is-open').siblings("li").removeClass('is-open');
+          });
+
           if (ww < toggleWidth) {
-            if (!$(".navbar__button").hasClass("is-active")) {
+            if (!$(".navbar__button").hasClass('is-active')) {
               $(".navbar__group").hide();
             } else {
               $(".navbar__group").show();
             }
-            $(".basic-main-menu li").unbind('click');
-            $(".basic-main-menu li a.parent").unbind('click').bind('click', function(e) {
-              // must be attached to anchor element to prevent bubbling
-              event.stopPropagation();
-              e.preventDefault();
-              $(this).parent("li").toggleClass('is-open').siblings("li").removeClass('is-open');
-            });
           } 
           else if (ww >= toggleWidth) {
             $(".navbar__group").show();
             $(".basic-main-menu li").unbind('click');    
-            $(".basic-main-menu li a.parent").unbind('click').bind('click', function(e) {
-              // must be attached to anchor element to prevent bubbling
-              event.stopPropagation();
-              e.preventDefault();
-              $(this).parent("li").toggleClass('is-open').siblings("li").removeClass('is-open');
-            });
-
+            
             $(document).click( function(){
-              $('.basic-main-menu li').removeClass('is-open');
+              $(".basic-main-menu li").removeClass('is-open');
             });
           }
         }
@@ -127,15 +124,13 @@
         // Execute code when the window is resized.
         var vw = $(window).width();
         if (vw > 768) {
-          $(document).trigger({ type: "navbar:close", navbarExpanded: true })
-        //   $(".navbar").removeClass("is-expanded");
+          $(document).trigger({ type: 'navbar:close', navbarExpanded: true })
         }
       }, 400));
 
       $(window).scroll(function () {
         // Execute code when the window scrolls.
       });
-
     }
   };
 
