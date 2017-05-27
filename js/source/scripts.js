@@ -68,7 +68,7 @@
           $navbarButton.next(".navbar__group").show();
           $navbar.css({'min-height':($(".hero-banner").height()+'px')});
           $navbar.addClass('is-expanded');
-          $(".hero-banner__header").show();
+          $(".hero-banner__header").hide();
           adjustMenu();
         })
 
@@ -82,7 +82,7 @@
           if (!e.navbarExpanded) {
             $navbarButton.next(".navbar__group").hide();
           }
-          $(".hero-banner__header").hide();
+          $(".hero-banner__header").show();
         })
 
         function addParents() {
