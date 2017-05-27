@@ -53,7 +53,7 @@
           e.preventDefault();
           var $this = $(this)
 
-          if ($this.hasClass('is-active')) {
+          if ($this.hasClass('js-is-active')) {
             $this.trigger('navbar:close')
           } else {
             $this.trigger('navbar:open')
@@ -64,7 +64,7 @@
           var $navbar = $(".navbar");
           var $navbarButton = $(".navbar__button");
 
-          $navbarButton.addClass('is-active');
+          $navbarButton.addClass('js-is-active');
           $navbarButton.next(".navbar__group").show();
           $navbar.css({'min-height':($(".hero-banner").height()+'px')});
           $navbar.addClass('is-expanded');
@@ -76,7 +76,7 @@
           var $navbar = $(".navbar")
           var $navbarButton = $(".navbar__button");
 
-          $navbarButton.removeClass('is-active');
+          $navbarButton.removeClass('js-is-active');
           $navbar.css({'min-height': '65'+'px'});
           $navbar.removeClass('is-expanded');
           if (!e.navbarExpanded) {
@@ -99,11 +99,11 @@
             // must be attached to anchor element to prevent bubbling
             event.stopPropagation();
             e.preventDefault();
-            $(this).parent("li").toggleClass('is-open').siblings("li").removeClass('is-open');
+            $(this).parent("li").toggleClass('js-is-open').siblings("li").removeClass('is-open');
           });
 
           if (ww < toggleWidth) {
-            if (!$(".navbar__button").hasClass('is-active')) {
+            if (!$(".navbar__button").hasClass('js-is-active')) {
               $(".navbar__group").hide();
             } else {
               $(".navbar__group").show();
@@ -114,7 +114,7 @@
             $(".basic-main-menu li").unbind('click');    
             
             $(document).click( function(){
-              $(".basic-main-menu li").removeClass('is-open');
+              $(".basic-main-menu li").removeClass('js-is-open');
             });
           }
         }

@@ -6,14 +6,6 @@ $nav-bar-height: em(65px);
   top: 0;
   width: 100%;
   z-index: 3;
-
-  &.is-expanded {
-    height: auto;
-
-    @include grid-media($media-md) {
-      padding-top: 0;
-    }
-  }
 }
 
 .navbar__container {
@@ -79,16 +71,6 @@ $nav-bar-height: em(65px);
 
   .i-svg--close {
     display: none;
-  }
-
-  &.is-active {
-    .i-svg--menu {
-      display: none;
-    }
-
-    .i-svg--close {
-      display: inline-block;
-    }
   }
 }
 

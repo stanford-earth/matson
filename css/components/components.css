@@ -414,11 +414,6 @@
   top: 0;
   width: 100%;
   z-index: 3; }
-  .navbar.is-expanded {
-    height: auto; }
-    @media only screen and (min-width: 768px) {
-      .navbar.is-expanded {
-        padding-top: 0; } }
 
 @media only screen and (max-width: 575px) {
   .navbar__container {
@@ -506,10 +501,6 @@
       fill: #fff; }
   .navbar__button .i-svg--close {
     display: none; }
-  .navbar__button.is-active .i-svg--menu {
-    display: none; }
-  .navbar__button.is-active .i-svg--close {
-    display: inline-block; }
 
 .navbar__search {
   background: rgba(0, 0, 0, 0.5);
@@ -527,102 +518,77 @@
       top: 0;
       right: 0; } }
 
-#navigation,
 #block-matson-main-menu {
   margin-bottom: 0; }
-  #navigation .menu::after,
   #block-matson-main-menu .menu::after {
     clear: both;
     content: "";
     display: block; }
-  #navigation ul,
   #block-matson-main-menu ul {
     width: 200px;
     margin: 0 auto;
     padding: 40px 0; }
     @media only screen and (min-width: 768px) {
-      #navigation ul,
       #block-matson-main-menu ul {
         width: auto;
         margin-left: 0;
         margin-bottom: 0;
         padding: 0; } }
-    #navigation ul li:first-child > a,
     #block-matson-main-menu ul li:first-child > a {
       border-top: 0; }
-  #navigation li,
   #block-matson-main-menu li {
     display: block;
     margin-bottom: 0;
     position: relative; }
     @media only screen and (min-width: 768px) {
-      #navigation li,
       #block-matson-main-menu li {
         float: left;
         list-style-type: none;
         display: inline-block;
         padding: 0 1em; } }
-    #navigation li.is-open ul,
-    #block-matson-main-menu li.is-open ul {
-      display: block; }
-    #navigation li.is-open,
-    #block-matson-main-menu li.is-open {
-      background: transparent url("/themes/stanford/matson/img/source/carrot-white.svg") no-repeat right center;
-      background-size: 8px 8px; }
-    #navigation li a,
     #block-matson-main-menu li a {
-      border-top: 1px solid #fff;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
       color: #fff;
       display: block;
       font-size: 1.0769230769em;
-      letter-spacing: 0.0692307692em;
+      letter-spacing: 0.1923076923em;
       padding: 1em 0;
       text-align: center;
       text-transform: uppercase;
       text-decoration: none; }
       @media only screen and (min-width: 768px) {
-        #navigation li a:hover, #navigation li a:active, #navigation li a:focus,
-        #block-matson-main-menu li a:hover,
-        #block-matson-main-menu li a:active,
-        #block-matson-main-menu li a:focus {
+        #block-matson-main-menu li a:hover, #block-matson-main-menu li a:active, #block-matson-main-menu li a:focus {
           box-shadow: inset 0 -3px 0 0 #f9b002; } }
       @media only screen and (min-width: 768px) {
-        #navigation li a,
         #block-matson-main-menu li a {
           border-top: 0;
           border-bottom: 0;
+          letter-spacing: 0.0692307692em;
           padding: 2em 1em;
           text-align: left;
           font-size: 0.9230769231em; } }
-  #navigation ul ul,
   #block-matson-main-menu ul ul {
     display: none;
     transition: all .5s ease-out;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.25);
     padding-top: 1em;
     padding-bottom: 1em;
     margin-top: 0;
     width: 100%;
     z-index: 2; }
     @media only screen and (min-width: 768px) {
-      #navigation ul ul,
       #block-matson-main-menu ul ul {
         position: absolute;
         top: 100%;
         left: 0;
         width: 220px; } }
-    #navigation ul ul li,
     #block-matson-main-menu ul ul li {
       float: none;
       display: block; }
-    #navigation ul ul a,
     #block-matson-main-menu ul ul a {
       border-top: 0;
       padding: 1em 1em; }
-      #navigation ul ul a:hover, #navigation ul ul a:active, #navigation ul ul a:focus,
-      #block-matson-main-menu ul ul a:hover,
-      #block-matson-main-menu ul ul a:active,
-      #block-matson-main-menu ul ul a:focus {
+      #block-matson-main-menu ul ul a:hover, #block-matson-main-menu ul ul a:active, #block-matson-main-menu ul ul a:focus {
         box-shadow: none; }
 
 .color-brand {
