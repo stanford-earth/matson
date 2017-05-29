@@ -106,6 +106,8 @@ matson:
     js/build/scripts.js: {}
   dependencies:
     - core/jquery
+    - core/drupal
+    - core/drupal.debounce
 
 tabs:
   version: VERSION
