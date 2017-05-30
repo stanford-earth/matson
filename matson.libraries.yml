@@ -102,7 +102,6 @@ matson:
       css/theme/print.css: { media: print }
   js:
     js/vendor/modernizr.js: {}
-    js/vendor/dropdown.js: {}
     js/build/scripts.js: {}
   dependencies:
     - core/jquery

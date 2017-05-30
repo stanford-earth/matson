@@ -33,8 +33,7 @@ function matson_preprocess_page(&$vars) {
  * To print a custom variable (eg. foo) in twig: {{ foo }}
  */
 function matson_preprocess_block(&$vars) {
-  $vars['foo'] = 'bar';
-  return $vars;
+
 }
 
 /**
