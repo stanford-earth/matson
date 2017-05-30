@@ -1042,6 +1042,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  min-width: 5em;
   padding-left: 20px;
   padding-right: 20px; }
   @media only screen and (min-width: 768px) {
@@ -1146,7 +1147,7 @@ body {
     outline: none;
     margin: 13px 0; }
   .search-toggle input[type=search] {
-    background: #6e6f72 url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px center;
+    background: #6e6f72 url("/themes/stanford/matson/img/source/search-white.svg") no-repeat center center;
     background-size: 17px 17px;
     box-sizing: border-box;
     border: 0;
@@ -1171,6 +1172,7 @@ body {
     border: 0; }
     @media only screen and (min-width: 768px) {
       .search-toggle input[type=search]:focus {
+        background-position: 9px center;
         background-color: #6e6f72;
         width: 620px; } }
   .search-toggle input::-moz-placeholder {
