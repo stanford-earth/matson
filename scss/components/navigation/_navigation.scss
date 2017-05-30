@@ -1,3 +1,5 @@
+$nav-active-item-shadow: inset 0 -3px 0 0 rgba(249, 176, 2, 1);
+
 // Navigation styles
 .navigation {
   margin-bottom: 0;
@@ -32,11 +34,15 @@
       float: left;
       list-style-type: none;
       display: inline-block;
-      padding: 0 1em;
+      padding: 0 em(15px);
+
+      &.menu-item--active-trail .parent {
+        box-shadow: $nav-active-item-shadow;
+      }
     }
 
     a {
-      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-top: $nav-active-item-shadow;
       color: color(white);
       display: block;
       font-size: em(14px);
@@ -55,7 +61,7 @@
       @include grid-media($media-md) {
         border-top: 0;
         border-bottom: 0;
-        letter-spacing: em(.9px);
+        letter-spacing: em(1.9px);
         padding: 2em 1em;
         text-align: left;
         font-size: em(12px);
