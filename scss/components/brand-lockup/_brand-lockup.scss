@@ -63,7 +63,7 @@ $logo-width: 110px;
 
     @include on-event {
       text-decoration: none;
-    }  
+    }
   }
 }
 
@@ -80,7 +80,7 @@ $logo-width: 110px;
   @include grid-media($header-md) {
     margin: 0 10px;
   }
-}  
+}
 
 .block--lockup__site-name-and-slogan {
   @extend %block--lockup__site-name-and-slogan-text;
