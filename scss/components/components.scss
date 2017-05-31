@@ -24,12 +24,14 @@
 @import
   "stanford_basic/scss/components/brand-lockup/brand-lockup",
   "stanford_basic/scss/components/breadcrumb/breadcrumb",
-  "stanford_basic/scss/components/main-menu/main-menu",
-  "stanford_basic/scss/components/navigation/navigation",
   "stanford_basic/scss/components/pager/pager";
 
 // MY components.
 @import
   "brand-bar/brand-bar",
+  "global-footer/global-footer",
+  "header/header",
   "hero-banner/hero-banner",
-  "global-footer/global-footer";
+  "navbar/navbar",
+  "navigation/navigation",
+  "search-toggle/search-toggle";

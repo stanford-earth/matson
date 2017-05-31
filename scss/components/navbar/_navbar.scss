@@ -1,0 +1,96 @@
+$nav-bar-height: em(65px);
+
+.navbar {
+  background: rgba(0, 0, 0, .5); // tmp background color
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.navbar__container {
+  $nav-container: (
+    xs: (columns: 12, grid-media: $media-xs-only,  v-space: 0, max-width: false, grid-collapse: false),
+    sm: (columns: 12, grid-media: $media-sm-only,  v-space: 0, max-width: false, grid-collapse: false),
+    md: (columns: 12, grid-media: $media-md-only,  v-space: 0, max-width: false, grid-collapse: false),
+    lg: (columns: 12, grid-media: $media-lg-only,  v-space: 0, max-width: false, grid-collapse: false),
+    xl: (columns: 12, grid-media: $media-xl,       v-space: 0, max-width: true,  grid-collapse: false),
+    print: (columns: 12, grid-media: $media-print, v-space: 0, max-width: false, grid-collapse: false),
+  ) !default;
+
+  @include responsive-container($nav-container);
+}
+
+.navbar__inner {
+  @include grid-media($media-md) {
+    position: relative;
+  }
+}
+
+.navbar__group {
+  display: block;
+  padding-bottom: $nav-bar-height;
+  padding-top: $nav-bar-height;
+
+  @include grid-media($media-md) {
+    display: block;
+    float: right;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-right: $nav-bar-height;
+  }
+}
+
+.navbar__button {
+  position: absolute;
+  background: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  height: $nav-bar-height;
+  width: $nav-bar-height;
+  right: 0;
+  z-index: 4;
+
+  @include on-event {
+    background: transparent;
+  }
+
+  @include grid-media($media-md) {
+    display: none;
+  }
+
+  .i-svg {
+    height: em(22px);
+    width: em(22px);
+    margin-bottom: -2px;
+
+    use {
+      fill: color(white);
+    }
+  }
+
+  .i-svg--close {
+    display: none;
+  }
+}
+
+.navbar__search {
+  background: rgba(0, 0, 0, .5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-width: $nav-bar-height;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include grid-media($media-md) {
+    background: transparent;
+    bottom: auto;
+    left: auto;
+    top: 0;
+    right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

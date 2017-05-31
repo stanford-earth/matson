@@ -102,6 +102,11 @@ matson:
       css/theme/print.css: { media: print }
   js:
     js/vendor/modernizr.js: {}
+    js/build/scripts.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupal.debounce
 
 tabs:
   version: VERSION

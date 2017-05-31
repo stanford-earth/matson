@@ -12,5 +12,13 @@
 // more information on naming conventions.
 //
 
-// Parent states config.
-@import "stanford_basic/scss/states/states";
+// This is my and the parent theme's config.
+@import "config/config";
+
+// Dependencies.
+@import 'decanter/core/utilities/decanter-utilities';
+
+// MY states.
+@import
+  "navbar/navbar",
+  "navigation/navigation";

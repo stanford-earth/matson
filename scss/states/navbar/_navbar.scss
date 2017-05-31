@@ -1,0 +1,23 @@
+.js-nav-expandable {
+  &.is-expanded {
+    height: auto;
+    background: rgba(0, 0, 0, .5);
+
+    @include grid-media($media-md) {
+      background: transparent;
+      padding-top: 0;
+    }
+  }
+}
+
+.js-nav-mobile-closable {
+  &.is-active {
+    .i-svg--menu {
+      display: none;
+    }
+
+    .i-svg--close {
+      display: inline-block;
+    }
+  }
+}

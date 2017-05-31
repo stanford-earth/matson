@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+// -----------------------------------------------------------------------------
+// Utility for creating color classes
+// -----------------------------------------------------------------------------
+
+.color {
+  @each $color-name, $color-value in $palette-matson {
+    &-#{"" + $color-name} {
+      color: $color-value;
+    }
+  }
+}

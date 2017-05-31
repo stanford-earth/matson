@@ -21,6 +21,7 @@ $palette-matson: (
     black:                        #000,
     charcoal:                     #222328,
     stone:                        #4d4f53,
+    steel:                        #6e6f72,
     ash:                          #9c9d9e,
     fog:                          #dad7cb,
     mist:                         #FEFEFE,
@@ -39,12 +40,3 @@ $emphasis-color: #f9b002;
 $status-color: #8dbe51;
 $warning-color: #ddc44f;
 $error-color: #cd4533;
-
-// Utility for creating color classes
-.color {
-  @each $color-name, $color-value in $palette-matson {
-    &-#{"" + $color-name} {
-      color: $color-value;
-    }
-  }
-}
