@@ -1,7 +1,11 @@
 $nav-bar-height: em(65px);
 
+$nav-bar-grid-md: (
+  columns: 12,
+  media: 850px,
+);
+
 .navbar {
-  background: rgba(0, 0, 0, .5); // tmp background color
   position: absolute;
   top: 0;
   width: 100%;
@@ -22,7 +26,7 @@ $nav-bar-height: em(65px);
 }
 
 .navbar__inner {
-  @include grid-media($media-md) {
+  @include grid-media($nav-bar-grid-md) {
     position: relative;
   }
 }
@@ -30,9 +34,9 @@ $nav-bar-height: em(65px);
 .navbar__group {
   display: block;
   padding-bottom: $nav-bar-height;
-  padding-top: $nav-bar-height;
+  padding-top: em(110px);
 
-  @include grid-media($media-md) {
+  @include grid-media($nav-bar-grid-md) {
     display: block;
     float: right;
     padding-bottom: 0;
@@ -55,7 +59,7 @@ $nav-bar-height: em(65px);
     background: transparent;
   }
 
-  @include grid-media($media-md) {
+  @include grid-media($nav-bar-grid-md) {
     display: none;
   }
 
@@ -84,7 +88,7 @@ $nav-bar-height: em(65px);
   padding-left: 20px;
   padding-right: 20px;
 
-  @include grid-media($media-md) {
+  @include grid-media($nav-bar-grid-md) {
     background: transparent;
     bottom: auto;
     left: auto;

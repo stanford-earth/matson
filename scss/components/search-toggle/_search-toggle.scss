@@ -1,5 +1,10 @@
 $search-input-bg: #6e6f72;
 
+$nav-bar-grid-md: (
+  columns: 12,
+  media: 850px,
+);
+
 .search-toggle__icon {
   position: absolute;
   left: 12px;
@@ -25,7 +30,7 @@ $search-input-bg: #6e6f72;
   }
 
   input[type=search] {
-    background: $search-input-bg url('/themes/stanford/matson/img/source/search-white.svg') no-repeat center center;
+    background: $search-input-bg url('/themes/stanford/matson/img/source/search-white.svg') no-repeat 9px center;
     background-size: 17px 17px;
     box-sizing: border-box;
     border: 0;
@@ -38,8 +43,9 @@ $search-input-bg: #6e6f72;
     -moz-transition: all .5s;
     transition: all .5s;
 
-    @include grid-media($media-md) {
+    @include grid-media($nav-bar-grid-md) {
       background-color: transparent;
+      background-position: center center;
       border: 0;
       width: 0;
     }
@@ -54,7 +60,7 @@ $search-input-bg: #6e6f72;
     background-color: $search-input-bg;
     border: 0;
 
-    @include grid-media($media-md) {
+    @include grid-media($nav-bar-grid-md) {
       background-position: 9px center;
       background-color: $search-input-bg;
       width: 620px;

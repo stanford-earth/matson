@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities.scss";
+
+.block--lockup {
+  position: relative;
+  margin: em(14px) auto 0;
+  width: em(110px);
+  z-index: 4;
+
+  @include grid-media($media-md) {
+    @include responsive-container($default-container);
+    display: table;
+    margin: 0 0;
+    width: auto;
+  }  
+
+  // Grid collapse.
+  .block-grid-collapse {
+    @include grid-collapse;
+  }
+}
+
+.block--lockup__site-logo-wrapper {
+
+  .block--lockup__site-logo {
+
+    img {
+      @include grid-media($media-md) {
+        width: 110px;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+.block--lockup__site-name-and-slogan {
+  display: none;
+}
