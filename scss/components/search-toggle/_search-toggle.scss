@@ -25,7 +25,7 @@ $search-input-bg: #6e6f72;
   }
 
   input[type=search] {
-    background: $search-input-bg url('/themes/stanford/matson/img/source/search-white.svg') no-repeat center center;
+    background: $search-input-bg url('/themes/stanford/matson/img/source/search-white.svg') no-repeat 9px center;
     background-size: 17px 17px;
     box-sizing: border-box;
     border: 0;
@@ -52,6 +52,7 @@ $search-input-bg: #6e6f72;
 
   input[type=search]:focus {
     background-color: $search-input-bg;
+    background-position: center center;
     border: 0;
 
     @include grid-media($media-md) {
