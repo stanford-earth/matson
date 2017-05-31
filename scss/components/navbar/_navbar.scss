@@ -1,10 +1,5 @@
 $nav-bar-height: em(65px);
 
-$nav-bar-grid-md: (
-  columns: 12,
-  media: 850px,
-);
-
 .navbar {
   position: absolute;
   top: 0;
@@ -26,7 +21,7 @@ $nav-bar-grid-md: (
 }
 
 .navbar__inner {
-  @include grid-media($nav-bar-grid-md) {
+  @include grid-media($header-md) {
     position: relative;
   }
 }
@@ -36,7 +31,7 @@ $nav-bar-grid-md: (
   padding-bottom: $nav-bar-height;
   padding-top: em(110px);
 
-  @include grid-media($nav-bar-grid-md) {
+  @include grid-media($header-md) {
     display: block;
     float: right;
     padding-bottom: 0;
@@ -59,7 +54,7 @@ $nav-bar-grid-md: (
     background: transparent;
   }
 
-  @include grid-media($nav-bar-grid-md) {
+  @include grid-media($header-md) {
     display: none;
   }
 
@@ -88,7 +83,7 @@ $nav-bar-grid-md: (
   padding-left: 20px;
   padding-right: 20px;
 
-  @include grid-media($nav-bar-grid-md) {
+  @include grid-media($header-md) {
     background: transparent;
     bottom: auto;
     left: auto;

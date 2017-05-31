@@ -1,10 +1,5 @@
 $search-input-bg: #6e6f72;
 
-$nav-bar-grid-md: (
-  columns: 12,
-  media: 850px,
-);
-
 .search-toggle__icon {
   position: absolute;
   left: 12px;
@@ -43,7 +38,7 @@ $nav-bar-grid-md: (
     -moz-transition: all .5s;
     transition: all .5s;
 
-    @include grid-media($nav-bar-grid-md) {
+    @include grid-media($header-md) {
       background-color: transparent;
       background-position: center center;
       border: 0;
@@ -60,7 +55,7 @@ $nav-bar-grid-md: (
     background-color: $search-input-bg;
     border: 0;
 
-    @include grid-media($nav-bar-grid-md) {
+    @include grid-media($header-md) {
       background-position: 9px center;
       background-color: $search-input-bg;
       width: 620px;

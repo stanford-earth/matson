@@ -6,13 +6,18 @@
 // Decanter config.
 @import "decanter/core/utilities/decanter-utilities.scss";
 
+$nav-bar-grid-md: (
+  columns: 12,
+  media: 860px,
+);
+
 .block--lockup {
   position: relative;
   margin: em(14px) auto 0;
   width: em(110px);
   z-index: 4;
 
-  @include grid-media($media-md) {
+  @include grid-media($nav-bar-grid-md) {
     @include responsive-container($default-container);
     display: table;
     margin: 0 0;
