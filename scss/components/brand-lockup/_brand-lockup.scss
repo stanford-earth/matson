@@ -9,6 +9,8 @@
 $logo-width: 110px;
 
 .block--lockup {
+  background: transparent url('/themes/stanford/matson/img/source/bg-logo.png') no-repeat center center;
+  background-size: 160px 140px;
   position: relative;
   margin: em(14px) auto 0;
   width: $logo-width;
@@ -66,7 +68,7 @@ $logo-width: 110px;
 }
 
 %block--lockup__site-slogan-text {
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+  // text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
   color: color(white);
   font-size: 9px;
   font-weight: 300;

@@ -382,6 +382,8 @@
   color: #f9b002; }
 
 .block--lockup {
+  background: transparent url("/themes/stanford/matson/img/source/bg-logo.png") no-repeat center center;
+  background-size: 160px 140px;
   position: relative;
   margin: 1.0769230769em auto 0;
   width: 110px;
@@ -457,7 +459,6 @@
       text-decoration: none; }
 
 .block--lockup__site-slogan {
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
   color: #fff;
   font-size: 9px;
   font-weight: 300;
