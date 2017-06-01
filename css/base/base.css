@@ -5,72 +5,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700");
-.color-brand {
-  color: #8c1515; }
-
-.color-action {
-  color: #017c92; }
-
-.color-action-active {
-  color: #016779; }
-
-.color-background {
-  color: #fff; }
-
-.color-background-secondary {
-  color: #f4f4f4; }
-
-.color-border {
-  color: #ccc; }
-
-.color-text {
-  color: #222328; }
-
-.color-text-active {
-  color: #4d4f53; }
-
-.color-reverse-text {
-  color: #fff; }
-
-.color-reverse-text-active {
-  color: #ffcdcd; }
-
-.color-bright-red {
-  color: #b1040e; }
-
-.color-dark-red {
-  color: #8c1414; }
-
-.color-light-red {
-  color: #e3dfd5; }
-
-.color-black {
-  color: #000; }
-
-.color-charcoal {
-  color: #222328; }
-
-.color-stone {
-  color: #4d4f53; }
-
-.color-steel {
-  color: #6e6f72; }
-
-.color-ash {
-  color: #9c9d9e; }
-
-.color-fog {
-  color: #dad7cb; }
-
-.color-mist {
-  color: #FEFEFE; }
-
-.color-white {
-  color: #fff; }
-
-.color-emphasis {
-  color: #f9b002; }
-
 html {
   /*!*/
   box-sizing: border-box; }
@@ -541,6 +475,72 @@ button, [type='button'], [type='reset'], [type='submit'] {
 .button__primary--expanded, .button__secondary--expanded, .button__hollow--expanded {
   width: 100%;
   display: block; }
+
+.color-brand {
+  color: #8c1515; }
+
+.color-action {
+  color: #017c92; }
+
+.color-action-active {
+  color: #016779; }
+
+.color-background {
+  color: #fff; }
+
+.color-background-secondary {
+  color: #f4f4f4; }
+
+.color-border {
+  color: #ccc; }
+
+.color-text {
+  color: #222328; }
+
+.color-text-active {
+  color: #4d4f53; }
+
+.color-reverse-text {
+  color: #fff; }
+
+.color-reverse-text-active {
+  color: #ffcdcd; }
+
+.color-bright-red {
+  color: #b1040e; }
+
+.color-dark-red {
+  color: #8c1414; }
+
+.color-light-red {
+  color: #e3dfd5; }
+
+.color-black {
+  color: #000; }
+
+.color-charcoal {
+  color: #222328; }
+
+.color-stone {
+  color: #4d4f53; }
+
+.color-steel {
+  color: #6e6f72; }
+
+.color-ash {
+  color: #9c9d9e; }
+
+.color-fog {
+  color: #dad7cb; }
+
+.color-mist {
+  color: #FEFEFE; }
+
+.color-white {
+  color: #fff; }
+
+.color-emphasis {
+  color: #f9b002; }
 
 .i-svg {
   display: inline-block;
