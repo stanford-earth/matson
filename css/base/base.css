@@ -62,6 +62,9 @@
 .color-fog {
   color: #dad7cb; }
 
+.color-tint {
+  color: #efefef; }
+
 .color-mist {
   color: #FEFEFE; }
 
@@ -564,6 +567,10 @@ button, [type='button'], [type='reset'], [type='submit'] {
   height: 1.3846153846em;
   width: 1.3846153846em; }
 
+.i-svg--player {
+  height: 5em;
+  width: 5em; }
+
 .i-svg--quote {
   height: 1.5384615385em;
   width: 2.3076923077em; }
@@ -595,6 +602,8 @@ button, [type='button'], [type='reset'], [type='submit'] {
     background-color: rgba(0, 0, 0, 0.35);
     content: "";
     display: block; }
+  .has-image-overlay img {
+    display: block; }
 
 .has-image-gradient {
   position: relative; }
@@ -604,8 +613,10 @@ button, [type='button'], [type='reset'], [type='submit'] {
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.4));
+    background-image: linear-gradient(to bottom, transparent 55%, rgba(0, 0, 0, 0.3));
     content: "";
+    display: block; }
+  .has-image-gradient img {
     display: block; }
 
 .responsive-video-container {

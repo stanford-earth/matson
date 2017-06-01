@@ -55,6 +55,9 @@
 .color-fog {
   color: #dad7cb; }
 
+.color-tint {
+  color: #efefef; }
+
 .color-mist {
   color: #FEFEFE; }
 
@@ -120,6 +123,9 @@
 
 .color-fog {
   color: #dad7cb; }
+
+.color-tint {
+  color: #efefef; }
 
 .color-mist {
   color: #FEFEFE; }
@@ -243,6 +249,9 @@
 
 .color-fog {
   color: #dad7cb; }
+
+.color-tint {
+  color: #efefef; }
 
 .color-mist {
   color: #FEFEFE; }
@@ -371,6 +380,9 @@
 
 .color-fog {
   color: #dad7cb; }
+
+.color-tint {
+  color: #efefef; }
 
 .color-mist {
   color: #FEFEFE; }
@@ -534,6 +546,9 @@
 
 .color-fog {
   color: #dad7cb; }
+
+.color-tint {
+  color: #efefef; }
 
 .color-mist {
   color: #FEFEFE; }
@@ -789,6 +804,9 @@ body {
 
 .color-fog {
   color: #dad7cb; }
+
+.color-tint {
+  color: #efefef; }
 
 .color-mist {
   color: #FEFEFE; }
@@ -1141,6 +1159,14 @@ body {
       padding: 1em 1em; }
       .navigation ul ul a:hover, .navigation ul ul a:active, .navigation ul ul a:focus {
         box-shadow: none; }
+
+.player__button {
+  cursor: pointer;
+  display: inline-block; }
+  .player__button use {
+    stroke: #efefef; }
+  .player__button:hover use, .player__button:active use, .player__button:focus use {
+    stroke: #fff; }
 
 .search-toggle__icon {
   position: absolute;
