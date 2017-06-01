@@ -1,7 +1,7 @@
 .js-nav-expandable {
   &.is-expanded {
     height: auto;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .75);
 
     @include grid-media($header-md) {
       background: transparent;

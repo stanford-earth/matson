@@ -36,10 +36,10 @@ $hero-max-width-lg: 1500px;
   background-color: color(charcoal);
   background-size: cover;
   position: relative;
-  margin-top: -107px;
+  margin-top: -121px;
 
   @include grid-media($header-md) {
-    margin-top: -124px;
+    margin-top: -120px;
   }
 
   &.has-tint {
@@ -85,7 +85,7 @@ $hero-max-width-lg: 1500px;
 .hero-banner__container {
   @extend %absolute-fill;
   border: 1px solid color(white);
-  margin-top: em(65px);
+  margin-top: em(62px);
   margin-bottom: 30px;
   margin-left: 20px;
   margin-right: 20px;

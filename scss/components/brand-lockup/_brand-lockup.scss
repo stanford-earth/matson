@@ -12,12 +12,16 @@ $logo-width: 110px;
   background: transparent url('/themes/stanford/matson/img/source/bg-logo.png') no-repeat center center;
   background-size: 160px 140px;
   position: relative;
-  margin: em(14px) auto 0;
-  width: $logo-width;
+  margin: 0 auto 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 160px;
   z-index: 4;
 
   @include grid-media($header-md) {
     @include responsive-container($default-container);
+    background-position: center center;
+    background-size: 160px 140px;
     display: table;
     margin: 0 0;
     width: auto;
@@ -33,10 +37,12 @@ $logo-width: 110px;
 
   .block--lockup__site-logo {
     img {
+      margin: 0 25px;
+
       @include grid-media($header-md) {
         width: 110px;
         margin: 0 10px;
-        padding-top: 5px;
+        padding-top: 1px;
       }
     }
   }
@@ -49,6 +55,7 @@ $logo-width: 110px;
   font-weight: 600;
   line-height: 1;
   letter-spacing: 2.2px;
+  margin: 0 27px 0 23px;
   padding-bottom: 6px;
   text-align: justify;
   text-align: left;
@@ -68,11 +75,12 @@ $logo-width: 110px;
 }
 
 %block--lockup__site-slogan-text {
-  // text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
   color: color(white);
   font-size: 9px;
   font-weight: 300;
   line-height: 1.25;
+  margin: 0 25px;
   text-align: justify;
   text-transform: uppercase;
   width: $logo-width;

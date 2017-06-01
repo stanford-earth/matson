@@ -82,6 +82,7 @@ $nav-bar-height: em(65px);
   min-width: $nav-bar-height;
   padding-left: 20px;
   padding-right: 20px;
+  z-index: 5;
 
   @include grid-media($header-md) {
     background: transparent;
