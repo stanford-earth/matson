@@ -1249,10 +1249,10 @@ body {
 .player__button {
   cursor: pointer;
   display: inline-block; }
-  .player__button use {
-    stroke: #efefef; }
   .player__button:hover use, .player__button:active use, .player__button:focus use {
     stroke: #fff; }
+  .player__button use {
+    stroke: #efefef; }
 
 .search-toggle__icon {
   position: absolute;

@@ -2,13 +2,13 @@
   cursor: pointer;
   display: inline-block;
 
-  use {
-    stroke: color(tint);
-  }
-
   @include on-event {
     use {
       stroke: color(white);
     }
+  }
+
+  use {
+    stroke: color(tint);
   }
 }
