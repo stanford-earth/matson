@@ -452,6 +452,18 @@ body {
   -o-animation: fadein 2s;
   animation: fadein 2s;
   letter-spacing: .5px; }
+  @media only screen and (min-width: 768px) {
+    .hero-banner__header.is-right .hero-banner__title {
+      position: relative;
+      padding-right: 40px; }
+      .hero-banner__header.is-right .hero-banner__title::after {
+        background-color: #fff;
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: .5em;
+        height: 2px;
+        width: 30px; } }
   .hero-banner__header p {
     line-height: 2; }
   .hero-banner__header .cite {

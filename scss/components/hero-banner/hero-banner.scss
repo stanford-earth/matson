@@ -50,6 +50,20 @@ $hero-max-width-lg: 1500px;
   @include fade-type;
   letter-spacing: .5px;
 
+  .hero-banner__title {
+    @extend %h1 !optional;
+  }
+
+  &.is-right {
+    @include grid-media($media-md) {
+      .hero-banner__title {
+        @include header-dash;
+        position: relative;
+        padding-right: 40px;
+      }
+    }
+  }
+
   p {
     line-height: 2;
   }
