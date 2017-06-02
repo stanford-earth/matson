@@ -16,14 +16,14 @@ module.exports = function(grunt) {
         },
       },
       images: {
-        files: ['images/source/*.{png,jpg,gif}'],
+        files: ['img/source/*.{png,jpg,gif}'],
         tasks: ['imagemin'],
         options: {
           spawn: false,
         }
       },
       vector: {
-        files: ['images/source/**/*.svg'],
+        files: ['img/source/**/*.svg'],
         tasks: ['svgmin'],
         options: {
           spawn: false,
@@ -135,7 +135,7 @@ module.exports = function(grunt) {
           src : [
             'css/**/*.css',
             'templates/**/*.twig',
-            'images/optimized/**/*.{png,jpg,gif,svg}',
+            'img/optimized/**/*.{png,jpg,gif,svg}',
             'js/build/**/*.js',
             '*.theme'
           ]
