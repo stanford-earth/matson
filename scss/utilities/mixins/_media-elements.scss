@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
 @mixin image-overlay($image-overlay-bg-color: rgba(0, 0, 0, 0.35)) {
   position: relative;
@@ -14,7 +14,7 @@
     display: block;
   }
 
-  img {
+    img {
     display: block;
   }
 }

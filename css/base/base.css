@@ -591,49 +591,6 @@ button, [type='button'], [type='reset'], [type='submit'] {
   height: 4em;
   width: 4em; }
 
-.has-image-overlay {
-  position: relative; }
-  .has-image-overlay::before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.35);
-    content: "";
-    display: block; }
-  .has-image-overlay img {
-    display: block; }
-
-.has-image-gradient {
-  position: relative; }
-  .has-image-gradient::before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: linear-gradient(to bottom, transparent 55%, rgba(0, 0, 0, 0.3));
-    content: "";
-    display: block; }
-  .has-image-gradient img {
-    display: block; }
-
-.responsive-video-container {
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 2em;
-  height: 0; }
-  .responsive-video-container iframe,
-  .responsive-video-container object,
-  .responsive-video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-
 body {
   font-size: 1.3em;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
