@@ -734,6 +734,28 @@ body {
       .navigation ul ul a:hover, .navigation ul ul a:active, .navigation ul ul a:focus {
         box-shadow: none; }
 
+.drop-cap-title {
+  position: relative; }
+
+.drop-cap-title__name {
+  position: relative;
+  z-index: 2; }
+
+.drop-cap-title__drop-cap {
+  position: absolute;
+  top: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: #eeeeee;
+  z-index: 1; }
+
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -765,50 +787,152 @@ body {
     opacity: 1; } }
 
 .postcard {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .postcard::after {
     clear: both;
     content: "";
     display: block; }
   .postcard .postcard__image {
-    display: block; }
+    background-size: 100%;
+    background-position: center center;
+    overflow: hidden;
+    display: block;
+    min-height: 150px; }
     @media only screen and (min-width: 768px) {
       .postcard .postcard__image {
         position: absolute;
+        background-size: cover;
+        bottom: 0;
+        top: 0;
         width: 100%; } }
     @media only screen and (min-width: 1024px) {
       .postcard .postcard__image {
-        width: 75%; } }
-    @media only screen and (min-width: 1500px) {
-      .postcard .postcard__image {
-        position: relative;
-        float: left;
-        width: 60%; } }
-    .postcard .postcard__image img {
-      width: 100%; }
-  .postcard .postcard__content {
+        width: 70%; } }
+  @media only screen and (min-width: 1024px) {
+    .postcard .postcard__content {
+      position: relative;
+      margin: 0 auto;
+      max-width: 1380px; }
+      .postcard .postcard__content::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  .postcard .postcard__content-inner {
+    background-color: #FBFBFB;
     display: block;
     width: 100%; }
     @media only screen and (min-width: 768px) {
-      .postcard .postcard__content {
+      .postcard .postcard__content-inner {
         position: relative;
         float: right;
         width: 50%;
         z-index: 2; } }
     @media only screen and (min-width: 1024px) {
-      .postcard .postcard__content {
-        width: 50%; } }
-    @media only screen and (min-width: 1500px) {
-      .postcard .postcard__content {
-        float: left;
-        width: 40%; } }
-  .postcard .postcard__content-inner {
-    color: #222328;
+      .postcard .postcard__content-inner {
+        width: 30%; } }
+  .postcard .postcard__content-text {
+    padding: 1.5384615385em;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .postcard .postcard__content-text {
+        padding: 2.3076923077em; } }
+
+.postcard.has-image-right .postcard__image {
+  right: 0; }
+
+@media only screen and (min-width: 768px) {
+  .postcard.has-image-right .postcard__content-inner {
+    float: left; } }
+
+@media only screen and (min-width: 1024px) {
+  .postcard.has-text-offset .postcard__image {
+    width: 66.666%; } }
+
+@media only screen and (min-width: 1024px) {
+  .postcard.has-text-offset .postcard__content-inner {
+    padding: 30px 0;
+    width: 33.333%; } }
+
+.postcard.has-text-offset .postcard__content-text {
+  background-color: #fff;
+  position: relative; }
+  @media only screen and (min-width: 1024px) {
+    .postcard.has-text-offset .postcard__content-text {
+      margin-left: -30px;
+      width: calc(100% + 30px); } }
+
+@media only screen and (min-width: 1024px) {
+  .postcard.has-text-offset.has-image-right .postcard__content-text {
+    margin-right: -30px;
+    margin-left: 0; } }
+
+@media only screen and (min-width: 1024px) {
+  .postcard.has-text-inset .postcard__image {
+    width: 60%; } }
+
+@media only screen and (min-width: 1024px) {
+  .postcard.has-text-inset .postcard__content-inner {
+    padding: 40px;
+    width: 40%; } }
+
+@media only screen and (min-width: 1500px) {
+  .postcard.has-text-inset .postcard__content-inner {
+    padding: 60px; } }
+
+.postcard.has-text-inset .postcard__content-text {
+  background-color: #fff; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.postcard {
+  background-color: #FBFBFB; }
+  .postcard .postcard__content-text {
+    color: #9c9d9e;
+    line-height: 2em;
     text-align: center; }
   .postcard .postcard__title {
-    font-size: 1.333em; }
-  .postcard .postcard__more use {
-    fill: #8c1515; }
+    font-size: 2.1538461538em;
+    padding-bottom: 0.7692307692em;
+    padding-top: 0.7692307692em;
+    color: #4d4f53; }
+    @media only screen and (min-width: 576px) {
+      .postcard .postcard__title {
+        font-size: 2.3076923077em; } }
+  .postcard .postcard__more {
+    padding: 1em; }
+    .postcard .postcard__more svg {
+      vertical-align: middle; }
+    .postcard .postcard__more use {
+      fill: #8c1515; }
 
 .search-toggle__icon {
   position: absolute;

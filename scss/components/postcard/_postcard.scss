@@ -13,31 +13,39 @@
 .postcard {
   @include grid-container;
   position: relative;
+  overflow: hidden;
 
   .postcard__image {
+    background-size: 100%;
+    background-position: center center;
+    overflow: hidden;
     display: block;
+    min-height: 150px;
     
     @include grid-media($media-md) {
       position: absolute;
+      background-size: cover;
+      bottom: 0;
+      top: 0;
       width: 100%;
     }
 
     @include grid-media($media-lg) {
-      width: 75%;
-    }
-
-    @include grid-media($media-xl) {
-      position: relative;
-      float: left;
-      width: 60%;
-    }
-
-    img {
-      width: 100%;
+      width: 70%;
     }
   }
 
   .postcard__content {
+    @include grid-media($media-lg) {
+      @include grid-container;
+      position: relative;
+      margin: 0 auto;
+      max-width: 1380px;
+    }
+  }
+
+  .postcard__content-inner {
+    background-color: color(dust);
     display: block;
     width: 100%;
 
@@ -49,28 +57,91 @@
     }
 
     @include grid-media($media-lg) {
-      width: 50%;
-    }
-
-    @include grid-media($media-xl) {
-      float: left;
-      width: 40%;
+      width: 30%;
     }
   }
 
-  .postcard__content-inner {
-    color: color(text);
-    text-align: center;
-  }
+  .postcard__content-text {
+    padding: em(20px);
+    width: 100%;
 
-  .postcard__title {
-    @include font-size(modular-scale(1));
-  }  
-
-  .postcard__more {
-    use {
-      fill: color(brand);
+    @include grid-media($media-md) {
+      padding: em(30px);
     }
   }
 }
 
+// Postcard with image right
+.postcard.has-image-right {
+
+  .postcard__image {
+    right: 0;
+  }
+
+  .postcard__content-inner {
+    @include grid-media($media-md) {
+      float: left;
+    }
+  }
+}
+
+// Postcard with offset text block
+.postcard.has-text-offset {
+  
+  .postcard__image {
+    @include grid-media($media-lg) {
+      width: 66.666%;
+    }
+  }
+
+  .postcard__content-inner {
+    @include grid-media($media-lg) {
+      padding: 30px 0;
+      width: 33.333%;
+    }
+  }
+
+  .postcard__content-text {
+    background-color: color(white);
+    position: relative;
+
+    @include grid-media($media-lg) {
+      margin-left: -30px;
+      width: calc(100% + 30px);
+    }
+  }
+
+  &.has-image-right {
+    .postcard__content-text {
+      @include grid-media($media-lg) {
+        margin-right: -30px;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+// Postcard with inset text block
+.postcard.has-text-inset {
+
+  .postcard__image {
+    @include grid-media($media-lg) {
+      width: 60%;
+    }
+  }
+    
+  .postcard__content-inner {
+    @include grid-media($media-lg) {
+      padding: 40px;
+      width: 40%;
+    }
+
+    @include grid-media($media-xl) {
+      padding: 60px;
+    }
+  }
+
+  .postcard__content-text {
+    background-color: color(white);
+  }
+}
