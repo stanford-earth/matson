@@ -118,7 +118,7 @@
     font-weight: 600; }
 
 .block--lockup {
-  background: transparent url("/themes/stanford/matson/img/source/bg-logo.png") no-repeat center center;
+  background: transparent url("../../img/source/bg-logo.png") no-repeat center center;
   background-size: 160px 140px;
   position: relative;
   margin: 0 auto 0;
@@ -350,15 +350,15 @@
       font-size: 1em;
       font-weight: normal; }
       #footer__global-footer #global-footer__info .vcard .adr {
-        margin-left: 0.4em;
-        margin-right: 0.8em; }
+        margin-left: 0.3750937734em;
+        margin-right: 0.7501875469em; }
       #footer__global-footer #global-footer__info .vcard .copyright-links {
         display: block; }
         @media only screen and (min-width: 768px) {
           #footer__global-footer #global-footer__info .vcard .copyright-links {
             display: inline; } }
         #footer__global-footer #global-footer__info .vcard .copyright-links a {
-          margin-right: 0.4em; }
+          margin-right: 0.3750937734em; }
   @media only screen and (min-width: 768px) {
     #footer__global-footer #global-footer__nav,
     #footer__global-footer #global-footer__info {

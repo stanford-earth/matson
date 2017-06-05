@@ -11,7 +11,7 @@
 // - https://drupal.org/node/1446420
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
 
-(function ($, Drupal) {
+(function (Drupal, $, window) {
 
   // To understand behaviors, see https://www.drupal.org/node/2269515
   Drupal.behaviors.matson = {
@@ -120,4 +120,4 @@
       }
     }, 400));
   });
-} (jQuery, Drupal));
+} (Drupal, jQuery, this));

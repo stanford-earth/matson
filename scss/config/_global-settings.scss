@@ -12,102 +12,19 @@ $decanter-default-settings: (
   breakpoint-helper-selector: #breakpoint-helper,
 );
 
-$neat-grid: (
-    columns: $grid-columns,
-    gutter:  $gutter,
-    media: null,
-    color: rgba(#00d4ff, 0.25),
-    direction: ltr,
+/// @name Bourbon Settings
+///
+/// @group settings
+$bourbon: (
+  "modular-scale-ratio": 1.333,
 );
-
-// Lower boundaries
-// ----------------
-
-/// Screen XS Min
-$screen-xs-min:               0;
-
-/// Screen SM Min
-$screen-sm-min:               576px;
-
-/// Screen MD Min
-$screen-md-min:               768px;
 
 /// Header MD Min
-$header-md-min:               860px;
-
-/// Screen LG Min
-$screen-lg-min:               1024px;
-
-/// Screen XL Min
-$screen-xl-min:               $max-container-width; //1500px
-
-// Upper boundaries
-// ----------------
-
-/// Screen XS Max
-$screen-xs-max:               $screen-sm-min - 1px;
-
-/// Screen SM Max
-$screen-sm-max:               $screen-md-min - 1px;
-
-/// Screen MD Max
-$screen-md-max:               $screen-lg-min - 1px;
-
-/// Screen LG Max
-$screen-lg-max:               $screen-xl-min - 1px;
-
-/// Media MD
-$media-md: (
-    columns: 12,
-    gutter: 40px,
-    media: $screen-md-min,
-);
+$header-md-min: 860px;
 
 /// Component Header
 $header-md: (
-    columns: 12,
-    gutter: 40px,
-    media: $header-md-min,
-);
-
-/// Media MD only
-$media-md-only: (
-    columns: 12,
-    gutter: 40px,
-    media: 'only screen and (min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})',
-);
-
-/// Media MD max
-$media-md-max: (
-    columns: 12,
-    gutter: 40px,
-    media: 'only screen and (max-width: #{$screen-md-max})',
-);
-
-/// Media LG
-$media-lg: (
-    columns: 12,
-    gutter: 40px,
-    media: $screen-lg-min,
-);
-
-/// Media LG only
-$media-lg-only: (
-    columns: 12,
-    gutter: 40px,
-    media: 'only screen and (min-width: #{$screen-lg-min}) and (max-width: #{$screen-lg-max})',
-);
-
-/// Media LG max
-$media-lg-max: (
-    columns: 12,
-    gutter: 40px,
-    media: 'only screen and (max-width: #{$screen-lg-max})',
-);
-
-/// Media XL
-$media-xl: (
-    columns: 12,
-    gutter: 60px,
-    media: $screen-xl-min,
+  columns: 12,
+  gutter: 40px,
+  media: $header-md-min,
 );
