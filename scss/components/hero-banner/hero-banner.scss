@@ -36,7 +36,11 @@ $hero-max-width-lg: 1500px;
   background-color: color(charcoal);
   background-size: cover;
   position: relative;
-  margin-top: em(-65px);
+  margin-top: -121px;
+
+  @include grid-media($header-md) {
+    margin-top: -120px;
+  }
 
   &.has-tint {
     &::before {

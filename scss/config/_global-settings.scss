@@ -18,3 +18,13 @@ $decanter-default-settings: (
 $bourbon: (
   "modular-scale-ratio": 1.333,
 );
+
+/// Header MD Min
+$header-md-min: 860px;
+
+/// Component Header
+$header-md: (
+  columns: 12,
+  gutter: 40px,
+  media: $header-md-min,
+);
