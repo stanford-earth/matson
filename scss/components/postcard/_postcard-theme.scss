@@ -1,0 +1,44 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+// Theme
+.postcard {
+  background-color: color(dust);
+
+  .postcard__content-text {
+    color: color(ash);
+    line-height: 2em;
+    text-align: center;
+  }
+
+  .postcard__title {
+    @include font-size(28px);
+    padding-bottom: em(10px);
+    padding-top: em(10px);
+    color: color(text-active);
+
+    @include grid-media($media-sm) {
+      @include font-size(30px);
+    }
+  }
+
+  .postcard__more {
+    padding: 1em;
+    
+    svg {
+      vertical-align: middle;
+    }
+
+    use {
+      fill: color(brand);
+    }
+  }
+}

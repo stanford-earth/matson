@@ -1,0 +1,76 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+// Component
+.postcard {
+  @include grid-container;
+  position: relative;
+
+  .postcard__image {
+    display: block;
+    
+    @include grid-media($media-md) {
+      position: absolute;
+      width: 100%;
+    }
+
+    @include grid-media($media-lg) {
+      width: 75%;
+    }
+
+    @include grid-media($media-xl) {
+      position: relative;
+      float: left;
+      width: 60%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .postcard__content {
+    display: block;
+    width: 100%;
+
+    @include grid-media($media-md) {
+      position: relative;
+      float: right;
+      width: 50%;
+      z-index: 2;
+    }
+
+    @include grid-media($media-lg) {
+      width: 50%;
+    }
+
+    @include grid-media($media-xl) {
+      float: left;
+      width: 40%;
+    }
+  }
+
+  .postcard__content-inner {
+    color: color(text);
+    text-align: center;
+  }
+
+  .postcard__title {
+    @include font-size(modular-scale(1));
+  }  
+
+  .postcard__more {
+    use {
+      fill: color(brand);
+    }
+  }
+}
+
