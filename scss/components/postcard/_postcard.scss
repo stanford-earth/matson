@@ -9,139 +9,36 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-// Component
+// Theme
 .postcard {
-  @include grid-container;
-  position: relative;
-  overflow: hidden;
+  background-color: color(dust);
 
-  .postcard__image {
-    background-size: 100%;
-    background-position: center center;
-    overflow: hidden;
-    display: block;
-    min-height: 150px;
+  .postcard__content-text {
+    color: color(ash);
+    line-height: 2em;
+    text-align: center;
+  }
+
+  .postcard__title {
+    @include font-size(28px);
+    padding-bottom: em(10px);
+    padding-top: em(10px);
+    color: color(text-active);
+
+    @include grid-media($media-sm) {
+      @include font-size(30px);
+    }
+  }
+
+  .postcard__more {
+    padding: 1em;
     
-    @include grid-media($media-md) {
-      position: absolute;
-      background-size: cover;
-      bottom: 0;
-      top: 0;
-      width: 100%;
+    svg {
+      vertical-align: middle;
     }
 
-    @include grid-media($media-lg) {
-      width: 70%;
+    use {
+      fill: color(brand);
     }
-  }
-
-  .postcard__content {
-    @include grid-media($media-lg) {
-      @include grid-container;
-      position: relative;
-      margin: 0 auto;
-      max-width: 1380px;
-    }
-  }
-
-  .postcard__content-inner {
-    background-color: color(dust);
-    display: block;
-    width: 100%;
-
-    @include grid-media($media-md) {
-      position: relative;
-      float: right;
-      width: 50%;
-      z-index: 2;
-    }
-
-    @include grid-media($media-lg) {
-      width: 30%;
-    }
-  }
-
-  .postcard__content-text {
-    padding: em(20px);
-    width: 100%;
-
-    @include grid-media($media-md) {
-      padding: em(30px);
-    }
-  }
-}
-
-// Postcard with image right
-.postcard.has-image-right {
-
-  .postcard__image {
-    right: 0;
-  }
-
-  .postcard__content-inner {
-    @include grid-media($media-md) {
-      float: left;
-    }
-  }
-}
-
-// Postcard with offset text block
-.postcard.has-text-offset {
-  
-  .postcard__image {
-    @include grid-media($media-lg) {
-      width: 66.666%;
-    }
-  }
-
-  .postcard__content-inner {
-    @include grid-media($media-lg) {
-      padding: 30px 0;
-      width: 33.333%;
-    }
-  }
-
-  .postcard__content-text {
-    background-color: color(white);
-    position: relative;
-
-    @include grid-media($media-lg) {
-      margin-left: -30px;
-      width: calc(100% + 30px);
-    }
-  }
-
-  &.has-image-right {
-    .postcard__content-text {
-      @include grid-media($media-lg) {
-        margin-right: -30px;
-        margin-left: 0;
-      }
-    }
-  }
-}
-
-// Postcard with inset text block
-.postcard.has-text-inset {
-
-  .postcard__image {
-    @include grid-media($media-lg) {
-      width: 60%;
-    }
-  }
-    
-  .postcard__content-inner {
-    @include grid-media($media-lg) {
-      padding: 40px;
-      width: 40%;
-    }
-
-    @include grid-media($media-xl) {
-      padding: 60px;
-    }
-  }
-
-  .postcard__content-text {
-    background-color: color(white);
   }
 }
