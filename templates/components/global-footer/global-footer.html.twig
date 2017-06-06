@@ -4,6 +4,43 @@
  * Default theme implementation for the basic structure of the global stanford footer
  */
 #}
+
+<section class="contact-footer">
+  <div class="contact-footer__brand">
+    <object alt="Stanford University" data="{{ base_path ~ directory }}/assets/svg/su_sig_stack_linked.svg" height="49" tabindex="-1" width="105">Stanford University Logo</object>
+  </div>
+  <div class="contact-footer__social">
+    <h2>Join us on Social Media</h2>
+    <ul class="social-links">
+      <li><a href="#"><span class="visually-hidden">Twitter</span>
+        <svg class="i-svg i-svg--twitter is-fog"> <use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use> </svg>
+      </a></li>
+      <li><a href="#"><span class="visually-hidden">Facebook</span>
+      <svg class="i-svg i-svg--fb is-fog"> <use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use> </svg></a></li>
+      <li><a href="#"><span class="visually-hidden">Instagram</span>
+      <svg class="i-svg i-svg--instagram is-fog"> <use xlink:href="#i-instagram" xmlns:xlink="http://www.w3.org/1999/xlink"></use> </svg>
+      </a></li>
+    </ul>
+  </div>
+  <div class="contact-footer__links">
+    <h2>Links</h2>
+    <ul class="contact-links">
+      <li><a href="#">Alumni</a></li>
+      <li><a href="#">Give to Stanford</a></li>
+      <li><a href="#">Newswroom</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div class="contact-footer__subscribe">
+    <h2>Subscribe to Earth Matters</h2>
+    <p>Our Monthly Research News Alert</p>
+    <form class="subscribe-form">
+      <input type="text" name="email">
+      <button class="button__hollow">Join</button>
+    </form>
+  </div>
+</section>
+
 <section id="footer__global-footer">
   <div class="global-footer__inner">
     <div id="global-footer__brand">
