@@ -1,14 +1,9 @@
-
-$footer-layout-grid: (
-  columns: 1
-);
-
 .contact-footer {
   $_contact-container: (
     sm-max: (columns: 12, grid-media: $media-sm-max,  v-space: 40px, max-width: false, grid-collapse: false),
     md: (columns: 12, grid-media: $media-md,          v-space: 60px, max-width: false, grid-collapse: false),
-    lg: (columns: 12, grid-media: $media-lg,          v-space: 90px, max-width: false, grid-collapse: false),
-    xl: (columns: 12, grid-media: $media-xl,          v-space: 90px, max-width: true,  grid-collapse: false),
+    lg: (columns: 10, grid-media: $media-lg,          v-space: 90px, max-width: true, grid-collapse: false),
+    xl: (columns: 10, grid-media: $media-xl,          v-space: 90px, max-width: true,  grid-collapse: false),
     print: (columns: 12, grid-media: $media-print,    v-space: 30px, max-width: false, grid-collapse: false),
   );
 
@@ -24,12 +19,17 @@ $footer-layout-grid: (
   }
 
   h2 {
-    font-size: em(12px);
+    font-size: em(14px);
     font-weight: 800;
-    letter-spacing: 3px;
+    letter-spacing: 3.5px;
     opacity: .8;
     margin-bottom: 1em;
     text-transform: uppercase;
+
+    @include grid-media($media-md) {
+      font-size: em(12px);
+      letter-spacing: 3px;
+    }  
   }
 
   a {
@@ -39,18 +39,20 @@ $footer-layout-grid: (
 
 .contact-footer__brand {
   @include grid-column(12);
-  padding: 2em 0 5em;
+  padding: 1em 0 em(95px);
   position: relative;
   z-index: 2;
 
   @include grid-media($media-md) {
     @include grid-column(6);
-    padding: 0;
+    margin-left: 0;
+    margin-right: 40px;
+    padding: 0 0 2rem;
   }
 
   @include grid-media($media-lg) {
     @include grid-column(2);
-    margin-left: 0;
+    margin-right: 0;
   }
 
   .contact-footer__lockup {
@@ -63,10 +65,12 @@ $footer-layout-grid: (
 
     .block--lockup__site-logo img {  
       margin: 0;
+      padding-bottom: 5px;
     }
 
     .block--lockup__site-name-and-slogan {
       margin: 0;
+      padding: 0;
     }
   }
 }
@@ -78,7 +82,7 @@ $footer-layout-grid: (
 
   @include grid-media($media-md) {
     @include grid-column(6);
-    padding: 0;
+    padding: 0 0 2rem;
   }
 
   @include grid-media($media-lg) {
@@ -91,15 +95,24 @@ $footer-layout-grid: (
     padding: 1.5em 0;
 
     @include grid-media($media-md) {
-      padding-top: 0;
+      padding-top: em(5px);
     }
 
     li {
       display: inline-block;
       padding: 0 1em;
+      margin: 0;
 
       @include grid-media($media-md) {
         padding-left: 0;
+      }
+    }
+
+    a {
+      opacity: .8;
+
+      @include on-event {
+        opacity: 1;
       }
     }
   }
@@ -121,10 +134,13 @@ $footer-layout-grid: (
   @include grid-media($media-md) {
     @include grid-column(6);
     padding: 0;
+    margin-left: 0;
+    margin-right: 40px;
   }
 
   @include grid-media($media-lg) {
     @include grid-column(4);
+    margin-right: 0;
   }
 
   .contact-links {
@@ -133,24 +149,29 @@ $footer-layout-grid: (
     display: inline-block;
     list-style: none;
     margin: 0;
-    padding: 2em 0;
+    padding: 1em 0;
 
     @include grid-media($media-md) {
       border: none;
       padding: 0;
     }
 
+    li {
+      margin: 0;
+    }
+
     a {
       display: block;
-      font-size: em(12px);
+      font-size: em(14px);
       font-weight: 800;
       letter-spacing: 3px;
-      padding: 10px 0;
+      padding: 1em 0;
       opacity: .5;
       text-transform: uppercase;
 
       @include grid-media($media-md) {
-        padding: 5px 0;
+        font-size: em(12px);
+        padding: 1em 0;
       }
 
       @include on-event {
@@ -206,6 +227,7 @@ $footer-layout-grid: (
 
   .button__hollow {
     font-weight: 400;
+    letter-spacing: 1.4px;
 
     @include on-event {
       color: color(text);

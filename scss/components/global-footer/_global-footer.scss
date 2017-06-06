@@ -13,7 +13,8 @@
   $_brand-container: (
     sm-max: (columns: 12, grid-media: $media-sm-max,  v-space: 30px, max-width: false, grid-collapse: false),
     md: (columns: 12, grid-media: $media-md,          v-space: 30px, max-width: false, grid-collapse: false),
-    xl: (columns: 12, grid-media: $media-xl,          v-space: 30px, max-width: true,  grid-collapse: false),
+    lg: (columns: 10, grid-media: $media-lg,          v-space: 30px, max-width: true,  grid-collapse: false),
+    xl: (columns: 10, grid-media: $media-xl,          v-space: 30px, max-width: true,  grid-collapse: false),
     print: (columns: 12, grid-media: $media-print,    v-space: 30px, max-width: false, grid-collapse: false),
   );
 
@@ -53,7 +54,7 @@
     }
 
     @include grid-media($media-lg) {
-
+      margin-left: 40px;
     }
 
     @include grid-media($media-xl) {
@@ -159,7 +160,7 @@
     }
 
     @include grid-media($media-xl) {
-      margin-left: em(195px);
+      margin-left: em(220px);
     }
   }
 }
