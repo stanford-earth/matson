@@ -5,9 +5,18 @@
  */
 #}
 
-<section class="contact-footer">
+<section class="contact-footer" style="background-image:url('https://www-tc.pbs.org/wnet/nature/files/2017/03/1007.jpg')";>
   <div class="contact-footer__brand">
-    <object alt="Stanford University" data="{{ base_path ~ directory }}/assets/svg/su_sig_stack_linked.svg" height="49" tabindex="-1" width="105">Stanford University Logo</object>
+    <div class="contact-footer__lockup">
+      <div class="block--lockup__site-logo-wrapper">
+        <a href="#" rel="home" class="block--lockup__site-logo">
+          <img src="{{ base_path ~ directory }}/logo.svg" alt="Home" />
+        </a>
+      </div>
+      <div class="block--lockup__site-name-and-slogan">
+        <a href="@" title="Home" rel="home">EARTH</a>
+      </div>
+    </div>
   </div>
   <div class="contact-footer__social">
     <h2>Join us on Social Media</h2>
@@ -26,7 +35,7 @@
     <h2>Links</h2>
     <ul class="contact-links">
       <li><a href="#">Alumni</a></li>
-      <li><a href="#">Give to Stanford</a></li>
+      <li><a href="#">Give to Stanford Earth</a></li>
       <li><a href="#">Newswroom</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
@@ -35,7 +44,7 @@
     <h2>Subscribe to Earth Matters</h2>
     <p>Our Monthly Research News Alert</p>
     <form class="subscribe-form">
-      <input type="text" name="email">
+      <input type="text" name="email" class="email-input">
       <button class="button__hollow">Join</button>
     </form>
   </div>

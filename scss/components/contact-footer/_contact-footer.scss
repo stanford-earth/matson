@@ -4,22 +4,31 @@ $footer-layout-grid: (
 );
 
 .contact-footer {
-  $_brand-container: (
-    sm-max: (columns: 12, grid-media: $media-sm-max,  v-space: 30px, max-width: false, grid-collapse: false),
-    md: (columns: 12, grid-media: $media-md,          v-space: 30px, max-width: false, grid-collapse: false),
-    xl: (columns: 12, grid-media: $media-xl,          v-space: 30px, max-width: true,  grid-collapse: false),
+  $_contact-container: (
+    sm-max: (columns: 12, grid-media: $media-sm-max,  v-space: 40px, max-width: false, grid-collapse: false),
+    md: (columns: 12, grid-media: $media-md,          v-space: 60px, max-width: false, grid-collapse: false),
+    lg: (columns: 12, grid-media: $media-lg,          v-space: 90px, max-width: false, grid-collapse: false),
+    xl: (columns: 12, grid-media: $media-xl,          v-space: 90px, max-width: true,  grid-collapse: false),
     print: (columns: 12, grid-media: $media-print,    v-space: 30px, max-width: false, grid-collapse: false),
   );
 
-  @include responsive-container($_brand-container);
+  @include responsive-container($_contact-container);
+  @include image-overlay($image-overlay-bg-color: rgba(0, 0, 0, 0.75));
+  background-size: cover;
   background-color: color(text);
   color: color(white);
+  text-align: center;
+
+  @include grid-media($media-md) {
+    text-align: left;
+  }
 
   h2 {
     font-size: em(12px);
     font-weight: 800;
     letter-spacing: 3px;
     opacity: .8;
+    margin-bottom: 1em;
     text-transform: uppercase;
   }
 
@@ -30,78 +39,176 @@ $footer-layout-grid: (
 
 .contact-footer__brand {
   @include grid-column(12);
+  padding: 2em 0 5em;
+  position: relative;
+  z-index: 2;
 
   @include grid-media($media-md) {
     @include grid-column(6);
+    padding: 0;
   }
 
   @include grid-media($media-lg) {
     @include grid-column(2);
     margin-left: 0;
   }
-}  
+
+  .contact-footer__lockup {
+    margin: 0 auto;
+    width: 110px;
+
+    @include grid-media($media-md) {
+      margin: 0;
+    }
+
+    .block--lockup__site-logo img {  
+      margin: 0;
+    }
+
+    .block--lockup__site-name-and-slogan {
+      margin: 0;
+    }
+  }
+}
 
 .contact-footer__social {
   @include grid-column(12);
+  position: relative;
+  z-index: 2;
 
   @include grid-media($media-md) {
     @include grid-column(6);
+    padding: 0;
   }
 
   @include grid-media($media-lg) {
-    @include grid-column(3);
+    @include grid-column(2);
   }
 
   .social-links {
     list-style: none;
     margin: 0;
+    padding: 1.5em 0;
+
+    @include grid-media($media-md) {
+      padding-top: 0;
+    }
 
     li {
       display: inline-block;
+      padding: 0 1em;
+
+      @include grid-media($media-md) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  h2 {
+    display: none;
+
+    @include grid-media($media-md) {
+      display: block;
     }
   }
 }
 
 .contact-footer__links {
   @include grid-column(12);
+  position: relative;
+  z-index: 2;
 
   @include grid-media($media-md) {
     @include grid-column(6);
-  }
-
-  @include grid-media($media-lg) {
-    @include grid-column(3);
-  }
-
-  .contact-links {
-    list-style: none;
-    margin: 0;
-
-    a {
-      font-size: em(12px);
-      font-weight: 800;
-      letter-spacing: 3px;
-      opacity: .5;
-      text-transform: uppercase;
-    }
-  }
-}
-
-.contact-footer__subscribe {
-  @include grid-column(12);
-
-  @include grid-media($media-md) {
-    @include grid-column(6);
+    padding: 0;
   }
 
   @include grid-media($media-lg) {
     @include grid-column(4);
   }
 
+  .contact-links {
+    border-top: 1px solid rgba(255, 255, 255, .6);
+    border-bottom: 1px solid rgba(255, 255, 255, .6);
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 2em 0;
+
+    @include grid-media($media-md) {
+      border: none;
+      padding: 0;
+    }
+
+    a {
+      display: block;
+      font-size: em(12px);
+      font-weight: 800;
+      letter-spacing: 3px;
+      padding: 10px 0;
+      opacity: .5;
+      text-transform: uppercase;
+
+      @include grid-media($media-md) {
+        padding: 5px 0;
+      }
+
+      @include on-event {
+        opacity: 1;
+        text-decoration: none;
+      }
+    }
+  }
+
+  h2 {
+    display: none;
+    @include grid-media($media-md) {
+      display: block;
+    }
+  }
+}
+
+.contact-footer__subscribe {
+  @include grid-column(12);
+  padding-top: 4em;
+  position: relative;
+  z-index: 2;
+
+  @include grid-media($media-md) {
+    @include grid-column(6);
+    padding-top: 0;
+  }
+
+  @include grid-media($media-lg) {
+    @include grid-column(4);
+  }
+
+  h2 {
+
+  }
+
   p {
+    display: none;
     font-size: em(12px);
     font-weight: 800;
     letter-spacing: 1px;
     opacity: .5;
+    @include grid-media($media-md) {
+      display: block;
+    }
+  }
+
+  .email-input {
+    border-radius: 0;
+    padding: 1em em(16px);
+    color: color(text);
+  }
+
+  .button__hollow {
+    font-weight: 400;
+
+    @include on-event {
+      color: color(text);
+    }
   }
 }
