@@ -1,10 +1,5 @@
 <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<symbol id="i-player" viewBox="0 0 13 13">
-<title>player</title>
-<path fill="none" stroke-width="0.2196" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M9.6 6.5l-4.5 3.1v-6.2l4.5 3.1z"></path>
-<path fill="none" stroke-width="0.2196" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M12.8 6.5c0 3.4-2.8 6.3-6.3 6.3s-6.3-2.9-6.3-6.3 2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3z"></path>
-</symbol>
 <symbol id="i-instagram" viewBox="0 0 13 13">
 <title>instagram</title>
 <path d="M10.183 5.85c-0.361-1.733-1.878-2.961-3.611-2.961-2.022 0-3.683 1.661-3.683 3.683s1.661 3.683 3.683 3.683c1.95 0 3.467-1.517 3.611-3.394 0.217-0.072 0.289-0.289 0.289-0.506 0.072-0.217-0.072-0.433-0.289-0.506zM6.572 9.1c-1.372 0-2.528-1.156-2.528-2.528s1.156-2.528 2.528-2.528c1.372 0 2.528 1.156 2.528 2.528s-1.156 2.528-2.528 2.528z"></path>
