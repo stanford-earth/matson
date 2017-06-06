@@ -533,6 +533,9 @@ button, [type='button'], [type='reset'], [type='submit'] {
 .color-fog {
   color: #dad7cb; }
 
+.color-tint {
+  color: #efefef; }
+
 .color-mist {
   color: #FEFEFE; }
 
@@ -563,6 +566,10 @@ button, [type='button'], [type='reset'], [type='submit'] {
 .i-svg--instagram {
   height: 1.3846153846em;
   width: 1.3846153846em; }
+
+.i-svg--player {
+  height: 5em;
+  width: 5em; }
 
 .i-svg--quote {
   height: 1.5384615385em;

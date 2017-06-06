@@ -16,7 +16,7 @@
   // Execute code once the window is fully loaded.
   $(window).load(function () {
     var ww = document.body.clientWidth;
-    var toggleWidth = 768;
+    var toggleWidth = 860;
 
     // Initial dropdown setup.
     addParents();
@@ -24,7 +24,7 @@
 
     $(window).bind('resize orientationchange', function() {
       ww = document.body.clientWidth;
-      adjustMenu(ww, 768);
+      adjustMenu(ww, 860);
     });
 
     $(".js-nav-mobile-closable").on('click', function(e) {
@@ -103,7 +103,7 @@
   $(window).resize(Drupal.debounce(function () {
     // Execute code when the window is resized.
     var vw = $(window).width();
-    if (vw > 768) {
+    if (vw > 860) {
       $(document).trigger({ type: 'navbar:close', navbarExpanded: true })
     }
   }, 400));
