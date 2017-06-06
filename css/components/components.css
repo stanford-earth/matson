@@ -847,6 +847,14 @@ body {
       .navigation ul ul a:hover, .navigation ul ul a:active, .navigation ul ul a:focus {
         box-shadow: none; }
 
+.player__button {
+  cursor: pointer;
+  display: inline-block; }
+  .player__button:hover use, .player__button:active use, .player__button:focus use {
+    stroke: #fff; }
+  .player__button use {
+    stroke: #efefef; }
+
 .search-toggle__icon {
   position: absolute;
   left: 12px;
