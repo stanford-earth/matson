@@ -29,7 +29,7 @@
     @include grid-media($media-md) {
       font-size: em(12px);
       letter-spacing: 3px;
-    }  
+    }
   }
 
   a {
@@ -63,7 +63,7 @@
       margin: 0;
     }
 
-    .block--lockup__site-logo img {  
+    .block--lockup__site-logo img {
       margin: 0;
       padding-bottom: 5px;
     }
@@ -152,7 +152,7 @@
     padding: 1em 0;
 
     @include grid-media($media-md) {
-      border: none;
+      border: 0;
       padding: 0;
     }
 
@@ -183,6 +183,7 @@
 
   h2 {
     display: none;
+
     @include grid-media($media-md) {
       display: block;
     }
@@ -204,16 +205,13 @@
     @include grid-column(4);
   }
 
-  h2 {
-
-  }
-
   p {
     display: none;
     font-size: em(12px);
     font-weight: 800;
     letter-spacing: 1px;
     opacity: .5;
+
     @include grid-media($media-md) {
       display: block;
     }
