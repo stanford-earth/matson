@@ -7,16 +7,7 @@
 
 <section class="contact-footer" style="background-image:url('https://www-tc.pbs.org/wnet/nature/files/2017/03/1007.jpg')";>
   <div class="contact-footer__brand">
-    <div class="contact-footer__lockup">
-      <div class="block--lockup__site-logo-wrapper">
-        <a href="#" rel="home" class="block--lockup__site-logo">
-          <img src="{{ base_path ~ directory }}/logo.svg" alt="Home" />
-        </a>
-      </div>
-      <div class="block--lockup__site-name-and-slogan">
-        <a href="@" title="Home" rel="home">EARTH</a>
-      </div>
-    </div>
+    <dd>{{ drupal_block('matson_branding') }}</dd>
   </div>
   <div class="contact-footer__social">
     <h2>Join us on Social Media</h2>
@@ -33,12 +24,7 @@
   </div>
   <div class="contact-footer__links">
     <h2>Links</h2>
-    <ul class="contact-links">
-      <li><a href="#">Alumni</a></li>
-      <li><a href="#">Give to Stanford Earth</a></li>
-      <li><a href="#">Newswroom</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+    <dd>{{ drupal_menu('footer') }}</dd>
   </div>
   <div class="contact-footer__subscribe">
     <h2>Subscribe to Earth Matters</h2>

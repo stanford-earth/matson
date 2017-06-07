@@ -55,23 +55,8 @@
     margin-right: 0;
   }
 
-  .contact-footer__lockup {
-    margin: 0 auto;
-    width: 110px;
-
-    @include grid-media($media-md) {
-      margin: 0;
-    }
-
-    .block--lockup__site-logo img {
-      margin: 0;
-      padding-bottom: 5px;
-    }
-
-    .block--lockup__site-name-and-slogan {
-      margin: 0;
-      padding: 0;
-    }
+  .block--lockup {
+    padding: 0;
   }
 }
 
@@ -143,7 +128,7 @@
     margin-right: 0;
   }
 
-  .contact-links {
+  .menu {
     border-top: 1px solid rgba(255, 255, 255, .6);
     border-bottom: 1px solid rgba(255, 255, 255, .6);
     display: inline-block;

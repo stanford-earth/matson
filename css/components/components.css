@@ -542,18 +542,8 @@ body {
       float: left;
       margin-left: 40px;
       margin-right: 0; } }
-  .contact-footer__brand .contact-footer__lockup {
-    margin: 0 auto;
-    width: 110px; }
-    @media only screen and (min-width: 768px) {
-      .contact-footer__brand .contact-footer__lockup {
-        margin: 0; } }
-    .contact-footer__brand .contact-footer__lockup .block--lockup__site-logo img {
-      margin: 0;
-      padding-bottom: 5px; }
-    .contact-footer__brand .contact-footer__lockup .block--lockup__site-name-and-slogan {
-      margin: 0;
-      padding: 0; }
+  .contact-footer__brand .block--lockup {
+    padding: 0; }
 
 .contact-footer__social {
   width: calc(100% - 30px);
@@ -616,7 +606,7 @@ body {
       float: left;
       margin-left: 40px;
       margin-right: 0; } }
-  .contact-footer__links .contact-links {
+  .contact-footer__links .menu {
     border-top: 1px solid rgba(255, 255, 255, 0.6);
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     display: inline-block;
@@ -624,12 +614,12 @@ body {
     margin: 0;
     padding: 1em 0; }
     @media only screen and (min-width: 768px) {
-      .contact-footer__links .contact-links {
+      .contact-footer__links .menu {
         border: 0;
         padding: 0; } }
-    .contact-footer__links .contact-links li {
+    .contact-footer__links .menu li {
       margin: 0; }
-    .contact-footer__links .contact-links a {
+    .contact-footer__links .menu a {
       display: block;
       font-size: 1.0769230769em;
       font-weight: 800;
@@ -638,10 +628,10 @@ body {
       opacity: .5;
       text-transform: uppercase; }
       @media only screen and (min-width: 768px) {
-        .contact-footer__links .contact-links a {
+        .contact-footer__links .menu a {
           font-size: 0.9230769231em;
           padding: 1em 0; } }
-      .contact-footer__links .contact-links a:hover, .contact-footer__links .contact-links a:active, .contact-footer__links .contact-links a:focus {
+      .contact-footer__links .menu a:hover, .contact-footer__links .menu a:active, .contact-footer__links .menu a:focus {
         opacity: 1;
         text-decoration: none; }
   .contact-footer__links h2 {
