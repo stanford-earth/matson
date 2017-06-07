@@ -585,6 +585,71 @@ select {
   background-repeat: no-repeat;
   background-size: 1.3rem; }
 
+[type=checkbox],
+[type=radio] {
+  margin-left: -1.9230769231em;
+  position: absolute; }
+
+[type=checkbox] + label,
+[type=radio] + label {
+  cursor: pointer;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  margin-left: 4px; }
+
+[type=checkbox] + label::before,
+[type=radio] + label::before {
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #9c9d9e;
+  content: '\a0';
+  display: inline-block;
+  height: 1.2307692308em;
+  line-height: 1.2307692308em;
+  margin-right: 1.2307692308em;
+  text-indent: 0.15em;
+  vertical-align: middle\0;
+  width: 1.2307692308em; }
+
+[type=radio] + label::before {
+  border-radius: 100%; }
+
+[type=checkbox]:checked + label::before,
+[type=radio]:checked + label::before {
+  background-color: #8c1515;
+  box-shadow: 0 0 0 1px #ccc; }
+
+[type=radio]:checked + label::before {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #222328; }
+
+[type=radio]:focus + label::before {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #222328, 0 0 3px 4px #016779, 0 0 7px 4px #016779; }
+
+[type=checkbox]:checked + label::before,
+[type=checkbox]:checked:disabled + label::before {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #222328; }
+
+[type=checkbox]:focus + label::before {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #222328, 0 0 3px 4px #016779, 0 0 7px 4px #016779; }
+
+[type=checkbox]:disabled + label {
+  color: #4d4f53; }
+
+[type=checkbox]:disabled + label::before,
+[type=radio]:disabled + label::before {
+  background: #9c9d9e;
+  box-shadow: 0 0 0 4px #9c9d9e;
+  cursor: not-allowed; }
+
+.input-error [type='color'], .input-error [type='date'], .input-error [type='datetime'], .input-error [type='datetime-local'], .input-error [type='email'], .input-error [type='month'], .input-error [type='number'], .input-error [type='password'], .input-error [type='search'], .input-error [type='tel'], .input-error [type='text'], .input-error [type='time'], .input-error [type='url'], .input-error [type='week'], .input-error input:not([type]), .input-error textarea,
+.input-error select {
+  border: 1px solid #b1040e;
+  margin-bottom: .5em; }
+
+.input-error-message {
+  color: #b1040e;
+  margin-bottom: 1em; }
+
 .i-svg {
   display: inline-block;
   fill: currentcolor;
