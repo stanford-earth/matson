@@ -16,24 +16,26 @@
 
 // This is my and the parent theme's config.
 @import "config/config";
+@import "utilities/utilities";
 
 // Dependencies.
 @import 'decanter/core/utilities/decanter-utilities';
 
 // Parent components
 @import
-  "stanford_basic/scss/components/brand-lockup/brand-lockup",
   "stanford_basic/scss/components/breadcrumb/breadcrumb",
   "stanford_basic/scss/components/pager/pager";
 
 // MY components.
 @import
   "brand-bar/brand-bar",
+  "brand-lockup/brand-lockup",
+  "drop-cap/drop-cap",
   "global-footer/global-footer",
   "header/header",
   "hero-banner/hero-banner",
   "navbar/navbar",
   "navigation/navigation",
-  "drop-cap/drop-cap",
   "postcard/postcard",
+  "player-button/player-button",
   "search-toggle/search-toggle";

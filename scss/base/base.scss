@@ -12,19 +12,28 @@
 /// indents and relying on a component class for other applications.
 ////
 
-// matson Theme Config.
-@import 'config/config';
-
-// Decanter config.
+//// Decanter config.
 @import 'decanter/core/utilities/decanter-utilities';
 
-// Decanter base styles.
-@import 'decanter/core/base/decanter-base';
+// Matson Theme Config.
+@import 'config/config';
+
+//// Decanter base styles.
+@import
+  'decanter/core/base/body',
+  'decanter/core/base/box-model',
+  'decanter/core/base/buttons',
+  'decanter/core/base/forms',
+  'decanter/core/base/lists',
+  'decanter/core/base/media-elements',
+  'decanter/core/base/tables',
+  'decanter/core/base/typography';
 
 // matson Theme Overides.
 @import
   'buttons',
   'colors',
   'fonts',
+  'forms',
   'svg',
   'typography';

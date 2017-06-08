@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+#{$all-text-inputs},
+select {
+  $_border: $base-border;
+  $_border-radius: $base-border-radius;
+  $_box-shadow: $form-box-shadow;
+  $_spacing: $base-spacing;
+  $_small-spacing: $base-spacing;
+  $_duration: $base-duration;
+  $_timing: $base-timing;
+
+  appearance: none;
+  background-color: color(background);
+  border: $_border;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  margin-bottom: $_small-spacing;
+  padding: 1em em(16px);
+  transition: border-color $_duration $_timing;
+  width: 100%;
+
+  @include on-event {
+    border-color: shade(color(border), 20%);
+  }
+
+  &:disabled {
+    background-color: shade(color(background), 5%);
+    cursor: not-allowed;
+
+    &:hover {
+      border: $_border;
+    }
+  }
+
+  &::placeholder {
+    color: tint(color(text), 40%);
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding: 1em em(16px);
+  background-image: url('/themes/stanford/matson/img/optimized/carrot.svg');
+  background-position: right 1.3rem center;
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+}
+
+// Custom checkboxes
+
+[type=checkbox],
+[type=radio] {
+  margin-left: em(-25px); //
+  position: absolute;
+}
+
+[type=checkbox] + label,
+[type=radio] + label {
+  cursor: pointer;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  margin-left: 4px;
+}
+
+[type=checkbox] + label::before,
+[type=radio] + label::before {
+  background: color(white);
+  border-radius: 0;
+  box-shadow: 0 0 0 3px color(white), 0 0 0 4px color(ash);
+  content: '\a0';
+  display: inline-block;
+  height: em(16px);
+  line-height: em(16px);
+  margin-right: em(16px);
+  text-indent: 0.15em;
+  vertical-align: middle\0; // Target IE 11 and below to vertically center inputs
+  width: em(16px);
+}
+
+[type=radio] + label::before {
+  border-radius: 100%;
+}
+
+[type=checkbox]:checked + label::before,
+[type=radio]:checked + label::before {
+  background-color: color(brand);
+  box-shadow: 0 0 0 1px color(border);
+}
+
+[type=radio]:checked + label::before {
+  box-shadow: 0 0 0 3px color(white), 0 0 0 4px color(charcoal);
+}
+
+[type=radio]:focus + label::before {
+  box-shadow: 0 0 0 3px color(white), 0 0 0 4px color(charcoal), 0 0 3px 4px color(action-active), 0 0 7px 4px color(action-active);
+}
+
+[type=checkbox]:checked + label::before,
+[type=checkbox]:checked:disabled + label::before {
+  // background-image: url('../../img/optimized/carrot-white.svg');
+  // background-position: 50%;
+  // background-repeat: no-repeat;
+  box-shadow: 0 0 0 3px color(white), 0 0 0 4px color(charcoal);
+}
+
+[type=checkbox]:focus + label::before {
+  box-shadow: 0 0 0 3px color(white), 0 0 0 4px color(charcoal), 0 0 3px 4px color(action-active), 0 0 7px 4px color(action-active);
+}
+
+[type=checkbox]:disabled + label {
+  color: color(text-active);
+}
+
+[type=checkbox]:disabled + label::before,
+[type=radio]:disabled + label::before {
+  background: color(ash);
+  box-shadow: 0 0 0 4px color(ash);
+  cursor: not-allowed;
+}
+
+.input-error {
+  #{$all-text-inputs},
+  select {
+    border: 1px solid color(bright-red);
+    margin-bottom: .5em;
+  }
+}
+
+.input-error-message {
+  color: color(bright-red);
+  margin-bottom: 1em;
+}

@@ -1,3 +1,9 @@
+@charset "UTF-8";
+// -----------------------------------------------------------------------------
+// This file contains all button base styles.
+// -----------------------------------------------------------------------------
+//
+
 //
 // Inline SVG
 // <svg>
@@ -42,6 +48,11 @@
 .i-svg--instagram {
   height: em(18px);
   width: em(18px);
+}
+
+.i-svg--player {
+  height: em(65px);
+  width: em(65px);
 }
 //
 // .i-svg--search {
