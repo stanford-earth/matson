@@ -9,39 +9,15 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-.callout--blocks {
-  $_callout-block-container: (
-    sm-max: (columns: 12, grid-media: $media-sm-max,   v-space: 40px, max-width: false, grid-collapse: false),
-    md: (columns: 12, grid-media: $media-md,          v-space: 40px, max-width: false, grid-collapse: false),
-    lg: (columns: 10, grid-media: $media-lg,          v-space: 40px, max-width: true, grid-collapse: false),
-    xl: (columns: 10, grid-media: $media-xl,          v-space: 40px, max-width: true,  grid-collapse: false),
-    print: (columns: 12, grid-media: $media-print,    v-space: 40px, max-width: false, grid-collapse: false),
-  );
-
-  @include responsive-container($_callout-block-container);
-}
-
-.callout__block {
-  margin-bottom: 2em;
-  width: 100%;
-
-  @include grid-media($media-md) {
-    float: left;
-    width: 30%;
-  }
-}
-
-.callout__icon {
-  img {
-    height: 50px;
-    width: 50px;
-  }
-}
-
-// Theme
 .callout__block {
   padding-left: em(40px);
   position: relative;
+  margin-top: 0;
+  transition: all .3s ease;
+
+  @include on-event {
+    margin-top: -1rem;
+  }
 
   .block__title {
     a {

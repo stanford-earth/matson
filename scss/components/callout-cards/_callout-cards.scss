@@ -9,72 +9,16 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-.callout--cards {
-  $_callout-card-container: (
-    sm-max: (columns: 12, grid-media: $media-sm-max,   v-space: 40px, max-width: false, grid-collapse: false),
-    md: (columns: 12, grid-media: $media-md,          v-space: 40px, max-width: false, grid-collapse: false),
-    lg: (columns: 12, grid-media: $media-lg,          v-space: 40px, max-width: true, grid-collapse: false),
-    xl: (columns: 12, grid-media: $media-xl,          v-space: 40px, max-width: true,  grid-collapse: false),
-    print: (columns: 12, grid-media: $media-print,    v-space: 40px, max-width: false, grid-collapse: false),
-  );
-
-  @include responsive-container($_callout-card-container);
-}
-
-.callout--cards__header {
-  width: 100%;
-
-  @include grid-media($media-md) {
-    @include grid-column(12);
-  }
-
-  @include grid-media($media-lg) {
-    @include grid-column(4);
-  }
-}
-
-.callout__card {
-  min-height: 150px;
-  margin-bottom: 2em;
-  width: 100%;
-
-  @include grid-media($media-md) {
-    @include grid-column(3);
-    min-height: 200px;
-  }
-
-  @include grid-media($media-lg) {
-    @include grid-column(2);
-  }
-}
-
-.callout__icon {
-  img {
-    height: 50px;
-    width: 50px;
-  }
-}
-
-// Theme
-.callout--cards__header {
-  color: color(text-active);
-
-  h2 {
-    @include dash-left();
-    position: relative;
-  }
-
-  p {
-    letter-spacing: .5px;
-    line-height: em(22px);
-  }
-}
-
 .callout__card {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   padding: 2em;
   position: relative;
   text-align: center;
+  transition: all .3s ease;
+
+  @include on-event {
+    margin-top: -1rem;
+  }
 
   .card__title {
     @include center-transform();
@@ -89,6 +33,10 @@
         text-decoration: none;
       }
     }
+  }
+
+  .callout__name {
+    font-size: 20px; // convert to ems?
   }
 
   .callout__action {

@@ -1,9 +1,11 @@
 @charset 'UTF-8';
 
 @mixin dash-under($dash-color: emphasis) {
+  margin-bottom: 1.25em;
+  
   &::after {
     position: absolute;
-    bottom: 0;
+    bottom: -.5em;
     left: 50%;
     background-color: color($dash-color);
     height: 2px;

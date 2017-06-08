@@ -9,17 +9,26 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-.section__header {
-  @include dash-under($dash-color: brand);
-  position: relative;
+.section-header {
   color: color(text-active);
-  padding-bottom: 1em;
 
-  &.is-centered {
-    text-align: center;
-  }
+  h2 {
+    margin-bottom: 1em;
 
-  &.has-emphasis {
-    @include dash-under($dash-color: emphasis);
+    &.has-dash-left {
+      @include dash-left($dash-color: brand);
+    }
+
+    &.has-dash-left--emphasis {
+      @include dash-left($dash-color: emphasis);
+    }
+
+    &.has-dash-under {
+      @include dash-under($dash-color: brand);
+    }
+
+    &.has-dash-under--emphasis {
+      @include dash-under($dash-color: emphasis);
+    }
   }
 }
