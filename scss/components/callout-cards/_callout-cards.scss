@@ -11,7 +11,7 @@
 
 .callout--cards {
   $_callout-card-container: (
-    sm-max: (columns: 1, grid-media: $media-sm-max,   v-space: 40px, max-width: false, grid-collapse: false),
+    sm-max: (columns: 12, grid-media: $media-sm-max,   v-space: 40px, max-width: false, grid-collapse: false),
     md: (columns: 12, grid-media: $media-md,          v-space: 40px, max-width: false, grid-collapse: false),
     lg: (columns: 12, grid-media: $media-lg,          v-space: 40px, max-width: true, grid-collapse: false),
     xl: (columns: 12, grid-media: $media-xl,          v-space: 40px, max-width: true,  grid-collapse: false),
@@ -25,17 +25,27 @@
   width: 100%;
  
   @include grid-media($media-md) {
+    @include grid-column(12);
+  }
+
+  @include grid-media($media-lg) {
     @include grid-column(4);
-  }  
+  }
 }
 
 .callout__card {
-  min-height: 200px;
+  min-height: 150px;
+  margin-bottom: 2em;
   width: 100%;
 
   @include grid-media($media-md) {
+    @include grid-column(3);
+    min-height: 200px;
+  }
+
+  @include grid-media($media-lg) {
     @include grid-column(2);
-  }  
+  }
 }
 
 .callout__icon {
@@ -61,7 +71,7 @@
 }  
 
 .callout__card {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   padding: 2em;
   position: relative;
   text-align: center;
@@ -70,9 +80,20 @@
     @include center-transform();
     color: color(text-active);
     line-height: 1.1;
+    z-index: 2;
+
+    a {
+      color: color(text-active);
+
+      @include on-event {
+        text-decoration: none;
+      }
+    }
   }
 
   .callout__action {
+    @include center-transform(x);
+    bottom: 0;
     padding: 1em 0;
 
     @include on-event {
@@ -93,5 +114,6 @@
   .callout__icon {
     @include center-transform();
     position: absolute;
+    top: 35%;
   }
 }

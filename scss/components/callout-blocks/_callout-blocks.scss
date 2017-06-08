@@ -11,7 +11,7 @@
 
 .callout--blocks {
   $_callout-block-container: (
-    sm-max: (columns: 1, grid-media: $media-sm-max,   v-space: 40px, max-width: false, grid-collapse: false),
+    sm-max: (columns: 12, grid-media: $media-sm-max,   v-space: 40px, max-width: false, grid-collapse: false),
     md: (columns: 12, grid-media: $media-md,          v-space: 40px, max-width: false, grid-collapse: false),
     lg: (columns: 10, grid-media: $media-lg,          v-space: 40px, max-width: true, grid-collapse: false),
     xl: (columns: 10, grid-media: $media-xl,          v-space: 40px, max-width: true,  grid-collapse: false),
@@ -22,6 +22,7 @@
 }
 
 .callout__block {
+  margin-bottom: 2em;
   width: 100%;
 
   @include grid-media($media-md) {
@@ -43,7 +44,13 @@
   position: relative;
 
   .block__title {
+    a {
+      color: color(brand);
 
+      @include on-event {
+        text-decoration: none;
+      }
+    }
   }
 
   .block__title--intro {
