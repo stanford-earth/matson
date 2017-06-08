@@ -22,7 +22,6 @@
 
 // Parent components
 @import
-  "stanford_basic/scss/components/brand-lockup/brand-lockup",
   "stanford_basic/scss/components/breadcrumb/breadcrumb",
   "stanford_basic/scss/components/pager/pager";
 
@@ -30,10 +29,14 @@
 @import
   "brand-bar/brand-bar",
   "brand-lockup/brand-lockup",
+  "callout-blocks/callout-blocks",
+  "callout-cards/callout-cards",
+  "drop-cap/drop-cap",
   "global-footer/global-footer",
   "header/header",
   "hero-banner/hero-banner",
   "navbar/navbar",
   "navigation/navigation",
   "player-button/player-button",
-  "search-toggle/search-toggle";
+  "search-toggle/search-toggle",
+  "section-header/section-header";
