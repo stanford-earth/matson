@@ -13,10 +13,13 @@
   padding-left: em(40px);
   position: relative;
   margin-top: 0;
-  transition: all .3s ease;
+  
+  @include grid-media($media-md) {
+    transition: all .3s ease;
 
-  @include on-event {
-    margin-top: -1rem;
+    @include on-event {
+      margin-top: -1rem;
+    }
   }
 
   .block__title {

@@ -14,10 +14,13 @@
   padding: 2em;
   position: relative;
   text-align: center;
-  transition: all .3s ease;
+  
+  @include grid-media($media-md) {
+    transition: all .3s ease;
 
-  @include on-event {
-    margin-top: -1rem;
+    @include on-event {
+      margin-top: -1rem;
+    }
   }
 
   .card__title {

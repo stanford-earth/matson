@@ -290,10 +290,12 @@
 .callout__block {
   padding-left: 3.0769230769em;
   position: relative;
-  margin-top: 0;
-  transition: all .3s ease; }
-  .callout__block:hover, .callout__block:active, .callout__block:focus {
-    margin-top: -1rem; }
+  margin-top: 0; }
+  @media only screen and (min-width: 768px) {
+    .callout__block {
+      transition: all .3s ease; }
+      .callout__block:hover, .callout__block:active, .callout__block:focus {
+        margin-top: -1rem; } }
   .callout__block .block__title a {
     color: #8c1515; }
     .callout__block .block__title a:hover, .callout__block .block__title a:active, .callout__block .block__title a:focus {
@@ -402,10 +404,12 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   padding: 2em;
   position: relative;
-  text-align: center;
-  transition: all .3s ease; }
-  .callout__card:hover, .callout__card:active, .callout__card:focus {
-    margin-top: -1rem; }
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .callout__card {
+      transition: all .3s ease; }
+      .callout__card:hover, .callout__card:active, .callout__card:focus {
+        margin-top: -1rem; } }
   .callout__card .card__title {
     position: absolute;
     top: 50%;
