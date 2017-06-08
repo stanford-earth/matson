@@ -23,7 +23,7 @@
 
 .callout--cards__header {
   width: 100%;
- 
+
   @include grid-media($media-md) {
     @include grid-column(12);
   }
@@ -55,7 +55,7 @@
   }
 }
 
-// Theme 
+// Theme
 .callout--cards__header {
   color: color(text-active);
 
@@ -68,7 +68,7 @@
     letter-spacing: .5px;
     line-height: em(22px);
   }
-}  
+}
 
 .callout__card {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
