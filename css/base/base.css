@@ -587,8 +587,9 @@ select {
 
 [type=checkbox],
 [type=radio] {
-  margin-left: -1.9230769231em;
-  position: absolute; }
+  margin-left: 0.7692307692em;
+  position: absolute;
+  z-index: -1; }
 
 [type=checkbox] + label,
 [type=radio] + label {

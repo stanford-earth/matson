@@ -57,8 +57,9 @@ select {
 
 [type=checkbox],
 [type=radio] {
-  margin-left: em(-25px); //
+  margin-left: em(10px);
   position: absolute;
+  z-index: -1;
 }
 
 [type=checkbox] + label,
