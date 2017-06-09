@@ -13,7 +13,7 @@
   .callout-card {
     margin-top: 0;
 
-      @include grid-media($media-lg) {
+    @include grid-media($media-lg) {
       transition: all .3s ease;
 
       @include on-event {

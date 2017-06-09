@@ -12,7 +12,7 @@
 .callout-blocks {
   .callout-block {
     margin-top: 0;
-  
+
     @include grid-media($media-md) {
       transition: all .3s ease;
 
@@ -20,14 +20,14 @@
         margin-top: -1rem;
       }
     }
-  }  
+  }
 }
 
 .callout-block {
   padding-left: em(40px);
   position: relative;
   margin-top: 0;
-  
+
   @include grid-media($media-md) {
     transition: all .3s ease;
 
