@@ -1,3 +1,86 @@
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.has-image-overlay {
+  position: relative; }
+  .has-image-overlay::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    content: "";
+    display: block; }
+  .has-image-overlay img {
+    display: block; }
+
+.has-image-gradient {
+  position: relative; }
+  .has-image-gradient::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, transparent 55%, rgba(0, 0, 0, 0.3));
+    content: "";
+    display: block; }
+  .has-image-gradient img {
+    display: block; }
+
+.responsive-video-container {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 2em;
+  height: 0; }
+  .responsive-video-container iframe,
+  .responsive-video-container object,
+  .responsive-video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.section-header h2.has-dash-left::after, .section-header h2.has-dash-left--emphasis::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-under--emphasis::after {
+  position: absolute;
+  bottom: -.5em;
+  left: 50%;
+  height: 2px;
+  width: 20px;
+  content: "";
+  display: block;
+  transform: translateX(-50%); }
+
 @media only screen and (max-width: 575px) {
   .breadcrumb {
     padding: 1em calc(((50% /12) * 0) + 20px); }
@@ -1014,9 +1097,6 @@ body {
   display: block;
   transform: translateX(-50%); }
 
-.hero-banner {
-  margin-top: -121px; }
-
 .hero-banner__container {
   border: 1px solid #fff;
   margin-top: 5em;
@@ -1416,6 +1496,110 @@ body {
       padding: 1em 1em; }
       .navigation ul ul a:hover, .navigation ul ul a:active, .navigation ul ul a:focus {
         box-shadow: none; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.has-image-overlay {
+  position: relative; }
+  .has-image-overlay::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    content: "";
+    display: block; }
+  .has-image-overlay img {
+    display: block; }
+
+.has-image-gradient {
+  position: relative; }
+  .has-image-gradient::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, transparent 55%, rgba(0, 0, 0, 0.3));
+    content: "";
+    display: block; }
+  .has-image-gradient img {
+    display: block; }
+
+.responsive-video-container {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 2em;
+  height: 0; }
+  .responsive-video-container iframe,
+  .responsive-video-container object,
+  .responsive-video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.section-header h2.has-dash-left::after, .section-header h2.has-dash-left--emphasis::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-under--emphasis::after {
+  position: absolute;
+  bottom: -.5em;
+  left: 50%;
+  height: 2px;
+  width: 20px;
+  content: "";
+  display: block;
+  transform: translateX(-50%); }
+
+.postcard {
+  background-color: #FBFBFB; }
+  .postcard .postcard__content-text {
+    color: #9c9d9e;
+    line-height: 2em;
+    text-align: center; }
+  .postcard .postcard__title {
+    font-size: 2.1538461538em;
+    padding-bottom: 0.7692307692em;
+    padding-top: 0.7692307692em;
+    color: #4d4f53; }
+    @media only screen and (min-width: 576px) {
+      .postcard .postcard__title {
+        font-size: 2.3076923077em; } }
+  .postcard .postcard__more {
+    padding: 1em; }
+    .postcard .postcard__more svg {
+      vertical-align: middle; }
+    .postcard .postcard__more use {
+      fill: #8c1515; }
 
 @keyframes fadein {
   from {

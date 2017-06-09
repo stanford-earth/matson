@@ -16,6 +16,7 @@
 
 // This is my and the parent theme's config.
 @import "config/config";
+@import "utilities/utilities";
 
 // Dependencies.
 @import 'decanter/core/utilities/decanter-utilities';
@@ -37,6 +38,7 @@
   "hero-banner/hero-banner",
   "navbar/navbar",
   "navigation/navigation",
+  "postcard/postcard",
   "player-button/player-button",
   "search-toggle/search-toggle",
   "section-header/section-header";
