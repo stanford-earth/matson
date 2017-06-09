@@ -1,31 +1,39 @@
 @charset 'UTF-8';
 
-@mixin dash-under($dash-color: emphasis) {
+%dash-under {
+  position: absolute;
+  bottom: -.5em;
+  left: 50%;
+  height: 2px;
+  width: 20px;
+  content: "";
+  display: block;
+  transform: translateX(-50%);
+}
+
+@mixin dash-under($dash-color: brand) {
   margin-bottom: 1.25em;
-  
+
   &::after {
-    position: absolute;
-    bottom: -.5em;
-    left: 50%;
+    @extend %dash-under;
     background-color: color($dash-color);
-    height: 2px;
-    width: 20px;
-    content: "";
-    display: block;
-    transform: translateX(-50%);
   }
 }
 
-@mixin dash-left($dash-color: emphasis) {
+@mixin dash-left($dash-color: brand) {
+  margin-bottom: 1.25em;
+
+  @include grid-media($media-md) {
+    margin-bottom: .75em;
+  }
+
   &::after {
-    position: absolute;
-    top: 50%;
-    left: -20px;
+    @extend %dash-under;
     background-color: color($dash-color);
-    height: 2px;
-    width: 20px;
-    content: "";
-    display: block;
-    transform: translateX(-50%);
+
+    @include grid-media($media-md) {
+      top: 50%;
+      left: -20px;
+    }
   }
 }

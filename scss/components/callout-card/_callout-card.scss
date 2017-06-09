@@ -9,21 +9,27 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-.callout__card {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  padding: 2em;
-  position: relative;
-  text-align: center;
-  
-  @include grid-media($media-md) {
-    transition: all .3s ease;
+.callout-cards {
+  .callout-card {
+    margin-top: 0;
 
-    @include on-event {
-      margin-top: -1rem;
+      @include grid-media($media-lg) {
+      transition: all .3s ease;
+
+      @include on-event {
+        margin-top: -1rem;
+      }
     }
   }
+}
 
-  .card__title {
+.callout-card {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 2em 1em;
+  position: relative;
+  text-align: center;
+
+  .callout-card__title {
     @include center-transform();
     color: color(text-active);
     line-height: 1.1;
@@ -38,11 +44,11 @@
     }
   }
 
-  .callout__name {
+  .callout-card__name {
     font-size: 20px; // convert to ems?
   }
 
-  .callout__action {
+  .callout-card__action {
     @include center-transform(x);
     bottom: 0;
     padding: 1em 0;
@@ -62,7 +68,7 @@
     }
   }
 
-  .callout__icon {
+  .callout-card__icon {
     @include center-transform();
     position: absolute;
     top: 35%;

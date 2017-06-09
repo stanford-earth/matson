@@ -13,8 +13,6 @@
   color: color(text-active);
 
   h2 {
-    margin-bottom: 1em;
-
     &.has-dash-left {
       @include dash-left($dash-color: brand);
     }
@@ -30,5 +28,10 @@
     &.has-dash-under--emphasis {
       @include dash-under($dash-color: emphasis);
     }
+  }
+
+  p {
+    line-height: em(22px);
+    letter-spacing: .5px;
   }
 }

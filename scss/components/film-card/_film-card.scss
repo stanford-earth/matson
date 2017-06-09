@@ -1,0 +1,27 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+///
+/// Card class.
+///
+.film-card {
+  margin-top: 0;
+}
+
+.film-card__caption {
+  text-transform: uppercase;
+}
+
+.film-card__arrow {
+  svg use {
+    fill: color(white);
+  }
+}

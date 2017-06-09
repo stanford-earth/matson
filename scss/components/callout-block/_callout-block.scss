@@ -9,7 +9,21 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-.callout__block {
+.callout-blocks {
+  .callout-block {
+    margin-top: 0;
+  
+    @include grid-media($media-md) {
+      transition: all .3s ease;
+
+      @include on-event {
+        margin-top: -1rem;
+      }
+    }
+  }  
+}
+
+.callout-block {
   padding-left: em(40px);
   position: relative;
   margin-top: 0;
@@ -22,7 +36,7 @@
     }
   }
 
-  .block__title {
+  .callout-block__title {
     a {
       color: color(brand);
 
@@ -32,26 +46,26 @@
     }
   }
 
-  .block__title--intro {
+  .callout-block__intro {
     color: color(ash);
     font-size: em(12px);
     text-transform: uppercase;
   }
 
-  .block__title--name {
+  .callout-block__name {
     color: color(brand);
     font-size: em(26px);
     margin-bottom: 0;
   }
 
-  .block__title--secondary {
+  .callout-block__subhead {
     color: color(action);
     font-size: em(12px);
     margin-left: 16px;
     text-transform: uppercase;
   }
 
-  .callout__action {
+  .callout-block__action {
     padding: 1em 0;
     margin-left: 16px;
 
@@ -70,7 +84,7 @@
     }
   }
 
-  .callout__icon {
+  .callout-block__icon {
     position: absolute;
     top: 0;
     left: 0;
