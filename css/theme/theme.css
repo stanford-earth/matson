@@ -33,7 +33,7 @@
 
 @media only screen and (max-width: 575px) {
   .block--page-title {
-    padding: 1em calc(((50% /12) * 0) + 20px); }
+    padding: 1em calc(((50% /12) * 0) + 30px); }
     .block--page-title::after {
       clear: both;
       content: "";
@@ -41,7 +41,7 @@
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .block--page-title {
-    padding: 1em calc(((50% /12) * 0) + 20px); }
+    padding: 1em calc(((50% /12) * 0) + 30px); }
     .block--page-title::after {
       clear: both;
       content: "";

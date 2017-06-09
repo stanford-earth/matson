@@ -83,7 +83,7 @@
 
 @media only screen and (max-width: 575px) {
   .breadcrumb {
-    padding: 1em calc(((50% /12) * 0) + 20px); }
+    padding: 1em calc(((50% /12) * 0) + 30px); }
     .breadcrumb::after {
       clear: both;
       content: "";
@@ -91,7 +91,7 @@
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .breadcrumb {
-    padding: 1em calc(((50% /12) * 0) + 20px); }
+    padding: 1em calc(((50% /12) * 0) + 30px); }
     .breadcrumb::after {
       clear: both;
       content: "";
@@ -147,14 +147,14 @@
   order: -100; }
   @media only screen and (max-width: 575px) {
     .brand-bar {
-      padding: 1em calc(((50% /12) * 0) + 20px); }
+      padding: 1em calc(((50% /12) * 0) + 30px); }
       .brand-bar::after {
         clear: both;
         content: "";
         display: block; } }
   @media only screen and (min-width: 576px) and (max-width: 767px) {
     .brand-bar {
-      padding: 1em calc(((50% /12) * 0) + 20px); }
+      padding: 1em calc(((50% /12) * 0) + 30px); }
       .brand-bar::after {
         clear: both;
         content: "";
@@ -252,9 +252,9 @@
         content: "";
         display: block; } }
   .block--lockup .block-grid-collapse {
-    margin-left: -20px;
-    margin-right: -20px;
-    width: calc(100% + 40px); }
+    margin-left: -30px;
+    margin-right: -30px;
+    width: calc(100% + 60px); }
 
 .block--lockup__site-logo-wrapper .block--lockup__site-logo img {
   margin: 0 25px; }
@@ -978,7 +978,7 @@
   width: 100%; }
   @media only screen and (max-width: 767px) {
     #footer__global-footer {
-      padding: 30px calc(((50% /12) * 0) + 20px); }
+      padding: 30px calc(((50% /12) * 0) + 30px); }
       #footer__global-footer::after {
         clear: both;
         content: "";
@@ -1429,7 +1429,7 @@ body {
 
 @media only screen and (max-width: 575px) {
   .navbar__container {
-    padding: 0 calc(((50% /12) * 0) + 20px); }
+    padding: 0 calc(((50% /12) * 0) + 30px); }
     .navbar__container::after {
       clear: both;
       content: "";
@@ -1437,7 +1437,7 @@ body {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .navbar__container {
-    padding: 0 calc(((50% /12) * 0) + 20px); }
+    padding: 0 calc(((50% /12) * 0) + 30px); }
     .navbar__container::after {
       clear: both;
       content: "";

@@ -6,17 +6,26 @@ $decanter-default-settings: (
   base-font-size: 13px,
   modular-scale-ratio: 1.333,
   columns: 12,
-  gutter: 20px,
+  gutter: 30px,
   max-container-width: 1500px,
   breakpoint-helper: false,
   breakpoint-helper-selector: #breakpoint-helper,
 );
 
-/// @name Bourbon Settings
+/// Bourbon Settings
 ///
-/// @group settings
 $bourbon: (
   "modular-scale-ratio": 1.333,
+);
+
+/// Neat grid
+///
+$neat-grid: (
+  columns: map_get($decanter-default-settings, columns),
+  gutter:  map_get($decanter-default-settings, gutter),
+  media: null,
+  color: rgba(#00d4ff, 0.25),
+  direction: ltr,
 );
 
 /// Header MD Min
