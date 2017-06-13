@@ -587,7 +587,7 @@ select {
 
 [type=checkbox],
 [type=radio] {
-  margin-left: 0.7692307692em;
+  margin-left: 0.6923076923em;
   position: absolute;
   z-index: -1; }
 
@@ -610,7 +610,8 @@ select {
   margin-right: 1.2307692308em;
   text-indent: 0.15em;
   vertical-align: middle\0;
-  width: 1.2307692308em; }
+  width: 1.2307692308em;
+  z-index: 2; }
 
 [type=radio] + label::before {
   border-radius: 100%; }
