@@ -1,0 +1,14 @@
+.player__button {
+  cursor: pointer;
+  display: inline-block;
+
+  @include on-event {
+    use {
+      stroke: color(white);
+    }
+  }
+
+  use {
+    stroke: color(tint);
+  }
+}

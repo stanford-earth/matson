@@ -24,9 +24,11 @@ $hero-max-width-lg: 1500px;
   }
 }
 
-.hero-banner {
-  margin-top: -121px;
-}
+// Going to move this to a different theme file that is more specific to when
+// the component is used.
+//.hero-banner {
+//  margin-top: -121px;
+//}
 
 .hero-banner__container {
   border: 1px solid color(white);

@@ -1,0 +1,15 @@
+.drop-cap-title {
+  position: relative;
+}
+
+.drop-cap-title__name {
+  position: relative;
+  z-index: 2;
+}
+
+.drop-cap-title__drop-cap {
+  @include center-transform;
+  font-size: 80px;
+  color: darken(color(dust), 5%);
+  z-index: 1;
+}
