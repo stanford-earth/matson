@@ -5,12 +5,12 @@
  */
 #}
 
-<section class="contact-footer" style="background-image:url('https://www-tc.pbs.org/wnet/nature/files/2017/03/1007.jpg')";>
+<section class="contact-footer" style="background-image:url('../img/optimized/footer-bg.png')";>
   <div class="contact-footer__brand">
     <dd>{{ drupal_block('matson_branding') }}</dd>
   </div>
   <div class="contact-footer__social">
-    <h2>Join us on Social Media</h2>
+    <h2>{{ 'Join us on Social Media'|trans }}</h2>
     <ul class="social-links">
       <li><a href="https://twitter.com/stanfordearth"><span class="visually-hidden">Twitter</span>
         <svg class="i-svg i-svg--twitter is-white"> <use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use> </svg>
@@ -23,15 +23,15 @@
     </ul>
   </div>
   <div class="contact-footer__links">
-    <h2>Links</h2>
+    <h2>{{ 'Links'|trans }}</h2>
     <dd>{{ drupal_menu('footer') }}</dd>
   </div>
   <div class="contact-footer__subscribe">
-    <h2>Subscribe to Earth Matters</h2>
-    <p>Our Monthly Research News Alert</p>
+    <h2>{{ 'Subscribe to Earth Matters'|trans }}</h2>
+    <p>{{ 'Our Monthly Research News Alert'|trans }}</p>
     <form class="subscribe-form">
       <input type="text" name="email" class="email-input" placeholder="name@stanford.edu">
-      <button class="button__hollow">Join</button>
+      <button class="button__hollow">{{ 'Join'|trans }}Join</button>
     </form>
   </div>
 </section>
