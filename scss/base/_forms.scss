@@ -57,9 +57,9 @@ select {
 
 [type=checkbox],
 [type=radio] {
-  margin-left: em(9px);
   position: absolute;
-  z-index: -1;
+  clip-path: inset(10px 20px 30px 40px);
+  clip: rect(0px,0px,0px,0px);
 }
 
 [type=checkbox] + label,

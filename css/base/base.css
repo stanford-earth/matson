@@ -587,9 +587,9 @@ select {
 
 [type=checkbox],
 [type=radio] {
-  margin-left: 0.6923076923em;
   position: absolute;
-  z-index: -1; }
+  clip-path: inset(10px 20px 30px 40px);
+  clip: rect(0px, 0px, 0px, 0px); }
 
 [type=checkbox] + label,
 [type=radio] + label {
