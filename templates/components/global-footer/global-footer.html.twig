@@ -5,7 +5,7 @@
  */
 #}
 
-<section class="contact-footer" style="background-image:url('../img/optimized/footer-bg.png')";>
+<section class="contact-footer" style="background-image:url('{{ base_path ~ directory }}/img/optimized/footer-bg.png')";>
   <div class="contact-footer__brand">
     <dd>{{ drupal_block('matson_branding') }}</dd>
   </div>
@@ -31,7 +31,7 @@
     <p>{{ 'Our Monthly Research News Alert'|trans }}</p>
     <form class="subscribe-form">
       <input type="text" name="email" class="email-input" placeholder="name@stanford.edu">
-      <button class="button__hollow">{{ 'Join'|trans }}Join</button>
+      <button class="button__hollow">{{ 'Join'|trans }}</button>
     </form>
   </div>
 </section>

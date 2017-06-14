@@ -8,9 +8,9 @@
   );
 
   @include responsive-container($_contact-container);
-  @include image-overlay($image-overlay-bg-color: rgba(0, 0, 0, 0.75));
+  // @include image-overlay($image-overlay-bg-color: rgba(0, 0, 0, 0.75));
   background-size: cover;
-  background-color: color(text);
+  background-color: color(black);
   color: color(white);
   text-align: center;
 
