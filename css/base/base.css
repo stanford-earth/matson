@@ -650,7 +650,8 @@ select {
   color: #b1040e;
   margin-bottom: 1em; }
 
-ul, ol {
+ul,
+ol {
   color: #4d4f53; }
 
 ul > li,
