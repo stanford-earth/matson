@@ -1,0 +1,76 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.callout-cards {
+  .callout-card {
+    margin-top: 0;
+
+    @include grid-media($media-lg) {
+      transition: all .3s ease;
+
+      @include on-event {
+        margin-top: -1rem;
+      }
+    }
+  }
+}
+
+.callout-card {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 2em 1em;
+  position: relative;
+  text-align: center;
+
+  .callout-card__title {
+    @include center-transform();
+    color: color(text-active);
+    line-height: 1.1;
+    z-index: 2;
+
+    a {
+      color: color(text-active);
+
+      @include on-event {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .callout-card__name {
+    font-size: 20px; // convert to ems?
+  }
+
+  .callout-card__action {
+    @include center-transform(x);
+    bottom: 0;
+    padding: 1em 0;
+
+    @include on-event {
+      use {
+        fill: color(ash);
+      }
+    }
+
+    svg {
+      vertical-align: middle;
+    }
+
+    use {
+      fill: color(brand);
+    }
+  }
+
+  .callout-card__icon {
+    @include center-transform();
+    position: absolute;
+    top: 35%;
+  }
+}
