@@ -133,11 +133,6 @@
   list-style-type: none;
   display: inline-block; }
 
-.pager__item {
-  display: inline; }
-  .pager__item a {
-    display: inline-block; }
-
 .brand-bar {
   height: 40px;
   max-height: 40px;
