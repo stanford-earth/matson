@@ -2208,12 +2208,12 @@ ul.tabs {
   display: inline-block;
   margin-bottom: 0; }
   .tabs__tab a {
-    display: block;
+    border: 0;
     color: #4d4f53;
+    display: block;
     font-weight: 600;
     letter-spacing: .5px;
     padding: 1.25em 1em 1em;
-    border: none;
     text-transform: uppercase; }
     .tabs__tab a:hover, .tabs__tab a:active, .tabs__tab a:focus {
       box-shadow: inset 0 -3px 0 0 #dad7cb;

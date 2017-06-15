@@ -14,12 +14,12 @@ ul.tabs {
   margin-bottom: 0;
 
   a {
-    display: block;
+    border: 0;
     color: color(text-active);
+    display: block;
     font-weight: 600;
     letter-spacing: .5px;
     padding: 1.25em 1em 1em;
-    border: none;
     text-transform: uppercase;
 
     @include on-event {
