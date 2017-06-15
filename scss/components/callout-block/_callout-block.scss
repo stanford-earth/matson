@@ -1,0 +1,92 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.callout-blocks {
+  .callout-block {
+    margin-top: 0;
+
+    @include grid-media($media-md) {
+      transition: all .3s ease;
+
+      @include on-event {
+        margin-top: -1rem;
+      }
+    }
+  }
+}
+
+.callout-block {
+  padding-left: em(40px);
+  position: relative;
+  margin-top: 0;
+
+  @include grid-media($media-md) {
+    transition: all .3s ease;
+
+    @include on-event {
+      margin-top: -1rem;
+    }
+  }
+
+  .callout-block__title {
+    a {
+      color: color(brand);
+
+      @include on-event {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .callout-block__intro {
+    color: color(ash);
+    font-size: em(12px);
+    text-transform: uppercase;
+  }
+
+  .callout-block__name {
+    color: color(brand);
+    font-size: em(26px);
+    margin-bottom: 0;
+  }
+
+  .callout-block__subhead {
+    color: color(action);
+    font-size: em(12px);
+    margin-left: 16px;
+    text-transform: uppercase;
+  }
+
+  .callout-block__action {
+    padding: 1em 0;
+    margin-left: 16px;
+
+    @include on-event {
+      use {
+        fill: color(ash);
+      }
+    }
+
+    svg {
+      vertical-align: middle;
+    }
+
+    use {
+      fill: color(brand);
+    }
+  }
+
+  .callout-block__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

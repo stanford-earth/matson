@@ -1,0 +1,37 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.section-header {
+  color: color(text-active);
+
+  h2 {
+    &.has-dash-left {
+      @include dash-left($dash-color: brand);
+    }
+
+    &.has-dash-left--emphasis {
+      @include dash-left($dash-color: emphasis);
+    }
+
+    &.has-dash-under {
+      @include dash-under($dash-color: brand);
+    }
+
+    &.has-dash-under--emphasis {
+      @include dash-under($dash-color: emphasis);
+    }
+  }
+
+  p {
+    line-height: em(22px);
+    letter-spacing: .5px;
+  }
+}
