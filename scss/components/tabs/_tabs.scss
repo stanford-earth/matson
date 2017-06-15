@@ -1,19 +1,25 @@
 @charset "UTF-8";
 
+.block--local-tasks {
+  @include responsive-container($default-container);
+}
+
 ul.tabs {
   background-color: color(dust);
-  border-bottom: 1px solid color(fog) !important;
+  border-bottom: 1px solid color(fog);
 }
 
 .tabs__tab {
+  display: inline-block;
   margin-bottom: 0;
 
   a {
+    display: block;
     color: color(text-active);
     font-weight: 600;
     letter-spacing: .5px;
     padding: 1.25em 1em 1em;
-    border: none !important;
+    border: none;
     text-transform: uppercase;
 
     @include on-event {
