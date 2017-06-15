@@ -1,3 +1,11 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
 .contact-footer {
   $_contact-container: (
     sm-max: (columns: 12, grid-media: $media-sm-max,  v-space: 40px, max-width: false, grid-collapse: false),
@@ -57,6 +65,18 @@
 
   .block--lockup {
     padding: 0;
+
+    @include grid-media($media-md-only) {
+      margin: 0;
+    }
+  }
+
+  .block--lockup__site-name-and-slogan,
+  .block--lockup__site-logo-wrapper .block--lockup__site-logo img {
+    @include grid-media($media-md) {
+      width: 110px;
+      margin: 0;
+    }
   }
 }
 
@@ -121,6 +141,10 @@
     padding: 0;
     margin-left: 0;
     margin-right: 40px;
+  }
+
+  @include grid-media($media-md-only) {
+    clear: both;
   }
 
   @include grid-media($media-lg) {
