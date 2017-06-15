@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+ul.tabs {
+  background-color: color(dust);
+  border-bottom: 1px solid color(fog) !important;
+}
+
+.tabs__tab {
+  margin-bottom: 0;
+
+  a {
+    color: color(text-active);
+    font-weight: 600;
+    letter-spacing: .5px;
+    padding: 1.25em 1em 1em;
+    border: none !important;
+    text-transform: uppercase;
+
+    @include on-event {
+      box-shadow: inset 0 -3px 0 0 color(fog);
+      color: color(text-active);
+      text-decoration: none;
+    }
+  }
+}
+
+.tabs__tab--active {
+  a {
+    box-shadow: inset 0 -3px 0 0 color(brand);
+
+    @include on-event {
+      box-shadow: inset 0 -3px 0 0 color(brand);
+    }
+  }
+}
