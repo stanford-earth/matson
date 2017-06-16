@@ -20,11 +20,9 @@
     &.has-dash--under {
       @include dash-under($dash-color: brand);
     }
-    
-    &.has-dash--emphasis {
-      &::after {
-        background-color: color(emphasis);
-      }
+
+    &.has-dash--emphasis::after {
+      background-color: color(emphasis);
     }
   }
 

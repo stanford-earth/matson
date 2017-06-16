@@ -2348,20 +2348,8 @@ body {
   z-index: 3; }
 
 .section-feature-cards .feature-cards__header {
+  @indlude box-frame();
   position: relative; }
-  @media only screen and (min-width: 1024px) {
-    .section-feature-cards .feature-cards__header::after {
-      position: absolute;
-      top: -3.8461538462em;
-      bottom: -3.8461538462em;
-      right: -3.8461538462em;
-      width: 1000px;
-      content: '';
-      display: block;
-      border: 1px solid #efefef; } }
-  @media only screen and (min-width: 1500px) {
-    .section-feature-cards .feature-cards__header::after {
-      right: 0; } }
 
 .section-feature-cards p {
   color: #9c9d9e; }
