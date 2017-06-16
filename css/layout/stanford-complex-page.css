@@ -1,0 +1,17 @@
+article .content > div:first-child {
+  margin-top: -134px; }
+
+.block--local-tasks {
+  position: absolute;
+  left: 0px;
+  z-index: 10; }
+  .block--local-tasks ul.tabs {
+    background: #FFF;
+    width: 100%; }
+    .block--local-tasks ul.tabs li {
+      display: block; }
+  @media only screen and (max-width: 767px) {
+    .block--local-tasks {
+      display: none; } }
+
+/*# sourceMappingURL=stanford-complex-page.css.map */

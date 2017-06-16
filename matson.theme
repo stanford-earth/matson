@@ -25,6 +25,37 @@ function matson_preprocess_field(&$variables, $hook) {
  * Prepares non node/panel pages to be in a single column.
  */
 function matson_preprocess_page(&$vars) {
+  // // conditionally attach libraries to content types.
+  // if (isset($vars['node']) && is_object($vars['node'])) {
+  //   $type = $vars['node']->getType();
+  //   switch ($type) {
+  //     case 'complex_page':
+  //       $vars['page']['#attached']['library'][] = 'matson/ie8';
+  //       break;
+  //   }
+  // }
+  // dpm($vars['page']['#attached']['library']);
+}
+
+/**
+ * In some cases, the asset library is not associated with a certain part of the
+ * page, because it is associated with the entire page. For this case,
+ * hook_page_attachments() exists. A clear example can be found in the
+ * Contextual Links module:
+ */
+function matson_page_attachments_alter(array &$attachments) {
+
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if (!is_object($node)) {
+    return;
+  }
+
+  $type = $node->getType();
+  switch ($type) {
+    case 'complex_page':
+      $attachments['#attached']['library'][] = 'matson/stanford_complex_page';
+      break;
+  }
 
 }
 

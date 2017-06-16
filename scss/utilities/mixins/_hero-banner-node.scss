@@ -1,0 +1,37 @@
+@charset 'UTF-8';
+
+// This is my and the parent theme's config.
+@import "config/config";
+
+// Dependencies.
+@import 'decanter/core/utilities/decanter-utilities';
+
+///
+/// Styles for a node type that should have a hero banner at the top.
+///
+
+@mixin hero-banner-node {
+
+  article .content > div:first-child {
+    margin-top: -134px;
+  }
+
+  .block--local-tasks {
+    position: absolute;
+    left: 0px;
+    z-index: 10;
+
+    ul.tabs {
+      background: #FFF;
+      width: 100%;
+      li {
+        display: block;
+      }
+    }
+
+    @include grid-media($media-sm-max) {
+      display: none;
+    }
+  }
+
+}
