@@ -1,0 +1,82 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+
+.feature-card__link {
+  margin-bottom: em(14px);
+}
+
+.feature-card__tag {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: .25em 1em;
+
+  h6 {
+    color: color(white);
+    font-size: em(16px);
+    font-weight: 600;
+    letter-spacing: .2px;
+    line-height: 1;
+  }
+}
+
+.feature-card__description {
+  color: color(ash);
+  letter-spacing: .5px;
+  margin-bottom: 4px;
+}
+
+.feature-card__arrow svg {
+  margin-left: .5em;
+
+  use {
+    fill: color(brand);
+  }
+}
+
+.feature-card__more {
+  font-size: em(12px);
+  text-transform: uppercase;
+  letter-spacing: .15px;
+
+  @include on-event {
+    text-decoration: none;
+  }
+}
+
+.section-feature-cards {
+  
+  .feature-cards__header {
+    position: relative;
+
+    &::after {
+      @include grid-media($media-lg) {
+        position: absolute;
+        top: em(-50px);
+        bottom: em(-50px);
+        right: em(-50px);
+        width: 1000px;
+        content: '';
+        display: block;
+        border: 1px solid #efefef; 
+      }
+
+      @include grid-media($media-xl) {
+        right: 0;
+      }
+    }
+  }
+
+  p {
+    color: color(ash);
+  }
+}
+
+
