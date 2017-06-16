@@ -1,5 +1,5 @@
-article .content > div:first-child {
-  margin-top: -134px; }
+article .content > div:first-child .hero-banner {
+  margin-top: -120px; }
 
 .block--local-tasks {
   position: absolute;
