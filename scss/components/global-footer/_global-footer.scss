@@ -57,9 +57,6 @@
       margin-left: 40px;
     }
 
-    @include grid-media($media-xl) {
-
-    }
   }
 
   #global-footer__nav {
@@ -161,6 +158,27 @@
 
     @include grid-media($media-xl) {
       margin-left: em(220px);
+    }
+  }
+}
+
+.contact-footer {
+
+  @include grid-media($media-md) {
+    .block--lockup__site-slogan {
+      margin: 0 0 0 2px;
+    }
+  }
+
+  @include grid-media($header-md) {
+    .block--lockup__site-slogan {
+      margin: 0 0 0 2px;
+    }
+  }
+
+  @include grid-media($media-lg) {
+    .block--lockup__site-slogan {
+      margin: 0 0 0 2px;
     }
   }
 }
