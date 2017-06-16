@@ -12,19 +12,77 @@ $decanter-default-settings: (
   breakpoint-helper-selector: #breakpoint-helper,
 );
 
-/// @name Bourbon Settings
+/// Bourbon Settings
 ///
-/// @group settings
 $bourbon: (
   "modular-scale-ratio": 1.333,
 );
 
+/// Neat grid
+///
+$neat-grid: (
+  columns: map_get($decanter-default-settings, columns),
+  gutter:  map_get($decanter-default-settings, gutter),
+  media: null,
+  color: rgba(#00d4ff, 0.25),
+  direction: ltr,
+);
+
 /// Header MD Min
 $header-md-min: 860px;
+
+/// Media MD
+$media-md: (
+  columns: 12,
+  gutter: 30px,
+  media: $screen-md-min,
+);
+
+/// Media MD only
+$media-md-only: (
+  columns: 12,
+  gutter: 30px,
+  media: 'only screen and (min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})',
+);
+
+/// Media MD max
+$media-md-max: (
+  columns: 12,
+  gutter: 30px,
+  media: 'only screen and (max-width: #{$screen-md-max})',
+);
 
  /// Component Header
 $header-md: (
   columns: 12,
   gutter: 30px,
   media: $header-md-min,
+);
+
+/// Media LG
+$media-lg: (
+  columns: 12,
+  gutter: 30px,
+  media: $screen-lg-min,
+);
+
+/// Media LG only
+$media-lg-only: (
+  columns: 12,
+  gutter: 30px,
+  media: 'only screen and (min-width: #{$screen-lg-min}) and (max-width: #{$screen-lg-max})',
+);
+
+/// Media LG max
+$media-lg-max: (
+  columns: 12,
+  gutter: 30px,
+  media: 'only screen and (max-width: #{$screen-lg-max})',
+);
+
+/// Media XL
+$media-xl: (
+  columns: 12,
+  gutter: 60px,
+  media: $screen-xl-min,
 );

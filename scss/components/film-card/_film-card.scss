@@ -9,17 +9,19 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-.player__button {
-  cursor: pointer;
-  display: inline-block;
+///
+/// Card class.
+///
+.film-card {
+  margin-top: 0;
+}
 
-  @include on-event {
-    use {
-      stroke: color(white);
-    }
-  }
+.film-card__caption {
+  text-transform: uppercase;
+}
 
-  use {
-    stroke: color(tint);
+.film-card__arrow {
+  svg use {
+    fill: color(white);
   }
 }
