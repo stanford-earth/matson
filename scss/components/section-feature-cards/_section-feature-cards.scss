@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.section-feature-cards {
+
+  .feature-cards__header {
+    position: relative;
+
+    &::after {
+      @include grid-media($media-lg) {
+        position: absolute;
+        top: em(-50px);
+        bottom: em(-50px);
+        right: em(-50px);
+        width: 1000px;
+        content: '';
+        display: block;
+        border: 1px solid #efefef; 
+      }
+
+      @include grid-media($media-xl) {
+        right: 0;
+      }
+    }
+  }
+
+  p {
+    color: color(ash);
+  }
+}
