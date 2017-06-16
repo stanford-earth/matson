@@ -16,10 +16,12 @@
     margin-top: -120px;
   }
 
+  /* temporary until I can find a better solution overall for the tabs. */
   .block--local-tasks {
     position: absolute;
-    left: 0px;
+    left: 0;
     z-index: 10;
+    padding: 1em 0 !important;
 
     ul.tabs {
       background: #FFF;
