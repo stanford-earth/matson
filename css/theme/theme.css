@@ -119,7 +119,8 @@
     right: 0;
     background-color: rgba(0, 0, 0, 0.35);
     content: "";
-    display: block; }
+    display: block;
+    z-index: 1; }
   .has-image-overlay img {
     display: block; }
 
