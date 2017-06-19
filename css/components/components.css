@@ -2412,12 +2412,36 @@
   display: block;
   z-index: 2; }
 
-.section-feature-cards .feature-cards__header {
-  @indlude box-frame();
-  position: relative; }
-
-.section-feature-cards p {
-  color: #9c9d9e; }
+.section-header {
+  color: #4d4f53; }
+  .section-header h2.has-dash--under {
+    margin-bottom: 1.25em; }
+    .section-header h2.has-dash--under::after {
+      background-color: #8c1515;
+      bottom: -.5em;
+      left: 50%;
+      transform: translateX(-50%); }
+  .section-header h2.has-dash--left {
+    margin-bottom: 1.25em; }
+    @media only screen and (min-width: 768px) {
+      .section-header h2.has-dash--left {
+        margin-bottom: .75em; } }
+    .section-header h2.has-dash--left::after {
+      bottom: -.5em;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #8c1515; }
+      @media only screen and (min-width: 768px) {
+        .section-header h2.has-dash--left::after {
+          bottom: auto;
+          top: .625em;
+          left: -.9em;
+          transform: none; } }
+  .section-header h2.has-dash--emphasis::after {
+    background-color: #f9b002; }
+  .section-header p {
+    line-height: 1.6923076923em;
+    letter-spacing: .5px; }
 
 @keyframes fadein {
   from {
@@ -2500,36 +2524,12 @@
   display: block;
   z-index: 2; }
 
-.section-header {
-  color: #4d4f53; }
-  .section-header h2.has-dash--under {
-    margin-bottom: 1.25em; }
-    .section-header h2.has-dash--under::after {
-      background-color: #8c1515;
-      bottom: -.5em;
-      left: 50%;
-      transform: translateX(-50%); }
-  .section-header h2.has-dash--left {
-    margin-bottom: 1.25em; }
-    @media only screen and (min-width: 768px) {
-      .section-header h2.has-dash--left {
-        margin-bottom: .75em; } }
-    .section-header h2.has-dash--left::after {
-      bottom: -.5em;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #8c1515; }
-      @media only screen and (min-width: 768px) {
-        .section-header h2.has-dash--left::after {
-          bottom: auto;
-          top: .625em;
-          left: -.9em;
-          transform: none; } }
-  .section-header h2.has-dash--emphasis::after {
-    background-color: #f9b002; }
-  .section-header p {
-    line-height: 1.6923076923em;
-    letter-spacing: .5px; }
+.section-feature-cards .feature-cards__header {
+  @indlude box-frame();
+  position: relative; }
+
+.section-feature-cards p {
+  color: #9c9d9e; }
 
 @keyframes fadein {
   from {
