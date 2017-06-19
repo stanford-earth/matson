@@ -23,7 +23,7 @@
 
 @mixin dash-left($dash-color: brand) {
   margin-bottom: 1.25em;
-  
+
   @include grid-media($media-md) {
     margin-bottom: .75em;
   }
