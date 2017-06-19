@@ -698,6 +698,43 @@ select {
   height: 4em;
   width: 4em; }
 
+table {
+  color: #4d4f53; }
+
+thead > tr > th {
+  background-color: #FBFBFB;
+  border-top: 4px solid #8c1515;
+  text-transform: uppercase;
+  padding: 1.8461538462em 1.3846153846em 1.5384615385em; }
+
+tr th:first-child {
+  padding-left: 1.3846153846em; }
+  @media only screen and (min-width: 768px) {
+    tr th:first-child {
+      padding-left: 3.0769230769em; } }
+
+tr th:last-child {
+  padding-right: 1.3846153846em; }
+  @media only screen and (min-width: 768px) {
+    tr th:last-child {
+      padding-right: 3.0769230769em; } }
+
+tbody > tr > th {
+  font-weight: normal; }
+
+th,
+td {
+  border-bottom: 1px solid #dad7cb;
+  letter-spacing: .5px;
+  line-height: 1.5384615385em;
+  padding: 1.3846153846em; }
+
+th {
+  letter-spacing: .5px; }
+
+td {
+  letter-spacing: .5px; }
+
 body {
   font-size: 1.3em;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
