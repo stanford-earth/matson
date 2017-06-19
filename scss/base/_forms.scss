@@ -57,8 +57,9 @@ select {
 
 [type=checkbox],
 [type=radio] {
-  margin-left: em(-25px); //
   position: absolute;
+  clip-path: inset(10px 20px 30px 40px);
+  clip: rect(0, 0, 0, 0);
 }
 
 [type=checkbox] + label,
@@ -82,6 +83,7 @@ select {
   text-indent: 0.15em;
   vertical-align: middle\0; // Target IE 11 and below to vertically center inputs
   width: em(16px);
+  z-index: 2;
 }
 
 [type=radio] + label::before {
