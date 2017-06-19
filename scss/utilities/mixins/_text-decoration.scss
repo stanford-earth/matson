@@ -2,14 +2,11 @@
 
 %dash-under {
   position: absolute;
-  bottom: -.5em;
-  left: 50%;
   height: 2px;
   width: 20px;
-  content: "";
+  content: '';
   display: block;
-  transform: translateX(-50%);
-  z-index: 3;
+  z-index: 2;
 }
 
 @mixin dash-under($dash-color: brand) {
@@ -18,23 +15,31 @@
   &::after {
     @extend %dash-under;
     background-color: color($dash-color);
+    bottom: -.5em;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 @mixin dash-left($dash-color: brand) {
   margin-bottom: 1.25em;
-
+  
   @include grid-media($media-md) {
     margin-bottom: .75em;
   }
 
   &::after {
     @extend %dash-under;
+    bottom: -.5em;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: color($dash-color);
 
     @include grid-media($media-md) {
+      bottom: auto;
       top: .625em;
-      left: -.5em;
+      left: -.9em;
+      transform: none;
     }
   }
 }
