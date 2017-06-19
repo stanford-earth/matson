@@ -16,7 +16,7 @@
 
 .feature-card__tag {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: .25em 1em;
+  padding: .625em 1em;
 
   h6 {
     color: color(white);
@@ -24,6 +24,7 @@
     font-weight: 600;
     letter-spacing: .2px;
     line-height: 1;
+    margin: 0;
   }
 }
 

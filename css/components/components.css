@@ -870,13 +870,14 @@
 
 .feature-card__tag {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: .25em 1em; }
+  padding: .625em 1em; }
   .feature-card__tag h6 {
     color: #fff;
     font-size: 1.2307692308em;
     font-weight: 600;
     letter-spacing: .2px;
-    line-height: 1; }
+    line-height: 1;
+    margin: 0; }
 
 .feature-card__description {
   color: #9c9d9e;
