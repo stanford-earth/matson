@@ -12,10 +12,6 @@
 .drop-cap-title {
   position: relative;
   display: inline-block;
-
-  @include grid-media($media-md) {
-
-  }
 }
 
 .drop-cap-title__name {
