@@ -587,8 +587,9 @@ select {
 
 [type=checkbox],
 [type=radio] {
-  margin-left: -1.9230769231em;
-  position: absolute; }
+  position: absolute;
+  clip-path: inset(10px 20px 30px 40px);
+  clip: rect(0, 0, 0, 0); }
 
 [type=checkbox] + label,
 [type=radio] + label {
@@ -609,7 +610,8 @@ select {
   margin-right: 1.2307692308em;
   text-indent: 0.15em;
   vertical-align: middle\0;
-  width: 1.2307692308em; }
+  width: 1.2307692308em;
+  z-index: 2; }
 
 [type=radio] + label::before {
   border-radius: 100%; }
@@ -648,6 +650,21 @@ select {
 
 .input-error-message {
   color: #b1040e;
+  margin-bottom: 1em; }
+
+ul,
+ol {
+  color: #4d4f53; }
+
+ul > li,
+ol > li {
+  line-height: 2em;
+  margin-bottom: 0; }
+
+ul > li {
+  list-style: disc; }
+
+dl > dt {
   margin-bottom: 1em; }
 
 .i-svg {
@@ -695,6 +712,43 @@ select {
 .img-svg {
   height: 4em;
   width: 4em; }
+
+table {
+  color: #4d4f53; }
+
+thead > tr > th {
+  background-color: #FBFBFB;
+  border-top: 4px solid #8c1515;
+  text-transform: uppercase;
+  padding: 1.8461538462em 1.3846153846em 1.5384615385em; }
+
+tr th:first-child {
+  padding-left: 1.3846153846em; }
+  @media only screen and (min-width: 768px) {
+    tr th:first-child {
+      padding-left: 3.0769230769em; } }
+
+tr th:last-child {
+  padding-right: 1.3846153846em; }
+  @media only screen and (min-width: 768px) {
+    tr th:last-child {
+      padding-right: 3.0769230769em; } }
+
+tbody > tr > th {
+  font-weight: normal; }
+
+th,
+td {
+  border-bottom: 1px solid #dad7cb;
+  letter-spacing: .5px;
+  line-height: 1.5384615385em;
+  padding: 1.3846153846em; }
+
+th {
+  letter-spacing: .5px; }
+
+td {
+  letter-spacing: .5px; }
 
 body {
   font-size: 1.3em;
