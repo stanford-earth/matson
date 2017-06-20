@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+table {
+  color: color(text-active);
+}
+
+thead > tr > th {
+  background-color: color(dust);
+  border-top: 4px solid color(brand);
+  text-transform: uppercase;
+  padding: em(24px) em(18px) em(20px);
+}
+
+tr th {
+  &:first-child {
+    padding-left: em(18px);
+
+    @include grid-media($media-md) {
+      padding-left: em(40px);
+    }
+  }
+
+  &:last-child {
+    padding-right: em(18px);
+
+    @include grid-media($media-md) {
+      padding-right: em(40px);
+    }
+  }
+}
+
+tbody > tr > th {
+  font-weight: normal;
+}
+
+th,
+td {
+  border-bottom: 1px solid color(fog);
+  letter-spacing: .5px;
+  line-height: em(20px);
+  padding: em(18px);
+}
+
+th {
+  letter-spacing: .5px;
+}
+
+td {
+  letter-spacing: .5px;
+}
