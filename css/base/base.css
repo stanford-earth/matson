@@ -652,6 +652,21 @@ select {
   color: #b1040e;
   margin-bottom: 1em; }
 
+ul,
+ol {
+  color: #4d4f53; }
+
+ul > li,
+ol > li {
+  line-height: 2em;
+  margin-bottom: 0; }
+
+ul > li {
+  list-style: disc; }
+
+dl > dt {
+  margin-bottom: 1em; }
+
 .i-svg {
   display: inline-block;
   fill: currentcolor;
