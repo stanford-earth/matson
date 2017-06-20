@@ -378,7 +378,6 @@
 
 .calendar-block {
   color: #4d4f53;
-  position: relative;
   padding-bottom: 3em; }
 
 .calendar-block__action {
@@ -386,6 +385,8 @@
   .calendar-block__action:hover, .calendar-block__action:active, .calendar-block__action:focus {
     color: inherit;
     text-decoration: none; }
+    .calendar-block__action:hover .calendar-block__day, .calendar-block__action:active .calendar-block__day, .calendar-block__action:focus .calendar-block__day {
+      color: #8c1515; }
     .calendar-block__action:hover .calendar-block__title, .calendar-block__action:active .calendar-block__title, .calendar-block__action:focus .calendar-block__title {
       color: #016779; }
     .calendar-block__action:hover .calendar-block__arrow svg use, .calendar-block__action:active .calendar-block__arrow svg use, .calendar-block__action:focus .calendar-block__arrow svg use {
