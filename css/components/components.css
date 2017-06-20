@@ -1760,7 +1760,7 @@
 .section-highlight-banner {
   background-color: #333;
   color: #fff; }
-  .section-highlight-banner:before {
+  .section-highlight-banner::before {
     content: '';
     display: block;
     background-color: rgba(0, 0, 0, 0.5);
@@ -1771,11 +1771,11 @@
     bottom: 0;
     z-index: 1; }
     @media only screen and (min-width: 1024px) {
-      .section-highlight-banner:before {
+      .section-highlight-banner::before {
         top: 45px;
         bottom: 45px; } }
   @media only screen and (min-width: 1024px) {
-    .section-highlight-banner.is-single:before {
+    .section-highlight-banner.is-single::before {
       left: calc(50% - (450px - 30px));
       right: calc(50% - (450px - 30px));
       top: 0;

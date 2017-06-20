@@ -11,7 +11,7 @@
 
 .highlight-card {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  
+
   padding: em(30px);
 
   p {
@@ -23,7 +23,7 @@
 
 .highlight-card__action {
   color: color(text-active);
-  
+
   @include on-event {
     color: inherit;
     text-decoration: none;
@@ -37,7 +37,7 @@
         fill: color(ash);
       }
     }
-  } 
+  }
 }
 
 .highlight-card__intro {
@@ -65,7 +65,7 @@
   background-color: #333;
   color: color(white);
 
-  &:before {
+  &::before {
     content: '';
     display: block;
     background-color: rgba(0, 0, 0, .5);
@@ -79,12 +79,12 @@
     @include grid-media($media-lg) {
       top: 45px;
       bottom: 45px;
-    }  
+    }
   }
 
   // If single card apply new background offset
   &.is-single {
-    &:before {
+    &::before {
       @include grid-media($media-lg) {
         left: calc(50% - (450px - 30px));
         right: calc(50% - (450px - 30px));
