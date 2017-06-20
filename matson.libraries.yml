@@ -120,6 +120,12 @@ messages:
     component:
       css/components/messages.css: {}
 
+stanford_complex_page:
+  version: VERSION
+  css:
+    layout:
+      css/layout/stanford-complex-page.css: {}
+
 ie8:
   version: VERSION
   header: true
