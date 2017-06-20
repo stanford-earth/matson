@@ -97,6 +97,14 @@
           $(".js-nav-item-expandable li").removeClass('is-open'); // basic-main-menu.
         });
       }
+
+      $(".expandable-card").unbind('click').bind('click', function(e) { // expandable card
+        // Must be attached to anchor element to prevent bubbling.
+        event.stopPropagation();
+        e.preventDefault();
+        $(this).toggleClass('is-open');
+        $(".section-expandable-banner").toggleClass('is-open');
+      });
     }
   });
 
