@@ -109,17 +109,13 @@ module.exports = function(grunt) {
         files: {
           // Component Wrap Up.
           'css/components/components.css':                  'scss/components/components.scss',
-          // Components are compiled individually so they may be included
-          // conditionally using logic built in to the theme template or module.
-
-          // 'css/components/brand-bar.css':                   'scss/components/brand-bar/brand-bar.scss',
-
+          // Layouts.
+          'css/layout/stanford-complex-page.css':           'scss/layout/stanford-complex-page.scss',
           // Theme compiled styles.
           'css/base/base.css':                              'scss/base/base.scss',
           'css/layout/layout.css':                          'scss/layout/layout.scss',
           'css/states/states.css':                          'scss/states/states.scss',
           'css/theme/theme.css':                            'scss/theme/theme.scss',
-          'css/theme/centered-container.css':               'scss/theme/centered-container.scss',
           'css/theme/print.css':                            'scss/theme/print.scss'
         }
       }
