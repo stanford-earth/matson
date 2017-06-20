@@ -2076,43 +2076,58 @@
   z-index: 2; }
 
 .pager__items {
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
 
 .pager__item {
-  margin: 0 3px; }
+  margin: 0 3px;
+  display: inline; }
   .pager__item a {
     color: #4d4f53;
     font-weight: 600;
     padding: 0.6923076923em 0;
     line-height: 1;
     min-width: 2.3076923077em;
-    text-align: center; }
+    text-align: center;
+    display: inline-block; }
     .pager__item a:hover, .pager__item a:active, .pager__item a:focus {
       background-color: #4d4f53;
       color: #fff;
       text-decoration: none; }
-  .pager__item.is-active a {
+  .pager__item.is-active a, .pager__item.pager__item--active a {
     background-color: #8c1515;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
     color: #fff;
     text-decoration: none; }
 
 .pager__item--next a,
-.pager__item--previous a {
+.pager__item--previous a,
+.pager__item--first a,
+.pager__item--last a {
   color: #8c1515; }
   .pager__item--next a:hover, .pager__item--next a:active, .pager__item--next a:focus,
   .pager__item--previous a:hover,
   .pager__item--previous a:active,
-  .pager__item--previous a:focus {
+  .pager__item--previous a:focus,
+  .pager__item--first a:hover,
+  .pager__item--first a:active,
+  .pager__item--first a:focus,
+  .pager__item--last a:hover,
+  .pager__item--last a:active,
+  .pager__item--last a:focus {
     background-color: transparent;
     color: #4d4f53; }
   .pager__item--next a span,
-  .pager__item--previous a span {
+  .pager__item--previous a span,
+  .pager__item--first a span,
+  .pager__item--last a span {
     display: inline-block;
     vertical-align: middle; }
 
 .pager__item--next .i-svg-arrow,
-.pager__item--previous .i-svg-arrow {
+.pager__item--previous .i-svg-arrow,
+.pager__item--first .i-svg-arrow,
+.pager__item--last .i-svg-arrow {
   width: 1.9230769231em; }
 
 .pager__item--previous {
