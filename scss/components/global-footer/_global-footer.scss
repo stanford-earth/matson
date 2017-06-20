@@ -13,7 +13,8 @@
   $_brand-container: (
     sm-max: (columns: 12, grid-media: $media-sm-max,  v-space: 30px, max-width: false, grid-collapse: false),
     md: (columns: 12, grid-media: $media-md,          v-space: 30px, max-width: false, grid-collapse: false),
-    xl: (columns: 12, grid-media: $media-xl,          v-space: 30px, max-width: true,  grid-collapse: false),
+    lg: (columns: 10, grid-media: $media-lg,          v-space: 30px, max-width: true,  grid-collapse: false),
+    xl: (columns: 10, grid-media: $media-xl,          v-space: 30px, max-width: true,  grid-collapse: false),
     print: (columns: 12, grid-media: $media-print,    v-space: 30px, max-width: false, grid-collapse: false),
   );
 
@@ -53,12 +54,9 @@
     }
 
     @include grid-media($media-lg) {
-
+      margin-left: 40px;
     }
 
-    @include grid-media($media-xl) {
-
-    }
   }
 
   #global-footer__nav {
@@ -159,48 +157,28 @@
     }
 
     @include grid-media($media-xl) {
-      margin-left: em(195px);
+      margin-left: em(220px);
     }
   }
 }
 
-//
-// Sticky footer
-//
-$global-footer-base-height: 320px;
-$global-footer-sm-height: 228px;
-$global-footer-md-height: 118px;
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  min-height: auto;
-  margin: 0 0 $global-footer-base-height; // margin-bottom = footer height
-
-  @include grid-media($media-sm) {
-    margin-bottom: $global-footer-sm-height;
-  }
+.contact-footer {
 
   @include grid-media($media-md) {
-    margin-bottom: $global-footer-md-height;
-  }
-}
-
-#footer__global-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: $global-footer-base-height;
-  width: 100%;
-
-  @include grid-media($media-sm) {
-    height: $global-footer-sm-height;
+    .block--lockup__site-slogan {
+      margin: 0 0 0 2px;
+    }
   }
 
-  @include grid-media($media-md) {
-    height: $global-footer-md-height;
+  @include grid-media($header-md) {
+    .block--lockup__site-slogan {
+      margin: 0 0 0 2px;
+    }
+  }
+
+  @include grid-media($media-lg) {
+    .block--lockup__site-slogan {
+      margin: 0 0 0 2px;
+    }
   }
 }
