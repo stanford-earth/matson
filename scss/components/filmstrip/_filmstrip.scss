@@ -37,7 +37,7 @@
       margin: 12px 0 17px;
 
       @include grid-media($media-md) {
-        color: #fff;
+        color: color(text);
       }
     }
   }
