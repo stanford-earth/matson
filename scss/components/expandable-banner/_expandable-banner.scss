@@ -14,51 +14,43 @@
   padding: em(30px);
   text-align: center;
   color: color(text-active);
-
-  @include on-event {
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-
-    .expandable-card__title {
-      color: color(action-active);
-    }
-
-    .expandable-card__arrow {
-      svg use {
-        fill: color(ash);
-      }
-    }
-  }
+  position: relative;
 
   &.is-open {
-    position: absolute;
-    top: -30px;
-    bottom: -30px;
-    left: calc(50% - (450px - 30px));
-    right: calc(50% - (450px - 30px));
-    width: auto;
-    margin: 0;
-    max-width: none;
-    z-index: 4;
-  }
-}
+    padding: 0;
 
-.expandable-card__intro {
-  color: color(emphasis);
-  display: block;
-  font-size: em(12px);
-  letter-spacing: .9px;
-  margin-bottom: 1em;
-  text-transform: uppercase;
+    .section-expandable-banner {
+      padding: em(10px) em(30px);
+    }
+
+    .expandable-card__header {
+      padding: em(8px) em(30px);
+      background-color: color(dust);
+    }
+
+    .expandable-card__title {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+  }
 }
 
 .expandable-card__title {
   font-size: em(26px);
   letter-spacing: .3px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
-.expandable-card__open {
+.expandable-card__toggle {
+  @include on-event {
+    cursor: pointer;
+    
+    svg use {
+      fill: color(ash);
+    }
+  }
+
   svg use {
     fill: color(brand);
   }

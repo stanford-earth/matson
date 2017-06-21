@@ -1,0 +1,40 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.icon-item {
+  color: color(text);
+
+  @include on-event {
+    text-decoration: none;
+    color: color(action);
+  }
+}
+
+.icon-item__name {
+  font-size: 16px;
+  text-align: left;
+}
+
+.icon-item__image {
+  border-right: 1px solid color(action);
+}
+
+.icon-item__arrow  svg {
+  vertical-align: middle;
+  display: inline;
+  height: 25px;
+  width: 25px;
+  margin-left: 5px;
+
+  use {
+    fill: color(brand);
+  }
+}

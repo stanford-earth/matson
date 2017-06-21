@@ -985,39 +985,31 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   padding: 2.3076923077em;
   text-align: center;
-  color: #4d4f53; }
-  .expandable-card:hover, .expandable-card:active, .expandable-card:focus {
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer; }
-    .expandable-card:hover .expandable-card__title, .expandable-card:active .expandable-card__title, .expandable-card:focus .expandable-card__title {
-      color: #016779; }
-    .expandable-card:hover .expandable-card__arrow svg use, .expandable-card:active .expandable-card__arrow svg use, .expandable-card:focus .expandable-card__arrow svg use {
-      fill: #9c9d9e; }
+  color: #4d4f53;
+  position: relative; }
   .expandable-card.is-open {
-    position: absolute;
-    top: -30px;
-    bottom: -30px;
-    left: calc(50% - (450px - 30px));
-    right: calc(50% - (450px - 30px));
-    width: auto;
-    margin: 0;
-    max-width: none;
-    z-index: 4; }
-
-.expandable-card__intro {
-  color: #f9b002;
-  display: block;
-  font-size: 0.9230769231em;
-  letter-spacing: .9px;
-  margin-bottom: 1em;
-  text-transform: uppercase; }
+    padding: 0; }
+    .expandable-card.is-open .section-expandable-banner {
+      padding: 0.7692307692em 2.3076923077em; }
+    .expandable-card.is-open .expandable-card__header {
+      padding: 0.6153846154em 2.3076923077em;
+      background-color: #FBFBFB; }
+    .expandable-card.is-open .expandable-card__title {
+      padding-top: 1em;
+      padding-bottom: 1em; }
 
 .expandable-card__title {
   font-size: 2em;
-  letter-spacing: .3px; }
+  letter-spacing: .3px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em; }
 
-.expandable-card__open svg use {
+.expandable-card__toggle:hover, .expandable-card__toggle:active, .expandable-card__toggle:focus {
+  cursor: pointer; }
+  .expandable-card__toggle:hover svg use, .expandable-card__toggle:active svg use, .expandable-card__toggle:focus svg use {
+    fill: #9c9d9e; }
+
+.expandable-card__toggle svg use {
   fill: #8c1515; }
 
 .section-expandable-banner {
@@ -1916,6 +1908,109 @@
     color: #fff; }
   .section-highlight-banner .section-header .drop-cap-title__drop-cap {
     opacity: .35; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.has-image-overlay {
+  position: relative; }
+  .has-image-overlay::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    content: "";
+    display: block; }
+  .has-image-overlay img {
+    display: block; }
+
+.has-image-gradient {
+  position: relative; }
+  .has-image-gradient::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, transparent 55%, rgba(0, 0, 0, 0.3));
+    content: "";
+    display: block; }
+  .has-image-gradient img {
+    display: block; }
+
+.responsive-video-container {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 2em;
+  height: 0; }
+  .responsive-video-container iframe,
+  .responsive-video-container object,
+  .responsive-video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  content: '';
+  display: block;
+  z-index: 2; }
+
+.icon-item {
+  color: #222328; }
+  .icon-item:hover, .icon-item:active, .icon-item:focus {
+    text-decoration: none;
+    color: #017c92; }
+
+.icon-item__name {
+  font-size: 16px;
+  text-align: left; }
+
+.icon-item__image {
+  border-right: 1px solid #017c92; }
+
+.icon-item__arrow svg {
+  vertical-align: middle;
+  display: inline;
+  height: 25px;
+  width: 25px;
+  margin-left: 5px; }
+  .icon-item__arrow svg use {
+    fill: #8c1515; }
 
 @keyframes fadein {
   from {
