@@ -102,7 +102,7 @@
         // Must be attached to anchor element to prevent bubbling.
         event.stopPropagation();
         e.preventDefault();
-        $(this).parent(".expandable-card").toggleClass('is-open');
+        $(this).parent(".expandable-card").toggleClass('is-open').siblings(".expandable-card").toggleClass('is-hidden');
         $(".section-expandable-banner").toggleClass('is-open');
       });
     }
