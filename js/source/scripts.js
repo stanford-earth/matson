@@ -97,14 +97,6 @@
           $(".js-nav-item-expandable li").removeClass('is-open'); // basic-main-menu.
         });
       }
-
-      $(".expandable-card__toggle").unbind('click').bind('click', function(e) { // expandable card
-        // Must be attached to anchor element to prevent bubbling.
-        event.stopPropagation();
-        e.preventDefault();
-        $(this).parent(".expandable-card").toggleClass('is-open').siblings(".expandable-card").toggleClass('is-hidden');
-        $(".section-expandable-banner").toggleClass('is-open');
-      });
     }
   });
 
