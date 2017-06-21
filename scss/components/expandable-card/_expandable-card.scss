@@ -27,7 +27,7 @@
 .expandable-card__toggle {
   @include on-event {
     cursor: pointer;
-    
+
     svg use {
       fill: color(ash);
     }
