@@ -38,10 +38,7 @@
 
       @include grid-media($media-md) {
         color: #fff;
-        // Extra special styling for patterns preview
-        background: rgba(100, 100, 100, .3);
       }
     }
   }
 }
-
