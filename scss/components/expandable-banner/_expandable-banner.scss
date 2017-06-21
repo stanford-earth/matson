@@ -9,65 +9,6 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-.expandable-card {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  padding: em(30px);
-  text-align: center;
-  color: color(text-active);
-  position: relative;
-
-  &.is-open {
-    padding: 0;
-
-    .section-expandable-banner {
-      padding: em(10px) em(30px);
-    }
-
-    .expandable-card__header {
-      padding: em(8px) em(30px);
-      background-color: color(dust);
-    }
-
-    .expandable-card__title {
-      padding-top: 1em;
-      padding-bottom: 1em;
-    }
-
-    .icon-items {
-      padding-bottom: 1em;
-
-      @include grid-media($media-md) {
-        padding-bottom: 0;
-      }
-    }
-  }
-
-  &.is-hidden {
-    display: none;
-  }
-}
-
-.expandable-card__title {
-  font-size: em(26px);
-  letter-spacing: .3px;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-}
-
-.expandable-card__toggle {
-  @include on-event {
-    cursor: pointer;
-    
-    svg use {
-      fill: color(ash);
-    }
-  }
-
-  svg use {
-    fill: color(brand);
-  }
-}
-
 .section-expandable-banner {
   background-color: #333;
   color: color(white);
