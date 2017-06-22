@@ -93,6 +93,7 @@ matson:
       css/base/base.css: {}
     layout:
       css/layout/layout.css: {}
+      css/layout/sidebar.css: {}
     component:
       css/components/components.css: {}
     state:

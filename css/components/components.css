@@ -136,11 +136,6 @@
   .pager__item a {
     display: inline-block; }
 
-#sidebar {
-  position: absolute;
-  left: 128px;
-  background: rgba(238, 238, 238, 0.9); }
-
 .brand-bar {
   height: 40px;
   max-height: 40px;
