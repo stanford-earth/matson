@@ -1,15 +1,37 @@
 @import "../../../stanford_basic/scss/components/sidebar/sidebar";
+@import "config/config";
+//// Decanter config.
+@import 'decanter/core/utilities/decanter-utilities';
 
 body.with-sidebar {
-  h1, .content {
+  h1,
+  .content {
     padding-left: 128px;
   }
 }
 
 #sidebar {
   left: 128px;
+  width: 170px;
 
   h2 {
-    background: #017c92;
+    color: color(white);
+    background: color(action);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3.9px;
+    font-weight: 700;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+
+    a {
+      color: color(text-active);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+      line-height: 0;
+    }
   }
 }
