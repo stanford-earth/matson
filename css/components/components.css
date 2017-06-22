@@ -1203,8 +1203,7 @@
     margin: 12px 0 17px; }
     @media only screen and (min-width: 768px) {
       .filmstrip h6.filmstrip__title {
-        color: #fff;
-        background: rgba(100, 100, 100, 0.3); } }
+        color: #222328; } }
 
 @keyframes fadein {
   from {
@@ -1415,15 +1414,15 @@
   @media only screen and (min-width: 768px) {
     #footer__global-footer #global-footer__nav,
     #footer__global-footer #global-footer__info {
-      margin-left: 9.6153846154em; } }
+      padding-left: 9.6153846154em; } }
   @media only screen and (min-width: 1024px) {
     #footer__global-footer #global-footer__nav,
     #footer__global-footer #global-footer__info {
-      margin-left: 12.6923076923em; } }
+      padding-left: 12.6923076923em; } }
   @media only screen and (min-width: 1500px) {
     #footer__global-footer #global-footer__nav,
     #footer__global-footer #global-footer__info {
-      margin-left: 16.9230769231em; } }
+      padding-left: 16.9230769231em; } }
 
 @media only screen and (min-width: 768px) {
   .contact-footer .block--lockup__site-slogan {
