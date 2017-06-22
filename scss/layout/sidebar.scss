@@ -1,0 +1,15 @@
+@import "../../../stanford_basic/scss/components/sidebar/sidebar";
+
+body.with-sidebar {
+  h1, .content {
+    padding-left: 128px;
+  }
+}
+
+#sidebar {
+  left: 128px;
+
+  h2 {
+    background: #017c92;
+  }
+}
