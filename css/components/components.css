@@ -2751,18 +2751,10 @@
   z-index: 2; }
 
 .simple-block__link {
-  margin-bottom: 1.0769230769em; }
-
-.simple-block__tag {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: .625em 1em; }
-  .simple-block__tag h6 {
-    color: #fff;
-    font-size: 1.2307692308em;
-    font-weight: 600;
-    letter-spacing: .2px;
-    line-height: 1;
-    margin: 0; }
+  color: #4d4f53; }
+  .simple-block__link:hover, .simple-block__link:active, .simple-block__link:focus {
+    color: inherit;
+    text-decoration: none; }
 
 .simple-block__description {
   color: #9c9d9e;
@@ -2773,13 +2765,6 @@
   margin-left: .5em; }
   .simple-block__arrow svg use {
     fill: #8c1515; }
-
-.simple-block__more {
-  font-size: 0.9230769231em;
-  text-transform: uppercase;
-  letter-spacing: .15px; }
-  .simple-block__more:hover, .simple-block__more:active, .simple-block__more:focus {
-    text-decoration: none; }
 
 @keyframes fadein {
   from {
