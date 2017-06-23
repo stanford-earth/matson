@@ -104,6 +104,7 @@ matson:
   js:
     js/vendor/modernizr.js: {}
     js/build/scripts.js: {}
+    js/build/sidebar.js: {}
   dependencies:
     - core/jquery
     - core/drupal
