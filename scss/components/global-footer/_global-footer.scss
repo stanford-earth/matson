@@ -149,15 +149,15 @@
   #global-footer__nav,
   #global-footer__info {
     @include grid-media($media-md) {
-      margin-left: em(125px);
+      padding-left: em(125px);
     }
 
     @include grid-media($media-lg) {
-      margin-left: em(165px);
+      padding-left: em(165px);
     }
 
     @include grid-media($media-xl) {
-      margin-left: em(220px);
+      padding-left: em(220px);
     }
   }
 }
