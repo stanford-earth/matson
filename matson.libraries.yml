@@ -127,6 +127,12 @@ stanford_complex_page:
     layout:
       css/layout/stanford-complex-page.css: {}
 
+stanford_department:
+  version: VERSION
+  css:
+    layout:
+      css/layout/stanford-complex-page.css: {}
+
 ie8:
   version: VERSION
   header: true
