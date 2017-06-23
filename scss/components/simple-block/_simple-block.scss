@@ -9,7 +9,6 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-
 .simple-block__link {
   color: color(text-active);
 
@@ -17,7 +16,20 @@
     color: inherit;
     text-decoration: none;
   }
+}
 
+.simple-block__tag {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: .625em 1em;
+
+  h6 {
+    color: color(white);
+    font-size: em(16px);
+    font-weight: 600;
+    letter-spacing: .2px;
+    line-height: 1;
+    margin: 0;
+  }
 }
 
 .simple-block__description {
@@ -31,5 +43,15 @@
 
   use {
     fill: color(brand);
+  }
+}
+
+.simple-block__more {
+  font-size: em(12px);
+  text-transform: uppercase;
+  letter-spacing: .15px;
+
+  @include on-event {
+    text-decoration: none;
   }
 }
