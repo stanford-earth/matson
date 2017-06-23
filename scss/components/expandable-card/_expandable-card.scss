@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.expandable-card {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: em(30px);
+  text-align: center;
+  color: color(text-active);
+  position: relative;
+}
+
+.expandable-card__title {
+  font-size: em(26px);
+  letter-spacing: .3px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.expandable-card__toggle {
+  @include on-event {
+    cursor: pointer;
+
+    svg use {
+      fill: color(ash);
+    }
+  }
+
+  svg use {
+    fill: color(brand);
+  }
+}
