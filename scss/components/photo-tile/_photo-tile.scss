@@ -11,6 +11,20 @@
 
 .photo-tile__title {
   letter-spacing: .3px;
+  position: relative;
+  padding-bottom: .5em;
+
+  &:after {
+    background-color: color(emphasis);
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    z-index: 4;
+  }
 }
 
 .photo-tile__description {

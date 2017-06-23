@@ -2489,7 +2489,19 @@
   z-index: 2; }
 
 .photo-tile__title {
-  letter-spacing: .3px; }
+  letter-spacing: .3px;
+  position: relative;
+  padding-bottom: .5em; }
+  .photo-tile__title:after {
+    background-color: #f9b002;
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    z-index: 4; }
 
 .photo-tile__description {
   letter-spacing: .5px;
