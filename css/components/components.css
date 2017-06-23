@@ -2492,7 +2492,7 @@
   letter-spacing: .3px;
   position: relative;
   padding-bottom: .5em; }
-  .photo-tile__title:after {
+  .photo-tile__title::after {
     background-color: #f9b002;
     content: '';
     display: block;

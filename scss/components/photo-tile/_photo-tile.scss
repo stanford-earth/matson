@@ -14,7 +14,7 @@
   position: relative;
   padding-bottom: .5em;
 
-  &:after {
+  &::after {
     background-color: color(emphasis);
     content: '';
     display: block;
