@@ -4,15 +4,29 @@
 @import 'decanter/core/utilities/decanter-utilities';
 
 body.with-sidebar {
-  h1,
-  .content {
-    padding-left: 128px;
+  header {
+    min-height: 14px;
+
+    #block-matson-branding {
+      position: absolute;
+      padding: 20px;
+      left: 128px;
+      width: 170px;
+      height: 660px;
+      //background: rgba(77, 79, 83, 0.8);
+      background: rgba(color(stone), 0.8);
+
+      .block--lockup__site-logo-wrapper {
+        margin-top: 154px;
+      }
+    }
   }
 }
 
 #sidebar {
   left: 128px;
   width: 170px;
+  top: 780px;
 
   h2 {
     color: color(white);

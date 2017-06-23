@@ -46,6 +46,9 @@ function matson_page_attachments_alter(array &$attachments) {
     case 'complex_page':
       $attachments['#attached']['library'][] = 'matson/stanford_complex_page';
       break;
+    case 'stanford_department':
+      $attachments['#attached']['library'][] = 'matson/stanford_complex_page';
+      break;
   }
 
 }
