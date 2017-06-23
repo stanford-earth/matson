@@ -9,12 +9,16 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
+.simple-block__link {
+  color: color(text-active);
 
-.simple-slat__link {
-  margin-bottom: em(14px);
+  @include on-event {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
-.simple-slat__tag {
+.simple-block__tag {
   background-color: rgba(0, 0, 0, 0.5);
   padding: .625em 1em;
 
@@ -28,13 +32,13 @@
   }
 }
 
-.simple-slat__description {
+.simple-block__description {
   color: color(ash);
   letter-spacing: .5px;
   margin-bottom: 4px;
 }
 
-.simple-slat__arrow svg {
+.simple-block__arrow svg {
   margin-left: .5em;
 
   use {
@@ -42,7 +46,7 @@
   }
 }
 
-.simple-slat__more {
+.simple-block__more {
   font-size: em(12px);
   text-transform: uppercase;
   letter-spacing: .15px;
