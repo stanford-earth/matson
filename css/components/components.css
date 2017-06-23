@@ -2750,21 +2750,36 @@
   display: block;
   z-index: 2; }
 
-.simple-block__link {
-  color: #4d4f53; }
-  .simple-block__link:hover, .simple-block__link:active, .simple-block__link:focus {
-    color: inherit;
-    text-decoration: none; }
+.simple-slat__link {
+  margin-bottom: 1.0769230769em; }
 
-.simple-block__description {
+.simple-slat__tag {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: .625em 1em; }
+  .simple-slat__tag h6 {
+    color: #fff;
+    font-size: 1.2307692308em;
+    font-weight: 600;
+    letter-spacing: .2px;
+    line-height: 1;
+    margin: 0; }
+
+.simple-slat__description {
   color: #9c9d9e;
   letter-spacing: .5px;
   margin-bottom: 4px; }
 
-.simple-block__arrow svg {
+.simple-slat__arrow svg {
   margin-left: .5em; }
-  .simple-block__arrow svg use {
+  .simple-slat__arrow svg use {
     fill: #8c1515; }
+
+.simple-slat__more {
+  font-size: 0.9230769231em;
+  text-transform: uppercase;
+  letter-spacing: .15px; }
+  .simple-slat__more:hover, .simple-slat__more:active, .simple-slat__more:focus {
+    text-decoration: none; }
 
 @keyframes fadein {
   from {
