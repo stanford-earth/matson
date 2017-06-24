@@ -11,12 +11,15 @@
 
 .pager__items {
   margin: 0;
+  display: inline;
 }
 
 .pager__item {
   margin: 0 3px;
+  display: inline-block;
 
   a {
+    display: block;
     color: color(text-active);
     font-weight: 600;
     padding: em(9px) 0;
@@ -41,6 +44,8 @@
   }
 }
 
+.pager__item--first,
+.pager__item--last,
 .pager__item--next,
 .pager__item--previous {
   a {
@@ -62,14 +67,12 @@
   }
 }
 
+.pager__item--first,
 .pager__item--previous {
   margin-right: em(17px);
-
-  .i-svg-arrow {
-    transform: rotate(180deg);
-  }
 }
 
+.pager__item--last,
 .pager__item--next {
   margin-left: em(17px);
 }

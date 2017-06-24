@@ -688,6 +688,7 @@ select {
   .i-svg--minus use {
     fill: #8c1515; }
 
+.i-svg--arrow-left,
 .i-svg--arrow-right {
   height: 1.9230769231em;
   width: 1.9230769231em; }

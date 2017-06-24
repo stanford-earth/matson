@@ -1774,11 +1774,14 @@ body {
   transform: translateX(-50%); }
 
 .pager__items {
-  margin: 0; }
+  margin: 0;
+  display: inline; }
 
 .pager__item {
-  margin: 0 3px; }
+  margin: 0 3px;
+  display: inline-block; }
   .pager__item a {
+    display: block;
     color: #4d4f53;
     font-weight: 600;
     padding: 0.6923076923em 0;
@@ -1795,29 +1798,41 @@ body {
     color: #fff;
     text-decoration: none; }
 
+.pager__item--first a,
+.pager__item--last a,
 .pager__item--next a,
 .pager__item--previous a {
   color: #8c1515; }
-  .pager__item--next a:hover, .pager__item--next a:active, .pager__item--next a:focus,
+  .pager__item--first a:hover, .pager__item--first a:active, .pager__item--first a:focus,
+  .pager__item--last a:hover,
+  .pager__item--last a:active,
+  .pager__item--last a:focus,
+  .pager__item--next a:hover,
+  .pager__item--next a:active,
+  .pager__item--next a:focus,
   .pager__item--previous a:hover,
   .pager__item--previous a:active,
   .pager__item--previous a:focus {
     background-color: transparent;
     color: #4d4f53; }
+  .pager__item--first a span,
+  .pager__item--last a span,
   .pager__item--next a span,
   .pager__item--previous a span {
     display: inline-block;
     vertical-align: middle; }
 
+.pager__item--first .i-svg-arrow,
+.pager__item--last .i-svg-arrow,
 .pager__item--next .i-svg-arrow,
 .pager__item--previous .i-svg-arrow {
   width: 1.9230769231em; }
 
+.pager__item--first,
 .pager__item--previous {
   margin-right: 1.3076923077em; }
-  .pager__item--previous .i-svg-arrow {
-    transform: rotate(180deg); }
 
+.pager__item--last,
 .pager__item--next {
   margin-left: 1.3076923077em; }
 
