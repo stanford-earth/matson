@@ -2,8 +2,10 @@
 @import "config/config";
 //// Decanter config.
 @import 'decanter/core/utilities/decanter-utilities';
+// Grab our mixins.
+@import "utilities/utilities";
 
-body.with-sidebar {
+body.with-banner {
   header {
     min-height: 14px;
 
@@ -13,11 +15,11 @@ body.with-sidebar {
       left: 128px;
       width: 170px;
       //height: 660px;
-      //background: rgba(77, 79, 83, 0.8);
-      background: rgba(color(stone), 0.8);
+      background: rgba(color(black), 0.5);
 
       .block--lockup__site-logo-wrapper {
-        //margin-top: 154px;
+        margin-top: 154px;
+        //@include center-transform(y);
       }
     }
   }
@@ -29,7 +31,7 @@ body.role--anonymous header {
   min-height: 28px;
 }
 
-#sidebar {
+#sidebar__wrapper {
   left: 128px;
   width: 170px;
   //top: 780px;
