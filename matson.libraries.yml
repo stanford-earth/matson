@@ -105,6 +105,7 @@ matson:
     js/vendor/modernizr.js: {}
     js/build/scripts.js: {}
     js/build/sidebar.js: {}
+    node_modules/scrolltofixed/jquery-scrolltofixed-min.js: {}
   dependencies:
     - core/jquery
     - core/drupal
