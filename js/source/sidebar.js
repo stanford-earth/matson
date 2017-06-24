@@ -19,15 +19,26 @@
       // Execute code once the DOM is ready. $(document).ready() not required within Drupal.behaviors.
 
       $(window).load(function () {
-        console.log("OHAI"); // yes, jquery works
+        // Check banner height.  If there is no banner, this returns null.
         var bannerHeight =  $('div.hero-banner').height();
-        if (bannerHeight) {
+        // Check if there's a sidebar (eg. Department pages)
+        var classy = $('body').hasClass('with-sidebar');
+
+        // Check if there's both a sidebar and a banner.
+        // If there is, then transform the header lockup, add some height, and
+        // add the .with-banner class to body, so the css can apply more styling
+        if (bannerHeight && classy) {
           $('#block-matson-branding').css({'min-height': bannerHeight});
-          $('header #block-matson-branding .block--lockup__site-logo-wrapper').css({'margin-top': '154px'});
-          $('#sidebar').css({'top': '780px'});
+          $('body').addClass('with-banner');
+          // $('header #block-matson-branding .block--lockup__site-logo-wrapper').css({'margin-top': '154px'});
+          var brandHeight = $('.brand-bar').height();
+          var toolbarHeight = $('#toolbar-bar').height();
+          var toolbarTopHeight = $('#toolbar-item-administration-tray').height();
           var contentHeight = $('div.content').height();
-          console.log(bannerHeight, contentHeight);
-          $('#sidebar').css({'min-height': contentHeight - bannerHeight});
+          var sidebar__offset = brandHeight + toolbarHeight + toolbarTopHeight + bannerHeight + 24;
+          console.log(bannerHeight, contentHeight, sidebar__offset);
+          // $('#sidebar__wrapper').css({'top': '780px'});
+          $('#sidebar__wrapper').css({'top': sidebar__offset, 'min-height': contentHeight - bannerHeight});
         }
       });
 
