@@ -38,22 +38,22 @@
         var toolbarTopHeight = $('#toolbar-item-administration-tray').height();
         var headerHeight = $('#header').height();
         var contentHeight = $('div.main-container').height();
-        var otherHeight = bannerHeight ? -2 : 24; // I don't know why this works
+        var otherHeight = bannerHeight ? -2 : 26; // I don't know why this works
         var sidebar__offset = brandHeight + toolbarHeight + toolbarTopHeight + bannerHeight + headerHeight + otherHeight;
-        console.log(bannerHeight, contentHeight, sidebar__offset, otherHeight);
+        // console.log(bannerHeight, contentHeight, sidebar__offset, otherHeight);
         // $('#sidebar__wrapper').css({'top': '780px'});
-        $('#sidebar__wrapper').css({'top': sidebar__offset, 'min-height': contentHeight - bannerHeight});
+        $('#sidebar__wrapper').css({'top': sidebar__offset, 'height': contentHeight - bannerHeight});
 
 
         // Add ScrollToFixed functionality to sidebar region
-        var bottomLimit = $('#footer__container').offset().top - $('#sidebar').outerHeight(true) - 10;
-        // var bottomLimit = sidebar__offset + contentHeight;
-        console.log(bottomLimit);
-        if ($('body').hasClass('toolbar-fixed')) {
-          $("#sidebar").scrollToFixed( { marginTop: 80, limit: bottomLimit } );
-        } else {
-          $("#sidebar").scrollToFixed( { marginTop: 0, limit: bottomLimit } );
-        }
+        var topLimit = $('body').hasClass('toolbar-fixed') ? 80 : 0;
+        var bottomLimit = $('#footer__container').offset().top - $('#sidebar').outerHeight(true);
+        // console.log(topLimit, bottomLimit);
+        $("#sidebar").scrollToFixed( {
+          marginTop: topLimit,
+          limit: bottomLimit,
+          removeOffsets: true
+        } );
 
       });
 
