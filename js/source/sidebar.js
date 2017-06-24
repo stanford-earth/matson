@@ -30,16 +30,31 @@
         if (bannerHeight && classy) {
           $('#block-matson-branding').css({'min-height': bannerHeight});
           $('body').addClass('with-banner');
-          // $('header #block-matson-branding .block--lockup__site-logo-wrapper').css({'margin-top': '154px'});
-          var brandHeight = $('.brand-bar').height();
-          var toolbarHeight = $('#toolbar-bar').height();
-          var toolbarTopHeight = $('#toolbar-item-administration-tray').height();
-          var contentHeight = $('div.content').height();
-          var sidebar__offset = brandHeight + toolbarHeight + toolbarTopHeight + bannerHeight + 24;
-          console.log(bannerHeight, contentHeight, sidebar__offset);
-          // $('#sidebar__wrapper').css({'top': '780px'});
-          $('#sidebar__wrapper').css({'top': sidebar__offset, 'min-height': contentHeight - bannerHeight});
         }
+
+        // Gather a bunch of measurements to create offset for sidebar
+        var brandHeight = $('.brand-bar').height();
+        var toolbarHeight = $('#toolbar-bar').height();
+        var toolbarTopHeight = $('#toolbar-item-administration-tray').height();
+        var headerHeight = $('#header').height();
+        var contentHeight = $('div.main-container').height();
+        var otherHeight = bannerHeight ? -2 : 24; // I don't know why this works
+        var sidebar__offset = brandHeight + toolbarHeight + toolbarTopHeight + bannerHeight + headerHeight + otherHeight;
+        console.log(bannerHeight, contentHeight, sidebar__offset, otherHeight);
+        // $('#sidebar__wrapper').css({'top': '780px'});
+        $('#sidebar__wrapper').css({'top': sidebar__offset, 'min-height': contentHeight - bannerHeight});
+
+
+        // Add ScrollToFixed functionality to sidebar region
+        var bottomLimit = $('#footer__container').offset().top - $('#sidebar').outerHeight(true) - 10;
+        // var bottomLimit = sidebar__offset + contentHeight;
+        console.log(bottomLimit);
+        if ($('body').hasClass('toolbar-fixed')) {
+          $("#sidebar").scrollToFixed( { marginTop: 80, limit: bottomLimit } );
+        } else {
+          $("#sidebar").scrollToFixed( { marginTop: 0, limit: bottomLimit } );
+        }
+
       });
 
       $(window).resize(function () {
