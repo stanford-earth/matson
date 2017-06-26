@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.link-banner {
+  @include image-overlay;
+  background-size: cover;
+  background-color: color(text);
+  color: color(white);
+}
+
+.link-banner__header {
+  padding-top: em(36px);
+  position: relative;
+  text-align: center;
+  z-index: 2;
+
+  p {
+    letter-spacing: .5px;
+    line-height: em(22px);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

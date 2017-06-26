@@ -23,8 +23,7 @@
 
 // Parent components
 @import
-  "stanford_basic/scss/components/breadcrumb/breadcrumb",
-  "stanford_basic/scss/components/pager/pager";
+  "stanford_basic/scss/components/breadcrumb/breadcrumb";
 
 // MY components.
 @import
@@ -43,8 +42,11 @@
   "hero-banner/hero-banner",
   "highlight-banner/highlight-banner",
   "icon-item/icon-item",
+  "link-banner/link-banner",
+  "link-item/link-item",
   "navbar/navbar",
   "navigation/navigation",
+  "pager/pager",
   "postcard/postcard",
   "player-button/player-button",
   "search-toggle/search-toggle",

@@ -1,0 +1,81 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.pager__items {
+  margin: 0;
+  display: inline;
+  text-align: center;
+}
+
+.pager__item {
+  margin: 0 3px;
+  display: inline-block;
+
+  a {
+    display: block;
+    color: color(text-active);
+    font-weight: 600;
+    padding: em(9px) 0;
+    line-height: 1;
+    min-width: em(30px);
+    text-align: center;
+
+    @include on-event {
+      background-color: color(text-active);
+      color: color(white);
+      text-decoration: none;
+    }
+  }
+
+  &.is-active,
+  &.pager__item--active {
+    a {
+      background-color: color(brand);
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+      color: color(white);
+      text-decoration: none;
+    }
+  }
+}
+
+.pager__item--first,
+.pager__item--next,
+.pager__item--previous,
+.pager__item--first,
+.pager__item--last {
+  a {
+    color: color(brand);
+
+    @include on-event {
+      background-color: transparent;
+      color: color(text-active);
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .i-svg-arrow {
+    width: em(25px);
+  }
+}
+
+.pager__item--first,
+.pager__item--previous {
+  margin-right: em(17px);
+}
+
+.pager__item--last,
+.pager__item--next {
+  margin-left: em(17px);
+}
