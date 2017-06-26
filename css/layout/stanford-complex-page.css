@@ -1,0 +1,18 @@
+article .content > div:first-child .hero-banner {
+  margin-top: -120px; }
+
+.block--local-tasks {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  padding: 1em 0 !important; }
+  @media only screen and (max-width: 767px) {
+    .block--local-tasks {
+      display: none; } }
+  .block--local-tasks ul.tabs {
+    background: #FFF;
+    width: 100%; }
+    .block--local-tasks ul.tabs li {
+      display: block; }
+
+/*# sourceMappingURL=stanford-complex-page.css.map */

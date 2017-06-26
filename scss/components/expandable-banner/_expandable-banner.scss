@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.section-expandable-banner {
+  background-color: #333;
+  color: color(white);
+
+  .section-header {
+    p {
+      color: color(white);
+      letter-spacing: .5px;
+      line-height: 2em;
+    }
+
+    .drop-cap-title__name {
+      color: color(white);
+    }
+
+    .drop-cap-title__drop-cap {
+      opacity: .35;
+    }
+  }
+}

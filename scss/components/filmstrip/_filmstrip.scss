@@ -37,11 +37,8 @@
       margin: 12px 0 17px;
 
       @include grid-media($media-md) {
-        color: #fff;
-        // Extra special styling for patterns preview
-        background: rgba(100, 100, 100, .3);
+        color: color(text);
       }
     }
   }
 }
-

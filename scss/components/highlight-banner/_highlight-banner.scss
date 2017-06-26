@@ -1,0 +1,104 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.highlight-card {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: em(30px);
+
+  p {
+    color: color(ash);
+    letter-spacing: .5px;
+    line-height: 2em;
+  }
+}
+
+.highlight-card__action {
+  color: color(text-active);
+
+  @include on-event {
+    color: inherit;
+    text-decoration: none;
+
+    .highlight-card__title {
+      color: color(action-active);
+    }
+
+    .highlight-card__arrow {
+      svg use {
+        fill: color(ash);
+      }
+    }
+  }
+}
+
+.highlight-card__intro {
+  color: color(emphasis);
+  display: block;
+  font-size: em(12px);
+  letter-spacing: .9px;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.highlight-card__title {
+  font-size: em(26px);
+  letter-spacing: .3px;
+}
+
+.highlight-card__arrow {
+  svg use {
+    fill: color(brand);
+  }
+}
+
+.section-highlight-banner {
+  background-color: #333;
+  color: color(white);
+
+  &::before {
+    content: '';
+    display: block;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+
+    @include grid-media($media-lg) {
+      top: 45px;
+      bottom: 45px;
+    }
+  }
+
+  // If single card apply new background offset
+  &.is-single {
+    &::before {
+      @include grid-media($media-lg) {
+        left: calc(50% - (450px - 30px));
+        right: calc(50% - (450px - 30px));
+        top: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  .section-header {
+    .drop-cap-title__name {
+      color: color(white);
+    }
+
+    .drop-cap-title__drop-cap {
+      opacity: .35;
+    }
+  }
+}
