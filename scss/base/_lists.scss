@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+ul,
+ol {
+  color: color(text-active);
+}
+
+ul > li,
+ol > li {
+  line-height: 2em;
+  margin-bottom: 0;
+}
+
+ul > li {
+  list-style: disc;
+}
+
+dl > dt {
+  margin-bottom: 1em;
+}

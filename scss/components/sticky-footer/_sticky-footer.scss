@@ -1,0 +1,60 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+//
+// Sticky footer
+//
+$global-footer-base-height: 1049px;
+$global-footer-sm-height: 959px;
+$global-footer-md-height: 487px;
+$global-footer-lg-height: 457px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  min-height: auto;
+  margin: 0 0 $global-footer-base-height; // margin-bottom = footer height
+
+  @include grid-media($media-sm) {
+    margin-bottom: $global-footer-sm-height;
+  }
+
+  @include grid-media($media-md) {
+    margin-bottom: $global-footer-md-height;
+  }
+
+  @include grid-media($media-lg) {
+    margin-bottom: $global-footer-lg-height;
+  }
+}
+
+#footer__container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: $global-footer-base-height;
+  width: 100%;
+
+  @include grid-media($media-sm) {
+    height: $global-footer-sm-height;
+  }
+
+  @include grid-media($media-md) {
+    height: $global-footer-md-height;
+  }
+
+  @include grid-media($media-lg) {
+    height: $global-footer-lg-height;
+  }
+}

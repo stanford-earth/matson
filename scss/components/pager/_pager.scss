@@ -12,6 +12,7 @@
 .pager__items {
   margin: 0;
   display: inline;
+  text-align: center;
 }
 
 .pager__item {
@@ -26,6 +27,7 @@
     line-height: 1;
     min-width: em(30px);
     text-align: center;
+    display: inline-block;
 
     @include on-event {
       background-color: color(text-active);
@@ -34,7 +36,8 @@
     }
   }
 
-  &.is-active {
+  &.is-active,
+  &.pager__item--active {
     a {
       background-color: color(brand);
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
@@ -45,9 +48,10 @@
 }
 
 .pager__item--first,
-.pager__item--last,
 .pager__item--next,
-.pager__item--previous {
+.pager__item--previous,
+.pager__item--first,
+.pager__item--last {
   a {
     color: color(brand);
 
