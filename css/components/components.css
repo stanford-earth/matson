@@ -2090,8 +2090,7 @@
     padding: 0.6923076923em 0;
     line-height: 1;
     min-width: 2.3076923077em;
-    text-align: center;
-    display: inline-block; }
+    text-align: center; }
     .pager__item a:hover, .pager__item a:active, .pager__item a:focus {
       background-color: #4d4f53;
       color: #fff;

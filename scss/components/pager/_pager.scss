@@ -27,7 +27,6 @@
     line-height: 1;
     min-width: em(30px);
     text-align: center;
-    display: inline-block;
 
     @include on-event {
       background-color: color(text-active);
