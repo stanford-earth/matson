@@ -2279,6 +2279,21 @@
 
 .masonry-block {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
+  .masonry-block.has-background {
+    background-color: #8c1515;
+    color: #fff; }
+    .masonry-block.has-background .masonry-block__description,
+    .masonry-block.has-background .masonry-block__link,
+    .masonry-block.has-background .masonry-block__footer {
+      color: #fff; }
+    .masonry-block.has-background .masonry-block__footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.5); }
+      .masonry-block.has-background .masonry-block__footer svg use {
+        fill: #fff; }
+    .masonry-block.has-background .masonry-block__date {
+      border-right: 1px solid #fff; }
+    .masonry-block.has-background .masonry-block__social-links {
+      border-right: 1px solid #fff; }
 
 .masonry-block__link {
   color: #4d4f53; }

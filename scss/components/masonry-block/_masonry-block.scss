@@ -11,6 +11,35 @@
 
 .masonry-block {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+  &.has-background {
+    background-color: color(brand);
+    color: color(white);
+
+    .masonry-block__description,
+    .masonry-block__link,
+    .masonry-block__footer {
+      color: color(white);
+    }
+
+    .masonry-block__footer {
+      border-top: 1px solid rgba(255, 255, 255, .5);
+
+      svg use {
+        fill: color(white);
+      }
+    }
+
+    .masonry-block__date {
+      border-right: 1px solid color(white);
+    }
+
+    .masonry-block__social-links {
+      border-right: 1px solid color(white);
+    }
+
+
+  }
 }
 
 .masonry-block__link {
