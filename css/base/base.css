@@ -705,6 +705,7 @@ dl > dt {
   .i-svg--minus use {
     fill: #8c1515; }
 
+.i-svg--arrow-left,
 .i-svg--arrow-right {
   height: 1.9230769231em;
   width: 1.9230769231em; }
@@ -753,7 +754,10 @@ td {
 body {
   font-size: 1.3em;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  line-height: 1.425; }
+  line-height: 1.425;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased; }
   @media only screen and (max-width: 767px) {
     body {
       font-size: 1.3em; } }
