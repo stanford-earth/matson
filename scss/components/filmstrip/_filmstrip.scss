@@ -14,7 +14,7 @@
   .filmstrip__title {
     position: relative;
 
-    &:before {
+    &::before {
       content: '';
       display: block;
       position: absolute;
