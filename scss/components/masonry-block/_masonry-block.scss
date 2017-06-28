@@ -10,8 +10,8 @@
 @import "utilities/utilities";
 
 .masonry-block {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 
+  &.is-inverted,
   &.has-background {
     background-color: color(brand);
     color: color(white);
@@ -22,11 +22,26 @@
       color: color(white);
     }
 
+    .masonry-block__link {
+      @include on-event {
+        color: rgba(255, 255, 255, .65);
+      }
+    }
+
     .masonry-block__footer {
       border-top: 1px solid rgba(255, 255, 255, .5);
+    }
 
+    .masonry-block__arrow,
+    .masonry-block__social-link {
       svg use {
         fill: color(white);
+      }
+
+      @include on-event {
+        svg use {
+          fill: rgba(255, 255, 255, .5);
+        }
       }
     }
 
@@ -37,8 +52,6 @@
     .masonry-block__social-links {
       border-right: 1px solid color(white);
     }
-
-
   }
 }
 
@@ -51,18 +64,6 @@
   }
 }
 
-.masonry-block__tags {
-  .tag {
-    padding: .625em 1em;
-    color: color(white);
-    font-size: em(16px);
-    font-weight: 600;
-    letter-spacing: .2px;
-    line-height: 1;
-    margin: 0;
-  }
-}
-
 .masonry-block__description {
   color: color(ash);
   letter-spacing: .5px;
@@ -71,13 +72,19 @@
 
 .masonry-block__footer {
   border-top: 1px solid color(smoke);
-  color: color(ash);
+  color: color(smoke);
   margin: 0 30px;
-  padding: 10px 0;
+  padding: 15px 0;
+}
 
-  svg {
-    use {
-      fill: color(smoke);
+.masonry-block__social-link {
+  svg use {
+    fill: color(smoke);
+  }
+
+  @include on-event {
+    svg use {
+      fill: color(ash);
     }
   }
 }
