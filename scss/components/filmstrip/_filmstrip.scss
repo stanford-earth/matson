@@ -26,12 +26,12 @@
     }
   }
 
-  .film-card {
+  .film-card__link {
     @include grid-media($media-lg) {
       transition: all .3s ease;
 
       @include on-event {
-        margin-top: -1rem;
+        margin-top: -1em; 
       }
     }
   }
