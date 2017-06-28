@@ -1309,11 +1309,14 @@
 .film-card {
   margin-top: 0; }
 
-.film-card__caption {
+.film-card__title {
   text-transform: uppercase; }
 
 .film-card__arrow svg use {
   fill: #fff; }
+
+.film-card__subtitle {
+  margin-bottom: 0; }
 
 .film-card__description {
   color: #9c9d9e;
@@ -1419,7 +1422,8 @@
   .filmstrip .film-card__link {
     transition: all .3s ease; }
     .filmstrip .film-card__link:hover, .filmstrip .film-card__link:active, .filmstrip .film-card__link:focus {
-      margin-top: -1em; } }
+      margin-top: -1em;
+      margin-bottom: 1em; } }
 
 .filmstrip h6 {
   font-size: 14px;

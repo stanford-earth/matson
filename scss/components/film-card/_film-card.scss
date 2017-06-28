@@ -16,7 +16,7 @@
   margin-top: 0;
 }
 
-.film-card__caption {
+.film-card__title {
   text-transform: uppercase;
 }
 
@@ -24,6 +24,10 @@
   svg use {
     fill: color(white);
   }
+}
+
+.film-card__subtitle {
+  margin-bottom: 0;
 }
 
 .film-card__description {
