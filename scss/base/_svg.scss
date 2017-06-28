@@ -1,6 +1,7 @@
 @charset "UTF-8";
+
 // -----------------------------------------------------------------------------
-// This file contains all button base styles.
+// This file contains all svg base styles.
 // -----------------------------------------------------------------------------
 //
 
@@ -86,6 +87,7 @@
   }
 }
 
+.i-svg--arrow-left,
 .i-svg--arrow-right {
   height: em(25px);
   width: em(25px);

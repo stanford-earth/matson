@@ -7,6 +7,9 @@ body {
   @include font-size($base-font-size, $root-font-size);
   font-family: $base-font-family;
   line-height: $base-line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
 
   // Responsive font sizes:
   @include grid-media($media-sm-max) {

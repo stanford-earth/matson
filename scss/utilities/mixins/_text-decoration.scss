@@ -65,3 +65,14 @@
     }
   }
 }
+
+%link-blank {
+  color: inherit;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: inherit;
+    text-decoration: none;
+  }
+}
