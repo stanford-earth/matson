@@ -53,6 +53,16 @@
       border-right: 1px solid color(white);
     }
   }
+
+  .tag-item {
+    border-color: color(white);
+    color: color(white);
+
+    @include on-event {
+      background-color: color(white);
+      color: color(text-active);
+    }
+  }
 }
 
 .masonry-block__link {

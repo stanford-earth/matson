@@ -2307,6 +2307,13 @@
   .masonry-block.is-inverted .masonry-block__social-links, .masonry-block.has-background .masonry-block__social-links {
     border-right: 1px solid #fff; }
 
+.masonry-block .tag-item {
+  border-color: #fff;
+  color: #fff; }
+  .masonry-block .tag-item:hover, .masonry-block .tag-item:active, .masonry-block .tag-item:focus {
+    background-color: #fff;
+    color: #4d4f53; }
+
 .masonry-block__link {
   color: #4d4f53; }
   .masonry-block__link:hover, .masonry-block__link:active, .masonry-block__link:focus {
@@ -3770,9 +3777,9 @@ ul.tabs {
   z-index: 2; }
 
 .tag-item {
-  border: 1px solid #fff;
+  border: 1px solid #017c92;
   padding: .5em 1em;
-  color: #fff;
+  color: #017c92;
   font-size: 0.9230769231em;
   font-weight: 600;
   letter-spacing: .2px;
@@ -3780,5 +3787,9 @@ ul.tabs {
   margin: 0;
   text-transform: uppercase;
   margin-right: .5em; }
+  .tag-item:hover, .tag-item:active, .tag-item:focus {
+    background-color: #017c92;
+    text-decoration: none;
+    color: white; }
 
 /*# sourceMappingURL=components.css.map */
