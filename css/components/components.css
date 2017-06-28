@@ -1405,7 +1405,7 @@
 
 .filmstrip .filmstrip__title {
   position: relative; }
-  .filmstrip .filmstrip__title:before {
+  .filmstrip .filmstrip__title::before {
     content: '';
     display: block;
     position: absolute;
