@@ -1397,10 +1397,17 @@
   display: block;
   z-index: 2; }
 
-.filmstrip .filmstrip__top_border {
-  width: 20px;
-  height: 2px;
-  border: solid 2px #f9b002; }
+.filmstrip .filmstrip__title {
+  position: relative; }
+  .filmstrip .filmstrip__title:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1em;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #f9b002; }
 
 @media only screen and (min-width: 1024px) {
   .filmstrip .film-card {

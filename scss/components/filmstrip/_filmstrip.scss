@@ -11,10 +11,19 @@
 
 // Stanford Earth styling for the filmstrip top-border
 .filmstrip {
-  .filmstrip__top_border {
-    width: 20px;
-    height: 2px;
-    border: solid 2px #f9b002;
+  .filmstrip__title {
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -1em;
+      left: 0;
+      width: 20px;
+      height: 2px;
+      background-color: color(emphasis);
+    }
   }
 
   .film-card {
