@@ -790,6 +790,18 @@
     .contact-footer__subscribe .button__hollow:hover, .contact-footer__subscribe .button__hollow:active, .contact-footer__subscribe .button__hollow:focus {
       color: #222328; }
 
+.collapsable-menu {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); }
+  .collapsable-menu .nav-item {
+    color: #222328;
+    padding: 16px;
+    font-size: 0.9230769231em;
+    font-weight: 600;
+    text-transform: uppercase; }
+    .collapsable-menu .nav-item:hover, .collapsable-menu .nav-item:active, .collapsable-menu .nav-item:focus {
+      color: #017c92;
+      text-decoration: none; }
+
 @keyframes fadein {
   from {
     opacity: 0; }
