@@ -1,3 +1,6 @@
+.js-collapsable-menu.is-open .collapsable-menu__toggle {
+  border-top: 1px solid #dad7cb; }
+
 .js-nav-expandable.is-expanded {
   height: auto;
   background: rgba(0, 0, 0, 0.75); }

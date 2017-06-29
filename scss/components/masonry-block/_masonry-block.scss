@@ -10,7 +10,8 @@
 @import "utilities/utilities";
 
 .masonry-block {
-
+  background-color: color(white);
+  
   &.is-inverted,
   &.has-background {
     background-color: color(brand);
@@ -111,4 +112,8 @@
   use {
     fill: color(brand);
   }
+}
+
+.section-masonry-blocks {
+  background-color: color(fog);
 }

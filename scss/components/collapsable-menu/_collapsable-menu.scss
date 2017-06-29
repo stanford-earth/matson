@@ -7,11 +7,8 @@
 @import "decanter/core/utilities/decanter-utilities";
 
 .collapsable-menu {
+  background-color: color(white);
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
-
-  .nav-items {
-
-  }
 
   .nav-item {
     color: color(text);
@@ -25,4 +22,10 @@
       text-decoration: none;
     }
   }
+}
+
+.collapsable-menu__toggle {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
 }

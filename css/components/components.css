@@ -791,6 +791,7 @@
       color: #222328; }
 
 .collapsable-menu {
+  background-color: #fff;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); }
   .collapsable-menu .nav-item {
     color: #222328;
@@ -801,6 +802,11 @@
     .collapsable-menu .nav-item:hover, .collapsable-menu .nav-item:active, .collapsable-menu .nav-item:focus {
       color: #017c92;
       text-decoration: none; }
+
+.collapsable-menu__toggle {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px; }
 
 @keyframes fadein {
   from {
@@ -2289,42 +2295,43 @@
   display: block;
   z-index: 2; }
 
-.masonry-block.is-inverted, .masonry-block.has-background {
-  background-color: #8c1515;
-  color: #fff; }
-  .masonry-block.is-inverted .masonry-block__description,
-  .masonry-block.is-inverted .masonry-block__link,
-  .masonry-block.is-inverted .masonry-block__footer, .masonry-block.has-background .masonry-block__description,
-  .masonry-block.has-background .masonry-block__link,
-  .masonry-block.has-background .masonry-block__footer {
+.masonry-block {
+  background-color: #fff; }
+  .masonry-block.is-inverted, .masonry-block.has-background {
+    background-color: #8c1515;
     color: #fff; }
-  .masonry-block.is-inverted .masonry-block__link:hover, .masonry-block.is-inverted .masonry-block__link:active, .masonry-block.is-inverted .masonry-block__link:focus, .masonry-block.has-background .masonry-block__link:hover, .masonry-block.has-background .masonry-block__link:active, .masonry-block.has-background .masonry-block__link:focus {
-    color: rgba(255, 255, 255, 0.65); }
-  .masonry-block.is-inverted .masonry-block__footer, .masonry-block.has-background .masonry-block__footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.5); }
-  .masonry-block.is-inverted .masonry-block__arrow:hover svg use, .masonry-block.is-inverted .masonry-block__arrow:active svg use, .masonry-block.is-inverted .masonry-block__arrow:focus svg use,
-  .masonry-block.is-inverted .masonry-block__social-link:hover svg use,
-  .masonry-block.is-inverted .masonry-block__social-link:active svg use,
-  .masonry-block.is-inverted .masonry-block__social-link:focus svg use, .masonry-block.has-background .masonry-block__arrow:hover svg use, .masonry-block.has-background .masonry-block__arrow:active svg use, .masonry-block.has-background .masonry-block__arrow:focus svg use,
-  .masonry-block.has-background .masonry-block__social-link:hover svg use,
-  .masonry-block.has-background .masonry-block__social-link:active svg use,
-  .masonry-block.has-background .masonry-block__social-link:focus svg use {
-    fill: rgba(255, 255, 255, 0.5); }
-  .masonry-block.is-inverted .masonry-block__arrow svg use,
-  .masonry-block.is-inverted .masonry-block__social-link svg use, .masonry-block.has-background .masonry-block__arrow svg use,
-  .masonry-block.has-background .masonry-block__social-link svg use {
-    fill: #fff; }
-  .masonry-block.is-inverted .masonry-block__date, .masonry-block.has-background .masonry-block__date {
-    border-right: 1px solid #fff; }
-  .masonry-block.is-inverted .masonry-block__social-links, .masonry-block.has-background .masonry-block__social-links {
-    border-right: 1px solid #fff; }
-
-.masonry-block .tag-item {
-  border-color: #fff;
-  color: #fff; }
-  .masonry-block .tag-item:hover, .masonry-block .tag-item:active, .masonry-block .tag-item:focus {
-    background-color: #fff;
-    color: #4d4f53; }
+    .masonry-block.is-inverted .masonry-block__description,
+    .masonry-block.is-inverted .masonry-block__link,
+    .masonry-block.is-inverted .masonry-block__footer, .masonry-block.has-background .masonry-block__description,
+    .masonry-block.has-background .masonry-block__link,
+    .masonry-block.has-background .masonry-block__footer {
+      color: #fff; }
+    .masonry-block.is-inverted .masonry-block__link:hover, .masonry-block.is-inverted .masonry-block__link:active, .masonry-block.is-inverted .masonry-block__link:focus, .masonry-block.has-background .masonry-block__link:hover, .masonry-block.has-background .masonry-block__link:active, .masonry-block.has-background .masonry-block__link:focus {
+      color: rgba(255, 255, 255, 0.65); }
+    .masonry-block.is-inverted .masonry-block__footer, .masonry-block.has-background .masonry-block__footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.5); }
+    .masonry-block.is-inverted .masonry-block__arrow:hover svg use, .masonry-block.is-inverted .masonry-block__arrow:active svg use, .masonry-block.is-inverted .masonry-block__arrow:focus svg use,
+    .masonry-block.is-inverted .masonry-block__social-link:hover svg use,
+    .masonry-block.is-inverted .masonry-block__social-link:active svg use,
+    .masonry-block.is-inverted .masonry-block__social-link:focus svg use, .masonry-block.has-background .masonry-block__arrow:hover svg use, .masonry-block.has-background .masonry-block__arrow:active svg use, .masonry-block.has-background .masonry-block__arrow:focus svg use,
+    .masonry-block.has-background .masonry-block__social-link:hover svg use,
+    .masonry-block.has-background .masonry-block__social-link:active svg use,
+    .masonry-block.has-background .masonry-block__social-link:focus svg use {
+      fill: rgba(255, 255, 255, 0.5); }
+    .masonry-block.is-inverted .masonry-block__arrow svg use,
+    .masonry-block.is-inverted .masonry-block__social-link svg use, .masonry-block.has-background .masonry-block__arrow svg use,
+    .masonry-block.has-background .masonry-block__social-link svg use {
+      fill: #fff; }
+    .masonry-block.is-inverted .masonry-block__date, .masonry-block.has-background .masonry-block__date {
+      border-right: 1px solid #fff; }
+    .masonry-block.is-inverted .masonry-block__social-links, .masonry-block.has-background .masonry-block__social-links {
+      border-right: 1px solid #fff; }
+  .masonry-block .tag-item {
+    border-color: #fff;
+    color: #fff; }
+    .masonry-block .tag-item:hover, .masonry-block .tag-item:active, .masonry-block .tag-item:focus {
+      background-color: #fff;
+      color: #4d4f53; }
 
 .masonry-block__link {
   color: #4d4f53; }
@@ -2357,6 +2364,9 @@
 
 .masonry-block__arrow svg use {
   fill: #8c1515; }
+
+.section-masonry-blocks {
+  background-color: #dad7cb; }
 
 @keyframes fadein {
   from {

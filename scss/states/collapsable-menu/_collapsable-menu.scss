@@ -1,0 +1,7 @@
+.js-collapsable-menu {
+  &.is-open {
+    .collapsable-menu__toggle {
+      border-top: 1px solid color(fog);
+    }
+  }
+}
