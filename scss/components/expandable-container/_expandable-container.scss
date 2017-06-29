@@ -15,10 +15,25 @@
   text-align: center;
 }
 
+.expandable-container__toggle {
+  margin: 0 auto;
+  display: inline-block;
+  bottom: -10px;
+  position: relative;
+
+  @include on-event {
+    cursor: pointer;
+  }
+}
+
 .expandable-container__open {
   background-color: color(white);
-  padding: 1em;
+  display: block;
+  padding: 0 1em;
   margin: 0 auto;
-  position: relative;
-  bottom: -1em;
+
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }

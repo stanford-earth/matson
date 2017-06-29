@@ -1311,12 +1311,22 @@
   width: 100%;
   text-align: center; }
 
+.expandable-container__toggle {
+  margin: 0 auto;
+  display: inline-block;
+  bottom: -10px;
+  position: relative; }
+  .expandable-container__toggle:hover, .expandable-container__toggle:active, .expandable-container__toggle:focus {
+    cursor: pointer; }
+
 .expandable-container__open {
   background-color: #fff;
-  padding: 1em;
-  margin: 0 auto;
-  position: relative;
-  bottom: -1em; }
+  display: block;
+  padding: 0 1em;
+  margin: 0 auto; }
+  .expandable-container__open svg {
+    display: inline-block;
+    vertical-align: middle; }
 
 @keyframes fadein {
   from {
