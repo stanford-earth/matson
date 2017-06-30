@@ -1840,17 +1840,14 @@
 .hero-banner__container {
   border: 1px solid #fff;
   margin-top: 5em;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px; }
-  @media only screen and (min-width: 768px) {
-    .hero-banner__container {
-      margin-left: 40px;
-      margin-right: 40px; } }
   @media (min-width: 1500px) {
     .hero-banner__container {
-      margin-left: 0;
-      margin-right: 0; } }
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-bottom: 40px; } }
 
 .hero-banner__header {
   -webkit-animation: fadein 2s;
@@ -2823,7 +2820,7 @@
           border-top: 0;
           border-bottom: 0;
           letter-spacing: 0.1461538462em;
-          padding: 2em 1em;
+          padding: 20px 1em;
           text-align: left;
           font-size: 0.9230769231em; } }
   .navigation ul ul {
@@ -2839,7 +2836,7 @@
       .navigation ul ul {
         background: rgba(0, 0, 0, 0.425);
         position: absolute;
-        top: 100%;
+        top: calc(100% + 3px);
         left: 0;
         width: 220px; } }
     .navigation ul ul li {
