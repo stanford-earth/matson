@@ -65,7 +65,7 @@ $logo-width: 110px;
     margin: 0 12px 0 8px;
   }
 
-  &:after {
+  &::after {
     content: '';
     display: block;
     background-color: rgba(0, 0, 0, .5);

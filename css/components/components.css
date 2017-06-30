@@ -271,7 +271,7 @@
   @media only screen and (min-width: 860px) {
     .block--lockup__site-name-and-slogan {
       margin: 0 12px 0 8px; } }
-  .block--lockup__site-name-and-slogan:after {
+  .block--lockup__site-name-and-slogan::after {
     content: '';
     display: block;
     background-color: rgba(0, 0, 0, 0.5);
@@ -281,7 +281,7 @@
     right: 0;
     left: 0; }
     @media only screen and (min-width: 860px) {
-      .block--lockup__site-name-and-slogan:after {
+      .block--lockup__site-name-and-slogan::after {
         top: 22px; } }
   .block--lockup__site-name-and-slogan a {
     position: relative;
