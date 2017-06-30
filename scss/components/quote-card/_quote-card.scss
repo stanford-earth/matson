@@ -1,0 +1,60 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.quote-card {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: em(30px);
+
+  p {
+    color: color(ash);
+    letter-spacing: .5px;
+    line-height: 2em;
+  }
+}
+
+.quote-card__action {
+  color: color(text-active);
+
+  @include on-event {
+    color: inherit;
+    text-decoration: none;
+
+    .quote-card__title {
+      color: color(action-active);
+    }
+
+    .quote-card__arrow {
+      svg use {
+        fill: color(ash);
+      }
+    }
+  }
+}
+
+.quote-card__intro {
+  color: color(emphasis);
+  display: block;
+  font-size: em(12px);
+  letter-spacing: .9px;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.quote-card__title {
+  font-size: em(26px);
+  letter-spacing: .3px;
+}
+
+.quote-card__arrow {
+  svg use {
+    fill: color(brand);
+  }
+}
