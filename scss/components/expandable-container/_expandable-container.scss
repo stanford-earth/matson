@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.expandable-container {
+  border-bottom: 1px solid color(ash);
+  width: 100%;
+  text-align: center;
+}
+
+.expandable-container__toggle {
+  margin: 0 auto;
+  display: inline-block;
+  bottom: -10px;
+  position: relative;
+
+  @include on-event {
+    cursor: pointer;
+  }
+}
+
+.expandable-container__open {
+  background-color: color(white);
+  display: block;
+  padding: 0 1em;
+  margin: 0 auto;
+
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
