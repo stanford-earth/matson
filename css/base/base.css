@@ -530,6 +530,9 @@ a {
 .color-ash {
   color: #9c9d9e; }
 
+.color-smoke {
+  color: #D8D8D8; }
+
 .color-dust {
   color: #FBFBFB; }
 
@@ -754,10 +757,7 @@ td {
 body {
   font-size: 1.3em;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  line-height: 1.425;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased; }
+  line-height: 1.425; }
   @media only screen and (max-width: 767px) {
     body {
       font-size: 1.3em; } }
