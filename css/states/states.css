@@ -15,6 +15,12 @@
 .js-nav-mobile-closable.is-active .i-svg--close {
   display: inline-block; }
 
+.js .navbar {
+  background-color: transparent; }
+
+.js .navbar__group {
+  display: none; }
+
 .js-nav-item-expandable li.is-open ul {
   display: block; }
 
