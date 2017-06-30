@@ -1678,11 +1678,12 @@
 
 .highlight-card {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  padding: 2.3076923077em; }
+  padding: 30px 30px 20px; }
   .highlight-card p {
     color: #9c9d9e;
     letter-spacing: .5px;
-    line-height: 2em; }
+    line-height: 2em;
+    margin-bottom: .5em; }
 
 .highlight-card__action {
   color: #4d4f53; }
@@ -1706,8 +1707,10 @@
   font-size: 2em;
   letter-spacing: .3px; }
 
-.highlight-card__arrow svg use {
-  fill: #8c1515; }
+.highlight-card__arrow {
+  height: 25px; }
+  .highlight-card__arrow svg use {
+    fill: #8c1515; }
 
 .section-highlight-banner {
   background-color: #333;
@@ -3082,6 +3085,9 @@
   .simple-block__link:hover, .simple-block__link:active, .simple-block__link:focus {
     color: inherit;
     text-decoration: none; }
+
+.simple-block__thumbnail {
+  margin-bottom: .5em; }
 
 .simple-block__tag {
   background-color: rgba(0, 0, 0, 0.5);

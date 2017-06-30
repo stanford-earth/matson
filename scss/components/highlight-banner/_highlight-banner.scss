@@ -11,12 +11,13 @@
 
 .highlight-card {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  padding: em(30px);
+  padding: 30px 30px 20px;
 
   p {
     color: color(ash);
     letter-spacing: .5px;
     line-height: 2em;
+    margin-bottom: .5em;
   }
 }
 
@@ -54,6 +55,8 @@
 }
 
 .highlight-card__arrow {
+  height: 25px;
+
   svg use {
     fill: color(brand);
   }
