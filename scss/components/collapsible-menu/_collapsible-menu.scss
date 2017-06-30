@@ -6,7 +6,7 @@
 // Decanter config.
 @import "decanter/core/utilities/decanter-utilities";
 
-.collapsable-menu {
+.collapsible-menu {
   background-color: color(white);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
 
@@ -24,7 +24,7 @@
   }
 }
 
-.collapsable-menu__toggle {
+.collapsible-menu__toggle {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
