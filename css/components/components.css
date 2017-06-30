@@ -2207,7 +2207,7 @@
     position: relative; } }
 
 .navbar__group {
-  display: block;
+  display: none;
   padding-bottom: 5em;
   padding-top: 8.4615384615em; }
   @media only screen and (min-width: 860px) {
