@@ -93,6 +93,7 @@ matson:
       css/base/base.css: {}
     layout:
       css/layout/layout.css: {}
+      css/layout/sidebar.css: {}
     component:
       css/components/components.css: {}
     state:
@@ -103,6 +104,8 @@ matson:
   js:
     js/vendor/modernizr.js: {}
     js/build/scripts.js: {}
+    js/build/sidebar.js: {}
+    node_modules/scrolltofixed/jquery-scrolltofixed-min.js: {}
   dependencies:
     - core/jquery
     - core/drupal
@@ -121,6 +124,12 @@ messages:
       css/components/messages.css: {}
 
 stanford_complex_page:
+  version: VERSION
+  css:
+    layout:
+      css/layout/stanford-complex-page.css: {}
+
+stanford_department:
   version: VERSION
   css:
     layout:

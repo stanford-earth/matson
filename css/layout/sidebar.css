@@ -1,0 +1,124 @@
+#sidebar__wrapper {
+  position: absolute;
+  background: rgba(238, 238, 238, 0.9);
+  top: 160px;
+  z-index: 10; }
+  #sidebar__wrapper h2 {
+    color: white;
+    background: teal;
+    padding: 7px 30px; }
+  #sidebar__wrapper ul {
+    padding: 19px 12px; }
+
+@media (max-width: 860px) {
+  #sidebar__wrapper {
+    position: static;
+    margin: 10px auto; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.has-image-overlay {
+  position: relative; }
+  .has-image-overlay::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    content: "";
+    display: block; }
+  .has-image-overlay img {
+    display: block; }
+
+.has-image-gradient {
+  position: relative; }
+  .has-image-gradient::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, transparent 55%, rgba(0, 0, 0, 0.3));
+    content: "";
+    display: block; }
+  .has-image-gradient img {
+    display: block; }
+
+.responsive-video-container {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 2em;
+  height: 0; }
+  .responsive-video-container iframe,
+  .responsive-video-container object,
+  .responsive-video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+body.with-banner header {
+  min-height: 14px; }
+  body.with-banner header #block-matson-branding {
+    position: absolute;
+    padding: 20px;
+    left: 128px;
+    width: 170px;
+    background: rgba(0, 0, 0, 0.5); }
+    body.with-banner header #block-matson-branding .block--lockup__site-logo-wrapper {
+      margin-top: 154px; }
+
+body.role--anonymous header {
+  min-height: 28px; }
+
+#sidebar__wrapper {
+  left: 128px;
+  width: 170px; }
+  #sidebar__wrapper h2 {
+    color: #fff;
+    background: #017c92;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3.9px;
+    font-weight: 700; }
+  #sidebar__wrapper ul li {
+    margin-bottom: 10px; }
+    #sidebar__wrapper ul li a {
+      color: #4d4f53;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+      line-height: 0; }
+
+/*# sourceMappingURL=sidebar.css.map */
