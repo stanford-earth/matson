@@ -7,7 +7,7 @@
 
 body.with-banner {
   header {
-    min-height: 14px;
+    //min-height: 14px;
 
     #block-matson-branding {
       position: absolute;
@@ -28,7 +28,7 @@ body.with-banner {
 // For some reason you need greater min-height for anonymous users.  I don't
 // know why, but the code works.
 body.role--anonymous header {
-  min-height: 28px;
+  //min-height: 28px;
 }
 
 #sidebar__wrapper {

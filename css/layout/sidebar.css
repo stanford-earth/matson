@@ -55,7 +55,8 @@
     right: 0;
     background-color: rgba(0, 0, 0, 0.35);
     content: "";
-    display: block; }
+    display: block;
+    z-index: 1; }
   .has-image-overlay img {
     display: block; }
 
@@ -88,19 +89,14 @@
     width: 100%;
     height: 100%; }
 
-body.with-banner header {
-  min-height: 14px; }
-  body.with-banner header #block-matson-branding {
-    position: absolute;
-    padding: 20px;
-    left: 128px;
-    width: 170px;
-    background: rgba(0, 0, 0, 0.5); }
-    body.with-banner header #block-matson-branding .block--lockup__site-logo-wrapper {
-      margin-top: 154px; }
-
-body.role--anonymous header {
-  min-height: 28px; }
+body.with-banner header #block-matson-branding {
+  position: absolute;
+  padding: 20px;
+  left: 128px;
+  width: 170px;
+  background: rgba(0, 0, 0, 0.5); }
+  body.with-banner header #block-matson-branding .block--lockup__site-logo-wrapper {
+    margin-top: 154px; }
 
 #sidebar__wrapper {
   left: 128px;
