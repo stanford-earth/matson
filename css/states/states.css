@@ -1,6 +1,12 @@
 .js-collapsible-menu.is-open .collapsible-menu__toggle {
   border-top: 1px solid #dad7cb; }
 
+.no-js .navbar {
+  background: rgba(0, 0, 0, 0.75); }
+
+.no-js .navbar__group {
+  display: block; }
+
 .js-nav-expandable.is-expanded {
   height: auto;
   background: rgba(0, 0, 0, 0.75); }
@@ -14,12 +20,6 @@
 
 .js-nav-mobile-closable.is-active .i-svg--close {
   display: inline-block; }
-
-.js .navbar {
-  background-color: transparent; }
-
-.js .navbar__group {
-  display: none; }
 
 .js-nav-item-expandable li.is-open ul {
   display: block; }

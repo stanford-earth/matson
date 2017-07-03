@@ -1,3 +1,13 @@
+.no-js {
+  .navbar {
+    background: rgba(0, 0, 0, .75);
+  }
+
+  .navbar__group {
+    display: block;
+  }
+}
+
 .js-nav-expandable {
   &.is-expanded {
     height: auto;
@@ -22,12 +32,3 @@
   }
 }
 
-.js {
-  .navbar {
-    background-color: transparent;
-  }
-
-  .navbar__group {
-    display: none;
-  }
-}
