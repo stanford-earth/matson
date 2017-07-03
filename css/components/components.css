@@ -2797,7 +2797,7 @@
     font-style: normal;
     position: relative;
     padding-top: 1em; }
-    .photo-tiles__quote cite:before {
+    .photo-tiles__quote cite::before {
       position: absolute;
       content: '';
       height: 1px;
