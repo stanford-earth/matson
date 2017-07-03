@@ -24,7 +24,8 @@
           // Check banner height.  If there is no banner, this returns null.
           var bannerHeight =  $('div.hero-banner').height();
           // Check if there's a sidebar (eg. Department pages)
-          var classy = $('body').hasClass('with-sidebar');
+          var classy = $('section').hasClass('with-sidebar');
+          console.log(classy);
           // Check if there's both a sidebar and a banner.
           // If there is, then transform the header lockup, add some height, and
           // add the .with-banner class to body, so the css can apply more styling
@@ -39,7 +40,8 @@
           var toolbarTopHeight = $('#toolbar-item-administration-tray').height();
           var headerHeight = $('#header').height();
           var contentHeight = $('div.main-container').height();
-          var otherHeight = bannerHeight ? -2 : 26; // I don't know why this works
+          // var otherHeight = bannerHeight ? -2 : 26; // I don't know why this works
+          var otherHeight = 26; // I don't know why this works
           var sidebar__offset = brandHeight + toolbarHeight + toolbarTopHeight + bannerHeight + headerHeight + otherHeight;
           // console.log(bannerHeight, contentHeight, sidebar__offset, otherHeight);
           // $('#sidebar__wrapper').css({'top': '780px'});
