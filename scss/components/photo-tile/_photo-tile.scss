@@ -1,0 +1,33 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.photo-tile__title {
+  letter-spacing: .3px;
+  position: relative;
+  padding-bottom: .5em;
+
+  &::after {
+    background-color: color(emphasis);
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    z-index: 4;
+  }
+}
+
+.photo-tile__description {
+  letter-spacing: .5px;
+  margin-bottom: 4px;
+}

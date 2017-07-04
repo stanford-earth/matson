@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+.collapsible-menu {
+  background-color: color(white);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+
+  .nav-item {
+    color: color(text);
+    padding: 16px;
+    font-size: em(12px);
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @include on-event {
+      color: color(action);
+      text-decoration: none;
+    }
+  }
+}
+
+.collapsible-menu__toggle {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
