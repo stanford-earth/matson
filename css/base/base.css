@@ -427,6 +427,36 @@ a {
   a:hover, a:active, a:focus {
     text-decoration: underline; }
 
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .button,
 .button__primary, .button__primary--expanded,
 .button__secondary, .button__secondary--expanded, button, [type='button'], [type='reset'], [type='submit'], .button__hollow, .button__hollow--expanded {
@@ -529,6 +559,9 @@ a {
 
 .color-ash {
   color: #9c9d9e; }
+
+.color-smoke {
+  color: #D8D8D8; }
 
 .color-dust {
   color: #FBFBFB; }
@@ -754,10 +787,7 @@ td {
 body {
   font-size: 1.3em;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  line-height: 1.425;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased; }
+  line-height: 1.425; }
   @media only screen and (max-width: 767px) {
     body {
       font-size: 1.3em; } }
