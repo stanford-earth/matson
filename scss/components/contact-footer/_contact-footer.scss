@@ -21,6 +21,9 @@
   background-color: #1C1E23;
   color: color(white);
   text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
 
   @include grid-media($media-md) {
     text-align: left;
@@ -167,6 +170,7 @@
 
     li {
       margin: 0;
+      list-style: none;
     }
 
     a {

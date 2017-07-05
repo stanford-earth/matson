@@ -23,26 +23,34 @@
 
 // Parent components
 @import
-  "stanford_basic/scss/components/breadcrumb/breadcrumb",
-  "stanford_basic/scss/components/pager/pager";
+  "stanford_basic/scss/components/breadcrumb/breadcrumb";
 
 // MY components.
 @import
   "brand-bar/brand-bar",
   "brand-lockup/brand-lockup",
+  "calendar-block/calendar-block",
   "callout-block/callout-block",
   "callout-card/callout-card",
   "contact-footer/contact-footer",
+  "collapsible-menu/collapsible-menu",
   "drop-cap/drop-cap",
+  "expandable-banner/expandable-banner",
+  "expandable-card/expandable-card",
+  "expandable-container/expandable-container",
   "film-card/film-card",
-  "feature-card/feature-card",
   "filmstrip/filmstrip",
   "global-footer/global-footer",
   "header/header",
   "hero-banner/hero-banner",
   "highlight-banner/highlight-banner",
+  "icon-item/icon-item",
+  "link-banner/link-banner",
+  "link-item/link-item",
+  "masonry-block/masonry-block",
   "navbar/navbar",
   "navigation/navigation",
+  "pager/pager",
   "postcard/postcard",
   "player-button/player-button",
   "photo-mosaic/photo-mosaic",
@@ -50,5 +58,7 @@
   "search-toggle/search-toggle",
   "section-header/section-header",
   "section-feature-cards/section-feature-cards",
+  "simple-block/simple-block",
   "sticky-footer/sticky-footer",
-  "tabs/tabs";
+  "tabs/tabs",
+  "tag-item/tag-item";

@@ -31,20 +31,16 @@ $hero-max-width-lg: 1500px;
 //}
 
 .hero-banner__container {
-  border: 1px solid color(white);
+  border: 1px solid rgba(255, 255, 255, .5);
   margin-top: em(65px);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
 
-  @include grid-media($media-md) {
+  @media (min-width: $hero-max-width-lg) {
     margin-left: 40px;
     margin-right: 40px;
-  }
-
-  @media (min-width: $hero-max-width-lg) {
-    margin-left: 0;
-    margin-right: 0;
+    margin-bottom: 40px;
   }
 }
 
