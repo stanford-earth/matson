@@ -1,5 +1,7 @@
-.js-collapsible-menu {
-  &.is-open {
+.js-collapsible-menu,
+#nojs-collapsible-menu {
+  &.is-open,
+  &:target {
     .collapsible-menu__toggle {
       border-top: 1px solid color(fog);
     }
