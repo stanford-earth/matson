@@ -643,6 +643,7 @@
 
 .quote-card {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  margin: 5.0769230769em auto;
   padding: 2.3076923077em 7.6923076923em; }
   .quote-card p {
     color: #9c9d9e; }
