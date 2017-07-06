@@ -642,29 +642,37 @@
   z-index: 2; }
 
 .quote-card {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  padding: 2.3076923077em 7.6923076923em; }
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
   .quote-card p {
     color: #9c9d9e; }
 
 .quote-card__icon {
-  color: #8c1414;
-  position: relative;
-  left: -60px;
-  top: 30px; }
+  color: #8c1414; }
   .quote-card__icon svg {
     height: 19px;
     width: 29px; }
 
-.quote-card__quote {
+.quote-card__quote p {
+  font-weight: 200;
   font-size: 2em;
   letter-spacing: .5px;
   line-height: 1.3em; }
 
 .quote-card__source {
-  border: 0.2307692308em; }
-  .quote-card__source h3 {
+  position: relative; }
+  .quote-card__source::before {
+    background-color: #D8D8D8;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 1px; }
+  .quote-card__source strong {
     color: #8c1414;
+    display: block;
+    font-style: normal;
     font-size: 0.9230769231em;
     letter-spacing: .9px;
     text-transform: uppercase; }

@@ -11,42 +11,50 @@
 
 .quote-card {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  padding: em(30px) em(100px);
 
   p {
     color: color(ash);
   }
-
 }
 
 .quote-card__icon {
   color: color(dark-red);
-  position: relative;
-  left: -60px;
-  top: 30px;
 
   svg {
     height: 19px;
     width: 29px;
   }
-
 }
 
 .quote-card__quote {
-  font-size: em(26px);
-  letter-spacing: .5px;
-  line-height: 1.3em;
+  p {
+    font-weight: 200;
+    font-size: em(26px);
+    letter-spacing: .5px;
+    line-height: 1.3em;
+  }
 }
 
 .quote-card__source {
+  position: relative;
 
-  border: em(3px);
+  &::before {
+    background-color: color(smoke);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 1px;
+  }
 
-  h3 {
+  strong {
     color: color(dark-red);
+    display: block;
+    font-style: normal;
     font-size: em(12px);
     letter-spacing: .9px;
     text-transform: uppercase;
   }
-
 }
