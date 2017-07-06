@@ -21,7 +21,7 @@
       width: 190px;
       border: 1px solid color(smoke);
       top: 100px;
-      right: 100px;
+      left: 100px;
       z-index: -1;
 
       @include grid-media($media-lg) {

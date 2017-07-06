@@ -2758,7 +2758,7 @@
     width: 190px;
     border: 1px solid #D8D8D8;
     top: 100px;
-    right: 100px;
+    left: 100px;
     z-index: -1; }
     @media only screen and (min-width: 1024px) {
       .photo-tiles .photo-tile::after {
