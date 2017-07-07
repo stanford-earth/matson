@@ -133,7 +133,7 @@ stanford_department:
   version: VERSION
   css:
     layout:
-      css/layout/stanford-complex-page.css: {}
+      css/layout/sidebar.css: {}
 
 ie8:
   version: VERSION
