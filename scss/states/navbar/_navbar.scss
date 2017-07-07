@@ -1,3 +1,25 @@
+.no-js {
+  .navbar__button {
+    display: none;
+  }
+
+  .navbar {
+    position: relative;
+    background: rgba(0, 0, 0, .75);
+    margin-top: -120px;
+
+    @include grid-media($header-md) {
+      position: absolute;
+      background: transparent;
+      margin-top: 0;
+    }
+  }
+
+  .navbar__group {
+    display: block;
+  }
+}
+
 .js-nav-expandable {
   &.is-expanded {
     height: auto;

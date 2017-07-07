@@ -831,9 +831,13 @@
       text-decoration: none; }
 
 .collapsible-menu__toggle {
+  color: #222328;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px; }
+  .collapsible-menu__toggle:hover, .collapsible-menu__toggle:active, .collapsible-menu__toggle:focus {
+    color: #4d4f53;
+    text-decoration: none; }
 
 .has-image-overlay {
   position: relative; }
@@ -2153,6 +2157,9 @@
   top: 0;
   width: 100%;
   z-index: 3; }
+  @media only screen and (min-width: 860px) {
+    .navbar {
+      background-color: transparent; } }
 
 @media only screen and (max-width: 575px) {
   .navbar__container {

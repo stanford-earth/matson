@@ -1,5 +1,23 @@
-.js-collapsible-menu.is-open .collapsible-menu__toggle {
+.js-collapsible-menu.is-open .collapsible-menu__toggle, .js-collapsible-menu:target .collapsible-menu__toggle,
+#nojs-collapsible-menu.is-open .collapsible-menu__toggle,
+#nojs-collapsible-menu:target .collapsible-menu__toggle {
   border-top: 1px solid #dad7cb; }
+
+.no-js .navbar__button {
+  display: none; }
+
+.no-js .navbar {
+  position: relative;
+  background: rgba(0, 0, 0, 0.75);
+  margin-top: -120px; }
+  @media only screen and (min-width: 860px) {
+    .no-js .navbar {
+      position: absolute;
+      background: transparent;
+      margin-top: 0; } }
+
+.no-js .navbar__group {
+  display: block; }
 
 .js-nav-expandable.is-expanded {
   height: auto;
