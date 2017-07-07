@@ -1,20 +1,4 @@
-#sidebar__wrapper {
-  position: absolute;
-  background: rgba(238, 238, 238, 0.9);
-  top: 160px;
-  z-index: 10; }
-  #sidebar__wrapper h2 {
-    color: white;
-    background: teal;
-    padding: 7px 30px; }
-  #sidebar__wrapper ul {
-    padding: 19px 12px; }
-
-@media (max-width: 860px) {
-  #sidebar__wrapper {
-    position: static;
-    margin: 10px auto; } }
-
+@import url(/modules/stanford/stanford_layouts/plugins/layouts/two-column/aiur/css/aiur.css);
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -98,19 +82,19 @@ body.with-banner header #block-matson-branding {
   body.with-banner header #block-matson-branding .block--lockup__site-logo-wrapper {
     margin-top: 154px; }
 
-#sidebar__wrapper {
+#floating_sidebar__wrapper {
   left: 128px;
   width: 170px; }
-  #sidebar__wrapper h2 {
+  #floating_sidebar__wrapper h2 {
     color: #fff;
     background: #017c92;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 3.9px;
     font-weight: 700; }
-  #sidebar__wrapper ul li {
+  #floating_sidebar__wrapper ul li {
     margin-bottom: 10px; }
-    #sidebar__wrapper ul li a {
+    #floating_sidebar__wrapper ul li a {
       color: #4d4f53;
       text-transform: uppercase;
       letter-spacing: 1px;
