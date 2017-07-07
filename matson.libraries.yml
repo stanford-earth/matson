@@ -93,7 +93,6 @@ matson:
       css/base/base.css: {}
     layout:
       css/layout/layout.css: {}
-      css/layout/sidebar.css: {}
     component:
       css/components/components.css: {}
     state:
@@ -104,7 +103,6 @@ matson:
   js:
     js/vendor/modernizr.js: {}
     js/build/scripts.js: {}
-    js/build/sidebar.js: {}
     node_modules/scrolltofixed/jquery-scrolltofixed-min.js: {}
   dependencies:
     - core/jquery
@@ -134,6 +132,10 @@ stanford_department:
   css:
     layout:
       css/layout/sidebar.css: {}
+  js:
+    js/build/sidebar.js: {}
+  dependencies:
+    - core/jquery
 
 ie8:
   version: VERSION
