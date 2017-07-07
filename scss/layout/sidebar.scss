@@ -4,6 +4,9 @@
 @import 'decanter/core/utilities/decanter-utilities';
 // Grab our mixins.
 @import "utilities/utilities";
+@import "utilities/mixins/hero-banner-node";
+// Pop out the tabs from the dom flow so they hover over.
+@include hero-banner-node;
 
 body.with-banner {
   header {
