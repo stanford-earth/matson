@@ -103,7 +103,6 @@ matson:
   js:
     js/vendor/modernizr.js: {}
     js/build/scripts.js: {}
-    node_modules/scrolltofixed/jquery-scrolltofixed-min.js: {}
   dependencies:
     - core/jquery
     - core/drupal
@@ -134,6 +133,7 @@ stanford_department:
       css/layout/sidebar.css: {}
   js:
     js/build/sidebar.js: {}
+    vendor/scrolltofixed/jquery-scrolltofixed-min.js: {}
   dependencies:
     - core/jquery
 
