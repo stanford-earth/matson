@@ -133,7 +133,7 @@ stanford_department:
       css/layout/sidebar.css: {}
   js:
     js/build/sidebar.js: {}
-    vendor/scrolltofixed/jquery-scrolltofixed-min.js: {}
+    js/vendor/scrolltofixed/jquery-scrolltofixed-min.js: {}
   dependencies:
     - core/jquery
 
