@@ -2117,20 +2117,26 @@
 
 .masonry-block {
   background-color: #fff; }
-  .masonry-block.is-inverted, .masonry-block.has-background {
+  .masonry-block.is-action, .masonry-block.is-inverted, .masonry-block.has-background {
     background-color: #8c1515;
     color: #fff; }
-    .masonry-block.is-inverted .masonry-block__description,
+    .masonry-block.is-action .masonry-block__description,
+    .masonry-block.is-action .masonry-block__link,
+    .masonry-block.is-action .masonry-block__footer, .masonry-block.is-inverted .masonry-block__description,
     .masonry-block.is-inverted .masonry-block__link,
     .masonry-block.is-inverted .masonry-block__footer, .masonry-block.has-background .masonry-block__description,
     .masonry-block.has-background .masonry-block__link,
     .masonry-block.has-background .masonry-block__footer {
+      position: relative;
       color: #fff; }
-    .masonry-block.is-inverted .masonry-block__link:hover, .masonry-block.is-inverted .masonry-block__link:active, .masonry-block.is-inverted .masonry-block__link:focus, .masonry-block.has-background .masonry-block__link:hover, .masonry-block.has-background .masonry-block__link:active, .masonry-block.has-background .masonry-block__link:focus {
+    .masonry-block.is-action .masonry-block__link:hover, .masonry-block.is-action .masonry-block__link:active, .masonry-block.is-action .masonry-block__link:focus, .masonry-block.is-inverted .masonry-block__link:hover, .masonry-block.is-inverted .masonry-block__link:active, .masonry-block.is-inverted .masonry-block__link:focus, .masonry-block.has-background .masonry-block__link:hover, .masonry-block.has-background .masonry-block__link:active, .masonry-block.has-background .masonry-block__link:focus {
       color: rgba(255, 255, 255, 0.65); }
-    .masonry-block.is-inverted .masonry-block__footer, .masonry-block.has-background .masonry-block__footer {
+    .masonry-block.is-action .masonry-block__footer, .masonry-block.is-inverted .masonry-block__footer, .masonry-block.has-background .masonry-block__footer {
       border-top: 1px solid rgba(255, 255, 255, 0.5); }
-    .masonry-block.is-inverted .masonry-block__arrow:hover svg use, .masonry-block.is-inverted .masonry-block__arrow:active svg use, .masonry-block.is-inverted .masonry-block__arrow:focus svg use,
+    .masonry-block.is-action .masonry-block__arrow:hover svg use, .masonry-block.is-action .masonry-block__arrow:active svg use, .masonry-block.is-action .masonry-block__arrow:focus svg use,
+    .masonry-block.is-action .masonry-block__social-link:hover svg use,
+    .masonry-block.is-action .masonry-block__social-link:active svg use,
+    .masonry-block.is-action .masonry-block__social-link:focus svg use, .masonry-block.is-inverted .masonry-block__arrow:hover svg use, .masonry-block.is-inverted .masonry-block__arrow:active svg use, .masonry-block.is-inverted .masonry-block__arrow:focus svg use,
     .masonry-block.is-inverted .masonry-block__social-link:hover svg use,
     .masonry-block.is-inverted .masonry-block__social-link:active svg use,
     .masonry-block.is-inverted .masonry-block__social-link:focus svg use, .masonry-block.has-background .masonry-block__arrow:hover svg use, .masonry-block.has-background .masonry-block__arrow:active svg use, .masonry-block.has-background .masonry-block__arrow:focus svg use,
@@ -2138,20 +2144,49 @@
     .masonry-block.has-background .masonry-block__social-link:active svg use,
     .masonry-block.has-background .masonry-block__social-link:focus svg use {
       fill: rgba(255, 255, 255, 0.5); }
-    .masonry-block.is-inverted .masonry-block__arrow svg use,
+    .masonry-block.is-action .masonry-block__arrow svg use,
+    .masonry-block.is-action .masonry-block__social-link svg use, .masonry-block.is-inverted .masonry-block__arrow svg use,
     .masonry-block.is-inverted .masonry-block__social-link svg use, .masonry-block.has-background .masonry-block__arrow svg use,
     .masonry-block.has-background .masonry-block__social-link svg use {
       fill: #fff; }
-    .masonry-block.is-inverted .masonry-block__date, .masonry-block.has-background .masonry-block__date {
+    .masonry-block.is-action .masonry-block__date, .masonry-block.is-inverted .masonry-block__date, .masonry-block.has-background .masonry-block__date {
       border-right: 1px solid #fff; }
-    .masonry-block.is-inverted .masonry-block__social-links, .masonry-block.has-background .masonry-block__social-links {
+    .masonry-block.is-action .masonry-block__social-links, .masonry-block.is-inverted .masonry-block__social-links, .masonry-block.has-background .masonry-block__social-links {
       border-right: 1px solid #fff; }
+  .masonry-block.is-action {
+    background-color: #017c92;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .masonry-block.is-action .masonry-block__title {
+      margin-bottom: 30px; }
+  @media only screen and (min-width: 768px) {
+    .masonry-block.is-wide .masonry-block__title {
+      font-size: 30px; } }
+  .masonry-block.is-full-width .masonry-block__title {
+    padding-top: 13px; }
+    @media only screen and (min-width: 768px) {
+      .masonry-block.is-full-width .masonry-block__title {
+        font-size: 32px; } }
+  .masonry-block.has-columns .tag-item, .masonry-block.is-full-width .tag-item {
+    border-color: #017c92;
+    color: #017c92; }
+    .masonry-block.has-columns .tag-item:hover, .masonry-block.has-columns .tag-item:active, .masonry-block.has-columns .tag-item:focus, .masonry-block.is-full-width .tag-item:hover, .masonry-block.is-full-width .tag-item:active, .masonry-block.is-full-width .tag-item:focus {
+      background-color: #017c92;
+      color: #fff; }
   .masonry-block .tag-item {
     border-color: #fff;
-    color: #fff; }
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
     .masonry-block .tag-item:hover, .masonry-block .tag-item:active, .masonry-block .tag-item:focus {
       background-color: #fff;
       color: #4d4f53; }
+
+.masonry-block__title {
+  font-size: 20px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .masonry-block__link {
   color: #4d4f53; }
@@ -2162,7 +2197,8 @@
 .masonry-block__description {
   color: #9c9d9e;
   letter-spacing: .5px;
-  margin-bottom: 4px; }
+  margin-bottom: 4px;
+  line-height: 2em; }
 
 .masonry-block__footer {
   border-top: 1px solid #D8D8D8;
@@ -2184,6 +2220,9 @@
 
 .masonry-block__arrow svg use {
   fill: #8c1515; }
+
+.masonry-block__button {
+  width: 100%; }
 
 .section-masonry-blocks {
   background-color: #dad7cb; }
@@ -3483,7 +3522,8 @@ ul.tabs {
   line-height: 1;
   margin: 0;
   text-transform: uppercase;
-  margin-right: .5em; }
+  margin-right: .5em;
+  margin-bottom: .5em; }
   .tag-item:hover, .tag-item:active, .tag-item:focus {
     background-color: #017c92;
     text-decoration: none;

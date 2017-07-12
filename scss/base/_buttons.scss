@@ -40,19 +40,18 @@
   }
 }
 
-%button__hollow {
-  $_color: $emphasis-color;
-
+@mixin button__hollow($color: color(emphasis)) {
   @extend %button__generic;
 
   background-color: transparent;
-  border: 1px solid $_color;
-  color: $_color;
-  font-weight: 300;
+  border: 1px solid $color;
+  color: $color;
+  font-weight: 400;
+  letter-spacing: 1.4px;
 
   @include on-event {
-    background-color: $_color;
-    color: color(reverse-text);
+    background-color: $color;
+    color: color(text-active);
   }
 }
 
@@ -95,12 +94,17 @@
 
 .button__hollow {
   @extend %button__generic;
-  @extend %button__hollow;
+  @include button__hollow;
+}
+
+.button__hollow--white {
+  @extend %button__generic;
+  @include button__hollow(color(white));
 }
 
 .button__hollow--expanded {
   @extend %button__generic;
-  @extend %button__hollow;
+  @include button__hollow;
   @extend %button__large;
   @extend %button__expand;
 }
