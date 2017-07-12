@@ -93,18 +93,18 @@
 }
 
 .button__hollow {
-  @extend %button__generic;
   @include button__hollow;
+  @extend %button__generic;
 }
 
 .button__hollow--white {
-  @extend %button__generic;
   @include button__hollow(color(white));
+  @extend %button__generic;
 }
 
 .button__hollow--expanded {
-  @extend %button__generic;
   @include button__hollow;
+  @extend %button__generic;
   @extend %button__large;
   @extend %button__expand;
 }
