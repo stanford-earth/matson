@@ -1068,12 +1068,11 @@
   z-index: 2; }
 
 .header-card {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  color: #4d4f53; }
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
   .header-card h2.has-dash--under {
     margin-bottom: 1.25em; }
     .header-card h2.has-dash--under::after {
-      background-color: #8c1515;
+      background-color: #f9b002;
       bottom: -.5em;
       left: 50%;
       transform: translateX(-50%); }
@@ -1086,7 +1085,7 @@
       bottom: -.5em;
       left: 50%;
       transform: translateX(-50%);
-      background-color: #8c1515; }
+      background-color: #f9b002; }
       @media only screen and (min-width: 768px) {
         .header-card h2.has-dash--left::after {
           bottom: auto;
@@ -1096,6 +1095,7 @@
   .header-card h2.has-dash--emphasis::after {
     background-color: #f9b002; }
   .header-card p {
+    color: #9c9d9e;
     line-height: 1.6923076923em;
     letter-spacing: .5px; }
 
