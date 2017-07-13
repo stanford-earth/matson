@@ -18,10 +18,10 @@
   position: relative;
 
   a {
-    color: color(brand); 
+    color: color(brand);
 
     @include on-event {
-      color: color(brand-active); 
+      color: color(brand-active);
       text-decoration: none;
     }
   }
