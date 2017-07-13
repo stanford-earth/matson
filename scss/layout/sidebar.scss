@@ -35,6 +35,8 @@ body.with-banner {
     text-transform: uppercase;
     letter-spacing: 3.9px;
     font-weight: 700;
+    padding: 7px 30px;
+    margin: -19px -12px 19px; // everything gets padding except block title
   }
 
   ul li {
