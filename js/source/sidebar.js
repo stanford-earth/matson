@@ -18,19 +18,18 @@
         // Only do this if you're not on a mobile device.
 
         if ( $(window).width() > 860 ) {
-          // Check banner height.  If there is no banner, this returns null.
-          var bannerHeight =  $('div.hero-banner').first().height();
-
-          // This works a little differently if you're logged in because of the toolbar
-          var topLimit = $('body').hasClass('toolbar-fixed') ? 100 : 19;
+          // Need to remove float from sidebar before we check banner height
+          $('#floating_sidebar__wrapper').css({'float': 'none'});
+          // Check banner height.  If there is no banner, replace null with 0.
+          var bannerHeight =  $('div.hero-banner__inner').first().outerHeight(true);
+          bannerHeight = bannerHeight ? bannerHeight : 0;
 
           // If there is a banner, then the sidebar floats below the banner.
           // If there isn't a banner, then the sidebar floats below the header.
-          if (bannerHeight) {
-            $('#floating_sidebar__wrapper').css({'top': bannerHeight, 'bottom': 0});
-          } else {
-            $('#floating_sidebar__wrapper').css({'top': 0, 'bottom': 0});
-          }
+          $('#floating_sidebar__wrapper').css({'position': 'absolute', 'top': bannerHeight, 'left': '128px', 'bottom': 0});
+
+          // This works a little differently if you're logged in because of the toolbar
+          var topLimit = $('body').hasClass('toolbar-fixed') ? 100 : 19;
 
           // Add ScrollToFixed functionality to sidebar region
           var bottomLimit = $('#footer__container').offset().top - $('#floating_sidebar').outerHeight(true);
@@ -45,7 +44,6 @@
           $('#floating_sidebar__wrapper').removeAttr( 'style' );
           $('#floating_sidebar').trigger('detach.ScrollToFixed');
         }
-
       }
 
       // Execute code once the DOM is ready. $(document).ready() not required within Drupal.behaviors.
@@ -57,10 +55,6 @@
       $(window).resize(function () {
         // Execute code when the window is resized.
         mylifeforaiur();
-      });
-
-      $(window).scroll(function () {
-        // Execute code when the window scrolls.
       });
 
 } (Drupal, jQuery, this));
