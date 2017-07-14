@@ -10,20 +10,13 @@
 @import "utilities/utilities";
 
 .tag-item {
-  border: 1px solid color(action);
+  border: 1px solid color(white);
   padding: .5em 1em;
-  color: color(action);
+  color: color(white);
   font-size: em(12px);
   font-weight: 600;
   letter-spacing: .2px;
   line-height: 1;
   margin: 0;
   text-transform: uppercase;
-  margin-right: .5em;
-
-  @include on-event {
-    background-color: color(action);
-    text-decoration: none;
-    color: white;
-  }
 }

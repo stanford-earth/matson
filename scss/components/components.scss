@@ -24,8 +24,7 @@
 // Parent components
 @import
   "stanford_basic/scss/components/breadcrumb/breadcrumb",
-  "stanford_basic/scss/components/pager/pager",
-  "stanford_basic/scss/components/sidebar/sidebar";
+  "stanford_basic/scss/components/pager/pager";
 
 // MY components.
 @import
@@ -62,7 +61,6 @@
   "section-header/section-header",
   "section-feature-cards/section-feature-cards",
   "simple-block/simple-block",
-  "simple-slat/simple-slat",
   "sticky-footer/sticky-footer",
   "tabs/tabs",
   "tag-item/tag-item";
