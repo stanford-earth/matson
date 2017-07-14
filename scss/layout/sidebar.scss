@@ -1,28 +1,13 @@
+@charset "UTF-8";
 @import "/modules/stanford/stanford_layouts/plugins/layouts/two-column/aiur/css/aiur.css";
 @import "config/config";
 //// Decanter config.
-@import 'decanter/core/utilities/decanter-utilities';
+@import "decanter/core/utilities/decanter-utilities";
 // Grab our mixins.
 @import "utilities/utilities";
 @import "utilities/mixins/hero-banner-node";
 // Pop out the tabs from the dom flow so they hover over.
 @include hero-banner-node;
-
-body.with-banner {
-  header {
-    #block-matson-branding {
-      position: absolute;
-      padding: 20px;
-      left: 128px;
-      width: 170px;
-      background: rgba(color(black), 0.5);
-
-      .block--lockup__site-logo-wrapper {
-        margin-top: 154px;
-      }
-    }
-  }
-}
 
 #floating_sidebar__wrapper {
   left: 128px;
@@ -49,5 +34,13 @@ body.with-banner {
       font-weight: 600;
       line-height: 0;
     }
+  }
+}
+
+// On very wide screens, keep the sidebar under the 'Stanford University'
+// branding on the brand bar
+@media (min-width: 1628px) {
+  #floating_sidebar__wrapper {
+    left: calc(50% - (750px - 60px));
   }
 }

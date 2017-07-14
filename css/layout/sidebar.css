@@ -73,7 +73,8 @@
     width: 100%;
     height: 100%; }
 
-article .content > div:first-child .hero-banner {
+article .content > div:first-child .hero-banner,
+article .block-block-content:nth-child(1) .hero-banner {
   margin-top: -120px; }
 
 .block--local-tasks {
@@ -90,15 +91,6 @@ article .content > div:first-child .hero-banner {
     .block--local-tasks ul.tabs li {
       display: block; }
 
-body.with-banner header #block-matson-branding {
-  position: absolute;
-  padding: 20px;
-  left: 128px;
-  width: 170px;
-  background: rgba(0, 0, 0, 0.5); }
-  body.with-banner header #block-matson-branding .block--lockup__site-logo-wrapper {
-    margin-top: 154px; }
-
 #floating_sidebar__wrapper {
   left: 128px;
   width: 170px; }
@@ -108,7 +100,9 @@ body.with-banner header #block-matson-branding {
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 3.9px;
-    font-weight: 700; }
+    font-weight: 700;
+    padding: 7px 30px;
+    margin: -19px -12px 19px; }
   #floating_sidebar__wrapper ul li {
     margin-bottom: 10px; }
     #floating_sidebar__wrapper ul li a {
@@ -117,5 +111,9 @@ body.with-banner header #block-matson-branding {
       letter-spacing: 1px;
       font-weight: 600;
       line-height: 0; }
+
+@media (min-width: 1628px) {
+  #floating_sidebar__wrapper {
+    left: calc(50% - (750px - 60px)); } }
 
 /*# sourceMappingURL=sidebar.css.map */
