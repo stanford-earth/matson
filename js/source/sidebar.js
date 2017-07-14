@@ -21,24 +21,15 @@
           // Check banner height.  If there is no banner, this returns null.
           var bannerHeight =  $('div.hero-banner').first().height();
 
-          // Gather a bunch of measurements to create offset for sidebar
-          var contentHeight = $('div.main-container').height();
-
           // This works a little differently if you're logged in because of the toolbar
-          var topLimit, bonusHeight, authHeight, floating_sidebar__offset;
-          if ($('body').hasClass('toolbar-fixed')) {
-            topLimit = 100;
-            authHeight = 0 ;
-          } else {
-            topLimit = 19;
-            authHeight = 40;
-          }
+          var topLimit = $('body').hasClass('toolbar-fixed') ? 100 : 19;
+
           // If there is a banner, then the sidebar floats below the banner.
           // If there isn't a banner, then the sidebar floats below the header.
           if (bannerHeight) {
-            $('#floating_sidebar__wrapper').css({'top': bannerHeight + authHeight, 'height': contentHeight - bannerHeight + 120});
+            $('#floating_sidebar__wrapper').css({'top': bannerHeight, 'bottom': 0});
           } else {
-            $('#floating_sidebar__wrapper').css({'height': contentHeight - bannerHeight});
+            $('#floating_sidebar__wrapper').css({'top': 0, 'bottom': 0});
           }
 
           // Add ScrollToFixed functionality to sidebar region
