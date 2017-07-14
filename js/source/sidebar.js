@@ -21,30 +21,25 @@
           // Check banner height.  If there is no banner, this returns null.
           var bannerHeight =  $('div.hero-banner').first().height();
 
-          // Check if there's both a sidebar and a banner.
-          // If there is, then transform the header lockup, add some height, and
-          // add the .with-banner class to body, so the css can apply more styling
-          if (bannerHeight) {
-            $('#block-matson-branding').css({'height': bannerHeight});
-            $('body').addClass('with-banner');
-          }
-
           // Gather a bunch of measurements to create offset for sidebar
-          var brandHeight = $('.brand-bar').height();
-          var headerHeight = $('#header').height();
           var contentHeight = $('div.main-container').height();
 
           // This works a little differently if you're logged in because of the toolbar
-          var topLimit, floating_sidebar__offset;
+          var topLimit, bonusHeight, authHeight, floating_sidebar__offset;
           if ($('body').hasClass('toolbar-fixed')) {
             topLimit = 100;
-            floating_sidebar__offset = bannerHeight + headerHeight;
+            authHeight = 0 ;
           } else {
             topLimit = 19;
-            floating_sidebar__offset = bannerHeight + headerHeight + brandHeight + 26;
+            authHeight = 40;
           }
-
-          $('#floating_sidebar__wrapper').css({'top': floating_sidebar__offset, 'height': contentHeight - bannerHeight});
+          // If there is a banner, then the sidebar floats below the banner.
+          // If there isn't a banner, then the sidebar floats below the header.
+          if (bannerHeight) {
+            $('#floating_sidebar__wrapper').css({'top': bannerHeight + authHeight, 'height': contentHeight - bannerHeight + 120});
+          } else {
+            $('#floating_sidebar__wrapper').css({'height': contentHeight - bannerHeight});
+          }
 
           // Add ScrollToFixed functionality to sidebar region
           var bottomLimit = $('#footer__container').offset().top - $('#floating_sidebar').outerHeight(true);
@@ -56,8 +51,6 @@
         } else {
           // For true fluid responsiveness, if you resize the window from large
           // to small, then it should remove all the styling and stuff.
-          $('body').removeClass('with-banner');
-          $('#block-matson-branding').removeAttr( 'style' );
           $('#floating_sidebar__wrapper').removeAttr( 'style' );
           $('#floating_sidebar').trigger('detach.ScrollToFixed');
         }
