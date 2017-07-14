@@ -16,6 +16,10 @@ $nav-bar-height: em(65px);
   top: 0;
   width: 100%;
   z-index: 3;
+
+  @include grid-media($header-md) {
+    background-color: transparent;
+  }
 }
 
 .navbar__container {

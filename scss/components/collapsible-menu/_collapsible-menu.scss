@@ -25,7 +25,13 @@
 }
 
 .collapsible-menu__toggle {
+  color: color(text);
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
+
+  @include on-event {
+    color: color(text-active);
+    text-decoration: none;
+  }
 }

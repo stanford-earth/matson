@@ -16,4 +16,8 @@ article #panels-ipe-content > section:first-child .hero-banner {
     .block--local-tasks ul.tabs li {
       display: block; }
 
-/*# sourceMappingURL=stanford-complex-page.css.map */
+.block-region-first .block-ctools-block {
+  column-count: 2;
+  column-gap: 20px; }
+
+/*# sourceMappingURL=stanford-news.css.map */
