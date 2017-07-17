@@ -17,6 +17,7 @@
 
 // Matson Theme Config.
 @import 'config/config';
+@import 'utilities/mixins/mixins';
 
 //// Decanter base styles.
 @import
@@ -37,6 +38,7 @@
   'fonts',
   'forms',
   'lists',
+  'media',
   'svg',
   'tables',
   'typography';

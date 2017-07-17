@@ -43,7 +43,7 @@ html {
 
 .button,
 .button__primary, .button__primary--expanded,
-.button__secondary, .button__secondary--expanded, button, [type='button'], [type='reset'], [type='submit'], .button__hollow, .button__hollow--expanded {
+.button__secondary, .button__secondary--expanded, button, [type='button'], [type='reset'], [type='submit'], .button__hollow, .button__hollow--white, .button__hollow--expanded {
   /*!*/
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(0, 0, 0, 0.1);
   appearance: none;
@@ -65,28 +65,28 @@ html {
   transition: all 250ms ease-in-out; }
   .button:hover,
   .button__primary:hover, .button__primary--expanded:hover,
-  .button__secondary:hover, .button__secondary--expanded:hover, button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover, .button__hollow:hover, .button__hollow--expanded:hover, .button:active,
+  .button__secondary:hover, .button__secondary--expanded:hover, button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover, .button__hollow:hover, .button__hollow--white:hover, .button__hollow--expanded:hover, .button:active,
   .button__primary:active, .button__primary--expanded:active,
-  .button__secondary:active, .button__secondary--expanded:active, button:active, [type='button']:active, [type='reset']:active, [type='submit']:active, .button__hollow:active, .button__hollow--expanded:active, .button:focus,
+  .button__secondary:active, .button__secondary--expanded:active, button:active, [type='button']:active, [type='reset']:active, [type='submit']:active, .button__hollow:active, .button__hollow--white:active, .button__hollow--expanded:active, .button:focus,
   .button__primary:focus, .button__primary--expanded:focus,
-  .button__secondary:focus, .button__secondary--expanded:focus, button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus, .button__hollow:focus, .button__hollow--expanded:focus {
+  .button__secondary:focus, .button__secondary--expanded:focus, button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus, .button__hollow:focus, .button__hollow--white:focus, .button__hollow--expanded:focus {
     background-color: #33548F;
     color: #dceefe;
     text-decoration: none; }
   .button:disabled,
   .button__primary:disabled, .button__primary--expanded:disabled,
-  .button__secondary:disabled, .button__secondary--expanded:disabled, button:disabled, [type='button']:disabled, [type='reset']:disabled, [type='submit']:disabled, .button__hollow:disabled, .button__hollow--expanded:disabled, .disabled.button,
+  .button__secondary:disabled, .button__secondary--expanded:disabled, button:disabled, [type='button']:disabled, [type='reset']:disabled, [type='submit']:disabled, .button__hollow:disabled, .button__hollow--white:disabled, .button__hollow--expanded:disabled, .disabled.button,
   .disabled.button__primary, .disabled.button__primary--expanded,
-  .disabled.button__secondary, .disabled.button__secondary--expanded, button.disabled, .disabled[type='button'], .disabled[type='reset'], .disabled[type='submit'], .disabled.button__hollow, .disabled.button__hollow--expanded {
+  .disabled.button__secondary, .disabled.button__secondary--expanded, button.disabled, .disabled[type='button'], .disabled[type='reset'], .disabled[type='submit'], .disabled.button__hollow, .disabled.button__hollow--white, .disabled.button__hollow--expanded {
     background-color: #006cb8;
     color: #fff;
     cursor: not-allowed;
     opacity: 0.5; }
     .button:disabled:hover,
     .button__primary:disabled:hover, .button__primary--expanded:disabled:hover,
-    .button__secondary:disabled:hover, .button__secondary--expanded:disabled:hover, button:disabled:hover, [type='button']:disabled:hover, [type='reset']:disabled:hover, [type='submit']:disabled:hover, .button__hollow:disabled:hover, .button__hollow--expanded:disabled:hover, .disabled.button:hover,
+    .button__secondary:disabled:hover, .button__secondary--expanded:disabled:hover, button:disabled:hover, [type='button']:disabled:hover, [type='reset']:disabled:hover, [type='submit']:disabled:hover, .button__hollow:disabled:hover, .button__hollow--white:disabled:hover, .button__hollow--expanded:disabled:hover, .disabled.button:hover,
     .disabled.button__primary:hover, .disabled.button__primary--expanded:hover,
-    .disabled.button__secondary:hover, .disabled.button__secondary--expanded:hover, button.disabled:hover, .disabled[type='button']:hover, .disabled[type='reset']:hover, .disabled[type='submit']:hover, .disabled.button__hollow:hover, .disabled.button__hollow--expanded:hover {
+    .disabled.button__secondary:hover, .disabled.button__secondary--expanded:hover, button.disabled:hover, .disabled[type='button']:hover, .disabled[type='reset']:hover, .disabled[type='submit']:hover, .disabled.button__hollow:hover, .disabled.button__hollow--white:hover, .disabled.button__hollow--expanded:hover {
       cursor: not-allowed; }
 
 .button,
@@ -459,7 +459,7 @@ a {
 
 .button,
 .button__primary, .button__primary--expanded,
-.button__secondary, .button__secondary--expanded, button, [type='button'], [type='reset'], [type='submit'], .button__hollow, .button__hollow--expanded {
+.button__secondary, .button__secondary--expanded, button, [type='button'], [type='reset'], [type='submit'], .button__hollow, .button__hollow--white, .button__hollow--expanded {
   box-shadow: none;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   padding: 0.7692307692em 2em 0.7692307692em;
@@ -489,15 +489,6 @@ a {
     background-color: #01515f;
     color: #fff; }
 
-.button__hollow, .button__hollow--expanded {
-  background-color: transparent;
-  border: 1px solid #f9b002;
-  color: #f9b002;
-  font-weight: 300; }
-  .button__hollow:hover, .button__hollow--expanded:hover, .button__hollow:active, .button__hollow--expanded:active, .button__hollow:focus, .button__hollow--expanded:focus {
-    background-color: #f9b002;
-    color: #fff; }
-
 .button__primary--expanded, .button__secondary--expanded, .button__hollow--expanded {
   font-weight: 600;
   padding: 1.6923076923em; }
@@ -505,6 +496,36 @@ a {
 .button__primary--expanded, .button__secondary--expanded, .button__hollow--expanded {
   width: 100%;
   display: block; }
+
+.button__hollow {
+  background-color: transparent;
+  border: 1px solid #f9b002;
+  color: #f9b002;
+  font-weight: 400;
+  letter-spacing: 1.4px; }
+  .button__hollow:hover, .button__hollow:active, .button__hollow:focus {
+    background-color: #f9b002;
+    color: #4d4f53; }
+
+.button__hollow--white {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1.4px; }
+  .button__hollow--white:hover, .button__hollow--white:active, .button__hollow--white:focus {
+    background-color: #fff;
+    color: #4d4f53; }
+
+.button__hollow--expanded {
+  background-color: transparent;
+  border: 1px solid #f9b002;
+  color: #f9b002;
+  font-weight: 400;
+  letter-spacing: 1.4px; }
+  .button__hollow--expanded:hover, .button__hollow--expanded:active, .button__hollow--expanded:focus {
+    background-color: #f9b002;
+    color: #4d4f53; }
 
 .color-brand {
   color: #8c1515; }
