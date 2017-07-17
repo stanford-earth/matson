@@ -20,10 +20,6 @@
   }
 }
 
-.has-image-overlay {
-  @include image-overlay;
-}
-
 @mixin image-gradient($image-gradient-bg-color: rgba(0, 0, 0, 0.35)) {
   position: relative;
 
@@ -43,10 +39,6 @@
   }
 }
 
-.has-image-gradient {
-  @include image-gradient;
-}
-
 @mixin responsive-video($responsive-video-aspect-ratio: 56.25%, $responsive-video-padding-top: 2em) {
   overflow: hidden;
   position: relative;
@@ -63,8 +55,4 @@
     width: 100%;
     height: 100%;
   }
-}
-
-.responsive-video-container {
-  @include responsive-video;
 }
