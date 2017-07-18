@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+///
+/// Hollow Button
+///
+@mixin button__hollow($color: color(emphasis)) {
+  @extend %button__generic;
+
+  background-color: transparent;
+  border: 1px solid $color;
+  color: $color;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+
+  @include on-event {
+    background-color: $color;
+    color: color(text-active);
+  }
+}

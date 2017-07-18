@@ -10,7 +10,112 @@
 @import "utilities/utilities";
 
 .masonry-block {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: color(white);
+
+  &.is-action,
+  &.is-inverted,
+  &.has-background {
+    background-color: color(brand);
+    color: color(white);
+
+    .masonry-block__description,
+    .masonry-block__link,
+    .masonry-block__footer {
+      position: relative;
+      color: color(white);
+    }
+
+    .masonry-block__link {
+      @include on-event {
+        color: rgba(255, 255, 255, .65);
+      }
+    }
+
+    .masonry-block__footer {
+      border-top: 1px solid rgba(255, 255, 255, .5);
+    }
+
+    .masonry-block__arrow,
+    .masonry-block__social-link {
+      @include on-event {
+        svg use {
+          fill: rgba(255, 255, 255, .5);
+        }
+      }
+
+      svg use {
+        fill: color(white);
+      }
+    }
+
+    .masonry-block__date {
+      border-right: 1px solid color(white);
+    }
+
+    .masonry-block__social-links {
+      border-right: 1px solid color(white);
+    }
+  }
+
+  &.is-action {
+    background-color: color(action);
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .masonry-block__title {
+      margin-bottom: 30px;
+    }
+  }
+
+  &.is-wide {
+    .masonry-block__title {
+      @include grid-media($media-md) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &.is-full-width {
+    .masonry-block__title {
+      padding-top: 13px;
+
+      @include grid-media($media-md) {
+        font-size: 32px;
+      }
+    }
+  }
+
+  &.has-columns,
+  &.is-full-width {
+    .tag-item {
+      border-color: color(action);
+      color: color(action);
+
+      @include on-event {
+        background-color: color(action);
+        color: color(white);
+      }
+    }
+  }
+
+  .tag-item {
+    border-color: color(white);
+    color: color(white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @include on-event {
+      background-color: color(white);
+      color: color(text-active);
+    }
+  }
+}
+
+.masonry-block__title {
+  font-size: 20px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .masonry-block__link {
@@ -38,6 +143,7 @@
   color: color(ash);
   letter-spacing: .5px;
   margin-bottom: 4px;
+  line-height: 2em;
 }
 
 .masonry-block__footer {
@@ -65,4 +171,12 @@
   use {
     fill: color(brand);
   }
+}
+
+.masonry-block__button {
+  width: 100%;
+}
+
+.section-masonry-blocks {
+  background-color: color(fog);
 }
