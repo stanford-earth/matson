@@ -1929,6 +1929,7 @@
   .section-header h2.has-dash-emphasis::after {
     background-color: #f9b002; }
   .section-header p {
+    color: #9c9d9e;
     line-height: 1.6923076923em;
     letter-spacing: .5px; }
   .section-header a {
