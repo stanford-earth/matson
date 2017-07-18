@@ -1990,6 +1990,32 @@
   display: block;
   z-index: 2; }
 
+.spotlight-card {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
+
+.spotlight-card__quote p {
+  font-size: 1.3846153846em;
+  letter-spacing: .5px;
+  line-height: 1.3em; }
+
+.spotlight-card__source {
+  position: relative; }
+  .spotlight-card__source strong {
+    color: #8c1414;
+    display: block;
+    font-style: normal;
+    font-size: 0.9230769231em;
+    letter-spacing: .9px;
+    text-transform: uppercase; }
+
+.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  content: '';
+  display: block;
+  z-index: 2; }
+
 html {
   position: relative;
   min-height: 100%; }
