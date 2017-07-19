@@ -1,3 +1,4 @@
+article.node .block-ctools-block div:first-child > .hero-banner,
 article .content > div:first-child .hero-banner,
 article #panels-ipe-content > section:first-child .hero-banner {
   margin-top: -120px; }
@@ -16,14 +17,22 @@ article #panels-ipe-content > section:first-child .hero-banner {
     .block--local-tasks ul.tabs li {
       display: block; }
 
-.block--local-tasks {
-  left: auto;
-  right: 35px; }
+@media only screen and (min-width: 768px) {
+  #floating_sidebar {
+    width: 190px; } }
 
-#floating_sidebar {
-  width: 190px; }
+#floating_sidebar__wrapper .block-region-first > .block-ctools-block > span > a {
+  color: #fff;
+  background: #017c92;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3.9px;
+  font-weight: 700;
+  padding: 7px 30px;
+  margin-bottom: 20px;
+  display: block; }
 
-#floating_sidebar__wrapper nav h2 {
+#floating_sidebar__wrapper h2 {
   color: #fff;
   background: #017c92;
   font-size: 13px;
@@ -33,32 +42,60 @@ article #panels-ipe-content > section:first-child .hero-banner {
   padding: 7px 30px;
   margin-bottom: 20px; }
 
-#floating_sidebar__wrapper nav ul.menu {
-  padding: 0 0 0 0;
-  margin: 0 0 0 0; }
-  #floating_sidebar__wrapper nav ul.menu li {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    display: block;
-    float: none;
-    line-height: 1em; }
-    #floating_sidebar__wrapper nav ul.menu li a {
-      color: #4d4f53;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+@media only screen and (max-width: 767px) {
+  #floating_sidebar__wrapper nav ul.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #floating_sidebar__wrapper nav ul.menu li {
+      display: inline-block;
+      width: auto;
+      list-style-image: none;
+      list-style: none;
+      list-style-type: none;
+      padding: 7px 10px;
+      margin: 0px;
+      text-indent: 0; }
+    #floating_sidebar__wrapper nav ul.menu a {
+      color: #222328;
+      padding: 16px;
+      font-size: font-size(16px);
       font-weight: 600;
-      line-height: 1em;
-      padding: 1.1538461538em 1.1538461538em;
-      -webkit-transition: background 0.5s;
-      /* Safari */
-      transition: background 0.5s;
+      text-transform: uppercase; }
+    #floating_sidebar__wrapper nav ul.menu a:hover,
+    #floating_sidebar__wrapper nav ul.menu a.is-active {
+      text-decoration: none;
+      box-shadow: inset 0 -3px 0 0 #f9b002; } }
+
+@media only screen and (min-width: 768px) {
+  #floating_sidebar__wrapper nav ul.menu {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0; }
+    #floating_sidebar__wrapper nav ul.menu li {
+      padding: 0 0 0 0;
+      margin: 0 0 0 0;
       display: block;
-      border-left: 2px solid transparent; }
-    #floating_sidebar__wrapper nav ul.menu li a:hover,
-    #floating_sidebar__wrapper nav ul.menu li a.is-active {
-      background: #FFF;
-      box-shadow: none;
-      color: #8c1515;
-      border-left: 2px solid #017c92; }
+      float: none;
+      line-height: 1em; }
+      #floating_sidebar__wrapper nav ul.menu li a {
+        color: #4d4f53;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        line-height: 1em;
+        padding: 1.1538461538em 1.1538461538em;
+        -webkit-transition: background 0.5s;
+        /* Safari */
+        transition: background 0.5s;
+        display: block;
+        border-left: 2px solid transparent; }
+      #floating_sidebar__wrapper nav ul.menu li a:hover,
+      #floating_sidebar__wrapper nav ul.menu li a.is-active {
+        background: #FFF;
+        box-shadow: none;
+        color: #8c1515;
+        border-left: 2px solid #017c92;
+        text-decoration: none; } }
 
 /*# sourceMappingURL=stanford-department.css.map */

@@ -1,2 +1,2 @@
-!function(Drupal,$,window){$(window).load(function(){var topLimit=$("body").hasClass("toolbar-fixed")?100:19,bottomLimit=$("#footer__container").offset().top-$("#floating_sidebar").outerHeight(!0);$("#floating_sidebar").scrollToFixed({marginTop:topLimit,limit:bottomLimit,removeOffsets:!0})})}(Drupal,jQuery,this);
+!function(Drupal,$,window){$(window).load(function(){})}(Drupal,jQuery,this);
 //# sourceMappingURL=stanford-department.js.map

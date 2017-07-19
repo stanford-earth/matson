@@ -12,6 +12,7 @@
 
 @mixin hero-banner-node {
 
+  article.node .block-ctools-block div:first-child > .hero-banner,
   article .content > div:first-child .hero-banner,
   article #panels-ipe-content > section:first-child .hero-banner {
     margin-top: -120px;

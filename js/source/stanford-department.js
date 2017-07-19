@@ -14,14 +14,15 @@
 
   $(window).load(function () {
 
-    var topLimit = $('body').hasClass('toolbar-fixed') ? 100 : 19;
-    var bottomLimit = $('#footer__container').offset().top - $('#floating_sidebar').outerHeight(true);
-
-    $('#floating_sidebar').scrollToFixed({
-       marginTop: topLimit,
-       limit: bottomLimit,
-       removeOffsets: true
-     });
+    // var topLimit = $('body').hasClass('toolbar-fixed') ? 100 : 19;
+    // var bottomLimit = $('#footer__container').offset().top - $('#floating_sidebar').outerHeight(true);
+    //
+    // $('#floating_sidebar').scrollToFixed({
+    //    marginTop: topLimit,
+    //    limit: bottomLimit,
+    //    removeOffsets: true
+    //  });
+    // 
   });
 
 } (Drupal, jQuery, this));
