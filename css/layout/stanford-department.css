@@ -1,0 +1,64 @@
+article .content > div:first-child .hero-banner,
+article #panels-ipe-content > section:first-child .hero-banner {
+  margin-top: -120px; }
+
+.block--local-tasks {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  padding: 1em 0 !important; }
+  @media only screen and (max-width: 767px) {
+    .block--local-tasks {
+      display: none; } }
+  .block--local-tasks ul.tabs {
+    background: #FFF;
+    width: 100%; }
+    .block--local-tasks ul.tabs li {
+      display: block; }
+
+.block--local-tasks {
+  left: auto;
+  right: 35px; }
+
+#floating_sidebar {
+  width: 190px; }
+
+#floating_sidebar__wrapper nav h2 {
+  color: #fff;
+  background: #017c92;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3.9px;
+  font-weight: 700;
+  padding: 7px 30px;
+  margin-bottom: 20px; }
+
+#floating_sidebar__wrapper nav ul.menu {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0; }
+  #floating_sidebar__wrapper nav ul.menu li {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    display: block;
+    float: none;
+    line-height: 1em; }
+    #floating_sidebar__wrapper nav ul.menu li a {
+      color: #4d4f53;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+      line-height: 1em;
+      padding: 1.1538461538em 1.1538461538em;
+      -webkit-transition: background 0.5s;
+      /* Safari */
+      transition: background 0.5s;
+      display: block;
+      border-left: 2px solid transparent; }
+    #floating_sidebar__wrapper nav ul.menu li a:hover,
+    #floating_sidebar__wrapper nav ul.menu li a.is-active {
+      background: #FFF;
+      box-shadow: none;
+      color: #8c1515;
+      border-left: 2px solid #017c92; }
+
+/*# sourceMappingURL=stanford-department.css.map */

@@ -126,6 +126,17 @@ stanford_complex_page:
     layout:
       css/layout/stanford-complex-page.css: {}
 
+stanford_department:
+  version: VERSION
+  css:
+    layout:
+      css/layout/stanford-department.css: {}
+  js:
+    js/build/stanford-department.js: {}
+    js/vendor/jquery-scrolltofixed-min.js: {}
+  dependencies:
+    - core/jquery
+
 stanford_news:
   version: VERSION
   css:

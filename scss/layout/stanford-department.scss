@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+// My Config.
+@import "config/config";
+//// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+// Grab our mixins.
+@import "utilities/utilities";
+
+// Pop out the tabs from the dom flow so they hover over.
+@include hero-banner-node;
+
+// Small override as there is a left sidebar.
+.block--local-tasks {
+  left: auto;
+  right: 35px;
+}
+
+// Resize the column.
+#floating_sidebar {
+  width: 190px;
+}
+
+// Magic...
+#floating_sidebar__wrapper {
+  nav {
+
+    h2 {
+      color: color(white);
+      background: color(action);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 3.9px;
+      font-weight: 700;
+      padding: 7px 30px;
+      margin-bottom: 20px;
+    }
+
+    ul.menu {
+      padding: 0 0 0 0;
+      margin: 0 0 0 0;
+
+      li {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        display: block;
+        float: none;
+        line-height: 1em;
+
+        a {
+          color: color(text-active);
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 600;
+          line-height: 1em;
+          padding: em(15px) em(15px);
+          -webkit-transition: background 0.5s; /* Safari */
+          transition: background 0.5s;
+          display: block;
+          border-left: 2px solid transparent;
+        }
+
+        a:hover,
+        a.is-active {
+          background: #FFF;
+          box-shadow: none;
+          color: color(brand);
+          border-left: 2px solid color(action);
+        }
+      }
+    }
+  }
+}
