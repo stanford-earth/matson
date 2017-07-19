@@ -10,6 +10,17 @@
 // Pop out the tabs from the dom flow so they hover over.
 @include hero-banner-node;
 
+// Hide the lockup with CSS as we do need it to re-appear in
+// a different place.
+
+#header {
+  .block--lockup {
+    @include grid-media($media-md) {
+      visibility: hidden;
+    }
+  }
+}
+
 // Resize the column.
 #floating_sidebar {
   @include grid-media($media-md) {

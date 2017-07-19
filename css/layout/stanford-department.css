@@ -18,6 +18,10 @@ article #panels-ipe-content > section:first-child .hero-banner {
       display: block; }
 
 @media only screen and (min-width: 768px) {
+  #header .block--lockup {
+    visibility: hidden; } }
+
+@media only screen and (min-width: 768px) {
   #floating_sidebar {
     width: 190px; } }
 
