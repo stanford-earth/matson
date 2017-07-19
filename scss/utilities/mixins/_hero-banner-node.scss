@@ -13,7 +13,7 @@
 @mixin hero-banner-node {
 
   article .content > div:first-child .hero-banner,
-  article #panels-ipe-content > section:first-child .hero-banner {
+  article .block-block-content:nth-child(1) .hero-banner { // supports aiur layout
     margin-top: -120px;
   }
 

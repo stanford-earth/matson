@@ -127,6 +127,18 @@
   }
 }
 
+.masonry-block__tags {
+  .tag {
+    padding: .625em 1em;
+    color: color(white);
+    font-size: em(16px);
+    font-weight: 600;
+    letter-spacing: .2px;
+    line-height: 1;
+    margin: 0;
+  }
+}
+
 .masonry-block__description {
   color: color(ash);
   letter-spacing: .5px;
@@ -136,20 +148,14 @@
 
 .masonry-block__footer {
   border-top: 1px solid color(smoke);
-  color: color(smoke);
+  color: color(ash);
   margin: 0 30px;
-  padding: 15px 0;
-}
+  padding: 10px 0;
 
-.masonry-block__social-link {
-  @include on-event {
-    svg use {
-      fill: color(ash);
+  svg {
+    use {
+      fill: color(smoke);
     }
-  }
-
-  svg use {
-    fill: color(smoke);
   }
 }
 

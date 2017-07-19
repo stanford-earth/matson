@@ -1,0 +1,88 @@
+@import url(/modules/stanford/stanford_layouts/plugins/layouts/two-column/aiur/css/aiur.css);
+.has-image-overlay {
+  position: relative; }
+  .has-image-overlay::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    content: "";
+    display: block;
+    z-index: 1; }
+  .has-image-overlay img {
+    display: block; }
+
+.has-image-gradient {
+  position: relative; }
+  .has-image-gradient::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, transparent 55%, rgba(0, 0, 0, 0.3));
+    content: "";
+    display: block; }
+  .has-image-gradient img {
+    display: block; }
+
+.responsive-video-container {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 2em;
+  height: 0; }
+  .responsive-video-container iframe,
+  .responsive-video-container object,
+  .responsive-video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+article .content > div:first-child .hero-banner,
+article .block-block-content:nth-child(1) .hero-banner {
+  margin-top: -120px; }
+
+.block--local-tasks {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  padding: 1em 0 !important; }
+  @media only screen and (max-width: 767px) {
+    .block--local-tasks {
+      display: none; } }
+  .block--local-tasks ul.tabs {
+    background: #FFF;
+    width: 100%; }
+    .block--local-tasks ul.tabs li {
+      display: block; }
+
+#floating_sidebar__wrapper {
+  width: 170px; }
+  #floating_sidebar__wrapper h2 {
+    color: #fff;
+    background: #017c92;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3.9px;
+    font-weight: 700;
+    padding: 7px 30px;
+    margin: -19px -12px 19px; }
+  #floating_sidebar__wrapper ul li {
+    margin-bottom: 10px; }
+    #floating_sidebar__wrapper ul li a {
+      color: #4d4f53;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+      line-height: 0; }
+
+@media (min-width: 1628px) {
+  #floating_sidebar__wrapper {
+    left: calc(50% - (750px - 60px)); } }
+
+/*# sourceMappingURL=sidebar.css.map */

@@ -132,6 +132,28 @@ stanford_news:
     layout:
       css/layout/stanford-news.css: {}
 
+stanford_department:
+  version: VERSION
+  css:
+    layout:
+      css/layout/sidebar.css: {}
+  js:
+    js/build/sidebar.js: {}
+    js/vendor/scrolltofixed/jquery-scrolltofixed-min.js: {}
+  dependencies:
+    - core/jquery
+
+stanford_department:
+  version: VERSION
+  css:
+    layout:
+      css/layout/sidebar.css: {}
+  js:
+    js/build/sidebar.js: {}
+    js/vendor/scrolltofixed/jquery-scrolltofixed-min.js: {}
+  dependencies:
+    - core/jquery
+
 ie8:
   version: VERSION
   header: true
