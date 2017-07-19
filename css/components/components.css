@@ -311,10 +311,13 @@
       transition: all .3s ease; }
       .callout-block:hover, .callout-block:active, .callout-block:focus {
         margin-top: -1rem; } }
-  .callout-block .callout-block__title a {
-    color: #8c1515; }
-    .callout-block .callout-block__title a:hover, .callout-block .callout-block__title a:active, .callout-block .callout-block__title a:focus {
-      text-decoration: none; }
+  .callout-block .callout-block__title {
+    z-index: 1;
+    position: relative; }
+    .callout-block .callout-block__title a {
+      color: #8c1515; }
+      .callout-block .callout-block__title a:hover, .callout-block .callout-block__title a:active, .callout-block .callout-block__title a:focus {
+        text-decoration: none; }
   .callout-block .callout-block__intro {
     color: #9c9d9e;
     font-size: 0.9230769231em;
@@ -339,6 +342,7 @@
       fill: #8c1515; }
   .callout-block .callout-block__icon {
     position: absolute;
+    z-index: 0;
     top: 0;
     left: 0; }
 

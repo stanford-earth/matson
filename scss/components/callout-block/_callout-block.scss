@@ -37,6 +37,8 @@
   }
 
   .callout-block__title {
+    z-index: 1;
+    position: relative;
     a {
       color: color(brand);
 
@@ -86,6 +88,7 @@
 
   .callout-block__icon {
     position: absolute;
+    z-index: 0;
     top: 0;
     left: 0;
   }
