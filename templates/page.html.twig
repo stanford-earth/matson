@@ -3,6 +3,10 @@
 
   <!-- ______________________ HEADER _______________________ -->
 
+  {% if page.highlighted|render %}
+    <div id="highlighted">{{ page.highlighted }}</div>
+  {% endif %}
+
   {% if page.header %}
     <header id="header">
       {{ page.header }}
@@ -27,10 +31,6 @@
   {% endif %}
 
   {{ title_suffix }}
-
-  {% if page.highlighted|render %}
-    <div id="highlighted">{{ page.highlighted }}</div>
-  {% endif %}
 
   {{ page.help }}
 

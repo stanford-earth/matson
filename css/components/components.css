@@ -2173,67 +2173,43 @@ ul.tabs {
     text-decoration: none;
     color: white; }
 
-#highlighted {
-  z-index: 100;
-  position: absolute;
-  top: 25%;
-  left: 25%;
+#toast-container > div.toast.toast-success,
+#toast-container > div.toast.toast-warning,
+#toast-container > div.toast.toast-error {
+  opacity: 1;
+  font-size: 14px;
   width: 600px; }
 
-.ui-dialog {
-  background: rgba(8, 8, 8, 0.7);
-  border-radius: 0; }
+#toast-container .toast-success {
+  background-color: rgba(141, 190, 81, 0.9); }
 
-.ui-dialog-titlebar {
-  background: none;
-  border: none;
-  top: 7px;
-  min-height: 35px; }
+#toast-container .toast-warning {
+  background-color: rgba(221, 196, 79, 0.9); }
 
-.ui-dialog-title {
-  display: none; }
+#toast-container .toast-error {
+  background-color: rgba(205, 69, 51, 0.9); }
 
-#dialog-message .messages a {
-  color: #fff;
-  font-weight: bold; }
-
-#dialog-message .messages .ui-icon {
-  float: right;
-  margin: 0 7px 50px 0; }
-
-#dialog-message .messages--status {
-  background: rgba(141, 190, 81, 0.9);
-  background-image: url("../../assets/svg/success.svg");
-  border: 3px solid #8dbe51;
-  color: #fff;
-  background-repeat: no-repeat;
-  background-size: 15%;
-  background-position-y: 1em;
-  padding: 25px 0 25px 75px;
-  min-height: 95px; }
-  #dialog-message .messages--status svg path {
-    fill: #8dbe51; }
-
-#dialog-message .messages--warning {
-  background: rgba(221, 196, 79, 0.9);
-  background-image: url("../../assets/svg/warning.svg");
-  border: 3px solid #ddc44f;
-  color: #fff;
-  background-repeat: no-repeat;
-  background-size: 15%;
-  background-position-y: 1em;
-  padding: 25px 0 25px 75px;
-  min-height: 95px; }
-
-#dialog-message .messages--error {
-  background: rgba(205, 69, 51, 0.9);
-  background-image: url("../../assets/svg/error.svg");
-  border: 3px solid #cd4533;
-  color: #fff;
-  background-repeat: no-repeat;
-  background-size: 15%;
-  background-position-y: 1em;
-  padding: 25px 0 25px 75px;
-  min-height: 95px; }
+#highlighted {
+  order: -60;
+  width: 600px;
+  margin: 0 auto; }
+  #highlighted .messages a {
+    color: #fff;
+    font-weight: bold; }
+  #highlighted .messages--status {
+    background: #8dbe51;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px; }
+  #highlighted .messages--warning {
+    background: #ddc44f;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px; }
+  #highlighted .messages--error {
+    background: #cd4533;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px; }
 
 /*# sourceMappingURL=components.css.map */

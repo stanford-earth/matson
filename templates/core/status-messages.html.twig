@@ -23,7 +23,7 @@
  * @see template_preprocess_status_messages()
  */
 #}
-<div id="dialog-message">
+<div>
     {{ attach_library('stanford_basic/messages') }}
     {% for type, messages in message_list %}
       {%
@@ -32,7 +32,7 @@
           'messages--' ~ type,
         ]
       %}
-      <div{{ attributes.addClass(classes)}} >
+      <div{{ attributes.addClass(classes)}} role="{{ status_headings[type] }}" >
           {% if type == 'error' %}
           <div role="alert">
         {% endif %}

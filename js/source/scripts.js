@@ -99,19 +99,48 @@
       }
     }
 
-    // js to turn Drupal messages into a modal dialog
-    $("#dialog-message").dialog({
-      autoOpen : true,
-      modal : true,
-      show : {
-        effect: "slideDown",
-        duration: 800
-      },
-      hide : {
-        effect: "slideUp",
-        duration: 400 },
-      width: 600
-    });
+    // js to turn Drupal messages into a toastr popup
+    toastr.options = {
+      "closeButton": true,
+      "debug": false,
+      "newestOnTop": false,
+      "progressBar": false,
+      "positionClass": "toast-top-center",
+      "preventDuplicates": false,
+      "onclick": null,
+      "showDuration": "300",
+      "hideDuration": "1000",
+      "timeOut": "0",
+      "extendedTimeOut": "1000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+    };
+
+    // Hide the non-js message region
+    $('div.messages').hide();
+
+    // everybody do the toastr!
+    $('div.messages').each(function () {
+      var message = $(this).html();
+      var type = $(this).attr('role');
+      switch(type) {
+        case 'Status message':
+          toastr.success(message);
+          break;
+        case 'Warning message':
+          toastr.warning(message);
+          break;
+        case 'Error message':
+          toastr.error(message);
+          break;
+        default:
+          // leave this in as a catch-all
+          toastr.info("Sorry, something went wrong, I'm just not sure what");
+          break;
+      }
+    })
 
   });
 

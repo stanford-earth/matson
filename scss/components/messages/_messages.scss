@@ -1,76 +1,60 @@
 @charset 'UTF-8';
 
-// styles shared across all message types
-@mixin matson_message() {
-  color: color(white);
-  background-repeat: no-repeat;
-  background-size: 15%;
-  background-position-y: 1em;
-  padding: 25px 0 25px 75px;
-  min-height: 95px;
-
-}
-
-// For non-js fallback styling
-#highlighted {
-  z-index: 100;
-  position: absolute;
-  top: 25%;
-  left: 25%;
+// override built in toast css
+#toast-container > div.toast.toast-success,
+#toast-container > div.toast.toast-warning,
+#toast-container > div.toast.toast-error {
+  opacity: 1;
+  font-size: 14px;
   width: 600px;
 }
 
-.ui-dialog {
-  background: rgba(8, 8, 8, 0.7);
-  border-radius: 0;
+#toast-container {
+  .toast-success {
+    background-color: rgba(141, 190, 81, 0.9);
+  }
+
+  .toast-warning {
+    background-color: rgba(221, 196, 79, 0.9);
+  }
+
+  .toast-error {
+    background-color: rgba(205, 69, 51, 0.9);
+  }
 }
 
-.ui-dialog-titlebar {
-  background: none;
-  border: none;
-  top: 7px;
-  min-height: 35px;
+// For non-js fallback styling
+@mixin matson_message() {
+  color: color(white);
+  padding: 10px;
+  font-size: 14px;
 }
 
-.ui-dialog-title {
-  display: none;
-}
+#highlighted {
+  order: -60;
+  width: 600px;
+  margin: 0 auto;
 
-#dialog-message {
   .messages {
     a {
       color: color(white);
       font-weight: bold;
     }
-
-    .ui-icon {
-      float: right;
-      margin:0 7px 50px 0;
-    }
   }
 
   .messages--status {
-    background: rgba(141, 190, 81, 0.9);
-    background-image: url("../../assets/svg/success.svg");
-    border: 3px solid $status-color;
+    background: $status-color;
     @include matson_message;
 
-    svg path {
-      fill: $status-color;
-    }
   }
 
   .messages--warning {
-    background: rgba(221, 196, 79, 0.9);
-    background-image: url("../../assets/svg/warning.svg");
-    border: 3px solid $warning-color;
+    background: $warning-color;
     @include matson_message;
   }
 
   .messages--error {
-    background: rgba(205, 69, 51, 0.9);
-    background-image: url("../../assets/svg/error.svg");
-    border: 3px solid $error-color;
+    background: $error-color;
     @include matson_message;
   }
 }
