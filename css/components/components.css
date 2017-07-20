@@ -1885,7 +1885,7 @@
 .search-toggle__text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(100%);
+  clip-path: circle(1% at 1% 1%);
   height: 1px;
   overflow: hidden;
   padding: 0;
@@ -2172,5 +2172,68 @@ ul.tabs {
     background-color: #017c92;
     text-decoration: none;
     color: white; }
+
+#highlighted {
+  z-index: 100;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 600px; }
+
+.ui-dialog {
+  background: rgba(8, 8, 8, 0.7);
+  border-radius: 0; }
+
+.ui-dialog-titlebar {
+  background: none;
+  border: none;
+  top: 7px;
+  min-height: 35px; }
+
+.ui-dialog-title {
+  display: none; }
+
+#dialog-message .messages a {
+  color: #fff;
+  font-weight: bold; }
+
+#dialog-message .messages .ui-icon {
+  float: right;
+  margin: 0 7px 50px 0; }
+
+#dialog-message .messages--status {
+  background: rgba(141, 190, 81, 0.9);
+  background-image: url("../../assets/svg/success.svg");
+  border: 3px solid #8dbe51;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position-y: 1em;
+  padding: 25px 0 25px 75px;
+  min-height: 95px; }
+  #dialog-message .messages--status svg path {
+    fill: #8dbe51; }
+
+#dialog-message .messages--warning {
+  background: rgba(221, 196, 79, 0.9);
+  background-image: url("../../assets/svg/warning.svg");
+  border: 3px solid #ddc44f;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position-y: 1em;
+  padding: 25px 0 25px 75px;
+  min-height: 95px; }
+
+#dialog-message .messages--error {
+  background: rgba(205, 69, 51, 0.9);
+  background-image: url("../../assets/svg/error.svg");
+  border: 3px solid #cd4533;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position-y: 1em;
+  padding: 25px 0 25px 75px;
+  min-height: 95px; }
 
 /*# sourceMappingURL=components.css.map */

@@ -1,0 +1,76 @@
+@charset 'UTF-8';
+
+// styles shared across all message types
+@mixin matson_message() {
+  color: color(white);
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position-y: 1em;
+  padding: 25px 0 25px 75px;
+  min-height: 95px;
+
+}
+
+// For non-js fallback styling
+#highlighted {
+  z-index: 100;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 600px;
+}
+
+.ui-dialog {
+  background: rgba(8, 8, 8, 0.7);
+  border-radius: 0;
+}
+
+.ui-dialog-titlebar {
+  background: none;
+  border: none;
+  top: 7px;
+  min-height: 35px;
+}
+
+.ui-dialog-title {
+  display: none;
+}
+
+#dialog-message {
+  .messages {
+    a {
+      color: color(white);
+      font-weight: bold;
+    }
+
+    .ui-icon {
+      float: right;
+      margin:0 7px 50px 0;
+    }
+  }
+
+  .messages--status {
+    background: rgba(141, 190, 81, 0.9);
+    background-image: url("../../assets/svg/success.svg");
+    border: 3px solid $status-color;
+    @include matson_message;
+
+    svg path {
+      fill: $status-color;
+    }
+  }
+
+  .messages--warning {
+    background: rgba(221, 196, 79, 0.9);
+    background-image: url("../../assets/svg/warning.svg");
+    border: 3px solid $warning-color;
+    @include matson_message;
+  }
+
+  .messages--error {
+    background: rgba(205, 69, 51, 0.9);
+    background-image: url("../../assets/svg/error.svg");
+    border: 3px solid $error-color;
+    @include matson_message;
+  }
+}

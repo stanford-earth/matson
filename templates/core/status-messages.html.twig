@@ -23,34 +23,36 @@
  * @see template_preprocess_status_messages()
  */
 #}
-{{ attach_library('stanford_basic/messages') }}
-{% for type, messages in message_list %}
-  {%
-    set classes = [
-      'messages',
-      'messages--' ~ type,
-    ]
-  %}
-  <div{{ attributes.addClass(classes) }}>
-    {% if type == 'error' %}
-      <div role="alert">
-    {% endif %}
-      {% if status_headings[type] %}
-        <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
-      {% endif %}
-      {% if messages|length > 1 %}
-        <ul class="messages__list">
-          {% for message in messages %}
-            <li class="messages__item">{{ message }}</li>
-          {% endfor %}
-        </ul>
-      {% else %}
-        {{ messages|first }}
-      {% endif %}
-    {% if type == 'error' %}
+<div id="dialog-message">
+    {{ attach_library('stanford_basic/messages') }}
+    {% for type, messages in message_list %}
+      {%
+        set classes = [
+          'messages',
+          'messages--' ~ type,
+        ]
+      %}
+      <div{{ attributes.addClass(classes)}} >
+          {% if type == 'error' %}
+          <div role="alert">
+        {% endif %}
+          {% if status_headings[type] %}
+            <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
+          {% endif %}
+          {% if messages|length > 1 %}
+            <ul class="messages__list">
+              {% for message in messages %}
+                <li class="messages__item">{{ message }}</li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            {{ messages|first }}
+          {% endif %}
+        {% if type == 'error' %}
+          </div>
+        {% endif %}
       </div>
-    {% endif %}
-  </div>
-  {# Remove type specific classes. #}
-  {{ attributes.removeClass(classes) }}
-{% endfor %}
+      {# Remove type specific classes. #}
+      {{ attributes.removeClass(classes) }}
+    {% endfor %}
+</div>

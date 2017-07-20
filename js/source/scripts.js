@@ -98,6 +98,21 @@
         });
       }
     }
+
+    // js to turn Drupal messages into a modal dialog
+    $("#dialog-message").dialog({
+      autoOpen : true,
+      modal : true,
+      show : {
+        effect: "slideDown",
+        duration: 800
+      },
+      hide : {
+        effect: "slideUp",
+        duration: 400 },
+      width: 600
+    });
+
   });
 
   $(window).resize(Drupal.debounce(function () {

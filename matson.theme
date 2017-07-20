@@ -26,6 +26,8 @@ function matson_preprocess_field(&$variables, $hook) {
  */
 function matson_preprocess_page(&$vars) {
   // Nothing to see here.
+  // @TODO: remove debug messaging
+  drupal_set_message("Drupal message goes here", "error");
 }
 
 /**

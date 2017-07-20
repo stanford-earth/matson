@@ -27,6 +27,11 @@
   {% endif %}
 
   {{ title_suffix }}
+
+  {% if page.highlighted|render %}
+    <div id="highlighted">{{ page.highlighted }}</div>
+  {% endif %}
+
   {{ page.help }}
 
   {% if tabs %}
@@ -38,14 +43,7 @@
   {% endif %}
 
   <div class="main-container">
-
-      {% if page.highlighted|render %}
-        <div id="highlighted">{{ page.highlighted }}</div>
-      {% else %}
-        <div id="highlighted">HELLO LOOK AT ME</div>
-      {% endif %}
-
-      {{ page.content }}
+    {{ page.content }}
   </div>
 
   <!-- ______________________ FOOTER _______________________ -->
