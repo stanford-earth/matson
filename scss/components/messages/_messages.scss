@@ -23,6 +23,14 @@
   }
 }
 
+@media (max-width: 600px) {
+  #toast-container > div.toast.toast-success,
+  #toast-container > div.toast.toast-warning,
+  #toast-container > div.toast.toast-error {
+    width: 300px;
+  }
+}
+
 // For non-js fallback styling
 @mixin matson_message() {
   color: color(white);

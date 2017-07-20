@@ -2189,6 +2189,12 @@ ul.tabs {
 #toast-container .toast-error {
   background-color: rgba(205, 69, 51, 0.9); }
 
+@media (max-width: 600px) {
+  #toast-container > div.toast.toast-success,
+  #toast-container > div.toast.toast-warning,
+  #toast-container > div.toast.toast-error {
+    width: 300px; } }
+
 #highlighted {
   order: -60;
   width: 600px;
