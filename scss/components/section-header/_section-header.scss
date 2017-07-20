@@ -13,15 +13,15 @@
   color: color(text-active);
 
   h2 {
-    &.has-dash--under {
+    &.has-dash-under {
       @include dash-under($dash-color: brand);
     }
 
-    &.has-dash--left {
+    &.has-dash-left {
       @include dash-left($dash-color: brand);
     }
 
-    &.has-dash--emphasis::after {
+    &.has-dash-emphasis::after {
       background-color: color(emphasis);
     }
   }

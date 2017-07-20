@@ -1,4 +1,4 @@
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -232,7 +232,7 @@
     .block--lockup__site-slogan {
       margin: 0 10px; } }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -286,7 +286,7 @@
   .calendar-block__arrow svg use {
     fill: #8c1515; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -346,7 +346,7 @@
     top: 0;
     left: 0; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -417,7 +417,7 @@
     position: absolute;
     top: 35%; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -711,7 +711,7 @@
     color: #4d4f53;
     text-decoration: none; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -746,7 +746,7 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -766,7 +766,7 @@
   .section-expandable-banner .section-header .drop-cap-title__drop-cap {
     opacity: .35; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -795,7 +795,7 @@
 .expandable-card__toggle svg use {
   fill: #8c1515; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -825,7 +825,7 @@
     display: inline-block;
     vertical-align: middle; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -851,7 +851,7 @@
   padding-top: 5px;
   margin-bottom: 0; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -889,7 +889,7 @@
       .filmstrip h6.filmstrip__title {
         color: #222328; } }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1047,7 +1047,7 @@
   .contact-footer .block--lockup__site-slogan {
     margin: 0 0 0 2px; } }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1059,7 +1059,7 @@
   background: rgba(0, 0, 0, 0.5);
   position: relative; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1104,7 +1104,7 @@
     font-size: 0.7692307692em;
     opacity: 0.8; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1176,7 +1176,7 @@
   .section-highlight-banner .section-header .drop-cap-title__drop-cap {
     opacity: .35; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1206,7 +1206,7 @@
   .icon-item__arrow svg use {
     fill: #8c1515; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1243,7 +1243,7 @@
     max-width: 400px;
     margin: 0 auto; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1275,7 +1275,7 @@
   letter-spacing: .86px;
   text-transform: uppercase; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1395,7 +1395,7 @@
 .section-masonry-blocks {
   background-color: #dad7cb; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1519,7 +1519,7 @@
       padding-left: 0;
       padding-right: 0; } }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1605,7 +1605,7 @@
       .navigation ul ul a:hover, .navigation ul ul a:active, .navigation ul ul a:focus {
         box-shadow: none; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1683,7 +1683,7 @@
 .pager__item--next {
   margin-left: 1.3076923077em; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1712,7 +1712,7 @@
     .postcard .postcard__more use {
       fill: #8c1515; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1726,7 +1726,7 @@
   .player__button:hover use, .player__button:active use, .player__button:focus use {
     stroke: #fff; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1734,7 +1734,7 @@
   display: block;
   z-index: 2; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1812,7 +1812,7 @@
     .photo-tiles__quote svg use {
       fill: #8c1515; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1882,7 +1882,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1892,30 +1892,30 @@
 
 .section-header {
   color: #4d4f53; }
-  .section-header h2.has-dash--under {
+  .section-header h2.has-dash-under {
     margin-bottom: 1.25em; }
-    .section-header h2.has-dash--under::after {
+    .section-header h2.has-dash-under::after {
       background-color: #8c1515;
       bottom: -.5em;
       left: 50%;
       transform: translateX(-50%); }
-  .section-header h2.has-dash--left {
+  .section-header h2.has-dash-left {
     margin-bottom: 1.25em; }
     @media only screen and (min-width: 768px) {
-      .section-header h2.has-dash--left {
+      .section-header h2.has-dash-left {
         margin-bottom: .75em; } }
-    .section-header h2.has-dash--left::after {
+    .section-header h2.has-dash-left::after {
       bottom: -.5em;
       left: 50%;
       transform: translateX(-50%);
       background-color: #8c1515; }
       @media only screen and (min-width: 768px) {
-        .section-header h2.has-dash--left::after {
+        .section-header h2.has-dash-left::after {
           bottom: auto;
           top: .625em;
           left: -.9em;
           transform: none; } }
-  .section-header h2.has-dash--emphasis::after {
+  .section-header h2.has-dash-emphasis::after {
     background-color: #f9b002; }
   .section-header p {
     line-height: 1.6923076923em;
@@ -1926,7 +1926,7 @@
   text-transform: uppercase;
   letter-spacing: .15px; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1941,7 +1941,7 @@
 .section-feature-cards p {
   color: #9c9d9e; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1986,7 +1986,18 @@
   .simple-block__more:hover, .simple-block__more:active, .simple-block__more:focus {
     text-decoration: none; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  content: '';
+  display: block;
+  z-index: 2; }
+
+.simple-columns {
+  color: #9c9d9e; }
+
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2012,7 +2023,7 @@
     letter-spacing: .9px;
     text-transform: uppercase; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2126,7 +2137,7 @@ ul.tabs {
   .tabs__tab--active a:hover, .tabs__tab--active a:active, .tabs__tab--active a:focus {
     box-shadow: inset 0 -3px 0 0 #8c1515; }
 
-.section-header h2.has-dash--under::after, .section-header h2.has-dash--left::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
