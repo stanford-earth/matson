@@ -9,52 +9,32 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-.quote-card {
+.header-card {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  color: color(text-active);
+
+  h2 {
+    &.has-dash--under {
+      @include dash-under($dash-color: brand);
+    }
+
+    &.has-dash--left {
+      @include dash-left($dash-color: brand);
+    }
+
+    &.has-dash--emphasis::after {
+      background-color: color(emphasis);
+    }
+  }
 
   p {
-    color: color(ash);
-  }
-}
-
-.quote-card__icon {
-  color: color(dark-red);
-
-  svg {
-    height: 19px;
-    width: 29px;
-  }
-}
-
-.quote-card__quote {
-  p {
-    font-weight: 200;
-    font-size: em(26px);
+    line-height: em(22px);
     letter-spacing: .5px;
-    line-height: 1.3em;
   }
 }
 
-.quote-card__source {
-  position: relative;
-
-  &::before {
-    background-color: color(smoke);
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70px;
-    height: 1px;
-  }
-
-  strong {
-    color: color(dark-red);
-    display: block;
-    font-style: normal;
-    font-size: em(12px);
-    letter-spacing: .9px;
-    text-transform: uppercase;
-  }
+.header-card__link {
+  font-size: em(12px);
+  text-transform: uppercase;
+  letter-spacing: .15px;
 }
