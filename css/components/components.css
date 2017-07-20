@@ -1067,6 +1067,17 @@
   display: block;
   z-index: 2; }
 
+.header-card {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
+
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  content: '';
+  display: block;
+  z-index: 2; }
+
 .hero-banner__container {
   border: 1px solid rgba(255, 255, 255, 0.5);
   margin-top: 5em;
@@ -1918,13 +1929,13 @@
   .section-header h2.has-dash-emphasis::after {
     background-color: #f9b002; }
   .section-header p {
+    color: #9c9d9e;
     line-height: 1.6923076923em;
     letter-spacing: .5px; }
-
-.section-header__link {
-  font-size: 0.9230769231em;
-  text-transform: uppercase;
-  letter-spacing: .15px; }
+  .section-header a {
+    font-size: 0.9230769231em;
+    text-transform: uppercase;
+    letter-spacing: .15px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
