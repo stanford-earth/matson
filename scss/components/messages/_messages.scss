@@ -43,18 +43,18 @@
   }
 
   .messages--status {
-    background: $status-color;
     @include matson_message;
+    background: $status-color;
 
   }
 
   .messages--warning {
-    background: $warning-color;
     @include matson_message;
+    background: $warning-color;
   }
 
   .messages--error {
-    background: $error-color;
     @include matson_message;
+    background: $error-color;
   }
 }

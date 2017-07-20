@@ -2197,19 +2197,19 @@ ul.tabs {
     color: #fff;
     font-weight: bold; }
   #highlighted .messages--status {
-    background: #8dbe51;
     color: #fff;
     padding: 10px;
-    font-size: 14px; }
+    font-size: 14px;
+    background: #8dbe51; }
   #highlighted .messages--warning {
-    background: #ddc44f;
     color: #fff;
     padding: 10px;
-    font-size: 14px; }
+    font-size: 14px;
+    background: #ddc44f; }
   #highlighted .messages--error {
-    background: #cd4533;
     color: #fff;
     padding: 10px;
-    font-size: 14px; }
+    font-size: 14px;
+    background: #cd4533; }
 
 /*# sourceMappingURL=components.css.map */
