@@ -11,31 +11,4 @@
 
 .header-card {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-
-  h2 {
-    &.has-dash--under {
-      @include dash-under(emphasis);
-    }
-
-    &.has-dash--left {
-      @include dash-left(emphasis);
-    }
-
-    &.has-dash--emphasis::after {
-      background-color: color(emphasis);
-    }
-  }
-
-  p {
-    color: color(ash);
-    line-height: em(22px);
-    letter-spacing: .5px;
-  }
-
-}
-
-.header-card__link {
-  font-size: em(12px);
-  text-transform: uppercase;
-  letter-spacing: .15px;
 }
