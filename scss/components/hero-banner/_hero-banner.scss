@@ -45,7 +45,7 @@ $hero-max-width-lg: 1500px;
 }
 
 .hero-banner__header {
-  @include fade-type;
+  @include fade-in;
   letter-spacing: .5px;
 
   .hero-banner__title {
