@@ -77,7 +77,7 @@
           list-style: none;
           list-style-type: none;
           padding: 7px 10px;
-          margin: 0px;
+          margin: 0;
           text-indent: 0;
         }
 
@@ -118,7 +118,7 @@
             font-weight: 600;
             line-height: 1em;
             padding: em(15px) em(15px);
-            -webkit-transition: background 0.5s; /* Safari */
+            -webkit-transition: background 0.5s; // Safari.
             transition: background 0.5s;
             display: block;
             border-left: 2px solid transparent;

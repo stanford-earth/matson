@@ -44,6 +44,8 @@ engines:
         enabled: false
       MergeableSelector:
         enabled: false
+      NestingDepth:
+        enabled: false
   # https://docs.codeclimate.com/docs/duplication
   duplication:
     enabled: true
