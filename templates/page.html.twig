@@ -1,0 +1,55 @@
+{% set main_menu = page.primary_menu|render %}
+{% set secondary_menu = page.secondary_menu|render %}
+
+  <!-- ______________________ HEADER _______________________ -->
+
+  {% if page.highlighted|render %}
+    <div id="highlighted">{{ page.highlighted }}</div>
+  {% endif %}
+
+  {% if page.header %}
+    <header id="header">
+      {{ page.header }}
+    </header><!-- /#header -->
+  {% endif %}
+
+  {% if main_menu or secondary_menu %}
+    <nav id="navigation" class="menu{% if main_menu %} with-primary{% endif %}{% if secondary_menu %} with-secondary{% endif %}">
+      {{ main_menu }}
+      {{ secondary_menu }}
+    </nav><!-- /#navigation -->
+  {% endif %}
+
+  <!-- ______________________ MAIN _______________________ -->
+
+  {{ page.breadcrumb }}
+
+  {{ title_prefix }}
+
+  {% if title %}
+    <h1 class="title">{{ title }}</h1>
+  {% endif %}
+
+  {{ title_suffix }}
+
+  {{ page.help }}
+
+  {% if tabs %}
+    <div class="tabs">{{ tabs }}</div>
+  {% endif %}
+
+  {% if action_links %}
+    <ul class="action-links">{{ action_links }}</ul>
+  {% endif %}
+
+  <div class="main-container">
+    {{ page.content }}
+  </div>
+
+  <!-- ______________________ FOOTER _______________________ -->
+
+  {% if page.footer|render %}
+    <footer id="footer">
+      {{ page.footer }}
+    </footer><!-- /#footer -->
+  {% endif %}

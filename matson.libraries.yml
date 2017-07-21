@@ -100,25 +100,15 @@ matson:
     theme:
       css/theme/theme.css: {}
       css/theme/print.css: { media: print }
+      js/vendor/toastr/build/toastr.css: {}
   js:
     js/vendor/modernizr.js: {}
+    js/vendor/toastr/build/toastr.min.js: {}
     js/build/scripts.js: {}
   dependencies:
     - core/jquery
     - core/drupal
     - core/drupal.debounce
-
-tabs:
-  version: VERSION
-  css:
-    component:
-      css/components/tabs.css: {}
-
-messages:
-  version: VERSION
-  css:
-    component:
-      css/components/messages.css: {}
 
 stanford_complex_page:
   version: VERSION

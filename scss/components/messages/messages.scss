@@ -1,0 +1,65 @@
+@charset 'UTF-8';
+
+// For non-js fallback styling
+@mixin matson_message() {
+  color: color(white);
+  padding: 10px;
+  font-size: 14px;
+}
+
+// override built in toast css
+#toast-container > div.toast.toast-success,
+#toast-container > div.toast.toast-warning,
+#toast-container > div.toast.toast-error {
+  display: block;
+  opacity: 1;
+  font-size: 14px;
+  width: 80%;
+}
+
+#toast-container {
+  padding-top: 165px;
+
+  .toast-success {
+    background-color: rgba(141, 190, 81, 0.9);
+  }
+
+  .toast-warning {
+    background-color: rgba(221, 196, 79, 0.9);
+  }
+
+  .toast-error {
+    background-color: rgba(205, 69, 51, 0.9);
+  }
+}
+
+.js #highlighted {
+  display: none;
+}
+
+#highlighted {
+  order: -60;
+  margin: 0 auto;
+
+  .messages {
+    a {
+      color: color(white);
+      font-weight: bold;
+    }
+  }
+
+  .messages--status {
+    @include matson_message;
+    background: $status-color;
+  }
+
+  .messages--warning {
+    @include matson_message;
+    background: $warning-color;
+  }
+
+  .messages--error {
+    @include matson_message;
+    background: $error-color;
+  }
+}
