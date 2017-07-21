@@ -1406,6 +1406,48 @@
 .section-masonry-blocks {
   background-color: #dad7cb; }
 
+#toast-container > div.toast.toast-success,
+#toast-container > div.toast.toast-warning,
+#toast-container > div.toast.toast-error {
+  display: block;
+  opacity: 1;
+  font-size: 14px;
+  width: 80%; }
+
+#toast-container {
+  padding-top: 165px; }
+  #toast-container .toast-success {
+    background-color: rgba(141, 190, 81, 0.9); }
+  #toast-container .toast-warning {
+    background-color: rgba(221, 196, 79, 0.9); }
+  #toast-container .toast-error {
+    background-color: rgba(205, 69, 51, 0.9); }
+
+.js #highlighted {
+  display: none; }
+
+#highlighted {
+  order: -60;
+  margin: 0 auto; }
+  #highlighted .messages a {
+    color: #fff;
+    font-weight: bold; }
+  #highlighted .messages--status {
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    background: #8dbe51; }
+  #highlighted .messages--warning {
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    background: #ddc44f; }
+  #highlighted .messages--error {
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    background: #cd4533; }
+
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
@@ -1885,7 +1927,7 @@
 .search-toggle__text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
-  clip-path: circle(1% at 1% 1%);
+  clip-path: inset(100%);
   height: 1px;
   overflow: hidden;
   padding: 0;
@@ -2172,50 +2214,5 @@ ul.tabs {
     background-color: #017c92;
     text-decoration: none;
     color: white; }
-
-#toast-container > div.toast.toast-success,
-#toast-container > div.toast.toast-warning,
-#toast-container > div.toast.toast-error {
-  opacity: 1;
-  font-size: 14px;
-  width: 600px; }
-
-#toast-container .toast-success {
-  background-color: rgba(141, 190, 81, 0.9); }
-
-#toast-container .toast-warning {
-  background-color: rgba(221, 196, 79, 0.9); }
-
-#toast-container .toast-error {
-  background-color: rgba(205, 69, 51, 0.9); }
-
-@media (max-width: 600px) {
-  #toast-container > div.toast.toast-success,
-  #toast-container > div.toast.toast-warning,
-  #toast-container > div.toast.toast-error {
-    width: 300px; } }
-
-#highlighted {
-  order: -60;
-  width: 600px;
-  margin: 0 auto; }
-  #highlighted .messages a {
-    color: #fff;
-    font-weight: bold; }
-  #highlighted .messages--status {
-    color: #fff;
-    padding: 10px;
-    font-size: 14px;
-    background: #8dbe51; }
-  #highlighted .messages--warning {
-    color: #fff;
-    padding: 10px;
-    font-size: 14px;
-    background: #ddc44f; }
-  #highlighted .messages--error {
-    color: #fff;
-    padding: 10px;
-    font-size: 14px;
-    background: #cd4533; }
 
 /*# sourceMappingURL=components.css.map */

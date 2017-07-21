@@ -110,18 +110,6 @@ matson:
     - core/drupal
     - core/drupal.debounce
 
-tabs:
-  version: VERSION
-  css:
-    component:
-      css/components/tabs.css: {}
-
-messages:
-  version: VERSION
-  css:
-    component:
-      css/components/messages.css: {}
-
 stanford_complex_page:
   version: VERSION
   css:

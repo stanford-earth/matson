@@ -1,15 +1,25 @@
 @charset 'UTF-8';
 
+// For non-js fallback styling
+@mixin matson_message() {
+  color: color(white);
+  padding: 10px;
+  font-size: 14px;
+}
+
 // override built in toast css
 #toast-container > div.toast.toast-success,
 #toast-container > div.toast.toast-warning,
 #toast-container > div.toast.toast-error {
+  display: block;
   opacity: 1;
   font-size: 14px;
-  width: 600px;
+  width: 80%;
 }
 
 #toast-container {
+  padding-top: 165px;
+
   .toast-success {
     background-color: rgba(141, 190, 81, 0.9);
   }
@@ -23,24 +33,12 @@
   }
 }
 
-@media (max-width: 600px) {
-  #toast-container > div.toast.toast-success,
-  #toast-container > div.toast.toast-warning,
-  #toast-container > div.toast.toast-error {
-    width: 300px;
-  }
-}
-
-// For non-js fallback styling
-@mixin matson_message() {
-  color: color(white);
-  padding: 10px;
-  font-size: 14px;
+.js #highlighted {
+  display: none;
 }
 
 #highlighted {
   order: -60;
-  width: 600px;
   margin: 0 auto;
 
   .messages {
@@ -53,7 +51,6 @@
   .messages--status {
     @include matson_message;
     background: $status-color;
-
   }
 
   .messages--warning {

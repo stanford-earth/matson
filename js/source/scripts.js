@@ -73,8 +73,10 @@
     }
 
     function adjustMenu(ww, toggleWidth) {
-      $(".js-nav-item-expandable li").unbind('click'); // basic-main-menu
-      $(".js-nav-item-expandable li a.parent").unbind('click').bind('click', function(e) { // basic-main-menu.
+      // basic-main-menu.
+      $(".js-nav-item-expandable li").unbind('click');
+      // basic-main-menu.
+      $(".js-nav-item-expandable li a.parent").unbind('click').bind('click', function (e) {
         // Must be attached to anchor element to prevent bubbling.
         event.stopPropagation();
         e.preventDefault();
@@ -93,19 +95,20 @@
         $(".js-nav-group-viewable").show();
         $(".js-nav-item-expandable li").unbind('click'); // basic-main-menu.
 
-        $(document).click(function() {
-          $(".js-nav-item-expandable li").removeClass('is-open'); // basic-main-menu.
+        $(document).click(function () {
+          // basic-main-menu.
+          $(".js-nav-item-expandable li").removeClass('is-open');
         });
       }
     }
 
-    // js to turn Drupal messages into a toastr popup
+    // Js to turn Drupal messages into a toastr popup.
     toastr.options = {
       "closeButton": true,
       "debug": false,
       "newestOnTop": false,
       "progressBar": false,
-      "positionClass": "toast-top-center",
+      "positionClass": "toast-top-full-width",
       "preventDuplicates": false,
       "onclick": null,
       "showDuration": "300",
@@ -118,25 +121,28 @@
       "hideMethod": "fadeOut"
     };
 
-    // Hide the non-js message region
+    // Hide the non-js message region.
     $('div.messages').hide();
 
-    // everybody do the toastr!
+    // Everybody do the toastr!
     $('div.messages').each(function () {
       var message = $(this).html();
       var type = $(this).attr('role');
-      switch(type) {
+      switch (type) {
         case 'Status message':
           toastr.success(message);
           break;
+
         case 'Warning message':
           toastr.warning(message);
           break;
+
         case 'Error message':
           toastr.error(message);
           break;
+
         default:
-          // leave this in as a catch-all
+          // Leave this in as a catch-all.
           toastr.info("Sorry, something went wrong, I'm just not sure what");
           break;
       }
