@@ -131,11 +131,6 @@ stanford_department:
   css:
     layout:
       css/layout/stanford-department.css: {}
-  js:
-    js/build/stanford-department.js: {}
-    js/vendor/jquery-scrolltofixed-min.js: {}
-  dependencies:
-    - core/jquery
 
 stanford_news:
   version: VERSION

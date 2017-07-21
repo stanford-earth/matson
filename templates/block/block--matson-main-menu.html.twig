@@ -39,7 +39,7 @@
     'menu--' ~ derivative_plugin_id|clean_class,
   ]
 %}
-{% set heading_id = attributes.id ~ '-menu'|clean_id %}
+{% set heading_id = (attributes.id ~ '-menu')|clean_id %}
 
 <div class="navbar js-nav-expandable">
   <div class="navbar__container">
@@ -65,17 +65,11 @@
             {{ content }}
           {% endblock %}
         </nav>
-        {#
-          Temporary hack so that menu_block will render the main menu without
-          the seach box messing everything up.
-        #}
-        {% if plugin_id == 'system_menu_block:main' %}
         <div class="navbar__search">
           <form class="search-toggle">
             <input type="search" placeholder="Search">
           </form>
         </div>
-        {% endif %}
       </div>
     </div>
   </div>

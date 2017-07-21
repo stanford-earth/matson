@@ -1,6 +1,4 @@
-article.node .block-ctools-block div:first-child > .hero-banner,
-article .content > div:first-child .hero-banner,
-article #panels-ipe-content > section:first-child .hero-banner {
+#hero_banner-0 {
   margin-top: -120px; }
 
 .block--local-tasks {
