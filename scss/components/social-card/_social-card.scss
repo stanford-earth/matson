@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.social-card {
+  border: 1px solid color(border);
+  padding: 2em;
+  font-size: em(20px);
+  font-weight: 300;
+  color: color(text-active);
+  position: relative;
+
+  a {
+    color: color(brand); 
+
+    @include on-event {
+      color: color(brand-active); 
+      text-decoration: none;
+    }
+  }
+
+  .i-svg use {
+    fill: color(twitter);
+  }
+}
+
+.social-card__name {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.social-card__content {
+  @include grid-media($media-lg) {
+    @include center-transform(y);
+    margin-right: 2em;
+  }
+}

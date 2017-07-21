@@ -2058,6 +2058,45 @@
   display: block;
   z-index: 2; }
 
+.social-card {
+  border: 1px solid #ccc;
+  padding: 2em;
+  font-size: 1.5384615385em;
+  font-weight: 300;
+  color: #4d4f53;
+  position: relative; }
+  .social-card a {
+    color: #8c1515; }
+    .social-card a:hover, .social-card a:active, .social-card a:focus {
+      text-decoration: none; }
+  .social-card .i-svg use {
+    fill: #65BBF2; }
+
+.social-card__name {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1em; }
+
+@media only screen and (min-width: 1024px) {
+  .social-card__content {
+    position: absolute;
+    top: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-right: 2em; } }
+
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  content: '';
+  display: block;
+  z-index: 2; }
+
 .spotlight-card {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
 
