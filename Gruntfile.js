@@ -111,6 +111,7 @@ module.exports = function(grunt) {
           'css/components/components.css':                  'scss/components/components.scss',
           // Layouts.
           'css/layout/stanford-complex-page.css':           'scss/layout/stanford-complex-page.scss',
+          'css/layout/stanford-department.css':             'scss/layout/stanford-department.scss',
           'css/layout/stanford-news.css':                   'scss/layout/stanford-news.scss',
           // Theme compiled styles.
           'css/base/base.css':                              'scss/base/base.scss',

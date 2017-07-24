@@ -1580,37 +1580,37 @@
   display: block;
   z-index: 2; }
 
-.navigation {
+.navigation__main-menu {
   margin-bottom: 0; }
-  .navigation .menu::after {
+  .navigation__main-menu .menu::after {
     clear: both;
     content: "";
     display: block; }
-  .navigation ul {
+  .navigation__main-menu ul {
     width: 200px;
     margin: 0 auto;
     padding: 40px 0; }
     @media only screen and (min-width: 860px) {
-      .navigation ul {
+      .navigation__main-menu ul {
         width: auto;
         margin-left: 0;
         margin-bottom: 0;
         padding: 0; } }
-    .navigation ul li:first-child > a {
+    .navigation__main-menu ul li:first-child > a {
       border-top: 0; }
-  .navigation li {
+  .navigation__main-menu li {
     display: block;
     margin-bottom: 0;
     position: relative; }
     @media only screen and (min-width: 860px) {
-      .navigation li {
+      .navigation__main-menu li {
         float: left;
         list-style-type: none;
         display: inline-block;
         padding: 0 1.1538461538em; }
-        .navigation li.menu-item--active-trail .parent {
+        .navigation__main-menu li.menu-item--active-trail .parent {
           box-shadow: inset 0 -3px 0 0 #f9b002; } }
-    .navigation li a {
+    .navigation__main-menu li a {
       border-top: 1px solid rgba(255, 255, 255, 0.5);
       color: #fff;
       display: block;
@@ -1623,17 +1623,17 @@
       z-index: 4;
       position: relative; }
       @media only screen and (min-width: 860px) {
-        .navigation li a:hover, .navigation li a:active, .navigation li a:focus {
+        .navigation__main-menu li a:hover, .navigation__main-menu li a:active, .navigation__main-menu li a:focus {
           box-shadow: inset 0 -3px 0 0 #f9b002; } }
       @media only screen and (min-width: 860px) {
-        .navigation li a {
+        .navigation__main-menu li a {
           border-top: 0;
           border-bottom: 0;
           letter-spacing: 0.1461538462em;
           padding: 20px 1em;
           text-align: left;
           font-size: 0.9230769231em; } }
-  .navigation ul ul {
+  .navigation__main-menu ul ul {
     display: none;
     transition: all .5s ease-out;
     background: rgba(0, 0, 0, 0.75);
@@ -1643,19 +1643,19 @@
     width: 100%;
     z-index: 2; }
     @media only screen and (min-width: 860px) {
-      .navigation ul ul {
+      .navigation__main-menu ul ul {
         background: rgba(0, 0, 0, 0.425);
         position: absolute;
         top: calc(100% + 3px);
         left: 0;
         width: 220px; } }
-    .navigation ul ul li {
+    .navigation__main-menu ul ul li {
       float: none;
       display: block; }
-    .navigation ul ul a {
+    .navigation__main-menu ul ul a {
       border-top: 0;
       padding: 1em 1em; }
-      .navigation ul ul a:hover, .navigation ul ul a:active, .navigation ul ul a:focus {
+      .navigation__main-menu ul ul a:hover, .navigation__main-menu ul ul a:active, .navigation__main-menu ul ul a:focus {
         box-shadow: none; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
