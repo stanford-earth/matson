@@ -1,4 +1,4 @@
-#hero_banner-0 {
+#hero-banner {
   margin-top: -120px; }
 
 .block--local-tasks {
@@ -57,7 +57,7 @@
       list-style: none;
       list-style-type: none;
       padding: 7px 10px;
-      margin: 0px;
+      margin: 0;
       text-indent: 0; }
     #floating_sidebar__wrapper nav ul.menu a {
       color: #222328;
@@ -88,7 +88,6 @@
         line-height: 1em;
         padding: 1.1538461538em 1.1538461538em;
         -webkit-transition: background 0.5s;
-        /* Safari */
         transition: background 0.5s;
         display: block;
         border-left: 2px solid transparent; }
