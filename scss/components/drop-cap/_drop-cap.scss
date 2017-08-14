@@ -26,6 +26,10 @@
   font-size: 80px;
   color: darken(color(dust), 5%);
   z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   &.drop-cap--is-centered {
     @include center-transform;
