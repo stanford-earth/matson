@@ -726,6 +726,9 @@
 .drop-cap-title__name {
   position: relative;
   z-index: 2; }
+  .drop-cap-title__name > div {
+    position: relative;
+    z-index: 3; }
 
 .drop-cap-title__drop-cap {
   position: absolute;
