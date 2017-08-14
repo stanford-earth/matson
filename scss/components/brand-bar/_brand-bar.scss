@@ -20,7 +20,7 @@
   //  xl: (columns: 12, grid-media: $media-xl,          v-space: 10px, max-width: true,  grid-collapse: false),
   //  print: (columns: 12, grid-media: $media-print,    v-space: 10px, max-width: false, grid-collapse: false),
   //) !default;
-  
+
   @include responsive-container($default-container);
   height: 40px;
   max-height: 40px;
@@ -34,6 +34,7 @@
     &:first-child {
       display: inline-block;
       width: 123px;
+
       @include grid-media($media-sm) {
         width: 153px;
       }
