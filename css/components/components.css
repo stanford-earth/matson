@@ -117,8 +117,9 @@
           width: 153px; } }
   .brand-bar .brand-bar__login {
     float: right;
-    font-size: 0.9230769231em;
-    font-weight: 600; }
+    font-size: 1.0769230769em;
+    font-weight: 400;
+    letter-spacing: 0.1076923077em; }
 
 .block--lockup {
   background-size: 160px 140px;
