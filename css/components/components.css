@@ -1746,8 +1746,12 @@
 
 .postcard {
   background-color: #FBFBFB; }
+  .postcard .postcard__content-inner {
+    padding: 25px 0;
+    background-color: transparent; }
   .postcard .postcard__content-text {
     color: #9c9d9e;
+    background-color: #fff;
     line-height: 2em;
     text-align: center; }
   .postcard .postcard__title {
