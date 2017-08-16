@@ -48,15 +48,19 @@
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
   </head>
+  {%
+  set body_classes = [
+    logged_in ? 'user-logged-in',
+    not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+    node_type ? 'page-node-type-' ~ node_type|clean_class,
+  ]
+%}
   {% set classes = [] %}
   {% for role in user.roles %}
     {% set classes = classes|merge(['role--' ~ role|clean_class]) %}
   {% endfor %}
-  <body{{ attributes.addClass(classes|merge([
-      not is_front ? 'with-subnav',
-      is_front ? 'path-frontpage-test',
-      not root_path ? 'path-frontpage'
-      ])
+  <body{{ attributes.addClass(classes,
+    not is_front ? 'with-subnav'
   ) }}>
   {% spaceless %}
     <div id="skip">
