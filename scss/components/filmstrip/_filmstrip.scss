@@ -11,6 +11,12 @@
 
 // Stanford Earth styling for the filmstrip top-border
 .filmstrip {
+  margin-top: -150px;
+
+  @include grid-media($media-md) {
+    margin-top: 0;
+  }
+
   .filmstrip__title {
     position: relative;
 
@@ -24,6 +30,11 @@
       height: 2px;
       background-color: color(emphasis);
     }
+  }
+
+  .filmstrip__cards {
+    max-width: 1190px;
+    margin: 0 auto;
   }
 
   .film-card__link {
@@ -44,10 +55,11 @@
     text-transform: uppercase;
 
     &.filmstrip__title {
-      margin: 12px 0 17px;
+      max-width: 1190px;
+      margin: 12px auto 17px;
 
       @include grid-media($media-md) {
-        color: color(text);
+        color: color(white);
       }
     }
   }
