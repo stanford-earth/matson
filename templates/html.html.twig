@@ -48,13 +48,6 @@
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
   </head>
-  {%
-  set body_classes = [
-    logged_in ? 'user-logged-in',
-    not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
-    node_type ? 'page-node-type-' ~ node_type|clean_class,
-  ]
-%}
   {% set classes = [] %}
   {% for role in user.roles %}
     {% set classes = classes|merge(['role--' ~ role|clean_class]) %}
