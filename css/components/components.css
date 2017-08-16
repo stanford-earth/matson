@@ -860,10 +860,10 @@
   z-index: 2; }
 
 .filmstrip {
-  margin-top: -150px; }
+  margin-top: 0; }
   @media only screen and (min-width: 768px) {
     .filmstrip {
-      margin-top: 0; } }
+      margin-top: -150px; } }
   .filmstrip .filmstrip__title {
     position: relative; }
     .filmstrip .filmstrip__title::before {
