@@ -733,7 +733,11 @@
   left: -.225em;
   font-size: 80px;
   color: #eeeeee;
-  z-index: 1; }
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .drop-cap-title__drop-cap.drop-cap--is-centered {
     position: absolute;
     top: 50%;
