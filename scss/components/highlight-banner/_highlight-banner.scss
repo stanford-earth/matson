@@ -63,8 +63,8 @@
 }
 
 .section-highlight-banner {
-  background-color: #333;
   color: color(white);
+  min-height: 300px;
 
   &::before {
     content: '';
