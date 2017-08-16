@@ -17,6 +17,11 @@
 .drop-cap-title__name {
   position: relative;
   z-index: 2;
+
+  > div {
+    position: relative;
+    z-index: 3;
+  }
 }
 
 .drop-cap-title__drop-cap {
