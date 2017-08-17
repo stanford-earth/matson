@@ -1954,6 +1954,8 @@
 .section-header {
   color: #4d4f53;
   text-align: center; }
+  .section-feature-blocks .section-header {
+    text-align: left; }
   .section-header h2.has-dash-under {
     margin-bottom: 1.25em; }
     .section-header h2.has-dash-under::after {
@@ -1982,11 +1984,11 @@
   .section-header p {
     color: #9c9d9e;
     line-height: 1.6923076923em;
-    letter-spacing: .5px; }
+    letter-spacing: 0.5px; }
   .section-header a {
     font-size: 0.9230769231em;
     text-transform: uppercase;
-    letter-spacing: .15px; }
+    letter-spacing: 0.15px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;

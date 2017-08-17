@@ -13,6 +13,10 @@
   color: color(text-active);
   text-align: center;
 
+  .section-feature-blocks & {
+    text-align: left;
+  }
+
   h2 {
     &.has-dash-under {
       @include dash-under($dash-color: brand);
@@ -30,12 +34,12 @@
   p {
     color: color(ash);
     line-height: em(22px);
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
   }
 
   a {
     font-size: em(12px);
     text-transform: uppercase;
-    letter-spacing: .15px;
+    letter-spacing: 0.15px;
   }
 }
