@@ -11,7 +11,7 @@
 
 // Stanford Earth styling for the filmstrip top-border
 .filmstrip {
-  .front-page & {
+  .front & {
     @include grid-media($media-md) {
       margin-top: -150px;
     }
