@@ -11,11 +11,6 @@
 
 .section-header {
   color: color(text-active);
-  text-align: center;
-
-  .section-feature-blocks & {
-    text-align: left;
-  }
 
   h2 {
     &.has-dash-under {

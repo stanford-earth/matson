@@ -1952,10 +1952,7 @@
   z-index: 2; }
 
 .section-header {
-  color: #4d4f53;
-  text-align: center; }
-  .section-feature-blocks .section-header {
-    text-align: left; }
+  color: #4d4f53; }
   .section-header h2.has-dash-under {
     margin-bottom: 1.25em; }
     .section-header h2.has-dash-under::after {
