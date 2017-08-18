@@ -1176,7 +1176,8 @@
 .section-highlight-banner {
   color: #fff; }
   .front .section-highlight-banner {
-    padding: 0; }
+    padding: 0;
+    margin-bottom: 3em; }
   .section-highlight-banner::before {
     content: '';
     display: block;
