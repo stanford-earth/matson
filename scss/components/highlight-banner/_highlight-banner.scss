@@ -35,6 +35,7 @@
 
 .highlight-card__action {
   color: color(text-active);
+
   @include on-event {
     color: inherit;
     text-decoration: none;
@@ -91,6 +92,7 @@
     top: 0;
     bottom: 0;
     z-index: 1;
+
     @include grid-media($media-lg) {
       top: 45px;
       bottom: 45px;
