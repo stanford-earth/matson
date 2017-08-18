@@ -1132,14 +1132,19 @@
   display: block;
   z-index: 2; }
 
-.highlight-card {
+.front .highlight-banner__container {
+  top: -35px; }
+
+.highlight-banner__container .highlight-cards .highlight-card {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   padding: 30px 30px 20px; }
-  .highlight-card p {
+  .front .highlight-banner__container .highlight-cards .highlight-card {
+    margin-bottom: -40px; }
+  .highlight-banner__container .highlight-cards .highlight-card p {
     color: #9c9d9e;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     line-height: 2em;
-    margin-bottom: .5em; }
+    margin-bottom: 0.5em; }
 
 .highlight-card__action {
   color: #4d4f53; }
@@ -1155,13 +1160,13 @@
   color: #f9b002;
   display: block;
   font-size: 0.9230769231em;
-  letter-spacing: .9px;
+  letter-spacing: 0.9px;
   margin-bottom: 1em;
   text-transform: uppercase; }
 
 .highlight-card__title {
   font-size: 2em;
-  letter-spacing: .3px; }
+  letter-spacing: 0.3px; }
 
 .highlight-card__arrow {
   height: 25px; }
@@ -1169,8 +1174,9 @@
     fill: #8c1515; }
 
 .section-highlight-banner {
-  color: #fff;
-  min-height: 300px; }
+  color: #fff; }
+  .front .section-highlight-banner {
+    padding: 0; }
   .section-highlight-banner::before {
     content: '';
     display: block;
@@ -1194,7 +1200,7 @@
   .section-highlight-banner .section-header .drop-cap-title__name {
     color: #fff; }
   .section-highlight-banner .section-header .drop-cap-title__drop-cap {
-    opacity: .35; }
+    opacity: 0.35; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;

@@ -9,21 +9,32 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-.highlight-card {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  padding: 30px 30px 20px;
+.highlight-banner__container {
+  .front & {
+    top: -35px;
+  }
 
-  p {
-    color: color(ash);
-    letter-spacing: .5px;
-    line-height: 2em;
-    margin-bottom: .5em;
+  .highlight-cards {
+    .highlight-card {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+      padding: 30px 30px 20px;
+
+      .front & {
+        margin-bottom: -40px;
+      }
+
+      p {
+        color: color(ash);
+        letter-spacing: 0.5px;
+        line-height: 2em;
+        margin-bottom: 0.5em;
+      }
+    }
   }
 }
 
 .highlight-card__action {
   color: color(text-active);
-
   @include on-event {
     color: inherit;
     text-decoration: none;
@@ -44,14 +55,14 @@
   color: color(emphasis);
   display: block;
   font-size: em(12px);
-  letter-spacing: .9px;
+  letter-spacing: 0.9px;
   margin-bottom: 1em;
   text-transform: uppercase;
 }
 
 .highlight-card__title {
   font-size: em(26px);
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
 }
 
 .highlight-card__arrow {
@@ -64,7 +75,10 @@
 
 .section-highlight-banner {
   color: color(white);
-  min-height: 300px;
+
+  .front & {
+    padding: 0;
+  }
 
   &::before {
     content: '';
@@ -76,7 +90,6 @@
     top: 0;
     bottom: 0;
     z-index: 1;
-
     @include grid-media($media-lg) {
       top: 45px;
       bottom: 45px;
@@ -101,7 +114,7 @@
     }
 
     .drop-cap-title__drop-cap {
-      opacity: .35;
+      opacity: 0.35;
     }
   }
 }
