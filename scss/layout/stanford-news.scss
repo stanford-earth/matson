@@ -7,11 +7,3 @@
 
 // Pop out the tabs from the dom flow so they hover over.
 @include hero-banner-node;
-
-// Set the intro text to be two columns.
-.block-region-first {
-  .block-ctools-block {
-    column-count: 2;
-    column-gap: 20px;
-  }
-}
