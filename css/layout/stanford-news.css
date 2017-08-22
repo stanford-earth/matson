@@ -15,4 +15,27 @@
     .block--local-tasks ul.tabs li {
       display: block; }
 
+@media only screen and (min-width: 768px) {
+  .block--field-earth-matters-topic {
+    float: right; } }
+
+.block--field-earth-matters-topic .field-label {
+  text-decoration: underline;
+  display: inline-block; }
+  .block--field-earth-matters-topic .field-label:after {
+    content: ": "; }
+
+.block--field-earth-matters-topic .field--field-earth-matters-topic {
+  display: inline-block;
+  border: 1px solid;
+  padding: 5px 10px; }
+
+.block--field-s-news-category .field--field-s-news-category {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0 10px 0 0; }
+
+.field--body {
+  padding: 20px 80px; }
+
 /*# sourceMappingURL=stanford-news.css.map */

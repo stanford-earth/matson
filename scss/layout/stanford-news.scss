@@ -7,3 +7,41 @@
 
 // Pop out the tabs from the dom flow so they hover over.
 @include hero-banner-node;
+
+// Earth matters field.
+.block--field-earth-matters-topic {
+
+  @include grid-media($media-md) {
+    float: right;
+  }
+
+  .field-label {
+    &:after {
+      content: ": ";
+    }
+    color: color('highlight');
+    text-decoration: underline;
+    display: inline-block;
+  }
+
+  .field--field-earth-matters-topic {
+    display: inline-block;
+    border: 1px solid color('highlight');
+    padding: 5px 10px;
+  }
+
+}
+
+// Category Block.
+.block--field-s-news-category {
+  .field--field-s-news-category {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 10px 0 0;
+  }
+}
+
+// Body field.
+.field--body {
+  padding: 20px 80px;
+}

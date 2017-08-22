@@ -51,15 +51,13 @@
   {% endif %}
 {% else %}
   <div{{ attributes }}>
-    <div{{ title_attributes }}>{{ label }}</div>
+    <span{{ title_attributes.addClass('field-label') }}>{{ label }}</span>
     {% if multiple %}
-      <div>
     {% endif %}
     {% for item in items %}
       <div{{ item.attributes.addClass("field--field-earth-matters-topic") }}>{{ item.content }}</div>
     {% endfor %}
     {% if multiple %}
-      </div>
     {% endif %}
   </div>
 {% endif %}

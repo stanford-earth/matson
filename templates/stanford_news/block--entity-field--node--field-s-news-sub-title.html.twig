@@ -26,12 +26,7 @@
  */
 #}
 <div{{ attributes.addClass("block--field-s-news-sub-title") }}>
-  {{ title_prefix }}
-  {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
-  {% endif %}
-  {{ title_suffix }}
   {% block content %}
-    {{ content }}
+    <h2>{{ content|render|striptags|trim }}</h2>
   {% endblock %}
 </div>
