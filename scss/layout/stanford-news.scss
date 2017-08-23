@@ -23,12 +23,13 @@
   }
 
   .field-label {
-    &:after {
-      content: ": ";
-    }
     color: color('highlight');
     text-decoration: underline;
     display: inline-block;
+
+    &::after {
+      content: ": ";
+    }
   }
 
   .field--field-earth-matters-topic {
