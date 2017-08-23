@@ -8,6 +8,11 @@
 // Pop out the tabs from the dom flow so they hover over.
 @include hero-banner-node;
 
+// Subtitle field.
+.block--field-s-news-sub-title {
+  max-width: 75%;
+}
+
 // Earth matters field.
 .block--field-earth-matters-topic {
 

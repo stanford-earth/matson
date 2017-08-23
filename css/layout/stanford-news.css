@@ -15,6 +15,9 @@
     .block--local-tasks ul.tabs li {
       display: block; }
 
+.block--field-s-news-sub-title {
+  max-width: 75%; }
+
 @media only screen and (min-width: 768px) {
   .block--field-earth-matters-topic {
     float: right; } }
