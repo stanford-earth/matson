@@ -24,7 +24,7 @@
     color: color('highlight');
     text-decoration: underline;
     display: inline-block;
-    
+
     &::after {
       content: ": ";
     }
