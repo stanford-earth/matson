@@ -10,7 +10,9 @@
 
 // Subtitle field.
 .block--field-s-news-sub-title {
-  max-width: 75%;
+  @include grid-media($media-sm) {
+    max-width: 75%;
+  }
 }
 
 // Earth matters field.
@@ -48,5 +50,7 @@
 
 // Body field.
 .field--body {
-  padding: 20px 80px;
+  @include grid-media($media-sm) {
+    padding: 20px 80px;
+  }
 }

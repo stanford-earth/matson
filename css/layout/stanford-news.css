@@ -15,8 +15,9 @@
     .block--local-tasks ul.tabs li {
       display: block; }
 
-.block--field-s-news-sub-title {
-  max-width: 75%; }
+@media only screen and (min-width: 576px) {
+  .block--field-s-news-sub-title {
+    max-width: 75%; } }
 
 @media only screen and (min-width: 768px) {
   .block--field-earth-matters-topic {
@@ -38,7 +39,8 @@
   text-transform: uppercase;
   padding: 0 10px 0 0; }
 
-.field--body {
-  padding: 20px 80px; }
+@media only screen and (min-width: 576px) {
+  .field--body {
+    padding: 20px 80px; } }
 
 /*# sourceMappingURL=stanford-news.css.map */
