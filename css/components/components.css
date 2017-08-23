@@ -1123,6 +1123,51 @@
     font-size: 0.7692307692em;
     opacity: 0.8; }
 
+.hero-banner__footer {
+  text-align: right; }
+  @media only screen and (max-width: 575px) {
+    .hero-banner__footer {
+      padding: 1em calc(((50% /12) * 0) + 15px); }
+      .hero-banner__footer::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .hero-banner__footer {
+      padding: 1em calc(((50% /12) * 0) + 15px); }
+      .hero-banner__footer::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .hero-banner__footer {
+      padding: 1em calc(((50% /12) * 0) + 30px); }
+      .hero-banner__footer::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+    .hero-banner__footer {
+      padding: 1em calc(((50% /12) * 0) + 30px); }
+      .hero-banner__footer::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 1500px) {
+    .hero-banner__footer {
+      padding: 1em calc(50% - (750px - 60px)); }
+      .hero-banner__footer::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only print {
+    .hero-banner__footer {
+      padding: 1em calc(((50% /12) * 0) + 0.25in); }
+      .hero-banner__footer::after {
+        clear: both;
+        content: "";
+        display: block; } }
+
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
