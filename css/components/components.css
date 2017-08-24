@@ -1064,7 +1064,8 @@
   z-index: 2; }
 
 #header {
-  background: rgba(0, 0, 0, 0.5);
+  background: #017c92 url("/themes/stanford/matson/img/optimized/header-bg.png") no-repeat center 20%;
+  background-size: 100%;
   position: relative; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
