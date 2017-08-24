@@ -26,7 +26,7 @@
 .block--field-earth-matters-topic .field-label {
   text-decoration: underline;
   display: inline-block; }
-  .block--field-earth-matters-topic .field-label:after {
+  .block--field-earth-matters-topic .field-label::after {
     content: ": "; }
 
 .block--field-earth-matters-topic .field--field-earth-matters-topic {
