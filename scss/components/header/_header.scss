@@ -10,6 +10,7 @@
 @import "utilities/utilities";
 
 #header {
-  background: rgba(0, 0, 0, .5); // temp bg color
+  background: color(action) url('/themes/stanford/matson/img/optimized/header-bg.png') no-repeat center 20%;
+  background-size: 100%;
   position: relative;
 }
