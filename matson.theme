@@ -37,23 +37,27 @@ function matson_preprocess_page(&$vars) {
 function matson_page_attachments_alter(array &$attachments) {
 
   $node = \Drupal::routeMatch()->getParameter('node');
-  if (!is_object($node)) {
-    return;
+  if (is_object($node)) {
+    $type = $node->getType();
+    switch ($type) {
+      case 'complex_page':
+        $attachments['#attached']['library'][] = 'matson/stanford_complex_page';
+        break;
+
+      case 'stanford_department':
+        $attachments['#attached']['library'][] = 'matson/stanford_department';
+        break;
+
+      case 'stanford_news':
+        $attachments['#attached']['library'][] = 'matson/stanford_news';
+        break;
+    }
   }
 
-  $type = $node->getType();
-  switch ($type) {
-    case 'complex_page':
-      $attachments['#attached']['library'][] = 'matson/stanford_complex_page';
-      break;
-
-    case 'stanford_department':
-      $attachments['#attached']['library'][] = 'matson/stanford_department';
-      break;
-
-    case 'stanford_news':
-      $attachments['#attached']['library'][] = 'matson/stanford_news';
-      break;
+  // Attach home page library.
+  $is_front = \Drupal::service('path.matcher')->isFrontPage();
+  if ($is_front) {
+    $attachments['#attached']['library'][] = 'matson/home';
   }
 
 }

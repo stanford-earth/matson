@@ -10,8 +10,8 @@
 @import "utilities/utilities";
 
 .section-expandable-banner {
-  background-color: #333;
   color: color(white);
+  min-height: 300px;
 
   .section-header {
     p {

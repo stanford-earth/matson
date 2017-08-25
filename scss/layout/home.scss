@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+// Position the first filmstrip component on the homepage to
+// overlay the hero image.
+
+#filmstrip {
+  @include grid-media($media-md) {
+    margin-top: -150px;
+  }
+}
+
+// Adjust the highlight banner component so that the card
+// overlays the entire container.
+
+.highlight-banner__container {
+  top: -35px;
+
+  .highlight-card {
+    margin-bottom: -40px;
+  }
+}
+
+.section-highlight-banner {
+  padding: 0;
+  margin-bottom: 3em;
+}
