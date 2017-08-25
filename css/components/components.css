@@ -117,8 +117,9 @@
           width: 153px; } }
   .brand-bar .brand-bar__login {
     float: right;
-    font-size: 0.9230769231em;
-    font-weight: 600; }
+    font-size: 1.0769230769em;
+    font-weight: 400;
+    letter-spacing: 0.1076923077em; }
 
 .block--lockup {
   background-size: 160px 140px;
@@ -726,6 +727,9 @@
 .drop-cap-title__name {
   position: relative;
   z-index: 2; }
+  .drop-cap-title__name > div {
+    position: relative;
+    z-index: 3; }
 
 .drop-cap-title__drop-cap {
   position: absolute;
@@ -733,7 +737,11 @@
   left: -.225em;
   font-size: 80px;
   color: #eeeeee;
-  z-index: 1; }
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .drop-cap-title__drop-cap.drop-cap--is-centered {
     position: absolute;
     top: 50%;
@@ -1065,7 +1073,8 @@
   z-index: 2; }
 
 #header {
-  background: rgba(0, 0, 0, 0.5);
+  background: #017c92 url("/themes/stanford/matson/img/optimized/header-bg.png") no-repeat center 20%;
+  background-size: 100%;
   position: relative; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
@@ -1123,6 +1132,51 @@
   .hero-banner__header .cite {
     font-size: 0.7692307692em;
     opacity: 0.8; }
+
+.hero-banner__footer {
+  text-align: right; }
+  @media only screen and (max-width: 575px) {
+    .hero-banner__footer {
+      padding: 1em calc(((50% /12) * 0) + 15px); }
+      .hero-banner__footer::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .hero-banner__footer {
+      padding: 1em calc(((50% /12) * 0) + 15px); }
+      .hero-banner__footer::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .hero-banner__footer {
+      padding: 1em calc(((50% /12) * 0) + 30px); }
+      .hero-banner__footer::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+    .hero-banner__footer {
+      padding: 1em calc(((50% /12) * 0) + 30px); }
+      .hero-banner__footer::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 1500px) {
+    .hero-banner__footer {
+      padding: 1em calc(50% - (750px - 60px)); }
+      .hero-banner__footer::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only print {
+    .hero-banner__footer {
+      padding: 1em calc(((50% /12) * 0) + 0.25in); }
+      .hero-banner__footer::after {
+        clear: both;
+        content: "";
+        display: block; } }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
@@ -1761,8 +1815,12 @@
 
 .postcard {
   background-color: #FBFBFB; }
+  .postcard .postcard__content-inner {
+    padding: 25px 0;
+    background-color: transparent; }
   .postcard .postcard__content-text {
     color: #9c9d9e;
+    background-color: #fff;
     line-height: 2em;
     text-align: center; }
   .postcard .postcard__title {

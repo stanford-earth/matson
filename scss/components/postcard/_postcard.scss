@@ -13,8 +13,14 @@
 .postcard {
   background-color: color(dust);
 
+  .postcard__content-inner {
+    padding: 25px 0;
+    background-color: transparent;
+  }
+
   .postcard__content-text {
     color: color(ash);
+    background-color: color(white);
     line-height: 2em;
     text-align: center;
   }

@@ -71,3 +71,8 @@ $hero-max-width-lg: 1500px;
     opacity: 0.8;
   }
 }
+
+.hero-banner__footer {
+  @include responsive-container($default-container);
+  text-align: right;
+}
