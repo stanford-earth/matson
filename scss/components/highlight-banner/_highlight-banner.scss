@@ -10,18 +10,10 @@
 @import "utilities/utilities";
 
 .highlight-banner__container {
-  .front & {
-    top: -35px;
-  }
-
   .highlight-cards {
     .highlight-card {
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
       padding: 30px 30px 20px;
-
-      .front & {
-        margin-bottom: -40px;
-      }
 
       p {
         color: color(ash);
@@ -76,11 +68,6 @@
 
 .section-highlight-banner {
   color: color(white);
-
-  .front & {
-    padding: 0;
-    margin-bottom: 3em;
-  }
 
   &::before {
     content: '';

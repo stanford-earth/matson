@@ -867,10 +867,6 @@
   display: block;
   z-index: 2; }
 
-@media only screen and (min-width: 768px) {
-  .front .filmstrip {
-    margin-top: -150px; } }
-
 .filmstrip .filmstrip__title {
   position: relative; }
   .filmstrip .filmstrip__title::before {
@@ -1186,14 +1182,9 @@
   display: block;
   z-index: 2; }
 
-.front .highlight-banner__container {
-  top: -35px; }
-
 .highlight-banner__container .highlight-cards .highlight-card {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   padding: 30px 30px 20px; }
-  .front .highlight-banner__container .highlight-cards .highlight-card {
-    margin-bottom: -40px; }
   .highlight-banner__container .highlight-cards .highlight-card p {
     color: #9c9d9e;
     letter-spacing: 0.5px;
@@ -1229,9 +1220,6 @@
 
 .section-highlight-banner {
   color: #fff; }
-  .front .section-highlight-banner {
-    padding: 0;
-    margin-bottom: 3em; }
   .section-highlight-banner::before {
     content: '';
     display: block;
