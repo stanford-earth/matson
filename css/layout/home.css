@@ -1,0 +1,14 @@
+@media only screen and (min-width: 768px) {
+  #filmstrip {
+    margin-top: -150px; } }
+
+.highlight-banner__container {
+  top: -35px; }
+  .highlight-banner__container .highlight-card {
+    margin-bottom: -40px; }
+
+.section-highlight-banner {
+  padding: 0;
+  margin-bottom: 3em; }
+
+/*# sourceMappingURL=home.css.map */

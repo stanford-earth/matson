@@ -26,6 +26,11 @@
     }
   }
 
+  .filmstrip__cards {
+    max-width: 1190px;
+    margin: 0 auto;
+  }
+
   .film-card__link {
     @include grid-media($media-lg) {
       transition: all .3s ease;
@@ -44,10 +49,11 @@
     text-transform: uppercase;
 
     &.filmstrip__title {
-      margin: 12px 0 17px;
+      max-width: 1190px;
+      margin: 12px auto 17px;
 
       @include grid-media($media-md) {
-        color: color(text);
+        color: color(white);
       }
     }
   }

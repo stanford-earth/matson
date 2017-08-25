@@ -763,8 +763,8 @@
   z-index: 2; }
 
 .section-expandable-banner {
-  background-color: #333;
-  color: #fff; }
+  color: #fff;
+  min-height: 300px; }
   .section-expandable-banner .section-header p {
     color: #fff;
     letter-spacing: .5px;
@@ -879,6 +879,10 @@
     height: 2px;
     background-color: #f9b002; }
 
+.filmstrip .filmstrip__cards {
+  max-width: 1190px;
+  margin: 0 auto; }
+
 @media only screen and (min-width: 1024px) {
   .filmstrip .film-card__link {
     transition: all .3s ease; }
@@ -892,10 +896,11 @@
   letter-spacing: 0.2px;
   text-transform: uppercase; }
   .filmstrip h6.filmstrip__title {
-    margin: 12px 0 17px; }
+    max-width: 1190px;
+    margin: 12px auto 17px; }
     @media only screen and (min-width: 768px) {
       .filmstrip h6.filmstrip__title {
-        color: #222328; } }
+        color: #fff; } }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
@@ -1064,7 +1069,8 @@
   z-index: 2; }
 
 #header {
-  background: rgba(0, 0, 0, 0.5);
+  background: #017c92 url("/themes/stanford/matson/img/optimized/header-bg.png") no-repeat center 20%;
+  background-size: 100%;
   position: relative; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
@@ -1176,14 +1182,14 @@
   display: block;
   z-index: 2; }
 
-.highlight-card {
+.highlight-banner__container .highlight-cards .highlight-card {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   padding: 30px 30px 20px; }
-  .highlight-card p {
+  .highlight-banner__container .highlight-cards .highlight-card p {
     color: #9c9d9e;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     line-height: 2em;
-    margin-bottom: .5em; }
+    margin-bottom: 0.5em; }
 
 .highlight-card__action {
   color: #4d4f53; }
@@ -1199,13 +1205,13 @@
   color: #f9b002;
   display: block;
   font-size: 0.9230769231em;
-  letter-spacing: .9px;
+  letter-spacing: 0.9px;
   margin-bottom: 1em;
   text-transform: uppercase; }
 
 .highlight-card__title {
   font-size: 2em;
-  letter-spacing: .3px; }
+  letter-spacing: 0.3px; }
 
 .highlight-card__arrow {
   height: 25px; }
@@ -1213,7 +1219,6 @@
     fill: #8c1515; }
 
 .section-highlight-banner {
-  background-color: #333;
   color: #fff; }
   .section-highlight-banner::before {
     content: '';
@@ -1238,7 +1243,7 @@
   .section-highlight-banner .section-header .drop-cap-title__name {
     color: #fff; }
   .section-highlight-banner .section-header .drop-cap-title__drop-cap {
-    opacity: .35; }
+    opacity: 0.35; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
@@ -1304,8 +1309,7 @@
   .link-banner__header p {
     letter-spacing: .5px;
     line-height: 1.6923076923em;
-    max-width: 400px;
-    margin: 0 auto; }
+    max-width: 400px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
@@ -2041,11 +2045,11 @@
   .section-header p {
     color: #9c9d9e;
     line-height: 1.6923076923em;
-    letter-spacing: .5px; }
+    letter-spacing: 0.5px; }
   .section-header a {
     font-size: 0.9230769231em;
     text-transform: uppercase;
-    letter-spacing: .15px; }
+    letter-spacing: 0.15px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
