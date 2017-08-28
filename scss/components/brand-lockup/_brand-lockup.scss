@@ -20,6 +20,7 @@ $logo-width: 110px;
 
   @include grid-media($header-md) {
     @include responsive-container($default-container);
+    padding-top: 10px;
     background-position: center center;
     background-size: 160px 140px;
     display: table;
