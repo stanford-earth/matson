@@ -17,10 +17,13 @@ $logo-width: 110px;
   padding-bottom: 14px;
   width: 160px;
   z-index: 4;
+  
+  #header & {
+    padding-top: 10px;
+  }
 
   @include grid-media($header-md) {
     @include responsive-container($default-container);
-    padding-top: 10px;
     background-position: center center;
     background-size: 160px 140px;
     display: table;

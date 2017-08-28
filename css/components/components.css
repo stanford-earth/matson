@@ -129,9 +129,10 @@
   padding-bottom: 14px;
   width: 160px;
   z-index: 4; }
+  #header .block--lockup {
+    padding-top: 10px; }
   @media only screen and (min-width: 860px) {
     .block--lockup {
-      padding-top: 10px;
       background-position: center center;
       background-size: 160px 140px;
       display: table;
