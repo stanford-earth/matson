@@ -117,9 +117,9 @@
           width: 153px; } }
   .brand-bar .brand-bar__login {
     float: right;
-    font-size: 1.0769230769em;
+    font-size: 0.875em;
     font-weight: 400;
-    letter-spacing: 0.1076923077em; }
+    letter-spacing: 0.0875em; }
 
 .block--lockup {
   background-size: 160px 140px;
@@ -186,7 +186,7 @@
 
 .block--lockup__site-name-and-slogan {
   text-transform: uppercase;
-  font-size: 2.7692307692em;
+  font-size: 2.25em;
   font-weight: 600;
   line-height: 1;
   letter-spacing: 2.2px;
@@ -261,12 +261,12 @@
   vertical-align: baseline; }
 
 .calendar-block__day {
-  font-size: 3.8461538462em;
+  font-size: 3.125em;
   color: #9c9d9e;
   line-height: 1; }
 
 .calendar-block__month {
-  font-size: 0.9230769231em;
+  font-size: 0.75em;
   color: #017c92;
   text-transform: uppercase;
   letter-spacing: .9px; }
@@ -304,7 +304,7 @@
         margin-top: -1rem; } }
 
 .callout-block {
-  padding-left: 3.0769230769em;
+  padding-left: 2.5em;
   position: relative;
   margin-top: 0; }
   @media only screen and (min-width: 768px) {
@@ -321,15 +321,15 @@
         text-decoration: none; }
   .callout-block .callout-block__intro {
     color: #9c9d9e;
-    font-size: 0.9230769231em;
+    font-size: 0.75em;
     text-transform: uppercase; }
   .callout-block .callout-block__name {
     color: #8c1515;
-    font-size: 2em;
+    font-size: 1.625em;
     margin-bottom: 0; }
   .callout-block .callout-block__subhead {
     color: #017c92;
-    font-size: 0.9230769231em;
+    font-size: 0.75em;
     margin-left: 16px;
     text-transform: uppercase; }
   .callout-block .callout-block__action {
@@ -439,7 +439,7 @@
 
 .quote-card__quote p {
   font-weight: 200;
-  font-size: 2em;
+  font-size: 1.625em;
   letter-spacing: .5px;
   line-height: 1.3em; }
 
@@ -458,7 +458,7 @@
     color: #8c1414;
     display: block;
     font-style: normal;
-    font-size: 0.9230769231em;
+    font-size: 0.75em;
     letter-spacing: .9px;
     text-transform: uppercase; }
 
@@ -509,7 +509,7 @@
     .contact-footer {
       text-align: left; } }
   .contact-footer h2 {
-    font-size: 1.0769230769em;
+    font-size: 0.875em;
     font-weight: 800;
     letter-spacing: 3.5px;
     opacity: .8;
@@ -517,7 +517,7 @@
     text-transform: uppercase; }
     @media only screen and (min-width: 768px) {
       .contact-footer h2 {
-        font-size: 0.9230769231em;
+        font-size: 0.75em;
         letter-spacing: 3px; } }
   .contact-footer a {
     color: #fff; }
@@ -526,7 +526,7 @@
   width: calc(100% - 30px);
   float: left;
   margin-left: 15px;
-  padding: 1em 0 7.3076923077em;
+  padding: 1em 0 5.9375em;
   position: relative;
   z-index: 2; }
   @media only screen and (min-width: 768px) {
@@ -577,7 +577,7 @@
     padding: 1.5em 0; }
     @media only screen and (min-width: 768px) {
       .contact-footer__social .social-links {
-        padding-top: 0.3846153846em; } }
+        padding-top: 0.3125em; } }
     .contact-footer__social .social-links li {
       display: inline-block;
       padding: 0 1em;
@@ -634,7 +634,7 @@
       list-style: none; }
     .contact-footer__links .menu a {
       display: block;
-      font-size: 1.0769230769em;
+      font-size: 0.875em;
       font-weight: 800;
       letter-spacing: 3px;
       padding: 1em 0;
@@ -642,7 +642,7 @@
       text-transform: uppercase; }
       @media only screen and (min-width: 768px) {
         .contact-footer__links .menu a {
-          font-size: 0.9230769231em;
+          font-size: 0.75em;
           padding: 1em 0; } }
       .contact-footer__links .menu a:hover, .contact-footer__links .menu a:active, .contact-footer__links .menu a:focus {
         opacity: 1;
@@ -673,7 +673,7 @@
       margin-left: 30px; } }
   .contact-footer__subscribe p {
     display: none;
-    font-size: 0.9230769231em;
+    font-size: 0.75em;
     font-weight: 800;
     letter-spacing: 1px;
     opacity: .5; }
@@ -682,7 +682,7 @@
         display: block; } }
   .contact-footer__subscribe .email-input {
     border-radius: 0;
-    padding: 1em 1.2307692308em;
+    padding: 1em 1em;
     color: #222328; }
   .contact-footer__subscribe .button__hollow {
     font-weight: 400;
@@ -696,7 +696,7 @@
   .collapsible-menu .nav-item {
     color: #222328;
     padding: 16px;
-    font-size: 0.9230769231em;
+    font-size: 0.75em;
     font-weight: 600;
     text-transform: uppercase; }
     .collapsible-menu .nav-item:hover, .collapsible-menu .nav-item:active, .collapsible-menu .nav-item:focus {
@@ -784,13 +784,13 @@
 
 .expandable-card {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  padding: 2.3076923077em;
+  padding: 1.875em;
   text-align: center;
   color: #4d4f53;
   position: relative; }
 
 .expandable-card__title {
-  font-size: 2em;
+  font-size: 1.625em;
   letter-spacing: .3px;
   padding-top: 1.5em;
   padding-bottom: 1.5em; }
@@ -914,7 +914,7 @@
   background-color: #8c1515;
   box-shadow: inset 0 4px 8px -2px rgba(0, 0, 0, 0.2);
   color: #e3dfd5;
-  min-height: 9.0769230769em;
+  min-height: 7.375em;
   width: 100%; }
   @media only screen and (max-width: 767px) {
     #footer__global-footer {
@@ -964,12 +964,12 @@
       #footer__global-footer #global-footer__brand {
         float: left;
         width: 49%;
-        margin: 2.3076923077em 2% 0 0; } }
+        margin: 1.875em 2% 0 0; } }
     @media only screen and (min-width: 768px) {
       #footer__global-footer #global-footer__brand {
         position: absolute;
         margin-top: 0;
-        width: 8em; } }
+        width: 6.5em; } }
     @media only screen and (min-width: 1024px) {
       #footer__global-footer #global-footer__brand {
         margin-left: 40px; } }
@@ -984,10 +984,10 @@
     @media only screen and (min-width: 768px) {
       #footer__global-footer #global-footer__nav {
         width: 100%;
-        padding-top: 0.3846153846em; } }
+        padding-top: 0.3125em; } }
     #footer__global-footer #global-footer__nav #nav__global-links,
     #footer__global-footer #global-footer__nav #nav__policy-links {
-      font-size: 1.1538461538em;
+      font-size: 1.1875em;
       overflow: hidden; }
       #footer__global-footer #global-footer__nav #nav__global-links a,
       #footer__global-footer #global-footer__nav #nav__policy-links a {
@@ -998,7 +998,7 @@
           #footer__global-footer #global-footer__nav #nav__global-links a,
           #footer__global-footer #global-footer__nav #nav__policy-links a {
             text-align: left;
-            margin-right: 1.3076923077em; } }
+            margin-right: 1.0625em; } }
         @media only screen and (min-width: 768px) {
           #footer__global-footer #global-footer__nav #nav__global-links a,
           #footer__global-footer #global-footer__nav #nav__policy-links a {
@@ -1038,15 +1038,15 @@
   @media only screen and (min-width: 768px) {
     #footer__global-footer #global-footer__nav,
     #footer__global-footer #global-footer__info {
-      padding-left: 9.6153846154em; } }
+      padding-left: 7.8125em; } }
   @media only screen and (min-width: 1024px) {
     #footer__global-footer #global-footer__nav,
     #footer__global-footer #global-footer__info {
-      padding-left: 12.6923076923em; } }
+      padding-left: 10.3125em; } }
   @media only screen and (min-width: 1500px) {
     #footer__global-footer #global-footer__nav,
     #footer__global-footer #global-footer__info {
-      padding-left: 16.9230769231em; } }
+      padding-left: 13.75em; } }
 
 @media only screen and (min-width: 768px) {
   .contact-footer .block--lockup__site-slogan {
@@ -1094,7 +1094,7 @@
 
 .hero-banner__container {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  margin-top: 5em;
+  margin-top: 4.0625em;
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px; }
@@ -1126,7 +1126,7 @@
   .hero-banner__header p {
     line-height: 2; }
   .hero-banner__header .cite {
-    font-size: 0.7692307692em;
+    font-size: 0.625em;
     opacity: 0.8; }
 
 .hero-banner__footer {
@@ -1204,13 +1204,13 @@
 .highlight-card__intro {
   color: #f9b002;
   display: block;
-  font-size: 0.9230769231em;
+  font-size: 0.75em;
   letter-spacing: 0.9px;
   margin-bottom: 1em;
   text-transform: uppercase; }
 
 .highlight-card__title {
-  font-size: 2em;
+  font-size: 1.625em;
   letter-spacing: 0.3px; }
 
 .highlight-card__arrow {
@@ -1302,13 +1302,13 @@
     display: block; }
 
 .link-banner__header {
-  padding-top: 2.7692307692em;
+  padding-top: 2.25em;
   position: relative;
   text-align: center;
   z-index: 2; }
   .link-banner__header p {
     letter-spacing: .5px;
-    line-height: 1.6923076923em;
+    line-height: 1.375em;
     max-width: 400px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
@@ -1332,7 +1332,7 @@
     text-decoration: none; }
 
 .link-item__title {
-  font-size: 1.7692307692em;
+  font-size: 1.4375em;
   line-height: 1.25;
   margin-bottom: 0; }
 
@@ -1576,23 +1576,23 @@
 
 .navbar__group {
   display: none;
-  padding-bottom: 5em;
-  padding-top: 8.4615384615em; }
+  padding-bottom: 4.0625em;
+  padding-top: 6.875em; }
   @media only screen and (min-width: 860px) {
     .navbar__group {
       display: block;
       float: right;
       padding-bottom: 0;
       padding-top: 0;
-      margin-right: 5em; } }
+      margin-right: 4.0625em; } }
 
 .navbar__button {
   position: absolute;
   background: transparent;
   padding-left: 0;
   padding-right: 0;
-  height: 5em;
-  width: 5em;
+  height: 4.0625em;
+  width: 4.0625em;
   right: 0;
   z-index: 4; }
   .navbar__button:hover, .navbar__button:active, .navbar__button:focus {
@@ -1601,8 +1601,8 @@
     .navbar__button {
       display: none; } }
   .navbar__button .i-svg {
-    height: 1.6923076923em;
-    width: 1.6923076923em;
+    height: 1.375em;
+    width: 1.375em;
     margin-bottom: -2px; }
     .navbar__button .i-svg use {
       fill: #fff; }
@@ -1615,7 +1615,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  min-width: 5em;
+  min-width: 4.0625em;
   padding-left: 20px;
   padding-right: 20px;
   z-index: 5; }
@@ -1664,15 +1664,15 @@
         float: left;
         list-style-type: none;
         display: inline-block;
-        padding: 0 1.1538461538em; }
+        padding: 0 0.9375em; }
         .navigation__main-menu li.menu-item--active-trail .parent {
           box-shadow: inset 0 -3px 0 0 #f9b002; } }
     .navigation__main-menu li a {
       border-top: 1px solid rgba(255, 255, 255, 0.5);
       color: #fff;
       display: block;
-      font-size: 1.0769230769em;
-      letter-spacing: 0.1923076923em;
+      font-size: 0.875em;
+      letter-spacing: 0.15625em;
       padding: 1em 0;
       text-align: center;
       text-transform: uppercase;
@@ -1686,10 +1686,10 @@
         .navigation__main-menu li a {
           border-top: 0;
           border-bottom: 0;
-          letter-spacing: 0.1461538462em;
+          letter-spacing: 0.11875em;
           padding: 20px 1em;
           text-align: left;
-          font-size: 0.9230769231em; } }
+          font-size: 0.75em; } }
   .navigation__main-menu ul ul {
     display: none;
     transition: all .5s ease-out;
@@ -1735,9 +1735,9 @@
     display: block;
     color: #4d4f53;
     font-weight: 600;
-    padding: 0.6923076923em 0;
+    padding: 0.5625em 0;
     line-height: 1;
-    min-width: 2.3076923077em;
+    min-width: 1.875em;
     text-align: center; }
     .pager__item a:hover, .pager__item a:active, .pager__item a:focus {
       background-color: #4d4f53;
@@ -1783,15 +1783,15 @@
 .pager__item--previous .i-svg-arrow,
 .pager__item--first .i-svg-arrow,
 .pager__item--last .i-svg-arrow {
-  width: 1.9230769231em; }
+  width: 1.5625em; }
 
 .pager__item--first,
 .pager__item--previous {
-  margin-right: 1.3076923077em; }
+  margin-right: 1.0625em; }
 
 .pager__item--last,
 .pager__item--next {
-  margin-left: 1.3076923077em; }
+  margin-left: 1.0625em; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
@@ -1812,13 +1812,13 @@
     line-height: 2em;
     text-align: center; }
   .postcard .postcard__title {
-    font-size: 2.1538461538em;
-    padding-bottom: 0.7692307692em;
-    padding-top: 0.7692307692em;
+    font-size: 1.75em;
+    padding-bottom: 0.625em;
+    padding-top: 0.625em;
     color: #4d4f53; }
     @media only screen and (min-width: 576px) {
       .postcard .postcard__title {
-        font-size: 2.3076923077em; } }
+        font-size: 1.875em; } }
   .postcard .postcard__more {
     padding: 1em; }
     .postcard .postcard__more svg {
@@ -1914,7 +1914,7 @@
       top: 0; }
   .photo-tiles__quote strong {
     display: block;
-    font-size: 0.9230769231em;
+    font-size: 0.75em;
     color: #8c1515;
     text-transform: uppercase; }
   .photo-tiles__quote svg {
@@ -1939,8 +1939,8 @@
   left: 12px;
   top: 12px; }
   .search-toggle__icon .i-svg {
-    height: 1.3076923077em;
-    width: 1.3076923077em;
+    height: 1.0625em;
+    width: 1.0625em;
     margin-bottom: -2px; }
     .search-toggle__icon .i-svg use {
       fill: #fff; }
@@ -2044,10 +2044,10 @@
     background-color: #f9b002; }
   .section-header p {
     color: #9c9d9e;
-    line-height: 1.6923076923em;
+    line-height: 1.375em;
     letter-spacing: 0.5px; }
   .section-header a {
-    font-size: 0.9230769231em;
+    font-size: 0.75em;
     text-transform: uppercase;
     letter-spacing: 0.15px; }
 
@@ -2088,7 +2088,7 @@
   padding: .625em 1em; }
   .simple-block__tag h6 {
     color: #fff;
-    font-size: 1.2307692308em;
+    font-size: 1em;
     font-weight: 600;
     letter-spacing: .2px;
     line-height: 1;
@@ -2105,7 +2105,7 @@
     fill: #8c1515; }
 
 .simple-block__more {
-  font-size: 0.9230769231em;
+  font-size: 0.75em;
   text-transform: uppercase;
   letter-spacing: .15px; }
   .simple-block__more:hover, .simple-block__more:active, .simple-block__more:focus {
@@ -2133,7 +2133,7 @@
 .social-card {
   border: 1px solid #ccc;
   padding: 2em;
-  font-size: 1.5384615385em;
+  font-size: 1.25em;
   font-weight: 300;
   color: #4d4f53;
   position: relative; }
@@ -2173,7 +2173,7 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
 
 .spotlight-card__quote p {
-  font-size: 1.3846153846em;
+  font-size: 1.125em;
   letter-spacing: .5px;
   line-height: 1.3em; }
 
@@ -2183,7 +2183,7 @@
     color: #8c1414;
     display: block;
     font-style: normal;
-    font-size: 0.9230769231em;
+    font-size: 0.75em;
     letter-spacing: .9px;
     text-transform: uppercase; }
 
@@ -2313,7 +2313,7 @@ ul.tabs {
   border: 1px solid #017c92;
   padding: .5em 1em;
   color: #017c92;
-  font-size: 0.9230769231em;
+  font-size: 0.75em;
   font-weight: 600;
   letter-spacing: .2px;
   line-height: 1;

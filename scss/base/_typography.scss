@@ -10,11 +10,11 @@ body {
 
   // Responsive font sizes:
   @include grid-media($media-sm-max) {
-    @include font-size(13px, $root-font-size)
+    @include font-size(16px, $root-font-size)
   }
 
   @include grid-media($media-xl) {
-    @include font-size(13px, $root-font-size)
+    @include font-size(16px, $root-font-size)
   }
 
   @include grid-media($media-print) {
@@ -61,43 +61,43 @@ h6 {
 h1,
 .h1,
 %h1 {
-  @include font-size(38px);
+  @include font-size(48px);
   @include grid-media($media-sm) {
-    @include font-size(40px);
+    @include font-size(50px);
   }
 }
 
 h2,
 .h2,
 %h2 {
-  @include font-size(28px);
+  @include font-size(32px);
   @include grid-media($media-sm) {
-    @include font-size(30px);
+    @include font-size(34px);
   }
 }
 
 h3,
 .h3,
 %h3 {
-  @include font-size(24px);
+  @include font-size(28px);
   @include grid-media($media-sm) {
-    @include font-size(26px);
+    @include font-size(30px);
   }
 }
 
 h4,
 .h4,
 %h4 {
-  @include font-size(20px);
+  @include font-size(26px);
   @include grid-media($media-sm) {
-    @include font-size(23px);
+    @include font-size(29px);
   }
 }
 
 h5,
 .h5,
 %h5 {
-  @include font-size(14px);
+  @include font-size(15px);
   @include grid-media($media-sm) {
     @include font-size(16px);
   }
@@ -106,7 +106,7 @@ h5,
 h6,
 .h6,
 %h6 {
-  @include font-size(13px);
+  @include font-size(16px);
 }
 
 p {
@@ -136,7 +136,7 @@ address {
 }
 
 pre {
-  @include font-size(13px);
+  @include font-size(16px);
   background: shade(color(border), 10%);
   font-family: $font-family-monospace;
   line-height: $base-line-height;
@@ -150,7 +150,7 @@ code,
 kbd,
 tt,
 var {
-  @include font-size(13px);
+  @include font-size(16px);
   font-family: $font-family-monospace;
 }
 
@@ -218,12 +218,12 @@ mark {
 
 small,
 .small-text {
-  @include font-size(12px);
+  @include font-size(14px);
 }
 
 big,
 .large-text {
-  @include font-size(16px)
+  @include font-size(20px)
 }
 
 a {
