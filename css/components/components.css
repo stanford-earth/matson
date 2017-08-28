@@ -129,8 +129,6 @@
   padding-bottom: 14px;
   width: 160px;
   z-index: 4; }
-  #header .block--lockup {
-    padding-top: 10px; }
   @media only screen and (min-width: 860px) {
     .block--lockup {
       background-position: center center;
@@ -173,6 +171,8 @@
         clear: both;
         content: "";
         display: block; } }
+  #header .block--lockup {
+    padding-top: 10px; }
   .block--lockup .block-grid-collapse {
     margin-left: -15px;
     margin-right: -15px;
