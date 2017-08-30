@@ -76,7 +76,7 @@
 
     #nav__global-links,
     #nav__policy-links {
-      @include font-size(15px);
+      @include font-size(19px);
       overflow: hidden;
 
       a {
@@ -124,7 +124,7 @@
     }
 
     .vcard {
-      @include font-size(13px);
+      @include font-size(16px);
       font-weight: normal;
 
       .adr {

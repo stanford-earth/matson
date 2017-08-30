@@ -26,7 +26,7 @@
 #floating_sidebar__wrapper .block-region-first > .block-ctools-block > span > a {
   color: #fff;
   background: #017c92;
-  font-size: 13px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 3.9px;
   font-weight: 700;
@@ -37,7 +37,7 @@
 #floating_sidebar__wrapper h2 {
   color: #fff;
   background: #017c92;
-  font-size: 13px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 3.9px;
   font-weight: 700;
@@ -86,7 +86,7 @@
         letter-spacing: 1px;
         font-weight: 600;
         line-height: 1em;
-        padding: 1.1538461538em 1.1538461538em;
+        padding: 0.9375em 0.9375em;
         -webkit-transition: background 0.5s;
         transition: background 0.5s;
         display: block;
