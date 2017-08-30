@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+
+.simple-columns__title {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  margin-bottom: 1.2em;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -0.75em;
+    width: 20px;
+    height: 2px;
+    background-color: color(brand);
+  }
+}
