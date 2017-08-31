@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+@import "bourbon";
+
+.stanford-callout-text {
+  &.text-with-summary {
+    font-size: modular_scale(1.2);
+  }
+
+  &.field-p-callout-title {
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -0.5em;
+      left: 0;
+      width: 20px;
+      height: 2px;
+      background-color: color(brand);
+    }
+  }
+}
