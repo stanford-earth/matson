@@ -918,7 +918,6 @@
     background-color: #f9b002; }
 
 .filmstrip .filmstrip__cards {
-  max-width: 1190px;
   margin: 0 auto; }
 
 @media only screen and (min-width: 1024px) {

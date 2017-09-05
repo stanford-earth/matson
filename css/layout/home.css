@@ -2,6 +2,9 @@
   #filmstrip {
     margin-top: -150px; } }
 
+#filmstrip .filmstrip__cards {
+  max-width: 1190px; }
+
 .highlight-banner__container {
   top: -35px; }
   .highlight-banner__container .highlight-card {

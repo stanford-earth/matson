@@ -16,6 +16,9 @@
   @include grid-media($media-md) {
     margin-top: -150px;
   }
+  .filmstrip__cards {
+    max-width: 1190px;
+  }
 }
 
 // Adjust the highlight banner component so that the card
