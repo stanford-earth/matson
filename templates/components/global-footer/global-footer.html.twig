@@ -8,7 +8,7 @@
 <footer id="footer__container">
   <section class="contact-footer" style="background-image:url('{{ base_path ~ directory }}/img/optimized/footer-bg.png')";>
     <div class="contact-footer__brand">
-      <dd>{{ drupal_block('matson_branding') }}</dd>
+      {{ drupal_block('matson_branding')|render|preg_replace("block-matson-branding", "footer__block-matson-branding")|raw }}
     </div>
     <div class="contact-footer__social">
       <h2>{{ 'Join us on Social Media'|trans }}</h2>
@@ -25,7 +25,7 @@
     </div>
     <div class="contact-footer__links">
       <h2>{{ 'Links'|trans }}</h2>
-      <dd>{{ drupal_menu('footer') }}</dd>
+      {{ drupal_menu('footer') }}
     </div>
     <div class="contact-footer__subscribe">
       <h2>{{ 'Subscribe to Earth Matters'|trans }}</h2>
