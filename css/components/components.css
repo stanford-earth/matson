@@ -1648,24 +1648,7 @@
     display: none; }
 
 .navbar__search {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  min-width: 4.0625em;
-  padding-left: 20px;
-  padding-right: 20px;
-  z-index: 5; }
-  @media only screen and (min-width: 860px) {
-    .navbar__search {
-      background: transparent;
-      bottom: auto;
-      left: auto;
-      top: 0;
-      right: 0;
-      padding-left: 0;
-      padding-right: 0; } }
+  display: none; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
