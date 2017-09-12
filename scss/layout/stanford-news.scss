@@ -1,5 +1,7 @@
 @charset 'UTF-8';
 @import "utilities/mixins/hero-banner-node";
+// Grab our mixins.
+@import "utilities/utilities";
 
 // The expectation of the complex page is that the hero banner will be at the
 // top of the page each time a complex page is rendered. A few things have to
@@ -8,10 +10,83 @@
 // Pop out the tabs from the dom flow so they hover over.
 @include hero-banner-node;
 
+// Banner caption
+.field-s-news-top-media {
+  color: color(ash);
+}
+
+// Title field. 
+h1 {
+  font-size: 42px;
+}
+
 // Subtitle field.
 .block--field-s-news-sub-title {
+  margin-bottom: 20px;
+
+  h2 {
+    font-size: 28px;
+  }
+
   @include grid-media($media-sm) {
     max-width: 75%;
+  }
+}
+
+// Author field.
+.block--field-s-news-author {
+  text-transform: uppercase;
+
+  @include grid-media($media-lg) {
+    padding-left: 80px;
+  }
+}
+
+// Date field.
+.block--field-s-news-date {
+  @include dash-under;
+  position: relative;
+
+  &::after {
+    left: 0;
+    transform: none;
+  }
+
+  @include grid-media($media-md) {
+    float: left;
+  }
+
+  @include grid-media($media-lg) {
+    margin-left: 110px;
+  }
+
+  .field--field-s-news-date {
+    display: inline-block;
+
+    svg {
+      margin-right: .5rem;
+    }
+  }
+
+  .field--field-s-news-date__actions {
+    display: inline-block;
+    padding-right: 5px;
+    border-left: 1px solid color(fog);
+    margin-left: .75rem;
+    padding-left: .25rem;
+  }
+
+  .field--field-s-news-date__action {
+    display: inline-block;
+    padding: 0 5px;
+    color: color(text-active);
+  }
+
+  svg {
+    height: 13px;
+    vertical-align: middle;
+    display: inline;
+    margin-top: -3px;
   }
 }
 
@@ -23,9 +98,10 @@
   }
 
   .field-label {
-    color: color('highlight');
+    color: color(action);
     text-decoration: underline;
     display: inline-block;
+    margin-right: 1rem;
 
     &::after {
       content: ": ";
@@ -33,11 +109,19 @@
   }
 
   .field--field-earth-matters-topic {
-    display: inline-block;
-    border: 1px solid color('highlight');
-    padding: 5px 10px;
-  }
+    display: inline;
 
+    a {
+      @include tag($tag-color: color(action));
+      display: inline-block;
+      white-space: nowrap;
+      margin-bottom: .5rem;
+
+      @include grid-media($media-md) {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 // Category Block.
@@ -51,7 +135,94 @@
 
 // Body field.
 .field--body {
+  font-size: 20px;
+  padding-top: 20px;
+
   @include grid-media($media-sm) {
-    padding: 20px 80px;
+    @include padding(40px 80px 20px);
+  }
+
+  @include grid-media($media-lg) {
+    @include padding(null 110px);
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  // Drop Cap
+  > p:first-of-type:first-line {
+    position:relative;
+    font-size: 1em;
+    letter-spacing: normal;
+  }
+
+  > p:first-child:first-letter {
+    letter-spacing: 0;
+    font-size: 3em;
+    font-weight: bold;
+    float: left;
+    margin: 0.13em 0.2em 0 0;
+    line-height:0.7;
+  }
+}
+
+.field-s-news-rich-content {
+  .layout--basic {
+    .field-p-wysiwyg,
+    .field-p-responsive-image,
+    .field-p-responsive-image-cred {
+      @include grid-media($media-sm) {
+        @include padding(0 80px 20px 80px);
+      }
+
+      @include grid-media($media-lg) {
+        @include padding(null 110px);
+      }
+    }
+
+    .field-p-wysiwyg {
+      h2 {
+        @include dash-left-offset
+      }
+
+      figure {
+        display: table;
+
+        &.align-right {
+          margin-left: 20px;
+        }
+
+        &.align-left {
+          margin-right: 20px;
+        }
+      }
+
+      figcaption {
+        display: table-caption;
+        caption-side: bottom;
+        color: color(ash);
+        text-align: right;
+      }
+    }
+
+    .field-p-responsive-image {
+      position: relative;
+
+      &:after {
+        @include fullpage-stripe;
+        bottom: 6rem;
+      }
+
+      img {
+        width: 100%;
+        max-width: none;
+      }
+    }
+
+    .field-p-responsive-image-cred {
+      color: color(ash);
+      text-align: right;
+    }
   }
 }

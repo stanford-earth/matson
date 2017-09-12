@@ -44,6 +44,18 @@
   }
 }
 
+@mixin dash-left-offset($dash-color: brand) {
+  position: relative;
+  padding-left: 1em;
+
+  &::after {
+    @extend %dash-under;
+    @include center-transform(y);
+    background-color: color($dash-color);
+    left: 0;
+  }
+}
+
 %box-frame-container {
   position: absolute;
   content: '';

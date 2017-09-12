@@ -1,0 +1,24 @@
+@charset 'UTF-8';
+
+@mixin tag(
+  $tag-color: color(action),
+  $tag-text-hover-color: white
+  ) {
+  border: 1px solid $tag-color;
+  padding: .5em 1em;
+  color: $tag-color;
+  font-size: em(12px);
+  font-weight: 600;
+  letter-spacing: .2px;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+  margin-right: .5em;
+  margin-bottom: .5em;
+
+  @include on-event {
+    background-color: $tag-color;
+    text-decoration: none;
+    color: $tag-text-hover-color;
+  }
+}
