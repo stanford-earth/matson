@@ -46,7 +46,7 @@
 
 @mixin dash-left-offset($dash-color: brand) {
   position: relative;
-  padding-left: 1em;
+  padding-left: .9em;
 
   &::after {
     @extend %dash-under;

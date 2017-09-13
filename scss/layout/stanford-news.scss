@@ -92,7 +92,6 @@ h1 {
 
 // Earth matters field.
 .block--field-earth-matters-topic {
-
   @include grid-media($media-md) {
     float: right;
   }
@@ -112,10 +111,11 @@ h1 {
     display: inline;
 
     a {
-      @include tag($tag-color: color(action));
+      @include tag($tag-font-size: 14px, $tag-padding: 10px);
       display: inline-block;
       white-space: nowrap;
       margin-bottom: .5rem;
+      font-weight: normal;
 
       @include grid-media($media-md) {
         margin-bottom: 0;
@@ -167,62 +167,91 @@ h1 {
   }
 }
 
-.field-s-news-rich-content {
-  .layout--basic {
-    .field-p-wysiwyg,
-    .field-p-responsive-image,
-    .field-p-responsive-image-cred {
-      @include grid-media($media-sm) {
-        @include padding(0 80px 20px 80px);
-      }
+// Top media
+.field-s-news-top-media {
+  margin-top: 50px;
+}
 
-      @include grid-media($media-lg) {
-        @include padding(null 110px);
-      }
+.field-p-wysiwyg {
+  h2 {
+    @include dash-left-offset
+  }
+
+  // Floated images
+  figure {
+    display: table;
+
+    &.align-right {
+      margin-left: 20px;
     }
 
-    .field-p-wysiwyg {
-      h2 {
-        @include dash-left-offset
-      }
+    &.align-left {
+      margin-right: 20px;
+    }
+  }
 
-      figure {
-        display: table;
+  figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    color: color(ash);
+    text-align: right;
+  }
+}
 
-        &.align-right {
-          margin-left: 20px;
-        }
+.field-p-responsive-image-cred {
+  color: color(ash);
+  text-align: right;
+}
 
-        &.align-left {
-          margin-right: 20px;
-        }
-      }
-
-      figcaption {
-        display: table-caption;
-        caption-side: bottom;
-        color: color(ash);
-        text-align: right;
-      }
+// Layout spacing
+.layout--basic {
+  .field-p-wysiwyg,
+  .field-p-responsive-image,
+  .field-p-responsive-image-cred,
+  .field-p-video-url {
+    @include grid-media($media-sm) {
+      @include padding(0 80px 20px 80px);
     }
 
-    .field-p-responsive-image {
-      position: relative;
+    @include grid-media($media-lg) {
+      @include padding(null 110px);
+    }
+  }
 
-      &:after {
-        @include fullpage-stripe;
-        bottom: 6rem;
-      }
+  // Responsive Image
+  .field--responsive-image,
+  .field--responsive-video {
+    position: relative;
 
-      img {
-        width: 100%;
-        max-width: none;
-      }
+    &:after {
+      @include fullpage-stripe;
+      bottom: 60px;
     }
 
-    .field-p-responsive-image-cred {
-      color: color(ash);
-      text-align: right;
+    img {
+      width: 100%;
+      max-width: none;
     }
   }
 }
+
+.highlight-card {
+  color: color(text-active);
+
+  h4 {
+    font-size: 26px;
+  }
+
+  h5 {
+    text-transform: uppercase;
+  }
+
+  p {
+    color: color(ash);
+  }
+
+  h5, p {
+    font-size: 13px;
+  }
+}
+
