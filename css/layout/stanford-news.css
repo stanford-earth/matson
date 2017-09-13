@@ -41,7 +41,7 @@ h1 {
   text-transform: uppercase; }
   @media only screen and (min-width: 1024px) {
     .block--field-s-news-author {
-      padding-left: 80px; } }
+      padding-left: 110px; } }
 
 .block--field-s-news-date {
   margin-bottom: 1.25em;
@@ -150,6 +150,9 @@ h1 {
 .field-s-news-top-media {
   margin-top: 50px; }
 
+.field-p-wysiwyg > :last-child {
+  margin-bottom: 0; }
+
 .field-p-wysiwyg h2 {
   position: relative;
   padding-left: .9em; }
@@ -164,11 +167,14 @@ h1 {
     background-color: #8c1515;
     left: 0; }
 
+.field-p-wysiwyg p + h2 {
+  margin-top: 50px; }
+
 .field-p-wysiwyg figure {
   display: table; }
-  .field-p-wysiwyg figure.align-right {
+  .field-p-wysiwyg figure.align-right img {
     margin-left: 20px; }
-  .field-p-wysiwyg figure.align-left {
+  .field-p-wysiwyg figure.align-left img {
     margin-right: 20px; }
 
 .field-p-wysiwyg figcaption {
@@ -176,6 +182,13 @@ h1 {
   caption-side: bottom;
   color: #9c9d9e;
   text-align: right; }
+
+.field-p-wysiwyg img {
+  margin-bottom: 20px; }
+  .field-p-wysiwyg img.align-right {
+    margin-left: 20px; }
+  .field-p-wysiwyg img.align-left {
+    margin-right: 20px; }
 
 .field-p-responsive-image-cred {
   color: #9c9d9e;
@@ -218,15 +231,19 @@ h1 {
     width: 100%;
     max-width: none; }
 
-.highlight-card {
+.node--type-stanford_news {
   color: #4d4f53; }
-  .highlight-card h4 {
-    font-size: 26px; }
-  .highlight-card h5 {
-    text-transform: uppercase; }
-  .highlight-card p {
-    color: #9c9d9e; }
-  .highlight-card h5, .highlight-card p {
-    font-size: 13px; }
+  .node--type-stanford_news .simple-columns {
+    color: #4d4f53; }
+  .node--type-stanford_news .highlight-card {
+    color: #4d4f53; }
+    .node--type-stanford_news .highlight-card h4 {
+      font-size: 26px; }
+    .node--type-stanford_news .highlight-card h5 {
+      text-transform: uppercase; }
+    .node--type-stanford_news .highlight-card p {
+      color: #9c9d9e; }
+    .node--type-stanford_news .highlight-card h5, .node--type-stanford_news .highlight-card p {
+      font-size: 13px; }
 
 /*# sourceMappingURL=stanford-news.css.map */

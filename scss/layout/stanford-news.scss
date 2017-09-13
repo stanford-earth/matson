@@ -38,7 +38,7 @@ h1 {
   text-transform: uppercase;
 
   @include grid-media($media-lg) {
-    padding-left: 80px;
+    padding-left: 110px;
   }
 }
 
@@ -60,6 +60,7 @@ h1 {
     margin-left: 110px;
   }
 
+  // Date icon
   .field--field-s-news-date {
     display: inline-block;
 
@@ -68,6 +69,7 @@ h1 {
     }
   }
 
+  // Social icons
   .field--field-s-news-date__actions {
     display: inline-block;
     padding-right: 5px;
@@ -172,9 +174,18 @@ h1 {
   margin-top: 50px;
 }
 
+// Content styles
 .field-p-wysiwyg {
+  > :last-child {
+    margin-bottom: 0;
+  }
+
   h2 {
     @include dash-left-offset
+  }
+
+  p + h2 {
+    margin-top: 50px;
   }
 
   // Floated images
@@ -182,11 +193,15 @@ h1 {
     display: table;
 
     &.align-right {
-      margin-left: 20px;
+      img {
+        margin-left: 20px;
+      }
     }
 
     &.align-left {
-      margin-right: 20px;
+      img {
+        margin-right: 20px;
+      }
     }
   }
 
@@ -195,6 +210,18 @@ h1 {
     caption-side: bottom;
     color: color(ash);
     text-align: right;
+  }
+
+  img {
+    margin-bottom: 20px;
+
+    &.align-right {
+      margin-left: 20px;
+    }
+
+    &.align-left {
+      margin-right: 20px;
+    }
   }
 }
 
@@ -235,23 +262,31 @@ h1 {
   }
 }
 
-.highlight-card {
+// Text and pattern styles
+.node--type-stanford_news {
   color: color(text-active);
 
-  h4 {
-    font-size: 26px;
+  .simple-columns {
+    color: color(text-active);
   }
 
-  h5 {
-    text-transform: uppercase;
-  }
+  .highlight-card {
+    color: color(text-active);
 
-  p {
-    color: color(ash);
-  }
+    h4 {
+      font-size: 26px;
+    }
 
-  h5, p {
-    font-size: 13px;
+    h5 {
+      text-transform: uppercase;
+    }
+
+    p {
+      color: color(ash);
+    }
+
+    h5, p {
+      font-size: 13px;
+    }
   }
 }
-
