@@ -15,7 +15,7 @@
   color: color(ash);
 }
 
-// Title field. 
+// Title field.
 h1 {
   font-size: 42px;
 }
@@ -24,12 +24,12 @@ h1 {
 .block--field-s-news-sub-title {
   margin-bottom: 20px;
 
-  h2 {
-    font-size: 28px;
-  }
-
   @include grid-media($media-sm) {
     max-width: 75%;
+  }
+
+  h2 {
+    font-size: 28px;
   }
 }
 
@@ -47,17 +47,17 @@ h1 {
   @include dash-under;
   position: relative;
 
-  &::after {
-    left: 0;
-    transform: none;
-  }
-
   @include grid-media($media-md) {
     float: left;
   }
 
   @include grid-media($media-lg) {
     margin-left: 110px;
+  }
+
+  &::after {
+    left: 0;
+    transform: none;
   }
 
   // Date icon
@@ -148,24 +148,24 @@ h1 {
     @include padding(null 110px);
   }
 
-  > :last-child {
+  > ::last-child {
     margin-bottom: 0;
   }
 
   // Drop Cap
-  > p:first-of-type:first-line {
-    position:relative;
+  > p::first-of-type:first-line {
+    position: relative;
     font-size: 1em;
     letter-spacing: normal;
   }
 
-  > p:first-child:first-letter {
+  > p::first-child:first-letter {
     letter-spacing: 0;
     font-size: 3em;
     font-weight: bold;
     float: left;
     margin: 0.13em 0.2em 0 0;
-    line-height:0.7;
+    line-height: 0.7;
   }
 }
 
@@ -176,12 +176,12 @@ h1 {
 
 // Content styles
 .field-p-wysiwyg {
-  > :last-child {
+  > ::last-child {
     margin-bottom: 0;
   }
 
   h2 {
-    @include dash-left-offset
+    @include dash-left-offset;
   }
 
   p + h2 {
@@ -250,7 +250,7 @@ h1 {
   .field--responsive-video {
     position: relative;
 
-    &:after {
+    &::after {
       @include fullpage-stripe;
       bottom: 60px;
     }
@@ -285,7 +285,8 @@ h1 {
       color: color(ash);
     }
 
-    h5, p {
+    h5, 
+    p {
       font-size: 13px;
     }
   }
