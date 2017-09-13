@@ -55,7 +55,7 @@ h1 {
     margin-left: 110px;
   }
 
-  &::after {
+  &:after {
     left: 0;
     transform: none;
   }
@@ -148,18 +148,18 @@ h1 {
     @include padding(null 110px);
   }
 
-  > ::last-child {
+  > :last-child {
     margin-bottom: 0;
   }
 
   // Drop Cap
-  > p::first-of-type:first-line {
+  > p:first-of-type:first-line {
     position: relative;
     font-size: 1em;
     letter-spacing: normal;
   }
 
-  > p::first-child:first-letter {
+  > p:first-child:first-letter {
     letter-spacing: 0;
     font-size: 3em;
     font-weight: bold;
@@ -176,7 +176,7 @@ h1 {
 
 // Content styles
 .field-p-wysiwyg {
-  > ::last-child {
+  > :last-child {
     margin-bottom: 0;
   }
 
@@ -250,7 +250,7 @@ h1 {
   .field--responsive-video {
     position: relative;
 
-    &::after {
+    &:after {
       @include fullpage-stripe;
       bottom: 60px;
     }
@@ -285,7 +285,7 @@ h1 {
       color: color(ash);
     }
 
-    h5, 
+    h5,
     p {
       font-size: 13px;
     }
