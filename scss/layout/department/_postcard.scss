@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.postcard {
+  .postcard__content {
+    @include grid-media($media-md) {
+      padding-left: 240px;
+    }
+  }
+}
