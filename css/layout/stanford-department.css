@@ -100,6 +100,14 @@
         text-decoration: none; } }
 
 @media only screen and (min-width: 768px) {
+  .layout--basic {
+    padding-left: calc(((50% /12) * 0) + 260px); } }
+
+@media only screen and (min-width: 1500px) {
+  .layout--basic {
+    padding-left: calc(50% - (750px - 300px)); } }
+
+@media only screen and (min-width: 768px) {
   .section-callout-blocks {
     padding-left: calc(((50% /12) * 0) + 260px); } }
 
@@ -108,7 +116,39 @@
     padding-left: calc(50% - (750px - 300px)); } }
 
 @media only screen and (min-width: 768px) {
+  .section-callout-filmstrip {
+    padding-left: calc(((50% /12) * 0) + 260px); } }
+
+@media only screen and (min-width: 1500px) {
+  .section-callout-filmstrip {
+    padding-left: calc(50% - (750px - 300px)); } }
+
+@media only screen and (min-width: 768px) {
+  .section-callout-filmstrip.header-to-left {
+    padding-left: calc(((50% /12) * 0) + 260px); } }
+
+@media only screen and (min-width: 1500px) {
+  .section-callout-filmstrip.header-to-left {
+    padding-left: calc(50% - (750px - 300px)); } }
+
+@media only screen and (min-width: 768px) {
+  .section-expandable-banner {
+    padding-left: calc(((50% /12) * 0) + 260px); } }
+
+@media only screen and (min-width: 1500px) {
+  .section-expandable-banner {
+    padding-left: calc(50% - (750px - 300px)); } }
+
+@media only screen and (min-width: 768px) {
+  .postcard {
+    padding-left: calc(((50% /12) * 0) + 260px); } }
+
+@media only screen and (min-width: 1500px) {
+  .postcard {
+    padding-left: calc(50% - (750px - 300px)); } }
+
+@media only screen and (min-width: 1024px) {
   .postcard .postcard__content {
-    padding-left: 240px; } }
+    max-width: none; } }
 
 /*# sourceMappingURL=stanford-department.css.map */

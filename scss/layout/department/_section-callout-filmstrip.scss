@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.section-callout-filmstrip {
+  @include container-offset-left;
+
+  &.header-to-left {
+    @include container-offset-left;
+  }
+}

@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
 .postcard {
+  @include container-offset-left;
+
   .postcard__content {
-    @include grid-media($media-md) {
-      padding-left: 240px;
+    @include grid-media($media-lg) {
+      max-width: none;
     }
   }
 }
