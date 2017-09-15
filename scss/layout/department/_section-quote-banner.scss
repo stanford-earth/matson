@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.section-quote-banner {
+  @include container-offset-left;
+
+  .quote-card {
+    @include grid-media($media-md) {
+      max-width: none;
+    }
+
+    @include grid-media($media-lg) {
+      max-width: 66%;
+    }
+  }
+}

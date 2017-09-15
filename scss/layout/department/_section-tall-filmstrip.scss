@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.section-tall-filmstrip {
+
+  .filmstrip {
+    &.is-tall {
+      $callout-filmstrip-flexible: (
+        columns: 12,
+        gutter: 30px,
+      );
+
+      .film-card {
+        @include grid-media($media-md) {
+          width: 100%;
+        }
+
+        @include grid-media($media-lg) {
+          @include grid-column(3, $callout-filmstrip-flexible);
+
+          &:nth-child(2),
+          &:nth-child(4),
+          &:nth-child(5n) {
+            margin-top: -2em;
+          }
+
+          &:nth-child(5n) {
+            @include grid-push(3, $callout-filmstrip-flexible);
+            clear: left;
+          }
+        }
+      }
+    }
+  }
+}

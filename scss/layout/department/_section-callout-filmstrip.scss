@@ -5,5 +5,26 @@
 
   &.header-to-left {
     @include container-offset-left;
+
+    .filmstrip__header {
+      @include grid-media($media-md) {
+        width: 100%;
+      }
+
+      @include grid-media($media-lg) {
+        @include grid-column(2 of 12);
+      }
+    }
+
+    .filmstrip__container {
+      @include grid-media($media-md) {
+        width: 100%;
+        margin-left: 0;
+      }
+      
+      @include grid-media($media-lg) {
+        @include grid-column(10 of 12);
+      }
+    }
   }
 }
