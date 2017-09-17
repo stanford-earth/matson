@@ -21,7 +21,7 @@
         width: 100%;
         margin-left: 0;
       }
-      
+
       @include grid-media($media-lg) {
         @include grid-column(10 of 12);
       }
