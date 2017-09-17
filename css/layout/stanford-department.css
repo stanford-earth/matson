@@ -123,9 +123,23 @@
   .postcard {
     padding-left: calc(50% - (750px - 300px)); } }
 
+.postcard.has-image-left .postcard__image {
+  left: 0; }
+  @media only screen and (min-width: 1024px) {
+    .postcard.has-image-left .postcard__image {
+      width: 80%; } }
+
 @media only screen and (min-width: 1024px) {
   .postcard .postcard__content {
     max-width: none; } }
+
+@media only screen and (min-width: 768px) {
+  .postcard .postcard__content-inner {
+    width: 70%; } }
+
+@media only screen and (min-width: 1024px) {
+  .postcard .postcard__content-inner {
+    width: 35%; } }
 
 @media only screen and (min-width: 768px) {
   .section-header {
@@ -150,6 +164,23 @@
 @media only screen and (min-width: 1500px) {
   .section-callout-cards {
     padding-left: calc(50% - (750px - 300px)); } }
+
+@media only screen and (min-width: 1024px) {
+  .section-callout-cards .callout-cards__header {
+    margin-left: 30px; } }
+
+@media only screen and (min-width: 1024px) {
+  .section-callout-cards .callout-cards__container {
+    width: calc(75% - 52.5px);
+    float: left;
+    margin-left: 30px;
+    margin-left: 0; } }
+
+@media only screen and (min-width: 1500px) {
+  .section-callout-cards .callout-cards__container {
+    width: calc(75% - 105px);
+    float: left;
+    margin-left: 60px; } }
 
 @media only screen and (min-width: 768px) {
   .section-callout-filmstrip {
@@ -291,7 +322,8 @@
   .section-highlight-banner .highlight-banner__container {
     width: calc(75% - 52.5px);
     float: left;
-    margin-left: 30px; } }
+    margin-left: 30px;
+    margin-left: calc(8.3333333333% - 32.5px + 60px); } }
 
 @media only screen and (min-width: 768px) {
   .section-highlight-banner .highlight-cards {

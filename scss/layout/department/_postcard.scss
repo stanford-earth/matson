@@ -3,9 +3,29 @@
 .postcard {
   @include container-offset-left;
 
+  &.has-image-left {
+    .postcard__image {
+      left: 0;
+
+      @include grid-media($media-lg) {
+        width: 80%;
+      }
+    }
+  }
+
   .postcard__content {
     @include grid-media($media-lg) {
       max-width: none;
+    }
+  }
+
+  .postcard__content-inner {
+    @include grid-media($media-md) {
+      width: 70%;
+    }
+
+    @include grid-media($media-lg) {
+      width: 35%;
     }
   }
 }
