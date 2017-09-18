@@ -299,7 +299,7 @@
 
 .callout-blocks .callout-block {
   margin-top: 0; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .callout-blocks .callout-block {
       transition: all .3s ease; }
       .callout-blocks .callout-block:hover, .callout-blocks .callout-block:active, .callout-blocks .callout-block:focus {
@@ -309,7 +309,7 @@
   padding-left: 2.5em;
   position: relative;
   margin-top: 0; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .callout-block {
       transition: all .3s ease; }
       .callout-block:hover, .callout-block:active, .callout-block:focus {

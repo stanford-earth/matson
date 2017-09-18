@@ -1,31 +1,75 @@
 @charset "UTF-8";
 
 .postcard {
-  @include container-offset-left;
-
-  &.has-image-left {
-    .postcard__image {
-      left: 0;
-
-      @include grid-media($media-lg) {
-        width: 80%;
-      }
-    }
-  }
-
-  .postcard__content {
-    @include grid-media($media-lg) {
-      max-width: none;
-    }
-  }
-
   .postcard__content-inner {
     @include grid-media($media-md) {
       width: 70%;
     }
+  }
+
+  &.has-image-left {
+    @include grid-media($media-md) {
+      padding-left: calc(((50% /12) * 0) + 260px);
+    }
 
     @include grid-media($media-lg) {
-      width: 35%;
+      padding-left: 0;
+    }
+
+    .postcard__image {
+      left: 0;
+
+      @include grid-media($media-lg) {
+        width: 75%;
+      }
+
+      @include grid-media($media-xl) {
+        width: 70.5%;
+      }
+    }
+
+    .postcard__content-inner {
+      @include grid-media($media-lg) {
+        width: 30%;
+      }
+    }
+  }
+
+  &.has-image-right {
+     @include container-offset-left;
+
+    .postcard__image {
+      @include grid-media($media-lg) {
+        width: 60%;
+      }
+
+      @include grid-media($media-xl) {
+        width: 60%;
+      }
+
+      // @include grid-media($media-lg) {
+      //   width: calc(100% - ((((50% /12) * 0) + 260px));
+      // }
+
+      // @include grid-media($media-xl) {
+      //   width: calc(100% - (50% - (750px - 300px)));
+      // }
+    }
+
+    .postcard__content {
+      @include grid-media($media-lg) {
+        max-width: none;
+      }
+    }
+
+    .postcard__content-inner {
+      @include grid-media($media-lg) {
+        width: 35%;
+      }
+
+      @include grid-media($media-xl) {
+        width: 28%;
+      }
     }
   }
 }
