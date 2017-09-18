@@ -19,6 +19,12 @@
   #header .block--lockup {
     visibility: hidden; } }
 
+.filmstrip.is-flexible {
+  max-width: 420px; }
+  @media only screen and (min-width: 768px) {
+    .filmstrip.is-flexible {
+      max-width: none; } }
+
 @media only screen and (min-width: 768px) {
   #floating_sidebar {
     width: 190px; } }
@@ -200,7 +206,8 @@
 
 @media only screen and (min-width: 768px) {
   .section-callout-filmstrip.header-to-left .filmstrip__header {
-    width: 100%; } }
+    width: 100%;
+    margin-left: 0; } }
 
 @media only screen and (min-width: 1024px) {
   .section-callout-filmstrip.header-to-left .filmstrip__header {
@@ -249,7 +256,8 @@
 
 @media only screen and (min-width: 768px) {
   .section-expandable-banner .expandable-banner__header {
-    width: 100%; } }
+    width: 100%;
+    margin-left: 0; } }
 
 @media only screen and (min-width: 1024px) {
   .section-expandable-banner .expandable-banner__header {
@@ -306,7 +314,8 @@
 
 @media only screen and (min-width: 768px) {
   .section-highlight-banner .highlight-banner__header {
-    width: 100%; } }
+    width: 100%;
+    margin-left: 0; } }
 
 @media only screen and (min-width: 1024px) {
   .section-highlight-banner .highlight-banner__header {
@@ -316,7 +325,8 @@
 
 @media only screen and (min-width: 768px) {
   .section-highlight-banner .highlight-banner__container {
-    width: 100%; } }
+    width: 100%;
+    margin-left: 0; } }
 
 @media only screen and (min-width: 1024px) {
   .section-highlight-banner .highlight-banner__container {
@@ -365,7 +375,8 @@
 
 @media only screen and (min-width: 768px) {
   .section-tall-filmstrip .filmstrip.is-tall .film-card {
-    width: 100%; } }
+    width: 100%;
+    margin-left: 0; } }
 
 @media only screen and (min-width: 1024px) {
   .section-tall-filmstrip .filmstrip.is-tall .film-card {

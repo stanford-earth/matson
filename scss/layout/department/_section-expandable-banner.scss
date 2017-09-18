@@ -27,6 +27,7 @@
   .expandable-banner__header {
     @include grid-media($media-md) {
       width: 100%;
+      margin-left: 0;
     }
 
     @include grid-media($media-lg) {

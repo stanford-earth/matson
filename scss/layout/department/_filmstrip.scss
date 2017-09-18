@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.filmstrip {
+  &.is-flexible {
+    max-width: 420px;
+
+    @include grid-media($media-md) {
+      max-width: none;
+    }
+  }
+}
