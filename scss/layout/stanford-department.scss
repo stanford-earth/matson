@@ -7,6 +7,8 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
+// reset variables
+
 // Pop out the tabs from the dom flow so they hover over.
 @include hero-banner-node;
 

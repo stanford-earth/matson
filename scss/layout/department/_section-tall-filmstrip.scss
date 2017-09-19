@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 .section-tall-filmstrip {
+  @include container-offset-left;
 
   .filmstrip {
     &.is-tall {
@@ -30,6 +31,16 @@
           }
         }
       }
+    }
+  }
+
+  .filmstrip__container {
+    @include grid-media($media-md) {
+      max-width: 240px;
+    }
+
+    @include grid-media($media-lg) {
+      max-width: 800px;
     }
   }
 }

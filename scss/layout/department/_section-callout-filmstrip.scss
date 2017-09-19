@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 .section-callout-filmstrip {
-  @include container-offset-left;
 
   &.header-to-left {
     @include container-offset-left;
@@ -13,7 +12,7 @@
       }
 
       @include grid-media($media-lg) {
-        @include grid-column(2 of 12);
+        @include grid-column(3 of 12);
       }
     }
 
@@ -24,7 +23,38 @@
       }
 
       @include grid-media($media-lg) {
-        @include grid-column(10 of 12);
+        @include grid-column(9 of 12);
+      }
+
+      .filmstrip.is-flexible,
+      .component-centered-container {
+        @include grid-media($media-lg) {
+          margin-left: -30px;
+          margin-right: -30px;
+          width: calc(100% + 60px);
+        }
+      }
+    }
+  }
+
+  &.header-to-top {
+    @include responsive-container($default-container);
+    @include container-offset-left;
+
+    .component-centered-container {
+      @include grid-media($media-lg) {
+        padding: 0;
+      }
+    }
+
+    .filmstrip__cards {
+      @include grid-media($media-lg) {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        // margin-left: -30px;
+        // margin-right: -30px;
+        // width: calc(100% + 60px);
       }
     }
   }
