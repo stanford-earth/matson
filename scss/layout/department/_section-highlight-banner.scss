@@ -51,9 +51,9 @@
       }
 
       @include grid-media($media-lg) {
+        margin: 0;
         @include grid-column(6);
         min-height: 200px;
-        margin-bottom: 0;
       }
     }
   }
