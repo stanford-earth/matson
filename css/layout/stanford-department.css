@@ -25,6 +25,11 @@
     .filmstrip.is-flexible {
       max-width: none; } }
 
+.with-floating_sidebar .column--second::after {
+  clear: both;
+  content: "";
+  display: block; }
+
 @media only screen and (min-width: 768px) {
   #floating_sidebar {
     width: 190px; } }

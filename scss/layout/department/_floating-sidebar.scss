@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+.with-floating_sidebar {
+  .column--second {
+    @include grid-container;
+  }
+}
+
 // Resize the column.
 #floating_sidebar {
   @include grid-media($media-md) {
