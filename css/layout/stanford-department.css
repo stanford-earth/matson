@@ -130,54 +130,69 @@
   .postcard .postcard__content-inner {
     width: 70%; } }
 
-@media only screen and (min-width: 768px) {
-  .postcard.has-image-left {
-    padding-left: calc(((50% /12) * 0) + 260px); } }
-
-@media only screen and (min-width: 1024px) {
-  .postcard.has-image-left {
-    padding-left: 0; } }
-
-.postcard.has-image-left .postcard__image {
-  left: 0; }
+.postcard.has-image-left {
+  overflow: visible; }
+  @media only screen and (min-width: 768px) {
+    .postcard.has-image-left {
+      padding-left: calc(((50% /12) * 0) + 260px); } }
+  @media only screen and (min-width: 1024px) {
+    .postcard.has-image-left {
+      margin-left: calc(((50% /12) * 0) + 260px);
+      padding-left: 0; } }
+  @media only screen and (min-width: 1500px) {
+    .postcard.has-image-left {
+      margin-left: calc(50% - (750px - 300px)); } }
+  @media only screen and (min-width: 768px) {
+    .postcard.has-image-left .postcard__image {
+      left: 0; } }
   @media only screen and (min-width: 1024px) {
     .postcard.has-image-left .postcard__image {
-      width: 75%; } }
+      width: calc(70% + ((((50% /12) * 0) + 260px)));
+      left: -260px; } }
   @media only screen and (min-width: 1500px) {
     .postcard.has-image-left .postcard__image {
-      width: 70.5%; } }
+      width: calc(100% + (50% - (750px - 300px)));
+      left: calc((80% - (750px - 300px)) * -1); } }
+  @media only screen and (min-width: 1024px) {
+    .postcard.has-image-left .postcard__content-inner {
+      width: 40%; } }
+  @media only screen and (min-width: 1500px) {
+    .postcard.has-image-left .postcard__content-inner {
+      width: 32%; } }
 
-@media only screen and (min-width: 1024px) {
-  .postcard.has-image-left .postcard__content-inner {
-    width: 30%; } }
-
-@media only screen and (min-width: 768px) {
-  .postcard.has-image-right {
-    padding-left: calc(((50% /12) * 0) + 260px); } }
-
-@media only screen and (min-width: 1500px) {
-  .postcard.has-image-right {
-    padding-left: calc(50% - (750px - 300px)); } }
-
-@media only screen and (min-width: 1024px) {
-  .postcard.has-image-right .postcard__image {
-    width: 60%; } }
-
-@media only screen and (min-width: 1500px) {
-  .postcard.has-image-right .postcard__image {
-    width: 60%; } }
-
-@media only screen and (min-width: 1024px) {
-  .postcard.has-image-right .postcard__content {
-    max-width: none; } }
-
-@media only screen and (min-width: 1024px) {
-  .postcard.has-image-right .postcard__content-inner {
-    width: 35%; } }
-
-@media only screen and (min-width: 1500px) {
-  .postcard.has-image-right .postcard__content-inner {
-    width: 28%; } }
+.postcard.has-image-right {
+  overflow: visible; }
+  @media only screen and (min-width: 768px) {
+    .postcard.has-image-right {
+      padding-left: calc(((50% /12) * 0) + 260px); } }
+  @media only screen and (min-width: 1024px) {
+    .postcard.has-image-right {
+      margin-left: calc(((50% /12) * 0) + 260px);
+      padding-left: 0; } }
+  @media only screen and (min-width: 1500px) {
+    .postcard.has-image-right {
+      margin-left: calc(50% - (750px - 300px)); } }
+  @media only screen and (min-width: 1024px) {
+    .postcard.has-image-right:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #FBFBFB;
+      content: "";
+      display: block;
+      left: -50vw;
+      z-index: -1; } }
+  @media only screen and (min-width: 1024px) {
+    .postcard.has-image-right .postcard__content {
+      max-width: none; } }
+  @media only screen and (min-width: 1024px) {
+    .postcard.has-image-right .postcard__content-inner {
+      width: 40%; } }
+  @media only screen and (min-width: 1500px) {
+    .postcard.has-image-right .postcard__content-inner {
+      width: 32%; } }
 
 @media only screen and (min-width: 768px) {
   .section-header {

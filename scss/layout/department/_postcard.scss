@@ -8,52 +8,49 @@
   }
 
   &.has-image-left {
-    @include grid-media($media-md) {
-      padding-left: calc(((50% /12) * 0) + 260px);
-    }
-
-    @include grid-media($media-lg) {
-      padding-left: 0;
-    }
+    @include container-margin-left;
+    overflow: visible;
 
     .postcard__image {
-      left: 0;
+      @include grid-media($media-md) {
+        left: 0;
+      }
 
       @include grid-media($media-lg) {
-        width: 75%;
+        width: calc(70% + ((((50% /12) * 0) + 260px));
+        left: -260px;
       }
 
       @include grid-media($media-xl) {
-        width: 70.5%;
+        width: calc(100% + (50% - (750px - 300px)));
+        left: calc((80% - (750px - 300px)) * -1);
       }
     }
 
     .postcard__content-inner {
       @include grid-media($media-lg) {
-        width: 30%;
+        width: 40%;
+      }
+
+      @include grid-media($media-xl) {
+        width: 32%;
       }
     }
   }
 
   &.has-image-right {
-     @include container-offset-left;
+    @include container-margin-left;
+    overflow: visible;
 
-    .postcard__image {
+    &:after {
       @include grid-media($media-lg) {
-        width: 60%;
+        @include position(absolute, 0 0 0 0);
+        background-color: color(dust);
+        content: "";
+        display: block;
+        left: -50vw;
+        z-index: -1;
       }
-
-      @include grid-media($media-xl) {
-        width: 60%;
-      }
-
-      // @include grid-media($media-lg) {
-      //   width: calc(100% - ((((50% /12) * 0) + 260px));
-      // }
-
-      // @include grid-media($media-xl) {
-      //   width: calc(100% - (50% - (750px - 300px)));
-      // }
     }
 
     .postcard__content {
@@ -64,11 +61,11 @@
 
     .postcard__content-inner {
       @include grid-media($media-lg) {
-        width: 35%;
+        width: 40%;
       }
 
       @include grid-media($media-xl) {
-        width: 28%;
+        width: 32%;
       }
     }
   }
