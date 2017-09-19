@@ -492,10 +492,11 @@
 
 @media only screen and (min-width: 1024px) {
   .section-highlight-banner .highlight-cards .highlight-card {
-    margin: 0;
     width: calc(50% - 45px);
     float: left;
     margin-left: 30px;
+    margin-right: 0;
+    margin-bottom: 0;
     min-height: 200px; } }
 
 @media only screen and (min-width: 768px) {
