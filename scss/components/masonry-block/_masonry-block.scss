@@ -57,6 +57,36 @@
     }
   }
 
+  &.has-image,
+  &.is-action,
+  &.is-inverted,
+  &.has-background {
+    .tag-item {
+      border-color: color(white);
+      color: color(white);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+      @include on-event {
+        background-color: color(white);
+        color: color(text-active);
+      }
+    }
+  }
+
+  &.has-columns,
+  &.is-full-width {
+    .tag-item {
+      border-color: color(action);
+      color: color(action);
+
+      @include on-event {
+        background-color: color(action);
+        color: color(white);
+      }
+    }
+  }
+
   &.is-action {
     background-color: color(action);
     padding-top: 15px;
@@ -82,31 +112,6 @@
       @include grid-media($media-md) {
         font-size: 32px;
       }
-    }
-  }
-
-  &.has-columns,
-  &.is-full-width {
-    .tag-item {
-      border-color: color(action);
-      color: color(action);
-
-      @include on-event {
-        background-color: color(action);
-        color: color(white);
-      }
-    }
-  }
-
-  .tag-item {
-    border-color: color(white);
-    color: color(white);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-    @include on-event {
-      background-color: color(white);
-      color: color(text-active);
     }
   }
 }
