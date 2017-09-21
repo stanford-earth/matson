@@ -41,23 +41,23 @@
   {% if multiple %}
     <div{{ attributes }}>
       {% for item in items %}
-        <div{{ item.attributes.addClass("field--field-s-news-date") }}><svg class="i-svg"><use xlink:href="#i-clock" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>{{ item.content }}</div>
+        <div{{ item.attributes.addClass("field--field-s-news-date") }}><svg class="i-svg" role="img"><title>{{ 'Clock'|t }}</title><use xlink:href="#i-clock" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>{{ item.content }}</div>
         <div class="field--field-s-news-date__actions">
-          <a href="#" class="field--field-s-news-date__action"><svg class="i-svg"><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-          <a href="#" class="field--field-s-news-date__action"><svg class="i-svg"><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-          <a href="#" class="field--field-s-news-date__action"><svg class="i-svg"><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-          <a href="#" class="field--field-s-news-date__action"><svg class="i-svg"><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+          <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'mail'|t }}</title><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+          <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'linkedin'|t }}</title><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+          <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+          <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'facebook'|t }}</title><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
         </div>
       {% endfor %}
     </div>
   {% else %}
     {% for item in items %}
-      <div{{ item.attributes.addClass("field--field-s-news-date") }}><svg class="i-svg"><use xlink:href="#i-clock" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>{{ item.content }}</div>
+      <div{{ item.attributes.addClass("field--field-s-news-date") }}><svg class="i-svg" role="img"><title>{{ 'Clock'|t }}</title><use xlink:href="#i-clock" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>{{ item.content }}</div>
       <div class="field--field-s-news-date__actions">
-        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg"><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg"><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg"><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg"><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'mail'|t }}</title><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'linkedin'|t }}</title><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'facebook'|t }}</title><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
         </div>
     {% endfor %}
   {% endif %}
@@ -68,12 +68,12 @@
       <div>
     {% endif %}
     {% for item in items %}
-      <div{{ item.attributes.addClass("field--field-s-news-date") }}><svg class="i-svg"><use xlink:href="#i-clock" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>{{ item.content }}</div>
+      <div{{ item.attributes.addClass("field--field-s-news-date") }}><svg class="i-svg" role="img"><title>{{ 'Clock'|t }}</title><use xlink:href="#i-clock" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>{{ item.content }}</div>
       <div class="field--field-s-news-date__actions">
-        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg"><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg"><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg"><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg"><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'mail'|t }}</title><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'linkedin'|t }}</title><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'facebook'|t }}</title><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
       </div>
     {% endfor %}
     {% if multiple %}
