@@ -9,26 +9,23 @@
 $logo-width: 110px;
 
 .block--lockup {
-  // background: transparent url('../../img/source/bg-logo.png') no-repeat center center;
-  background-size: 160px 140px;
   position: relative;
-  margin: 0 auto 0;
-  padding-top: 10px;
+  margin: 0 auto;
   padding-bottom: 14px;
-  width: 160px;
+  width: 120px;
   z-index: 4;
 
   @include grid-media($header-md) {
     @include responsive-container($default-container);
-    background-position: center center;
-    background-size: 160px 140px;
     display: table;
     margin: 0 0;
     width: auto;
   }
 
   #header & {
-    padding-top: 10px;
+    @include grid-media($header-md) {
+      padding-top: 10px;
+    }
   }
 
   // Grid collapse.
@@ -38,10 +35,12 @@ $logo-width: 110px;
 }
 
 .block--lockup__site-logo-wrapper {
-
   .block--lockup__site-logo {
+    display: block;
+
     img {
-      margin: 0 25px;
+      display: block;
+      // margin: 0 25px;
 
       @include grid-media($header-md) {
         width: 110px;
@@ -52,73 +51,75 @@ $logo-width: 110px;
   }
 }
 
-%block--lockup__site-name-and-slogan-text {
+// %block--lockup__site-name-and-slogan-text {
   // text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
-  text-transform: uppercase;
-  font-size: em(36px);
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: 2.2px;
-  margin: 0 27px 0 23px;
-  padding-bottom: 6px;
-  position: relative;
-  text-align: justify;
-  width: $logo-width;
+  // text-transform: uppercase;
+  // font-size: em(36px);
+  // font-weight: 600;
+  // line-height: 1;
+  // letter-spacing: 2.2px;
+  // margin: 0 27px 0 23px;
+  // padding-bottom: 6px;
+  // position: relative;
+  // text-align: justify;
+  // width: $logo-width;
 
-  @include grid-media($header-md) {
-    margin: 0 12px 0 8px;
-  }
+  // @include grid-media($header-md) {
+  //   margin: 0 12px 0 8px;
+  // }
 
-  &::after {
-    content: '';
-    display: block;
-    background-color: rgba(0, 0, 0, .5);
-    height: 1px;
+  // &::after {
+  //   content: '';
+  //   display: block;
+  //   background-color: rgba(0, 0, 0, .5);
+  //   height: 1px;
 
-    position: absolute;
-    top: 23px;
-    right: 0;
-    left: 0;
+  //   position: absolute;
+  //   top: 23px;
+  //   right: 0;
+  //   left: 0;
 
-    @include grid-media($header-md) {
-      top: 22px;
-    }
-  }
+  //   @include grid-media($header-md) {
+  //     top: 22px;
+  //   }
+  // }
 
-  a {
-    position: relative;
-    z-index: 2;
-    color: color(white);
+//   a {
+//     position: relative;
+//     z-index: 2;
+//     color: color(white);
 
-    @include on-event {
-      text-decoration: none;
-    }
-  }
-}
+//     @include on-event {
+//       text-decoration: none;
+//     }
+//   }
+// }
 
-%block--lockup__site-slogan-text {
+// %block--lockup__site-slogan-text {
   // text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
-  color: color(white);
-  font-size: 9px;
-  font-weight: 300;
-  line-height: 1.25;
-  margin: 0 25px;
-  text-align: justify;
-  text-transform: uppercase;
-  width: $logo-width;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-font-smoothing: subpixel-antialiased;
-  -o-font-smoothing: subpixel-antialiased;
+//   color: color(white);
+//   font-size: 9px;
+//   font-weight: 300;
+//   line-height: 1.25;
+//   margin: 0 25px;
+//   text-align: justify;
+//   text-transform: uppercase;
+//   width: $logo-width;
+//   -webkit-font-smoothing: subpixel-antialiased;
+//   -moz-font-smoothing: subpixel-antialiased;
+//   -o-font-smoothing: subpixel-antialiased;
 
-  @include grid-media($header-md) {
-    margin: 0 10px;
-  }
-}
+//   @include grid-media($header-md) {
+//     margin: 0 10px;
+//   }
+// }
 
 .block--lockup__site-name-and-slogan {
-  @extend %block--lockup__site-name-and-slogan-text;
+  // @extend %block--lockup__site-name-and-slogan-text;
+  @extend %hide-element;
 }
 
 .block--lockup__site-slogan {
-  @extend %block--lockup__site-slogan-text;
+  // @extend %block--lockup__site-slogan-text;
+  @extend %hide-element;
 }
