@@ -11,7 +11,6 @@ $logo-width: 110px;
 .block--lockup {
   position: relative;
   margin: 0 auto;
-  padding-bottom: 14px;
   width: 120px;
   z-index: 4;
 
@@ -45,7 +44,6 @@ $logo-width: 110px;
       @include grid-media($header-md) {
         width: 110px;
         margin: 0 10px;
-        padding-top: 1px;
       }
     }
   }
