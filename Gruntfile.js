@@ -107,17 +107,23 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          // Component Wrap Up.
+          // COMPONENTS.
           'css/components/components.css':                  'scss/components/components.scss',
-          // Layouts.
+
+          // LAYOUT.
           'css/layout/stanford-complex-page.css':           'scss/layout/stanford-complex-page.scss',
           'css/layout/stanford-department.css':             'scss/layout/stanford-department.scss',
-          'css/layout/stanford-news.css':                   'scss/layout/stanford-news.scss',
           'css/layout/home.css':                            'scss/layout/home.scss',
-          // Theme compiled styles.
-          'css/base/base.css':                              'scss/base/base.scss',
           'css/layout/layout.css':                          'scss/layout/layout.scss',
+
+          // BASE.
+          'css/base/base.css':                              'scss/base/base.scss',
+
+          // STATE.
           'css/states/states.css':                          'scss/states/states.scss',
+
+          // THEME.
+          'css/theme/stanford-news.css':                    'scss/theme/stanford-news.scss',
           'css/theme/theme.css':                            'scss/theme/theme.scss',
           'css/theme/print.css':                            'scss/theme/print.scss'
         }
