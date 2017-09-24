@@ -32,12 +32,13 @@ $hero-max-width-lg: 1500px;
 
 .hero-banner__container {
   border: 1px solid rgba(255, 255, 255, .5);
-  margin-top: em(82px);
+  margin-top: 80px;
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
 
   @media (min-width: $hero-max-width-lg) {
+    margin-top: 81px;
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 40px;

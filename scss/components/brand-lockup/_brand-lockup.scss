@@ -23,7 +23,8 @@ $logo-width: 110px;
 
   #header & {
     @include grid-media($header-md) {
-      padding-top: 10px;
+      padding-top: 0;
+      transform: translateY(8px);
     }
   }
 
