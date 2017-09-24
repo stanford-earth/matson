@@ -676,10 +676,11 @@
       margin-left: 30px;
       margin-right: 0; } }
   .contact-footer__brand .block--lockup {
-    padding: 0; }
+    padding: 0;
+    margin-top: -12px; }
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
       .contact-footer__brand .block--lockup {
-        margin: 0; } }
+        margin: -12px 0 0 0; } }
   @media only screen and (min-width: 768px) {
     .contact-footer__brand .block--lockup__site-name-and-slogan,
     .contact-footer__brand .block--lockup__site-logo-wrapper .block--lockup__site-logo img {
