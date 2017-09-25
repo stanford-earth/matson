@@ -1,0 +1,293 @@
+@charset 'UTF-8';
+@import "utilities/mixins/hero-banner-node";
+// Grab our mixins.
+@import "utilities/utilities";
+
+// The expectation of the complex page is that the hero banner will be at the
+// top of the page each time a complex page is rendered. A few things have to
+// move around to ensure that the banner is in the right place.
+
+// Pop out the tabs from the dom flow so they hover over.
+@include hero-banner-node;
+
+// Banner caption
+.field-s-news-top-media {
+  color: color(ash);
+}
+
+// Title field.
+h1 {
+  font-size: 42px;
+}
+
+// Subtitle field.
+.block--field-s-news-sub-title {
+  margin-bottom: 20px;
+
+  @include grid-media($media-sm) {
+    max-width: 75%;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+
+// Author field.
+.block--field-s-news-author {
+  text-transform: uppercase;
+
+  @include grid-media($media-lg) {
+    padding-left: 110px;
+  }
+}
+
+// Date field.
+.block--field-s-news-date {
+  @include dash-under;
+  position: relative;
+
+  @include grid-media($media-md) {
+    float: left;
+  }
+
+  @include grid-media($media-lg) {
+    margin-left: 110px;
+  }
+
+  &::after {
+    left: 0;
+    transform: none;
+  }
+
+  // Date icon
+  .field--field-s-news-date {
+    display: inline-block;
+
+    svg {
+      margin-right: .5rem;
+    }
+  }
+
+  // Social icons
+  .field--field-s-news-date__actions {
+    display: inline-block;
+    padding-right: 5px;
+    border-left: 1px solid color(fog);
+    margin-left: .75rem;
+    padding-left: .25rem;
+  }
+
+  .field--field-s-news-date__action {
+    display: inline-block;
+    padding: 0 5px;
+    color: color(text-active);
+  }
+
+  svg {
+    height: 13px;
+    vertical-align: middle;
+    display: inline;
+    margin-top: -3px;
+  }
+}
+
+// Earth matters field.
+.block--field-earth-matters-topic {
+  @include grid-media($media-md) {
+    float: right;
+  }
+
+  .field-label {
+    color: color(action);
+    text-decoration: underline;
+    display: inline-block;
+    margin-right: 1rem;
+
+    &::after {
+      content: ": ";
+    }
+  }
+
+  .field--field-earth-matters-topic {
+    display: inline;
+
+    a {
+      @include tag($tag-font-size: 14px, $tag-padding: 10px);
+      display: inline-block;
+      white-space: nowrap;
+      margin-bottom: .5rem;
+      font-weight: normal;
+
+      @include grid-media($media-md) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Category Block.
+.block--field-s-news-category {
+  .field--field-s-news-category {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 10px 0 0;
+  }
+}
+
+// Body field.
+.field--body {
+  font-size: 20px;
+  padding-top: 20px;
+
+  @include grid-media($media-sm) {
+    @include padding(40px 80px 20px);
+  }
+
+  @include grid-media($media-lg) {
+    @include padding(null 110px);
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  // Drop Cap
+  > p::first-of-type:first-line {
+    position: relative;
+    font-size: 1em;
+    letter-spacing: normal;
+  }
+
+  > p::first-child:first-letter {
+    letter-spacing: 0;
+    font-size: 3em;
+    font-weight: bold;
+    float: left;
+    margin: 0.13em 0.2em 0 0;
+    line-height: 0.7;
+  }
+}
+
+// Top media
+.field-s-news-top-media {
+  margin-top: 50px;
+}
+
+// Content styles
+.field-p-wysiwyg {
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    @include dash-left-offset;
+  }
+
+  p + h2 {
+    margin-top: 50px;
+  }
+
+  // Floated images
+  figure {
+    display: table;
+
+    &.align-right {
+      img {
+        margin-left: 20px;
+      }
+    }
+
+    &.align-left {
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    color: color(ash);
+    text-align: right;
+  }
+
+  img {
+    margin-bottom: 20px;
+
+    &.align-right {
+      margin-left: 20px;
+    }
+
+    &.align-left {
+      margin-right: 20px;
+    }
+  }
+}
+
+.field-p-responsive-image-cred {
+  color: color(ash);
+  text-align: right;
+}
+
+// Layout spacing
+.layout--basic {
+  .field-p-wysiwyg,
+  .field-p-responsive-image,
+  .field-p-responsive-image-cred,
+  .field-p-video-url {
+    @include grid-media($media-sm) {
+      @include padding(0 80px 20px 80px);
+    }
+
+    @include grid-media($media-lg) {
+      @include padding(null 110px);
+    }
+  }
+
+  // Responsive Image
+  .field--responsive-image,
+  .field--responsive-video {
+    position: relative;
+
+    &::after {
+      @include fullpage-stripe;
+      bottom: 60px;
+    }
+
+    img {
+      width: 100%;
+      max-width: none;
+    }
+  }
+}
+
+// Text and pattern styles
+.node--type-stanford_news {
+  color: color(text-active);
+
+  .simple-columns {
+    color: color(text-active);
+  }
+
+  .highlight-card {
+    color: color(text-active);
+
+    h4 {
+      font-size: 26px;
+    }
+
+    h5 {
+      text-transform: uppercase;
+    }
+
+    p {
+      color: color(ash);
+    }
+
+    h5,
+    p {
+      font-size: 13px;
+    }
+  }
+}

@@ -125,8 +125,8 @@ stanford_department:
 stanford_news:
   version: VERSION
   css:
-    layout:
-      css/layout/stanford-news.css: {}
+    theme:
+      css/theme/stanford-news.css: {}
 
 home:
   version: VERSION

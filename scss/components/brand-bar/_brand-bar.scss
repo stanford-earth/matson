@@ -14,16 +14,17 @@
 // Separated out as a mixin for easy re-use and possible move to Decanter.
 @mixin stanford-brand-bar {
 
-  //$_brand-container: (
-  //  sm-max: (columns: 12, grid-media: $media-sm-max,  v-space: 12px, max-width: false, grid-collapse: false),
-  //  md: (columns: 12, grid-media: $media-md,          v-space: 10px, max-width: false, grid-collapse: false),
-  //  xl: (columns: 12, grid-media: $media-xl,          v-space: 10px, max-width: true,  grid-collapse: false),
-  //  print: (columns: 12, grid-media: $media-print,    v-space: 10px, max-width: false, grid-collapse: false),
-  //) !default;
+  $_brand-container: (
+   sm-max: (columns: 12, grid-media: $media-sm-max,  v-space: 0, max-width: false, grid-collapse: false),
+   md: (columns: 12, grid-media: $media-md,          v-space: 0, max-width: false, grid-collapse: false),
+   xl: (columns: 12, grid-media: $media-xl,          v-space: 0, max-width: true,  grid-collapse: false),
+   print: (columns: 12, grid-media: $media-print,    v-space: 0, max-width: false, grid-collapse: false),
+  ) !default;
 
-  @include responsive-container($default-container);
+  @include responsive-container($_brand-container);
   height: 40px;
   max-height: 40px;
+  line-height: 40px;
   color: color(reverse-text);
   background: color(brand);
   position: relative;
@@ -37,6 +38,12 @@
 
       @include grid-media($media-sm) {
         width: 153px;
+      }
+
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -1px;
       }
     }
   }

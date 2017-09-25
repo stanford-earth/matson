@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+@mixin fullpage-stripe {
+  content: '';
+  background-color: color(dust);
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  z-index: -1;
+}
