@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+.postcard {
+  .postcard__content-inner {
+    @include grid-media($media-md) {
+      width: 70%;
+    }
+  }
+
+  &.has-image-left {
+    @include container-margin-left;
+    overflow: visible;
+
+    .postcard__image {
+      @include grid-media($media-md) {
+        left: 0;
+      }
+
+      @include grid-media($media-lg) {
+        width: calc(70% + ((((50% /12) * 0) + 260px)));
+        left: -260px;
+      }
+
+      @include grid-media($media-xl) {
+        width: calc(100% + (50% - (750px - 280px)));
+        left: calc((80% - (750px - 280px)) * -1);
+      }
+    }
+
+    .postcard__content-inner {
+      @include grid-media($media-lg) {
+        width: 40%;
+      }
+
+      @include grid-media($media-xl) {
+        width: 32%;
+      }
+    }
+  }
+
+  &.has-image-right {
+    @include container-margin-left;
+    overflow: visible;
+
+    &:after {
+      @include grid-media($media-lg) {
+        @include position(absolute, 0 0 0 0);
+        background-color: color(dust);
+        content: "";
+        display: block;
+        left: -50vw;
+        z-index: -1;
+      }
+    }
+
+    .postcard__content {
+      @include grid-media($media-lg) {
+        max-width: none;
+      }
+    }
+
+    .postcard__content-inner {
+      @include grid-media($media-lg) {
+        width: 40%;
+      }
+
+      @include grid-media($media-xl) {
+        width: 32%;
+      }
+    }
+  }
+}

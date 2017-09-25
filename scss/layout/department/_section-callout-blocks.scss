@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.section-callout-blocks {
+  @include container-offset-left;
+
+  .callout-blocks {
+    @include grid-media($media-md-only) {
+      @include grid-collapse;
+    }
+
+    .callout-block {
+      @include grid-media($media-md) {
+        float: none;
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto 3em;
+      }
+
+      @include grid-media($media-lg) {
+        @include grid-column(4);
+        max-width: none;
+        margin-left: 20px;
+      }
+    }
+  }
+}
