@@ -1,5 +1,5 @@
-#hero-banner {
-  margin-top: -120px; }
+#hero-banner:first-child:not(.component-centered-container-margins) {
+  margin-top: -121px; }
 
 .block--local-tasks {
   position: absolute;

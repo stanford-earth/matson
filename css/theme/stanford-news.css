@@ -6,8 +6,8 @@
   display: block;
   z-index: 2; }
 
-#hero-banner {
-  margin-top: -120px; }
+#hero-banner:first-child:not(.component-centered-container-margins) {
+  margin-top: -121px; }
 
 .block--local-tasks {
   position: absolute;
@@ -57,7 +57,7 @@ h1 {
   @media only screen and (min-width: 1024px) {
     .block--field-s-news-date {
       margin-left: 110px; } }
-  .block--field-s-news-date:after {
+  .block--field-s-news-date::after {
     left: 0;
     transform: none; }
   .block--field-s-news-date .field--field-s-news-date {
@@ -135,11 +135,11 @@ h1 {
       padding-left: 110px; } }
   .field--body > :last-child {
     margin-bottom: 0; }
-  .field--body > p:first-of-type:first-line {
+  .field--body > p::first-of-type:first-line {
     position: relative;
     font-size: 1em;
     letter-spacing: normal; }
-  .field--body > p:first-child:first-letter {
+  .field--body > p::first-child:first-letter {
     letter-spacing: 0;
     font-size: 3em;
     font-weight: bold;
@@ -212,8 +212,8 @@ h1 {
 .layout--basic .field--responsive-image,
 .layout--basic .field--responsive-video {
   position: relative; }
-  .layout--basic .field--responsive-image:after,
-  .layout--basic .field--responsive-video:after {
+  .layout--basic .field--responsive-image::after,
+  .layout--basic .field--responsive-video::after {
     content: '';
     background-color: #FBFBFB;
     position: absolute;
