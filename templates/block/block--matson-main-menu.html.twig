@@ -46,12 +46,13 @@
     <div class="navbar__inner">
       <button class="navbar__button js-nav-mobile-closable">
         <span class="navbar__text visually-hidden">menu</span>
-        <svg class="i-svg i-svg--menu"><use xlink:href="#i-menu" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
-        <svg class="i-svg i-svg--close"><use xlink:href="#i-close" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
+        <svg class="i-svg i-svg--menu" role="img"><title>{{ 'Menu list icon'|t }}</title><use xlink:href="#i-menu" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
+        <svg class="i-svg i-svg--close" role="img"><title>{{ 'Menu list collapse toggle'|t }}</title><use xlink:href="#i-close" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
       </button>
 
       <div class="navbar__group js-nav-group-viewable js-nav-item-expandable">
         <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
+          <a name="main-menu" id="main-menu"></a>
           {# Label. If not displayed, we still provide it for screen readers. #}
           {% if not configuration.label_display %}
             {% set title_attributes = title_attributes.addClass('visually-hidden') %}
