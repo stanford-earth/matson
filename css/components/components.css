@@ -1863,6 +1863,20 @@
       border-right: 1px solid #fff; }
     .masonry-block.is-action .masonry-block__social-links, .masonry-block.is-inverted .masonry-block__social-links, .masonry-block.has-background .masonry-block__social-links {
       border-right: 1px solid #fff; }
+  .masonry-block.is-wide .tag-item, .masonry-block.has-image .tag-item, .masonry-block.is-action .tag-item, .masonry-block.is-inverted .tag-item, .masonry-block.has-background .tag-item {
+    border-color: #fff;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+    .masonry-block.is-wide .tag-item:hover, .masonry-block.is-wide .tag-item:active, .masonry-block.is-wide .tag-item:focus, .masonry-block.has-image .tag-item:hover, .masonry-block.has-image .tag-item:active, .masonry-block.has-image .tag-item:focus, .masonry-block.is-action .tag-item:hover, .masonry-block.is-action .tag-item:active, .masonry-block.is-action .tag-item:focus, .masonry-block.is-inverted .tag-item:hover, .masonry-block.is-inverted .tag-item:active, .masonry-block.is-inverted .tag-item:focus, .masonry-block.has-background .tag-item:hover, .masonry-block.has-background .tag-item:active, .masonry-block.has-background .tag-item:focus {
+      background-color: #fff;
+      color: #4d4f53; }
+  .masonry-block.has-columns .tag-item, .masonry-block.is-full-width .tag-item {
+    border-color: #017c92;
+    color: #017c92; }
+    .masonry-block.has-columns .tag-item:hover, .masonry-block.has-columns .tag-item:active, .masonry-block.has-columns .tag-item:focus, .masonry-block.is-full-width .tag-item:hover, .masonry-block.is-full-width .tag-item:active, .masonry-block.is-full-width .tag-item:focus {
+      background-color: #017c92;
+      color: #fff; }
   .masonry-block.is-action {
     background-color: #017c92;
     padding-top: 15px;
@@ -1877,20 +1891,6 @@
     @media only screen and (min-width: 768px) {
       .masonry-block.is-full-width .masonry-block__title {
         font-size: 32px; } }
-  .masonry-block.has-columns .tag-item, .masonry-block.is-full-width .tag-item {
-    border-color: #017c92;
-    color: #017c92; }
-    .masonry-block.has-columns .tag-item:hover, .masonry-block.has-columns .tag-item:active, .masonry-block.has-columns .tag-item:focus, .masonry-block.is-full-width .tag-item:hover, .masonry-block.is-full-width .tag-item:active, .masonry-block.is-full-width .tag-item:focus {
-      background-color: #017c92;
-      color: #fff; }
-  .masonry-block .tag-item {
-    border-color: #fff;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; }
-    .masonry-block .tag-item:hover, .masonry-block .tag-item:active, .masonry-block .tag-item:focus {
-      background-color: #fff;
-      color: #4d4f53; }
 
 .masonry-block__title {
   font-size: 20px;
