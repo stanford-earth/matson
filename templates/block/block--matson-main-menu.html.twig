@@ -52,6 +52,7 @@
 
       <div class="navbar__group js-nav-group-viewable js-nav-item-expandable">
         <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
+          <a name="main-menu" id="main-menu"></a>
           {# Label. If not displayed, we still provide it for screen readers. #}
           {% if not configuration.label_display %}
             {% set title_attributes = title_attributes.addClass('visually-hidden') %}
