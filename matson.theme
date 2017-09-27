@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Cache\CacheableMetadata;
+use Drupal\Component\Utility\HTML;
 
 /**
  * Prepares variables for the html.html.twig template.
@@ -19,6 +20,18 @@ function matson_preprocess_html(&$variables) {
  */
 function matson_preprocess_field(&$variables, $hook) {
 
+  $first_item = $variables['element'][0] ?? NULL;
+  $is_paragraph = $first_item['#paragraph'] ?? FALSE;
+  $has_items = isset($variables['items']) ? count($variables['items']) : FALSE;
+
+  // Add additional information to paragraph fields.
+  if ($is_paragraph && $has_items) {
+    foreach ($variables['items'] as &$pitem) {
+      $paragraph_type = $pitem['content']['#paragraph']->getType();
+      $ptype = Html::cleanCssIdentifier("ptype-" . $paragraph_type);
+      $pitem['attributes']['class'] = ["paragraph-item", $ptype];
+    }
+  }
 }
 
 /**
