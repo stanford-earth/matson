@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.editorial-sidebar {
+  @include container-offset-left-collapse;
+
+  &.simple-slat.is-narrow {
+    margin: 0;
+  }
+}

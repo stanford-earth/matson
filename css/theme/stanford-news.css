@@ -250,4 +250,26 @@ h1 {
     .node--type-stanford_news .highlight-card p {
       font-size: 13px; }
 
+.editorial-sidebar.simple-slat.is-narrow {
+  margin: 0 0 40px 0; }
+  .editorial-sidebar.simple-slat.is-narrow .simple-block {
+    background-color: #FBFBFB;
+    padding: 30px; }
+    .editorial-sidebar.simple-slat.is-narrow .simple-block::after {
+      clear: both;
+      content: "";
+      display: block; }
+    @media only screen and (min-width: 576px) {
+      .editorial-sidebar.simple-slat.is-narrow .simple-block {
+        margin: 0 20px 20px;
+        padding-left: 0; } }
+    @media only screen and (min-width: 1024px) {
+      .editorial-sidebar.simple-slat.is-narrow .simple-block {
+        margin-right: 110px;
+        margin-left: 110px; } }
+  .editorial-sidebar.simple-slat.is-narrow .simple-block__image-caption {
+    color: #9c9d9e; }
+  .editorial-sidebar.simple-slat.is-narrow .simple-block__description {
+    font-size: 20px; }
+
 /*# sourceMappingURL=stanford-news.css.map */

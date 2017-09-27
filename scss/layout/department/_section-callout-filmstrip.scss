@@ -3,7 +3,7 @@
 .section-callout-filmstrip {
 
   &.header-to-left {
-    @include container-offset-left;
+    @include container-offset-left-collapse;
 
     .filmstrip__header {
       @include grid-media($media-md) {

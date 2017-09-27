@@ -291,3 +291,31 @@ h1 {
     }
   }
 }
+
+.editorial-sidebar.simple-slat.is-narrow {
+  margin: 0 0 40px 0;
+
+  .simple-block {
+    @include grid-container;
+    background-color: color(dust);
+    padding: 30px;
+
+    @include grid-media($media-sm) {
+      @include margin(0 20px 20px 20px);
+      padding-left: 0;
+    }
+
+    @include grid-media($media-lg) {
+      @include margin(null 110px);
+    }
+  }
+
+  .simple-block__image-caption {
+    color: color(ash);
+  }
+
+  .simple-block__description {
+    font-size: 20px;
+  }
+}
+

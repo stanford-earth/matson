@@ -2,16 +2,39 @@
 
 @mixin container-offset-left {
   @include grid-media($media-md) {
-    padding-left: calc(((50% /12) * 0) + 260px);
+    padding-left: calc(((50% /12) * 0) + 280px);
+    padding-right: calc(((50% /12) * 0) + 50px);
   }
 
   @include grid-media($media-xl) {
-    padding-left: calc(50% - (750px - 300px));
+    padding-left: calc(50% - (750px - 320px));
+    padding-right: calc(50% - (750px - 60px));
   }
 }
 
+@mixin container-offset-left-margin {
+  @include grid-media($media-md) {
+    margin-left: calc(((50% /12) * 0) + 280px);
+    margin-right: calc(((50% /12) * 0) + 50px);
+  }
 
-@mixin container-margin-left {
+  @include grid-media($media-xl) {
+    margin-left: calc(50% - (750px - 320px));
+    padding-right: calc(50% - (750px - 60px));
+  }
+}
+
+@mixin container-offset-left-collapse {
+  @include grid-media($media-md) {
+    padding-left: calc(((50% /12) * 0) + 250px);
+  }
+
+  @include grid-media($media-xl) {
+    padding-left: calc(50% - (750px - 290px));
+  }
+}
+
+@mixin container-offset-combo {
   @include grid-media($media-md) {
     padding-left: calc(((50% /12) * 0) + 260px);
   }

@@ -1,5 +1,5 @@
 @charset "UTF-8";
 
 .link-banner {
-  @include container-offset-left;
+  @include container-offset-left-collapse;
 }

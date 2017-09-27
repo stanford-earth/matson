@@ -1,5 +1,49 @@
 @charset "UTF-8";
 
 .section-feature-blocks {
-  @include container-offset-left;
+  @include container-offset-left-collapse;
+
+  .feature-blocks__header {
+    .component-centered-container {
+      @include padding(null 0);
+    }
+  }
+
+  &.right-aligned {
+    .feature-blocks__header {
+      @include grid-media($media-xl) {
+        padding-left: 0;
+      }
+    }
+
+    .feature-blocks__container .feature-blocks {
+      @include grid-media($media-md) {
+        margin: 0;
+        width: 100%;
+      }
+
+      @include grid-media($media-md) {
+        @include grid-collapse;
+      }
+    }
+  }
+
+  &.left-aligned {
+    .feature-blocks__header {
+      @include grid-media($media-xl) {
+        padding-right: 0;
+      }
+    }
+
+    .feature-blocks__container .feature-blocks {
+      @include grid-media($media-md) {
+        margin: 0;
+        width: 100%;
+      }
+
+      @include grid-media($media-md) {
+        @include grid-collapse;
+      }
+    }
+  }
 }

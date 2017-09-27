@@ -9,3 +9,12 @@
     text-align: left;
   }
 }
+
+
+.field-s-dept-component  {
+  > div {
+    > .section-header {
+      @include container-offset-left;
+    }
+  }
+}

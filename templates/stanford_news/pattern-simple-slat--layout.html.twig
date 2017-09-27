@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Simple Slat pattern.
+ */
+#}
+
+{% set attributes = attributes.addClass(['simple-slat', 'component-centered-container', 'editorial-sidebar', variants.image_side, variants.width]) %}
+
+{% set vars = {
+'context': context,
+'image': image,
+'image_caption': image_caption,
+'link': link,
+'description': description,
+'tag': tag,
+'title': title,
+'more': more
+} %}
+
+<div{{ attributes }}>
+  {{ pattern('simple_block', vars) }}
+</div>
