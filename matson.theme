@@ -20,8 +20,8 @@ function matson_preprocess_html(&$variables) {
  */
 function matson_preprocess_field(&$variables, $hook) {
 
-  $first_item = $variables['element'][0] ?? NULL;
-  $is_paragraph = $first_item['#paragraph'] ?? FALSE;
+  $first_item = isset($variables['element'][0]) ? $variables['element'][0] : NULL;
+  $is_paragraph = isset($first_item['#paragraph']) ? $first_item['#paragraph'] : FALSE;
   $has_items = isset($variables['items']) ? count($variables['items']) : FALSE;
 
   // Add additional information to paragraph fields.
