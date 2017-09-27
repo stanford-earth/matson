@@ -2,4 +2,5 @@
 
 .section-double-filmstrip {
   @include container-offset-left-collapse;
+  @include vertical-spacing-margin;
 }

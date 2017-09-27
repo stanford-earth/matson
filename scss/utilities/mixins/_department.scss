@@ -20,7 +20,7 @@
 
   @include grid-media($media-xl) {
     margin-left: calc(50% - (750px - 320px));
-    padding-right: calc(50% - (750px - 60px));
+    margin-right: calc(50% - (750px - 60px));
   }
 }
 
@@ -46,5 +46,37 @@
 
   @include grid-media($media-xl) {
     margin-left: calc(50% - (750px - 280px));
+  }
+}
+
+@mixin vertical-spacing {
+  padding-bottom: 24px;
+
+  @include grid-media($media-lg) {
+    padding-bottom: 44px;
+  }
+}
+
+@mixin vertical-spacing-lg {
+  padding-bottom: 40px;
+
+  @include grid-media($media-lg) {
+    padding-bottom: 60px;
+  }
+}
+
+@mixin vertical-spacing-margin {
+  margin-bottom: 24px;
+
+  @include grid-media($media-lg) {
+    margin-bottom: 44px;
+  }
+}
+
+@mixin vertical-spacing-margin-lg {
+  margin-bottom: 40px;
+
+  @include grid-media($media-lg) {
+    margin-bottom: 60px;
   }
 }

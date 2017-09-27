@@ -2,4 +2,6 @@
 
 .hero-banner.has-video.component-centered-container-margins {
   @include container-offset-left-margin;
+  @include vertical-spacing-lg;
+  margin-bottom: 0;
 }

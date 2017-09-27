@@ -1,9 +1,28 @@
 @charset "UTF-8";
 
 .editorial-sidebar {
-  @include container-offset-left-collapse;
+  @include container-offset-left;
 
   &.simple-slat.is-narrow {
     margin: 0;
+    @include vertical-spacing-margin-lg;
+  }
+
+  .simple-block {
+    @include grid-container;
+    background-color: color(dust);
+    padding: 30px;
+
+    @include grid-media($media-sm) {
+      padding-left: 0;
+    }
+  }
+
+  .simple-block__image-caption {
+    color: color(ash);
+  }
+
+  .simple-block__description {
+    font-size: 20px;
   }
 }

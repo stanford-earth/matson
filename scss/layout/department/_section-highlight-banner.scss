@@ -2,6 +2,7 @@
 
 .section-highlight-banner {
   @include container-offset-left-collapse;
+  @include vertical-spacing-margin-lg;
 
   @include grid-media($media-md) {
     display: inherit;

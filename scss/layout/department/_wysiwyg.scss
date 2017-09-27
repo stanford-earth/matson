@@ -1,0 +1,105 @@
+
+// Content styles
+.field-p-wysiwyg {
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    @include dash-left-offset;
+  }
+
+  p + h2 {
+    margin-top: 50px;
+  }
+
+  // Floated images
+  figure {
+    display: table;
+
+    &.align-right {
+      img {
+        margin-left: 20px;
+      }
+    }
+
+    &.align-left {
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    color: color(ash);
+    text-align: right;
+  }
+
+  img {
+    margin-bottom: 20px;
+
+    &.align-right {
+      margin-left: 20px;
+    }
+
+    &.align-left {
+      margin-right: 20px;
+    }
+  }
+
+  .pullquote-large {
+    font-size: 1.776889em;
+  }
+}
+
+.field-p-responsive-image-cred {
+  color: color(ash);
+  text-align: right;
+}
+
+// Layout spacing
+.layout--basic {
+  // Responsive Image
+  .field--responsive-image,
+  .field--responsive-video {
+    position: relative;
+
+    &::after {
+      bottom: 60px;
+    }
+
+    img {
+      width: 100%;
+      max-width: none;
+    }
+  }
+}
+
+// Body field.
+.lead-text {
+  font-size: 20px;
+  padding-top: 20px;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  // Drop Cap
+  > p::first-of-type:first-line {
+    position: relative;
+    font-size: 1em;
+    letter-spacing: normal;
+  }
+
+  > p::first-child:first-letter {
+    letter-spacing: 0;
+    font-size: 3em;
+    font-weight: bold;
+    float: left;
+    margin: 0.13em 0.2em 0 0;
+    line-height: 0.7;
+  }
+}
+
