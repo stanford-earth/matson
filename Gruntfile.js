@@ -59,6 +59,9 @@ module.exports = function(grunt) {
     imagemin: {
       // This will optimize all of our images for the web.
       dynamic: {
+        options: {
+            optimizationLevel: 7,
+        },
         files: [{
           expand: true,
           cwd: 'img/source/',
@@ -112,6 +115,7 @@ module.exports = function(grunt) {
 
           // LAYOUT.
           'css/layout/stanford-complex-page.css':           'scss/layout/stanford-complex-page.scss',
+          'css/layout/research-area.css':                   'scss/layout/research-area.scss',
           'css/layout/stanford-department.css':             'scss/layout/stanford-department.scss',
           'css/layout/home.css':                            'scss/layout/home.scss',
           'css/layout/layout.css':                          'scss/layout/layout.scss',
