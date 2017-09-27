@@ -3039,57 +3039,10 @@ body {
     #footer__container {
       height: 457px; } }
 
-@media only screen and (max-width: 575px) {
-  .block--local-tasks {
-    padding: 1em calc(((50% /12) * 0) + 15px); }
-    .block--local-tasks::after {
-      clear: both;
-      content: "";
-      display: block; } }
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .block--local-tasks {
-    padding: 1em calc(((50% /12) * 0) + 15px); }
-    .block--local-tasks::after {
-      clear: both;
-      content: "";
-      display: block; } }
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .block--local-tasks {
-    padding: 1em calc(((50% /12) * 0) + 30px); }
-    .block--local-tasks::after {
-      clear: both;
-      content: "";
-      display: block; } }
-
-@media only screen and (min-width: 1024px) and (max-width: 1499px) {
-  .block--local-tasks {
-    padding: 1em calc(((50% /12) * 0) + 30px); }
-    .block--local-tasks::after {
-      clear: both;
-      content: "";
-      display: block; } }
-
-@media only screen and (min-width: 1500px) {
-  .block--local-tasks {
-    padding: 1em calc(50% - (750px - 60px)); }
-    .block--local-tasks::after {
-      clear: both;
-      content: "";
-      display: block; } }
-
-@media only print {
-  .block--local-tasks {
-    padding: 1em calc(((50% /12) * 0) + 0.25in); }
-    .block--local-tasks::after {
-      clear: both;
-      content: "";
-      display: block; } }
-
 ul.tabs {
   background-color: #FBFBFB;
-  border-bottom: 1px solid #dad7cb; }
+  border-bottom: 1px solid #dad7cb;
+  margin: 0 10px; }
 
 .tabs__tab {
   display: inline-block;

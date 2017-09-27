@@ -24,6 +24,7 @@ libraries-override:
         css/theme/theme.css: false
         css/theme/print.css: false
 regions:
+  admin_tabs: 'Administration Tabs'
   page_top: 'Page top'
   header: Header
   highlighted: Highlighted
