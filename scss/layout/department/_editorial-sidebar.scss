@@ -6,7 +6,7 @@
   }
 
   .simple-slat.is-narrow {
-    margin: 0;
+    @include margin(0 0 null 0);
     @include vertical-spacing-margin-lg;
   }
 

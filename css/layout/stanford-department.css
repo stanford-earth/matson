@@ -27,7 +27,9 @@
     padding-right: calc(50% - (750px - 60px)); } }
 
 .ptype-stanford-slat .simple-slat.is-narrow {
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
   margin-bottom: 40px; }
   @media only screen and (min-width: 1024px) {
     .ptype-stanford-slat .simple-slat.is-narrow {
@@ -247,6 +249,14 @@
     @media only screen and (min-width: 1500px) {
       .postcard.has-image-right .postcard__content-inner {
         width: 32%; } }
+
+@media only screen and (min-width: 768px) {
+  .section-header {
+    text-align: center; } }
+
+@media only screen and (min-width: 1024px) {
+  .section-header {
+    text-align: left; } }
 
 @media only screen and (min-width: 768px) {
   .ptype-stanford-section-header > .section-header {
