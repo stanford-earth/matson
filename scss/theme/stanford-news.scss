@@ -310,12 +310,25 @@ h1 {
     }
   }
 
+  .simple-block__image {
+    margin-bottom: 20px;
+
+    @include grid-media($media-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  .simple-block__title {
+    font-size: 32px;
+  }
+
   .simple-block__image-caption {
     color: color(ash);
   }
 
   .simple-block__description {
     font-size: 20px;
+    color: color(text-active);
   }
 }
 

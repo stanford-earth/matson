@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.ptype-stanford-video {
+  .hero-banner {
+    @include container-offset-left-margin;
+    @include vertical-spacing-lg;
+    margin-bottom: 0;
+  }
+}

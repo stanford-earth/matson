@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
-.editorial-sidebar {
-  @include container-offset-left;
+.ptype-stanford-slat {
+  .simple-slat {
+    @include container-offset-left;
+  }
 
-  &.simple-slat.is-narrow {
+  .simple-slat.is-narrow {
     margin: 0;
     @include vertical-spacing-margin-lg;
   }
@@ -18,11 +20,24 @@
     }
   }
 
+  .simple-block__image {
+    margin-bottom: 30px;
+
+    @include grid-media($media-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  .simple-block__title {
+    font-size: 32px;
+  }
+
   .simple-block__image-caption {
     color: color(ash);
   }
 
   .simple-block__description {
     font-size: 20px;
+    color: color(text-active);
   }
 }
