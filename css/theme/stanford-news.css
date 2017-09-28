@@ -12,20 +12,6 @@
     #hero-banner:first-child:not(.component-centered-container-margins) {
       margin-top: -126px; } }
 
-.block--local-tasks {
-  position: absolute;
-  left: 0;
-  z-index: 10;
-  padding: 1em 0 !important; }
-  @media only screen and (max-width: 767px) {
-    .block--local-tasks {
-      display: none; } }
-  .block--local-tasks ul.tabs {
-    background: #FFF;
-    width: 100%; }
-    .block--local-tasks ul.tabs li {
-      display: block; }
-
 .field-s-news-top-media {
   color: #9c9d9e; }
 
