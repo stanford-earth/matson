@@ -10,9 +10,15 @@
 // Pop out the tabs from the dom flow so they hover over.
 @include hero-banner-node;
 
-// Banner caption
+// Text and style
+.node--type-stanford_news {
+  color: color(text-active);
+}
+
+// Top media and Banner caption
 .field-s-news-top-media {
   color: color(ash);
+  margin-top: 50px;
 }
 
 // Title field.
@@ -169,11 +175,6 @@ h1 {
   }
 }
 
-// Top media
-.field-s-news-top-media {
-  margin-top: 50px;
-}
-
 // Content styles
 .field-p-wysiwyg {
   > :last-child {
@@ -248,17 +249,9 @@ h1 {
   }
 }
 
-.field-p-responsive-image-cred {
-  color: color(ash);
-  text-align: right;
-}
-
 // Layout spacing
 .layout--basic {
-  .field-p-wysiwyg,
-  .field-p-responsive-image,
-  .field-p-responsive-image-cred,
-  .field-p-video-url {
+  .field-p-wysiwyg {
     @include grid-media($media-sm) {
       @include padding(0 80px 20px 80px);
     }
@@ -267,53 +260,125 @@ h1 {
       @include padding(null 110px);
     }
   }
+}
 
-  // Responsive Image
-  .field--responsive-image .figure-container,
-  .field--responsive-video,
-  figure.align-center .figure-container {
-    position: relative;
-    margin-bottom: 20px;
+.field-p-responsive-image,
+.field-p-responsive-image-cred,
+.field-p-video-url {
+  @include grid-media($media-sm) {
+    @include padding(0 60px 20px 60px);
+  }
 
-    &::after {
-      @include fullpage-stripe;
-    }
-
-    img {
-      width: 100%;
-      max-width: none;
-      margin-bottom: 0;
-      display: block;
-    }
+  @include grid-media($media-lg) {
+    @include padding(null 60px);
   }
 }
 
-// Text and pattern styles
-.node--type-stanford_news {
-  color: color(text-active);
+// Responsive Image
+.field--responsive-image picture,
+.field--responsive-video,
+figure.align-center .figure-container {
+  position: relative;
+  margin-bottom: 20px;
+  display: block;
 
-  .simple-columns {
-    color: color(text-active);
+  &::after {
+    @include fullpage-stripe;
   }
 
-  .highlight-card {
+  img {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 0;
+    display: block;
+  }
+}
+
+.field-p-responsive-image-cred {
+  color: color(ash);
+  text-align: right;
+}
+
+
+// Simple columns
+.simple-columns {
+  color: color(text-active);
+}
+
+// Highlight card
+.highlight-card {
+  color: color(text-active);
+
+  h4 {
+    font-size: 26px;
+  }
+
+  h5 {
+    text-transform: uppercase;
+  }
+
+  p {
+    color: color(ash);
+  }
+
+  h5,
+  p {
+    font-size: 13px;
+  }
+}
+
+// Editorial Slat
+.editorial-sidebar.simple-slat.is-narrow {
+  margin: 0;
+
+  .simple-block {
+    @include grid-container;
+    background-color: color(dust);
+    padding: 30px;
+
+    @include grid-media($media-sm) {
+      @include margin(0 20px 20px 20px);
+      padding-left: 0;
+    }
+
+    @include grid-media($media-lg) {
+      @include margin(null 110px);
+    }
+  }
+
+  .simple-block__image {
+    margin-bottom: 20px;
+
+    @include grid-media($media-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  .simple-block__title {
+    font-size: 32px;
+  }
+
+  .simple-block__image-caption {
+    color: color(ash);
+  }
+
+  .simple-block__description {
+    font-size: 20px;
     color: color(text-active);
+  }
+}
 
-    h4 {
-      font-size: 26px;
-    }
+.ptype-stanford-video,
+.field-s-news-top-media {
+  #hero-banner:first-child:not(.component-centered-container-margins) {
+    margin-top: 0
+  }
 
-    h5 {
-      text-transform: uppercase;
-    }
+  .hero-banner {
+    @include responsive-container($default-container);
+  }
 
-    p {
-      color: color(ash);
-    }
-
-    h5,
-    p {
-      font-size: 13px;
-    }
+  .hero-banner__container {
+    border: none;
   }
 }

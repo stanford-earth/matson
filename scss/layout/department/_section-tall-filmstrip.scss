@@ -34,6 +34,12 @@
     }
   }
 
+  .filmstrip__header {
+    .component-centered-container {
+      @include padding(null 0);
+    }
+  }
+
   .filmstrip__container {
     @include grid-media($media-md) {
       max-width: 240px;

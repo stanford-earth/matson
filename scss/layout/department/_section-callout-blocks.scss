@@ -3,6 +3,12 @@
 .section-callout-blocks {
   @include container-offset-left;
 
+  .section-header {
+    @include grid-media($media-md) {
+      margin-left: 30px;
+    }
+  }
+
   .callout-blocks {
     @include grid-media($media-md-only) {
       @include grid-collapse;

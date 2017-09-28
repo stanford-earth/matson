@@ -2,10 +2,7 @@
 
 .section-quote-banner {
   @include container-offset-left;
-
-  @include grid-media($media-lg) {
-    padding-right: calc(50% - (750px - 60px));
-  }
+  @include vertical-spacing-margin-lg;
 
   .quote-card {
     @include grid-media($media-md) {

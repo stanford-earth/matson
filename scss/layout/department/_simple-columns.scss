@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.simple-columns {
+  @include container-offset-left-margin;
+  @include vertical-spacing-margin;
+  
+  @include grid-media($media-lg) {
+    @include padding(null 100px);
+  }
+}

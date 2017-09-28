@@ -26,8 +26,12 @@
     .block--local-tasks ul.tabs li {
       display: block; }
 
+.node--type-stanford_news {
+  color: #4d4f53; }
+
 .field-s-news-top-media {
-  color: #9c9d9e; }
+  color: #9c9d9e;
+  margin-top: 50px; }
 
 h1 {
   font-size: 42px; }
@@ -150,9 +154,6 @@ h1 {
     margin: 0.13em 0.2em 0 0;
     line-height: 0.7; }
 
-.field-s-news-top-media {
-  margin-top: 50px; }
-
 .field-p-wysiwyg > :last-child {
   margin-bottom: 0; }
 
@@ -206,33 +207,37 @@ h1 {
   .field-p-wysiwyg img.align-left {
     margin-right: 20px; }
 
-.field-p-responsive-image-cred {
-  color: #9c9d9e;
-  text-align: right; }
-
 @media only screen and (min-width: 576px) {
-  .layout--basic .field-p-wysiwyg,
-  .layout--basic .field-p-responsive-image,
-  .layout--basic .field-p-responsive-image-cred,
-  .layout--basic .field-p-video-url {
+  .layout--basic .field-p-wysiwyg {
     padding: 0 80px 20px; } }
 
 @media only screen and (min-width: 1024px) {
-  .layout--basic .field-p-wysiwyg,
-  .layout--basic .field-p-responsive-image,
-  .layout--basic .field-p-responsive-image-cred,
-  .layout--basic .field-p-video-url {
+  .layout--basic .field-p-wysiwyg {
     padding-right: 110px;
     padding-left: 110px; } }
 
-.layout--basic .field--responsive-image .figure-container,
-.layout--basic .field--responsive-video,
-.layout--basic figure.align-center .figure-container {
+@media only screen and (min-width: 576px) {
+  .field-p-responsive-image,
+  .field-p-responsive-image-cred,
+  .field-p-video-url {
+    padding: 0 60px 20px; } }
+
+@media only screen and (min-width: 1024px) {
+  .field-p-responsive-image,
+  .field-p-responsive-image-cred,
+  .field-p-video-url {
+    padding-right: 60px;
+    padding-left: 60px; } }
+
+.field--responsive-image picture,
+.field--responsive-video,
+figure.align-center .figure-container {
   position: relative;
-  margin-bottom: 20px; }
-  .layout--basic .field--responsive-image .figure-container::after,
-  .layout--basic .field--responsive-video::after,
-  .layout--basic figure.align-center .figure-container::after {
+  margin-bottom: 20px;
+  display: block; }
+  .field--responsive-image picture::after,
+  .field--responsive-video::after,
+  figure.align-center .figure-container::after {
     content: '';
     background-color: #FBFBFB;
     position: absolute;
@@ -244,28 +249,129 @@ h1 {
     margin-left: -50vw;
     margin-right: -50vw;
     z-index: -1; }
-  .layout--basic .field--responsive-image .figure-container img,
-  .layout--basic .field--responsive-video img,
-  .layout--basic figure.align-center .figure-container img {
+  .field--responsive-image picture img,
+  .field--responsive-video img,
+  figure.align-center .figure-container img {
     width: 100%;
     max-width: none;
     margin-bottom: 0;
     display: block; }
 
-.node--type-stanford_news {
+.field-p-responsive-image-cred {
+  color: #9c9d9e;
+  text-align: right; }
+
+.simple-columns {
   color: #4d4f53; }
-  .node--type-stanford_news .simple-columns {
+
+.highlight-card {
+  color: #4d4f53; }
+  .highlight-card h4 {
+    font-size: 26px; }
+  .highlight-card h5 {
+    text-transform: uppercase; }
+  .highlight-card p {
+    color: #9c9d9e; }
+  .highlight-card h5,
+  .highlight-card p {
+    font-size: 13px; }
+
+.editorial-sidebar.simple-slat.is-narrow {
+  margin: 0; }
+  .editorial-sidebar.simple-slat.is-narrow .simple-block {
+    background-color: #FBFBFB;
+    padding: 30px; }
+    .editorial-sidebar.simple-slat.is-narrow .simple-block::after {
+      clear: both;
+      content: "";
+      display: block; }
+    @media only screen and (min-width: 576px) {
+      .editorial-sidebar.simple-slat.is-narrow .simple-block {
+        margin: 0 20px 20px;
+        padding-left: 0; } }
+    @media only screen and (min-width: 1024px) {
+      .editorial-sidebar.simple-slat.is-narrow .simple-block {
+        margin-right: 110px;
+        margin-left: 110px; } }
+  .editorial-sidebar.simple-slat.is-narrow .simple-block__image {
+    margin-bottom: 20px; }
+    @media only screen and (min-width: 768px) {
+      .editorial-sidebar.simple-slat.is-narrow .simple-block__image {
+        margin-bottom: 0; } }
+  .editorial-sidebar.simple-slat.is-narrow .simple-block__title {
+    font-size: 32px; }
+  .editorial-sidebar.simple-slat.is-narrow .simple-block__image-caption {
+    color: #9c9d9e; }
+  .editorial-sidebar.simple-slat.is-narrow .simple-block__description {
+    font-size: 20px;
     color: #4d4f53; }
-  .node--type-stanford_news .highlight-card {
-    color: #4d4f53; }
-    .node--type-stanford_news .highlight-card h4 {
-      font-size: 26px; }
-    .node--type-stanford_news .highlight-card h5 {
-      text-transform: uppercase; }
-    .node--type-stanford_news .highlight-card p {
-      color: #9c9d9e; }
-    .node--type-stanford_news .highlight-card h5,
-    .node--type-stanford_news .highlight-card p {
-      font-size: 13px; }
+
+.ptype-stanford-video #hero-banner:first-child:not(.component-centered-container-margins),
+.field-s-news-top-media #hero-banner:first-child:not(.component-centered-container-margins) {
+  margin-top: 0; }
+
+@media only screen and (max-width: 575px) {
+  .ptype-stanford-video .hero-banner,
+  .field-s-news-top-media .hero-banner {
+    padding: 1em calc(((50% /12) * 0) + 15px); }
+    .ptype-stanford-video .hero-banner::after,
+    .field-s-news-top-media .hero-banner::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .ptype-stanford-video .hero-banner,
+  .field-s-news-top-media .hero-banner {
+    padding: 1em calc(((50% /12) * 0) + 15px); }
+    .ptype-stanford-video .hero-banner::after,
+    .field-s-news-top-media .hero-banner::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .ptype-stanford-video .hero-banner,
+  .field-s-news-top-media .hero-banner {
+    padding: 1em calc(((50% /12) * 0) + 30px); }
+    .ptype-stanford-video .hero-banner::after,
+    .field-s-news-top-media .hero-banner::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1499px) {
+  .ptype-stanford-video .hero-banner,
+  .field-s-news-top-media .hero-banner {
+    padding: 1em calc(((50% /12) * 0) + 30px); }
+    .ptype-stanford-video .hero-banner::after,
+    .field-s-news-top-media .hero-banner::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1500px) {
+  .ptype-stanford-video .hero-banner,
+  .field-s-news-top-media .hero-banner {
+    padding: 1em calc(50% - (750px - 60px)); }
+    .ptype-stanford-video .hero-banner::after,
+    .field-s-news-top-media .hero-banner::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only print {
+  .ptype-stanford-video .hero-banner,
+  .field-s-news-top-media .hero-banner {
+    padding: 1em calc(((50% /12) * 0) + 0.25in); }
+    .ptype-stanford-video .hero-banner::after,
+    .field-s-news-top-media .hero-banner::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+.ptype-stanford-video .hero-banner__container,
+.field-s-news-top-media .hero-banner__container {
+  border: none; }
 
 /*# sourceMappingURL=stanford-news.css.map */
