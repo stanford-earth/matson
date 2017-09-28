@@ -7,10 +7,10 @@
   z-index: 2; }
 
 #hero-banner:first-child:not(.component-centered-container-margins) {
-  margin-top: -121px; }
+  margin-top: -170px; }
   @media only screen and (min-width: 860px) {
     #hero-banner:first-child:not(.component-centered-container-margins) {
-      margin-top: -126px; } }
+      margin-top: -176px; } }
 
 .field-s-news-top-media {
   color: #9c9d9e; }
