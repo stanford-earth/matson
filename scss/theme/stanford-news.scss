@@ -34,6 +34,10 @@ h1 {
   font-size: 42px;
 }
 
+a {
+  text-decoration: underline;
+}
+
 // Subtitle field.
 .block--field-s-news-sub-title {
   margin-bottom: 20px;
@@ -60,10 +64,6 @@ h1 {
 .block--field-s-news-date {
   @include dash-under;
   position: relative;
-
-  @include grid-media($media-md) {
-    float: left;
-  }
 
   @include grid-media($media-lg) {
     margin-left: 110px;
@@ -106,10 +106,14 @@ h1 {
   }
 }
 
+.block--field-s-news-category {
+  @extend %hide-element;
+}
+
 // Earth matters field.
 .block--field-earth-matters-topic {
-  @include grid-media($media-md) {
-    float: right;
+  @include grid-media($media-lg) {
+    padding-left: 110px;
   }
 
   .field-label {
@@ -124,10 +128,11 @@ h1 {
   }
 
   .field--field-earth-matters-topic {
-    display: inline;
+    display: inline-block;
+    margin-right: 5px;
 
     a {
-      @include tag($tag-font-size: 14px, $tag-padding: 10px);
+      text-decoration: underline;
       display: inline-block;
       white-space: nowrap;
       margin-bottom: .5rem;

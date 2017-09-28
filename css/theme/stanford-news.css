@@ -1,3 +1,25 @@
+.block--field-s-news-category {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+.block--field-s-news-category {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
 .block--field-s-news-date::after, .field-p-wysiwyg h2::after {
   position: absolute;
   height: 2px;
@@ -22,6 +44,9 @@
 h1 {
   font-size: 42px; }
 
+a {
+  text-decoration: underline; }
+
 .block--field-s-news-sub-title {
   margin-bottom: 20px; }
   @media only screen and (min-width: 576px) {
@@ -44,9 +69,6 @@ h1 {
     bottom: -.5em;
     left: 50%;
     transform: translateX(-50%); }
-  @media only screen and (min-width: 768px) {
-    .block--field-s-news-date {
-      float: left; } }
   @media only screen and (min-width: 1024px) {
     .block--field-s-news-date {
       margin-left: 110px; } }
@@ -73,9 +95,9 @@ h1 {
     display: inline;
     margin-top: -3px; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .block--field-earth-matters-topic {
-    float: right; } }
+    padding-left: 110px; } }
 
 .block--field-earth-matters-topic .field-label {
   color: #017c92;
@@ -86,27 +108,14 @@ h1 {
     content: ": "; }
 
 .block--field-earth-matters-topic .field--field-earth-matters-topic {
-  display: inline; }
+  display: inline-block;
+  margin-right: 5px; }
   .block--field-earth-matters-topic .field--field-earth-matters-topic a {
-    border: 1px solid #017c92;
-    padding: 10px;
-    color: #017c92;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: .2px;
-    line-height: 1;
-    margin: 0;
-    text-transform: uppercase;
-    margin-right: .5em;
-    margin-bottom: .5em;
+    text-decoration: underline;
     display: inline-block;
     white-space: nowrap;
     margin-bottom: .5rem;
     font-weight: normal; }
-    .block--field-earth-matters-topic .field--field-earth-matters-topic a:hover, .block--field-earth-matters-topic .field--field-earth-matters-topic a:active, .block--field-earth-matters-topic .field--field-earth-matters-topic a:focus {
-      background-color: #017c92;
-      text-decoration: none;
-      color: white; }
     @media only screen and (min-width: 768px) {
       .block--field-earth-matters-topic .field--field-earth-matters-topic a {
         margin-bottom: 0; } }
