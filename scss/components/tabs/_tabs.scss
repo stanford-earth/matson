@@ -1,12 +1,9 @@
 @charset "UTF-8";
 
-.block--local-tasks {
-  @include responsive-container($default-container);
-}
-
 ul.tabs {
   background-color: color(dust);
   border-bottom: 1px solid color(fog);
+  margin: 0 10px;
 }
 
 .tabs__tab {
