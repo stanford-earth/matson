@@ -3,8 +3,14 @@
 
   <!-- ______________________ HEADER _______________________ -->
 
-  {% if page.highlighted|render %}
+  {% if page.highlighted|render is not empty %}
     <div id="highlighted">{{ page.highlighted }}</div>
+  {% endif %}
+
+  {% if page.admin_tabs|render is not empty %}
+    <div class="admin-tabs">
+      {{ page.admin_tabs }}
+    </div>
   {% endif %}
 
   {% if page.header %}
@@ -22,25 +28,13 @@
 
   <!-- ______________________ MAIN _______________________ -->
 
-  {{ page.breadcrumb }}
-
-  {{ title_prefix }}
-
   {% if title %}
+    {{ title_prefix }}
     <h1 class="title">{{ title }}</h1>
+    {{ title_suffix }}
   {% endif %}
-
-  {{ title_suffix }}
 
   {{ page.help }}
-
-  {% if tabs %}
-    <div class="tabs">{{ tabs }}</div>
-  {% endif %}
-
-  {% if action_links %}
-    <ul class="action-links">{{ action_links }}</ul>
-  {% endif %}
 
   <div class="main-container">
     {{ page.content }}

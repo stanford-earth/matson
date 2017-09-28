@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 .section-header {
-  // @include grid-media($media-md) {
-  //   text-align: center;
-  // }
+  @include grid-media($media-md) {
+    text-align: center;
+  }
 
-  // @include grid-media($media-lg) {
-  //   text-align: left;
-  // }
+  @include grid-media($media-lg) {
+    text-align: left;
+  }
 }
 
 .ptype-stanford-section-header {

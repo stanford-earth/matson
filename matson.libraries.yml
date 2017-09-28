@@ -128,6 +128,12 @@ stanford_news:
     theme:
       css/theme/stanford-news.css: {}
 
+research_area:
+  version: VERSION
+  css:
+    layout:
+      css/layout/research-area.css: {}
+
 home:
   version: VERSION
   css:

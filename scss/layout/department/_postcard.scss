@@ -2,7 +2,7 @@
 
 .postcard {
   @include vertical-spacing-margin-lg;
-  
+
   .postcard__content-inner {
     @include grid-media($media-md) {
       width: 70%;

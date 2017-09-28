@@ -3,7 +3,7 @@
 .section-feature-blocks {
   @include container-offset-left-collapse;
   @include vertical-spacing-margin;
-  
+
   .feature-blocks__header {
     .component-centered-container {
       @include padding(null 0);

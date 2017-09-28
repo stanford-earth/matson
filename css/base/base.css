@@ -910,7 +910,7 @@ i {
 blockquote,
 q {
   margin: 0 1.776889em;
-  quotes: "" ""; }
+  quotes: " "; }
   blockquote::before, blockquote::after,
   q::before,
   q::after {
