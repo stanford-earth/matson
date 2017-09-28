@@ -172,13 +172,13 @@ a {
   }
 
   // Drop Cap
-  > p:first-of-type:first-line {
+  > p:first-of-type::first-line {
     position: relative;
     font-size: 1em;
     letter-spacing: normal;
   }
 
-  > p:first-child:first-letter {
+  > p:first-child::first-letter {
     letter-spacing: 0;
     font-size: 3em;
     font-weight: bold;
@@ -199,10 +199,12 @@ a {
     margin-bottom: 20px;
   }
 
-  blockquote {
-    // p {
-    //   font-size: 20px;
-    // }
+  p {
+    margin-bottom: 30px;
+  }
+
+  p + h2 {
+    margin-top: 50px;
   }
 
   blockquote + h1,
@@ -214,14 +216,6 @@ a {
     margin-top: modular-scale(0);
   }
 
-  p + h2 {
-    margin-top: 50px;
-  }
-
-  p {
-    margin-bottom: 30px;
-  }
-
   // Floated images
   figure {
     display: table;
@@ -229,16 +223,10 @@ a {
 
     &.align-right {
       margin-left: 30px;
-      img {
-        
-      }
     }
 
     &.align-left {
       margin-right: 30px;
-      img {
-        
-      }
     }
   }
 
@@ -312,7 +300,6 @@ figure.align-center .figure-container {
   text-align: right;
 }
 
-
 // Simple columns
 .simple-columns {
   color: color(text-active);
@@ -384,7 +371,7 @@ figure.align-center .figure-container {
 .ptype-stanford-video,
 .field-s-news-top-media {
   #hero-banner:first-child:not(.component-centered-container-margins) {
-    margin-top: 0
+    margin-top: 0;
   }
 
   .hero-banner {
@@ -392,6 +379,6 @@ figure.align-center .figure-container {
   }
 
   .hero-banner__container {
-    border: none;
+    border: 0;
   }
 }
