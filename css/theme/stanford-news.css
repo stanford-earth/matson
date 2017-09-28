@@ -138,11 +138,11 @@ h1 {
       padding-left: 110px; } }
   .field--body > :last-child {
     margin-bottom: 0; }
-  .field--body > p::first-of-type:first-line {
+  .field--body > p:first-of-type:first-line {
     position: relative;
     font-size: 1em;
     letter-spacing: normal; }
-  .field--body > p::first-child:first-letter {
+  .field--body > p:first-child:first-letter {
     letter-spacing: 0;
     font-size: 3em;
     font-weight: bold;
@@ -158,7 +158,8 @@ h1 {
 
 .field-p-wysiwyg h2 {
   position: relative;
-  padding-left: .9em; }
+  padding-left: .9em;
+  margin-bottom: 20px; }
   .field-p-wysiwyg h2::after {
     position: absolute;
     top: 50%;
@@ -170,15 +171,27 @@ h1 {
     background-color: #8c1515;
     left: 0; }
 
+.field-p-wysiwyg blockquote + h1,
+.field-p-wysiwyg blockquote + h2,
+.field-p-wysiwyg blockquote + h3,
+.field-p-wysiwyg blockquote + h4,
+.field-p-wysiwyg blockquote + h5,
+.field-p-wysiwyg blockquote + h6 {
+  margin-top: 1em; }
+
 .field-p-wysiwyg p + h2 {
   margin-top: 50px; }
 
+.field-p-wysiwyg p {
+  margin-bottom: 30px; }
+
 .field-p-wysiwyg figure {
-  display: table; }
-  .field-p-wysiwyg figure.align-right img {
-    margin-left: 20px; }
-  .field-p-wysiwyg figure.align-left img {
-    margin-right: 20px; }
+  display: table;
+  margin-bottom: 30px; }
+  .field-p-wysiwyg figure.align-right {
+    margin-left: 30px; }
+  .field-p-wysiwyg figure.align-left {
+    margin-right: 30px; }
 
 .field-p-wysiwyg figcaption {
   display: table-caption;
@@ -212,11 +225,14 @@ h1 {
     padding-right: 110px;
     padding-left: 110px; } }
 
-.layout--basic .field--responsive-image,
-.layout--basic .field--responsive-video {
-  position: relative; }
-  .layout--basic .field--responsive-image::after,
-  .layout--basic .field--responsive-video::after {
+.layout--basic .field--responsive-image .figure-container,
+.layout--basic .field--responsive-video,
+.layout--basic figure.align-center .figure-container {
+  position: relative;
+  margin-bottom: 20px; }
+  .layout--basic .field--responsive-image .figure-container::after,
+  .layout--basic .field--responsive-video::after,
+  .layout--basic figure.align-center .figure-container::after {
     content: '';
     background-color: #FBFBFB;
     position: absolute;
@@ -227,12 +243,14 @@ h1 {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    z-index: -1;
-    bottom: 60px; }
-  .layout--basic .field--responsive-image img,
-  .layout--basic .field--responsive-video img {
+    z-index: -1; }
+  .layout--basic .field--responsive-image .figure-container img,
+  .layout--basic .field--responsive-video img,
+  .layout--basic figure.align-center .figure-container img {
     width: 100%;
-    max-width: none; }
+    max-width: none;
+    margin-bottom: 0;
+    display: block; }
 
 .node--type-stanford_news {
   color: #4d4f53; }
