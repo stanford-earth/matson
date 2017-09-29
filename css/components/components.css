@@ -1609,7 +1609,8 @@
 
 .highlight-card__title {
   font-size: 1.625em;
-  letter-spacing: 0.3px; }
+  letter-spacing: 0.3px;
+  color: #4d4f53; }
 
 .highlight-card__arrow {
   height: 25px; }
