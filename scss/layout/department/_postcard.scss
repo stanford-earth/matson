@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 .postcard {
+  @include vertical-spacing-margin-lg;
+
   .postcard__content-inner {
     @include grid-media($media-md) {
       width: 70%;
@@ -8,7 +10,7 @@
   }
 
   &.has-image-left {
-    @include container-margin-left;
+    @include container-offset-combo;
     overflow: visible;
 
     .postcard__image {
@@ -39,7 +41,7 @@
   }
 
   &.has-image-right {
-    @include container-margin-left;
+    @include container-offset-combo;
     overflow: visible;
 
     &:after {

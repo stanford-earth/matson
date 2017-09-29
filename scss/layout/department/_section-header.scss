@@ -9,3 +9,9 @@
     text-align: left;
   }
 }
+
+.ptype-stanford-section-header {
+  > .section-header {
+    @include container-offset-left;
+  }
+}

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.ptype-stanford-slat {
+  .simple-slat {
+    @include container-offset-left;
+  }
+
+  .simple-slat.is-narrow {
+    @include margin(0 0 null 0);
+    @include vertical-spacing-margin-lg;
+  }
+
+  .simple-block {
+    @include grid-container;
+    background-color: color(dust);
+    padding: 30px;
+
+    @include grid-media($media-sm) {
+      padding-left: 0;
+    }
+  }
+
+  .simple-block__image {
+    margin-bottom: 30px;
+
+    @include grid-media($media-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  .simple-block__title {
+    font-size: 32px;
+  }
+
+  .simple-block__image-caption {
+    color: color(ash);
+  }
+
+  .simple-block__description {
+    font-size: 20px;
+    color: color(text-active);
+  }
+}
