@@ -2445,9 +2445,9 @@
   margin-top: -40px; }
 
 .photo-mosaic--thumbs-down-quote {
-  margin: 73px 20px 0px -20px; }
+  margin: 73px 20px 0 -20px; }
   .photo-mosaic--thumbs-down-quote .photo-tiles__quote {
-    margin: 0px -220px 0px -23px; }
+    margin: 0 -220px 0 -23px; }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
