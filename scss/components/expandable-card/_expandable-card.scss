@@ -36,4 +36,20 @@
   svg use {
     fill: color(brand);
   }
+
+  &.expandable-card__open {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    span {
+      position: absolute;
+      bottom: 20px;
+      left: calc(50% - 10px);
+    }
+  }
+
 }

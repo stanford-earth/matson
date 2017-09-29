@@ -1013,6 +1013,18 @@
 .expandable-card__toggle svg use {
   fill: #8c1515; }
 
+.expandable-card__toggle.expandable-card__open {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99; }
+  .expandable-card__toggle.expandable-card__open span {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 10px); }
+
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -2437,6 +2449,17 @@
   content: '';
   display: block;
   z-index: 2; }
+
+.photo-mosaic--thumbs-up .photo-tiles__quote {
+  width: 284px; }
+
+.photo-mosaic--thumbs-down-alt {
+  margin-top: -40px; }
+
+.photo-mosaic--thumbs-down-quote {
+  margin: 73px 20px 0 -20px; }
+  .photo-mosaic--thumbs-down-quote .photo-tiles__quote {
+    margin: 0 -220px 0 -23px; }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
