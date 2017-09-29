@@ -735,6 +735,9 @@
     .ptype-stanford-video .hero-banner {
       padding-bottom: 60px; } }
 
+.ptype-stanford-video .hero-banner__container {
+  border: 0; }
+
 .field-p-wysiwyg > :last-child {
   margin-bottom: 0; }
 
