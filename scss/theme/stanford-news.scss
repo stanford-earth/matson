@@ -1,5 +1,4 @@
 @charset 'UTF-8';
-@import "utilities/mixins/hero-banner-node";
 // Grab our mixins.
 @import "utilities/utilities";
 
@@ -15,6 +14,9 @@
 
   @include grid-media($header-md) {
     margin-top: -176px;
+  }
+  .hero-banner__container {
+    border: 0;
   }
 }
 
@@ -365,20 +367,5 @@ figure.align-center .figure-container {
   .simple-block__description {
     font-size: 20px;
     color: color(text-active);
-  }
-}
-
-.ptype-stanford-video,
-.field-s-news-top-media {
-  #hero-banner:first-child:not(.component-centered-container-margins) {
-    margin-top: 0;
-  }
-
-  .hero-banner {
-    @include responsive-container($default-container);
-  }
-
-  .hero-banner__container {
-    border: 0;
   }
 }
