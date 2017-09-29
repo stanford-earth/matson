@@ -8,3 +8,21 @@
 
 // Grab our mixins.
 @import "utilities/utilities";
+
+.photo-mosaic--thumbs-up {
+  .photo-tiles__quote {
+    width: 284px;
+  }
+}
+
+.photo-mosaic--thumbs-down-alt {
+  margin-top: -40px;
+}
+
+.photo-mosaic--thumbs-down-quote {
+  margin: 73px 20px 0 -20px;
+
+  .photo-tiles__quote {
+    margin: 0 -220px 0 -23px;
+  }
+}
