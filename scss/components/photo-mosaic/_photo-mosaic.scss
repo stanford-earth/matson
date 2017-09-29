@@ -20,8 +20,10 @@
 }
 
 .photo-mosaic--thumbs-down-quote {
-  margin: 73px 20px 0 -20px;
-
+  @include grid-media($media-md) {
+    margin: 73px 20px 0 -20px;
+  }
+  
   .photo-tiles__quote {
     margin: 0 -220px 0 -23px;
   }
