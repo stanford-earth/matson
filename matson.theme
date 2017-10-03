@@ -46,6 +46,34 @@ function matson_preprocess_page(&$vars) {
 }
 
 /**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function matson_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  $node     = \Drupal::routeMatch()->getParameter('node');
+  $revision = \Drupal::routeMatch()->getRawParameter('node_revision');
+
+  // Revision IDs are strings and node ids are strings when a revision
+  // is loaded.
+  // Node parameters loaded by getParameter are objects and the bundle can be
+  // accessed normally.
+  if ($node) {
+    if ($revision) {
+      $revised_node = \Drupal::entityTypeManager()
+        ->getStorage('node')
+        ->loadRevision($revision);
+
+      $content_type = $revised_node->bundle();
+    }
+    else {
+      $content_type = $node->bundle();
+    }
+
+    $suggestions[] = 'page__' . $content_type;
+  }
+
+}
+
+/**
  * In some cases, the asset library is not associated with a certain part of the
  * page, because it is associated with the entire page. For this case,
  * hook_page_attachments() exists. A clear example can be found in the
@@ -71,6 +99,18 @@ function matson_page_attachments_alter(array &$attachments) {
 
       case 'research_area':
         $attachments['#attached']['library'][] = 'matson/research_area';
+        break;
+
+      case 'stanford_event':
+        $attachments['#attached']['library'][] = 'matson/stanford_event';
+        break;
+
+      case 'stanford_person':
+        $attachments['#attached']['library'][] = 'matson/stanford_person';
+        break;
+
+      case 'stanford_spotlight':
+        $attachments['#attached']['library'][] = 'matson/stanford_spotlight';
         break;
     }
   }

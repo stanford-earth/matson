@@ -1,0 +1,8 @@
+@charset 'UTF-8';
+// Grab our mixins.
+@import "utilities/utilities";
+
+// Comment out to avoid centering the whole container.
+.main-container {
+  @include responsive-container($default-container);
+}

@@ -35,9 +35,10 @@
   {% endif %}
 
   {{ page.help }}
-
   <div class="main-container">
-    {{ page.content }}
+    {% block main_content %}
+      {{ page.content }}
+    {% endblock %}
   </div>
 
   <!-- ______________________ FOOTER _______________________ -->
