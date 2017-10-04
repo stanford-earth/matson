@@ -191,68 +191,6 @@ a {
   }
 }
 
-// Content styles
-.field-p-wysiwyg {
-  > :last-child {
-    margin-bottom: 0;
-  }
-
-  h2 {
-    @include dash-left-offset;
-    margin-bottom: 20px;
-  }
-
-  p {
-    margin-bottom: 30px;
-  }
-
-  p + h2 {
-    margin-top: 50px;
-  }
-
-  blockquote + h1,
-  blockquote + h2,
-  blockquote + h3,
-  blockquote + h4,
-  blockquote + h5,
-  blockquote + h6, {
-    margin-top: modular-scale(0);
-  }
-
-  // Floated images
-  figure {
-    display: table;
-    margin-bottom: 30px;
-
-    &.align-right {
-      margin-left: 30px;
-    }
-
-    &.align-left {
-      margin-right: 30px;
-    }
-  }
-
-  figcaption {
-    display: table-caption;
-    caption-side: bottom;
-    color: color(ash);
-    text-align: right;
-  }
-
-  img {
-    margin-bottom: 20px;
-
-    &.align-right {
-      margin-left: 20px;
-    }
-
-    &.align-left {
-      margin-right: 20px;
-    }
-  }
-}
-
 // Layout spacing
 .layout--basic {
   .field-p-wysiwyg {

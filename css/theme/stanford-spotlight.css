@@ -1,11 +1,3 @@
-.content-type__header .social-actions::after {
-  position: absolute;
-  height: 2px;
-  width: 20px;
-  content: '';
-  display: block;
-  z-index: 2; }
-
 @media only screen and (max-width: 575px) {
   .main-container {
     padding: 1em calc(((50% /12) * 0) + 15px); }
@@ -65,79 +57,9 @@
 .page-subtitle span {
   display: block; }
 
-.content-type__header {
-  color: #4d4f53; }
-  .content-type__header .social-actions {
-    margin-bottom: 1.25em;
-    position: relative; }
-    .content-type__header .social-actions::after {
-      background-color: #8c1515;
-      bottom: -.5em;
-      left: 50%;
-      transform: translateX(-50%); }
-    .content-type__header .social-actions::after {
-      left: 0;
-      transform: none; }
-
-.content-type__media-header::after {
-  clear: both;
-  content: "";
-  display: block; }
-
 @media only screen and (min-width: 1024px) {
-  .content-type__media-header {
+  .block-matson-content {
     margin-right: 100px;
     margin-left: 100px; } }
-
-@media only screen and (min-width: 1024px) {
-  .content-type__media-header.left-align-media .content-type__media {
-    float: left;
-    width: 50%; } }
-
-@media only screen and (min-width: 1024px) {
-  .content-type__media-header.left-align-media .content-type__media figure {
-    margin-right: 40px; } }
-
-.content-type__media-header.left-align-media .content-type__media img {
-  display: block;
-  margin: 0 auto; }
-
-.content-type__media-header.left-align-media .content-type__header {
-  padding-top: 40px; }
-  @media only screen and (min-width: 1024px) {
-    .content-type__media-header.left-align-media .content-type__header {
-      float: left;
-      width: 50%; } }
-
-@media only screen and (min-width: 1024px) {
-  .content-type__media-header.left-align-media .breadcrumbs-container {
-    float: right;
-    width: 50%; } }
-
-.content-type__media figure {
-  position: relative; }
-  .content-type__media figure::after {
-    content: '';
-    background-color: #FBFBFB;
-    position: absolute;
-    top: 40px;
-    bottom: 40px;
-    width: 100vw;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    z-index: -1;
-    width: 150vw; }
-
-.content-type-date {
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-top: 50px; }
-  .content-type-date time {
-    padding-left: 5px; }
-
-.content-type-date__actions {
-  padding-top: 5px; }
 
 /*# sourceMappingURL=stanford-spotlight.css.map */

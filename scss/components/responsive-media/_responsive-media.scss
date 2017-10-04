@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.stanford-responsive-image,
+.stanford-responsive-video {
+  position: relative;
+  margin-bottom: 20px;
+  display: block;
+
+  &::after {
+    @include fullpage-stripe;
+  }
+
+  img {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 0;
+    display: block;
+  }
+}

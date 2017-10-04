@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.drop-cap-leader {
+  font-size: 20px;
+  padding-top: 20px;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  // Drop Cap
+  > p:first-of-type::first-line {
+    position: relative;
+    font-size: 1em;
+    letter-spacing: normal;
+  }
+
+  > p:first-child::first-letter {
+    letter-spacing: 0;
+    font-size: 3em;
+    font-weight: bold;
+    float: left;
+    margin: 0.13em 0.2em 0 0;
+    line-height: 0.7;
+  }
+}
