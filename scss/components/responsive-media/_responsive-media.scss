@@ -9,8 +9,8 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-.stanford-responsive-image,
-.stanford-responsive-video {
+.field--responsive-image picture,
+.field--responsive-video {
   position: relative;
   margin-bottom: 20px;
   display: block;
@@ -25,4 +25,9 @@
     margin-bottom: 0;
     display: block;
   }
+}
+
+.field-p-responsive-image-cred {
+  color: color(ash);
+  text-align: right;
 }

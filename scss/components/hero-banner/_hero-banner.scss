@@ -77,3 +77,9 @@ $hero-max-width-lg: 1500px;
   @include responsive-container($default-container);
   text-align: right;
 }
+
+.hero-banner.component-centered-container-margins.has-video {
+  .hero-banner__container {
+    border: 0;
+  }
+}

@@ -31,7 +31,8 @@
     @include margin(null 100px);
   }
 
-  &.left-align-media {
+  &.left-align-media,
+  &.right-align-media {
     .content-type__media {
       @include grid-media($media-lg) {
         float: left;
@@ -67,6 +68,20 @@
       @include grid-media($media-lg) {
         float: right;
         width: 50%;
+      }
+    }
+  }
+
+  &.right-align-media {
+    .content-type__media {
+      @include grid-media($media-lg) {
+        float: right;
+      }
+    }
+
+    .breadcrumbs-container {
+      @include grid-media($media-lg) {
+        float: left;
       }
     }
   }
