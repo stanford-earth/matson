@@ -5,6 +5,7 @@
 // Comment out to avoid centering the whole container.
 .main-container {
   @include responsive-container($default-container);
+  margin-top: 50px;
 }
 
 .page-title {
@@ -26,6 +27,11 @@
   }
 }
 
+.lead-text {
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
 .block-matson-content {
   color: color(text-active);
 
@@ -36,6 +42,16 @@
   a {
     text-decoration: underline;
   }
+
+  .definition-list {
+    margin-bottom: 40px;
+  }
+}
+
+.content-type__timestamp {
+  font-size: 22px;
+  text-align: right;
+  margin-bottom: 40px;
 }
 
 .content-type__media-container {
@@ -45,6 +61,10 @@
 
   &.left-align-media,
   &.right-align-media {
+    .content-type__header {
+      clear: left;
+    }
+
     .content-type__media {
       @include grid-media($media-lg) {
         margin-top: 40px;

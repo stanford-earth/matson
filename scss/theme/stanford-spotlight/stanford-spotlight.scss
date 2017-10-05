@@ -5,6 +5,8 @@
 // Comment out to avoid centering the whole container.
 .main-container {
   @include responsive-container($default-container);
+  margin-bottom: 80px;
+  margin-top: 50px;
 }
 
 .page-title {
@@ -24,6 +26,12 @@
   span {
     display: block;
   }
+}
+
+.lead-text {
+  @include drop-cap-inline;
+  font-size: 22px;
+  margin-bottom: 50px;
 }
 
 .block-matson-content {

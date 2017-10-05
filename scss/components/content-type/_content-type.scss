@@ -26,7 +26,6 @@
 
 .content-type__media-container {
   @include grid-container;
-  padding-top: 60px;
 
   @include grid-media($media-lg) {
     @include margin(null 100px);

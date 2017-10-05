@@ -6,53 +6,50 @@
   display: block;
   z-index: 2; }
 
-@media only screen and (max-width: 575px) {
-  .main-container {
-    padding: 1em calc(((50% /12) * 0) + 15px); }
-    .main-container::after {
-      clear: both;
-      content: "";
-      display: block; } }
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .main-container {
-    padding: 1em calc(((50% /12) * 0) + 15px); }
-    .main-container::after {
-      clear: both;
-      content: "";
-      display: block; } }
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .main-container {
-    padding: 1em calc(((50% /12) * 0) + 30px); }
-    .main-container::after {
-      clear: both;
-      content: "";
-      display: block; } }
-
-@media only screen and (min-width: 1024px) and (max-width: 1499px) {
-  .main-container {
-    padding: 1em calc(((50% /12) * 0) + 30px); }
-    .main-container::after {
-      clear: both;
-      content: "";
-      display: block; } }
-
-@media only screen and (min-width: 1500px) {
-  .main-container {
-    padding: 1em calc(50% - (750px - 60px)); }
-    .main-container::after {
-      clear: both;
-      content: "";
-      display: block; } }
-
-@media only print {
-  .main-container {
-    padding: 1em calc(((50% /12) * 0) + 0.25in); }
-    .main-container::after {
-      clear: both;
-      content: "";
-      display: block; } }
+.main-container {
+  margin-top: 20px; }
+  @media only screen and (max-width: 575px) {
+    .main-container {
+      padding: 1em calc(((50% /12) * 0) + 15px); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .main-container {
+      padding: 1em calc(((50% /12) * 0) + 15px); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .main-container {
+      padding: 1em calc(((50% /12) * 0) + 30px); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+    .main-container {
+      padding: 1em calc(((50% /12) * 0) + 30px); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 1500px) {
+    .main-container {
+      padding: 1em calc(50% - (750px - 60px)); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only print {
+    .main-container {
+      padding: 1em calc(((50% /12) * 0) + 0.25in); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
 
 .block--page-title {
   padding-right: 0;
@@ -96,7 +93,8 @@
       float: left;
       margin-left: 30px; } }
   .content-type-person .content-type-person_profile a {
-    text-decoration: underline; }
+    text-decoration: underline;
+    display: block; }
   .content-type-person .content-type-person_bio {
     border: 1px solid #dad7cb;
     padding: 40px; }
@@ -105,8 +103,13 @@
         width: calc(54.5454545455% - 46.3636363636px);
         float: left;
         margin-left: 30px; } }
-    .content-type-person .content-type-person_bio p, .content-type-person .content-type-person_bio h2 {
-      font-size: 22px; }
+    .content-type-person .content-type-person_bio p,
+    .content-type-person .content-type-person_bio h2 {
+      font-size: 18px; }
+      @media only screen and (min-width: 768px) {
+        .content-type-person .content-type-person_bio p,
+        .content-type-person .content-type-person_bio h2 {
+          font-size: 22px; } }
     .content-type-person .content-type-person_bio h2 {
       font-weight: bold; }
 
@@ -132,5 +135,8 @@
     bottom: -1em;
     left: 0;
     transform: none; }
+
+.definition-list {
+  line-height: 1.75; }
 
 /*# sourceMappingURL=stanford-person.css.map */
