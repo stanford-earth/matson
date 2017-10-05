@@ -15,7 +15,7 @@
   @include grid-media($header-md) {
     margin-top: -176px;
   }
-  
+
   .hero-banner__container {
     border: 0;
   }
@@ -174,7 +174,7 @@ a {
     margin-bottom: 0;
   }
 
-  // Drop Cap
+// Drop Cap
   > p:first-of-type::first-line {
     position: relative;
     font-size: 1em;

@@ -7,10 +7,6 @@
   @include responsive-container($default-container);
 }
 
-.breadcrumbs-container {
-
-}
-
 .page-title {
   @include padding(0 0);
 

@@ -53,6 +53,10 @@
       margin-top: 40px;
       padding-bottom: 40px;
 
+      @include grid-media($media-lg) {
+        width: 50%;
+      }
+
       &::after {
         @include grid-media($media-lg) {
           @include fullpage-stripe;
@@ -60,10 +64,6 @@
           bottom: 0;
           width: 150vw;
         }
-      }
-
-      @include grid-media($media-lg) {
-        width: 50%;
       }
     }
 
