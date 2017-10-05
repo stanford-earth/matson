@@ -11,6 +11,10 @@
   
 }
 
+.block--page-title {
+  @include padding(null 0);
+}
+
 .page-title {
   @include padding(0 0);
 
@@ -20,6 +24,7 @@
 }
 
 .page-subtitle {
+  margin-bottom: 50px;
 
   h2 {
     font-size: 28px;
@@ -31,7 +36,72 @@
 }
 
 .block-matson-content {
+  color: color(text-active);
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.breadcrumbs-container {
   @include grid-media($media-lg) {
     @include margin(null 100px);
+  }
+}
+
+.content-type-person {
+  $person-grid: (
+    columns: 11,
+    gutter: 30px,
+  );
+
+  @include grid-container;
+  @inlude grid-collapse;
+
+  @include grid-media($media-lg) {
+    @include padding(null 100px null 70px);
+  }
+
+  .content-type-person_profile {
+    @include grid-column(5, $person-grid);
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .content-type-person_bio {
+    @include grid-column(6, $person-grid);
+    border: 1px solid color(fog);
+    padding: 40px;
+
+    p, h2 {
+      font-size: 22px;
+    }
+
+    h2 {
+      font-weight: bold;
+    }
+  }
+}
+
+.content-type__header {
+  .definition-list {
+    dt {
+      width: 90px;
+    }
+  }
+}
+
+.dash-header {
+  @include dash-under;
+  font-size: 12px;
+  text-transform: uppercase;
+  position: relative;
+
+  &::after {
+    bottom: -1em;
+    left: 0;
+    transform: none;
   }
 }

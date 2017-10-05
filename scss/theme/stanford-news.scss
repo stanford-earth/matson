@@ -236,6 +236,13 @@ figure.align-center .figure-container {
   }
 }
 
+.field-p-wysiwyg {
+  h2 {
+    @include dash-left-offset;
+    margin-bottom: 20px;
+  }
+}
+
 .field-p-responsive-image-cred {
   color: color(ash);
   text-align: right;

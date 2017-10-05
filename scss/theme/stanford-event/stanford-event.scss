@@ -31,7 +31,44 @@
 }
 
 .block-matson-content {
+  color: color(text-active);
+
   @include grid-media($media-lg) {
     @include margin(null 100px);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.content-type__media-container {
+  @include grid-media($media-lg) {
+    margin-bottom: 70px;
+  }
+
+  &.left-align-media,
+  &.right-align-media {
+    .content-type__media {
+      @include grid-media($media-lg) {
+        margin-top: 40px;
+        padding-top: 40px;
+      }
+
+      figure,
+      picture {
+        position: relative;
+
+        &::after {
+          @include fullpage-stripe;
+          width: 150vw;
+
+          @include grid-media($media-lg) {
+            bottom: -40px;
+            margin-left: -100vw;
+          }
+        }
+      }
+    }
   }
 }

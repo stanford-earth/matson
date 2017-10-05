@@ -724,6 +724,23 @@ ul > li {
 dl > dt {
   margin-bottom: 1em; }
 
+.definition-list::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.definition-list dt {
+  font-weight: normal;
+  float: left;
+  width: 130px;
+  clear: left;
+  text-transform: uppercase;
+  color: #8c1414; }
+
+.definition-list dd {
+  float: left;
+  width: calc(100% - 130px); }
+
 .i-svg {
   display: inline-block;
   fill: currentcolor;

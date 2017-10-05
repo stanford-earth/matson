@@ -39,16 +39,6 @@
         width: 50%;
       }
 
-      figure,
-      picture {
-          position: relative;
-
-        &::after {
-          @include fullpage-stripe;
-          width: 150vw;
-        }
-      }
-
       img {
         display: block;
         margin: 0 auto;
@@ -68,6 +58,7 @@
           @include fullpage-stripe;
           top: 0;
           bottom: 0;
+          width: 150vw;
         }
       }
 
@@ -109,7 +100,6 @@
       }
     }
   }
-
 
   &.right-align-media {
     .content-type__media {

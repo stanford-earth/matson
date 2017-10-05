@@ -9,7 +9,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -241,7 +241,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -289,7 +289,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -365,7 +365,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -447,7 +447,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -576,7 +576,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -612,25 +612,6 @@
   @media only screen and (min-width: 1024px) {
     .content-type__media-container.left-align-media .content-type__media, .content-type__media-container.right-align-media .content-type__media {
       width: 50%; } }
-  .content-type__media-container.left-align-media .content-type__media figure,
-  .content-type__media-container.left-align-media .content-type__media picture, .content-type__media-container.right-align-media .content-type__media figure,
-  .content-type__media-container.right-align-media .content-type__media picture {
-    position: relative; }
-    .content-type__media-container.left-align-media .content-type__media figure::after,
-    .content-type__media-container.left-align-media .content-type__media picture::after, .content-type__media-container.right-align-media .content-type__media figure::after,
-    .content-type__media-container.right-align-media .content-type__media picture::after {
-      content: '';
-      background-color: #FBFBFB;
-      position: absolute;
-      top: 40px;
-      bottom: 40px;
-      width: 100vw;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
-      z-index: -1;
-      width: 150vw; }
   .content-type__media-container.left-align-media .content-type__media img, .content-type__media-container.right-align-media .content-type__media img {
     display: block;
     margin: 0 auto; }
@@ -654,7 +635,8 @@
         margin-right: -50vw;
         z-index: -1;
         top: 0;
-        bottom: 0; } }
+        bottom: 0;
+        width: 150vw; } }
     @media only screen and (min-width: 1024px) {
       .content-type__media-container.left-align-media .content-type__header, .content-type__media-container.right-align-media .content-type__header {
         width: 50%; } }
@@ -725,7 +707,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1064,7 +1046,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1128,7 +1110,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1175,7 +1157,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1217,7 +1199,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1280,7 +1262,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1332,7 +1314,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1380,7 +1362,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1444,7 +1426,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1624,7 +1606,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1659,7 +1641,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1692,7 +1674,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1808,7 +1790,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1902,7 +1884,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1954,7 +1936,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2012,7 +1994,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2066,7 +2048,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2250,7 +2232,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2379,7 +2361,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2488,7 +2470,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2588,7 +2570,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2643,7 +2625,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2679,7 +2661,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2726,7 +2708,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2826,7 +2808,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2885,7 +2867,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2977,7 +2959,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3010,7 +2992,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3076,7 +3058,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3113,7 +3095,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3180,7 +3162,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3214,7 +3196,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3254,7 +3236,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3315,7 +3297,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3363,7 +3345,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3452,7 +3434,7 @@ ul.tabs {
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3499,7 +3481,7 @@ ul.tabs {
   white-space: nowrap;
   width: 1px; }
 
-.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3509,21 +3491,6 @@ ul.tabs {
 
 .field-p-wysiwyg > :last-child {
   margin-bottom: 0; }
-
-.field-p-wysiwyg h2 {
-  position: relative;
-  padding-left: .9em;
-  margin-bottom: 20px; }
-  .field-p-wysiwyg h2::after {
-    position: absolute;
-    top: 50%;
-    margin-top: auto;
-    margin-bottom: auto;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    background-color: #8c1515;
-    left: 0; }
 
 .field-p-wysiwyg p {
   margin-bottom: 30px; }

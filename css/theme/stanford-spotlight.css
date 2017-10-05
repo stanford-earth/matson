@@ -57,9 +57,38 @@
 .page-subtitle span {
   display: block; }
 
-@media only screen and (min-width: 1024px) {
-  .block-matson-content {
-    margin-right: 100px;
-    margin-left: 100px; } }
+.block-matson-content {
+  color: #4d4f53; }
+  @media only screen and (min-width: 1024px) {
+    .block-matson-content {
+      margin-right: 100px;
+      margin-left: 100px; } }
+  .block-matson-content a {
+    text-decoration: underline; }
+
+.content-type__media-container.left-align-media .content-type__media figure,
+.content-type__media-container.left-align-media .content-type__media picture, .content-type__media-container.right-align-media .content-type__media figure,
+.content-type__media-container.right-align-media .content-type__media picture {
+  position: relative; }
+  .content-type__media-container.left-align-media .content-type__media figure::after,
+  .content-type__media-container.left-align-media .content-type__media picture::after, .content-type__media-container.right-align-media .content-type__media figure::after,
+  .content-type__media-container.right-align-media .content-type__media picture::after {
+    content: '';
+    background-color: #FBFBFB;
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    z-index: -1;
+    width: 150vw; }
+
+.content-type__media-container.right-align-media .content-type__media figure::after,
+.content-type__media-container.right-align-media .content-type__media picture::after {
+  margin-left: -100vw;
+  width: 150vw; }
 
 /*# sourceMappingURL=stanford-spotlight.css.map */

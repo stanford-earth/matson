@@ -57,9 +57,48 @@
 .page-subtitle span {
   display: block; }
 
+.block-matson-content {
+  color: #4d4f53; }
+  @media only screen and (min-width: 1024px) {
+    .block-matson-content {
+      margin-right: 100px;
+      margin-left: 100px; } }
+  .block-matson-content a {
+    text-decoration: underline; }
+
 @media only screen and (min-width: 1024px) {
-  .block-matson-content {
-    margin-right: 100px;
-    margin-left: 100px; } }
+  .content-type__media-container {
+    margin-bottom: 70px; } }
+
+@media only screen and (min-width: 1024px) {
+  .content-type__media-container.left-align-media .content-type__media, .content-type__media-container.right-align-media .content-type__media {
+    margin-top: 40px;
+    padding-top: 40px; } }
+
+.content-type__media-container.left-align-media .content-type__media figure,
+.content-type__media-container.left-align-media .content-type__media picture, .content-type__media-container.right-align-media .content-type__media figure,
+.content-type__media-container.right-align-media .content-type__media picture {
+  position: relative; }
+  .content-type__media-container.left-align-media .content-type__media figure::after,
+  .content-type__media-container.left-align-media .content-type__media picture::after, .content-type__media-container.right-align-media .content-type__media figure::after,
+  .content-type__media-container.right-align-media .content-type__media picture::after {
+    content: '';
+    background-color: #FBFBFB;
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    z-index: -1;
+    width: 150vw; }
+    @media only screen and (min-width: 1024px) {
+      .content-type__media-container.left-align-media .content-type__media figure::after,
+      .content-type__media-container.left-align-media .content-type__media picture::after, .content-type__media-container.right-align-media .content-type__media figure::after,
+      .content-type__media-container.right-align-media .content-type__media picture::after {
+        bottom: -40px;
+        margin-left: -100vw; } }
 
 /*# sourceMappingURL=stanford-event.css.map */
