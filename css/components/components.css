@@ -2459,19 +2459,20 @@
 .photo-mosaic--thumbs-up .photo-tiles__quote {
   width: 284px; }
 
-.photo-mosaic--thumbs-down-alt {
-  margin-top: -40px; }
+@media only screen and (min-width: 768px) {
+  .photo-mosaic--thumbs-down-alt {
+    margin-top: -40px; } }
 
-.photo-mosaic--thumbs-down-quote {
-  margin: 40px 130px 0px 130px; }
-  @media only screen and (min-width: 768px) {
-    .photo-mosaic--thumbs-down-quote {
-      margin: 0px 130px 0px 0px; } }
-  @media only screen and (min-width: 1024px) {
-    .photo-mosaic--thumbs-down-quote {
-      margin: 73px 20px 0 -20px; } }
-  .photo-mosaic--thumbs-down-quote .photo-tiles__quote {
-    margin: 0 -220px 0 -23px; }
+@media only screen and (min-width: 768px) {
+  .photo-mosaic--thumbs-down-quote {
+    margin: 0px 130px 0px 0px; } }
+
+@media only screen and (min-width: 1024px) {
+  .photo-mosaic--thumbs-down-quote {
+    margin: 73px 20px 0 -20px; } }
+
+.photo-mosaic--thumbs-down-quote .photo-tiles__quote {
+  margin: 0 -220px 0 -23px; }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
