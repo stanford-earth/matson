@@ -35,9 +35,6 @@
 h1 {
   font-size: 42px; }
 
-a {
-  text-decoration: underline; }
-
 .block--field-s-news-sub-title {
   margin-bottom: 20px; }
   @media only screen and (min-width: 576px) {
@@ -204,6 +201,9 @@ figure.align-center .figure-container {
     transform: translateY(-50%);
     background-color: #8c1515;
     left: 0; }
+
+.field-p-wysiwyg a {
+  text-decoration: underline; }
 
 .field-p-responsive-image-cred {
   color: #9c9d9e;

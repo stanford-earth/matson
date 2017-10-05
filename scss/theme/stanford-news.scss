@@ -37,10 +37,6 @@ h1 {
   font-size: 42px;
 }
 
-a {
-  text-decoration: underline;
-}
-
 // Subtitle field.
 .block--field-s-news-sub-title {
   margin-bottom: 20px;
@@ -240,6 +236,10 @@ figure.align-center .figure-container {
   h2 {
     @include dash-left-offset;
     margin-bottom: 20px;
+  }
+
+  a {
+    text-decoration: underline;
   }
 }
 

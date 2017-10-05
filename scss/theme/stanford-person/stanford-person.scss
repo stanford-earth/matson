@@ -32,6 +32,13 @@
   }
 }
 
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  color: color(ash);
+  text-align: right;
+}
+
 .block-matson-content {
   color: color(text-active);
 

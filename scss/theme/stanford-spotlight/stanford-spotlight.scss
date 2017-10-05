@@ -28,6 +28,13 @@
   }
 }
 
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  color: color(ash);
+  text-align: right;
+}
+
 .lead-text {
   @include drop-cap-inline;
   font-size: 22px;
