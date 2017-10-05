@@ -11,6 +11,7 @@
 
 .content-type__header {
   color: color(text-active);
+  position: relative;
 
   .social-actions {
     @include dash-under;
@@ -23,7 +24,7 @@
   }
 }
 
-.content-type__media-header {
+.content-type__media-container {
   @include grid-container;
   padding-top: 60px;
 
@@ -35,13 +36,16 @@
   &.right-align-media {
     .content-type__media {
       @include grid-media($media-lg) {
-        float: left;
         width: 50%;
       }
 
-      figure {
-        @include grid-media($media-lg) {
-          margin-right: 40px;
+      figure,
+      picture {
+          position: relative;
+
+        &::after {
+          @include fullpage-stripe;
+          width: 150vw;
         }
       }
 
@@ -56,45 +60,87 @@
     }
 
     .content-type__header {
-      padding-top: 40px;
+      margin-top: 40px;
+      padding-bottom: 40px;
+
+      &::after {
+        @include grid-media($media-lg) {
+          @include fullpage-stripe;
+          top: 0;
+          bottom: 0;
+        }
+      }
 
       @include grid-media($media-lg) {
-        float: left;
         width: 50%;
       }
     }
 
     .breadcrumbs-container {
       @include grid-media($media-lg) {
-        float: right;
         width: 50%;
       }
     }
   }
+
+  &.left-align-media {
+    .content-type__media {
+      @include grid-media($media-lg) {
+        float: left;
+      }
+
+      figure,
+      picture {
+        @include grid-media($media-lg) {
+          margin-right: 40px;
+        }
+      }
+    }
+
+    .content-type__header {
+      @include grid-media($media-lg) {
+        float: left;
+      }
+    }
+
+    .breadcrumbs-container {
+      @include grid-media($media-lg) {
+        float: right;
+      }
+    }
+  }
+
 
   &.right-align-media {
     .content-type__media {
       @include grid-media($media-lg) {
         float: right;
       }
+
+      figure,
+      picture {
+        @include grid-media($media-lg) {
+          margin-left: 40px;
+        }
+
+        &::after {
+          margin-left: -100vw;
+          width: 150vw;
+        }
+      }
+    }
+
+    .content-type__header {
+      @include grid-media($media-lg) {
+        margin-top: 40px;
+        padding-top: 40px;
+      }
     }
 
     .breadcrumbs-container {
       @include grid-media($media-lg) {
         float: left;
       }
-    }
-  }
-}
-
-.content-type__media {
-  figure,
-  picture {
-    position: relative;
-
-    &::after {
-      @include fullpage-stripe;
-      width: 150vw;
     }
   }
 }

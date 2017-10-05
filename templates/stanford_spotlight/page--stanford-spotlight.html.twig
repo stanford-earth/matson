@@ -6,7 +6,7 @@
   #}
   
   {# left aligned #}
-  <div class="content-type__media-header left-align-media">
+  <div class="content-type__media-container left-align-media">
     <nav aria-label="You are here:" role="navigation" class="breadcrumbs-container">
       <ul class="breadcrumbs">
         <li><a href="#">Home</a>/</li>
@@ -17,34 +17,36 @@
       </ul>
     </nav>
 
-    <div class="content-type__media">
-      <figure><img src="http://via.placeholder.com/515x515"></figure>
-    </div>
-
-    <div class="content-type__header">
-      <div class="page-title"><h1>Tile or Headline would go here</h1></div>
-      <div class="page-subtitle">
-        <h2>
-          <span class="s-person-name__name">First Last Name</span>
-          <span class="s-person-name__title">4th year PhD candidate</span>
-          <span class="s-person-name__department">Geological Sciences</span>
-        </h2>
+    <div class="content-type__media-header">
+      <div class="content-type__media">
+        <figure><img src="http://via.placeholder.com/515x515"></figure>
       </div>
-      <div class="content-type-date">
-        <span>Published</span>
-        <time>August 2017</time>
-        <div class="content-type-date__actions social-actions">
-          <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'mail'|t }}</title><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-          <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'linkedin'|t }}</title><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-          <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-          <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'facebook'|t }}</title><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+
+      <div class="content-type__header">
+        <div class="page-title"><h1>Tile or Headline would go here</h1></div>
+        <div class="page-subtitle">
+          <h2>
+            <span class="s-person-name__name">First Last Name</span>
+            <span class="s-person-name__title">4th year PhD candidate</span>
+            <span class="s-person-name__department">Geological Sciences</span>
+          </h2>
+        </div>
+        <div class="content-type-date">
+          <span>Published</span>
+          <time>August 2017</time>
+          <div class="content-type-date__actions social-actions">
+            <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'mail'|t }}</title><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+            <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'linkedin'|t }}</title><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+            <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+            <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'facebook'|t }}</title><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   {# centeredd #}
-  <div class="content-type__media-header">
+  <div class="content-type__media-container">
     <nav aria-label="You are here:" role="navigation" class="breadcrumbs-container">
       <ul class="breadcrumbs">
         <li><a href="#">Home</a>/</li>
@@ -55,6 +57,7 @@
       </ul>
     </nav>
 
+    <div class="content-type__media-header">
     <div class="content-type__media stanford-responsive-image">
       <picture><img src="http://via.placeholder.com/1200x400"></picture>
     </div>
@@ -78,6 +81,7 @@
           <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'facebook'|t }}</title><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
         </div>
       </div>
+    </div>
     </div>
   </div>
 
