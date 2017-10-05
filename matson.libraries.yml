@@ -134,6 +134,12 @@ research_area:
     layout:
       css/layout/research-area.css: {}
 
+stanford_view_page:
+  version: VERSION
+  css:
+    layout:
+      css/layout/stanford-view-page.css: {}
+
 home:
   version: VERSION
   css:
