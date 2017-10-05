@@ -1,0 +1,6 @@
+&.header-to-left {
+    .section-header {
+      h2.has-dash-under {
+        @include dash-left($dash-color: brand);
+      }
+    }
