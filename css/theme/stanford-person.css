@@ -67,6 +67,12 @@
   .page-subtitle span {
     display: block; }
 
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  color: #9c9d9e;
+  text-align: right; }
+
 .block-matson-content {
   color: #4d4f53; }
   .block-matson-content a {

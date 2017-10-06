@@ -55,6 +55,12 @@
 .page-subtitle span {
   display: block; }
 
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  color: #9c9d9e;
+  text-align: right; }
+
 .lead-text {
   font-size: 22px;
   margin-bottom: 50px; }
