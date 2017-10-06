@@ -2885,6 +2885,85 @@
   display: block;
   z-index: 2; }
 
+@media only screen and (max-width: 575px) {
+  .section-photo-mosaic--quotes {
+    padding: 1em calc(((50% /12) * 0) + 15px); }
+    .section-photo-mosaic--quotes::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .section-photo-mosaic--quotes {
+    padding: 1em calc(((50% /12) * 0) + 15px); }
+    .section-photo-mosaic--quotes::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .section-photo-mosaic--quotes {
+    padding: 1em calc(((50% /12) * 0) + 30px); }
+    .section-photo-mosaic--quotes::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1499px) {
+  .section-photo-mosaic--quotes {
+    padding: 1em calc(((50% /12) * 0) + 30px); }
+    .section-photo-mosaic--quotes::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1500px) {
+  .section-photo-mosaic--quotes {
+    padding: 1em calc(50% - (750px - 60px)); }
+    .section-photo-mosaic--quotes::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only print {
+  .section-photo-mosaic--quotes {
+    padding: 1em calc(((50% /12) * 0) + 0.25in); }
+    .section-photo-mosaic--quotes::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+.block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+.block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
+.header-to-left .section-header h2.has-dash-under::after {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  content: '';
+  display: block;
+  z-index: 2; }
+
 .simple-block__link {
   color: #4d4f53; }
   .simple-block__link:hover, .simple-block__link:active, .simple-block__link:focus {
