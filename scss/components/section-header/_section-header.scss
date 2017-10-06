@@ -11,6 +11,11 @@
 
 .section-header {
   color: color(text-active);
+  padding-bottom: 20px;
+
+  @include grid-media($media-lg) {
+    padding-bottom: 0
+  }
 
   h2 {
     &.has-dash-under {
@@ -46,3 +51,19 @@
   }
 }
 
+.header-to-top .section-header.left-aligned {
+  h2.has-dash-under {
+    @include dash-under($dash-color: brand);
+    position: relative;
+
+    &::after {
+      top: auto;
+    }
+  }
+}
+
+.header-to-left .section-header {
+  @include grid-media($media-md-only) {
+    text-align: left;
+  }
+}

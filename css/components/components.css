@@ -10,7 +10,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -254,7 +254,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -331,7 +331,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -414,7 +414,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -544,7 +544,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -884,7 +884,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -949,7 +949,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -992,7 +992,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1056,7 +1056,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1109,7 +1109,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1158,7 +1158,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1228,7 +1228,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1409,7 +1409,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1445,7 +1445,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1479,7 +1479,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1593,7 +1593,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1688,7 +1688,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1741,7 +1741,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1800,7 +1800,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1855,7 +1855,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2040,7 +2040,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2170,7 +2170,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2280,7 +2280,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2381,7 +2381,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2437,7 +2437,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2474,7 +2474,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2523,7 +2523,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2624,7 +2624,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2717,7 +2717,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2751,7 +2751,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2760,7 +2760,11 @@
   z-index: 2; }
 
 .section-header {
-  color: #4d4f53; }
+  color: #4d4f53;
+  padding-bottom: 20px; }
+  @media only screen and (min-width: 1024px) {
+    .section-header {
+      padding-bottom: 0; } }
   .section-header h2.has-dash-under {
     margin-bottom: 1.25em; }
     .section-header h2.has-dash-under::after {
@@ -2816,6 +2820,21 @@
         left: -.9em;
         transform: none; } }
 
+.header-to-top .section-header.left-aligned h2.has-dash-under {
+  margin-bottom: 1.25em;
+  position: relative; }
+  .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+    background-color: #8c1515;
+    bottom: -.5em;
+    left: 50%;
+    transform: translateX(-50%); }
+  .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+    top: auto; }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header-to-left .section-header {
+    text-align: left; } }
+
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -2839,7 +2858,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2877,7 +2896,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2956,7 +2975,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3024,7 +3043,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3059,7 +3078,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3121,7 +3140,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3170,7 +3189,7 @@
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3260,7 +3279,7 @@ ul.tabs {
   width: 1px; }
 
 .section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after {
+.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
