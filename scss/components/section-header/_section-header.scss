@@ -44,26 +44,26 @@
   }
 }
 
-.section-header.left-aligned,
-.header-to-left .section-header {
-  h2.has-dash-under {
-    @include dash-left($dash-color: brand);
-  }
-}
+// .section-header.left-aligned,
+// .header-to-left .section-header {
+//   h2.has-dash-under {
+//     @include dash-left($dash-color: brand);
+//   }
+// }
 
-.header-to-top .section-header.left-aligned {
-  h2.has-dash-under {
-    @include dash-under($dash-color: brand);
-    position: relative;
+// .header-to-top .section-header.left-aligned {
+//   h2.has-dash-under {
+//     @include dash-under($dash-color: brand);
+//     position: relative;
 
-    &::after {
-      top: auto;
-    }
-  }
-}
+//     &::after {
+//       top: auto;
+//     }
+//   }
+// }
 
-.header-to-left .section-header {
-  @include grid-media($media-md-only) {
-    text-align: left;
-  }
-}
+// .header-to-left .section-header {
+//   @include grid-media($media-md-only) {
+//     text-align: left;
+//   }
+// }

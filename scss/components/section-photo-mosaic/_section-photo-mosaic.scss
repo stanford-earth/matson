@@ -12,3 +12,9 @@
 .section-photo-mosaic--quotes {
   @include responsive-container($default-container);
 }
+
+.photo-mosaic__header {
+  h2.has-dash-under {
+    @include dash-left-lg($dash-color: brand);
+  }
+}

@@ -9,8 +9,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -253,8 +252,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -330,8 +328,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -413,8 +410,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -543,8 +539,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -883,8 +878,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -948,51 +942,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
-  position: absolute;
-  height: 2px;
-  width: 20px;
-  content: '';
-  display: block;
-  z-index: 2; }
-
-.section-expandable-banner {
-  color: #fff;
-  min-height: 300px; }
-  .section-expandable-banner .section-header p {
-    color: #fff;
-    letter-spacing: .5px;
-    line-height: 2em; }
-  .section-expandable-banner .section-header .drop-cap-title__name {
-    color: #fff; }
-  .section-expandable-banner .section-header .drop-cap-title__drop-cap {
-    opacity: .35; }
-
-.block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px; }
-
-.block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px; }
-
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1055,8 +1005,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1108,8 +1057,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1157,8 +1105,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1227,8 +1174,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1408,8 +1354,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1444,8 +1389,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1478,8 +1422,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1592,8 +1535,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1638,33 +1580,6 @@
   .highlight-card__arrow svg use {
     fill: #8c1515; }
 
-.section-highlight-banner {
-  color: #fff; }
-  .section-highlight-banner::before {
-    content: '';
-    display: block;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 1; }
-    @media only screen and (min-width: 1024px) {
-      .section-highlight-banner::before {
-        top: 45px;
-        bottom: 45px; } }
-  @media only screen and (min-width: 1024px) {
-    .section-highlight-banner.is-single::before {
-      left: calc(50% - (450px - 30px));
-      right: calc(50% - (450px - 30px));
-      top: 0;
-      bottom: 0; } }
-  .section-highlight-banner .section-header .drop-cap-title__name {
-    color: #fff; }
-  .section-highlight-banner .section-header .drop-cap-title__drop-cap {
-    opacity: 0.35; }
-
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -1687,8 +1602,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1740,8 +1654,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1775,7 +1688,11 @@
   .link-banner__header p {
     letter-spacing: .5px;
     line-height: 1.375em;
-    max-width: 400px; }
+    max-width: 400px;
+    margin: 0 auto; }
+    @media only screen and (min-width: 1024px) {
+      .link-banner__header p {
+        margin: 0; } }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
@@ -1799,8 +1716,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -1854,8 +1770,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2039,8 +1954,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2169,8 +2083,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2279,8 +2192,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2380,8 +2292,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2436,8 +2347,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2473,8 +2383,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2522,8 +2431,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2623,8 +2531,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2716,8 +2623,82 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  content: '';
+  display: block;
+  z-index: 2; }
+
+.section-expandable-banner {
+  color: #fff;
+  min-height: 300px; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .section-expandable-banner .section-header {
+      text-align: left; } }
+  .section-expandable-banner .section-header p {
+    color: #fff;
+    letter-spacing: .5px;
+    line-height: 2em; }
+  .section-expandable-banner .section-header .drop-cap-title__name {
+    color: #fff; }
+  .section-expandable-banner .section-header .drop-cap-title__drop-cap {
+    opacity: .35; }
+
+.section-highlight-banner {
+  color: #fff; }
+  .section-highlight-banner::before {
+    content: '';
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1; }
+    @media only screen and (min-width: 1024px) {
+      .section-highlight-banner::before {
+        top: 45px;
+        bottom: 45px; } }
+  @media only screen and (min-width: 1024px) {
+    .section-highlight-banner.is-single::before {
+      left: calc(50% - (450px - 30px));
+      right: calc(50% - (450px - 30px));
+      top: 0;
+      bottom: 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .section-highlight-banner .section-header {
+      text-align: left; } }
+  .section-highlight-banner .section-header .drop-cap-title__name {
+    color: #fff; }
+  .section-highlight-banner .section-header .drop-cap-title__drop-cap {
+    opacity: 0.35; }
+
+.block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+.block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2750,8 +2731,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2799,42 +2779,53 @@
     text-transform: uppercase;
     letter-spacing: 0.15px; }
 
-.section-header.left-aligned h2.has-dash-under,
-.header-to-left .section-header h2.has-dash-under {
+.block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+.block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  content: '';
+  display: block;
+  z-index: 2; }
+
+.section-feature-blocks.left-aligned .section-header h2.has-dash-under {
   margin-bottom: 1.25em; }
-  @media only screen and (min-width: 768px) {
-    .section-header.left-aligned h2.has-dash-under,
-    .header-to-left .section-header h2.has-dash-under {
+  @media only screen and (min-width: 1024px) {
+    .section-feature-blocks.left-aligned .section-header h2.has-dash-under {
       margin-bottom: .75em; } }
-  .section-header.left-aligned h2.has-dash-under::after,
-  .header-to-left .section-header h2.has-dash-under::after {
+  .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after {
     bottom: -.5em;
     left: 50%;
     transform: translateX(-50%);
     background-color: #8c1515; }
-    @media only screen and (min-width: 768px) {
-      .section-header.left-aligned h2.has-dash-under::after,
-      .header-to-left .section-header h2.has-dash-under::after {
+    @media only screen and (min-width: 1024px) {
+      .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after {
         bottom: auto;
         top: .625em;
         left: -.9em;
         transform: none; } }
 
-.header-to-top .section-header.left-aligned h2.has-dash-under {
-  margin-bottom: 1.25em;
-  position: relative; }
-  .header-to-top .section-header.left-aligned h2.has-dash-under::after {
-    background-color: #8c1515;
-    bottom: -.5em;
-    left: 50%;
-    transform: translateX(-50%); }
-  .header-to-top .section-header.left-aligned h2.has-dash-under::after {
-    top: auto; }
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .header-to-left .section-header {
-    text-align: left; } }
-
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -2857,8 +2848,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2895,8 +2885,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -2952,16 +2941,22 @@
       content: "";
       display: block; } }
 
-.block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px; }
+.photo-mosaic__header h2.has-dash-under {
+  margin-bottom: 1.25em; }
+  @media only screen and (min-width: 1024px) {
+    .photo-mosaic__header h2.has-dash-under {
+      margin-bottom: .75em; } }
+  .photo-mosaic__header h2.has-dash-under::after {
+    bottom: -.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #8c1515; }
+    @media only screen and (min-width: 1024px) {
+      .photo-mosaic__header h2.has-dash-under::after {
+        bottom: auto;
+        top: .625em;
+        left: -.9em;
+        transform: none; } }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
@@ -2974,8 +2969,18 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3042,8 +3047,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3077,8 +3081,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3139,8 +3142,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3188,8 +3190,7 @@
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -3278,8 +3279,7 @@ ul.tabs {
   white-space: nowrap;
   width: 1px; }
 
-.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-header.left-aligned h2.has-dash-under::after,
-.header-to-left .section-header h2.has-dash-under::after, .header-to-top .section-header.left-aligned h2.has-dash-under::after {
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after {
   position: absolute;
   height: 2px;
   width: 20px;

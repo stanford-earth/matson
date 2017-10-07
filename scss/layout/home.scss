@@ -27,11 +27,23 @@
 // Adjust the highlight banner component so that the card
 // overlays the entire container.
 
+.section-highlight-banner {
+  @include grid-media($media-sm-only) {
+    padding-bottom: 30px;
+  }
+}
+
 .highlight-banner__container {
-  top: -35px;
+  top: -15px;
+
+  @include grid-media($media-md) {
+    top: -35px;
+  }
 
   .highlight-card {
-    margin-bottom: -40px;
+    @include grid-media($media-md) {
+      margin-bottom: -50px;
+    }
   }
 }
 

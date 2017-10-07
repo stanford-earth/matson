@@ -7,10 +7,18 @@
 #filmstrip .filmstrip__cards {
   max-width: 1190px; }
 
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .section-highlight-banner {
+    padding-bottom: 30px; } }
+
 .highlight-banner__container {
-  top: -35px; }
-  .highlight-banner__container .highlight-card {
-    margin-bottom: -40px; }
+  top: -15px; }
+  @media only screen and (min-width: 768px) {
+    .highlight-banner__container {
+      top: -35px; } }
+  @media only screen and (min-width: 768px) {
+    .highlight-banner__container .highlight-card {
+      margin-bottom: -50px; } }
 
 .section-highlight-banner {
   padding: 0;
