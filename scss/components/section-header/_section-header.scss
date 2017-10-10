@@ -14,7 +14,7 @@
   padding-bottom: 20px;
 
   @include grid-media($media-lg) {
-    padding-bottom: 0
+    padding-bottom: 0;
   }
 
   h2 {
