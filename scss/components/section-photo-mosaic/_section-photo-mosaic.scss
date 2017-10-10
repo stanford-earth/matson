@@ -9,14 +9,12 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-// .section-highlight-cards__header {
-//
-// }
+.section-photo-mosaic--quotes {
+  @include responsive-container($default-container);
+}
 
-.section-highlight-cards__container {
-  .highlight-cards {
-    .highlight-card {
-      box-shadow: none;
-    }
+.photo-mosaic__header {
+  h2.has-dash-under {
+    @include dash-left-lg($dash-color: brand);
   }
 }

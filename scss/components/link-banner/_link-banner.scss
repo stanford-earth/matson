@@ -26,5 +26,10 @@
     letter-spacing: .5px;
     line-height: em(22px);
     max-width: 400px;
+    margin: 0 auto;
+
+    @include grid-media($media-lg) {
+      margin: 0;
+    }
   }
 }

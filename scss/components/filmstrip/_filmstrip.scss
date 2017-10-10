@@ -19,10 +19,16 @@
       display: block;
       position: absolute;
       top: -1em;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       width: 20px;
       height: 2px;
       background-color: color(emphasis);
+
+      @include grid-media($media-md) {
+        left: 0;
+        transform: none;
+      }
     }
   }
 
