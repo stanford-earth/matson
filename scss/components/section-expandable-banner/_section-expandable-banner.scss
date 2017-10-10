@@ -14,6 +14,10 @@
   min-height: 300px;
 
   .section-header {
+    @include grid-media($media-md-only) {
+      text-align: left;
+    }
+
     p {
       color: color(white);
       letter-spacing: .5px;

@@ -112,6 +112,10 @@ function matson_page_attachments_alter(array &$attachments) {
       case 'stanford_spotlight':
         $attachments['#attached']['library'][] = 'matson/stanford_spotlight';
         break;
+        
+      case 'stanford_view_page':
+        $attachments['#attached']['library'][] = 'matson/stanford_view_page';
+        break;
     }
   }
 

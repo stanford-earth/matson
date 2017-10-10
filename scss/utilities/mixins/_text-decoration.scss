@@ -44,6 +44,29 @@
   }
 }
 
+@mixin dash-left-lg($dash-color: brand) {
+  margin-bottom: 1.25em;
+
+  @include grid-media($media-lg) {
+    margin-bottom: .75em;
+  }
+
+  &::after {
+    @extend %dash-under;
+    bottom: -.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: color($dash-color);
+
+    @include grid-media($media-lg) {
+      bottom: auto;
+      top: .625em;
+      left: -.9em;
+      transform: none;
+    }
+  }
+}
+
 @mixin dash-left-offset($dash-color: brand) {
   position: relative;
   padding-left: .9em;
