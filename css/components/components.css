@@ -1162,10 +1162,15 @@
     display: block;
     position: absolute;
     top: -1em;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 20px;
     height: 2px;
     background-color: #f9b002; }
+    @media only screen and (min-width: 768px) {
+      .filmstrip .filmstrip__title::before {
+        left: 0;
+        transform: none; } }
 
 .filmstrip .filmstrip__cards {
   margin: 0 auto; }

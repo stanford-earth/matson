@@ -1,6 +1,8 @@
 @media only screen and (min-width: 768px) {
   #filmstrip {
-    margin-top: -150px; } }
+    margin-top: -150px;
+    z-index: 10;
+    position: relative; } }
 
 #filmstrip .filmstrip__cards {
   max-width: 1190px; }
