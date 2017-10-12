@@ -2,11 +2,6 @@ node_stanford_event:
   label: 'Stanford Event Node'
   description: 'Stanford Event Content Type Page Layout'
   fields:
-    breadcrumb:
-      description: "Breadcrumbs"
-      label: "Breadcrumbs"
-      type: "text"
-      preview: "Breadcumb html markup to go here."
     featured_image:
       description: "Featured Image"
       label: "Featured Image"
@@ -68,3 +63,58 @@ node_stanford_event:
       type: "text"
       preview: "(no preview for content region provided)"
   use: "@matson/stanford_event/stanford-event.html.twig"
+node_stanford_person:
+  label: 'Stanford Person Node'
+  description: 'Stanford Person Content Type Page Layout'
+  fields:
+    featured_image:
+      description: "Featured Image"
+      label: "Featured Image"
+      type: "text"
+      preview:
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/500/266/nature/1"
+    first_name:
+      description: "First Name"
+      label: "First Name"
+      type: "text"
+      preview: "First Name"
+    last_name:
+      description: "Last Name"
+      label: "Last Name"
+      type: "text"
+      preview: "Last Name"
+    sub_title:
+      description: "Sub title"
+      label: "Sub title"
+      type: "text"
+      preview: "Sponsor or Important Details Could Go Here"
+    email:
+      description: "Email address"
+      label: "Email"
+      type: "text"
+      preview: "<a href=\"#\">suid@stanford.edu</a>"
+    phone:
+      description: "Phone number"
+      label: "Phone"
+      type: "text"
+      preview: "555-456-9876"
+    office:
+      description: "Office Address"
+      label: "Office"
+      type: "text"
+      preview: "XYZ Building, Room 141, Stanford, \nCalifornia 94305 "
+    links:
+      description: "External Links"
+      label: "Links"
+      type: "text"
+      preview: "<a href=\"#\">Example link one</a> <a href=\"#\">Example link two</a>"
+    bio:
+      description: "Biography."
+      label: "Biography"
+      type: "text"
+      preview: "About this person."
+  use: "@matson/stanford_person/stanford-person.html.twig"
