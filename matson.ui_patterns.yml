@@ -1,0 +1,70 @@
+node_stanford_event:
+  label: 'Stanford Event Node'
+  description: 'Stanford Event Content Type Page Layout'
+  fields:
+    breadcrumb:
+      description: "Breadcrumbs"
+      label: "Breadcrumbs"
+      type: "text"
+      preview: "Breadcumb html markup to go here."
+    featured_image:
+      description: "Featured Image"
+      label: "Featured Image"
+      type: "text"
+      preview:
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/500/266/nature/1"
+    created:
+      description: "Created date"
+      label: "Created date"
+      type: "text"
+      preview: "October 11, 2017"
+    updated:
+      description: "Updated date"
+      label: "Updated date"
+      type: "text"
+      preview: "October 12, 2017"
+    title:
+      description: "Page title"
+      label: "Page title"
+      type: "text"
+      preview: "This is the page title"
+    sub_title:
+      description: "Sub title"
+      label: "Sub title"
+      type: "text"
+      preview: "This is the sub title field"
+    when:
+      description: "When this event is happening"
+      label: "When"
+      type: "text"
+      preview: "Every third Thursday of each month"
+    where:
+      description: "Where the event is taking place"
+      label: "Where"
+      type: "text"
+      preview: "Leland Amphitheatre"
+    tags:
+      description: "A list of tags associated with the event"
+      label: "Tags"
+      type: "text"
+      preview: "Presentation, Clip Art"
+    audience:
+      description: "The audience that should attend"
+      label: "Audience"
+      type: "text"
+      preview: "Faculty, Staff, Sponsors"
+    more_info:
+      description: "A link to more information"
+      label: "More information"
+      type: "text"
+      preview: "<a href=\"https://stanford.edu\" >Find out more</a>"
+    content:
+      description: "An open region for putting whatever else. Like paragraphs."
+      label: "Content"
+      type: "text"
+      preview: "(no preview for content region provided)"
+  use: "@matson/stanford_event/stanford-event.html.twig"
