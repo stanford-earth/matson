@@ -1,36 +1,43 @@
 {% extends '@matson/page.html.twig' %}
+{% if node.field_s_event_image.entity.uri.value is not empty %}
+{% set imagestyle = {
+    '#theme':      'responsive_image',
+    '#responsive_image_style_id': 'stanford_event_500x266',
+    '#uri':        node.field_s_event_image[0].entity.uri.value,
+    '#alt':        node.field_s_event_image[0].alt,
+    '#height':     node.field_s_event_image[0].values.height,
+    '#width':      node.field_s_event_image[0].values.width,
+    '#attributes': { class: 'event-feature-image' },
+  }
+%}
+{% endif %}
 {% block main_content %}
-  {#
-    You can work within the block wrapper. If you need acces to more of the
-    template we can add more blocks. Just ask.
-  #}
-
   {# left aligned #}
   <div class="content-type__media-container right-align-media">
     <nav aria-label="You are here:" role="navigation" class="breadcrumbs-container">
       <ul class="breadcrumbs">
         <li><a href="#">Home</a>/</li>
         <li><a href="#">Features</a>/</li>
-        <li>
-          Cloning
-        </li>
+        <li>Clonig</li>
       </ul>
     </nav>
 
     <div class="content-type__media">
-      <figure><img src="http://via.placeholder.com/500x266"></figure>
+      <figure>{{ imagestyle }}</figure>
     </div>
 
     <div class="content-type__header">
-      <div class="page-title"><h1>Tile or Headline would go here</h1></div>
+      <div class="page-title"><h1>{{ node.title.value }}</h1></div>
+      {% if node.field_s_event_subtitle.value is not empty %}
       <div class="page-subtitle">
         <h2>
-          Sponsor or Important Details Could Go Here
+          {{ node.field_s_event_subtitle.value }}
         </h2>
       </div>
+      {% endif %}
       <div class="content-type-date">
-        <span>Published</span>
-        <time>August 2017</time>
+        <span>{{ 'Published'|t }}</span>
+        <time>{{ node.created.value|date("F j, Y") }}</time>
         <div class="content-type-date__actions social-actions">
           <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'mail'|t }}</title><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
           <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'linkedin'|t }}</title><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
@@ -42,33 +49,49 @@
 
   </div>
 
-  {{ page.content }}
-
   <div class="block-matson-content">
     <dl class="definition-list">
-      <dt>When:</dt>
+      {% if node.field_s_event_when.value is not empty %}
+      <dt>{{ 'When'|t }}:</dt>
       <dd>
-        Ongoing every weekday (M-F) from September 5, 2017 through September 15, 2017.
+        {{ node.field_s_event_when.value|render|trim }}
       </dd>
-      <dt>Where:</dt>
+      {% endif %}
+      {% if node.field_s_event_where.value is not empty %}
+      <dt>{{ 'Where'|t }}:</dt>
       <dd>
-        Various
+        {{ node.field_s_event_where.value|render|trim }}
       </dd>
-      <dt>Tags:</dt>
+      {% endif %}
+      {% if node.field_s_event_tags is not empty %}
+      <dt>{{ 'Tags'|t }}:</dt>
       <dd>
-        Health / Wellness Recreation / Sport
+        {% for key, item in node.field_s_event_tags if key|first != '#' %}
+          {% if key+1 < node.field_s_event_tags|length %}
+          {{ item.entity.name.value }}, 
+          {% else %}
+          {{ item.entity.name.value }}
+          {% endif %}
+        {% endfor %}
       </dd>
-      <dt>Audience:</dt>
+      {% endif %}
+      {% if node.field_s_event_audience.value is not empty %}
+      <dt>{{ 'Audience'|t }}:</dt>
       <dd>
-        Faculty/Staff, Students
+        {{ node.field_s_event_audience.value|render|trim }}
       </dd>
-      <dt>More Info:</dt>
+      {% endif %}
+      {% if node.field_s_event_more_info.uri is not empty %}
+      <dt>{{ 'More Info'|t }}:</dt>
       <dd>
-        <a href="#">Visit the website</a>
+        {{ link(node.field_s_event_more_info.title, node.field_s_event_more_info.uri, {'class': ['more-info-link']}) }}
       </dd>
+      {% endif %}
     </dl>
 
-    <div class="content-type__timestamp">Last modified September 9, 2017.</div>
+    {{ page.content }}
+
+    <div class="content-type__timestamp">{{ 'Last updated'|t }}: {{ node.updated.value|date("F j, Y") }}</div>
   </div>
 
 {% endblock %}
