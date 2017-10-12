@@ -6,10 +6,7 @@
 // top of the page each time a complex page is rendered. A few things have to
 // move around to ensure that the banner is in the right place.
 
-// Due to the way the rendering works on the twig templates there will always
-// be hero-banner-0 as the first one.
-
-#hero-banner:first-child:not(.component-centered-container-margins) {
+.node-field-s-news-top-media #hero-banner {
   margin-top: -170px;
 
   @include grid-media($header-md) {
@@ -199,6 +196,11 @@ h1 {
     }
   }
 }
+
+.video-embed-field-responsive-video {
+  position: initial;
+}
+
 
 .field-p-responsive-image,
 .field-p-responsive-image-cred,
