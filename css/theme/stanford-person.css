@@ -84,7 +84,9 @@ figcaption {
     margin-left: 100px; } }
 
 .content-type-person {
-  @inlude grid-collapse; }
+  margin-left: -15px;
+  margin-right: -15px;
+  width: calc(100% + 30px); }
   .content-type-person::after {
     clear: both;
     content: "";

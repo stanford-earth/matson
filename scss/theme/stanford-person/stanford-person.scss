@@ -60,7 +60,7 @@ figcaption {
   );
 
   @include grid-container;
-  @inlude grid-collapse;
+  @include grid-collapse;
 
   @include grid-media($media-lg) {
     @include padding(null 100px null 70px);
