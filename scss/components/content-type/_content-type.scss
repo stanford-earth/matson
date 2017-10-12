@@ -1,0 +1,149 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.content-type__header {
+  color: color(text-active);
+  position: relative;
+
+  .social-actions {
+    @include dash-under;
+    position: relative;
+
+    &::after {
+      left: 0;
+      transform: none;
+    }
+  }
+}
+
+.content-type__media-container {
+  @include grid-container;
+
+  @include grid-media($media-lg) {
+    @include margin(null 100px);
+  }
+
+  &.left-align-media,
+  &.right-align-media {
+    .content-type__media {
+      @include grid-media($media-lg) {
+        width: 50%;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+
+        @include grid-media($media-lg) {
+          margin: 0;
+        }
+      }
+    }
+
+    .content-type__header {
+      margin-top: 40px;
+      padding-bottom: 40px;
+
+      @include grid-media($media-lg) {
+        width: 50%;
+      }
+
+      &::after {
+        @include grid-media($media-lg) {
+          @include fullpage-stripe;
+          top: 0;
+          bottom: 0;
+          width: 150vw;
+        }
+      }
+    }
+
+    .breadcrumbs-container {
+      @include grid-media($media-lg) {
+        width: 50%;
+      }
+    }
+  }
+
+  &.left-align-media {
+    .content-type__media {
+      @include grid-media($media-lg) {
+        float: left;
+      }
+
+      figure,
+      picture {
+        @include grid-media($media-lg) {
+          margin-right: 40px;
+        }
+      }
+    }
+
+    .content-type__header {
+      @include grid-media($media-lg) {
+        float: left;
+      }
+    }
+
+    .breadcrumbs-container {
+      @include grid-media($media-lg) {
+        float: right;
+      }
+    }
+  }
+
+  &.right-align-media {
+    .content-type__media {
+      @include grid-media($media-lg) {
+        float: right;
+      }
+
+      figure,
+      picture {
+        @include grid-media($media-lg) {
+          margin-left: 40px;
+        }
+
+        &::after {
+          margin-left: -100vw;
+          width: 150vw;
+        }
+      }
+    }
+
+    .content-type__header {
+      @include grid-media($media-lg) {
+        margin-top: 40px;
+        padding-top: 40px;
+      }
+    }
+
+    .breadcrumbs-container {
+      @include grid-media($media-lg) {
+        float: left;
+      }
+    }
+  }
+}
+
+.content-type-date {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 50px;
+
+  time {
+    padding-left: 5px;
+  }
+}
+
+.content-type-date__actions {
+  padding-top: 5px;
+}

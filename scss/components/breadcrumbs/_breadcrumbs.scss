@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+// Grab our mixins.
+@import "utilities/utilities";
+
+.breadcrumbs {
+  @include grid-container;
+  margin-left: 0;
+
+  color: color(ash);
+  font-size: 13px;
+
+  > li {
+    float: left;
+    list-style: none;
+    margin-right: 5px;
+  }
+
+  a {
+    padding-right: 5px;
+    text-decoration: underline;
+  }
+
+  span {
+    padding-left: 5px;
+  }
+}

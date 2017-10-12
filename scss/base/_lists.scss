@@ -18,3 +18,21 @@ ul > li {
 dl > dt {
   margin-bottom: 1em;
 }
+
+.definition-list {
+  @include grid-container;
+
+  dt {
+    font-weight: normal;
+    float: left;
+    width: 130px;
+    clear: left;
+    text-transform: uppercase;
+    color: color(dark-red);
+  }
+
+  dd {
+    float: left;
+    width: calc(100% - 130px);
+  }
+}

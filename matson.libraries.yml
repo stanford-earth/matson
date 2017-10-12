@@ -134,6 +134,24 @@ research_area:
     layout:
       css/layout/research-area.css: {}
 
+stanford_event:
+  version: VERSION
+  css:
+    theme:
+      css/theme/stanford-event.css: {}
+
+stanford_spotlight:
+  version: VERSION
+  css:
+    theme:
+      css/theme/stanford-spotlight.css: {}
+
+stanford_person:
+  version: VERSION
+  css:
+    theme:
+      css/theme/stanford-person.css: {}
+
 stanford_view_page:
   version: VERSION
   css:

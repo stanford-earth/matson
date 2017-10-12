@@ -1,0 +1,90 @@
+@charset 'UTF-8';
+// Grab our mixins.
+@import "utilities/utilities";
+
+// Comment out to avoid centering the whole container.
+.main-container {
+  @include responsive-container($default-container);
+  margin-top: 50px;
+}
+
+.page-title {
+  @include padding(0 0);
+
+  h1 {
+    font-size: 42px;
+  }
+}
+
+.page-subtitle {
+
+  h2 {
+    font-size: 28px;
+  }
+
+  span {
+    display: block;
+  }
+}
+
+.lead-text {
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+.block-matson-content {
+  color: color(text-active);
+
+  @include grid-media($media-lg) {
+    @include margin(null 100px);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .definition-list {
+    margin-bottom: 40px;
+  }
+}
+
+.content-type__timestamp {
+  font-size: 22px;
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.content-type__media-container {
+  @include grid-media($media-lg) {
+    margin-bottom: 70px;
+  }
+
+  &.left-align-media,
+  &.right-align-media {
+    .content-type__header {
+      clear: left;
+    }
+
+    .content-type__media {
+      @include grid-media($media-lg) {
+        margin-top: 40px;
+        padding-top: 40px;
+      }
+
+      figure,
+      picture {
+        position: relative;
+
+        &::after {
+          @include fullpage-stripe;
+          width: 150vw;
+
+          @include grid-media($media-lg) {
+            bottom: -40px;
+            margin-left: -100vw;
+          }
+        }
+      }
+    }
+  }
+}

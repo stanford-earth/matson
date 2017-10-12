@@ -1,0 +1,178 @@
+node_stanford_event:
+  label: 'Stanford Event Node'
+  description: 'Stanford Event Content Type Page Layout'
+  fields:
+    featured_image:
+      description: "Featured Image"
+      label: "Featured Image"
+      type: "text"
+      preview:
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/500/266/nature/1"
+    created:
+      description: "Created date"
+      label: "Created date"
+      type: "text"
+      preview: "October 11, 2017"
+    updated:
+      description: "Updated date"
+      label: "Updated date"
+      type: "text"
+      preview: "October 12, 2017"
+    title:
+      description: "Page title"
+      label: "Page title"
+      type: "text"
+      preview: "This is the page title"
+    sub_title:
+      description: "Sub title"
+      label: "Sub title"
+      type: "text"
+      preview: "This is the sub title field"
+    when:
+      description: "When this event is happening"
+      label: "When"
+      type: "text"
+      preview: "Every third Thursday of each month"
+    where:
+      description: "Where the event is taking place"
+      label: "Where"
+      type: "text"
+      preview: "Leland Amphitheatre"
+    tags:
+      description: "A list of tags associated with the event"
+      label: "Tags"
+      type: "text"
+      preview: "Presentation, Clip Art"
+    audience:
+      description: "The audience that should attend"
+      label: "Audience"
+      type: "text"
+      preview: "Faculty, Staff, Sponsors"
+    more_info:
+      description: "A link to more information"
+      label: "More information"
+      type: "text"
+      preview: "<a href=\"https://stanford.edu\" >Find out more</a>"
+    content:
+      description: "An open region for putting whatever else. Like paragraphs."
+      label: "Content"
+      type: "text"
+      preview: "(no preview for content region provided)"
+  use: "@matson/stanford_event/stanford-event.html.twig"
+node_stanford_person:
+  label: 'Stanford Person Node'
+  description: 'Stanford Person Content Type Page Layout'
+  fields:
+    featured_image:
+      description: "Featured Image"
+      label: "Featured Image"
+      type: "text"
+      preview:
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/500/266/nature/1"
+    first_name:
+      description: "First Name"
+      label: "First Name"
+      type: "text"
+      preview: "First Name"
+    last_name:
+      description: "Last Name"
+      label: "Last Name"
+      type: "text"
+      preview: "Last Name"
+    sub_title:
+      description: "Sub title"
+      label: "Sub title"
+      type: "text"
+      preview: "Sponsor or Important Details Could Go Here"
+    email:
+      description: "Email address"
+      label: "Email"
+      type: "text"
+      preview: "<a href=\"#\">suid@stanford.edu</a>"
+    phone:
+      description: "Phone number"
+      label: "Phone"
+      type: "text"
+      preview: "555-456-9876"
+    office:
+      description: "Office Address"
+      label: "Office"
+      type: "text"
+      preview: "XYZ Building, Room 141, Stanford, \nCalifornia 94305 "
+    links:
+      description: "External Links"
+      label: "Links"
+      type: "text"
+      preview: "<a href=\"#\">Example link one</a> <a href=\"#\">Example link two</a>"
+    bio:
+      description: "Biography."
+      label: "Biography"
+      type: "text"
+      preview: "About this person."
+  use: "@matson/stanford_person/stanford-person.html.twig"
+node_stanford_spotlight:
+  label: 'Stanford Spotlight Node'
+  description: 'Stanford Spotlight Content Type Page Layout'
+  variants:
+    layout:
+      label: "Layout option"
+      description: "Toggle different layouts through css classes."
+      default: "columns"
+      options:
+        columns: "Columns"
+        wide: "Wide Banner"
+  fields:
+    featured_image:
+      description: "Featured Image"
+      label: "Featured Image"
+      type: "text"
+      preview:
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/1200/400/nature/1"
+    first_name:
+      description: "First Name"
+      label: "First Name"
+      type: "text"
+      preview: "First Name"
+    last_name:
+      description: "Last Name"
+      label: "Last Name"
+      type: "text"
+      preview: "Last Name"
+    title:
+      description: "Page title"
+      label: "Page title"
+      type: "text"
+      preview: "Page title"
+    sub_title:
+      description: "Sub title"
+      label: "Sub title"
+      type: "text"
+      preview: "Sponsor or Important Details Could Go Here"
+    department:
+      description: "Department"
+      label: "Department"
+      type: "text"
+      preview: "Geological Sciences"
+    created:
+      description: "Published date"
+      label: "Published"
+      type: "text"
+      preview: "August 2017"
+    content:
+      description: "Rich content like paragraphs"
+      label: "Content"
+      type: "text"
+      preview: "<p>No preview for content available.</p>"
+  use: "@matson/stanford_spotlight/stanford-spotlight.html.twig"

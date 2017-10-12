@@ -1,0 +1,113 @@
+.main-container {
+  margin-bottom: 80px;
+  margin-top: 50px; }
+  @media only screen and (max-width: 575px) {
+    .main-container {
+      padding: 1em calc(((50% /12) * 0) + 15px); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .main-container {
+      padding: 1em calc(((50% /12) * 0) + 15px); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .main-container {
+      padding: 1em calc(((50% /12) * 0) + 30px); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+    .main-container {
+      padding: 1em calc(((50% /12) * 0) + 30px); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 1500px) {
+    .main-container {
+      padding: 1em calc(50% - (750px - 60px)); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only print {
+    .main-container {
+      padding: 1em calc(((50% /12) * 0) + 0.25in); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+
+.page-title {
+  padding: 0; }
+  .page-title h1 {
+    font-size: 42px; }
+
+.page-subtitle h2 {
+  font-size: 28px; }
+
+.page-subtitle span {
+  display: block; }
+
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  color: #9c9d9e;
+  text-align: right; }
+
+.lead-text {
+  font-size: 22px;
+  margin-bottom: 50px; }
+  .lead-text:first-of-type::first-line {
+    position: relative;
+    font-size: 1em;
+    letter-spacing: normal; }
+  .lead-text:first-child::first-letter {
+    letter-spacing: 0;
+    font-size: 3em;
+    font-weight: bold;
+    float: left;
+    margin: 0.13em 0.1em 0 0;
+    line-height: 0.7; }
+
+.block-matson-content {
+  color: #4d4f53; }
+  @media only screen and (min-width: 1024px) {
+    .block-matson-content {
+      margin-right: 100px;
+      margin-left: 100px; } }
+  .block-matson-content a {
+    text-decoration: underline; }
+
+.content-type__media-container.left-align-media .content-type__media figure,
+.content-type__media-container.left-align-media .content-type__media picture, .content-type__media-container.right-align-media .content-type__media figure,
+.content-type__media-container.right-align-media .content-type__media picture {
+  position: relative; }
+  .content-type__media-container.left-align-media .content-type__media figure::after,
+  .content-type__media-container.left-align-media .content-type__media picture::after, .content-type__media-container.right-align-media .content-type__media figure::after,
+  .content-type__media-container.right-align-media .content-type__media picture::after {
+    content: '';
+    background-color: #FBFBFB;
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    z-index: -1;
+    width: 150vw; }
+
+.content-type__media-container.right-align-media .content-type__media figure::after,
+.content-type__media-container.right-align-media .content-type__media picture::after {
+  margin-left: -100vw;
+  width: 150vw; }
+
+/*# sourceMappingURL=stanford-spotlight.css.map */

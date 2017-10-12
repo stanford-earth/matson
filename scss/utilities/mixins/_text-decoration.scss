@@ -111,3 +111,20 @@
     text-decoration: none;
   }
 }
+
+@mixin drop-cap-inline() {
+  &:first-of-type::first-line {
+    position: relative;
+    font-size: 1em;
+    letter-spacing: normal;
+  }
+
+  &:first-child::first-letter {
+    letter-spacing: 0;
+    font-size: 3em;
+    font-weight: bold;
+    float: left;
+    margin: 0.13em 0.1em 0 0;
+    line-height: 0.7;
+  }
+}

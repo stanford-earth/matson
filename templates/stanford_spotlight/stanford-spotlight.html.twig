@@ -1,0 +1,46 @@
+{%
+  set layouts = {
+    "columns": ["content-type__media-container", "left-align-media", "vertical-expand-media"],
+    "wide": ["content-type__media-container", "centered-media"]
+  }
+%}
+{%
+  set attributes = attributes.addClass(layouts[variants.layout])
+%}
+<div{{ attributes }}>
+  <div class="content-type__media-header">
+    <div class="content-type__media">
+      <figure>{{ featured_image }}</figure>
+    </div>
+
+    <div class="content-type__header">
+      <div class="page-title"><h1>{{ title }}</h1></div>
+      <div class="page-subtitle">
+        <h2>
+          {% if first_name is not empty or last_name is not empty %}
+          <span class="s-person-name__name">{{ first_name}} {{ last_name }}</span>
+          {% endif %}
+          {% if sub_title is not empty %}
+          <span class="s-person-name__title">{{ sub_title }}</span>
+          {% endif %}
+          {% if department is not empty %}
+          <span class="s-person-name__department">{{ department }}</span>
+          {% endif %}
+        </h2>
+      </div>
+
+      {{ content }}
+
+      <div class="content-type-date">
+        <span>{{ "Published"|t }}</span>
+        <time>{{ created }}</time>
+        <div class="content-type-date__actions social-actions">
+          <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'mail'|t }}</title><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+          <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'linkedin'|t }}</title><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+          <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+          <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'facebook'|t }}</title><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -35,9 +35,6 @@
 h1 {
   font-size: 42px; }
 
-a {
-  text-decoration: underline; }
-
 .block--field-s-news-sub-title {
   margin-bottom: 20px; }
   @media only screen and (min-width: 576px) {
@@ -140,59 +137,6 @@ a {
     margin: 0.13em 0.2em 0 0;
     line-height: 0.7; }
 
-.field-p-wysiwyg > :last-child {
-  margin-bottom: 0; }
-
-.field-p-wysiwyg h2 {
-  position: relative;
-  padding-left: .9em;
-  margin-bottom: 20px; }
-  .field-p-wysiwyg h2::after {
-    position: absolute;
-    top: 50%;
-    margin-top: auto;
-    margin-bottom: auto;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    background-color: #8c1515;
-    left: 0; }
-
-.field-p-wysiwyg p {
-  margin-bottom: 30px; }
-
-.field-p-wysiwyg p + h2 {
-  margin-top: 50px; }
-
-.field-p-wysiwyg blockquote + h1,
-.field-p-wysiwyg blockquote + h2,
-.field-p-wysiwyg blockquote + h3,
-.field-p-wysiwyg blockquote + h4,
-.field-p-wysiwyg blockquote + h5,
-.field-p-wysiwyg blockquote + h6 {
-  margin-top: 1em; }
-
-.field-p-wysiwyg figure {
-  display: table;
-  margin-bottom: 30px; }
-  .field-p-wysiwyg figure.align-right {
-    margin-left: 30px; }
-  .field-p-wysiwyg figure.align-left {
-    margin-right: 30px; }
-
-.field-p-wysiwyg figcaption {
-  display: table-caption;
-  caption-side: bottom;
-  color: #9c9d9e;
-  text-align: right; }
-
-.field-p-wysiwyg img {
-  margin-bottom: 20px; }
-  .field-p-wysiwyg img.align-right {
-    margin-left: 20px; }
-  .field-p-wysiwyg img.align-left {
-    margin-right: 20px; }
-
 @media only screen and (min-width: 576px) {
   .layout--basic .field-p-wysiwyg {
     padding: 0 80px 20px; } }
@@ -242,6 +186,24 @@ figure.align-center .figure-container {
     max-width: none;
     margin-bottom: 0;
     display: block; }
+
+.field-p-wysiwyg h2 {
+  position: relative;
+  padding-left: .9em;
+  margin-bottom: 20px; }
+  .field-p-wysiwyg h2::after {
+    position: absolute;
+    top: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #8c1515;
+    left: 0; }
+
+.field-p-wysiwyg a {
+  text-decoration: underline; }
 
 .field-p-responsive-image-cred {
   color: #9c9d9e;

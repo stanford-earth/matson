@@ -128,6 +128,9 @@ module.exports = function(grunt) {
           'css/states/states.css':                          'scss/states/states.scss',
 
           // THEME.
+          'css/theme/stanford-event.css':                   'scss/theme/stanford-event/stanford-event.scss',
+          'css/theme/stanford-person.css':                  'scss/theme/stanford-person/stanford-person.scss',
+          'css/theme/stanford-spotlight.css':               'scss/theme/stanford-spotlight/stanford-spotlight.scss',
           'css/theme/stanford-news.css':                    'scss/theme/stanford-news.scss',
           'css/theme/theme.css':                            'scss/theme/theme.scss',
           'css/theme/print.css':                            'scss/theme/print.scss'

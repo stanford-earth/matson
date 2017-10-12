@@ -1,0 +1,150 @@
+.dash-header::after {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  content: '';
+  display: block;
+  z-index: 2; }
+
+.main-container {
+  margin-top: 20px; }
+  @media only screen and (max-width: 575px) {
+    .main-container {
+      padding: 1em calc(((50% /12) * 0) + 15px); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .main-container {
+      padding: 1em calc(((50% /12) * 0) + 15px); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .main-container {
+      padding: 1em calc(((50% /12) * 0) + 30px); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+    .main-container {
+      padding: 1em calc(((50% /12) * 0) + 30px); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 1500px) {
+    .main-container {
+      padding: 1em calc(50% - (750px - 60px)); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only print {
+    .main-container {
+      padding: 1em calc(((50% /12) * 0) + 0.25in); }
+      .main-container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+
+.block--page-title {
+  padding-right: 0;
+  padding-left: 0; }
+
+.page-title {
+  padding: 0; }
+  .page-title h1 {
+    font-size: 42px; }
+
+.page-subtitle {
+  margin-bottom: 50px; }
+  .page-subtitle h2 {
+    font-size: 28px; }
+  .page-subtitle span {
+    display: block; }
+
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  color: #9c9d9e;
+  text-align: right; }
+
+.block-matson-content {
+  color: #4d4f53; }
+  .block-matson-content a {
+    text-decoration: underline; }
+
+@media only screen and (min-width: 1024px) {
+  .breadcrumbs-container {
+    margin-right: 100px;
+    margin-left: 100px; } }
+
+.content-type-person {
+  margin-left: -15px;
+  margin-right: -15px;
+  width: calc(100% + 30px); }
+  .content-type-person::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media only screen and (min-width: 1024px) {
+    .content-type-person {
+      padding-right: 100px;
+      padding-left: 70px; } }
+  @media only screen and (min-width: 1024px) {
+    .content-type-person .content-type-person_profile {
+      width: calc(45.4545454545% - 43.6363636364px);
+      float: left;
+      margin-left: 30px; } }
+  .content-type-person .content-type-person_profile a {
+    text-decoration: underline;
+    display: block; }
+  .content-type-person .content-type-person_bio {
+    border: 1px solid #dad7cb;
+    padding: 40px; }
+    @media only screen and (min-width: 1024px) {
+      .content-type-person .content-type-person_bio {
+        width: calc(54.5454545455% - 46.3636363636px);
+        float: left;
+        margin-left: 30px; } }
+    .content-type-person .content-type-person_bio p,
+    .content-type-person .content-type-person_bio h2 {
+      font-size: 18px; }
+      @media only screen and (min-width: 768px) {
+        .content-type-person .content-type-person_bio p,
+        .content-type-person .content-type-person_bio h2 {
+          font-size: 22px; } }
+    .content-type-person .content-type-person_bio h2 {
+      font-weight: bold; }
+
+.content-type__media {
+  margin-bottom: 15px; }
+
+.content-type__header .definition-list {
+  margin-bottom: 50px; }
+  .content-type__header .definition-list dt {
+    width: 90px; }
+
+.dash-header {
+  margin-bottom: 1.25em;
+  font-size: 12px;
+  text-transform: uppercase;
+  position: relative; }
+  .dash-header::after {
+    background-color: #8c1515;
+    bottom: -.5em;
+    left: 50%;
+    transform: translateX(-50%); }
+  .dash-header::after {
+    bottom: -1em;
+    left: 0;
+    transform: none; }
+
+.definition-list {
+  line-height: 1.75; }
+
+/*# sourceMappingURL=stanford-person.css.map */

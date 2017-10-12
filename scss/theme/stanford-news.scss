@@ -15,6 +15,7 @@
   @include grid-media($header-md) {
     margin-top: -176px;
   }
+
   .hero-banner__container {
     border: 0;
   }
@@ -34,10 +35,6 @@
 // Title field.
 h1 {
   font-size: 42px;
-}
-
-a {
-  text-decoration: underline;
 }
 
 // Subtitle field.
@@ -173,7 +170,7 @@ a {
     margin-bottom: 0;
   }
 
-  // Drop Cap
+// Drop Cap
   > p:first-of-type::first-line {
     position: relative;
     font-size: 1em;
@@ -187,68 +184,6 @@ a {
     float: left;
     margin: 0.13em 0.2em 0 0;
     line-height: 0.7;
-  }
-}
-
-// Content styles
-.field-p-wysiwyg {
-  > :last-child {
-    margin-bottom: 0;
-  }
-
-  h2 {
-    @include dash-left-offset;
-    margin-bottom: 20px;
-  }
-
-  p {
-    margin-bottom: 30px;
-  }
-
-  p + h2 {
-    margin-top: 50px;
-  }
-
-  blockquote + h1,
-  blockquote + h2,
-  blockquote + h3,
-  blockquote + h4,
-  blockquote + h5,
-  blockquote + h6, {
-    margin-top: modular-scale(0);
-  }
-
-  // Floated images
-  figure {
-    display: table;
-    margin-bottom: 30px;
-
-    &.align-right {
-      margin-left: 30px;
-    }
-
-    &.align-left {
-      margin-right: 30px;
-    }
-  }
-
-  figcaption {
-    display: table-caption;
-    caption-side: bottom;
-    color: color(ash);
-    text-align: right;
-  }
-
-  img {
-    margin-bottom: 20px;
-
-    &.align-right {
-      margin-left: 20px;
-    }
-
-    &.align-left {
-      margin-right: 20px;
-    }
   }
 }
 
@@ -294,6 +229,17 @@ figure.align-center .figure-container {
     max-width: none;
     margin-bottom: 0;
     display: block;
+  }
+}
+
+.field-p-wysiwyg {
+  h2 {
+    @include dash-left-offset;
+    margin-bottom: 20px;
+  }
+
+  a {
+    text-decoration: underline;
   }
 }
 
