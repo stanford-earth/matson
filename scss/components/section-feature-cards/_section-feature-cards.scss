@@ -12,7 +12,7 @@
 .section-feature-cards {
 
   .feature-cards__header {
-    @indlude box-frame();
+    @include box-frame();
     position: relative;
   }
 

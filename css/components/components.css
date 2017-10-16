@@ -3209,8 +3209,16 @@
   z-index: 2; }
 
 .section-feature-cards .feature-cards__header {
-  @indlude box-frame();
   position: relative; }
+  @media only screen and (min-width: 1024px) {
+    .section-feature-cards .feature-cards__header::after {
+      top: -3.125em;
+      bottom: -3.125em;
+      right: -3.125em;
+      width: 1000px; } }
+  @media only screen and (min-width: 1500px) {
+    .section-feature-cards .feature-cards__header::after {
+      right: 0; } }
 
 .section-feature-cards p {
   color: #9c9d9e; }
