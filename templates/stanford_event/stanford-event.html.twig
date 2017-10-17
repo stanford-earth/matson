@@ -28,6 +28,13 @@
 </div>
 
 <div class="block-matson-content">
+
+  {% if description is not empty %}
+  <div class="content--description">
+    {{ description }}
+  </div>
+  {% endif %}
+
   <dl class="definition-list">
     {% if when is not empty %}
     <dt>{{ 'When'|t }}:</dt>
