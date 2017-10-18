@@ -22,6 +22,22 @@
   .filmstrip__cards {
     max-width: 1190px;
   }
+
+  h6 {
+    &.filmstrip__title {
+      max-width: 1190px;
+      margin: 12px auto 17px;
+    
+      @include grid-media($media-md) {
+        color: color(white);
+      }
+    }
+  }
+}
+
+// Remove default margin from hero banner.
+#hero-banner:first-child:not(.component-centered-container-margins) {
+  margin-bottom: 0;
 }
 
 // Adjust the highlight banner component so that the card

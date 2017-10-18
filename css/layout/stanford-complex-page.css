@@ -1,5 +1,6 @@
 #hero-banner:first-child:not(.component-centered-container-margins) {
-  margin-top: -121px; }
+  margin-top: -121px;
+  margin-bottom: 3.625em; }
   @media only screen and (min-width: 860px) {
     #hero-banner:first-child:not(.component-centered-container-margins) {
       margin-top: -126px; } }

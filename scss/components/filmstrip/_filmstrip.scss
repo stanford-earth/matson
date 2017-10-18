@@ -52,14 +52,5 @@
     font-weight: 600;
     letter-spacing: 0.2px;
     text-transform: uppercase;
-
-    &.filmstrip__title {
-      max-width: 1190px;
-      margin: 12px auto 17px;
-
-      @include grid-media($media-md) {
-        color: color(white);
-      }
-    }
   }
 }
