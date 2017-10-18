@@ -28,20 +28,27 @@
 </div>
 
 <div class="block-matson-content">
+
+  {% if description|render|striptags|trim is not empty %}
+  <div class="content-description lead-text">
+    {{ description }}
+  </div>
+  {% endif %}
+
   <dl class="definition-list">
-    {% if when is not empty %}
+    {% if when|render|striptags|trim is not empty %}
     <dt>{{ 'When'|t }}:</dt>
     <dd>
       {{ when }}
     </dd>
     {% endif %}
-    {% if where is not empty %}
+    {% if where|render|striptags|trim is not empty %}
     <dt>{{ 'Where'|t }}:</dt>
     <dd>
       {{ where }}
     </dd>
     {% endif %}
-    {% if tags is not empty %}
+    {% if tags|render|striptags|trim is not empty %}
     <dt>{{ 'Tags'|t }}:</dt>
     <dd>
     {% if tags is iterable %}
@@ -57,13 +64,13 @@
     {% endif %}
     </dd>
     {% endif %}
-    {% if audience is not empty %}
+    {% if audience|render|striptags|trim is not empty %}
     <dt>{{ 'Audience'|t }}:</dt>
     <dd>
       {{ audience }}
     </dd>
     {% endif %}
-    {% if more_info is not empty %}
+    {% if more_info|render|striptags|trim is not empty %}
     <dt>{{ 'More Info'|t }}:</dt>
     <dd>
       {{ more_info }}

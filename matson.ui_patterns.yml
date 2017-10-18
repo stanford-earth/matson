@@ -32,6 +32,11 @@ node_stanford_event:
       label: "Sub title"
       type: "text"
       preview: "This is the sub title field"
+    description:
+      description: "Description"
+      label: "Description"
+      type: "text"
+      preview: "This is the description field area. HTML WYSIWYG."
     when:
       description: "When this event is happening"
       label: "When"
