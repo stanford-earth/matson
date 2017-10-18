@@ -140,6 +140,11 @@ node_stanford_spotlight:
             alt: "this is a sample image"
             theme: image
             uri: "https://lorempixel.com/1200/400/nature/1"
+    credit:
+      description: "Photo Credit"
+      label: "Photo Credit"
+      type: "text"
+      preview: "Photo Credit"
     first_name:
       description: "First Name"
       label: "First Name"

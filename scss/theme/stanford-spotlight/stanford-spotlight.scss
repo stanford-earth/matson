@@ -1,6 +1,7 @@
 @charset 'UTF-8';
 // Grab our mixins.
 @import "utilities/utilities";
+@import "components/content-type/content-type";
 
 // Comment out to avoid centering the whole container.
 .main-container {
@@ -56,15 +57,24 @@ figcaption {
 .content-type__media-container {
   &.left-align-media,
   &.right-align-media {
+
+    .content-type__header {
+      &::after {
+        @include grid-media($media-lg) {
+          left: 0;
+        }
+      }
+    }
+
     .content-type__media {
       figure,
       picture {
         position: relative;
 
-        &::after {
-          @include fullpage-stripe;
-          width: 150vw;
-        }
+        //&::after {
+        //  @include fullpage-stripe;
+        //  width: 150vw;
+        //}
       }
     }
   }

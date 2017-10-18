@@ -1,16 +1,31 @@
 {%
   set layouts = {
-    "columns": ["content-type__media-container", "left-align-media", "vertical-expand-media"],
-    "wide": ["content-type__media-container", "centered-media"]
+    "columns": ["content-type__media-container", "left-align-media", "vertical-expand-media", "is-columns"],
+    "wide": ["content-type__media-container", "centered-media", "is-wide"]
   }
 %}
 {%
   set attributes = attributes.addClass(layouts[variants.layout])
 %}
+{#
+  Change the image style for the wide option.
+#}
+{% if variants.layout == "wide" %}
+  {% set field = featured_image['field_s_spotlight_featured_image'] %}
+  {% set index = field[0] %}
+  {% set style = index|merge({'#responsive_image_style_id': 'wide'}) %}
+  {% set index = index|merge(style) %}
+  {% set field = field|merge(index) %}
+  {% set featured_image = featured_image|merge(field) %}
+{% endif %}
+
 <div{{ attributes }}>
   <div class="content-type__media-header">
     <div class="content-type__media">
       <figure>{{ featured_image }}</figure>
+      {% if credit|render|trim is not empty %}
+      <div class="photo-credit">{{ credit }}</div>
+      {% endif %}
     </div>
 
     <div class="content-type__header">
@@ -29,8 +44,6 @@
         </h2>
       </div>
 
-      {{ content }}
-
       <div class="content-type-date">
         <span>{{ "Published"|t }}</span>
         <time>{{ created }}</time>
@@ -43,4 +56,9 @@
       </div>
     </div>
   </div>
+
+  <div class="content-type-content" >
+    {{ content }}
+  </div>
+
 </div>

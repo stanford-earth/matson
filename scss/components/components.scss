@@ -26,6 +26,9 @@
   "stanford_basic/scss/components/breadcrumb/breadcrumb";
 
 // MY components.
+// Not including
+// - "content-type/content-type",
+
 @import
   "brand-bar/brand-bar",
   "brand-lockup/brand-lockup",
@@ -35,7 +38,6 @@
   "callout-card/callout-card",
   "callout-text/callout-text",
   "column-text/column-text",
-  "content-type/content-type",
   "quote-card/quote-card",
   "contact-footer/contact-footer",
   "collapsible-menu/collapsible-menu",
