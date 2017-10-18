@@ -76,7 +76,7 @@
       // basic-main-menu.
       $(".js-nav-item-expandable li").unbind('click');
       // basic-main-menu.
-      $(".js-nav-item-expandable li a.parent").unbind('click').bind('click', function ( ) {
+      $(".js-nav-item-expandable li a.parent").unbind('click').bind('click', function (e) {
         // Must be attached to anchor element to prevent bubbling.
         e.preventDefault();
         e.stopPropagation();
