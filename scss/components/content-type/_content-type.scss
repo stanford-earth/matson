@@ -144,6 +144,21 @@
   }
 }
 
+.photo-credit {
+  text-align: center;
+  margin: 20px 0 0 0;
+
+  @include grid-media($media-lg) {
+    text-align: right;
+    margin: 0 40px 0 0;
+  }
+
+}
+
 .content-type-date__actions {
   padding-top: 5px;
+}
+
+.content-type__media-header {
+  @include clearfix;
 }
