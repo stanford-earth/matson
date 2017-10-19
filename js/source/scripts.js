@@ -158,11 +158,11 @@
     }
   }, 400));
 
-  $(".facebook-popup").click(function(e) {
+  $(".facebook-popup, .linkedin-popup").click(function(e) {
     e.preventDefault();
     var url = this.href;
     var opts = 'toolbar=0,scrollbars=1,status=0,menubar=0,resizable=1,width=575,height=400,left=' + (($(window).width() - 575)/2) + ",top=" + (($(window).height() - 400)/2);
-    window.open(url, 'facebook', opts);
+    window.open(url, this.title, opts);
     return false;
   });
 
