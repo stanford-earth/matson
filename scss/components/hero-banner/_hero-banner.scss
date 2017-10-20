@@ -45,13 +45,17 @@ $hero-max-width-lg: 1500px;
   }
 }
 
+.hero-banner:not(.has-video) {
+  .hero-banner__header {
+    @include grid-media($media-md) {
+      top: 68%;
+    }
+  }
+}
+
 .hero-banner__header {
   @include fade-in;
   letter-spacing: .5px;
-
-  @include grid-media($media-md) {
-    top: 68%;
-  }
 
   .hero-banner__title {
     @extend %h1 !optional;
