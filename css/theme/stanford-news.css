@@ -83,30 +83,30 @@ h1 {
     display: inline;
     margin-top: -3px; }
 
-@media only screen and (min-width: 1024px) {
-  .block--field-earth-matters-topic {
-    padding-left: 110px; } }
-
-.block--field-earth-matters-topic .field-label {
-  color: #017c92;
-  text-decoration: underline;
-  display: inline-block;
-  margin-right: 1rem; }
-  .block--field-earth-matters-topic .field-label::after {
-    content: ": "; }
-
-.block--field-earth-matters-topic .field--field-earth-matters-topic {
-  display: inline-block;
-  margin-right: 5px; }
-  .block--field-earth-matters-topic .field--field-earth-matters-topic a {
+.block--field-earth-matters-topic {
+  text-transform: uppercase; }
+  @media only screen and (min-width: 1024px) {
+    .block--field-earth-matters-topic {
+      padding-left: 110px; } }
+  .block--field-earth-matters-topic .field-label {
+    color: #017c92;
     text-decoration: underline;
     display: inline-block;
-    white-space: nowrap;
-    margin-bottom: .5rem;
-    font-weight: normal; }
-    @media only screen and (min-width: 768px) {
-      .block--field-earth-matters-topic .field--field-earth-matters-topic a {
-        margin-bottom: 0; } }
+    margin-right: 1rem; }
+    .block--field-earth-matters-topic .field-label::after {
+      content: ": "; }
+  .block--field-earth-matters-topic .field--field-earth-matters-topic {
+    display: inline-block;
+    margin-right: 5px; }
+    .block--field-earth-matters-topic .field--field-earth-matters-topic a {
+      text-decoration: underline;
+      display: inline-block;
+      white-space: nowrap;
+      margin-bottom: .5rem;
+      font-weight: normal; }
+      @media only screen and (min-width: 768px) {
+        .block--field-earth-matters-topic .field--field-earth-matters-topic a {
+          margin-bottom: 0; } }
 
 .block--field-s-news-category .field--field-s-news-category {
   display: inline-block;

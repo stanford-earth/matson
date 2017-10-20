@@ -41,21 +41,21 @@
   {% if multiple %}
     <div{{ attributes }}>
       {% for item in items %}
-        <div{{ item.attributes.addClass("field--field-earth-matters-topic") }}>{{ item.content }}</div>
+        <div{{ item.attributes.addClass("field--field-earth-matters-topic") }}>{{ link(item.content["#title"], 'internal:/earth-matters/' ~ item.content['#url'].routeParameters|first) }}</div>
       {% endfor %}
     </div>
   {% else %}
     {% for item in items %}
-      <div{{ attributes.addClass("field--field-earth-matters-topic") }}>{{ item.content }}</div>
+      <div{{ attributes.addClass("field--field-earth-matters-topic") }}>{{ link(item.content["#title"], 'internal:/earth-matters/' ~ item.content['#url'].routeParameters|first) }}</div>
     {% endfor %}
   {% endif %}
 {% else %}
   <div{{ attributes }}>
-    <span{{ title_attributes.addClass('field-label') }}>{{ label }}</span>
+    <span{{ title_attributes.addClass('field-label') }}>{{ link(label, 'internal:/earth-matters') }}</span>
     {% if multiple %}
     {% endif %}
     {% for item in items %}
-      <div{{ item.attributes.addClass("field--field-earth-matters-topic") }}>{{ item.content }}</div>
+      <div{{ item.attributes.addClass("field--field-earth-matters-topic") }}>{{ link(item.content["#title"], 'internal:/earth-matters/' ~ item.content['#url'].routeParameters|first) }}</div>
     {% endfor %}
     {% if multiple %}
     {% endif %}
