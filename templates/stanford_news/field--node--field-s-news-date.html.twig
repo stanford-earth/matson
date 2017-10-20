@@ -43,10 +43,10 @@
       {% for item in items %}
         <div{{ item.attributes.addClass("field--field-s-news-date") }}><svg class="i-svg" role="img"><title>{{ 'Clock'|t }}</title><use xlink:href="#i-clock" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>{{ item.content }}</div>
         <div class="field--field-s-news-date__actions">
-          <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'mail'|t }}</title><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-          <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'linkedin'|t }}</title><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-          <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-          <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'facebook'|t }}</title><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+          <a href="mailto:?subject={{ 'I wanted you to see this news article'|t }}&amp;body={{ 'Read more about:'|t }} at {{ title|render|striptags|trim }} {{ url("<current>") }}" title="{{ 'Share by Email'|t }}" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'mail'|t }}</title><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ url('<current>') }}&title={{ title|render|striptags|trim|url_encode }}&source=LinkedIn" class="field--field-s-news-date__action linkedin-popup"><svg class="i-svg" role="img"><title>{{ 'linkedin'|t }}</title><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="field--field-s-news-date__action tweet-popup"><svg class="i-svg" role="img"><title>{{ 'twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ url('<current>') }}" class="field--field-s-news-date__action facebook-popup"><svg class="i-svg" role="img"><title>{{ 'facebook'|t }}</title><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
         </div>
       {% endfor %}
     </div>
@@ -54,10 +54,10 @@
     {% for item in items %}
       <div{{ item.attributes.addClass("field--field-s-news-date") }}><svg class="i-svg" role="img"><title>{{ 'Clock'|t }}</title><use xlink:href="#i-clock" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>{{ item.content }}</div>
       <div class="field--field-s-news-date__actions">
-        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'mail'|t }}</title><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'linkedin'|t }}</title><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'facebook'|t }}</title><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        <a href="mailto:?subject={{ 'I wanted you to see this news article'|t }}&amp;body={{ 'Read more about:'|t }} at {{ title|render|striptags|trim }} {{ url("<current>") }}" title="{{ 'Share by Email'|t }}" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'mail'|t }}</title><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ url('<current>') }}&title={{ title|render|striptags|trim|url_encode }}&source=LinkedIn" class="field--field-s-news-date__action linkedin-popup"><svg class="i-svg" role="img"><title>{{ 'linkedin'|t }}</title><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="field--field-s-news-date__action tweet-popup"><svg class="i-svg" role="img"><title>{{ 'twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ url('<current>') }}" class="field--field-s-news-date__action facebook-popup"><svg class="i-svg" role="img"><title>{{ 'facebook'|t }}</title><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
         </div>
     {% endfor %}
   {% endif %}
@@ -70,10 +70,10 @@
     {% for item in items %}
       <div{{ item.attributes.addClass("field--field-s-news-date") }}><svg class="i-svg" role="img"><title>{{ 'Clock'|t }}</title><use xlink:href="#i-clock" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>{{ item.content }}</div>
       <div class="field--field-s-news-date__actions">
-        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'mail'|t }}</title><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'linkedin'|t }}</title><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-        <a href="#" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'facebook'|t }}</title><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        <a href="mailto:?subject={{ 'I wanted you to see this news article'|t }}&amp;body={{ 'Find out more at:'|t }} {{ url("<current>") }}" title="{{ 'Share by Email'|t }}" class="field--field-s-news-date__action"><svg class="i-svg" role="img"><title>{{ 'mail'|t }}</title><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ url('<current>') }}&title={{ title|render|striptags|trim|url_encode }}&source=LinkedIn" class="field--field-s-news-date__action linkedin-popup"><svg class="i-svg" role="img"><title>{{ 'linkedin'|t }}</title><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="field--field-s-news-date__action tweet-popup"><svg class="i-svg" role="img"><title>{{ 'twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ url('<current>') }}" class="field--field-s-news-date__action facebook-popup"><svg class="i-svg" role="img"><title>{{ 'facebook'|t }}</title><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
       </div>
     {% endfor %}
     {% if multiple %}

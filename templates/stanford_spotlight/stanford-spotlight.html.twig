@@ -48,10 +48,10 @@
         <span>{{ "Published"|t }}</span>
         <time>{{ created }}</time>
         <div class="content-type-date__actions social-actions">
-          <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'mail'|t }}</title><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-          <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'linkedin'|t }}</title><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-          <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
-          <a href="#" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'facebook'|t }}</title><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+          <a href="mailto:?subject={{ 'I wanted you to see this spotlight'|t }}&amp;body={{ 'Read more about:'|t }} at {{ title|render|striptags|trim }} {{ url("<current>") }}" title="{{ 'Share by Email'|t }}" class="content-type-date__action"><svg class="i-svg" role="img"><title>{{ 'mail'|t }}</title><use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ url('<current>') }}&title={{ title|render|striptags|trim|url_encode }}&source=LinkedIn" class="content-type-date__action linkedin-popup"><svg class="i-svg" role="img"><title>{{ 'linkedin'|t }}</title><use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="content-type-date__action tweet-popup"><svg class="i-svg" role="img"><title>{{ 'twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ url('<current>') }}" class="content-type-date__action facebook-popup"><svg class="i-svg" role="img"><title>{{ 'facebook'|t }}</title><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
         </div>
       </div>
     </div>
