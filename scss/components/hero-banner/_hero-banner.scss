@@ -83,3 +83,13 @@ $hero-max-width-lg: 1500px;
     border: 0;
   }
 }
+
+.hero-banner.has-video {
+  .hero-banner__inner {
+    display: none;
+    
+    @include grid-media($media-md) {
+      display: block;
+    }
+  }
+}

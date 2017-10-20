@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   #filmstrip {
     margin-top: -150px;
     z-index: 10;
@@ -10,7 +10,7 @@
 #filmstrip h6.filmstrip__title {
   max-width: 1190px;
   margin: 12px auto 17px; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     #filmstrip h6.filmstrip__title {
       color: #fff; } }
 
