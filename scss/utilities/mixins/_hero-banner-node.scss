@@ -17,10 +17,10 @@
 
   #hero-banner:first-child:not(.component-centered-container-margins) {
     margin-top: -121px;
-
+    margin-bottom: em(58px);
+    
     @include grid-media($header-md) {
       margin-top: -126px;
     }
   }
-  
 }
