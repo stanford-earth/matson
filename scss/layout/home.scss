@@ -13,11 +13,6 @@
 // overlay the hero image.
 
 #filmstrip {
-  @include grid-media($media-md) {
-    margin-top: -150px;
-    z-index: 10;
-    position: relative;
-  }
 
   .filmstrip__cards {
     max-width: 1190px;
