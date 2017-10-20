@@ -1556,6 +1556,9 @@
   animation: fadein 2s;
   letter-spacing: .5px; }
   @media only screen and (min-width: 768px) {
+    .hero-banner__header {
+      top: 68%; } }
+  @media only screen and (min-width: 768px) {
     .hero-banner__header.is-right .hero-banner__title {
       position: relative;
       padding-right: 40px; }

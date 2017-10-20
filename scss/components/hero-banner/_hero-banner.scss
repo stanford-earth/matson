@@ -49,6 +49,10 @@ $hero-max-width-lg: 1500px;
   @include fade-in;
   letter-spacing: .5px;
 
+  @include grid-media($media-md) {
+    top: 68%;
+  }
+
   .hero-banner__title {
     @extend %h1 !optional;
   }
@@ -87,7 +91,7 @@ $hero-max-width-lg: 1500px;
 .hero-banner.has-video {
   .hero-banner__inner {
     display: none;
-    
+
     @include grid-media($media-md) {
       display: block;
     }
