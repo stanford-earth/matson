@@ -7,6 +7,16 @@
 #filmstrip .filmstrip__cards {
   max-width: 1190px; }
 
+#filmstrip h6.filmstrip__title {
+  max-width: 1190px;
+  margin: 12px auto 17px; }
+  @media only screen and (min-width: 768px) {
+    #filmstrip h6.filmstrip__title {
+      color: #fff; } }
+
+#hero-banner:first-child:not(.component-centered-container-margins) {
+  margin-bottom: 0; }
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .section-highlight-banner {
     padding-bottom: 30px; } }

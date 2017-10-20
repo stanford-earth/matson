@@ -1256,12 +1256,6 @@
   font-weight: 600;
   letter-spacing: 0.2px;
   text-transform: uppercase; }
-  .filmstrip h6.filmstrip__title {
-    max-width: 1190px;
-    margin: 12px auto 17px; }
-    @media only screen and (min-width: 768px) {
-      .filmstrip h6.filmstrip__title {
-        color: #fff; } }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
