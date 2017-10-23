@@ -13,12 +13,6 @@
 // overlay the hero image.
 
 #filmstrip {
-  @include grid-media($media-lg) {
-    margin-top: -150px;
-    z-index: 10;
-    position: relative;
-  }
-
   .filmstrip__cards {
     max-width: 1190px;
   }
@@ -27,10 +21,6 @@
     &.filmstrip__title {
       max-width: 1190px;
       margin: 12px auto 17px;
-
-      @include grid-media($media-lg) {
-        color: color(white);
-      }
     }
   }
 }
