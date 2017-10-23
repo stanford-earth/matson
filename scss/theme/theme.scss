@@ -11,3 +11,30 @@
 
 // Parent theme config.
 @import "stanford_basic/scss/theme/theme";
+
+.text-with-summary {
+  blockquote,
+  q {
+    margin: 0 modular-scale(2);
+    quotes: "";
+    font-weight: 200;
+    font-size: 1.4em;
+    letter-spacing: .5px;
+    line-height: 1.3em;
+    position: relative;
+    padding-top: 30px;
+
+    &::before {
+      font-size: 4em;
+      position: absolute;
+      top: 20px;
+      left: -20px;
+      color: color(brand);
+      content: '“';
+    }
+
+    &::after {
+      content: "";
+    }
+  }
+}
