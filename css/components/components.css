@@ -1548,6 +1548,10 @@
       margin-right: 40px;
       margin-bottom: 40px; } }
 
+@media only screen and (min-width: 768px) {
+  .hero-banner:not(.has-video) .hero-banner__header {
+    top: 68%; } }
+
 .hero-banner__header {
   -webkit-animation: fadein 2s;
   -moz-animation: fadein 2s;
@@ -1620,6 +1624,12 @@
 
 .hero-banner.component-centered-container-margins.has-video .hero-banner__container {
   border: 0; }
+
+.hero-banner.has-video .hero-banner__inner {
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    .hero-banner.has-video .hero-banner__inner {
+      display: block; } }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
@@ -2108,11 +2118,12 @@
 
 .navbar {
   position: absolute;
-  top: 0;
+  top: -1px;
   width: 100%;
   z-index: 3; }
   @media only screen and (min-width: 860px) {
     .navbar {
+      top: 0;
       background-color: transparent; } }
 
 @media only screen and (max-width: 575px) {

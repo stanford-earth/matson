@@ -45,6 +45,14 @@ $hero-max-width-lg: 1500px;
   }
 }
 
+.hero-banner:not(.has-video) {
+  .hero-banner__header {
+    @include grid-media($media-md) {
+      top: 68%;
+    }
+  }
+}
+
 .hero-banner__header {
   @include fade-in;
   letter-spacing: .5px;
@@ -81,5 +89,15 @@ $hero-max-width-lg: 1500px;
 .hero-banner.component-centered-container-margins.has-video {
   .hero-banner__container {
     border: 0;
+  }
+}
+
+.hero-banner.has-video {
+  .hero-banner__inner {
+    display: none;
+
+    @include grid-media($media-md) {
+      display: block;
+    }
   }
 }

@@ -13,11 +13,12 @@ $nav-bar-height: em(80px);
 
 .navbar {
   position: absolute;
-  top: 0;
+  top: -1px;
   width: 100%;
   z-index: 3;
 
   @include grid-media($header-md) {
+    top: 0;
     background-color: transparent;
   }
 }
