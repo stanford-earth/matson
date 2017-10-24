@@ -17,12 +17,12 @@
   display: block;
   z-index: 2; }
 
-.node-field-s-news-top-media #hero-banner {
+.node-field-s-news-top-media #hero-banner:not(.has-video) {
   margin-top: -170px; }
   @media only screen and (min-width: 860px) {
-    .node-field-s-news-top-media #hero-banner {
+    .node-field-s-news-top-media #hero-banner:not(.has-video) {
       margin-top: -176px; } }
-  .node-field-s-news-top-media #hero-banner .hero-banner__container {
+  .node-field-s-news-top-media #hero-banner:not(.has-video) .hero-banner__container {
     border: 0; }
 
 .node--type-stanford_news {

@@ -6,7 +6,7 @@
 // top of the page each time a complex page is rendered. A few things have to
 // move around to ensure that the banner is in the right place.
 
-.node-field-s-news-top-media #hero-banner {
+.node-field-s-news-top-media #hero-banner:not(.has-video) {
   margin-top: -170px;
 
   @include grid-media($header-md) {
