@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .center {
   text-align: center; }
 
@@ -126,5 +127,27 @@
 
 .block--link-block a:hover {
   color: #820000; }
+
+.text-with-summary blockquote,
+.text-with-summary q {
+  margin: 0 1.776889em;
+  quotes: "";
+  font-weight: 200;
+  font-size: 1.776889em;
+  letter-spacing: .5px;
+  line-height: 1.3em;
+  position: relative;
+  padding-top: 30px; }
+  .text-with-summary blockquote::before,
+  .text-with-summary q::before {
+    font-size: 4em;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    color: #8c1515;
+    content: '“'; }
+  .text-with-summary blockquote::after,
+  .text-with-summary q::after {
+    content: ""; }
 
 /*# sourceMappingURL=theme.css.map */

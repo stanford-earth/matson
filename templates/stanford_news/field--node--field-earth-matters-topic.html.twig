@@ -55,7 +55,7 @@
     {% if multiple %}
     {% endif %}
     {% for item in items %}
-      <div{{ item.attributes.addClass("field--field-earth-matters-topic") }}>{{ link(item.content["#title"], 'internal:/earth-matters/' ~ item.content['#url'].routeParameters|first) }}</div>
+      <div{{ item.attributes.addClass("field--field-earth-matters-topic") }}>{{ link(item.content["#title"], 'internal:/earth-matters/' ~ item.content['#url'].routeParameters|first) }}{% if loop.last == false %},{% endif %}</div>
     {% endfor %}
     {% if multiple %}
     {% endif %}
