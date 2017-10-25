@@ -11,32 +11,3 @@
 
 // Parent theme config.
 @import "stanford_basic/scss/theme/theme";
-
-.text-with-summary {
-  blockquote,
-  q {
-    margin: 0 modular-scale(2);
-    quotes: "";
-    font-weight: 200;
-    font-size: modular_scale(1.2);
-    letter-spacing: .5px;
-    line-height: 1.3em;
-    position: relative;
-    padding-top: 30px;
-
-    &::before {
-      font-size: 3.4em;
-      position: absolute;
-      top: 12px;
-      left: -24px;
-      color: color(brand);
-      content: '‘‘';
-      letter-spacing: -7px;
-      font-family: "Times New Roman", "Times", "Georgia", "Bookman", "Trebuchet MS";
-    }
-
-    &::after {
-      content: "";
-    }
-  }
-}

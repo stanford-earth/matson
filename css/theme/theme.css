@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .center {
   text-align: center; }
 
@@ -127,29 +126,5 @@
 
 .block--link-block a:hover {
   color: #820000; }
-
-.text-with-summary blockquote,
-.text-with-summary q {
-  margin: 0 1.776889em;
-  quotes: "";
-  font-weight: 200;
-  font-size: 1.776889em;
-  letter-spacing: .5px;
-  line-height: 1.3em;
-  position: relative;
-  padding-top: 30px; }
-  .text-with-summary blockquote::before,
-  .text-with-summary q::before {
-    font-size: 3.4em;
-    position: absolute;
-    top: 12px;
-    left: -24px;
-    color: #8c1515;
-    content: '‘‘';
-    letter-spacing: -7px;
-    font-family: "Times New Roman", "Times", "Georgia", "Bookman", "Trebuchet MS"; }
-  .text-with-summary blockquote::after,
-  .text-with-summary q::after {
-    content: ""; }
 
 /*# sourceMappingURL=theme.css.map */
