@@ -11,6 +11,8 @@
 
 // Content styles
 .field-p-wysiwyg {
+  padding-bottom: em(46px);
+  
   > :last-child {
     margin-bottom: 0;
   }
