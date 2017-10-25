@@ -28,6 +28,7 @@ ckeditor_stylesheets:
   - css/layout/layout.css
   - css/components/components.css
   - css/theme/theme.css
+  - css/wysiwyg/wysiwyg.css
 regions:
   admin_tabs: 'Administration Tabs'
   page_top: 'Page top'

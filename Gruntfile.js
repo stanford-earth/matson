@@ -133,7 +133,10 @@ module.exports = function(grunt) {
           'css/theme/stanford-spotlight.css':               'scss/theme/stanford-spotlight/stanford-spotlight.scss',
           'css/theme/stanford-news.css':                    'scss/theme/stanford-news.scss',
           'css/theme/theme.css':                            'scss/theme/theme.scss',
-          'css/theme/print.css':                            'scss/theme/print.scss'
+          'css/theme/print.css':                            'scss/theme/print.scss',
+
+          // WYSIWYG
+          'css/wysiwyg/wysiwyg.css':                        'scss/wysiwyg/wysiwyg.scss'
         }
       }
     },
