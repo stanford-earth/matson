@@ -23,6 +23,11 @@ libraries-override:
       theme:
         css/theme/theme.css: false
         css/theme/print.css: false
+ckeditor_stylesheets:
+  - css/base/base.css
+  - css/layout/layout.css
+  - css/components/components.css
+  - css/theme/theme.css
 regions:
   admin_tabs: 'Administration Tabs'
   page_top: 'Page top'
