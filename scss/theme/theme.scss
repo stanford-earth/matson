@@ -25,12 +25,14 @@
     padding-top: 30px;
 
     &::before {
-      font-size: 4em;
+      font-size: 3.4em;
       position: absolute;
-      top: 20px;
-      left: -20px;
+      top: 12px;
+      left: -24px;
       color: color(brand);
-      content: '“';
+      content: '‘‘';
+      letter-spacing: -7px;
+      font-family: "Times New Roman", "Times", "Georgia", "Bookman", "Trebuchet MS";
     }
 
     &::after {
