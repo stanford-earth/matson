@@ -2719,6 +2719,9 @@
     margin-bottom: 0;
     display: block; }
 
+.field-p-responsive-image {
+  padding-bottom: 2.875em; }
+
 .field-p-responsive-image-cred {
   color: #9c9d9e;
   text-align: right; }
