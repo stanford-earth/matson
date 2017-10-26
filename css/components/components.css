@@ -2355,6 +2355,10 @@
   display: block;
   z-index: 2; }
 
+.pager {
+  margin: 20px 0;
+  text-align: center; }
+
 .pager__items {
   margin: 0;
   display: inline;
