@@ -3636,5 +3636,11 @@ ul.tabs {
       margin-left: 20px; }
     .field-p-wysiwyg img.align-left {
       margin-right: 20px; }
+  .field-p-wysiwyg h2,
+  .field-p-wysiwyg h3,
+  .field-p-wysiwyg h4,
+  .field-p-wysiwyg h5,
+  .field-p-wysiwyg h6 {
+    clear: both; }
 
 /*# sourceMappingURL=components.css.map */

@@ -12,7 +12,7 @@
 // Content styles
 .field-p-wysiwyg {
   padding-bottom: em(46px);
-  
+
   > :last-child {
     margin-bottom: 0;
   }
@@ -66,4 +66,15 @@
       margin-right: 20px;
     }
   }
+
+  // Headers clear floats.
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    clear: both;
+  }
+
 }
