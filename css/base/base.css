@@ -1081,12 +1081,8 @@ hr {
     content: ""; }
 
 .lead-text {
-  font-size: 1.5em;
+  font-size: 1.776889em;
+  margin: 0 1.776889em;
   line-height: 1.4em; }
-
-.summary-text {
-  font-size: 1.6em;
-  line-height: 1.4em;
-  font-weight: 200; }
 
 /*# sourceMappingURL=base.css.map */
