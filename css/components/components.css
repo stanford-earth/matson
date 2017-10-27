@@ -2706,7 +2706,7 @@
   .field--responsive-image picture::after,
   .field--responsive-video::after {
     content: '';
-    background-color: #FBFBFB;
+    background-color: #dad7cb;
     position: absolute;
     top: 40px;
     bottom: 40px;

@@ -13,6 +13,10 @@
   color: color(text-active);
   position: relative;
 
+  .page-title {
+    margin-top: 10px;
+  }
+
   .social-actions {
     @include dash-under;
     position: relative;
@@ -34,8 +38,14 @@
   &.left-align-media,
   &.right-align-media {
     .content-type__media {
+
       @include grid-media($media-lg) {
+        margin-top: 40px;
         width: 50%;
+      }
+
+      @include grid-media($media-xl) {
+        margin-top: -20px;
       }
 
       img {
@@ -60,7 +70,7 @@
         @include grid-media($media-lg) {
           @include fullpage-stripe;
           top: 0;
-          bottom: 0;
+          bottom: 5%;
           width: 150vw;
         }
       }

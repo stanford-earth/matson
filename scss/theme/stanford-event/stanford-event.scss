@@ -36,10 +36,6 @@
 .block-matson-content {
   color: color(text-active);
 
-  @include grid-media($media-lg) {
-    @include margin(null 100px);
-  }
-
   a {
     text-decoration: underline;
   }
@@ -68,9 +64,8 @@
     }
 
     .content-type__media {
-      @include grid-media($media-lg) {
+      @include grid-media($media-xl) {
         margin-top: 40px;
-        padding-top: 40px;
       }
 
       figure,

@@ -172,7 +172,7 @@ figure.align-center .figure-container {
   .field--responsive-video::after,
   figure.align-center .figure-container::after {
     content: '';
-    background-color: #FBFBFB;
+    background-color: #dad7cb;
     position: absolute;
     top: 40px;
     bottom: 40px;
@@ -230,7 +230,7 @@ figure.align-center .figure-container {
 .editorial-sidebar.simple-slat.is-narrow {
   margin: 0; }
   .editorial-sidebar.simple-slat.is-narrow .simple-block {
-    background-color: #FBFBFB;
+    background-color: #dad7cb;
     padding: 30px; }
     .editorial-sidebar.simple-slat.is-narrow .simple-block::after {
       clear: both;

@@ -7,7 +7,6 @@
 .main-container {
   @include responsive-container($default-container);
   margin-bottom: 80px;
-  margin-top: 50px;
 }
 
 .page-title {
@@ -55,11 +54,13 @@ figcaption {
 }
 
 .content-type__media-container {
+
   &.left-align-media,
   &.right-align-media {
 
     .content-type__header {
       &::after {
+        clear: none;
         @include grid-media($media-lg) {
           left: 0;
         }
@@ -89,5 +90,19 @@ figcaption {
         }
       }
     }
+  }
+
+  &.is-wide {
+    @include grid-media($media-lg) {
+      margin-top: 50px;
+      outline: 2px solid #4d4f53;
+      outline-offset: 30px;
+    }
+  }
+}
+
+.content-type-content {
+  > .layout--basic {
+    padding: 0;
   }
 }

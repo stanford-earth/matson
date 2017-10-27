@@ -285,7 +285,7 @@ figure.align-center .figure-container {
 
   .simple-block {
     @include grid-container;
-    background-color: color(dust);
+    background-color: color(fog);
     padding: 30px;
 
     @include grid-media($media-sm) {

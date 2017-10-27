@@ -17,6 +17,8 @@
 .content-type__header {
   color: #4d4f53;
   position: relative; }
+  .content-type__header .page-title {
+    margin-top: 10px; }
   .content-type__header .social-actions {
     margin-bottom: 1.25em;
     position: relative; }
@@ -41,7 +43,12 @@
 
 @media only screen and (min-width: 1024px) {
   .content-type__media-container.left-align-media .content-type__media, .content-type__media-container.right-align-media .content-type__media {
+    margin-top: 40px;
     width: 50%; } }
+
+@media only screen and (min-width: 1500px) {
+  .content-type__media-container.left-align-media .content-type__media, .content-type__media-container.right-align-media .content-type__media {
+    margin-top: -20px; } }
 
 .content-type__media-container.left-align-media .content-type__media img, .content-type__media-container.right-align-media .content-type__media img {
   display: block;
@@ -59,7 +66,7 @@
   @media only screen and (min-width: 1024px) {
     .content-type__media-container.left-align-media .content-type__header::after, .content-type__media-container.right-align-media .content-type__header::after {
       content: '';
-      background-color: #FBFBFB;
+      background-color: #dad7cb;
       position: absolute;
       top: 40px;
       bottom: 40px;
@@ -70,7 +77,7 @@
       margin-right: -50vw;
       z-index: -1;
       top: 0;
-      bottom: 0;
+      bottom: 5%;
       width: 150vw; } }
 
 @media only screen and (min-width: 1024px) {
@@ -141,8 +148,7 @@
   display: block; }
 
 .main-container {
-  margin-bottom: 80px;
-  margin-top: 50px; }
+  margin-bottom: 80px; }
   @media only screen and (max-width: 575px) {
     .main-container {
       padding: 1em calc(((50% /12) * 0) + 15px); }
@@ -227,9 +233,11 @@ figcaption {
   .block-matson-content a {
     text-decoration: underline; }
 
-@media only screen and (min-width: 1024px) {
-  .content-type__media-container.left-align-media .content-type__header::after, .content-type__media-container.right-align-media .content-type__header::after {
-    left: 0; } }
+.content-type__media-container.left-align-media .content-type__header::after, .content-type__media-container.right-align-media .content-type__header::after {
+  clear: none; }
+  @media only screen and (min-width: 1024px) {
+    .content-type__media-container.left-align-media .content-type__header::after, .content-type__media-container.right-align-media .content-type__header::after {
+      left: 0; } }
 
 .content-type__media-container.left-align-media .content-type__media figure,
 .content-type__media-container.left-align-media .content-type__media picture, .content-type__media-container.right-align-media .content-type__media figure,
@@ -240,5 +248,14 @@ figcaption {
 .content-type__media-container.right-align-media .content-type__media picture::after {
   margin-left: -100vw;
   width: 150vw; }
+
+@media only screen and (min-width: 1024px) {
+  .content-type__media-container.is-wide {
+    margin-top: 50px;
+    outline: 2px solid #4d4f53;
+    outline-offset: 30px; } }
+
+.content-type-content > .layout--basic {
+  padding: 0; }
 
 /*# sourceMappingURL=stanford-spotlight.css.map */
