@@ -13,3 +13,6 @@
 @if(global-variable-exists(serif-source)) {
   @import url($serif-source);
 }
+@if(global-variable-exists(bentham-source)) {
+  @import url($bentham-source);
+}

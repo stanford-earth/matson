@@ -292,6 +292,10 @@ $su-brand-Stanford: "\1f57d";
     position: relative;
     padding-top: 30px;
 
+    @include grid-media($media-lg) {
+      margin: 0 modular-scale(7);
+    }
+
     &::before {
       font-size: 3.4em;
       position: absolute;
@@ -300,7 +304,7 @@ $su-brand-Stanford: "\1f57d";
       color: color(brand);
       content: '‘‘';
       letter-spacing: -7px;
-      font-family: "Times New Roman", "Times", "Georgia", "Bookman", "Trebuchet MS";
+      font-family: $font-stack-bentham;
     }
 
     &::after {
@@ -310,12 +314,7 @@ $su-brand-Stanford: "\1f57d";
 }
 
 .lead-text {
-  @include font-size(15px, $root-font-size);
+  font-size: modular-scale(2);
+  margin: 0 modular-scale(2);
   line-height: 1.4em;
-}
-
-.summary-text {
-  @include font-size(16px, $root-font-size);
-  line-height: 1.4em;
-  font-weight: 200;
 }
