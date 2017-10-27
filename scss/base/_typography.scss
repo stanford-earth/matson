@@ -292,6 +292,10 @@ $su-brand-Stanford: "\1f57d";
     position: relative;
     padding-top: 30px;
 
+    @include grid-media($media-lg) {
+      margin: 0 modular-scale(7);
+    }
+
     &::before {
       font-size: 3.4em;
       position: absolute;
@@ -300,7 +304,7 @@ $su-brand-Stanford: "\1f57d";
       color: color(brand);
       content: '‘‘';
       letter-spacing: -7px;
-      font-family: "Times New Roman", "Times", "Georgia", "Bookman", "Trebuchet MS";
+      font-family: $font-stack-bentham;
     }
 
     &::after {

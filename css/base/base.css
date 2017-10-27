@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Bentham");
 body {
   /*!*/
   min-height: 100vh;
@@ -1058,6 +1059,11 @@ hr {
   line-height: 1.3em;
   position: relative;
   padding-top: 30px; }
+  @media only screen and (min-width: 1024px) {
+    .text-with-summary .pullquote-large,
+    .text-with-summary blockquote,
+    .text-with-summary q {
+      margin: 0 7.4784405556em; } }
   .text-with-summary .pullquote-large::before,
   .text-with-summary blockquote::before,
   .text-with-summary q::before {
@@ -1068,7 +1074,7 @@ hr {
     color: #8c1515;
     content: '‘‘';
     letter-spacing: -7px;
-    font-family: "Times New Roman", "Times", "Georgia", "Bookman", "Trebuchet MS"; }
+    font-family: "Bentham", "Times New Roman", "Times", "Georgia", "Bookman", "Trebuchet MS"; }
   .text-with-summary .pullquote-large::after,
   .text-with-summary blockquote::after,
   .text-with-summary q::after {
