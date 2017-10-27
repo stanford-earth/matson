@@ -72,10 +72,13 @@ figcaption {
       picture {
         position: relative;
 
-        //&::after {
-        //  @include fullpage-stripe;
-        //  width: 150vw;
-        //}
+        @include grid-media($media-sm) {
+          &::after {
+            @include fullpage-stripe;
+            width: 150vw;
+          }
+        }
+
       }
     }
   }

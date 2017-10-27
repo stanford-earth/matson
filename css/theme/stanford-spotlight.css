@@ -243,6 +243,22 @@ figcaption {
 .content-type__media-container.left-align-media .content-type__media picture, .content-type__media-container.right-align-media .content-type__media figure,
 .content-type__media-container.right-align-media .content-type__media picture {
   position: relative; }
+  @media only screen and (min-width: 576px) {
+    .content-type__media-container.left-align-media .content-type__media figure::after,
+    .content-type__media-container.left-align-media .content-type__media picture::after, .content-type__media-container.right-align-media .content-type__media figure::after,
+    .content-type__media-container.right-align-media .content-type__media picture::after {
+      content: '';
+      background-color: #dad7cb;
+      position: absolute;
+      top: 40px;
+      bottom: 40px;
+      width: 100vw;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      z-index: -1;
+      width: 150vw; } }
 
 .content-type__media-container.right-align-media .content-type__media figure::after,
 .content-type__media-container.right-align-media .content-type__media picture::after {
