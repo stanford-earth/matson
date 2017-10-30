@@ -296,19 +296,26 @@ $su-brand-Stanford: "\1f57d";
       margin: 0 modular-scale(7);
     }
 
-    &::before {
+    &::before,
+    &::after {
       font-size: 3.4em;
+      letter-spacing: -7px;
+      font-family: $font-stack-bentham;
+      color: color(brand);
+    }
+
+    &::before {
       position: absolute;
       top: 12px;
       left: -24px;
-      color: color(brand);
       content: '‘‘';
-      letter-spacing: -7px;
-      font-family: $font-stack-bentham;
     }
 
     &::after {
-      content: "";
+      content: '’’';
+      position: absolute;
+      right: 0px;
+      bottom: -8px;
     }
   }
 }

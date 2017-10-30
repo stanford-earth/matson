@@ -603,6 +603,9 @@ a {
 .color-twitter {
   color: #65BBF2; }
 
+.color-sandstone-light {
+  color: #F9F6EF; }
+
 [type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea,
 select {
   appearance: none;
@@ -1064,21 +1067,29 @@ hr {
     .text-with-summary blockquote,
     .text-with-summary q {
       margin: 0 7.4784405556em; } }
+  .text-with-summary .pullquote-large::before, .text-with-summary .pullquote-large::after,
+  .text-with-summary blockquote::before,
+  .text-with-summary blockquote::after,
+  .text-with-summary q::before,
+  .text-with-summary q::after {
+    font-size: 3.4em;
+    letter-spacing: -7px;
+    font-family: "Bentham", "Times New Roman", "Times", "Georgia", "Bookman", "Trebuchet MS";
+    color: #8c1515; }
   .text-with-summary .pullquote-large::before,
   .text-with-summary blockquote::before,
   .text-with-summary q::before {
-    font-size: 3.4em;
     position: absolute;
     top: 12px;
     left: -24px;
-    color: #8c1515;
-    content: '‘‘';
-    letter-spacing: -7px;
-    font-family: "Bentham", "Times New Roman", "Times", "Georgia", "Bookman", "Trebuchet MS"; }
+    content: '‘‘'; }
   .text-with-summary .pullquote-large::after,
   .text-with-summary blockquote::after,
   .text-with-summary q::after {
-    content: ""; }
+    content: '’’';
+    position: absolute;
+    right: 0px;
+    bottom: -8px; }
 
 .lead-text {
   font-size: 1.776889em;
