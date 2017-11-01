@@ -1005,7 +1005,7 @@
     line-height: 0.7; }
 
 .editorial-sidebar .simple-block {
-  background-color: #FBFBFB;
+  background-color: #eeeeee;
   padding: 30px; }
   .editorial-sidebar .simple-block::after {
     clear: both;
@@ -2460,7 +2460,7 @@
   z-index: 2; }
 
 .postcard {
-  background-color: #FBFBFB; }
+  background-color: #eeeeee; }
   .postcard .postcard__content-inner {
     padding: 25px 0;
     background-color: transparent; }
@@ -2706,7 +2706,7 @@
   .field--responsive-image picture::after,
   .field--responsive-video::after {
     content: '';
-    background-color: #F9F6EF;
+    background-color: #eeeeee;
     position: absolute;
     top: 40px;
     bottom: 40px;
