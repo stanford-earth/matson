@@ -47,7 +47,7 @@
     &:after {
       @include grid-media($media-lg) {
         @include position(absolute, 0 0 0 0);
-        background-color: color(dust);
+        background-color: color(dark-dust);
         content: "";
         display: block;
         left: -50vw;

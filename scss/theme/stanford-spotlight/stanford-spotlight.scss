@@ -55,8 +55,14 @@ figcaption {
 
 .content-type__media-container {
 
+  @include grid-media($media-lg) {
+    outline: 1px solid #999;
+    outline-offset: 30px;
+    margin-top: 50px;
+  }
+
   &.left-align-media,
-  &.right-align-media {
+  &.centered-media {
 
     .content-type__header {
       &::after {
@@ -65,6 +71,10 @@ figcaption {
           left: 0;
         }
       }
+    }
+
+    .content-type__media-header::after {
+      clear: none;
     }
 
     .content-type__media {
@@ -83,6 +93,10 @@ figcaption {
     }
   }
 
+  .content-type-date {
+    margin-top: 10px;
+  }
+
   &.right-align-media {
     .content-type__media {
       figure,
@@ -95,13 +109,6 @@ figcaption {
     }
   }
 
-  &.is-wide {
-    @include grid-media($media-lg) {
-      margin-top: 50px;
-      outline: 2px solid #4d4f53;
-      outline-offset: 30px;
-    }
-  }
 }
 
 .content-type-content {

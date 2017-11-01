@@ -3,7 +3,7 @@
 .editorial-sidebar {
   .simple-block {
     @include grid-container;
-    background-color: color(dust);
+    background-color: color(dark-dust);
     padding: 30px;
 
     @include grid-media($media-sm) {
