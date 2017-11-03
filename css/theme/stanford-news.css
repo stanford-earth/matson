@@ -172,7 +172,7 @@ figure.align-center .figure-container {
   .field--responsive-video::after,
   figure.align-center .figure-container::after {
     content: '';
-    background-color: #eeeeee;
+    background-color: #F9F6EF;
     position: absolute;
     top: 40px;
     bottom: 40px;

@@ -66,7 +66,7 @@
   @media only screen and (min-width: 1024px) {
     .content-type__media-container.left-align-media .content-type__header::after, .content-type__media-container.right-align-media .content-type__header::after {
       content: '';
-      background-color: #eeeeee;
+      background-color: #F9F6EF;
       position: absolute;
       top: 40px;
       bottom: 40px;
@@ -239,7 +239,7 @@
   .content-type__media-container.left-align-media .content-type__media picture::after, .content-type__media-container.right-align-media .content-type__media figure::after,
   .content-type__media-container.right-align-media .content-type__media picture::after {
     content: '';
-    background-color: #eeeeee;
+    background-color: #F9F6EF;
     position: absolute;
     top: 40px;
     bottom: 40px;

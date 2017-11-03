@@ -37,7 +37,7 @@
       margin-bottom: 60px; } }
 
 .ptype-stanford-slat .simple-block {
-  background-color: #eeeeee;
+  background-color: #F9F6EF;
   padding: 30px; }
   .ptype-stanford-slat .simple-block::after {
     clear: both;
@@ -236,7 +236,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: #eeeeee;
+        background-color: #F9F6EF;
         content: "";
         display: block;
         left: -50vw;
