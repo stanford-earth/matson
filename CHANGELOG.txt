@@ -1,3 +1,11 @@
+Version 8.x-1.0-alpha2                                               2017-11-06
+-------------------------------------------------------------------------------
+- Removed summary text style
+- Changed banding to sandstone light from fog/dust
+- Updated blockquote style
+- Updated spotlight styling
+- Removed block title from footer links block
+
 Version 8.x-1.0-alpha1                                               2017-10-27
 -------------------------------------------------------------------------------
 - Initial Release
