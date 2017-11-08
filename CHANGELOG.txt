@@ -1,3 +1,9 @@
+Version 8.x-1.0-alpha3                                               2017-11-08
+-------------------------------------------------------------------------------
+- Updated link to emergency.stanford.edu to be http not https
+- Updated CSS to align links block now that title is missing
+- Added spaces to footer items so they are readable.
+
 Version 8.x-1.0-alpha2                                               2017-11-06
 -------------------------------------------------------------------------------
 - Removed summary text style
