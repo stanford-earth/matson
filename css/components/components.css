@@ -799,6 +799,11 @@
       .contact-footer__links .menu {
         border: 0;
         padding: 0; } }
+    .contact-footer__links .menu > li:first-of-type {
+      line-height: 0; }
+      .contact-footer__links .menu > li:first-of-type a {
+        display: block;
+        padding-bottom: 30px; }
     .contact-footer__links .menu li {
       margin: 0;
       list-style: none; }
