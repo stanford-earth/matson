@@ -31,6 +31,7 @@ ckeditor_stylesheets:
   - css/wysiwyg/wysiwyg.css
 regions:
   admin_tabs: 'Administration Tabs'
+  brandbar: 'Brand bar'
   page_top: 'Page top'
   header: Header
   highlighted: Highlighted

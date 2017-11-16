@@ -8,6 +8,10 @@
   <a href="https://www.stanford.edu/">
     <img src="{{ base_path ~ directory }}/img/optimized/header-stanford-logo@2x.png" alt="Stanford University" />
   </a>
+  {% if brandbar is not empty %}
+    {{ brandbar }}
+  {% else %}
   <a class="brand-bar__login" href="https://pangea.stanford.edu/resources">School Resources</a>
+  {% endif %}
 </div>
 <!-- /#global-header -->
