@@ -1057,7 +1057,7 @@ hr {
 .text-with-summary .pullquote-large,
 .text-with-summary blockquote,
 .text-with-summary q {
-  margin: 0 1.776889em;
+  margin: 0 1.776889em 20px 1.776889em;
   quotes: "";
   font-weight: 200;
   font-size: 1.776889em;
@@ -1069,7 +1069,7 @@ hr {
     .text-with-summary .pullquote-large,
     .text-with-summary blockquote,
     .text-with-summary q {
-      margin: 0 7.4784405556em; } }
+      margin: 0 7.4784405556em 20px 7.4784405556em; } }
   .text-with-summary .pullquote-large::before, .text-with-summary .pullquote-large::after,
   .text-with-summary blockquote::before,
   .text-with-summary blockquote::after,
