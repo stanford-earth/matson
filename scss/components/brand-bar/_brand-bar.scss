@@ -29,6 +29,11 @@
   background: color(brand);
   position: relative;
 
+  .block-block-content {
+    float: right;
+    text-align: right;
+  }
+
   a {
     color: color(reverse-text);
 

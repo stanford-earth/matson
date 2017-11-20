@@ -59,7 +59,7 @@
         {{ 'Skip to main navigation'|t }}
       </a>
     </div>
-    {% include "@matson/components/brand-bar/brand-bar.html.twig" %}
+    {% include "@matson/components/brand-bar/brand-bar.html.twig" with {'brandbar': page.brandbar} %}
     {{ page_top }}
     {{ page }}
     {{ page_bottom }}

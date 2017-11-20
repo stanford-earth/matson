@@ -138,6 +138,9 @@
         clear: both;
         content: "";
         display: block; } }
+  .brand-bar .block-block-content {
+    float: right;
+    text-align: right; }
   .brand-bar a {
     color: #fff; }
     .brand-bar a:first-child {
