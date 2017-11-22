@@ -35,13 +35,8 @@
 h1 {
   font-size: 42px; }
 
-.block--field-s-news-sub-title {
-  margin-bottom: 20px; }
-  @media only screen and (min-width: 576px) {
-    .block--field-s-news-sub-title {
-      max-width: 75%; } }
-  .block--field-s-news-sub-title h2 {
-    font-size: 28px; }
+.field-s-news-summary {
+  margin-bottom: 40px; }
 
 .block--field-s-news-author {
   text-transform: uppercase; }
