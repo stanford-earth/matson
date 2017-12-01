@@ -41,12 +41,12 @@
   {% if multiple %}
     <div{{ attributes }}>
       {% for item in items %}
-        <div{{ item.attributes.addClass("field--field-s-news-source") }}>{{ item.content }}</div>
+        <div{{ item.attributes.addClass("field--field-s-news-source") }}>Source: {{ item.content }}</div>
       {% endfor %}
     </div>
   {% else %}
     {% for item in items %}
-      <div{{ attributes.addClass("field--field-s-news-source") }}>{{ item.content }}</div>
+      <div{{ attributes.addClass("field--field-s-news-source") }}>Source: {{ item.content }}</div>
     {% endfor %}
   {% endif %}
 {% else %}

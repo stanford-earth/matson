@@ -303,3 +303,11 @@ figure.align-center .figure-container {
     color: color(text-active);
   }
 }
+
+// Source field.
+.field-s-news-source {
+  position: relative;
+  @include grid-media($media-lg) {
+    margin-left: 110px;
+  }
+}
