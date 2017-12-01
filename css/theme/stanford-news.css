@@ -1,15 +1,4 @@
-.block--field-s-news-category {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px; }
-
-.block--field-s-news-date::after, .field-p-wysiwyg h2::after {
+.content-type__header .social-actions::after, .block--field-s-news-date::after, .field-p-wysiwyg h2::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -17,12 +6,153 @@
   display: block;
   z-index: 2; }
 
-.node-field-s-news-top-media #hero-banner:not(.component-centered-container-margins) {
+.content-type__header .social-actions::after, .block--field-s-news-date::after, .field-p-wysiwyg h2::after {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  content: '';
+  display: block;
+  z-index: 2; }
+
+.content-type__header {
+  color: #4d4f53;
+  position: relative; }
+  .content-type__header .page-title {
+    margin-top: 10px; }
+  .content-type__header .social-actions {
+    margin-bottom: 1.25em;
+    position: relative; }
+    .content-type__header .social-actions::after {
+      background-color: #8c1515;
+      bottom: -.5em;
+      left: 50%;
+      transform: translateX(-50%); }
+    .content-type__header .social-actions::after {
+      left: 0;
+      transform: none; }
+
+.content-type__media-container::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+@media only screen and (min-width: 1024px) {
+  .content-type__media-container {
+    margin-right: 100px;
+    margin-left: 100px; } }
+
+@media only screen and (min-width: 1024px) {
+  .content-type__media-container.left-align-media .content-type__media, .content-type__media-container.right-align-media .content-type__media {
+    margin-top: 40px;
+    width: 50%; } }
+
+@media only screen and (min-width: 1500px) {
+  .content-type__media-container.left-align-media .content-type__media, .content-type__media-container.right-align-media .content-type__media {
+    margin-top: -20px; } }
+
+.content-type__media-container.left-align-media .content-type__media img, .content-type__media-container.right-align-media .content-type__media img {
+  display: block;
+  margin: 0 auto; }
+  @media only screen and (min-width: 1024px) {
+    .content-type__media-container.left-align-media .content-type__media img, .content-type__media-container.right-align-media .content-type__media img {
+      margin: 0; } }
+
+.content-type__media-container.left-align-media .content-type__header, .content-type__media-container.right-align-media .content-type__header {
+  margin-top: 40px;
+  padding-bottom: 40px; }
+  @media only screen and (min-width: 1024px) {
+    .content-type__media-container.left-align-media .content-type__header, .content-type__media-container.right-align-media .content-type__header {
+      width: 50%; } }
+  @media only screen and (min-width: 1024px) {
+    .content-type__media-container.left-align-media .content-type__header::after, .content-type__media-container.right-align-media .content-type__header::after {
+      content: '';
+      background-color: #F9F6EF;
+      position: absolute;
+      top: 40px;
+      bottom: 40px;
+      width: 100vw;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      z-index: -1;
+      top: 0;
+      bottom: 5%;
+      width: 150vw; } }
+
+@media only screen and (min-width: 1024px) {
+  .content-type__media-container.left-align-media .breadcrumbs-container, .content-type__media-container.right-align-media .breadcrumbs-container {
+    width: 50%; } }
+
+@media only screen and (min-width: 1024px) {
+  .content-type__media-container.left-align-media .content-type__media {
+    float: left; } }
+
+@media only screen and (min-width: 1024px) {
+  .content-type__media-container.left-align-media .content-type__media figure,
+  .content-type__media-container.left-align-media .content-type__media picture {
+    margin-right: 40px; } }
+
+@media only screen and (min-width: 1024px) {
+  .content-type__media-container.left-align-media .content-type__header {
+    float: left; } }
+
+@media only screen and (min-width: 1024px) {
+  .content-type__media-container.left-align-media .breadcrumbs-container {
+    float: right; } }
+
+@media only screen and (min-width: 1024px) {
+  .content-type__media-container.right-align-media .content-type__media {
+    float: right; } }
+
+@media only screen and (min-width: 1024px) {
+  .content-type__media-container.right-align-media .content-type__media figure,
+  .content-type__media-container.right-align-media .content-type__media picture {
+    margin-left: 40px; } }
+
+.content-type__media-container.right-align-media .content-type__media figure::after,
+.content-type__media-container.right-align-media .content-type__media picture::after {
+  margin-left: -100vw;
+  width: 150vw; }
+
+@media only screen and (min-width: 1024px) {
+  .content-type__media-container.right-align-media .content-type__header {
+    margin-top: 40px;
+    padding-top: 40px; } }
+
+@media only screen and (min-width: 1024px) {
+  .content-type__media-container.right-align-media .breadcrumbs-container {
+    float: left; } }
+
+.content-type-date {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 50px; }
+  .content-type-date time {
+    padding-left: 5px; }
+
+.photo-credit {
+  text-align: center;
+  margin: 20px 0 0 0; }
+  @media only screen and (min-width: 1024px) {
+    .photo-credit {
+      text-align: right;
+      margin: 0 40px 0 0; } }
+
+.content-type-date__actions {
+  padding-top: 5px; }
+
+.content-type__media-header::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.field-s-news-top-media #hero-banner:not(.component-centered-container-margins) {
   margin-top: -170px; }
   @media only screen and (min-width: 860px) {
-    .node-field-s-news-top-media #hero-banner:not(.component-centered-container-margins) {
+    .field-s-news-top-media #hero-banner:not(.component-centered-container-margins) {
       margin-top: -176px; } }
-  .node-field-s-news-top-media #hero-banner:not(.component-centered-container-margins) .hero-banner__container {
+  .field-s-news-top-media #hero-banner:not(.component-centered-container-margins) .hero-banner__container {
     border: 0; }
 
 .node--type-stanford_news {
@@ -35,18 +165,10 @@
 h1 {
   font-size: 42px; }
 
-.block--field-s-news-sub-title {
-  margin-bottom: 20px; }
-  @media only screen and (min-width: 576px) {
-    .block--field-s-news-sub-title {
-      max-width: 75%; } }
-  .block--field-s-news-sub-title h2 {
-    font-size: 28px; }
-
-.block--field-s-news-author {
+.field-s-news-author {
   text-transform: uppercase; }
   @media only screen and (min-width: 1024px) {
-    .block--field-s-news-author {
+    .field-s-news-author {
       padding-left: 110px; } }
 
 .block--field-s-news-date {
@@ -83,53 +205,53 @@ h1 {
     display: inline;
     margin-top: -3px; }
 
-.block--field-earth-matters-topic {
+.field-earth-matters-topic {
   text-transform: uppercase; }
   @media only screen and (min-width: 1024px) {
-    .block--field-earth-matters-topic {
+    .field-earth-matters-topic {
       padding-left: 110px; } }
-  .block--field-earth-matters-topic .field-label {
+  .field-earth-matters-topic .field-label {
     color: #017c92;
     text-decoration: underline;
     display: inline-block;
     margin-right: 1rem; }
-    .block--field-earth-matters-topic .field-label::after {
+    .field-earth-matters-topic .field-label::after {
       content: ": "; }
-  .block--field-earth-matters-topic .field--field-earth-matters-topic {
+  .field-earth-matters-topic .field--field-earth-matters-topic {
     display: inline-block;
     margin-right: 5px; }
-    .block--field-earth-matters-topic .field--field-earth-matters-topic a {
+    .field-earth-matters-topic .field--field-earth-matters-topic a {
       text-decoration: underline;
       display: inline-block;
       white-space: nowrap;
       margin-bottom: .5rem;
       font-weight: normal; }
       @media only screen and (min-width: 768px) {
-        .block--field-earth-matters-topic .field--field-earth-matters-topic a {
+        .field-earth-matters-topic .field--field-earth-matters-topic a {
           margin-bottom: 0; } }
 
-.block--field-s-news-category .field--field-s-news-category {
+.field--field-s-news-category {
   display: inline-block;
   text-transform: uppercase;
   padding: 0 10px 0 0; }
 
-.field--body {
+.field-s-news-summary {
   font-size: 20px;
   padding-top: 20px; }
   @media only screen and (min-width: 576px) {
-    .field--body {
+    .field-s-news-summary {
       padding: 40px 80px 20px; } }
   @media only screen and (min-width: 1024px) {
-    .field--body {
+    .field-s-news-summary {
       padding-right: 110px;
       padding-left: 110px; } }
-  .field--body > :last-child {
+  .field-s-news-summary > :last-child {
     margin-bottom: 0; }
-  .field--body > p:first-of-type::first-line {
+  .field-s-news-summary > p:first-of-type::first-line {
     position: relative;
     font-size: 1em;
     letter-spacing: normal; }
-  .field--body > p:first-child::first-letter {
+  .field-s-news-summary > p:first-child::first-letter {
     letter-spacing: 0;
     font-size: 3em;
     font-weight: bold;

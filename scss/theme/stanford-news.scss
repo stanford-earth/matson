@@ -1,12 +1,13 @@
 @charset 'UTF-8';
 // Grab our mixins.
 @import "utilities/utilities";
+@import "components/content-type/content-type";
 
 // The expectation of the complex page is that the hero banner will be at the
 // top of the page each time a complex page is rendered. A few things have to
 // move around to ensure that the banner is in the right place.
 
-.node-field-s-news-top-media #hero-banner:not(.component-centered-container-margins) {
+.field-s-news-top-media #hero-banner:not(.component-centered-container-margins) {
   margin-top: -170px;
 
   @include grid-media($header-md) {
@@ -34,21 +35,9 @@ h1 {
   font-size: 42px;
 }
 
-// Subtitle field.
-.block--field-s-news-sub-title {
-  margin-bottom: 20px;
-
-  @include grid-media($media-sm) {
-    max-width: 75%;
-  }
-
-  h2 {
-    font-size: 28px;
-  }
-}
 
 // Author field.
-.block--field-s-news-author {
+.field-s-news-author {
   text-transform: uppercase;
 
   @include grid-media($media-lg) {
@@ -102,12 +91,8 @@ h1 {
   }
 }
 
-.block--field-s-news-category {
-  @extend %hide-element;
-}
-
 // Earth matters field.
-.block--field-earth-matters-topic {
+.field-earth-matters-topic {
   text-transform: uppercase;
 
   @include grid-media($media-lg) {
@@ -144,16 +129,15 @@ h1 {
 }
 
 // Category Block.
-.block--field-s-news-category {
-  .field--field-s-news-category {
-    display: inline-block;
-    text-transform: uppercase;
-    padding: 0 10px 0 0;
-  }
+.field--field-s-news-category {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0 10px 0 0;
 }
 
+
 // Body field.
-.field--body {
+.field-s-news-summary {
   font-size: 20px;
   padding-top: 20px;
 

@@ -41,12 +41,12 @@
   {% if multiple %}
     <div{{ attributes }}>
       {% for item in items %}
-        <span{{ item.attributes.addClass("field--field-s-news-author") }}>{{ item.content }}</span>
+        <span{{ item.attributes.addClass("field--field-s-news-author") }}>{{ "BY "|t }}{{ item.content }}</span>
       {% endfor %}
     </div>
   {% else %}
     {% for item in items %}
-      <span{{ attributes.addClass("field--field-s-news-author") }}>{{ item.content }}</span>
+      <span{{ attributes.addClass("field--field-s-news-author") }}>{{ "BY "|t }}{{ item.content }}</span>
     {% endfor %}
   {% endif %}
 {% else %}
@@ -56,7 +56,7 @@
       <div>
     {% endif %}
     {% for item in items %}
-      <span{{ item.attributes.addClass("field--field-s-news-author") }}>{{ item.content }}</span>
+      <span{{ item.attributes.addClass("field--field-s-news-author") }}>{{ "BY "|t }}{{ item.content }}</span>
     {% endfor %}
     {% if multiple %}
       </div>
