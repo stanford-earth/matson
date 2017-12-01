@@ -13,65 +13,8 @@
 
 (function (Drupal, $, window) {
 
-  /**
-   * Creates a url for sharing.
-   */
-  function create_twitter_share_url(uri) {
-    var hostname = uri.hostname;
-    if (hostname !== "twitter.com") {
-      return "https://twitter.com/intent/tweet?url=" + encodeURI(uri.href);
-    }
-    return uri.href;
-  };
-
-  /**
-   * [addParents description]
-   */
-  function addParents() {
-    $(".js-nav-item-expandable li a").each(function() { // basic-main-menu.
-      if ($(this).next().length > 0) {
-        $(this).addClass('parent');
-      }
-    });
-  }
-
-  /**
-   * [adjustMenu description]
-   * @param  {[type]} ww          [description]
-   * @param  {[type]} toggleWidth [description]
-   * @return {[type]}             [description]
-   */
-  function adjustMenu(ww, toggleWidth) {
-    // basic-main-menu.
-    $(".js-nav-item-expandable li").unbind('click');
-    // basic-main-menu.
-    $(".js-nav-item-expandable li a.parent").unbind('click').bind('click', function (e) {
-      // Must be attached to anchor element to prevent bubbling.
-      e.preventDefault();
-      e.stopPropagation();
-      $(this).parent("li").toggleClass('is-open').siblings("li").removeClass('is-open');
-    });
-
-    if (ww < toggleWidth) {
-      if (!$(".js-nav-mobile-closable").hasClass('is-active')) {
-        $(".js-nav-group-viewable").hide();
-      }
-      else {
-        $(".js-nav-group-viewable").show();
-      }
-    }
-    else if (ww >= toggleWidth) {
-      $(".js-nav-group-viewable").show();
-      $(".js-nav-item-expandable li").unbind('click'); // basic-main-menu.
-
-      $(document).click(function () {
-        // basic-main-menu.
-        $(".js-nav-item-expandable li").removeClass('is-open');
-      });
-    }
-  }
-
   // Execute code once the window is fully loaded.
+  $(window).bind('load', function () {
     var ww = document.body.clientWidth;
     var toggleWidth = 860;
 
@@ -121,6 +64,44 @@
       $(".hero-banner__header").show();
     })
 
+    function addParents() {
+      $(".js-nav-item-expandable li a").each(function() { // basic-main-menu.
+        if ($(this).next().length > 0) {
+          $(this).addClass('parent');
+        }
+      });
+    }
+
+    function adjustMenu(ww, toggleWidth) {
+      // basic-main-menu.
+      $(".js-nav-item-expandable li").unbind('click');
+      // basic-main-menu.
+      $(".js-nav-item-expandable li a.parent").unbind('click').bind('click', function (e) {
+        // Must be attached to anchor element to prevent bubbling.
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).parent("li").toggleClass('is-open').siblings("li").removeClass('is-open');
+      });
+
+      if (ww < toggleWidth) {
+        if (!$(".js-nav-mobile-closable").hasClass('is-active')) {
+          $(".js-nav-group-viewable").hide();
+        }
+        else {
+          $(".js-nav-group-viewable").show();
+        }
+      }
+      else if (ww >= toggleWidth) {
+        $(".js-nav-group-viewable").show();
+        $(".js-nav-item-expandable li").unbind('click'); // basic-main-menu.
+
+        $(document).click(function () {
+          // basic-main-menu.
+          $(".js-nav-item-expandable li").removeClass('is-open');
+        });
+      }
+    }
+
     // Js to turn Drupal messages into a toastr popup.
     toastr.options = {
       "closeButton": true,
@@ -167,6 +148,8 @@
       }
     })
 
+  });
+
   $(window).resize(Drupal.debounce(function () {
     // Execute code when the window is resized.
     var vw = $(window).width();
@@ -196,4 +179,15 @@
     return false;
   });
 
-} (Drupal, jQuery, window));
+  /**
+   * Creates a url for sharing.
+   */
+  function create_twitter_share_url(uri) {
+    var hostname = uri.hostname;
+    if (hostname !== "twitter.com") {
+      return "https://twitter.com/intent/tweet?url=" + encodeURI(uri.href);
+    }
+    return uri.href;
+  };
+
+} (Drupal, jQuery, this));
