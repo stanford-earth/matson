@@ -1,3 +1,12 @@
+Version 8.x-1.0-alpha4                                               2017-12-04
+-------------------------------------------------------------------------------
+- New version for uglify
+- New base margins
+- New default margins for headers and grids
+- New News styles
+- Removed extra templates from news that were not using any more.
+- Brand Bar now has an optional region where the resources link is
+
 Version 8.x-1.0-alpha3                                               2017-11-08
 -------------------------------------------------------------------------------
 - Updated link to emergency.stanford.edu to be http not https
