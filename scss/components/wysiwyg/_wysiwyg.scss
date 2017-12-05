@@ -67,6 +67,25 @@
     }
   }
 
+  img[data-responsive-image-style="landscape"],
+  img[data-responsive-image-style="portrait"] {
+    width: 48%;
+    max-width: 48%;
+  }
+
+  img[data-responsive-image-style="wide"] {
+    width: 100%;
+    min-width: 100%;
+    
+    &.align-right {
+      margin-left: 0;
+    }
+
+    &.align-left {
+      margin-right: 0;
+    }
+  }
+
   // Headers clear floats.
 
   h2,
