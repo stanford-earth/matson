@@ -33,6 +33,7 @@
 // Title field.
 h1 {
   font-size: 42px;
+  color: color(text-active)
 }
 
 
@@ -138,6 +139,7 @@ h1 {
 
 // Body field.
 .field-s-news-summary {
+  color: color(text-active);
   font-size: 20px;
   padding-top: 20px;
 
@@ -151,22 +153,6 @@ h1 {
 
   > :last-child {
     margin-bottom: 0;
-  }
-
-// Drop Cap
-  > p:first-of-type::first-line {
-    position: relative;
-    font-size: 1em;
-    letter-spacing: normal;
-  }
-
-  > p:first-child::first-letter {
-    letter-spacing: 0;
-    font-size: 3em;
-    font-weight: bold;
-    float: left;
-    margin: 0.13em 0.2em 0 0;
-    line-height: 0.7;
   }
 }
 
@@ -309,5 +295,24 @@ figure.align-center .figure-container {
   position: relative;
   @include grid-media($media-lg) {
     margin-left: 110px;
+  }
+}
+
+
+.field-s-news-rich-content .field-p-wysiwyg:nth-of-type(1) {
+  // Drop Cap
+  > p:first-of-type::first-line {
+    position: relative;
+    font-size: 1em;
+    letter-spacing: normal;
+  }
+
+  > p:first-child::first-letter {
+    letter-spacing: 0;
+    font-size: 3em;
+    font-weight: bold;
+    float: left;
+    margin: 0.13em 0.2em 0 0;
+    line-height: 0.7;
   }
 }
