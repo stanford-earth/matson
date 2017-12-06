@@ -14,17 +14,10 @@ body {
 img[data-responsive-image-style="portrait"],
 img[data-responsive-image-style="landscape"] {
   width: 48%;
-  max-width: 670px;
-  max-height: 1191px;
-}
-
-img[data-responsive-image-style="landscape"] {
-  max-height: 377px;
 }
 
 img[data-responsive-image-style="wide"] {
-  max-height: 670px;
-  max-width: 1191px;
+  width: 100%;
 }
 
 .cke_widget_image.align-left {
