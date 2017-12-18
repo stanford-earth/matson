@@ -8,6 +8,7 @@ body {
   height: auto;
   margin: 0;
   padding: 0;
+  display: block;
 }
 
 // Fixes for image styles so they kind of look like what we want.
@@ -24,6 +25,7 @@ img[data-responsive-image-style="wide"] {
   margin-right: 20px;
   margin-bottom: 20px;
 }
+
 .cke_widget_image.align-right {
   margin-left: 20px;
   margin-botto: 20px;

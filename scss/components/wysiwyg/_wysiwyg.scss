@@ -48,11 +48,19 @@
     }
   }
 
+  figure[class="align-left"],
+  figure[class="align-right"] {
+    img[data-responsive-image-style="landscape"],
+    img[data-responsive-image-style="portrait"] {
+      width: 100%;
+    }
+  }
+
   figcaption {
     display: table-caption;
     caption-side: bottom;
     color: color(ash);
-    text-align: right;
+    text-align: left;
   }
 
   img {

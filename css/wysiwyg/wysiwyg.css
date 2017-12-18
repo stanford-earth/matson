@@ -3,7 +3,8 @@ body {
   min-height: auto;
   height: auto;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: block; }
 
 img[data-responsive-image-style="portrait"],
 img[data-responsive-image-style="landscape"] {
