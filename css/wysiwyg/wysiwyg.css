@@ -3,6 +3,36 @@ body {
   min-height: auto;
   height: auto;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: block; }
+
+img[data-responsive-image-style="portrait"],
+img[data-responsive-image-style="landscape"] {
+  width: 48%; }
+
+img[data-responsive-image-style="wide"] {
+  width: 100%; }
+
+.cke_widget_image.align-left {
+  margin-right: 20px;
+  margin-bottom: 20px; }
+
+.cke_widget_image.align-right {
+  margin-left: 20px;
+  margin-bottom: 20px; }
+
+.cke_widget_image.align-left,
+.cke_widget_image.align-right {
+  max-width: 48%; }
+  .cke_widget_image.align-left img[data-responsive-image-style="wide"],
+  .cke_widget_image.align-left img[data-responsive-image-style="narrow"],
+  .cke_widget_image.align-left img[data-responsive-image-style="portrait"],
+  .cke_widget_image.align-left img[data-responsive-image-style="landscape"],
+  .cke_widget_image.align-right img[data-responsive-image-style="wide"],
+  .cke_widget_image.align-right img[data-responsive-image-style="narrow"],
+  .cke_widget_image.align-right img[data-responsive-image-style="portrait"],
+  .cke_widget_image.align-right img[data-responsive-image-style="landscape"] {
+    max-width: 100%;
+    width: 100%; }
 
 /*# sourceMappingURL=wysiwyg.css.map */

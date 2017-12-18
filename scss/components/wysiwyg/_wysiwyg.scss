@@ -48,11 +48,19 @@
     }
   }
 
+  figure[class="align-left"],
+  figure[class="align-right"] {
+    img[data-responsive-image-style="landscape"],
+    img[data-responsive-image-style="portrait"] {
+      width: 100%;
+    }
+  }
+
   figcaption {
     display: table-caption;
     caption-side: bottom;
     color: color(ash);
-    text-align: right;
+    text-align: left;
   }
 
   img {
@@ -64,6 +72,24 @@
 
     &.align-left {
       margin-right: 20px;
+    }
+  }
+
+  img[data-responsive-image-style="landscape"],
+  img[data-responsive-image-style="portrait"] {
+    width: calc(50% - 20px);
+  }
+
+  img[data-responsive-image-style="wide"] {
+    width: 100%;
+    min-width: 100%;
+
+    &.align-right {
+      margin-left: 0;
+    }
+
+    &.align-left {
+      margin-right: 0;
     }
   }
 

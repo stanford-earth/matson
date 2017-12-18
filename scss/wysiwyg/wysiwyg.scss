@@ -8,4 +8,37 @@ body {
   height: auto;
   margin: 0;
   padding: 0;
+  display: block;
+}
+
+// Fixes for image styles so they kind of look like what we want.
+img[data-responsive-image-style="portrait"],
+img[data-responsive-image-style="landscape"] {
+  width: 48%;
+}
+
+img[data-responsive-image-style="wide"] {
+  width: 100%;
+}
+
+.cke_widget_image.align-left {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.cke_widget_image.align-right {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.cke_widget_image.align-left,
+.cke_widget_image.align-right {
+  max-width: 48%;
+  img[data-responsive-image-style="wide"],
+  img[data-responsive-image-style="narrow"],
+  img[data-responsive-image-style="portrait"],
+  img[data-responsive-image-style="landscape"] {
+    max-width: 100%;
+    width: 100%;
+  }
 }
