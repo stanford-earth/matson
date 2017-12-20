@@ -48,8 +48,8 @@
     }
   }
 
-  figure[class="align-left"],
-  figure[class="align-right"] {
+  figure.align-left,
+  figure.align-right {
     img[data-responsive-image-style="landscape"],
     img[data-responsive-image-style="portrait"] {
       width: 100%;
