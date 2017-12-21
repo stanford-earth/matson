@@ -1586,7 +1586,8 @@
     opacity: 0.8; }
 
 .hero-banner__footer {
-  text-align: right; }
+  text-align: center;
+  margin-top: -60px; }
   @media only screen and (max-width: 575px) {
     .hero-banner__footer {
       padding: 1em calc(((50% /12) * 0) + 15px); }
@@ -1629,6 +1630,9 @@
         clear: both;
         content: "";
         display: block; } }
+  @media only screen and (min-width: 768px) {
+    .hero-banner__footer {
+      text-align: right; } }
 
 .hero-banner.component-centered-container-margins.has-video .hero-banner__container {
   border: 0; }
