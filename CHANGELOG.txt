@@ -1,3 +1,11 @@
+Version 8.x-1.0-alpha6                                                2017-12-22
+--------------------------------------------------------------------------------
+
+- Changes to placement of credit/caption fields on content types
+- Changes to placement of credit/caption on hero banners
+- Updates to Masony blocks for mobile users to make it more readable
+- Updates to WYSIWYG and rendered styles to support inline responsive images
+
 Version 8.x-1.0-alpha5                                               2017-12-14
 -------------------------------------------------------------------------------
 - EARTH-507: News field styles and first wysiwyg drop cap.
