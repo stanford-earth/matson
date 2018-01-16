@@ -1,0 +1,55 @@
+.masonry-blocks {
+  margin: 0 auto;
+  max-width: 380px;
+}
+
+.masonry-blocks::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .masonry-blocks {
+    max-width: none;
+  }
+}
+
+.masonry-blocks .masonry-block {
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .masonry-blocks .masonry-block {
+    width: calc(50% - 45px);
+    float: left;
+    margin-left: 30px;
+    max-width: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .masonry-blocks .masonry-block {
+    width: calc(25% - 37.5px);
+    float: left;
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .masonry-blocks .masonry-block.is-wide {
+    width: calc(100% - 60px);
+    float: left;
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .masonry-blocks .masonry-block.is-wide {
+    width: calc(50% - 45px);
+    float: left;
+    margin-left: 30px;
+  }
+}
+
+/*# sourceMappingURL=masonry-blocks.component.css.map */

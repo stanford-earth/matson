@@ -1,0 +1,44 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.no-js {
+  .filmstrip__container {
+    border-bottom: 0;
+
+    .js-expandable-container__toggle {
+      display: none;
+    }
+
+    .film-card {
+      &:nth-child(n+5) {
+        display: block;
+      }
+    }
+  }
+}
+
+.js-expandable-container {
+  &.is-open {
+    border-bottom: 0;
+
+    .js-expandable-container__toggle {
+      display: none;
+    }
+
+    .film-card {
+      &:nth-child(n+5) {
+        display: block;
+      }
+    }
+  }
+
+  .film-card {
+    &:nth-child(n+5) {
+      display: none;
+    }
+  }
+}

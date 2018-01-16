@@ -1,0 +1,17 @@
+{#
+/**
+ * @file
+ * Callout blocks pattern.
+ */
+#}
+
+<div{{ attributes.addClass('callout-blocks') }}>
+  {# Break up the individual items in to the appropriate template var. #}
+  {% if items.0 and items.0.title %}
+    {% for item in items %}
+      {{ pattern('callout_block', item) }}
+    {% endfor %}
+  {% else %}
+    {{ items }}
+  {% endif %}
+</div>

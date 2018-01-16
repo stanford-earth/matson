@@ -1,0 +1,18 @@
+# Photo Banner Pattern
+#
+photo_banner:
+  label: Photo Banner
+  description: "A photo banner component."
+  fields:
+    image:
+      description: "Banner image."
+      label: Image
+      preview: "https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg"
+      type: text
+  libraries:
+    -
+      photo_banner_library:
+        css:
+          component:
+            css/photo-banner.component.css: {}
+  use: "@stanford_components/molecules/photo-banner/photo-banner.html.twig"

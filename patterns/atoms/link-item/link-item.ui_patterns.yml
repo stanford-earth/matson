@@ -1,0 +1,27 @@
+# Link item
+link_item:
+  label: "Link item"
+  description: "A single link item"
+  fields:
+    link:
+      description: "URI that points somewhere"
+      label: Link
+      preview: "https://stanford.edu"
+      type: url
+    title:
+      description: "Link name."
+      label: Title
+      preview: "Link title"
+      type: text
+    subtitle:
+      description: "Link subtitle."
+      label: Subtitle
+      preview: "Link subtitle"
+      type: text
+  libraries:
+    -
+      link_item_library:
+        css:
+          component:
+            css/link-item.component.css: {}
+  use: "@stanford_components/atoms/link-item/link-item.html.twig"

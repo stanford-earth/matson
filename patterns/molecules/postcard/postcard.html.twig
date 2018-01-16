@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Postcard pattern.
+ */
+#}
+{% set attributes = attributes.addClass(['postcard', variants.image_orientation, variants._text_orientation]) %}
+
+<div{{ attributes }}> {# has-image-right, has-text-offset, has-text-inset #}
+  <div class="postcard__image" style="background-image:url('{{ image|get_img_src }}')"></div>
+  <div class="postcard__content">
+    <div class="postcard__content-inner">
+      <div class="postcard__content-text">
+        <h3 class="postcard__title drop-cap-title">
+          <span class="drop-cap-title__name">{{ title }}</span>
+          <span class="drop-cap-title__drop-cap drop-cap--is-centered" aria-hidden="true">{{ title|first_char}}</span>
+        </h3>
+        {{ text }}
+
+        {% if linkurl|openlink %}
+          {{ linkurl|openlink({class:'postcard__more', 'aria-label': "Read more about "|t ~ title|render|striptags|preg_replace(":", "") }) }}
+            <svg class="i-svg i-svg--arrow-right" role="img">
+              <title>{{ 'Navigate to item'|t }}</title>
+              <use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+            </svg>
+          {{ linkurl|closelink }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

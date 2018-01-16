@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Simple Slats pattern.
+ */
+#}
+
+{% set attributes = attributes.addClass("simple-slats") %}
+
+<div{{ attributes }}>
+  {# Break up the individual items in to the appropriate template var. #}
+  {% for item in items %}
+    {% if item.title %}
+      {{ pattern("simple_slat", item|merge({'context': context})) }}
+    {% else %}
+      {{ item }}
+    {% endif %}
+
+  {% endfor %}
+</div>

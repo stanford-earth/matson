@@ -164,6 +164,12 @@ home:
     layout:
       css/layout/home.css: {}
 
+component_centered_container:
+  version: VERSION
+  css:
+    layout:
+       css/components/component-centered-container/component-centered-container.css: {}
+
 ie8:
   version: VERSION
   header: true

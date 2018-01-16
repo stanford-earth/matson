@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Highlight cards pattern.
+ */
+#}
+
+<div{{ attributes.addClass('expandable-cards') }}>
+  {# Break up the individual items in to the appropriate template var. #}
+  {% if items.0.title %}
+    {% for item in items %}
+      {# Preview page. #}
+      {{ pattern('expandable_card', item) }}
+    {% endfor %}
+  {% else %}
+    {# Entities #}
+    {{ items }}
+  {% endif %}
+</div>

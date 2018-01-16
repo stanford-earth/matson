@@ -1,0 +1,97 @@
+# Filmstrip Pattern
+#
+filmstrip:
+  label: Filmstrip
+  description: "A horizontal list of small images with text overlays and arrow buttons."
+  variants:
+    card_widths:
+      description: "Make cards have flexible rather than fixed widths."
+      label: Flexible widths
+      default: fixed-width
+      options:
+        is-flexible: Flexible Widths
+        fixed-width: Fixed Widths
+    tight:
+      description: "Make cards have flexible rather than fixed widths and tighter margins."
+      label: Flexible widths and tighter margins
+      default: not-tight
+      options:
+        is-tight: Tight
+        not-tight: Loose
+    height:
+      description: "Tall cards."
+      label: "Flexible tall cards"
+      default: is-short
+      options:
+        is-tall: Tall
+        is-short: Short
+    double:
+      label: "Double or Single"
+      description: "Show the cards as double or single rows."
+      default: is-single
+      options:
+        is-double: Double
+        is-single: Single
+    centered_container:
+      label: "Centered Component"
+      description: "Center the component in a responsive container"
+      default: true
+      options:
+        true: "Centered"
+        0: "Normal"
+  fields:
+    items:
+      description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, and an image rendered as an html element."
+      label: "A list of simple image cards (optional)"
+      type: collection
+      preview:
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/277/nature/1"
+          link: "<a href=\"https://www.stanford.edu\">Stanford</a>"
+          title: "First Item"
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/277/nature/2"
+          link: "<a href=\"https://www.stanford.edu\">Stanford</a>"
+          title: "Second Item"
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/277/nature/3"
+          link: "<a href=\"https://www.stanford.edu\">Stanford</a>"
+          title: "Third Item"
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/277/nature/4"
+          link: "<a href=\"https://www.stanford.edu\">Stanford</a>"
+          title: "Second Item"
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/277/nature/5"
+          link: "<a href=\"https://www.stanford.edu\">Stanford</a>"
+          title: "Third Item"
+    title:
+      description: "Title for the whole filmstrip."
+      label: Title
+      preview: "Challenges We Tackle"
+      type: text
+
+  libraries:
+    -
+      filmstrip_library:
+        css:
+          component:
+            css/filmstrip.component.css: {}
+        dependencies:
+          - ui_patterns/film_card.film_card_library
+  use: "@stanford_components/molecules/filmstrip/filmstrip.html.twig"

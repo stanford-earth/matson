@@ -1,0 +1,42 @@
+# Photo Social Pattern
+#
+photo_social:
+  label: "Photo Social"
+  description: "A single of social media photo"
+  fields:
+    description:
+      description: "Tile description."
+      label: Description
+      preview: "Ornare. Nulla tempus sagittis Etiam."
+      type: text
+    is_right:
+      description: "Render tiles left or right  Treat as boolean (true/false)."
+      label: Arrow
+      preview: false
+      type: text
+    image:
+      description: "Tile image."
+      label: Image
+      preview:
+        theme: image
+        uri: "https://lorempixel.com/380/380/nature/10"
+      type: image
+    link:
+      description: "URI that points somewhere"
+      label: Link
+      preview: "https://stanford.edu"
+      type: url
+    title:
+      description: "Photo tile title"
+      label: Title
+      preview: "Students"
+      type: text
+  libraries:
+    -
+      photo_social_library:
+        css:
+          component:
+            css/photo-social.component.css: {}
+        dependencies:
+          - ui_patterns/photo_thumb.photo_thumb_library
+  use: "@stanford_components/molecules/photo-social/photo-social.html.twig"

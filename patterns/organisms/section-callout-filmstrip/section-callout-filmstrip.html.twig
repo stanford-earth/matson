@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Filmstrip pattern.
+ */
+#}
+
+{% set attributes = attributes.addClass(['section-callout-filmstrip', variants.has_columns, variants.section_header, variants.arrow]) %}
+
+{# has-columns: adds two column layout to filmstrip #}
+<div{{ attributes }}>
+  <div class="filmstrip__header">
+    {{ pattern('section_header', {'superhead': superhead,'subhead': subhead,'context': context}) }}
+  </div>
+
+  <div class="filmstrip__container">
+    {{ pattern('filmstrip', {'items': items, 'context': context}) }}
+  </div>
+</div>

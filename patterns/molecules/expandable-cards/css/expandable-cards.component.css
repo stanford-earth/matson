@@ -1,0 +1,17 @@
+.expandable-cards::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.expandable-cards .expandable-card {
+  width: 100%;
+  margin: 0 auto 2em; }
+  @media only screen and (min-width: 768px) {
+    .expandable-cards .expandable-card {
+      width: calc(50% - 45px);
+      float: left;
+      margin-left: 30px;
+      min-height: 200px;
+      margin-bottom: 0; } }
+
+/*# sourceMappingURL=expandable-cards.component.css.map */

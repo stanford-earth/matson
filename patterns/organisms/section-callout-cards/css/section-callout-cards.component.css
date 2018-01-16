@@ -1,0 +1,38 @@
+.section-callout-cards {
+  padding-bottom: 4.4615384615em; }
+  .section-callout-cards::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .section-callout-cards .callout-cards__header {
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .section-callout-cards .callout-cards__header {
+        width: calc(100% - 60px);
+        float: left;
+        margin-left: 30px; } }
+    @media only screen and (min-width: 1024px) {
+      .section-callout-cards .callout-cards__header {
+        width: calc(25% - 37.5px);
+        float: left;
+        margin-left: 30px; } }
+    @media only screen and (min-width: 1200px) {
+      .section-callout-cards .callout-cards__header {
+        margin-left: calc(8.3333333333% - 65px + 120px); } }
+  @media only screen and (min-width: 1024px) {
+    .section-callout-cards .callout-cards__container {
+      width: calc(75% - 52.5px);
+      float: left;
+      margin-left: 30px; } }
+  @media only screen and (min-width: 1200px) {
+    .section-callout-cards .callout-cards__container {
+      width: calc(66.6666666667% - 100px);
+      float: left;
+      margin-left: 60px; } }
+  @media only screen and (min-width: 1024px) {
+    .section-callout-cards .callout-cards__container .callout-cards {
+      margin-left: -30px;
+      margin-right: -30px;
+      width: calc(100% + 60px); } }
+
+/*# sourceMappingURL=section-callout-cards.component.css.map */

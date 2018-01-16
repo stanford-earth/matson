@@ -1,0 +1,12 @@
+{#
+/**
+ * @file
+ * Header Card.
+ */
+#}
+
+{% set header_vars = {'superhead': superhead, 'subhead': subhead, 'context': context, 'link': link} %}
+
+<div class="header-card">
+  {{ pattern('section_header', header_vars) }}
+</div>

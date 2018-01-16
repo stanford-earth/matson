@@ -1,0 +1,37 @@
+# Simple Columns Pattern
+#
+simple_columns:
+  label: "Simple Columns"
+  description: "A horizontal list callout blocks with icons and styled text"
+  variants:
+    columns:
+      label: Columns
+      description: "How many columns to split the content into"
+      default: two-columns
+      options:
+        two-columns: "2 Columns"
+        three-columns: "3 Columns"
+        four-columns: "4 Columns"
+  fields:
+    title:
+      description: "A stylized title for the column text"
+      label: Title
+      preview: "This is a wonderful title"
+      type: text
+    content:
+      description: "The rendered html markup for the items if using a view or something else that will already provide the templated output."
+      label: "Rendered Markup (optional)"
+      preview: "We are scientists and we love it! Undergraduates, graduate students, professors, educational staff, and alumni working professionals. We build community in our field trips, classes, and cocurriculars. We care about the Earth and making its resources available to people across the globe now and in the future."
+      type: text
+    link:
+      description: "Read More Link."
+      label: "Link (optional)"
+      preview: "<a href=\"https://stanford.edu/\">Explore Faculty</a>"
+      type: text
+  libraries:
+    -
+      simple_columns_library:
+        css:
+          component:
+            css/simple-columns.component.css: {}
+  use: "@stanford_components/molecules/simple-columns/simple-columns.html.twig"

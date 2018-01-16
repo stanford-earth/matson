@@ -1,0 +1,18 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.callout-card {
+  min-height: 150px;
+  max-width: 400px;
+
+  .callout-card__icon {
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}

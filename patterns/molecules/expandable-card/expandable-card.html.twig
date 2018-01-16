@@ -1,0 +1,48 @@
+{#
+/**
+ * @file
+ * Expandable card pattern.
+ */
+#}
+
+{% set attributes = attributes.addClass(['expandable-card', 'js-expandable-card', variants.card_width]) %}
+
+{# This is used to change open/hide the clicked card if javascript is not enabled. #}
+{# Check if we have a parameter for the card. #}
+{% if get_param('card') is not empty %}
+  {# Check if the parameter is the same as this ID attribute. #}
+  {% if get_param('card') == attributes.id %}
+    {% set attributes = attributes.addClass('is-open') %}
+  {% else %}
+    {% set attributes = attributes.addClass('is-hidden') %}
+  {% endif %}
+{% endif %}
+
+<div{{ attributes }} >
+  <header class="expandable-card__header">
+    <h4 class="expandable-card__title drop-cap-title">
+      <span class="drop-cap-title__name">{{ title }}</span>
+      <span class="drop-cap-title__drop-cap drop-cap--is-centered" aria-hidden="true">{{ title|first_char }}</span>
+    </h4>
+  </header>
+
+  <a id="open-{{ attributes.id }}" href="?card={{ attributes.id }}#{{ attributes.id }}" class="expandable-card__toggle js-expandable-card__toggle expandable-card__open" title="Open" aria-label="Expand {{ title|render|striptags }} Menu" >
+    <span><svg class="i-svg i-svg--plus" role="img"><title>{{ 'Expand card'|t }}</title><use xlink:href="#i-plus" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
+  </a>
+
+  <nav class="icon-items" aria-expanded="false" role="navigation">
+    {% if items.0.link %}
+      {# Preview page. #}
+      {% for item in items %}
+        {{ pattern('icon_item', item) }}
+      {% endfor %}
+    {% else %}
+      {# Want to strip out html tags but keep the important tags. This helps keep outcome the same every time. #}
+      {{ items|render|striptags('<a><svg><img><span><use><h5>')|raw }}
+    {% endif %}
+  </nav>
+
+  <a id="close-{{ attributes.id }}" href="?#{{ attributes.id }}" class="expandable-card__toggle js-expandable-card__toggle expandable-card__close" title="Close" aria-label="Collapse {{ title|render|striptags }} Menu">
+    <span><svg class="i-svg i-svg--minus" role="img"><title>{{ 'Collapse card'|t }}</title><use xlink:href="#i-minus" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
+  </a>
+</div>

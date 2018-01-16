@@ -1,0 +1,73 @@
+.section-expandable-banner {
+  background-size: cover;
+  padding-bottom: 2.3076923077em;
+  padding-top: 2.3076923077em;
+  position: relative;
+  margin-bottom: 4.4615384615em; }
+  @media only screen and (max-width: 575px) {
+    .section-expandable-banner {
+      padding: 1em calc(((50% /12) * 0) + 15px); }
+      .section-expandable-banner::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .section-expandable-banner {
+      padding: 1em calc(((50% /12) * 0) + 15px); }
+      .section-expandable-banner::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .section-expandable-banner {
+      padding: 1em calc(((50% /12) * 0) + 30px); }
+      .section-expandable-banner::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .section-expandable-banner {
+      padding: 1em calc(((50% /12) * 0) + 30px); }
+      .section-expandable-banner::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 1200px) {
+    .section-expandable-banner {
+      padding: 1em calc(50% - (750px - 60px)); }
+      .section-expandable-banner::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only print {
+    .section-expandable-banner {
+      padding: 1em calc(((50% /12) * 0) + 0.25in); }
+      .section-expandable-banner::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 768px) {
+    .section-expandable-banner {
+      display: flex;
+      align-items: center; } }
+  .section-expandable-banner .expandable-banner__header {
+    padding-top: 2.3076923077em;
+    margin-left: 2.3076923077em; }
+    @media only screen and (min-width: 1024px) {
+      .section-expandable-banner .expandable-banner__header {
+        width: calc(50% - 45px);
+        float: left;
+        margin-left: 30px;
+        margin-left: calc(8.3333333333% - 32.5px + 60px); } }
+  @media only screen and (min-width: 768px) {
+    .section-expandable-banner .expandable-banner__container {
+      width: calc(75% - 52.5px);
+      float: left;
+      margin-left: 30px; } }
+  @media only screen and (min-width: 1024px) {
+    .section-expandable-banner .expandable-banner__container .expandable-cards {
+      margin-left: -30px;
+      margin-right: -30px;
+      width: calc(100% + 60px); } }
+
+/*# sourceMappingURL=section-expandable-banner.component.css.map */

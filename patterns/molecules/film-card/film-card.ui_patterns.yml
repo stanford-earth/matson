@@ -1,0 +1,49 @@
+# Card Pattern
+#
+film_card:
+  label: "Film card"
+  description: "A single card inside a filmstrip."
+  variants:
+    arrow:
+      description: "Render arrow on card."
+      label: Arrow
+      default: has-arrow
+      options:
+        has-arrow: Show Arrow
+        no-arrow: No Arrow
+  fields:
+    description:
+      description: "Card description."
+      label: Description
+      preview: "Understand the properties and processes in the top ~100 meters of the earth."
+      type: text
+    image:
+      description: "Card image."
+      label: Image
+      preview:
+        alt: "this is a sample image"
+        theme: image
+        uri: "https://lorempixel.com/220/145/nature/6"
+      type: text
+    link:
+      description: "URI that points somewhere."
+      label: "Link (optional)"
+      preview: "<a href=\"https://stanford.edu/\">Stanford</a>"
+      type: text
+    subtitle:
+      description: "Card subtitle."
+      label: Subtitle
+      preview: "Card subtitle"
+      type: text
+    title:
+      description: "Card title."
+      label: Title
+      preview: "Card title"
+      type: text
+  libraries:
+    -
+      film_card_library:
+        css:
+          component:
+            css/film-card.component.css: {}
+  use: "@stanford_components/molecules/film-card/film-card.html.twig"

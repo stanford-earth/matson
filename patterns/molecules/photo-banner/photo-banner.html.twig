@@ -1,0 +1,9 @@
+{#
+/**
+ * @file
+ * Photo Banner pattern.
+ */
+#}
+{% set attributes = attributes.addClass("photo-banner") %}
+{% set attributes = attributes.setAttribute('style', "background-image:url('" ~ image|render|striptags|trim ~ "')") %}
+<div{{ attributes }}></div>

@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Callout blocks pattern.
+ */
+#}
+{%
+  set arialabel = intro|render|striptags ~ ' ' ~ title|render|striptags ~ ' ' ~ subtitle|render|striptags
+%}
+<div{{ attributes.addClass('callout-block') }}>
+  <div class="callout-block__title">
+    <span class="callout-block__intro">{{ intro }}</span>
+    <h3 class="callout-block__name">
+      {{ link|openlink({'aria-label': arialabel}) }}
+        {{ title }}
+      {{ link|closelink }}
+    </h3>
+    <span class="callout-block__subhead">{{ subtitle }}</span>
+  </div>
+
+  {% if link|openlink is not empty %}
+    {{ link|openlink({class: 'callout-block__action', 'aria-label': "Navigate to "|t ~ title|render|striptags|trim }) }}
+      <svg class="i-svg i-svg--arrow-right" role="img"><title>{{ 'Navigate to item'|t }}</title><use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use> </svg>
+    {{ link|closelink }}
+  {% endif %}
+
+  <div class="callout-block__icon">
+    {{ image }}
+  </div>
+</div>

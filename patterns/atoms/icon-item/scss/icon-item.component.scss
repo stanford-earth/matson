@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.icon-item__image {
+  display: block;
+  float: left;
+  padding-right: 1em;
+  margin-right: 1em;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.icon-item__name {
+  margin-left: 57px;
+}

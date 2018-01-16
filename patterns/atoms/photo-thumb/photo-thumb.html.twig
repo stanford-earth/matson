@@ -1,0 +1,12 @@
+{#
+/**
+ * @file
+ * Photo thumb pattern.
+ */
+#}
+{% set attributes = attributes.addClass("photo-thumb tile-item") %}
+<div{{ attributes }}>
+  {{ link|openlink({class:"photo-thumb__link", 'aria-label': image|get_img_alt }) }}
+    {{ image }}
+  {{ link|closelink }}
+</div>

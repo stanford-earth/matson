@@ -1,0 +1,45 @@
+# Feature Blocks Pattern
+#
+feature_blocks:
+  label: "Feature Blocks"
+  description: "A horizontal list feature cards"
+  fields:
+    items:
+      description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, and an image rendered as an html element."
+      label: "A list of simple image cards"
+      type: collection
+      preview:
+        -
+          description: "Stanford Earth faculty and young scientists in the media."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/282/nature/5"
+          link: "https://www.stanford.edu"
+          more: "See More Research News"
+          tag: "Research News"
+        -
+          description: "News about the School of Earth, Energy & Environmental Sciences."
+          image:
+            theme: image
+            uri: "https://lorempixel.com/420/282/nature/4"
+          link: "https://www.stanford.edu"
+          tag: "School Highlights"
+        -
+          description: "Discoveries and insights about Earth, its resources, and its environment."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/282/nature/3"
+          link: "https://www.stanford.edu"
+          more: "See More Media Mentions"
+          tag: "Media Mentions"
+  libraries:
+    -
+      feature_blocks_library:
+        css:
+          component:
+            css/feature-blocks.component.css: {}
+        dependencies:
+          - ui_patterns/simple_block.simple_block_library
+  use: "@stanford_components/molecules/feature-blocks/feature-blocks.html.twig"

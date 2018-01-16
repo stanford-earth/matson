@@ -1,0 +1,26 @@
+.calendar-blocks::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+@media only screen and (min-width: 768px) {
+  .calendar-blocks {
+    display: flex;
+    flex-wrap: wrap; } }
+
+.calendar-blocks .calendar-block {
+  margin: 0 auto 2em;
+  max-width: 250px; }
+  @media only screen and (min-width: 768px) {
+    .calendar-blocks .calendar-block {
+      width: calc(50% - 45px);
+      float: left;
+      margin-left: 30px;
+      max-width: none; } }
+  @media only screen and (min-width: 1024px) {
+    .calendar-blocks .calendar-block {
+      width: calc(20% - 36px);
+      float: left;
+      margin-left: 30px; } }
+
+/*# sourceMappingURL=calendar-blocks.component.css.map */

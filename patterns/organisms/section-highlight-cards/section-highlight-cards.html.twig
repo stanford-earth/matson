@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Section Highlight Banner pattern.
+ */
+#}
+
+{% set attributes = attributes.addClass(['section-highlight-cards', variants.card_width]) %}
+{% if items|field_count == 1 %}
+  {% set attributes = attributes.addClass('is-single') %}
+{% endif %}
+
+{#
+  Center the container if variant is true by including the library/css and adding
+  a class to the main wrapping div.
+#}
+{% if variants.centered_container %}
+  {{ attach_library('stanford_components/component_centered_container') }}
+  {% set attributes = attributes.addClass('component-centered-container') %}
+{% endif %}
+
+{% set header_vars = {'superhead': superhead, 'subhead': subhead, 'context': context} %}
+
+<div{{ attributes }} >
+  <div class="section-highlight-cards__header">
+    {{ pattern('section_header', header_vars) }}
+  </div>
+
+  <div class="section-highlight-cards__container">
+    {{ pattern('highlight_cards', {'items': items, 'context': context}) }}
+  </div>
+</div>

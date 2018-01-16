@@ -1,0 +1,8 @@
+.callout-card {
+  min-height: 150px;
+  max-width: 400px; }
+  .callout-card .callout-card__icon img {
+    height: 50px;
+    width: 50px; }
+
+/*# sourceMappingURL=callout-card.component.css.map */

@@ -1,0 +1,43 @@
+# Simple Slats Pattern
+#
+simple_slats:
+  label: "Simple Slats"
+  description: "A horizontal list simple slats"
+  fields:
+    items:
+      description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, and an image rendered as an html element."
+      label: "A list of simple slats"
+      type: collection
+      preview:
+        -
+          description: "A new four-step “framework” aims to test the contribution of climate change to record-setting extreme weather events.After an unusually intense heat wave, downpour or drought, Noah Diffenbaugh and his research group."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/380/225/nature/5"
+          link: "https://www.stanford.edu"
+          title: "Stanford scientists test links between extreme weather and climate change"
+        -
+          description: "Research by Stanford Earth's Arvind Ravikumar focuses on evaluating methane leak detection technologies."
+          image:
+            theme: image
+            uri: "https://lorempixel.com/380/225/nature/4"
+          link: "https://www.stanford.edu"
+          title: "Detecting methane leaks with infrared cameras:  Are they fast and effective?"
+        -
+          description: "A study finds that just a few natural gas wells account for more than half of the total volume of leaked methane gas in the U.S Fixing leaks at those top emitters could reduce leaks of methane, a potent greenhouse gas."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/380/225/nature/3"
+          link: "https://www.stanford.edu"
+          title: "'Super emitters’ are responsible for more than half of U.S. methane emissions"
+  libraries:
+    -
+      simple_slats_library:
+        css:
+          component:
+            css/simple-slats.component.css: {}
+        dependencies:
+          - ui_patterns/simple_slat.simple_slat_library
+  use: "@stanford_components/molecules/simple-slats/simple-slats.html.twig"

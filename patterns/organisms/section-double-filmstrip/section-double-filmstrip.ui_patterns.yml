@@ -1,0 +1,143 @@
+# Callout Filmstrip Double Pattern
+#
+section_double_filmstrip:
+  label: "Section Double Filmstrip"
+  description: "A horizontal list of small images with section header"
+  variants:
+    dash_under:
+      label: "Dash Under Header"
+      description: "Dash under h2 or to the left?  Treat as boolean (true/false)"
+      default: ~
+      options:
+        has-dash-left: Left
+        has-dash-under: Under
+    is_centered:
+      label: Centered
+      description: "Flag to determine whether h2 should be centered.  Treat as boolean (true/false)."
+      default: ~
+      options:
+        left-aligned: "Left Aligned"
+        is-centered: Centered
+    is_featured:
+      label: "Dash With Emphasis"
+      description: "Dash has emphasis or default brand color?  Treat as boolean (true/false)"
+      default: no-emphasis
+      options:
+        no-emphasis: "No Branding"
+        has-dash-emphasis: "Brand color"
+    card_widths:
+      description: "Make cards have flexible rather than fixed widths."
+      label: "Flexible widths"
+      default: ~
+      options:
+        is-flexible: "Flexible Widths"
+        fixed-width: "Fixed Widths"
+    tight:
+      description: "Make cards have flexible rather than fixed widths and tighter margins."
+      label: "Flexible widths and tighter margins"
+      default: ~
+      options:
+        is-tight: Tight
+        not-tight: Loose
+    has_columns:
+      description: "Add left column to grid for section header."
+      label: "Has Columns"
+      default: ~
+      options:
+        has-columns: "Left Columns"
+        no-columns: "No Left Columns"
+    double:
+      label: "Double or Single"
+      description: "Show the cards as double or single rows."
+      default: is-double
+      options:
+        is-double: Double
+        is-single: Single
+    centered_container:
+      label: "Centered Component"
+      description: "Center the component in a responsive container"
+      default: false
+      options:
+        true: "Centered"
+        0: "Normal"
+  fields:
+    items:
+      description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, and an image rendered as an html element."
+      label: "A list of simple image cards"
+      type: collection
+      preview:
+        -
+          description: "Understand the properties and processes in the top ~100 meters of the earth."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/171/nature/1"
+          link: "https://www.stanford.edu"
+          title: "Green Venture Capitalist<br />MBA/MS Environmental<br />Resources '08"
+        -
+          description: "How ecosystems and carbon cycle respond to variations in water availability at large scales."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/171/nature/2"
+          link: "https://www.stanford.edu"
+          title: "Product Designer<br />Earth Systems BS '06,<br /> MS '10"
+        -
+          description: "Image and understand the properties and processes in the earth."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/171/nature/3"
+          link: "https://www.stanford.edu"
+          title: "Energy Engineer<br />Energy Resources Engineering<br />MS '16"
+        -
+          description: "Scientific basis for water resources management.."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/171/nature/6"
+          link: "https://www.stanford.edu"
+          title: "Environmental attorney<br />Earth Systems BS, 05<br />MS '09"
+        -
+          description: "Understand the properties and processes in the top ~100 meters of the earth."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/171/nature/1"
+          link: "https://www.stanford.edu"
+          title: "Green Venture Capitalist<br />MBA/MS Environmental<br />Resources '08"
+        -
+          description: "How ecosystems and carbon cycle respond to variations in water availability at large scales."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/171/nature/2"
+          link: "https://www.stanford.edu"
+          title: "Product Designer<br />Earth Systems BS '06,<br /> MS '10"
+    link:
+      description: "URI that points somewhere."
+      label: "Link (optional)"
+      preview: "<a href=\"https://stanford.edu/\">Stanford</a>"
+      type: text
+    subhead:
+      description: "Subhead for callout"
+      label: Subhead
+      preview: "<p>Our multidisciplinary research groups bring together cutting-edge knowledge to test ideas for new solutions.</p>"
+      type: text
+    superhead:
+      description: "Title for callout"
+      label: Superhead
+      preview: "Research Groups"
+      type: text
+  libraries:
+    -
+      section_double_filmstrip_library:
+        css:
+          component:
+            css/section-double-filmstrip.component.css: {}
+        dependencies:
+          - ui_patterns/section_header.section_header_library
+          - ui_patterns/film_card.film_card_library
+          - ui_patterns/filmstrip.filmstrip_library
+          - ui_patterns/section_callout_filmstrip.section_callout_filmstrip_library
+  use: "@stanford_components/organisms/section-double-filmstrip/section-double-filmstrip.html.twig"

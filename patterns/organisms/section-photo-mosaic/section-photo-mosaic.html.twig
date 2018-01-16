@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Section photo mosaic pattern.
+ */
+#}
+{% set attributes = attributes.addClass("section-photo-mosaic") %}
+<div{{ attributes }}>
+  <div class="photo-mosaic__header">
+    {%  set header_vars = {
+      'superhead': superhead,
+      'subhead': subhead,
+      'context': context
+    } %}
+    {{ pattern('section_header', header_vars) }}
+  </div>
+
+  <div class="photo-mosaic__container">
+    <div class="photo-mosaic">
+      {# Break up the individual items in to the appropriate template var. #}
+      {% for tile in tiles %}
+        {# Pass vars through to include template. #}
+        {{ pattern('photo_tiles', tile|merge({'context': context})) }}
+      {% endfor %}
+    </div>
+  </div>
+</div>

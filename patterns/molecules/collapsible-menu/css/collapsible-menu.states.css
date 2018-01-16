@@ -1,0 +1,21 @@
+.js-collapsible-menu .collapsible-menu__toggle--close,
+#nojs-collapsible-menu .collapsible-menu__toggle--close {
+  display: none; }
+
+.js-collapsible-menu.is-open .nav-items, .js-collapsible-menu:target .nav-items,
+#nojs-collapsible-menu.is-open .nav-items,
+#nojs-collapsible-menu:target .nav-items {
+  display: block; }
+
+.js-collapsible-menu.is-open .collapsible-menu__toggle--open, .js-collapsible-menu:target .collapsible-menu__toggle--open,
+#nojs-collapsible-menu.is-open .collapsible-menu__toggle--open,
+#nojs-collapsible-menu:target .collapsible-menu__toggle--open {
+  display: none; }
+
+.js-collapsible-menu.is-open .collapsible-menu__toggle--close, .js-collapsible-menu:target .collapsible-menu__toggle--close,
+#nojs-collapsible-menu.is-open .collapsible-menu__toggle--close,
+#nojs-collapsible-menu:target .collapsible-menu__toggle--close {
+  display: block;
+  border-top: 1px solid; }
+
+/*# sourceMappingURL=collapsible-menu.states.css.map */

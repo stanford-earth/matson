@@ -111,7 +111,78 @@ module.exports = function(grunt) {
       dist: {
         files: {
           // COMPONENTS.
-          'css/components/components.css':                  'scss/components/components.scss',
+          'css/components/components.css':  'scss/components/components.scss',
+          'css/components/component-centered-container/component-centered-container.css':     'scss/components/component-centered-container/component-centered-container.scss',
+
+          // Atoms.
+          'patterns/atoms/photo-thumb/css/photo-thumb.component.css':                         'patterns/atoms/photo-thumb/scss/photo-thumb.component.scss',
+          'patterns/atoms/icon-item/css/icon-item.component.css':                             'patterns/atoms/icon-item/scss/icon-item.component.scss',
+          'patterns/atoms/link-item/css/link-item.component.css':                             'patterns/atoms/link-item/scss/link-item.component.scss',
+          'patterns/atoms/nav-item/css/nav-item.component.css':                               'patterns/atoms/nav-item/scss/nav-item.component.scss',
+          'patterns/atoms/tag-item/css/tag-item.component.css':                               'patterns/atoms/tag-item/scss/tag-item.component.scss',
+
+          // Molecules.
+          'patterns/molecules/calendar-block/css/calendar-block.component.css':               'patterns/molecules/calendar-block/scss/calendar-block.component.scss',
+          'patterns/molecules/calendar-blocks/css/calendar-blocks.component.css':             'patterns/molecules/calendar-blocks/scss/calendar-blocks.component.scss',
+          'patterns/molecules/callout-block/css/callout-block.component.css':                 'patterns/molecules/callout-block/scss/callout-block.component.scss',
+          'patterns/molecules/callout-blocks/css/callout-blocks.component.css':               'patterns/molecules/callout-blocks/scss/callout-blocks.component.scss',
+          'patterns/molecules/callout-card/css/callout-card.component.css':                   'patterns/molecules/callout-card/scss/callout-card.component.scss',
+          'patterns/molecules/callout-cards/css/callout-cards.component.css':                 'patterns/molecules/callout-cards/scss/callout-cards.component.scss',
+          'patterns/molecules/collapsible-menu/css/collapsible-menu.component.css':           'patterns/molecules/collapsible-menu/scss/collapsible-menu.component.scss',
+          'patterns/molecules/collapsible-menu/css/collapsible-menu.states.css':              'patterns/molecules/collapsible-menu/scss/collapsible-menu.states.scss',
+          'patterns/molecules/expandable-card/css/expandable-card.component.css':             'patterns/molecules/expandable-card/scss/expandable-card.component.scss',
+          'patterns/molecules/expandable-card/css/expandable-card.states.css':                'patterns/molecules/expandable-card/scss/expandable-card.states.scss',
+          'patterns/molecules/expandable-cards/css/expandable-cards.component.css':           'patterns/molecules/expandable-cards/scss/expandable-cards.component.scss',
+          'patterns/molecules/feature-blocks/css/feature-blocks.component.css':               'patterns/molecules/feature-blocks/scss/feature-blocks.component.scss',
+          'patterns/molecules/film-card/css/film-card.component.css':                         'patterns/molecules/film-card/scss/film-card.component.scss',
+          'patterns/molecules/filmstrip/css/filmstrip.component.css':                         'patterns/molecules/filmstrip/scss/filmstrip.component.scss',
+          'patterns/molecules/hero-banner/css/hero-banner.component.css':                     'patterns/molecules/hero-banner/scss/hero-banner.component.scss',
+          'patterns/molecules/highlight-card/css/highlight-card.component.css':               'patterns/molecules/highlight-card/scss/highlight-card.component.scss',
+          'patterns/molecules/highlight-cards/css/highlight-cards.component.css':             'patterns/molecules/highlight-cards/scss/highlight-cards.component.scss',
+          'patterns/molecules/link-banner/css/link-banner.component.css':                     'patterns/molecules/link-banner/scss/link-banner.component.scss',
+          'patterns/molecules/masonry-block/css/masonry-block.component.css':                 'patterns/molecules/masonry-block/scss/masonry-block.component.scss',
+          'patterns/molecules/masonry-blocks/css/masonry-blocks.component.css':               'patterns/molecules/masonry-blocks/scss/masonry-blocks.component.scss',
+          'patterns/molecules/postcard/css/postcard.component.css':                           'patterns/molecules/postcard/scss/postcard.component.scss',
+          'patterns/molecules/postcard/css/postcard.theme.css':                               'patterns/molecules/postcard/scss/postcard.theme.scss',
+          'patterns/molecules/section-header/css/section-header.component.css':               'patterns/molecules/section-header/scss/section-header.component.scss',
+          'patterns/molecules/photo-tile/css/photo-tile.component.css':                       'patterns/molecules/photo-tile/scss/photo-tile.component.scss',
+          'patterns/molecules/photo-tiles/css/photo-tiles.component.css':                     'patterns/molecules/photo-tiles/scss/photo-tiles.component.scss',
+          'patterns/molecules/simple-block/css/simple-block.component.css':                   'patterns/molecules/simple-block/scss/simple-block.component.scss',
+          'patterns/molecules/simple-blocks/css/simple-blocks.component.css':                 'patterns/molecules/simple-blocks/scss/simple-blocks.component.scss',
+          'patterns/molecules/simple-slat/css/simple-slat.component.css':                     'patterns/molecules/simple-slat/scss/simple-slat.component.scss',
+          'patterns/molecules/simple-slats/css/simple-slats.component.css':                   'patterns/molecules/simple-slats/scss/simple-slats.component.scss',
+          'patterns/molecules/photo-banner/css/photo-banner.component.css':                   'patterns/molecules/photo-banner/scss/photo-banner.component.scss',
+          'patterns/molecules/quote-card/css/quote-card.component.css':                       'patterns/molecules/quote-card/scss/quote-card.component.scss',
+          'patterns/molecules/spotlight-card/css/spotlight-card.component.css':               'patterns/molecules/spotlight-card/scss/spotlight-card.component.scss',
+          'patterns/molecules/simple-columns/css/simple-columns.component.css':               'patterns/molecules/simple-columns/scss/simple-columns.component.scss',
+          'patterns/molecules/header-card/css/header-card.component.css':                     'patterns/molecules/header-card/scss/header-card.component.scss',
+          'patterns/molecules/photo-social/css/photo-social.component.css':                   'patterns/molecules/photo-social/scss/photo-social.component.scss',
+          'patterns/molecules/social-card/css/social-card.component.css':                     'patterns/molecules/social-card/scss/social-card.component.scss',
+
+          // Organisms.
+          'patterns/organisms/section-calendar-blocks/css/section-calendar-blocks.component.css':       'patterns/organisms/section-calendar-blocks/scss/section-calendar-blocks.component.scss',
+          'patterns/organisms/section-callout-blocks/css/section-callout-blocks.component.css':         'patterns/organisms/section-callout-blocks/scss/section-callout-blocks.component.scss',
+          'patterns/organisms/section-callout-cards/css/section-callout-cards.component.css':           'patterns/organisms/section-callout-cards/scss/section-callout-cards.component.scss',
+          'patterns/organisms/section-callout-filmstrip/css/section-callout-filmstrip.component.css':   'patterns/organisms/section-callout-filmstrip/scss/section-callout-filmstrip.component.scss',
+          'patterns/organisms/section-double-filmstrip/css/section-double-filmstrip.component.css':     'patterns/organisms/section-double-filmstrip/scss/section-double-filmstrip.component.scss',
+          'patterns/organisms/section-tall-filmstrip/css/section-tall-filmstrip.component.css':         'patterns/organisms/section-tall-filmstrip/scss/section-tall-filmstrip.component.scss',
+          'patterns/organisms/section-tall-filmstrip/css/section-tall-filmstrip.state.css':             'patterns/organisms/section-tall-filmstrip/scss/section-tall-filmstrip.state.scss',
+          'patterns/organisms/section-expandable-banner/css/section-expandable-banner.component.css':   'patterns/organisms/section-expandable-banner/scss/section-expandable-banner.component.scss',
+          'patterns/organisms/section-expandable-banner/css/section-expandable-banner.states.css':      'patterns/organisms/section-expandable-banner/scss/section-expandable-banner.states.scss',
+          'patterns/organisms/section-feature-blocks/css/section-feature-blocks.component.css':         'patterns/organisms/section-feature-blocks/scss/section-feature-blocks.component.scss',
+          'patterns/organisms/section-highlight-banner/css/section-highlight-banner.component.css':     'patterns/organisms/section-highlight-banner/scss/section-highlight-banner.component.scss',
+          'patterns/organisms/section-highlight-cards/css/section-highlight-cards.component.css':     'patterns/organisms/section-highlight-cards/scss/section-highlight-cards.component.scss',
+          'patterns/organisms/section-masonry-blocks/css/section-masonry-blocks.component.css':         'patterns/organisms/section-masonry-blocks/scss/section-masonry-blocks.component.scss',
+          'patterns/organisms/section-photo-mosaic/css/section-photo-mosaic.component.css':             'patterns/organisms/section-photo-mosaic/scss/section-photo-mosaic.component.scss',
+          'patterns/organisms/section-photo-mosaic-quotes/css/section-photo-mosaic-quotes.component.css':      'patterns/organisms/section-photo-mosaic-quotes/scss/section-photo-mosaic-quotes.component.scss',
+          'patterns/organisms/section-quote-banner/css/section-quote-banner.component.css':             'patterns/organisms/section-quote-banner/scss/section-quote-banner.component.scss',
+          'patterns/organisms/section-spotlight-banner/css/section-spotlight-banner.component.css':     'patterns/organisms/section-spotlight-banner/scss/section-spotlight-banner.component.scss',
+          'patterns/organisms/section-header-columns/css/section-header-columns.component.css':         'patterns/organisms/section-header-columns/scss/section-header-columns.component.scss',
+          'patterns/organisms/section-header-banner/css/section-header-banner.component.css':           'patterns/organisms/section-header-banner/scss/section-header-banner.component.scss',
+          'patterns/organisms/section-social-media/css/section-social-media.component.css':             'patterns/organisms/section-social-media/scss/section-social-media.component.scss',
+
+          // Templates.
+          'patterns/templates/simple/css/simple.component.css':                                         'patterns/templates/simple/scss/simple.component.scss',
 
           // LAYOUT.
           'css/layout/stanford-complex-page.css':           'scss/layout/stanford-complex-page.scss',
@@ -135,7 +206,7 @@ module.exports = function(grunt) {
           'css/theme/theme.css':                            'scss/theme/theme.scss',
           'css/theme/print.css':                            'scss/theme/print.scss',
 
-          // WYSIWYG
+          // WYSIWYG.
           'css/wysiwyg/wysiwyg.css':                        'scss/wysiwyg/wysiwyg.scss'
         }
       }

@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Social Card pattern.
+ */
+#}
+{% set arialabel = description|render|striptags|preg_replace(":", "") %}
+<div{{ attributes.addClass('social-card') }}>
+  <div class="social-card__content">
+    {{ handle_link|openlink({class: "social-card__name", 'aria-label': arialabel}) }}
+      {{handle}}
+    {{ handle_link|closelink }}
+      <p>{{ description|raw }}</p>
+
+    {{ link|openlink({class: "social-card__action tweet-popup", 'aria-label': 'Share on twitter'|t }) }}
+      <div class="social-card__icon">
+        <svg class="i-svg i-svg--twitter" role="img"><title>{{ 'Twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
+      </div>
+    {{ link|closelink }}
+  </div>
+</div>

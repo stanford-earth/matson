@@ -1,0 +1,41 @@
+.section-social-media {
+  padding: 4.4615384615em 0; }
+  .section-social-media::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .section-social-media .header-card {
+    box-shadow: none; }
+  @media only screen and (min-width: 1024px) {
+    .section-social-media .social-media__container {
+      display: flex; } }
+  .section-social-media .social-media__container .photo-social,
+  .section-social-media .social-media__container .social-card {
+    max-width: 300px;
+    margin: 0 auto 20px; }
+  @media only screen and (min-width: 768px) {
+    .section-social-media .social-media__container .photo-social {
+      width: calc(50% - 30px);
+      float: left;
+      margin-left: 20px;
+      max-width: none; } }
+  @media only screen and (min-width: 1024px) {
+    .section-social-media .social-media__container .photo-social {
+      width: calc(25% - 25px);
+      float: left;
+      margin-left: 20px;
+      margin-bottom: 0; } }
+  @media only screen and (min-width: 768px) {
+    .section-social-media .social-media__container .social-card {
+      width: calc(100% - 40px);
+      float: left;
+      margin-left: 20px;
+      max-width: none;
+      margin-bottom: 0; } }
+  @media only screen and (min-width: 1024px) {
+    .section-social-media .social-media__container .social-card {
+      width: calc(50% - 30px);
+      float: left;
+      margin-left: 20px; } }
+
+/*# sourceMappingURL=section-social-media.component.css.map */

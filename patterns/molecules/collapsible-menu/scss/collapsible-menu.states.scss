@@ -1,0 +1,29 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.js-collapsible-menu,
+#nojs-collapsible-menu {
+  .collapsible-menu__toggle--close {
+    display: none;
+  }
+
+  &.is-open,
+  &:target {
+    .nav-items {
+      display: block;
+    }
+
+    .collapsible-menu__toggle--open {
+      display: none;
+    }
+
+    .collapsible-menu__toggle--close {
+      display: block;
+      border-top: 1px solid color(fog);
+    }
+  }
+}

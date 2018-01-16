@@ -1,0 +1,12 @@
+.section-header {
+  position: relative;
+  text-align: center; }
+  @media only screen and (min-width: 1024px) {
+    .section-header {
+      text-align: left; } }
+  .section-header.is-centered {
+    text-align: center; }
+  .section-header h2 {
+    position: relative; }
+
+/*# sourceMappingURL=section-header.component.css.map */

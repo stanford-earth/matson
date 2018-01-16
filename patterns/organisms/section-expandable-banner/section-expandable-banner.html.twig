@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Expandable banner pattern.
+ */
+#}
+
+{% set classes = ['section-expandable-banner', 'js-section-expandable-banner'] %}
+{% set header_vars = {'superhead': superhead, 'subhead': subhead, 'context': context} %}
+
+<div{{ attributes.addClass(classes) }} style="background-image:url({{ image|get_img_src }})">
+  <div class="expandable-banner__header">
+    {{ pattern('section_header', header_vars) }}
+  </div>
+
+  <div class="expandable-banner__container">
+    <div class="expandable-cards">
+      {# Break up the individual items in to the appropriate template var. #}
+      {% for item in items %}
+        {% if item.title %}
+          {# Preview page. #}
+          {{ pattern('expandable_card', item) }}
+        {% else %}
+          {# Entities. #}
+          {{ item }}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

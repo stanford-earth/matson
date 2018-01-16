@@ -1,0 +1,38 @@
+# Highlight Cards Pattern
+#
+highlight_cards:
+  label: "Highlight Cards"
+  description: "A horizontal list callout cards with icons"
+  variants:
+    card_width:
+      label: Width
+      description: "Width of the individual cards"
+      default: is-narrow
+      options:
+        is-narrow: Narrow
+        is-wide: Wide
+  fields:
+    items:
+      description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, intro and description rendered as an html element."
+      label: "A list of highlight cards"
+      type: collection
+      preview:
+        -
+          description: "Today more than 7 billion people inhabit Earth and a billion lack adequate energy, water and food."
+          intro: "Take a course"
+          link: "https://www.stanford.edu"
+          title: "Life At The Extremes"
+        -
+          description: "What do we really know about Earth's ice sheets and their influence?"
+          intro: "Attend one of our events"
+          link: "https://www.stanford.edu"
+          title: "Stanford Earth Matters San Francisco"
+  libraries:
+    -
+      highlight_cards_library:
+        css:
+          component:
+            css/highlight-cards.component.css: {}
+        dependencies:
+          - ui_patterns/highlight_card.highlight_card_library
+  use: "@stanford_components/molecules/highlight-cards/highlight-cards.html.twig"

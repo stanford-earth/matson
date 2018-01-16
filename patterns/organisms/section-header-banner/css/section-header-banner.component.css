@@ -1,0 +1,30 @@
+.section-header-banner {
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  display: block;
+  min-height: 280px;
+  margin-bottom: 4.4615384615em;
+  padding: 30px; }
+  .section-header-banner::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media only screen and (min-width: 768px) {
+    .section-header-banner {
+      background-size: cover;
+      bottom: 0;
+      top: 0;
+      width: 100%; } }
+  @media only screen and (min-width: 1024px) {
+    .section-header-banner {
+      width: 100%; } }
+  @media only screen and (min-width: 768px) {
+    .section-header-banner {
+      padding: 60px; } }
+  @media only screen and (min-width: 768px) {
+    .section-header-banner .header-card {
+      max-width: 66%;
+      margin: 0 auto; } }
+
+/*# sourceMappingURL=section-header-banner.component.css.map */

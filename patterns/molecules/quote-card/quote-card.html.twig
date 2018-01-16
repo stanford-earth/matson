@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Quote Card pattern.
+ */
+#}
+{% if quote is not empty %}
+<div{{ attributes.addClass('quote-card') }}>
+  <blockquote class="quote-card__quote">
+    <span class="quote-card__icon"><svg class="i-svg i-svg--quote-left" role="img"><title>{{ 'Large quotation punctuation icon'|t }}</title><use xlink:href="#i-quote" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
+    <p>{{ quote }}</p>
+    <div class="quote-card__footer">
+      {% if image is not empty %}
+      <div class="quote-card__thumbnail">
+        {{ image }}
+      </div>
+      {% endif %}
+      <cite class="quote-card__source">
+        {% if name is not empty %}
+          <strong>{{ name }}</strong>
+        {% endif %}
+        {% if title is not empty %}
+          {{ title }}
+        {% endif %}
+      </cite>
+    </div>
+  </blockquote>
+</div>
+{% endif %}

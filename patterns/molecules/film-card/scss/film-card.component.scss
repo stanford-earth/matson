@@ -1,0 +1,64 @@
+@charset 'UTF-8';
+////
+/// A template for a film card.
+////
+
+@import 'decanter/core/utilities/decanter-utilities';
+@import 'decanter/core/components/cards/card';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.film-card {
+  margin-bottom: 20px;
+
+  &.has-arrow {
+    .film-card__caption {
+      @include center-transform(y);
+      bottom: auto;
+    }
+  }
+}
+
+.film-card__link {
+  // @include image-overlay;
+  display: inline-block;
+  color: color(white);
+
+  @include on-event {
+    color: color(white);
+    text-decoration: none;
+  }
+}
+
+.film-card__thumbnail {
+  @include image-gradient($image-gradient-bg-color: rgba(0, 0, 0, 0.75));
+  //width: 220px;
+  //height: 145px;
+
+  img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.film-card__caption {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+}
+
+.film-card__arrow {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+
+  svg {
+    vertical-align: middle;
+    display: inline;
+    margin-left: 5px;
+  }
+}

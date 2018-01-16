@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Link banner pattern.
+ */
+#}
+{% set attributes = attributes.addClass('link-banner') %}
+{% if image|get_img_src is not empty %}
+  {% set attributes = attributes.setAttribute('style', ['background-image:url(' ~ image|get_img_src ~ ')']) %}
+{% endif %}
+
+<div{{ attributes }}>
+  <header class="link-banner__header">
+    <h3>{{ title }}</h3>
+    {{ description }}
+  </header>
+
+  <div class="link-items">
+    {# Break up the individual items in to the appropriate template var. #}
+    {% for item in items %}
+      {% if item.title %}
+        {% set item = item|merge({'context': context}) %}
+        {# Pass vars through to include template. #}
+        {{ pattern('link_item', item) }}
+      {% else %}
+        {# We have to use raw since striptags doesn't mark as safe. see https://www.drupal.org/node/2705249. #}
+        {{ item|render|striptags('<a><span>')|trim|raw }}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

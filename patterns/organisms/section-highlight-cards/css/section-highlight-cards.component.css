@@ -1,0 +1,20 @@
+@media only screen and (min-width: 576px) {
+  .section-highlight-cards__header {
+    width: calc(25% - 18.75px);
+    float: left;
+    margin-left: 15px; } }
+
+@media only screen and (min-width: 576px) {
+  .section-highlight-cards__container {
+    width: calc(75% - 26.25px);
+    float: left;
+    margin-left: 15px; } }
+
+@media only screen and (min-width: 768px) {
+  .section-highlight-cards__container .highlight-cards {
+    flex-wrap: wrap; } }
+
+.section-highlight-cards__container .highlight-cards .highlight-card {
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=section-highlight-cards.component.css.map */

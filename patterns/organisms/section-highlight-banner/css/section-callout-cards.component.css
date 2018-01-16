@@ -1,0 +1,61 @@
+.section-callout-cards {
+  padding-bottom: 3.2222222222em;
+}
+
+.section-callout-cards::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.section-callout-cards .callout-cards__header {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-callout-cards .callout-cards__header {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .section-callout-cards .callout-cards__header {
+    width: calc(25% - 25px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .section-callout-cards .callout-cards__header {
+    margin-left: calc(8.3333333333% - 21.6666666667px + 40px);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .section-callout-cards .callout-cards__container {
+    width: calc(75% - 35px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .section-callout-cards .callout-cards__container {
+    width: calc(66.6666666667% - 33.3333333333px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .section-callout-cards .callout-cards__container .callout-cards {
+    margin-left: -20px;
+    margin-right: -20px;
+    width: calc(100% + 40px);
+  }
+}
+
+/*# sourceMappingURL=section-callout-cards.component.css.map */

@@ -1,0 +1,62 @@
+# Section Header Banner Pattern
+#
+section_header_banner:
+  label: "Section Header Banner"
+  description: "A banner with a header card and photo background"
+  variants:
+    dash_under:
+      label: "Dash Under Header"
+      description: "Dash under h2 or to the left?  Treat as boolean (true/false)"
+      default: has-dash-left
+      options:
+        has-dash-left: Left
+        has-dash-under: Under
+    is_centered:
+      label: Centered
+      description: "Flag to determine whether h2 should be centered.  Treat as boolean (true/false)."
+      default: is-centered
+      options:
+        left-aligned: Left Aligned
+        is-centered: Centered
+    is_featured:
+      label: "Dash With Emphasis"
+      description: "Dash has emphasis or default brand color?  Treat as boolean (true/false)"
+      default: has-dash-emphasis
+      options:
+        no-emphasis: No Branding
+        has-dash-emphasis: Brand color
+    centered_container:
+      label: "Centered Component"
+      description: "Center the component in a responsive container"
+      default: false
+      options:
+        true: "Centered"
+        0: "Normal"
+  fields:
+    image:
+      description: "Banner image."
+      label: Image
+      preview: "https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg"
+      type: text
+    link:
+      description: "Read More Link."
+      label: "Link (optional)"
+      preview: "<a href=\"https://stanford.edu/\">Find Course</a>"
+      type: text
+    subhead:
+      description: "Card text.  Renders full html (eg. <p> & <br />)"
+      label: Subhead
+      preview: "<p>Check out the wide variety of courses on all aspects of food and water security from Redesigning Food Systems, to Feeding Nine Billion, The Energy Water Nexus, World Food Economy, and Near-Surface Geophysics</p>"
+      type: text
+    superhead:
+      description: "Card title."
+      label: Superhead
+      preview: "Food and Water Courses"
+      type: text
+  libraries:
+    -
+      section_header_banner_library:
+        css:
+          component:
+            css/section-header-banner.component.css: {}
+  use: "@stanford_components/organisms/section-header-banner/section-header-banner.html.twig"

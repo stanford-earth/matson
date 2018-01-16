@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+
+.section-highlight-cards__header {
+  @include grid-media($media-sm) {
+    @include grid-column(3 of 12);
+  }
+}
+
+.section-highlight-cards__container {
+  @include grid-media($media-sm) {
+    @include grid-column(9 of 12);
+  }
+
+  .highlight-cards {
+    @include grid-media($media-md) {
+      flex-wrap: wrap;
+    }
+
+    .highlight-card {
+      margin-bottom: 20px;
+    }
+  }
+}

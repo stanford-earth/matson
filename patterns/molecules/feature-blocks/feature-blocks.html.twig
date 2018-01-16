@@ -1,0 +1,15 @@
+{#
+/**
+ * @file
+ * Feature blocks pattern.
+ */
+#}
+{% set attributes = attributes.addClass("feature-blocks") %}
+<div{{ attributes }}>
+  {# Break up the individual items in to the appropriate template var. #}
+  {% for item in items %}
+    {% set item = item|merge({'context': context}) %}
+    {# Pass vars through to include template. #}
+    {{ pattern('simple_block', item) }}
+  {% endfor %}
+</div>

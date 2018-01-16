@@ -1,0 +1,35 @@
+.spotlight-card {
+  background-color: #fff;
+  padding: 35px 30px; }
+  @media only screen and (min-width: 1024px) {
+    .spotlight-card {
+      padding: 35px 0; } }
+
+@media only screen and (min-width: 1024px) {
+  .spotlight-card__content {
+    position: relative;
+    left: -30px;
+    padding: 46px 0; } }
+
+.spotlight-card__quote {
+  margin: 0;
+  position: relative; }
+  .spotlight-card__quote::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.spotlight-card__source {
+  padding-top: 1em;
+  display: inline-block; }
+
+@media only screen and (min-width: 1024px) {
+  .spotlight-card__thumbnail {
+    float: left;
+    position: relative;
+    left: -60px; } }
+
+.spotlight-card__thumbnail img {
+  width: 100%; }
+
+/*# sourceMappingURL=spotlight-card.component.css.map */

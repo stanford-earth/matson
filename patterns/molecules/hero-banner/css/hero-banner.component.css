@@ -1,0 +1,172 @@
+.hero-banner.has-tint .image::before, .hero-banner__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.hero-banner {
+  position: relative; }
+  .hero-banner.has-tint .image::before {
+    content: '';
+    display: block;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .hero-banner .image {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    .hero-banner .image img,
+    .hero-banner .image picture {
+      object-fit: cover;
+      object-position: 50% 50%;
+      height: 100%;
+      width: 100%; }
+  .hero-banner.has-video .hero-banner__inner {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    pointer-events: none; }
+  .hero-banner.has-video.component-centered-container-margins .video {
+    margin-bottom: 4.4615384615em; }
+
+.hero-banner__inner {
+  position: relative;
+  max-width: 1380px;
+  margin: 0 auto;
+  min-height: 500px; }
+  .hero-banner__inner::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media only screen and (min-width: 768px) {
+    .hero-banner__inner {
+      min-height: 300px; } }
+  @media only screen and (min-width: 1024px) {
+    .hero-banner__inner {
+      min-height: 400px;
+      max-width: none; } }
+  @media only screen and (min-width: 768px) {
+    .hero-banner__inner.is-tall {
+      min-height: 500px; } }
+  @media only screen and (min-width: 1024px) {
+    .hero-banner__inner.is-tall {
+      min-height: 660px; } }
+  .has-video .hero-banner__inner {
+    min-height: 0; }
+
+.hero-banner__header {
+  position: absolute;
+  top: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  width: 80%; }
+  @media only screen and (min-width: 768px) {
+    .hero-banner__header {
+      width: 50%; } }
+  @media only screen and (min-width: 1024px) {
+    .hero-banner__header {
+      width: 25%; } }
+  @media only screen and (min-width: 768px) {
+    .hero-banner__header.is-right {
+      width: 100%;
+      max-width: 1380px;
+      text-align: right;
+      padding-right: 60px; } }
+  @media only screen and (min-width: 1024px) {
+    .hero-banner__header.is-right {
+      padding-right: 40px; } }
+  @media only screen and (min-width: 1200px) {
+    .hero-banner__header.is-right {
+      padding-right: 40px;
+      margin: 0 auto; } }
+  .hero-banner__header.is-right .hero-banner__hgroup {
+    padding-top: 40px; }
+    @media only screen and (min-width: 768px) {
+      .hero-banner__header.is-right .hero-banner__hgroup {
+        float: right;
+        padding-top: 0;
+        width: 90%; } }
+    @media only screen and (min-width: 1024px) {
+      .hero-banner__header.is-right .hero-banner__hgroup {
+        float: right;
+        padding-top: 0;
+        width: 50%; } }
+  .hero-banner__header .cite {
+    padding-top: 2em;
+    margin-bottom: 1em; }
+
+.has-racing-stripe .hero-banner__racing_stripe {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(18, 18, 18, 0.8);
+  padding-top: 154px;
+  z-index: 10;
+  width: 190px; }
+  @media only screen and (min-width: 768px) {
+    .has-racing-stripe .hero-banner__racing_stripe {
+      display: inherit;
+      left: 40px; } }
+
+@media only screen and (min-width: 1500px) and (max-width: 575px) {
+  .has-racing-stripe .hero-banner__racing_stripe {
+    left: calc(((50% /12) * 0) + 15px); }
+    .has-racing-stripe .hero-banner__racing_stripe::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1500px) and (min-width: 576px) and (max-width: 767px) {
+  .has-racing-stripe .hero-banner__racing_stripe {
+    left: calc(((50% /12) * 0) + 15px); }
+    .has-racing-stripe .hero-banner__racing_stripe::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1500px) and (min-width: 768px) and (max-width: 1023px) {
+  .has-racing-stripe .hero-banner__racing_stripe {
+    left: calc(((50% /12) * 0) + 30px); }
+    .has-racing-stripe .hero-banner__racing_stripe::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1500px) and (min-width: 1024px) and (max-width: 1199px) {
+  .has-racing-stripe .hero-banner__racing_stripe {
+    left: calc(((50% /12) * 0) + 30px); }
+    .has-racing-stripe .hero-banner__racing_stripe::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1500px) and (min-width: 1200px) {
+  .has-racing-stripe .hero-banner__racing_stripe {
+    left: calc(50% - (750px - 60px)); }
+    .has-racing-stripe .hero-banner__racing_stripe::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+.has-racing-stripe .block--lockup {
+  padding: 0;
+  margin: 0 auto; }
+
+.has-racing-stripe #header .block--lockup {
+  visibility: hidden; }
+
+/*# sourceMappingURL=hero-banner.component.css.map */

@@ -1,0 +1,57 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.section-social-media {
+  $social-grid: (
+    columns: 12,
+    gutter: 20px,
+  );
+
+  @include grid-container;
+  padding: em(58px) 0;
+
+  .header-card {
+    box-shadow: none;
+  }
+
+  .social-media__container {
+    @include grid-media($media-lg) {
+      display: flex;
+    }
+
+    .photo-social,
+    .social-card {
+      max-width: 300px;
+      margin: 0 auto 20px;
+     }
+
+    .photo-social {
+      @include grid-media($media-md) {
+        @include grid-column(6, $social-grid);
+        max-width: none;
+      }
+
+      @include grid-media($media-lg) {
+        @include grid-column(3, $social-grid);
+        margin-bottom: 0;
+      }
+
+    }
+
+    .social-card {
+      @include grid-media($media-md) {
+        @include grid-column(12, $social-grid);
+        max-width: none;
+        margin-bottom: 0;
+      }
+
+      @include grid-media($media-lg) {
+        @include grid-column(6, $social-grid);
+      }
+    }
+  }
+}

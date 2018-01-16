@@ -1,0 +1,24 @@
+.js-expandable-card.is-open {
+  padding: 0;
+  width: 100%;
+  max-width: none; }
+  .js-expandable-card.is-open .expandable-card__header {
+    padding: 0.6153846154em 2.3076923077em; }
+  .js-expandable-card.is-open .expandable-card__title {
+    padding-top: 1em;
+    padding-bottom: 1em; }
+  .js-expandable-card.is-open .icon-items {
+    display: block;
+    padding-bottom: 1em; }
+    @media only screen and (min-width: 768px) {
+      .js-expandable-card.is-open .icon-items {
+        padding-bottom: 0; } }
+  .js-expandable-card.is-open .expandable-card__open {
+    display: none; }
+  .js-expandable-card.is-open .expandable-card__close {
+    display: block; }
+
+.js-expandable-card.is-hidden {
+  display: none; }
+
+/*# sourceMappingURL=expandable-card.states.css.map */

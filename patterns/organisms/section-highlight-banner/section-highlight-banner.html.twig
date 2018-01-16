@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Section Highlight Banner pattern.
+ */
+#}
+
+{% set attributes = attributes.addClass(['section-highlight-banner', variants.height]) %}
+{% if items|field_count == 1 %}
+  {% set attributes = attributes.addClass('is-single') %}
+{% endif %}
+
+{% if image|get_img_src is not empty %}
+  {% set attributes = attributes.setAttribute('style', ['background-image:url(' ~ image|get_img_src ~ ')']) %}
+{% endif %}
+
+{% set header_vars = {'superhead': superhead, 'subhead': subhead, 'context': context} %}
+
+<div{{ attributes }} >
+  <div class="highlight-banner__header">
+    {{ pattern('section_header', header_vars) }}
+  </div>
+
+  <div class="highlight-banner__container">
+    {{ pattern('highlight_cards', {'items': items, 'context': context}) }}
+  </div>
+</div>

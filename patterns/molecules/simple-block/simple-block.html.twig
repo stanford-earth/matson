@@ -1,0 +1,67 @@
+{#
+/**
+ * @file
+ * Simple Block pattern.
+ */
+#}
+{% set attributes = attributes.addClass(['simple-block']) %}
+{% if variants.has_arrow %}
+  {% set attributes = attributes.addClass('has-arrow') %}
+{% endif %}
+
+{% if title is not empty %}
+  {% set arialabel = title|render|striptags|trim %}
+{% else %}
+  {% set arialabel = tag|render|striptags|trim %}
+{% endif %}
+
+<div{{ attributes }}>
+  {% if image is not empty %}
+    <figure class="simple-block__image">
+      {# Hiding this to screen readers because of all the other links that are available for this block. #}
+      {{ link|openlink({class: "simple-block__link", "aria-hidden": "true", "tabindex": "-1"}) }}
+      <div class="simple-block__thumbnail">
+        {{ image }}
+        {% if tag|render|striptags|trim is not empty %}
+          <div class="simple-block__tag">
+            <h6>{{ tag|render|striptags|trim|raw }}</h6>
+          </div>
+        {% endif %}
+      </div>
+      {{ link|closelink }}
+
+      {% if image_caption %}
+        <figcaption class="simple-block__image-caption">
+          {{ image_caption }}
+        </figcaption>
+      {% endif %}
+    </figure>
+  {% endif %}
+  <div class="simple-block__content">
+
+    {% if title is not empty %}
+      <h3 class="simple-block__title">{{ link|openlink({class:"simple-block__link"}) }}{{ title }}{{ link|closelink }}</h3>
+    {% endif %}
+
+    {% if description is not empty %}
+      <div class="simple-block__description">
+        {{ description }}
+        {% if variants.has_arrow and link|render is not empty %}
+          {{ link|openlink({"aria-label": "Navigate to "|t ~ arialabel}) }}
+          <span class="simple-block__arrow">
+            <svg class="i-svg i-svg--arrow-right" role="img"><title>{{ "Navigate to "|t ~ arialabel}}</title>
+              <use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+            </svg>
+          </span>
+          {{ link|closelink }}
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if more is not empty %}
+      {{ link|openlink({class:"simple-block__more"}) }}
+        {{ more }}
+      {{ link|closelink }}
+    {% endif %}
+  </div>
+</div>

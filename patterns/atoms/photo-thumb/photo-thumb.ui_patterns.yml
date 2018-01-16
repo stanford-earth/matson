@@ -1,0 +1,25 @@
+# Photo Thumb Pattern
+photo_thumb:
+  label: "Photo thumb"
+  description: "A single photo thumb"
+  fields:
+    image:
+      description: "Photo thumb."
+      label: Image
+      preview:
+        alt: "this is a sample image"
+        theme: image
+        uri: "https://lorempixel.com/380/380/nature/10"
+      type: image
+    link:
+      description: "URI that points somewhere"
+      label: Link
+      preview: "https://stanford.edu"
+      type: url
+  libraries:
+    -
+      photo_thumb_library:
+        css:
+          component:
+            css/photo-thumb.component.css: {}
+  use: "@stanford_components/atoms/photo-thumb/photo-thumb.html.twig"

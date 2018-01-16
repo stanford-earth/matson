@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Callout blocks pattern.
+ */
+#}
+{% set attributes = attributes.addClass("calendar-block") %}
+<div{{ attributes }}>
+  {{ link|openlink({class:"calendar-block__action", "aria-label": title|render|striptags|preg_replace(":", "") ~ '. on '|t ~ month ~ ' ' ~ day}) }}
+    <div class="calendar-block__date">
+      <span class="calendar-block__day">{{ day }}</span>
+      <span class="calendar-block__month">{{ month }}</span>
+    </div>
+    <div class="calendar-block__header">
+      <h3 class="calendar-block__title">{{ title }}</h3>
+      <span class="calendar-block__subtitle">{{ subtitle }}</span>
+    </div>
+    <div class="calendar-block__arrow">
+      <svg class="i-svg i-svg--arrow-right" role="img"><title>{{ 'Navigate to item'|t }}</title><use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use> </svg>
+    </div>
+  {{ link|closelink }}
+</div>

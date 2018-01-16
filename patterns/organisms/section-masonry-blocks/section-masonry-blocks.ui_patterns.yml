@@ -1,0 +1,205 @@
+# Section Masonry Blocks Pattern
+#
+section_masonry_blocks:
+  label: "Section Masonry Blocks"
+  description: "A grid of masonry blocks"
+  fields:
+    cards:
+      description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, and an image rendered as an html element."
+      label: "A list of masonry blocks"
+      type: collection
+      preview:
+        -
+          description: "A new four-step “framework” aims to test the contribution of climate change to record-setting extreme weather events.After an unusually intense heat wave, downpour or drought, Noah Diffenbaugh and his research group."
+          link: "https://www.stanford.edu"
+          title: "Stanford scientists test links between extreme weather and climate change"
+          date: "April 2"
+          is_full_width: true
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/555/370/nature/4"
+          tags:
+            -
+              tag: "Earth"
+              link: "https://stanford.edu"
+        -
+          description: "Stanford Earth faculty and young scientists in the media."
+          link: "https://www.stanford.edu"
+          title: "A conversation with Stanford Earth"
+          date: "April 2"
+          is_full_width: true
+          has_image_right: true
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/555/370/nature/8"
+          tags:
+            -
+              tag: "Earth"
+              link: "https://stanford.edu"
+        -
+          description: "Stanford Earth faculty and young scientists in the media."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/225/nature/5"
+          link: "https://www.stanford.edu"
+          title: "A conversation with Stanford Earth"
+          date: "April 2"
+          is_column_width: true
+          tags:
+            -
+              tag: "Earth"
+              link: "https://stanford.edu"
+        -
+          description: "News about the School of Earth, Energy & Environmental Sciences."
+          link: "https://www.stanford.edu"
+          title: "What is sustainability!  A conversation with Stanford Earth Dean Pamela Matson"
+          date: "April 13"
+          has_background: true
+          is_wide: true
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/225/nature/5"
+          tags:
+            -
+              tag: "Evolution of Earth and Life"
+              link: "https://stanford.edu"
+            -
+              tag: "Dynamic Earth"
+              link: "https://stanford.edu"
+        -
+          title: "Subscribe and get curated content of the latest news about future of Earth, resources and environment."
+          action: "Join"
+          link: "https://www.stanford.edu"
+        -
+          description: "Stanford Earth faculty and young scientists in the media."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/700/420/nature/2"
+          link: "https://www.stanford.edu"
+          title: "A conversation with Stanford Earth"
+          date: "April 2"
+          is_wide: true
+          tags:
+            -
+              tag: "Earth"
+              link: "https://stanford.edu"
+            -
+              tag: "Energy"
+              link: "https://stanford.edu"
+        -
+          description: "News about the School of Earth, Energy & Environmental Sciences."
+          link: "https://www.stanford.edu"
+          title: "What is sustainability?  A conversation with Stanford Earth Dean Pamela Matson"
+          date: "April 13"
+          has_background: true
+          has_tint: true
+          is_tall: true
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/225/nature/5"
+          tags:
+            -
+              tag: "Energy"
+              link: "https://stanford.edu"
+            -
+              tag: "Climate Change"
+              link: "https://stanford.edu"
+        -
+          description: "Discoveries and insights about Earth, its resources, and its environment."
+          link: "https://www.stanford.edu"
+          title: "Navigating the guts  of an ancient submarine canyon"
+          date: "April 24"
+          is_inverted: true
+          tags:
+            -
+              tag: "Earth"
+              link: "https://stanford.edu"
+            -
+              tag: "Climate Change"
+              link: "https://stanford.edu"
+        -
+          description: "Stanford Earth faculty and young scientists in the media."
+          link: "https://www.stanford.edu"
+          title: "A conversation with Stanford Earth"
+          date: "April 2"
+          has_columns: true
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/225/nature/5"
+          tags:
+            -
+              tag: "Earth"
+              link: "https://stanford.edu"
+            -
+              tag: "Energy"
+              link: "https://stanford.edu"
+        -
+          description: "Stanford Earth faculty and young scientists in the media."
+          link: "https://www.stanford.edu"
+          title: "A conversation with Stanford Earth"
+          date: "April 2"
+          has_columns: true
+          has_image_right: true
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/225/nature/5"
+          tags:
+            -
+              tag: "Earth"
+              link: "https://stanford.edu"
+            -
+              tag: "Energy"
+              link: "https://stanford.edu"
+    items:
+      description: "This template iterates over the items to produce a menu of links."
+      label: "A list of simple links"
+      type: collection
+      preview:
+        -
+          link: "https://www.stanford.edu"
+          name: "Climate Change"
+        -
+          link: "https://www.stanford.edu"
+          name: "Food & Agriculture"
+        -
+          link: "https://www.stanford.edu"
+          name: "Dynamic Earth"
+        -
+          link: "https://www.stanford.edu"
+          name: Energy
+        -
+          link: "https://www.stanford.edu"
+          name: "Human Dimensions & Sustainability"
+        -
+          link: "https://www.stanford.edu"
+          name: "Natural Hazards"
+        -
+          link: "https://www.stanford.edu"
+          name: "Fresh Water Resources"
+        -
+          link: "https://www.stanford.edu"
+          name: "Evolution of Earth & Life"
+        -
+          link: "https://www.stanford.edu"
+          name: Oceans
+  libraries:
+    -
+      section_masonry_blocks_library:
+        css:
+          component:
+            css/section-masonry-blocks.component.css: {}
+        dependencies:
+          - ui_patterns/nav_item.nav_item_library
+          - ui_patterns/collapsible_menu.collapsible_menu_library
+          - ui_patterns/tag_item.tag_item_library
+          - ui_patterns/masonry_block.masonry_block_library
+          - ui_patterns/masonry_blocks.masonry_blocks_library
+  use: "@stanford_components/organisms/section-masonry-blocks/section-masonry-blocks.html.twig"

@@ -1,0 +1,10 @@
+{#
+/**
+ * @file
+ * Tag item pattern.
+ */
+#}
+{# Set title to false since the tag will be sufficient #}
+{{ link|openlink({class:"tag-item", title: false}) }}
+  {{ tag }}
+{{ link|closelink }}

@@ -1,0 +1,96 @@
+@charset 'UTF-8';
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.section-feature-blocks {
+  $feature-cards-grid: ( columns: 12, gutter: 30px, );
+  @include grid-container;
+  margin-bottom: em(28px);
+
+  .feature-blocks__header {
+    width: 100%;
+    position: relative;
+  }
+
+  // Left Aligned Section Header
+  &.left-aligned {
+
+    .section-header {
+      &.component-centered-container {
+        @include padding(0 0 null 0);
+      }
+    }
+
+    .feature-blocks__header {
+      @include grid-media($media-md) {
+        @include grid-column(12);
+      }
+
+      @include grid-media($media-lg) {
+        @include grid-column(3);
+      }
+
+      @include grid-media($media-xl) {
+        padding-right: em(40px);
+      }
+    }
+
+    .feature-blocks__container {
+      @include grid-media($media-lg) {
+        @include grid-column(9);
+      }
+
+      .feature-blocks {
+        @include grid-media($media-md) {
+          @include grid-collapse;
+        }
+      }
+    }
+
+  }
+
+  // Centerd above section header.
+  // &.is-centered {
+  //   .feature-blocks__container {
+  //
+  //   }
+  // }
+
+  // Right Aligned Section Header.
+  &.right-aligned {
+
+    .section-header.component-centered-container {
+      @include padding(0 0 null 0);
+    }
+
+    .feature-blocks__header {
+      @include grid-media($media-md) {
+        @include grid-column(12);
+        float: right;
+      }
+
+      @include grid-media($media-lg) {
+        @include grid-column(3);
+        float: right;
+      }
+
+      @include grid-media($media-xl) {
+        padding-right: em(40px);
+      }
+    }
+
+    .feature-blocks__container {
+      @include grid-media($media-lg) {
+        @include grid-column(9);
+      }
+
+      .feature-blocks {
+        @include grid-media($media-md) {
+          @include grid-collapse;
+        }
+      }
+    }
+  }
+}

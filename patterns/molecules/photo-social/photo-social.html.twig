@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Photo Social pattern.
+ */
+#}
+{% if title is not empty %}
+  {% set arialabel = title|render|striptags|preg_replace(":", "") %}
+{% else %}
+{% set arialabel = "Share photo"|t %}
+{% endif %}
+
+{% set attributes = attributes.addClass("photo-social") %}
+<div{{ attributes }}>
+  <img class="social-media__badge" src="/modules/stanford/stanford_components/assets/instagram.png"/>
+    {{ link|openlink({class: 'photo-social__action', 'aria-label': arialabel}) }}
+      {{ image }}
+    {{ link|closelink }}
+</div>

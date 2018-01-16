@@ -1,0 +1,19 @@
+.photo-social {
+  position: relative;
+  max-width: 380px;
+  max-height: 380px; }
+  .photo-social .photo-social__action {
+    position: relative;
+    display: block;
+    color: #fff;
+    z-index: 2; }
+    .photo-social .photo-social__action:hover, .photo-social .photo-social__action:active, .photo-social .photo-social__action:focus {
+      color: #fff;
+      text-decoration: none; }
+  .photo-social img.social-media__badge {
+    position: absolute;
+    z-index: 5;
+    bottom: 15px;
+    left: 15px; }
+
+/*# sourceMappingURL=photo-social.component.css.map */
