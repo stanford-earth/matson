@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.expandable-cards {
+  @include grid-container;
+
+  .expandable-card {
+    width: 100%;
+    margin: 0 auto 2em;
+
+    @include grid-media($media-md) {
+      @include grid-column(6);
+      min-height: 200px;
+      margin-bottom: 0;
+    }
+  }
+}

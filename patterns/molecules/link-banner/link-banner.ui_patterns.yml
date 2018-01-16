@@ -1,0 +1,69 @@
+# Link Banner Pattern
+#
+link_banner:
+  label: "Link Banner"
+  description: "A grid of links on photo background"
+  fields:
+    description:
+      description: "Description for the link grid"
+      label: Description
+      preview: "Find our research and insights, organized into nine categories, at our Earth Matters research news magazine."
+      type: text
+    image:
+      description: "Image background url"
+      label: "Background image url"
+      preview: "https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg"
+      type: text
+    items:
+      description: "This template iterates over the items to produce a grid of links."
+      label: "A list of simple links"
+      type: collection
+      preview:
+        -
+          link: "https://www.stanford.edu"
+          subtitle: Change
+          title: Climate
+        -
+          link: "https://www.stanford.edu"
+          subtitle: "& Agrictulture"
+          title: Food
+        -
+          link: "https://www.stanford.edu"
+          subtitle: Resources
+          title: "Fresh Water"
+        -
+          link: "https://www.stanford.edu"
+          subtitle: Earth
+          title: Dynamic
+        -
+          link: "https://www.stanford.edu"
+          subtitle: "& Sustainability"
+          title: "Human Dimensions"
+        -
+          link: "https://www.stanford.edu"
+          subtitle: "of Earth & Life"
+          title: Evolution
+        -
+          link: "https://www.stanford.edu"
+          title: Energy
+        -
+          link: "https://www.stanford.edu"
+          subtitle: Hazards
+          title: Natural
+        -
+          link: "https://www.stanford.edu"
+          title: Oceans
+    title:
+      description: "Title for the link grid"
+      label: Title
+      preview: "Earth Matters"
+      type: text
+  libraries:
+    -
+      link_banner_library:
+        css:
+          component:
+            css/link-banner.component.css: {}
+        dependencies:
+          - ui_patterns/link_item.link_item_library
+  use: "@stanford_components/molecules/link-banner/link-banner.html.twig"

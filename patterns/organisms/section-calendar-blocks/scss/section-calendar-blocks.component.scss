@@ -1,0 +1,47 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.section-calendar-blocks {
+  $calendar-cards-grid: (
+    columns: 12,
+    gutter: 30px,
+  );
+
+  @include grid-container;
+  padding-bottom: em(58px);
+
+  .calendar-blocks__header {
+    padding-top: em(20px);
+    width: 100%;
+
+    @include grid-media($media-md) {
+      @include grid-column(12, $calendar-cards-grid);
+    }
+
+    @include grid-media($media-lg) {
+      @include grid-column(2, $calendar-cards-grid);
+    }
+  }
+
+  .calendar-blocks__container {
+    width: 100%;
+
+    @include grid-media($media-md) {
+      @include grid-column(12, $calendar-cards-grid);
+    }
+
+    @include grid-media($media-lg) {
+      @include grid-column(10, $calendar-cards-grid);
+    }
+
+    .calendar-blocks {
+      @include grid-media($media-md) {
+        @include grid-collapse;
+      }
+    }
+  }
+}

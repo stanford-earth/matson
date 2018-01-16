@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.highlight-card {
+  background-color: color(white);
+  max-width: 285px;
+}
+
+.highlight-card__action {
+  display: block;
+}

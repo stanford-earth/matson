@@ -1,0 +1,34 @@
+# Spotlight Card Pattern
+spotlight_card:
+  label: "Spotlight card"
+  description: "A single spotlight card"
+  fields:
+    quote:
+      description: Quote for the spotlight card.
+      label: Quote
+      preview: "I am working with my students to find ways of using geophysical methods to understand the processes occurring in the top 100 meters of Earth. With geophysical methods we can non-invasively acquire images of this near-surface region, allowing us to monitor systems and extract information that cannot be obtained using more traditional methods of drilling and direct sampling."
+      type: text
+    name:
+      description: "Name of the person being quoted."
+      label: Name
+      preview: "Biondo Biondi"
+      type: text
+    title:
+      description: "Professional title."
+      label: Name
+      preview: "Geophysics Professor"
+      type: text
+    image:
+      description: "Quote image."
+      label: Image of person being quoted
+      preview:
+        theme: image
+        uri: "https://lorempixel.com/228/266/nature"
+      type: image
+  libraries:
+    -
+     spotlight_card_library:
+        css:
+          component:
+            css/spotlight-card.component.css: {}
+  use: "@stanford_components/molecules/spotlight-card/spotlight-card.html.twig"

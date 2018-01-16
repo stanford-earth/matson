@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Section feature blocks pattern.
+ */
+#}
+{% set attributes = attributes.addClass(['section-feature-blocks', variants.is_centered]) %}
+
+{#
+  Center the container if variant is true by including the library/css and adding
+  a class to the main wrapping div.
+#}
+{% if variants.centered_container %}
+  {{ attach_library('matson/component_centered_container') }}
+  {% set attributes = attributes.addClass('component-centered-container') %}
+{% endif %}
+
+<div{{ attributes }} >
+  <div class="feature-blocks__header">
+    {%  set header_vars = {
+      'superhead': superhead,
+      'subhead': subhead,
+      'is_centered': variants.is_centered,
+      'dash_under': variants.dash_under,
+      'context': context
+    } %}
+    {{ pattern('section_header', header_vars) }}
+  </div>
+
+  <div class="feature-blocks__container">
+    <div class="feature-blocks">
+      {# Break up the individual items in to the appropriate template var. #}
+      {{ pattern('simple_blocks', {'items': items, 'context': context}) }}
+    </div>
+  </div>
+</div>

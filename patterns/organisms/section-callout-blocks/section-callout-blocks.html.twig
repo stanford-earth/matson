@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * Callout blocks pattern.
+ */
+#}
+
+{% set header_vars = {'superhead': title,'is_centered': variants.is_centered,'dash_under': variants.dash_under, 'context': context} %}
+{% set attributes = attributes.addClass(['section-callout-blocks']) %}
+
+{#
+  Center the container if variant is true by including the library/css and adding
+  a class to the main wrapping div.
+#}
+{% if variants.centered_container %}
+  {{ attach_library('matson/component_centered_container') }}
+  {% set attributes = attributes.addClass('component-centered-container') %}
+{% endif %}
+
+<div{{ attributes }}>
+  {{ pattern('section_header', header_vars) }}
+  {# Break up the individual items in to the appropriate template var. #}
+  {{ pattern('callout_blocks', {'items': items}) }}
+</div>

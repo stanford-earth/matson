@@ -1,0 +1,97 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.section-callout-filmstrip {
+  padding-bottom: em(46px);
+
+  // When the section header is above.
+  &.header-to-top {
+    .section-header {
+      @include grid-column(1 of 1);
+      text-align: center;
+      padding-bottom: 20px;
+
+      p {
+        @include grid-media($media-sm) {
+          min-width: 75%;
+          max-width: 80%;
+        }
+
+        @include grid-media($media-xl) {
+          max-width: 50%;
+          min-width: auto;
+        }
+
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .filmstrip__cards {
+      @include responsive-grid-collapse($default-container);
+    }
+
+    .film-card__caption {
+      font-weight: 600;
+    }
+
+  }
+
+  // When the section header is below.
+  &.header-to-left {
+    // .section-header {
+    //   h2.has-dash-under {
+    //     @include dash-left($dash-color: brand);
+    //   }
+    // }
+
+    @include grid-media($media-sm-max) {
+      .section-header {
+        @include grid-column(1 of 1);
+      }
+    }
+
+    @include grid-media($media-md) {
+      @include responsive-container($default-container);
+
+      .filmstrip__header {
+        @include grid-column(2 of 12);
+      }
+
+      .filmstrip__container {
+        @include grid-column(10 of 12);
+
+        .filmstrip.is-flexible,
+        .component-centered-container {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+
+    @include grid-media($media-lg-only) {
+      .film-card {
+        @include grid-column(1 of 2);
+      }
+    }
+  }
+
+  @include grid-media($media-md) {
+    .film-card {
+      &.has-arrow {
+        .film-card__caption {
+          position: absolute;
+          left: 20px;
+          right: 20px;
+          bottom: 20px;
+          top: auto;
+          margin: 0;
+          transform: none;
+        }
+      }
+    }
+  }
+}

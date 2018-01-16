@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.section-header {
+  position: relative;
+  text-align: center;
+
+  @include grid-media($media-lg) {
+    text-align: left;
+  }
+
+  &.is-centered {
+    text-align: center;
+  }
+
+  h2 {
+    position: relative;
+  }
+}

@@ -1,0 +1,77 @@
+# Highlight Banner Pattern
+#
+section_highlight_banner:
+  label: "Section Highlight Banner"
+  description: "A banner with highlight cards and photo background"
+  variants:
+    dash_under:
+      label: "Dash Under Header"
+      description: "Dash under h2 or to the left?  Treat as boolean (true/false)"
+      default: has-dash-under
+      options:
+        has-dash-left: Left
+        has-dash-under: Under
+    is_centered:
+      label: Center
+      description: "Flag to determine whether h2 should be centered.  Treat as boolean (true/false)."
+      default: left-aligned
+      options:
+        left-aligned: Left Aligned
+        is-centered: Centered
+    is_featured:
+      label: "Dash With Emphasis"
+      description: "Dash has emphasis or default brand color?  Treat as boolean (true/false)"
+      default: no-emphasis
+      options:
+        no-emphasis: No Branding
+        has-dash-emphasis: Brand color
+    height:
+      description: "A tall or short banner"
+      label: Height
+      default: is-tall
+      options:
+        is-tall: Tall
+        is-short: Short
+    card_width:
+      label: Width
+      description: "Width of the individual cards"
+      default: is-narrow
+      options:
+        is-narrow: Narrow
+        is-wide: Wide
+  fields:
+    image:
+      description: "Hero image."
+      label: "Image URL"
+      preview: "https://i.ytimg.com/vi/MwKZLFYLRSs/maxresdefault.jpg"
+      type: text
+    items:
+      description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, intro and description rendered as an html element."
+      label: "A list of highlight cards"
+      type: collection
+      preview: 
+        -
+          description: "Today more than 7 billion people inhabit Earth and a billion lack adequate energy, water and food."
+          intro: "Take a course"
+          link: "https://www.stanford.edu"
+          title: "Life At The Extremes"
+        -
+          description: "What do we really know about Earth's ice sheets and their influence?"
+          intro: "Attend one of our events"
+          link: "https://www.stanford.edu"
+          title: "Stanford Earth Matters San Francisco"
+    superhead:
+      description: "Title for the highlight banner."
+      label: Superhead
+      preview: "Know Your Planet: Take a Course"
+      type: text
+  libraries:
+    -
+      section_highlight_banner_library:
+        css:
+          component:
+            css/section-highlight-banner.component.css: {}
+        dependencies:
+          - ui_patterns/section_header.section_header_library
+          - ui_patterns/highlight_cards.highlight_cards_library
+  use: "@stanford_components/organisms/section-highlight-banner/section-highlight-banner.html.twig"

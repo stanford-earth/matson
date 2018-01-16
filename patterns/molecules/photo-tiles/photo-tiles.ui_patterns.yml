@@ -1,0 +1,86 @@
+# Photo Tiles Pattern
+#
+photo_tiles:
+  label: "Photo Tiles"
+  description: "A collecion of photo tiles"
+  fields:
+    description:
+      description: "Tile description."
+      label: Description
+      preview: "Ornare. Nulla tempus sagittis Etiam."
+      type: text
+    is_right:
+      description: "Render tiles left or right  Treat as boolean (true/false)."
+      label: Arrow
+      preview: false
+      type: text
+    classes:
+      description: "Render custom classes"
+      label: Classes
+      preview: "my-class"
+      type: text
+    image:
+      description: "Tile image."
+      label: Image
+      preview:
+        theme: image
+        uri: "https://lorempixel.com/380/380/nature/10"
+      type: image
+    link:
+      description: "URI that points somewhere"
+      label: Link
+      preview: "https://stanford.edu"
+      type: url
+    title:
+      description: "Photo tile title"
+      label: Title
+      preview: "Students"
+      type: text
+    cite_name:
+      description: "Citation Person Name"
+      label: "Citation Name"
+      preview: "Elsa M. Ordway"
+      type: text
+    cite_title:
+      description: "Citation Person Title"
+      label: "Person's title"
+      preview: "Ph.D. Candidate"
+    quote:
+      description: "Quote text body"
+      label: "Quotation text"
+      preview: "I’m fascinated by the way our world works. I use technology to make visible what is not visible to the naked eye."
+      type: text
+    items:
+      description: "This template iterates over the items to produce a collection of divs. Each item must have a url, title, description and an image rendered as an html element."
+      label: "A collection of photo tiles"
+      type: collection
+      preview:
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/380/380/nature/5"
+          link: "https://www.stanford.edu"
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/380/380/nature/3"
+          link: "https://www.stanford.edu"
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/380/380/nature/2"
+          link: "https://www.stanford.edu"
+
+  libraries:
+    -
+      photo_tiles_library:
+        css:
+          component:
+            css/photo-tiles.component.css: {}
+        dependencies:
+          - ui_patterns/photo_thumb.photo_thumb_library
+          - ui_patterns/photo_tile.photo_tile_library
+  use: "@stanford_components/molecules/photo-tiles/photo-tiles.html.twig"

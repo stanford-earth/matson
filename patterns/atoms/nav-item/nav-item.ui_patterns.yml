@@ -1,0 +1,22 @@
+# Nav item
+nav_item:
+  label: "Nav item"
+  description: "A single nav item"
+  fields:
+    link:
+      description: "URI that points somewhere"
+      label: Link
+      preview: "https://stanford.edu"
+      type: url
+    name:
+      description: "Link name."
+      label: Title
+      preview: "Link name"
+      type: text
+  libraries:
+    -
+      nav_item_library:
+        css:
+          component:
+            css/nav-item.component.css: {}
+  use: "@stanford_components/atoms/nav-item/nav-item.html.twig"

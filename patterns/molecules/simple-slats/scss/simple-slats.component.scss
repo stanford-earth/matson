@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.simple-slats {
+  .simple-slat {
+    max-width: 380px;
+    margin: 0 auto 2em;
+
+    @include grid-media($media-md) {
+      max-width: none;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.photo-banner {
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  display: block;
+  min-height: 280px; }
+  .photo-banner::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media only screen and (min-width: 768px) {
+    .photo-banner {
+      background-size: cover;
+      bottom: 0;
+      top: 0;
+      width: 100%; } }
+  @media only screen and (min-width: 1024px) {
+    .photo-banner {
+      width: 100%; } }
+
+/*# sourceMappingURL=photo-banner.component.css.map */

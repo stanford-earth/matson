@@ -1,0 +1,46 @@
+{#
+/**
+ * @file
+ * Photo tile pattern.
+ */
+#}
+{% set attributes = attributes.addClass("photo-tiles") %}
+{% if is_right %}
+  {% set attributes = attributes.addClass("is-right") %}
+{% endif %}
+{% if classes is not empty %}
+  {% set attributes = attributes.addClass(classes) %}
+{% endif %}
+
+<div{{ attributes }}>
+  <div class="photo-tile tile-item tile-sizer">
+    {{ link|openlink({class: 'photo-tile__action'}) }}
+      <div class="photo-tile__thumbnail">
+        {{ image }}
+        <div class="photo-tile__header">
+          <div class="photo-tile__title"><h3>{{ title }}</h3></div>
+          <p class="photo-tile__description">{{ description }}</p>
+          <span class="photo-tile__arrow"><svg class="i-svg i-svg--arrow-right" role="img"><title>{{ 'Navigate to item'|t }}</title><use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
+        </div>
+      </div>
+    {{ link|closelink }}
+  </div>
+
+  <div class="photo-thumbs">
+  {% for item in items %}
+    {% set item = item|merge({'context': context}) %}
+    {# Pass vars through to include template. #}
+    {{ pattern('photo_thumb', item) }}
+  {% endfor %}
+
+    {% if quote is not empty %}
+    <div class="photo-tiles__quote">
+      <svg class="i-svg i-svg--quote" role="img"><title>{{ 'Large quotation icon for visual emphasis'|t }}</title><use xlink:href="#i-quote" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
+      <blockquote>
+        <p>{{ quote }}</p>
+        <cite><strong>{{ cite_name }}</strong>{{ cite_title }}</cite>
+      </blockquote>
+    </div>
+    {% endif %}
+  </div>
+</div>

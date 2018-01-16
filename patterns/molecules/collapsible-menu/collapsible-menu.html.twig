@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Link banner pattern.
+ */
+#}
+{% set muid = "cmenu-" ~ random() %}
+{% set attributes = attributes.addClass("collapsible-menu js-collapsible-menu") %}
+{% set attributes = attributes.setAttribute('id', muid) %}
+
+<nav{{ attributes }}>
+  <ul class="nav-items" role="menu">
+
+  {# Break up the individual items in to the appropriate template var. #}
+  {% for item in items %}
+    {% set item = item|merge({'context': context}) %}
+    {# Pass vars through to include template. #}
+    <li>{{ pattern("nav_item", item) }}</li>
+  {% endfor %}
+  </ul>
+
+  <a class="collapsible-menu__toggle collapsible-menu__toggle--open js-collapsible-menu__toggle" href="#{{ muid }}">
+    <span class="collapsible-menu__open">Explore Topics <svg class="i-svg i-svg--plus" role="img"><title>{{ 'Expand menu'|t }}</title><use xlink:href="#i-plus" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
+  </a>
+
+  <a class="collapsible-menu__toggle collapsible-menu__toggle--close js-collapsible-menu__toggle" href="#{{ muid }}">
+    <span class="collapsible-menu__close">Hide Topics <svg class="i-svg i-svg--minus" role="img"><title>{{ 'Collapse menu'|t }}</title><use xlink:href="#i-minus" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
+  </a>
+</nav>

@@ -1,0 +1,47 @@
+# Callout Blocks Pattern
+#
+callout_blocks:
+  label: "Callout Blocks"
+  description: "A horizontal list callout blocks with icons and styled text"
+  fields:
+    items:
+      description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, and an image rendered as an html element."
+      label: "A list of simple image cards"
+      type: collection
+      preview: 
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Rectilinear_minimum_spanning_tree.svg"
+          intro: "We Do"
+          link: "https://www.stanford.edu"
+          subtitle: "on 7 continents"
+          title: "Field Learning"
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Rectilinear_minimum_spanning_tree.svg"
+          intro: "We Teach"
+          link: "https://www.stanford.edu"
+          subtitle: "on our farm"
+          title: Sustainability
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Rectilinear_minimum_spanning_tree.svg"
+          intro: "We Use"
+          link: "https://www.stanford.edu"
+          subtitle: "to understand Earth"
+          title: "Data Science"
+  libraries:
+    -
+      callout_blocks_library:
+        css:
+          component:
+            css/callout-blocks.component.css: {}
+        dependencies:
+          - ui_patterns/callout_block.callout_block_library
+  use: "@stanford_components/molecules/callout-blocks/callout-blocks.html.twig"

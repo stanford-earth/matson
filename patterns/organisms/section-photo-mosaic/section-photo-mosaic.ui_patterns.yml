@@ -1,0 +1,137 @@
+# Photo Mosaic Pattern
+#
+section_photo_mosaic:
+  label: "Section Photo Mosaic"
+  description: "A section with multiple photo tiles and a header"
+  variants:
+    dash_under:
+      label: "Dash Under Header"
+      description: "Dash under h2 or to the left?  Treat as boolean (true/false)"
+      default: has-dash-under
+      options:
+        has-dash-left: Left
+        has-dash-under: Under
+    is_centered:
+      label: Centered
+      description: "Flag to determine whether h2 should be centered.  Treat as boolean (true/false)."
+      default: left-aligned
+      options:
+        left-aligned: Left Aligned
+        is-centered: Centered
+    is_featured:
+      label: "Dash With Emphasis"
+      description: "Dash has emphasis or default brand color?  Treat as boolean (true/false)"
+      default: no-emphasis
+      options:
+        no-emphasis: No Branding
+        has-dash-emphasis: Brand color
+  fields:
+    subhead:
+      description: "Subhead for the content card."
+      label: Subhead
+      preview: "<p>We are scientists! Undergraduates, graduate students, professors, educational staff, and alumni working professionals. We build community in our field trips.</p>"
+      type: text
+    superhead:
+      description: "Title for the photo tile."
+      label: Superhead
+      preview: "Undergraduate Spotlights"
+      type: text
+    tiles:
+      description: "This template iterates over the items to produce a collection of divs. Each item must have a url, title, and an image rendered as an html element."
+      label: "A collection of photo tiles"
+      type: collection
+      preview:
+        -
+          classes: photo-mosaic--thumbs-down
+          description: "Ornare. Nulla tempus sagittis Etiam."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/380/380/nature/1"
+          link: "https://www.stanford.edu"
+          title: "Students"
+          is_right: true
+          classes: photo-mosaic--thumbs-down
+          items:
+            -
+              image:
+                alt: "this is a sample image"
+                theme: image
+                uri: "https://lorempixel.com/380/380/nature/2"
+              link: "https://www.stanford.edu"
+            -
+              image:
+                alt: "this is a sample image"
+                theme: image
+                uri: "https://lorempixel.com/380/380/nature/3"
+              link: "https://www.stanford.edu"
+            -
+              image:
+                alt: "this is a sample image"
+                theme: image
+                uri: "https://lorempixel.com/380/380/nature/4"
+              link: "https://www.stanford.edu"
+            -
+              image:
+                alt: "this is a sample image"
+                theme: image
+                uri: "https://lorempixel.com/380/380/nature/5"
+              link: "https://www.stanford.edu"
+        -
+          classes: photo-mosaic--thumbs-up
+          description: "Ornare. Nulla tempus sagittis Etiam."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/380/380/nature/10"
+          link: "https://www.stanford.edu"
+          title: "Students Advisors"
+          is_right: false
+          classes: photo-mosaic--thumbs-up
+          items:
+            -
+              image:
+                alt: "this is a sample image"
+                theme: image
+                uri: "https://lorempixel.com/380/380/nature/6"
+              link: "https://www.stanford.edu"
+            -
+              image:
+                alt: "this is a sample image"
+                theme: image
+                uri: "https://lorempixel.com/380/380/nature/7"
+              link: "https://www.stanford.edu"
+            -
+              image:
+                alt: "this is a sample image"
+                theme: image
+                uri: "https://lorempixel.com/380/380/nature/8"
+              link: "https://www.stanford.edu"
+            -
+              image:
+                alt: "this is a sample image"
+                theme: image
+                uri: "https://lorempixel.com/380/380/nature/10"
+              link: "https://www.stanford.edu"
+    subhead:
+      description: "Subhead for the content card."
+      label: Subhead
+      preview: "<p>We are scientists! Undergraduates, graduate students, professors, educational staff, and alumni working professionals. We build community in our field trips.</p>"
+      type: text
+    superhead:
+      description: "Title for the photo tile."
+      label: Superhead
+      preview: "Undergraduate Spotlights"
+      type: text
+  libraries:
+    -
+      section_photo_mosaic_library:
+        css:
+          component:
+            css/section-photo-mosaic.component.css: {}
+        dependencies:
+          - ui_patterns/section_header.section_header_library
+          - ui_patterns/photo_thumb.photo_thumb_library
+          - ui_patterns/photo_tile.photo_tile_library
+          - ui_patterns/photo_tiles.photo_tiles_library
+  use: "@stanford_components/organisms/section-photo-mosaic/section-photo-mosaic.html.twig"

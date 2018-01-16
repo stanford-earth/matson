@@ -1,0 +1,48 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.simple-columns__title {
+  @include responsive-container($default-container);
+  @include grid-media($media-lg) {
+    margin-left: 200px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @include grid-media($media-sm) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+}
+
+.simple-columns {
+  @include grid-container;
+  @include responsive-container($default-container);
+
+  @include grid-media($media-lg) {
+    margin: 0 200px;
+  }
+
+  @include grid-media($media-sm) {
+    column-count: 2;
+    column-gap: 27px;
+  }
+
+  &.three-columns {
+    @include grid-media($media-sm) {
+      column-count: 3;
+    }
+  }
+
+  &.four-columns {
+    @include grid-media($media-sm) {
+      column-count: 4;
+    }
+  }
+
+}

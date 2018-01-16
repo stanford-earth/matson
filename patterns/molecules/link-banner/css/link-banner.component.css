@@ -1,0 +1,95 @@
+.link-banner {
+  background-repeat: no-repeat;
+  margin-bottom: 4.4615384615em; }
+  @media only screen and (max-width: 575px) {
+    .link-banner {
+      padding: 1em calc(((50% /12) * 0) + 15px); }
+      .link-banner::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .link-banner {
+      padding: 1em calc(((50% /12) * 0) + 15px); }
+      .link-banner::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .link-banner {
+      padding: 1em calc(((50% /12) * 0) + 30px); }
+      .link-banner::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+    .link-banner {
+      padding: 1em calc(((50% /12) * 0) + 30px); }
+      .link-banner::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 1500px) {
+    .link-banner {
+      padding: 1em calc(50% - (750px - 60px)); }
+      .link-banner::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only print {
+    .link-banner {
+      padding: 1em calc(((50% /12) * 0) + 0.25in); }
+      .link-banner::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  .link-banner::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .link-banner .link-banner__header {
+    width: calc(100% - 30px);
+    float: left;
+    margin-left: 15px; }
+    @media only screen and (min-width: 1024px) {
+      .link-banner .link-banner__header {
+        width: calc(25% - 37.5px);
+        float: left;
+        margin-left: 30px;
+        text-align: left; } }
+    @media only screen and (min-width: 1500px) {
+      .link-banner .link-banner__header {
+        padding-right: 5.3846153846em; } }
+  .link-banner .link-items {
+    float: left;
+    display: block;
+    width: 100%; }
+    .link-banner .link-items::after {
+      clear: both;
+      content: "";
+      display: block; }
+    @media only screen and (min-width: 768px) {
+      .link-banner .link-items {
+        width: calc(100% - 60px);
+        float: left;
+        margin-left: 30px;
+        margin-left: -30px;
+        margin-right: -30px;
+        width: calc(100% + 60px); } }
+    @media only screen and (min-width: 1024px) {
+      .link-banner .link-items {
+        width: calc(75% - 52.5px);
+        float: left;
+        margin-left: 30px; } }
+  .link-banner .link-item {
+    display: block;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .link-banner .link-item {
+        width: calc(33.3333333333% - 40px);
+        float: left;
+        margin-left: 30px; }
+        .link-banner .link-item:nth-child(3n+1) {
+          clear: both; } }
+
+/*# sourceMappingURL=link-banner.component.css.map */

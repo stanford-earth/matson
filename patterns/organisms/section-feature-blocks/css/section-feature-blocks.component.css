@@ -1,0 +1,67 @@
+.section-feature-blocks {
+  margin-bottom: 2.1538461538em; }
+  .section-feature-blocks::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .section-feature-blocks .feature-blocks__header {
+    width: 100%;
+    position: relative; }
+  .section-feature-blocks.left-aligned .section-header.component-centered-container {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0; }
+  @media only screen and (min-width: 768px) {
+    .section-feature-blocks.left-aligned .feature-blocks__header {
+      width: calc(100% - 60px);
+      float: left;
+      margin-left: 30px; } }
+  @media only screen and (min-width: 1024px) {
+    .section-feature-blocks.left-aligned .feature-blocks__header {
+      width: calc(25% - 37.5px);
+      float: left;
+      margin-left: 30px; } }
+  @media only screen and (min-width: 1200px) {
+    .section-feature-blocks.left-aligned .feature-blocks__header {
+      padding-right: 3.0769230769em; } }
+  @media only screen and (min-width: 1024px) {
+    .section-feature-blocks.left-aligned .feature-blocks__container {
+      width: calc(75% - 52.5px);
+      float: left;
+      margin-left: 30px; } }
+  @media only screen and (min-width: 768px) {
+    .section-feature-blocks.left-aligned .feature-blocks__container .feature-blocks {
+      margin-left: -30px;
+      margin-right: -30px;
+      width: calc(100% + 60px); } }
+  .section-feature-blocks.right-aligned .section-header.component-centered-container {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0; }
+  @media only screen and (min-width: 768px) {
+    .section-feature-blocks.right-aligned .feature-blocks__header {
+      width: calc(100% - 60px);
+      float: left;
+      margin-left: 30px;
+      float: right; } }
+  @media only screen and (min-width: 1024px) {
+    .section-feature-blocks.right-aligned .feature-blocks__header {
+      width: calc(25% - 37.5px);
+      float: left;
+      margin-left: 30px;
+      float: right; } }
+  @media only screen and (min-width: 1200px) {
+    .section-feature-blocks.right-aligned .feature-blocks__header {
+      padding-right: 3.0769230769em; } }
+  @media only screen and (min-width: 1024px) {
+    .section-feature-blocks.right-aligned .feature-blocks__container {
+      width: calc(75% - 52.5px);
+      float: left;
+      margin-left: 30px; } }
+  @media only screen and (min-width: 768px) {
+    .section-feature-blocks.right-aligned .feature-blocks__container .feature-blocks {
+      margin-left: -30px;
+      margin-right: -30px;
+      width: calc(100% + 60px); } }
+
+/*# sourceMappingURL=section-feature-blocks.component.css.map */

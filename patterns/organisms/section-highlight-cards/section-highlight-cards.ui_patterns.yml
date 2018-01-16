@@ -1,0 +1,61 @@
+# Highlight Cards Pattern
+#
+section_highlight_cards:
+  label: "Section Highlight Cards"
+  description: "A horizontal list callout cards with a section header"
+  variants:
+    centered_container:
+      label: "Centered Component"
+      description: "Center the component in a responsive container"
+      default: true
+      options:
+        true: "Centered"
+        0: "Full Width"
+    card_width:
+      label: Width
+      description: "Width of the individual cards"
+      default: is-narrow
+      options:
+        is-narrow: Narrow
+        is-wide: Wide
+  fields:
+    items:
+      description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, intro and description rendered as an html element."
+      label: "A list of highlight cards"
+      type: collection
+      preview:
+        -
+          description: "masnadi@stanford.edu"
+          sub_title: "Department Head"
+          link: "https://www.stanford.edu"
+          title: "Mohammad Masnadi"
+        -
+          description: "(650) 724-8251\nabrandt@stanford.edu"
+          sub_title: "Committe Chair"
+          link: "https://www.stanford.edu"
+          title: "Adam Brandt"
+        -
+          description: "(650) 723-9820\nkerthan@stanford.edu"
+          sub_title: "Volunteer Coodinator"
+          link: "https://www.stanford.edu"
+          title: "Ker Than"
+    subhead:
+      description: "Subhead for the content card."
+      label: Subhead
+      preview: "<p>We make an impact through faculty research that uncovers how our planet works, by teaching the next generation to understand and manage Earth’s resources, and by communicating our science to policy makers, influencers and the public.</p>"
+      type: text
+    superhead:
+      description: "Title for the content card."
+      label: Superhead
+      preview: "Our Impact in the World"
+      type: text
+  libraries:
+    -
+      section_highlight_cards_library:
+        css:
+          component:
+            css/section-highlight-cards.component.css: {}
+        dependencies:
+          - ui_patterns/highlight_cards.highlight_cards_library
+          - ui_patterns/highlight_card.highlight_card_library
+  use: "@stanford_components/organisms/section-highlight-cards/section-highlight-cards.html.twig"

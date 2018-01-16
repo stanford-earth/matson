@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Section Quote Banner pattern.
+ */
+#}
+{% set attributes = attributes.addClass("section-quote-banner") %}
+{% set attributes = attributes.setAttribute("style", "background-image:url('" ~ image|get_img_src ~ "')") %}
+
+<div{{ attributes }}>
+  {%  set quote_vars = {
+    'quote': quote,
+    'name': name,
+    'title': title,
+    'image': quote_image,
+    'context': context
+  } %}
+  {{ pattern('quote_card', quote_vars) }}
+</div>

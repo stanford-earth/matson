@@ -1,0 +1,68 @@
+{#
+/**
+ * @file
+ * Hero banner pattern.
+ */
+#}
+
+{% if variants.centered_container %}
+  {{ attach_library('matson/component_centered_container') }}
+  {% set attributes = attributes.addClass('component-centered-container-margins') %}
+{% endif %}
+
+{% set asset_type = 'video' %}
+{% if image|get_img_src is not empty %}
+  {% set asset_type = 'image' %}
+{% endif %}
+
+{# WRAPPING DIV ATTRIBUTES #}
+{% set attributes = attributes.addClass(['hero-banner', variants.has_tint, variants.racing_stripe, 'has-' ~ asset_type]) %}
+
+{# INNER DIV ATTRIBUTES #}
+{% set inner_attributes = create_attribute({'class': ['hero-banner__inner', variants.is_tall]}) %}
+
+{# HEADER DIV ATTRIBUTES #}
+{% set header_attributes = create_attribute({'class': ['hero-banner__header', variants.header_position]}) %}
+
+<div{{ attributes }}>
+
+  <div class="{{ asset_type }}">
+    {{ image }}
+  </div>
+
+  {% if variants.racing_stripe %}
+    <div class="hero-banner__racing_stripe">
+      {% if variants.stripe_block is not empty %}
+        {{ drupal_block(variants.stripe_block) }}
+      {% endif %}
+      {{ racing_stripe }}
+    </div>
+  {% endif %}
+  <div{{ inner_attributes }}>
+    <div class="hero-banner__container">
+      <div{{ header_attributes }}>
+        <div class="hero-banner__hgroup">
+
+          {% if superhead|render|striptags|trim is not empty %}
+            {% if variants.is_page_title == true %}
+              <h1 class="hero-banner__title h1 page-title">{{ superhead|render|striptags|trim|raw }}</h1>
+            {% else %}
+              <h2 class="hero-banner__title h1">{{ superhead|render|striptags|trim|raw }}</h2>
+            {% endif %}
+          {% endif %}
+
+          {% if subhead|render|striptags|trim  is not empty %}
+            <p>{{ subhead|render|striptags|trim|raw }}</p>
+          {% endif %}
+
+          {% if cite|render|striptags|trim is not empty %}
+            <p class="cite"><cite>{{ cite }}</cite></p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% if footer|render|striptags|trim is not empty %}
+  <div class="hero-banner__footer">{{ footer }}</div>
+{% endif %}

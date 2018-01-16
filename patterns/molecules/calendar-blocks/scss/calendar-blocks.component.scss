@@ -1,0 +1,34 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.calendar-blocks {
+  $calendar-cards-grid: (
+    columns: 10,
+    gutter: 30px,
+  );
+
+  @include grid-container;
+
+  @include grid-media($media-md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .calendar-block {
+    margin: 0 auto 2em;
+    max-width: 250px;
+
+    @include grid-media($media-md) {
+      @include grid-column(5, $calendar-cards-grid);
+      max-width: none;
+    }
+
+    @include grid-media($media-lg) {
+      @include grid-column(2, $calendar-cards-grid);
+    }
+  }
+}

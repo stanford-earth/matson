@@ -1,0 +1,68 @@
+# Simple Slat Pattern
+#
+simple_slat:
+  label: "Simple Slat"
+  description: "A horizontal list simple slats"
+  variants:
+    image_side:
+      label: "Image Side"
+      description: "Which side to display the image."
+      default: 'has-image-left'
+      options:
+        has-image-left: "Image Left"
+        has-image-right: "Image Right"
+    width:
+      label: "Width"
+      description: "How wide to allow the slat"
+      default: 'is-wide'
+      options:
+        is-wide: "Wide"
+        is-narrow: "Narrow"
+  fields:
+    description:
+      description: "Slat description."
+      label: Description
+      preview: "Mapping the seawater threat to California Central Coast aquifers"
+      type: text
+    image:
+      description: "Block image."
+      label: Image
+      preview:
+        theme: image
+        uri: "https://lorempixel.com/270/160/nature/5"
+      type: image
+    image_caption:
+      description: "Image Caption"
+      label: "Image Caption"
+      preview: "Sample Inline Image (Image credit: Lorempixel)"
+      type: text
+    link:
+      description: "URI that points somewhere"
+      label: Link
+      preview: "https://stanford.edu"
+      type: url
+    tag:
+      description: "Text that overlays the image with a background"
+      label: Tag
+      preview: "Research News"
+      type: text
+    more:
+      description: "More link."
+      label: More
+      preview: "Explore Research News"
+      type: text
+    title:
+      description: "Simple Slat Title"
+      label: Title
+      preview: "What is sustainability?"
+      type: text
+  libraries:
+    -
+      simple_slat_library:
+        css:
+          component:
+            css/simple-slat.component.css: {}
+        dependencies:
+          - ui_patterns/simple_block.simple_block_library
+          - matson/component_centered_container
+  use: "@stanford_components/molecules/simple-slat/simple-slat.html.twig"

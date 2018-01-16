@@ -1,0 +1,15 @@
+{#
+/**
+ * @file
+ * Callout cards pattern.
+ */
+#}
+{% set attributes = attributes.addClass("callout-cards") %}
+<div{{ attributes }}>
+  {# Break up the individual items in to the appropriate template var. #}
+  {% for item in items %}
+    {% set item = item|merge({'context': context}) %}
+    {# Pass vars through to include template. #}
+    {{ pattern("callout_card", item) }}
+  {% endfor %}
+</div>

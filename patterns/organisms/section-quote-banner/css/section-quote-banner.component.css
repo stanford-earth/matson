@@ -1,0 +1,30 @@
+.section-quote-banner {
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  display: block;
+  min-height: 280px;
+  padding: 30px;
+  margin-bottom: 4.4615384615em; }
+  .section-quote-banner::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media only screen and (min-width: 768px) {
+    .section-quote-banner {
+      background-size: cover;
+      bottom: 0;
+      top: 0;
+      width: 100%; } }
+  @media only screen and (min-width: 1024px) {
+    .section-quote-banner {
+      width: 100%; } }
+  @media only screen and (min-width: 768px) {
+    .section-quote-banner {
+      padding: 60px; } }
+  @media only screen and (min-width: 768px) {
+    .section-quote-banner .quote-card {
+      max-width: 66%;
+      margin: 0 auto; } }
+
+/*# sourceMappingURL=section-quote-banner.component.css.map */

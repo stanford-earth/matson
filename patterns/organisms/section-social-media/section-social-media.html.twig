@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Section Social Media pattern.
+ */
+#}
+
+{% set header_vars = {'superhead': superhead, 'subhead': subhead, 'context': context} %}
+{% set attributes = attributes.addClass("section-social-media") %}
+
+{# Template HTML #}
+<div{{ attributes }}>
+  <div class="social-media__header">
+    {{ pattern('header_card', header_vars) }}
+  </div>
+
+  <div class="social-media__container">
+    {# Break up the individual items in to the appropriate template var. #}
+    {% for item in items %}
+      {% if item.platform == 'instagram' %}
+        {# Pass vars through to include template. #}
+        {{ pattern('photo_social', item|merge({'context': context})) }}
+      {% elseif item.platform == 'twitter' %}
+        {# Pass vars through to include template. #}
+        {{ pattern('social_card', item|merge({'context': context})) }}
+      {% else %}
+        {{ item }}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

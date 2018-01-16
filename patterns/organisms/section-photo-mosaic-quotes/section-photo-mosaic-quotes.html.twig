@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Section photo mosaic quotes pattern.
+ */
+#}
+<div class="section-photo-mosaic section-photo-mosaic--quotes">
+  <div class="photo-mosaic__header">
+    {%  set header_vars = {
+      'superhead': superhead,
+      'subhead': subhead,
+      'context': context
+    } %}
+    {{ pattern('section_header', header_vars) }}
+  </div>
+
+  <div class="photo-mosaic__container">
+    <div class="photo-mosaic">
+      {# Break up the individual items in to the appropriate template var. #}
+      {% for tile in tiles %}
+        {% set tile = tile|merge({'context': context}) %}
+        {# Pass vars through to include template. #}
+        {{ pattern('photo_tiles', tile) }}
+      {% endfor %}
+    </div>
+  </div>
+</div>

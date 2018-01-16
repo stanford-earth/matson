@@ -1,0 +1,55 @@
+.film-card {
+  margin-bottom: 20px; }
+  .film-card.has-arrow .film-card__caption {
+    position: absolute;
+    top: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    bottom: auto; }
+
+.film-card__link {
+  display: inline-block;
+  color: #fff; }
+  .film-card__link:hover, .film-card__link:active, .film-card__link:focus {
+    color: #fff;
+    text-decoration: none; }
+
+.film-card__thumbnail {
+  position: relative; }
+  .film-card__thumbnail::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, transparent 35%, rgba(0, 0, 0, 0.75));
+    content: '';
+    display: block; }
+  .film-card__thumbnail img {
+    display: block; }
+  .film-card__thumbnail img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: auto; }
+
+.film-card__caption {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px; }
+
+.film-card__arrow {
+  position: absolute;
+  bottom: 10px;
+  right: 20px; }
+  .film-card__arrow svg {
+    vertical-align: middle;
+    display: inline;
+    margin-left: 5px; }
+
+/*# sourceMappingURL=film-card.component.css.map */

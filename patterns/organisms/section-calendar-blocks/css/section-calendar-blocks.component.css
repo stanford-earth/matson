@@ -1,0 +1,38 @@
+.section-calendar-blocks {
+  padding-bottom: 4.4615384615em; }
+  .section-calendar-blocks::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .section-calendar-blocks .calendar-blocks__header {
+    padding-top: 1.5384615385em;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .section-calendar-blocks .calendar-blocks__header {
+        width: calc(100% - 60px);
+        float: left;
+        margin-left: 30px; } }
+    @media only screen and (min-width: 1024px) {
+      .section-calendar-blocks .calendar-blocks__header {
+        width: calc(16.6666666667% - 35px);
+        float: left;
+        margin-left: 30px; } }
+  .section-calendar-blocks .calendar-blocks__container {
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .section-calendar-blocks .calendar-blocks__container {
+        width: calc(100% - 60px);
+        float: left;
+        margin-left: 30px; } }
+    @media only screen and (min-width: 1024px) {
+      .section-calendar-blocks .calendar-blocks__container {
+        width: calc(83.3333333333% - 55px);
+        float: left;
+        margin-left: 30px; } }
+    @media only screen and (min-width: 768px) {
+      .section-calendar-blocks .calendar-blocks__container .calendar-blocks {
+        margin-left: -30px;
+        margin-right: -30px;
+        width: calc(100% + 60px); } }
+
+/*# sourceMappingURL=section-calendar-blocks.component.css.map */

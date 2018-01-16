@@ -1,0 +1,32 @@
+# Social Card Pattern
+social_card:
+  label: "Social card"
+  description: "A single social card"
+  fields:
+    description:
+      description: Description.
+      label: Description
+      preview: '#Earthday plans? @StanfordLive presents "The Colorado Apr. 21-22, plus @NatGeo photographer Pete McBride. <a href="https://stanford.io/2o14Vlh">stanford.io/2o14Vlh</a>'
+      type: text
+    link:
+      description: "URI that points to a social feed item"
+      label: Link
+      preview: "https://twitter.com/chrfield/status/885548660469125120"
+      type: url
+    handle:
+      description: "Social username"
+      label: Handle
+      preview: "@stanfordearth"
+      type: text
+    handle_link:
+      description: "URI that points to the username social feed"
+      label: Handle Link
+      preview: "https://twitter.com/stanfordearth"
+      type: url
+  libraries:
+    -
+      social_card_library:
+        css:
+          component:
+            css/social-card.component.css: {}
+  use: "@stanford_components/molecules/social-card/social-card.html.twig"

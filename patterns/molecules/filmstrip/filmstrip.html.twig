@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Filmstrip pattern.
+ */
+#}
+
+{% if variants.centered_container == true %}
+  {{ attach_library('matson/component_centered_container') }}
+  {% set attributes = attributes.addClass('component-centered-container') %}
+{% endif %}
+{% set attributes = attributes.addClass(['filmstrip', variants.card_widths, variants.height, variants.tight, variants.double]) %}
+
+<div{{ attributes }} >
+  {% if title %}
+    <h6 class="filmstrip__title">{{ title }}</h6>
+  {% endif %}
+
+  <div class="filmstrip__cards">
+    {# Break up the individual items in to the appropriate template var. #}
+    {% if (items.0 and items.0.title) %}
+      {% for item in items %}
+        {% set item = item|merge({"context": context}) %}
+        {{ pattern('film_card', item) }}
+      {% endfor %}
+    {% else %}
+      {{ items }}
+    {% endif %}
+  </div>
+</div>

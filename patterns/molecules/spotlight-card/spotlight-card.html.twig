@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Spotlight Card pattern.
+ */
+#}
+
+{%
+  set attributes = attributes.addClass('spotlight-card')
+%}
+
+{% if quote is not empty %}
+<div{{ attributes }}>
+  <blockquote class="spotlight-card__quote">
+
+    {% if image is not empty %}
+    <div class="spotlight-card__thumbnail">
+      {{ image }}
+    </div>
+    {% endif %}
+
+    <div class="spotlight-card__content">
+
+      <p>{{ quote }}</p>
+
+      <cite class="spotlight-card__source">
+        {% if name is not empty %}
+          <strong>{{ name }}</strong>
+        {% endif %}
+        {% if title is not empty %}
+          {{ title }}
+        {% endif %}
+      </cite>
+
+    </div>
+
+  </blockquote>
+</div>
+{% endif %}

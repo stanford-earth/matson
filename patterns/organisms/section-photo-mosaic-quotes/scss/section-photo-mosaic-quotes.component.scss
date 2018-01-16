@@ -1,0 +1,126 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.section-photo-mosaic--quotes {
+  @include responsive-container($default-container);
+  margin-bottom: em(58px);
+}
+
+.photo-mosaic--thumbs-up {
+  .photo-tiles__quote {
+    display: none;
+    float: left;
+    position: relative;
+    text-align: right;
+    margin-bottom: 40px;
+
+    @include grid-media($media-lg) {
+      display: block;
+      margin-right: 20px;
+      margin-top: -40px;
+    }
+
+    cite::before {
+      right: 0;
+    }
+
+    svg {
+      right: 0;
+      left: auto;
+    }
+  }
+}
+
+.photo-mosaic--thumbs-down-quote {
+  &.photo-tiles .photo-tile {
+    &::after {
+      right: 100px;
+      left: auto;
+    }
+  }
+
+  .photo-thumbs {
+    @include grid-media($media-lg) {
+      margin-top: 110px;
+    }
+  }
+
+  .photo-thumb {
+    &:nth-child(2) {
+      @include grid-media($media-lg) {
+        margin-top: -20px;
+        margin-bottom: 40px;
+      }
+    }
+
+    &:nth-child(4) {
+      position: absolute;
+      right: -110px;
+      top: 110px;
+    }
+  }
+
+  .photo-tiles__quote {
+    display: none;
+
+    @include grid-media($media-lg) {
+      display: block;
+      margin-right: -110px;
+      top: -40px;
+    }
+  }
+}
+
+.photo-mosaic--thumbs-down-alt {
+  &.photo-tiles .photo-tile {
+    float: right;
+
+    @include grid-media($media-lg) {
+      float: left;
+    }
+
+    &::after {
+      right: auto;
+      left: 100px;
+      top: 50px;
+
+      @include grid-media($media-xl) {
+        top: 100px;
+      }
+    }
+  }
+
+  .photo-thumbs {
+    @include grid-media($media-lg) {
+      margin-top: -20px;
+      margin-bottom: 110px;
+    }
+  }
+
+  .photo-thumb {
+    position: relative;
+
+    &:nth-child(2) {
+      margin-top: 55px;
+    }
+
+    &:nth-child(3) {
+      margin-top: -55px;
+    }
+
+    &:nth-child(4) {
+      display: none;
+      position: absolute;
+      bottom: -130px;
+      left: -110px;
+
+      @include grid-media($media-xl) {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.postcard {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4.4615384615em; }
+  .postcard::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .postcard .postcard__image {
+    background-size: 100%;
+    background-position: center center;
+    overflow: hidden;
+    display: block;
+    min-height: 150px; }
+    @media only screen and (min-width: 768px) {
+      .postcard .postcard__image {
+        position: absolute;
+        background-size: cover;
+        bottom: 0;
+        top: 0;
+        width: 100%; } }
+    @media only screen and (min-width: 1024px) {
+      .postcard .postcard__image {
+        width: 70%; } }
+  @media only screen and (min-width: 1024px) {
+    .postcard .postcard__content {
+      position: relative;
+      margin: 0 auto;
+      max-width: 1380px; }
+      .postcard .postcard__content::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  .postcard .postcard__content-inner {
+    background-color: #fbfbfb;
+    display: block;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .postcard .postcard__content-inner {
+        position: relative;
+        float: right;
+        width: 50%;
+        z-index: 2; } }
+    @media only screen and (min-width: 1024px) {
+      .postcard .postcard__content-inner {
+        width: 30%; } }
+  .postcard .postcard__content-text {
+    padding: 1.5384615385em;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .postcard .postcard__content-text {
+        padding: 2.3076923077em;
+        width: auto; } }
+  .postcard.has-image-right .postcard__image {
+    right: 0; }
+  @media only screen and (min-width: 768px) {
+    .postcard.has-image-right .postcard__content-inner {
+      float: left; } }
+  @media only screen and (min-width: 1024px) {
+    .postcard.has-text-offset .postcard__image {
+      width: 66.666%; } }
+  @media only screen and (min-width: 1024px) {
+    .postcard.has-text-offset .postcard__content-inner {
+      padding: 30px 0;
+      width: 33.333%; } }
+  .postcard.has-text-offset .postcard__content-text {
+    background-color: #fff;
+    position: relative; }
+    @media only screen and (min-width: 1024px) {
+      .postcard.has-text-offset .postcard__content-text {
+        margin-left: -30px;
+        width: calc(100% + 30px); } }
+  @media only screen and (min-width: 1024px) {
+    .postcard.has-text-offset.has-image-right .postcard__content-text {
+      margin-right: -30px;
+      margin-left: 0; } }
+  @media only screen and (min-width: 1024px) {
+    .postcard.has-text-inset .postcard__image {
+      width: 60%; } }
+  @media only screen and (min-width: 1024px) {
+    .postcard.has-text-inset .postcard__content-inner {
+      padding: 40px;
+      width: 40%; } }
+  @media only screen and (min-width: 1200px) {
+    .postcard.has-text-inset .postcard__content-inner {
+      padding: 60px; } }
+  .postcard.has-text-inset .postcard__content-text {
+    background-color: #fff; }
+
+/*# sourceMappingURL=postcard.component.css.map */

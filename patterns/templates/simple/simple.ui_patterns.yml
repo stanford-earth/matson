@@ -1,0 +1,16 @@
+# Simple Pattern
+simple:
+  label: "Simple"
+  description: "A simple layout with only one field."
+  fields:
+    content:
+      description: "All fields and contents."
+      label: Content
+      preview: ~
+  libraries:
+    -
+      simple:
+        css:
+          component:
+            css/simple.component.css: {}
+  use: "@stanford_components/templates/simple/simple.html.twig"

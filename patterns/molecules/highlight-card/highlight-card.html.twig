@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Highlight card pattern.
+ */
+#}
+<div{{ attributes.addClass('highlight-card') }}>
+
+  {{ link|openlink({class:"highlight-card__action"}) }}
+
+    {% if intro is not empty %}
+    <span class="highlight-card__intro">{{ intro }}</span>
+    {% endif %}
+
+    <h4 class="highlight-card__title">{{ title }}</h4>
+
+    {% if sub_title is not empty %}
+    <h5>{{ sub_title }}</h5>
+    {% endif %}
+
+    {% if description is not empty %}
+    <p>{{ description|nl2br }}</p>
+    {% endif %}
+
+  {% if link|closelink %}
+      <div class="highlight-card__arrow">
+        <svg class="i-svg i-svg--arrow-right" role="img"><title>{{ 'Navigate to item'|t }}</title><use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
+      </div>
+  {% endif %}
+
+  {{ link|closelink }}
+</div>

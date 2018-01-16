@@ -1,0 +1,87 @@
+# Calendar Blocks Pattern
+#
+section_calendar_blocks:
+  label: "Section Calendar Blocks"
+  description: "A horizontal list callout blocks with icons and styled text"
+  variants:
+    dash_under:
+      label: "Dash Under Header"
+      description: "Dash under h2 or to the left?  Treat as boolean (true/false)"
+      default: has-dash-under
+      options:
+        has-dash-left: Left
+        has-dash-under: Under
+    is_centered:
+      label: Centered
+      description: "Flag to determine whether h2 should be centered.  Treat as boolean (true/false)."
+      default: left-aligned
+      options:
+        left-aligned: Left Aligned
+        is-centered: Centered
+    is_featured:
+      label: "Dash With Emphasis"
+      description: "Dash has emphasis or default brand color?  Treat as boolean (true/false)"
+      default: no-emphasis
+      options:
+        no-emphasis: No Branding
+        has-dash-emphasis: Brand color
+  fields:
+    subhead:
+      description: "Card text.  Renders full html (eg. <p> & <br />)"
+      label: Subhead
+      preview: "<p>Today more than 7 billion people inhabit Earth and a billion lack adequate energy.</p>"
+      type: text
+    superhead:
+      description: "Title for the content block."
+      label: Superhead
+      preview: "Calendar"
+      type: text
+    items:
+      description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, and an image rendered as an html element."
+      label: "A list of simple image cards"
+      type: collection
+      preview:
+        -
+          day: "9"
+          link: "<a href=\"https://stanford.edu\">Stanford</a>"
+          month: April
+          subtitle: "Room 104, Green Earth Sciences Building, 367 Panama Street, Stanford"
+          title: "ERE Seminar: NO SEMINAR"
+        -
+          day: "10"
+          link: "<a href=\"https://stanford.edu\">Stanford</a>"
+          month: April
+          subtitle: "All are welcome. Y2E2 226"
+          title: "Monday E-IPER Tea"
+        -
+          day: "21"
+          link: "<a href=\"https://stanford.edu\">Stanford</a>"
+          month: April
+          subtitle: "Liberal Arts and Private Four-Year Teaching Colleges (PhDs & Postdocs)"
+          title: "Faculty Life and Hiring"
+        -
+          day: "1"
+          link: "<a href=\"https://stanford.edu\">Stanford</a>"
+          month: May
+          title: "Special Screening of Documentary  ‘Tomorrow’"
+        -
+          day: "3"
+          link: "<a href=\"https://stanford.edu\">Stanford</a>"
+          month: May
+          title: "Women Entrepreneurs in Sustainability’"
+    title:
+      description: "Title for the content block."
+      label: Title
+      preview: Calendar
+      type: text
+  libraries:
+    -
+      section_callout_blocks_library:
+        css:
+          component:
+            css/section-calendar-blocks.component.css: {}
+        dependencies:
+          - ui_patterns/section_header.section_header_library
+          - ui_patterns/calendar_block.callout_block_library
+          - ui_patterns/calendar_blocks.callout_blocks_library
+  use: "@stanford_components/organisms/section-calendar-blocks/section-calendar-blocks.html.twig"

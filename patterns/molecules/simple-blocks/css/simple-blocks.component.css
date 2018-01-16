@@ -1,0 +1,24 @@
+.simple-blocks::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.simple-blocks .simple-block {
+  max-width: 380px;
+  margin: 0 auto 2em; }
+  @media only screen and (min-width: 768px) {
+    .simple-blocks .simple-block {
+      width: calc(50% - 45px);
+      float: left;
+      margin-left: 30px;
+      max-width: 100%; } }
+  @media only screen and (max-width: 1023px) {
+    .simple-blocks .simple-block:nth-child(2n+1) {
+      clear: both; } }
+  @media only screen and (min-width: 1024px) {
+    .simple-blocks .simple-block {
+      width: calc(33.3333333333% - 40px);
+      float: left;
+      margin-left: 30px; } }
+
+/*# sourceMappingURL=simple-blocks.component.css.map */

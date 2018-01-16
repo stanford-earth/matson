@@ -1,0 +1,95 @@
+# Hero Banner
+#
+hero_banner:
+  label: "Hero banner"
+  description: "A hero banner component"
+  variants:
+    centered_container:
+      label: "Centered Component"
+      description: "Center the component in a responsive container"
+      default: 0
+      options:
+        true: "Centered"
+        0: "Normal"
+    has_tint:
+      label: "Has background tinting"
+      description: "Slight shade over background image"
+      default: no-tint
+      options:
+        no-tint: "No tint"
+        has-tint: "Enabled tint"
+    header_position:
+      label: "Positioning of the text overlay"
+      description: "Choose where you would like to see the text appear over the image"
+      default: 'is-right'
+      options:
+        0: "Centered"
+        is-right: "On the right"
+    is_page_title:
+      label: "Should the banner use an h1 page title?"
+      description: "Use an h1 instead of an h2 for the superhead"
+      default: 0
+      options:
+        0: "Normal header"
+        1: "Page title"
+    is_tall:
+      label: "Is the tall banner (homepage)"
+      description: "The taller version of the hero banner when enabled."
+      default: 0
+      options:
+        is-tall: "Tall"
+        is-short: "Short"
+    racing_stripe:
+      label: "Include lockup and racing stripe"
+      description: "Add a stripe to the header that includes the main site logotype."
+      default: false
+      options:
+        no-racing-stripe: "No"
+        has-racing-stripe: "Yes"
+    stripe_block:
+      label: "Include a block in the racing stripe"
+      description: provide a block machine name to render in the stripe.
+      default: false
+      text_input: true
+      options:
+        system_branding: "System Branding Block"
+  fields:
+    cite:
+      description: "Citation for hero banner background image."
+      label: Cite
+      preview: "Copyright by so-and-so."
+      type: text
+    footer:
+      description: "An open footer area."
+      label: "Footer"
+      preview: "<p>Photo Source: lorempixel.com</p>"
+      type: text
+    image:
+      description: "Hero image or Hero Video."
+      label: "Image or video iFrame"
+      preview:
+        theme: image
+        uri: "https://lorempixel.com/1400/800/nature/2"
+      type: text
+    subhead:
+      description: "Secondary heading to the super head."
+      label: "Sub Head"
+      preview: "Cras justo odio, dapibus ac facilisis in."
+      type: text
+    superhead:
+      description: "The super large heading text."
+      label: "Super Head"
+      preview: "Overlay title"
+      type: text
+    racing_stripe:
+      label: "Racing Stripe"
+      description: "Content for the racing stripe bar when used"
+      preview: ~
+      type: text
+  libraries:
+    -
+      hero-banner_library:
+        css:
+          component:
+            css/hero-banner.component.css: {}
+  use: "@stanford_components/molecules/hero-banner/hero-banner.html.twig"

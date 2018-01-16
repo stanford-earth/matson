@@ -1,0 +1,48 @@
+# Calendar Blocks Pattern
+#
+calendar_blocks:
+  label: "Calendar Blocks"
+  description: "A horizontal list callout blocks with icons and styled text"
+  fields:
+    items:
+      description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, and an image rendered as an html element."
+      label: "A list of simple image cards"
+      type: collection
+      preview:
+        -
+          day: "9"
+          link: "https://www.stanford.edu"
+          month: April
+          subtitle: "Room 104, Green Earth Sciences Building, 367 Panama Street, Stanford"
+          title: "ERE Seminar: NO SEMINAR"
+        -
+          day: "10"
+          link: "https://www.stanford.edu"
+          month: April
+          subtitle: "All are welcome. Y2E2 226"
+          title: "Monday E-IPER Tea"
+        -
+          day: "21"
+          link: "https://www.stanford.edu"
+          month: April
+          subtitle: "Liberal Arts and Private Four-Year Teaching Colleges (PhDs & Postdocs)"
+          title: "Faculty Life and Hiring"
+        -
+          day: "1"
+          link: "https://www.stanford.edu"
+          month: May
+          title: "Special Screening of Documentary  ‘Tomorrow’"
+        -
+          day: "3"
+          link: "https://www.stanford.edu"
+          month: May
+          title: "Women Entrepreneurs in Sustainability’"
+  libraries:
+    -
+      callout_blocks_library:
+        css:
+          component:
+            css/calendar-blocks.component.css: {}
+        dependencies:
+          - ui_patterns/callout_block.calendar_block_library
+  use: "@stanford_components/molecules/calendar-blocks/calendar-blocks.html.twig"

@@ -1,0 +1,14 @@
+.section-header-columns {
+  padding: 2.3076923077em 0; }
+  .section-header-columns::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media only screen and (min-width: 1024px) {
+    .section-header-columns {
+      max-width: 792px;
+      margin: 0 auto; } }
+  .section-header-columns .section-header-columns__header {
+    padding: 1.1538461538em 0; }
+
+/*# sourceMappingURL=section-header-columns.component.css.map */

@@ -1,0 +1,48 @@
+{#
+/**
+ * @file
+ * Card pattern.
+ */
+#}
+{% set attributes = attributes.addClass(['film-card', variants.arrow]) %}
+
+<div{{ attributes }}>
+
+  {# If there is no link, lets wrap the contents with a div to keep similar styles. #}
+  {% if link|openlink is not empty %}
+    {{ link|openlink({class: 'film-card__link', 'aria-label': title|render|striptags|trim}) }}
+  {% else %}
+    <div class="film-card__link">
+  {% endif %}
+
+    <div class="film-card__thumbnail">
+      {{ image }}
+      <div class="film-card__caption">
+
+        {% if title|render is not empty %}
+          <h6 class="film-card__title">{{ title|render|striptags("<br>")|raw }}</h6>
+        {% endif %}
+
+        {% if subtitle is not empty%}
+          <p class="film-card__subtitle">{{ subtitle|render|striptags("<br>")|raw }}</p>
+        {% endif %}
+
+      </div>
+      {% if variants.arrow == 'has-arrow' and link|closelink is not empty%}
+        <div class="film-card__arrow">
+          <svg class="i-svg i-svg--arrow-right" role="img"><title>{{ 'Navigate to item'|t }}</title><use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
+        </div>
+      {% endif %}
+    </div>
+
+  {# If there is no link, close the div from above. #}
+  {% if link|closelink is not empty %}
+    {{ link|closelink }}
+  {% else %}
+    </div>
+  {% endif %}
+
+  {% if description %}
+    <p class="film-card__description">{{ description|render|striptags("<br><a><strong><b><i><em><img><span>")|trim|raw }}</p>
+  {% endif %}
+</div>

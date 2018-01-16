@@ -1,0 +1,47 @@
+# Postcard Pattern
+#
+postcard:
+  label: Postcard
+  description: "A postcard component."
+  variants:
+    image_orientation:
+      label: "Image Orientation"
+      description: "Choose which side the image should appear on."
+      default: has-image-left
+      options:
+        has-image-right: "Image on the right"
+        has-image-left: "Image on the left"
+    text_orientation:
+      label: "Text Orientation"
+      description: "Choose where the text should appear."
+      options:
+        has-text-offset: "Text should overlap over a portion of the image"
+        has-text-inset: "Text should be beside the image"
+  fields:
+    image:
+      description: "Card image."
+      label: Image
+      preview: "https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg"
+      type: text
+    linkurl:
+      description: "The link URL that gets applied to the arrow."
+      label: "URL (optional)"
+      preview: "https://www.stanford.edu"
+      type: text
+    text:
+      description: "Card text."
+      label: Text
+      preview: "<p>Stanford University has been affectionately known as \"The Farm\" ever since it was established by founders Leland and Jane Stanford on their Palo Alto stock farm. The Stanfords' founding grant decreed that \"a farm for instruction in agriculture\" should forever be maintained on university lands.</p>"
+      type: text
+    title:
+      description: "Card title."
+      label: Title
+      preview: "Field Trip"
+      type: text
+  libraries:
+    -
+      postcard_library:
+        css:
+          component:
+            css/postcard.component.css: {}
+  use: "@stanford_components/molecules/postcard/postcard.html.twig"

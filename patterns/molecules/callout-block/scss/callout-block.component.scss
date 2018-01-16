@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.callout-block__icon {
+  img {
+    height: 50px;
+    width: 50px;
+  }
+}

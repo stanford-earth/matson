@@ -1,0 +1,41 @@
+# Callout Blocks Pattern
+#
+callout_block:
+  label: "Callout block"
+  description: "A single of callout block"
+  fields:
+    image:
+      description: "Card image."
+      label: Image
+      preview:
+        alt: "this is a sample image"
+        theme: image
+        uri: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Rectilinear_minimum_spanning_tree.svg"
+      type: image
+    intro:
+      description: "Card intro."
+      label: Intro
+      preview: "We do"
+      type: text
+    link:
+      description: "URI that points somewhere"
+      label: Link
+      preview: "https://stanford.edu"
+      type: url
+    subtitle:
+      description: "Card subtitle."
+      label: Subtitle
+      preview: "on 7 continents"
+      type: text
+    title:
+      description: "Card title."
+      label: Title
+      preview: "Field Learning"
+      type: text
+  libraries:
+    -
+      callout_block_library:
+        css:
+          component:
+            css/callout-block.component.css: {}
+  use: "@stanford_components/molecules/callout-block/callout-block.html.twig"

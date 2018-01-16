@@ -1,0 +1,26 @@
+.simple-slat::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+@media only screen and (min-width: 768px) {
+  .simple-slat .simple-block__image {
+    width: calc(33.3333333333% - 40px);
+    float: left;
+    margin-left: 30px; } }
+
+@media only screen and (min-width: 768px) {
+  .simple-slat .simple-block__content {
+    width: calc(66.6666666667% - 50px);
+    float: left;
+    margin-left: 30px; } }
+
+@media only screen and (min-width: 768px) {
+  .simple-slat.has-image-right .simple-block__image {
+    float: right; } }
+
+@media only screen and (min-width: 768px) {
+  .simple-slat.is-narrow {
+    margin: 0 10%; } }
+
+/*# sourceMappingURL=simple-slat.component.css.map */

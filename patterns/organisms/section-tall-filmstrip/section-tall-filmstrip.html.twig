@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Filmstrip pattern.
+ */
+#}
+{% set header_vars = {
+'link': link,
+'subhead': subhead,
+'superhead': superhead,
+'context': context
+} %}
+
+{% if variants.centered_container %}
+  {{ attach_library('matson/component_centered_container') }}
+  {% set attributes = attributes.addClass('component-centered-container') %}
+{% endif %}
+{% set attributes = attributes.addClass(['section-callout-filmstrip', 'section-tall-filmstrip']) %}
+
+{# Template HTML #}
+<div{{ attributes }}>
+  <div class="filmstrip__header">
+    {{ pattern('section_header', header_vars) }}
+  </div>
+
+  <div class="filmstrip__container expandable-container js-expandable-container {% if variants.is_expanded %}is-open{% endif %}">
+    {{ pattern('filmstrip', {'items': items, 'context': context}) }}
+    {% if not variants.is_expanded and field_count(items) > 4 %}
+      <a href="#" class="expandable-container__toggle js-expandable-container__toggle">
+        <span class="visually-hidden">Show More</span><span class="expandable-container__open"><svg class="i-svg i-svg--plus" role="img"><title>{{ 'Expand for more items'|t }}</title><use xlink:href="#i-plus" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
+      </a>
+    {% endif %}
+  </div>
+</div>

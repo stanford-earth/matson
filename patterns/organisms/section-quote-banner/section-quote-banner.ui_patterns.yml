@@ -1,0 +1,43 @@
+# Section Quote Banner Pattern
+#
+section_quote_banner:
+  label: "Section Quote Banner"
+  description: "A banner with a quote card and photo background"
+  fields:
+    quote:
+      description: Quote for the quote card.
+      label: Quote
+      preview: "I’m fascinated by the way our world works. I use technology to make visible what is not visible to the naked eye."
+      type: text
+    name:
+      description: "Name of the person being quoted."
+      label: Name
+      preview: "Biondo Biondi"
+      type: text
+    title:
+      description: "Professional title."
+      label: Professional title
+      preview: "Geophysics Professor"
+      type: text
+    image:
+      description: "Banner image."
+      label: Image
+      preview: "https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg"
+      type: text
+    quote_image:
+      description: "Quote image."
+      label: Image of person being quoted
+      preview:
+        theme: image
+        uri: "https://lorempixel.com/output/people-q-g-64-64-1.jpg"
+      type: image
+  libraries:
+    -
+      section_quote_banner_library:
+        css:
+          component:
+            css/section-quote-banner.component.css: {}
+        dependencies:
+          - ui_patterns/photo_banner.photo_banner_library
+          - ui_patterns/quote_card.quote_card_library
+  use: "@stanford_components/organisms/section-quote-banner/section-quote-banner.html.twig"

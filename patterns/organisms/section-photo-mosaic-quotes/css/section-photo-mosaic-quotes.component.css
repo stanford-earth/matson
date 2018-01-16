@@ -1,0 +1,122 @@
+.section-photo-mosaic--quotes {
+  margin-bottom: 4.4615384615em; }
+  @media only screen and (max-width: 575px) {
+    .section-photo-mosaic--quotes {
+      padding: 1em calc(((50% /12) * 0) + 15px); }
+      .section-photo-mosaic--quotes::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .section-photo-mosaic--quotes {
+      padding: 1em calc(((50% /12) * 0) + 15px); }
+      .section-photo-mosaic--quotes::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .section-photo-mosaic--quotes {
+      padding: 1em calc(((50% /12) * 0) + 30px); }
+      .section-photo-mosaic--quotes::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .section-photo-mosaic--quotes {
+      padding: 1em calc(((50% /12) * 0) + 30px); }
+      .section-photo-mosaic--quotes::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only screen and (min-width: 1200px) {
+    .section-photo-mosaic--quotes {
+      padding: 1em calc(50% - (750px - 60px)); }
+      .section-photo-mosaic--quotes::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media only print {
+    .section-photo-mosaic--quotes {
+      padding: 1em calc(((50% /12) * 0) + 0.25in); }
+      .section-photo-mosaic--quotes::after {
+        clear: both;
+        content: "";
+        display: block; } }
+
+.photo-mosaic--thumbs-up .photo-tiles__quote {
+  display: none;
+  float: left;
+  position: relative;
+  text-align: right;
+  margin-bottom: 40px; }
+  @media only screen and (min-width: 1024px) {
+    .photo-mosaic--thumbs-up .photo-tiles__quote {
+      display: block;
+      margin-right: 20px;
+      margin-top: -40px; } }
+  .photo-mosaic--thumbs-up .photo-tiles__quote cite::before {
+    right: 0; }
+  .photo-mosaic--thumbs-up .photo-tiles__quote svg {
+    right: 0;
+    left: auto; }
+
+.photo-mosaic--thumbs-down-quote.photo-tiles .photo-tile::after {
+  right: 100px;
+  left: auto; }
+
+@media only screen and (min-width: 1024px) {
+  .photo-mosaic--thumbs-down-quote .photo-thumbs {
+    margin-top: 110px; } }
+
+@media only screen and (min-width: 1024px) {
+  .photo-mosaic--thumbs-down-quote .photo-thumb:nth-child(2) {
+    margin-top: -20px;
+    margin-bottom: 40px; } }
+
+.photo-mosaic--thumbs-down-quote .photo-thumb:nth-child(4) {
+  position: absolute;
+  right: -110px;
+  top: 110px; }
+
+.photo-mosaic--thumbs-down-quote .photo-tiles__quote {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .photo-mosaic--thumbs-down-quote .photo-tiles__quote {
+      display: block;
+      margin-right: -110px;
+      top: -40px; } }
+
+.photo-mosaic--thumbs-down-alt.photo-tiles .photo-tile {
+  float: right; }
+  @media only screen and (min-width: 1024px) {
+    .photo-mosaic--thumbs-down-alt.photo-tiles .photo-tile {
+      float: left; } }
+  .photo-mosaic--thumbs-down-alt.photo-tiles .photo-tile::after {
+    right: auto;
+    left: 100px;
+    top: 50px; }
+    @media only screen and (min-width: 1200px) {
+      .photo-mosaic--thumbs-down-alt.photo-tiles .photo-tile::after {
+        top: 100px; } }
+
+@media only screen and (min-width: 1024px) {
+  .photo-mosaic--thumbs-down-alt .photo-thumbs {
+    margin-top: -20px;
+    margin-bottom: 110px; } }
+
+.photo-mosaic--thumbs-down-alt .photo-thumb {
+  position: relative; }
+  .photo-mosaic--thumbs-down-alt .photo-thumb:nth-child(2) {
+    margin-top: 55px; }
+  .photo-mosaic--thumbs-down-alt .photo-thumb:nth-child(3) {
+    margin-top: -55px; }
+  .photo-mosaic--thumbs-down-alt .photo-thumb:nth-child(4) {
+    display: none;
+    position: absolute;
+    bottom: -130px;
+    left: -110px; }
+    @media only screen and (min-width: 1200px) {
+      .photo-mosaic--thumbs-down-alt .photo-thumb:nth-child(4) {
+        display: block; } }
+
+/*# sourceMappingURL=section-photo-mosaic-quotes.component.css.map */

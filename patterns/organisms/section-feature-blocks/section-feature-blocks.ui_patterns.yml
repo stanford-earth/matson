@@ -1,0 +1,102 @@
+# Feature Blocks Pattern
+#
+section_feature_blocks:
+  label: "Section Feature Blocks"
+  description: "A horizontal list callout blocks with images"
+  variants:
+    centered_container:
+      label: "Centered Component"
+      description: "Center the component in a responsive container"
+      default: true
+      options:
+        true: "Centered"
+        0: "Full Width"
+    dash_under:
+      label: "Dash Under Header"
+      description: "Dash under h2 or to the left?  Treat as boolean (true/false)"
+      default: has-dash-under
+      options:
+        has-dash-left: Left
+        has-dash-under: Under
+    is_centered:
+      label: Section header position
+      description: "The position of the section header relative to the blocks."
+      default: left-aligned
+      options:
+        left-aligned: Left Aligned
+        is-centered: Centered
+        right-aligned: Right Aligned
+    is_featured:
+      label: "Dash With Emphasis"
+      description: "Dash has emphasis or default brand color?  Treat as boolean (true/false)"
+      default: no-emphasis
+      options:
+        no-emphasis: No Branding
+        has-dash-emphasis: Brand color
+    has_arrow:
+      label: "Has Arrow"
+      description: "Render arrow on card.  Treat as boolean (true/false)."
+      default: true
+      options:
+        true: "Has arrow"
+        0: "Does not have arrow"
+    is_slat:
+      label: "Is a slat"
+      description: "Render slat on medium and up screens.  Treat as boolean (true/false)."
+      default: false
+      options:
+        true: "Render as a slat"
+        0: "Render as a block"
+  fields:
+    items:
+      description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, and an image rendered as an html element."
+      label: "A list of simple image cards"
+      preview:
+        -
+          description: "Stanford Earth faculty and young scientists in the media."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/380/225/nature/5"
+          link: "https://www.stanford.edu"
+          tag: "Research News"
+          title: "Example Title"
+        -
+          description: "News about the School of Earth, Energy & Environmental Sciences."
+          image:
+            theme: image
+            uri: "https://lorempixel.com/380/225/nature/4"
+          link: "https://www.stanford.edu"
+          tag: "School Highlights"
+          title: "Example Title Two"
+        -
+          description: "Discoveries and insights about Earth, its resources, and its environment."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/380/225/nature/3"
+          link: "https://www.stanford.edu"
+          tag: "Media Mentions"
+          title: "Example Title Three"
+      type: collection
+    subhead:
+      description: "Subhead for the content card."
+      label: Subhead
+      preview: "<p>We make an impact through faculty research that uncovers how our planet works, by teaching the next generation to understand and manage Earth’s resources, and by communicating our science to policy makers, influencers and the public.</p>"
+      type: text
+    superhead:
+      description: "Title for the content card."
+      label: Superhead
+      preview: "Our Impact in the World"
+      type: text
+  libraries:
+    -
+      section_feature_blocks_library:
+        css:
+          component:
+            css/section-feature-blocks.component.css: {}
+        dependencies:
+          - ui_patterns/section_header.section_header_library
+          - ui_patterns/simple_block.simple_block_library
+          - ui_patterns/feature_blocks.feature_blocks_library
+  use: "@stanford_components/organisms/section-feature-blocks/section-feature-blocks.html.twig"

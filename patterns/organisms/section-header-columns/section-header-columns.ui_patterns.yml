@@ -1,0 +1,51 @@
+# Section Header Columns Pattern
+#
+section_header_columns:
+  label: "Section Header Columns"
+  description: "A section header with columns of text"
+  variants:
+    dash_under:
+      label: "Dash Under Header"
+      description: "Dash under h2 or to the left?  Treat as boolean (true/false)"
+      default: has-dash-left
+      options:
+        has-dash-left: Left
+        has-dash-under: Under
+    is_featured:
+      label: "Dash With Emphasis"
+      description: "Dash has emphasis or default brand color?  Treat as boolean (true/false)"
+      default: no-emphasis
+      options:
+        no-emphasis: No Branding
+        has-dash-emphasis: Brand color
+  fields:
+    link:
+      description: "Read More Link."
+      label: "Link (optional)"
+      preview: "<a href=\"https://stanford.edu/\">Explore Faculty</a>"
+      type: text
+    subhead:
+      description: "Card text.  Renders full html (eg. <p> & <br />)"
+      label: "Subhead (optional)"
+      preview: ""
+      type: text
+    superhead:
+      description: "Title for the highlight banner."
+      label: Superhead
+      preview: "Our Faculty"
+      type: text
+    content:
+      description: "The rendered html markup for the items if using a view or something else that will already provide the templated output."
+      label: "Rendered Markup (optional)"
+      preview: "We are scientists and we love it! Undergraduates, graduate students, professors, educational staff, and alumni working professionals. We build community in our field trips, classes, and cocurriculars. We care about the Earth and making its resources available to people across the globe now and in the future."
+      type: text
+  libraries:
+    -
+      section_header_columns_library:
+        css:
+          component:
+            css/section-header-columns.component.css: {}
+        dependencies:
+          - ui_patterns/section_header.section_header_library
+          - ui_patterns/simple_columns.simple_columns_library
+  use: "@stanford_components/organisms/section-header-columns/section-header-columns.html.twig"

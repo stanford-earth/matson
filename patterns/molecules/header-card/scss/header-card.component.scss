@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.header-card {
+  background-color: color(white);
+  padding: 30px;
+  text-align: center;
+
+  h2 {
+    position: relative;
+  }
+}

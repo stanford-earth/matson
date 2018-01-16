@@ -1,0 +1,47 @@
+# Callout Cards Pattern
+#
+callout_cards:
+  label: "Callout Cards"
+  description: "A horizontal list callout cards with icons"
+  fields:
+    items:
+      type: collection
+      label: "A list of simple callout cards (optional)"
+      description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, and an image rendered as an html element."
+      preview:
+        -
+          link: https://www.stanford.edu
+          image:
+            theme: image
+            uri: https://upload.wikimedia.org/wikipedia/commons/0/0c/Rectilinear_minimum_spanning_tree.svg
+            alt: "this is a sample image"
+          title: "Geological  Sciences"
+        -
+          link: https://www.stanford.edu
+          image:
+            theme: image
+            uri: https://upload.wikimedia.org/wikipedia/commons/0/0c/Rectilinear_minimum_spanning_tree.svg
+            alt: "this is a sample image"
+          title: "Energy Resources Engineering"
+        -
+          link: https://www.stanford.edu
+          image:
+            theme: image
+            uri: https://upload.wikimedia.org/wikipedia/commons/0/0c/Rectilinear_minimum_spanning_tree.svg
+            alt: "this is a sample image"
+          title: "Geophysics"
+        -
+          link: https://www.stanford.edu
+          image:
+            theme: image
+            uri: https://upload.wikimedia.org/wikipedia/commons/0/0c/Rectilinear_minimum_spanning_tree.svg
+            alt: "this is a sample image"
+          title: "Earth Systems  Program"
+  libraries:
+    - callout_cards_library:
+        css:
+          component:
+            css/callout-cards.component.css: {}
+        dependencies:
+          - ui_patterns/callout_card.callout_card_library
+  use: '@stanford_components/molecules/callout-cards/callout-cards.html.twig'

@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Photo tile pattern.
+ */
+#}
+{% set attributes = attributes.addClass("photo-tile tile-item") %}
+<div{{ attributes }}>
+  {{ link|openlink({class: 'photo-tile__action'}) }}
+    <div class="photo-tile__thumbnail">
+      {{ image }}
+      <div class="photo-tile__header">
+        <div class="photo-tile__title"><h3>{{ title }}</h3></div>
+        <p class="photo-tile__description">{{ description }}</p>
+        <span class="photo-tile__arrow"><svg class="i-svg i-svg--arrow-right" role="img"><title>{{ 'Navigate to item'|t }}</title><use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
+      </div>
+    </div>
+  {{ link|closelink }}
+</div>

@@ -1,0 +1,38 @@
+# Calendar Blocks Pattern
+#
+calendar_block:
+  label: "Calendar block"
+  description: "A single of calendar block"
+  fields:
+    day:
+      description: Day.
+      label: Day
+      preview: "9"
+      type: text
+    link:
+      description: "URI that points somewhere"
+      label: Link
+      preview: "<a href=\"https://stanford.edu\">Stanford</a>"
+      type: url
+    month:
+      description: Month.
+      label: Month
+      preview: April
+      type: text
+    subtitle:
+      description: "Block subtitle."
+      label: Subtitle
+      preview: "Room 104, Green Earth Sciences Building, 367 Panama Street, Stanford"
+      type: text
+    title:
+      description: "Card title."
+      label: Title
+      preview: "ERE Seminar: NO SEMINAR"
+      type: text
+  libraries:
+    -
+      callout_block_library:
+        css:
+          component:
+            css/calendar-block.component.css: {}
+  use: "@stanford_components/molecules/calendar-block/calendar-block.html.twig"

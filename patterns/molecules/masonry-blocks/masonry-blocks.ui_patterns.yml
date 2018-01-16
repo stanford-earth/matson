@@ -1,0 +1,109 @@
+# Masonry Blocks Pattern
+#
+masonry_blocks:
+  label: "Masonry Blocks"
+  description: "A horizontal list masonry blocks"
+  variants:
+    retain_order:
+      default: reorder
+      description: "Keep the set order or allow this to fill gaps by reordering some items."
+      label: "Retain Order"
+      options:
+        maintain-order: "Keep the order of the items"
+        reorder: "Reorder Some Items to Fill Gaps"
+  fields:
+    cards:
+      description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, and an image rendered as an html element."
+      label: "A list of simple blocks"
+      preview:
+        -
+          date: "April 2"
+          description: "A new four-step “framework” aims to test the contribution of climate change to record-setting extreme weather events.After an unusually intense heat wave, downpour or drought, Noah Diffenbaugh and his research group."
+          image:
+            theme: image
+            uri: "https://lorempixel.com/420/225/nature/6"
+          link: "https://www.stanford.edu"
+          tags:
+            -
+              link: "https://stanford.edu"
+              tag: Earth
+          title: "Stanford scientists test links between extreme weather and climate change"
+        -
+          date: "April 2"
+          description: "Stanford Earth faculty and young scientists in the media."
+          image:
+            theme: image
+            uri: "https://lorempixel.com/420/225/nature/6"
+          link: "https://www.stanford.edu"
+          tags:
+            -
+              link: "https://stanford.edu"
+              tag: Earth
+          title: "A conversation with Stanford Earth"
+        -
+          date: "April 2"
+          description: "Stanford Earth faculty and young scientists in the media."
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/225/nature/5"
+          is_column_width: true
+          link: "https://www.stanford.edu"
+          tags:
+            -
+              link: "https://stanford.edu"
+              tag: Earth
+          title: "A conversation with Stanford Earth"
+        -
+          date: "April 13"
+          description: "News about the School of Earth, Energy & Environmental Sciences."
+          image:
+            theme: image
+            uri: "https://lorempixel.com/420/225/nature/6"
+          link: "https://www.stanford.edu"
+          tags:
+            -
+              link: "https://stanford.edu"
+              tag: "Evolution of Earth and Life"
+            -
+              link: "https://stanford.edu"
+              tag: "Dynamic Earth"
+          title: "What is sustainability! A conversation with Stanford Earth Dean Pamela Matson"
+        -
+          action: Join
+          link: "https://www.stanford.edu"
+          tags:
+            -
+              link: "https://stanford.edu"
+              tag: "Evolution of Earth and Life"
+            -
+              link: "https://stanford.edu"
+              tag: "Dynamic Earth"
+          title: "Subscribe and get curated content of the latest news about future of Earth, resources and environment."
+      type: array
+  libraries:
+    -
+      packery:
+        js:
+          https://unpkg.com/packery@2.1/dist/packery.pkgd.min.js:
+            minified: true
+            type: external
+        license:
+          gpl-compatible: true
+          name: "GNU GPL"
+          url: "https://github.com/metafizzy/packery"
+        remote: "https://unpkg.com/packery@2.1/dist/packery.pkgd.min.js"
+        version: "2.1.1"
+    -
+      masonry_blocks_library:
+        css:
+          component:
+            css/masonry-blocks.component.css: {}
+        dependencies:
+          - ui_patterns/tag_item.tag_item_library
+          - ui_patterns/masonry_block.masonry_block_library
+          - ui_patterns/masonry_block.packery
+        js:
+          ../../vendor/js/masonry.pkgd.min.js: {}
+          js/masonry-blocks.js: {}
+  use: "@stanford_components/molecules/masonry-blocks/masonry-blocks.html.twig"

@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+// Decanter config.
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+// Component
+.photo-banner {
+  @include grid-container;
+  @include image-banner();
+}

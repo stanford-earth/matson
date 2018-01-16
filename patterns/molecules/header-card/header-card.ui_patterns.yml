@@ -1,0 +1,51 @@
+# Header Card Pattern
+header_card:
+  description: "Header with title and alternate description"
+  label: "Header Card"
+  variants:
+    dash_under:
+      label: "Dash Under Header"
+      description: "Dash under h2 or to the left?  Treat as boolean (true/false)"
+      default: has-dash-under
+      options:
+        has-dash-left: Left
+        has-dash-under: Under
+    is_centered:
+      label: Centered
+      description: "Flag to determine whether h2 should be centered.  Treat as boolean (true/false)."
+      default: is-centered
+      options:
+        left-aligned: Left Aligned
+        is-centered: Centered
+    is_featured:
+      label: "Dash With Emphasis"
+      description: "Dash has emphasis or default brand color?  Treat as boolean (true/false)"
+      default: no-emphasis
+      options:
+        no-emphasis: No Branding
+        has-dash-emphasis: Brand color
+  fields:
+    link:
+      description: "Read More Link."
+      label: "Link (optional)"
+      preview: "<a href=\"https://stanford.edu/\">All Research Groups</a>"
+      type: text
+    subhead:
+      description: "Card text.  Renders full html (eg. <p> & <br />)"
+      label: Subhead
+      preview: "<p>Check out the wide variety of courses on all aspects of food and water security from Redesigning Food Systems, to Feeding Nine Billion, The Energy Water Nexus, World Food Economy, and Near-Surface Geophysics</p>"
+      type: text
+    superhead:
+      description: "Card title."
+      label: Superhead
+      preview: "Food and Water Courses"
+      type: text
+  libraries:
+    -
+      header_card_library:
+        css:
+          component:
+            css/header-card.component.css: {}
+        dependencies:
+          - ui_patterns/section_header.section_header_library
+  use: "@stanford_components/molecules/header-card/header-card.html.twig"

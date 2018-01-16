@@ -1,0 +1,37 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.simple-block__image {
+  @include image-zoom;
+}
+
+.simple-block__link {
+  position: relative;
+  display: block;
+}
+
+.simple-block__thumbnail {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.simple-block__tag {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  z-index: 2;
+}
+
+.simple-block__arrow svg {
+  vertical-align: middle;
+  display: inline;
+}

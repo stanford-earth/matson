@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Highlight cards pattern.
+ */
+#}
+
+{% set attributes = attributes.addClass(['highlight-cards', variants.card_width]) %}
+
+<div{{ attributes }}>
+  {# Break up the individual items in to the appropriate template var. #}
+  {% for item in items %}
+    {% if item.title %}
+      {{ pattern('highlight_card', item) }}
+    {% else %}
+      {{ item }}
+    {% endif %}
+  {% endfor %}
+</div>

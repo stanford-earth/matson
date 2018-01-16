@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Section Spotlight Banner pattern.
+ */
+#}
+
+{%
+  set attributes = attributes.addClass('section-spotlight-banner')
+%}
+{% if image|get_img_src is not empty %}
+  {% set attributes = attributes.setAttribute('style', ['background-image:url(' ~ image|get_img_src ~ ')']) %}
+{% endif %}
+
+<div {{ attributes }} >
+
+  {%  set quote_vars = {
+    'quote': quote,
+    'name': name,
+    'title': title,
+    'image': quote_image,
+    'context': context
+  } %}
+  {{ pattern('spotlight_card', quote_vars) }}
+
+</div>

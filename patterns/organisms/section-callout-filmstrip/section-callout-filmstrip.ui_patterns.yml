@@ -1,0 +1,116 @@
+# Callout Filmstrip Pattern
+#
+section_callout_filmstrip:
+  label: "Section Callout Filmstrip"
+  description: "A horizontal list of small images with section header"
+  variants:
+    dash_under:
+      label: "Dash Under Header"
+      description: "Dash under h2 or to the left?  Treat as boolean (true/false)"
+      default: has-dash-under
+      options:
+        has-dash-left: Left
+        has-dash-under: Under
+    is_centered:
+      label: Centered
+      description: "Flag to determine whether h2 should be centered.  Treat as boolean (true/false)."
+      default: left-aligned
+      options:
+        left-aligned: Left Aligned
+        is-centered: Centered
+    is_featured:
+      label: "Dash With Emphasis"
+      description: "Dash has emphasis or default brand color?  Treat as boolean (true/false)"
+      default: no-emphasis
+      options:
+        no-emphasis: No Branding
+        has-dash-emphasis: Brand color
+    card_widths:
+      description: "Make cards have flexible rather than fixed widths."
+      label: Flexible widths
+      default: is-flexible
+      options:
+        is-flexible: Flexible Widths
+        fixed-width: Fixed Widths
+    tight:
+      description: "Make cards have flexible rather than fixed widths and tighter margins."
+      label: Flexible widths and tighter margins
+      default: not-tight
+      options:
+        is-tight: Tight
+        not-tight: Loose
+    has_columns:
+      description: "Add left column to grid for section header."
+      label: "Has Columns"
+      default: no-columns
+      options:
+        has-columns: Left Columns
+        no-columns: No Left Columns
+    section_header:
+      description: "Where and how to display the heading text."
+      label: "Section header orientation"
+      default: header-to-top
+      options:
+        header-to-left: Left of filmstrip
+        header-to-top: Above filmstrip
+    arrow:
+      description: "Render arrow on card."
+      label: Arrow
+      default: has-arrow
+      options:
+        has-arrow: Show Arrow
+        no-arrow: No Arrow
+  fields:
+    subhead:
+      description: "Subhead for callout"
+      label: Subhead
+      preview: "<p>Other challenges  we tackle.</p>"
+      type: text
+    superhead:
+      description: "Title for callout"
+      label: Superhead
+      preview: "Explore"
+      type: text
+    items:
+      description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, and an image rendered as an html element."
+      label: "A list of simple image cards"
+      type: collection
+      preview:
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/277/nature/1"
+          link: "https://www.stanford.edu"
+          title: "Green Venture Capitalist<br />MBA/MS Environmental<br />Resources '08"
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/277/nature/2"
+          link: "https://www.stanford.edu"
+          title: "Product Designer<br />Earth Systems BS '06,<br /> MS '10"
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/277/nature/3"
+          link: "https://www.stanford.edu"
+          title: "Energy Engineer<br />Energy Resources Engineering<br />MS '16"
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/420/277/nature/6"
+          link: "https://www.stanford.edu"
+          title: "Environmental attorney<br />Earth Systems BS, 05<br />MS '09"
+  libraries:
+    -
+      section_callout_filmstrip_library:
+        css:
+          component:
+            css/section-callout-filmstrip.component.css: {}
+        dependencies:
+          - ui_patterns/section_header.section_header_library
+          - ui_patterns/filmstrip.filmstrip_library
+  use: "@stanford_components/organisms/section-callout-filmstrip/section-callout-filmstrip.html.twig"

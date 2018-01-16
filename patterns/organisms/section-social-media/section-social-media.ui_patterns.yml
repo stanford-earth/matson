@@ -1,0 +1,74 @@
+# Section Social Media Pattern
+#
+section_social_media:
+  label: "Section Social Media"
+  description: "A group of social media cards"
+  variants:
+    dash_under:
+      label: "Dash Under Header"
+      description: "Dash under h2 or to the left?  Treat as boolean (true/false)"
+      default: has-dash-under
+      options:
+        has-dash-left: Left
+        has-dash-under: Under
+    is_centered:
+      label: Centered
+      description: "Flag to determine whether h2 should be centered.  Treat as boolean (true/false)."
+      default: is-centered
+      options:
+        left-aligned: Left Aligned
+        is-centered: Centered
+    is_featured:
+      label: "Dash With Emphasis"
+      description: "Dash has emphasis or default brand color?  Treat as boolean (true/false)"
+      default: no-emphasis
+      options:
+        no-emphasis: No Branding
+        has-dash-emphasis: Brand color
+  fields:
+    items:
+      type: collection
+      label: "A list of simple image cards with social icons"
+      description: "This template iterates over the items to produce a list of simple image cards with social icons."
+      preview:
+        -
+          platform: 'instagram'
+          link: "https://www.instagram.com/p/BWqZxJ4FLWG/?taken-by=stanfordearth"
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/380/380/nature/10"
+        -
+          platform: 'instagram'
+          link: "https://www.instagram.com/p/BWfqaNPlpqR/?taken-by=stanfordearth"
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://lorempixel.com/380/380/nature/2"
+        -
+          platform: 'twitter'
+          handle: '@stanfordearth'
+          handle_link: "https://twitter.com/StanfordEarth"
+          link: "https://twitter.com/StanfordEarth/status/888102346202505218"
+          description: '#Earthday plans? @StanfordLive presents "The Colorado Apr. 21-22, plus @NatGeo photographer Pete McBride. <a href="https://stanford.io/2o14Vlh">stanford.io/2o14Vlh</a>'
+    subhead:
+      description: "Subhead for callout"
+      label: Subhead
+      preview: ""
+      type: text
+    superhead:
+      description: "Title for callout"
+      label: Superhead
+      preview: "Social Media"
+      type: text
+  libraries:
+    -
+      section_social_media_library:
+        css:
+          component:
+            css/section-social-media.component.css: {}
+        dependencies:
+          - ui_patterns/section_header.section_header_library
+          - ui_patterns/photo_social.photo_social_library
+          - ui_patterns/social_card.social_card_library
+  use: "@stanford_components/organisms/section-social-media/section-social-media.html.twig"

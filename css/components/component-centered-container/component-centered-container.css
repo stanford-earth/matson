@@ -1,0 +1,97 @@
+@media only screen and (max-width: 575px) {
+  .component-centered-container {
+    padding: 1em calc(((50% /12) * 0) + 15px); }
+    .component-centered-container::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .component-centered-container {
+    padding: 1em calc(((50% /12) * 0) + 15px); }
+    .component-centered-container::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .component-centered-container {
+    padding: 1em calc(((50% /12) * 0) + 30px); }
+    .component-centered-container::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1499px) {
+  .component-centered-container {
+    padding: 1em calc(((50% /12) * 0) + 30px); }
+    .component-centered-container::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1500px) {
+  .component-centered-container {
+    padding: 1em calc(50% - (750px - 60px)); }
+    .component-centered-container::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only print {
+  .component-centered-container {
+    padding: 1em calc(((50% /12) * 0) + 0.25in); }
+    .component-centered-container::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (max-width: 575px) {
+  .component-centered-container-margins {
+    margin: 1em calc(((50% /12) * 0) + 15px); }
+    .component-centered-container-margins::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .component-centered-container-margins {
+    margin: 1em calc(((50% /12) * 0) + 15px); }
+    .component-centered-container-margins::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .component-centered-container-margins {
+    margin: 1em calc(((50% /12) * 0) + 30px); }
+    .component-centered-container-margins::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1499px) {
+  .component-centered-container-margins {
+    margin: 1em calc(((50% /12) * 0) + 30px); }
+    .component-centered-container-margins::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1500px) {
+  .component-centered-container-margins {
+    margin: 1em calc(50% - (750px - 60px)); }
+    .component-centered-container-margins::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only print {
+  .component-centered-container-margins {
+    margin: 1em calc(((50% /12) * 0) + 0.25in); }
+    .component-centered-container-margins::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+/*# sourceMappingURL=component-centered-container.css.map */

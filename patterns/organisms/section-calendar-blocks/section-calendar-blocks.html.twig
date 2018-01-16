@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Callout blocks pattern.
+ */
+#}
+{% set attributes = attributes.addClass("section-calendar-blocks") %}
+<div{{ attributes }}>
+  <div class="calendar-blocks__header">
+    {%  set header_vars = {
+      'superhead': superhead,
+      'subhead': subhead,
+      'context': context
+    } %}
+    {{ pattern('section_header', header_vars) }}
+  </div>
+
+  <div class="calendar-blocks__container">
+    <div class="calendar-blocks">
+      {# Break up the individual items in to the appropriate template var. #}
+      {% for item in items %}
+        {# Pass vars through to include template. #}
+        {{ pattern('calendar_block', item|merge({'context': context}) ) }}
+      {% endfor %}
+    </div>
+  </div>
+</div>

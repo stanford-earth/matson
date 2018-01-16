@@ -1,0 +1,169 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+// When many film-cards are displayed in a single filmstrip, they should be
+// be aligned horizontally.
+.filmstrip {
+  .film-card,
+  .filmstrip__top_border,
+  .filmstrip__title {
+    float: none;
+    margin: 0 auto 20px;
+    text-align: center;
+
+    @include grid-media($media-md) {
+      margin: 0 18px 20px 0;
+      text-align: left;
+    }
+  }
+
+  .film-card {
+    @include grid-media($media-md) {
+      float: left;
+      width: 218px;
+    }
+  }
+
+  &.is-flexible,
+  &.is-tight {
+    @include grid-container;
+    max-width: 420px;
+    margin: 0 auto;
+
+    @include grid-media($media-md) {
+      max-width: none;
+    }
+  }
+
+  // Container with flexible film cards
+  &.is-flexible {
+    $callout-filmstrip-flexible: (
+      columns: 12,
+      gutter: 30px,
+    );
+
+    .film-card {
+      margin: 0 0 30px;
+
+      @include grid-media($media-md) {
+        @include grid-column(6, $callout-filmstrip-flexible);
+        max-width: none;
+      }
+
+      @include grid-media($media-lg) {
+        @include grid-column(3, $callout-filmstrip-flexible);
+      }
+    }
+  }
+
+  // Container with tighter margins
+  &.is-tight {
+    $callout-filmstrip-tight: (
+      columns: 12,
+      gutter: 30px,
+    );
+
+    .film-card {
+      margin: 0 0 12px;
+
+      @include grid-media($media-md) {
+        @include grid-column(6, $callout-filmstrip-tight);
+        max-width: none;
+      }
+
+      @include grid-media($media-lg) {
+        @include grid-column(3, $callout-filmstrip-tight);
+      }
+    }
+  }
+
+  // Container with double film cards
+  &.is-double {
+    $callout-filmstrip-flexible: (
+      columns: 12,
+      gutter: 30px
+    );
+
+    .film-card__caption {
+      left: 10px;
+      bottom: 15px;
+    }
+
+    .film-card {
+      margin: 0 0 30px;
+
+      @include grid-media($media-md) {
+        @include grid-column(6, $callout-filmstrip-flexible);
+        max-width: none;
+      }
+
+      @include grid-media($media-lg) {
+        @include grid-column(4, $callout-filmstrip-flexible);
+        &:nth-child(4n) {
+          clear: left;
+        }
+      }
+
+      .film-card__thumbnail {
+        @include image-gradient($image-gradient-bg-color: rgba(0, 0, 0, 0.75));
+        width: 100%;
+        height: 110px;
+      }
+
+      .film-card__link {
+        display: block;
+      }
+
+    }
+  }
+
+  // Container with tall film cards
+  &.is-tall {
+    $callout-filmstrip-flexible: (
+      columns: 12,
+      gutter: 30px,
+    );
+
+    .film-card__caption {
+      left: 10px;
+      bottom: 15px;
+    }
+
+    .film-card {
+      margin: 0 0 30px;
+
+      @include grid-media($media-md) {
+        @include grid-column(6, $callout-filmstrip-flexible);
+        max-width: none;
+      }
+
+      @include grid-media($media-lg) {
+        @include grid-column(3, $callout-filmstrip-flexible);
+
+        &:nth-child(4n+2),
+        &:nth-child(4n+4) {
+          margin-top: -2em;
+        }
+
+        &:nth-child(4n+5) {
+          clear: left;
+        }
+      }
+
+      .film-card__thumbnail {
+        @include image-gradient($image-gradient-bg-color: rgba(0, 0, 0, 0.75));
+        width: initial;
+      }
+
+    }
+
+    .film-card__link {
+      overflow: hidden;
+      display: block;
+    }
+  }
+}

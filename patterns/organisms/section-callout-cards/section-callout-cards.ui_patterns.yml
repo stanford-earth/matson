@@ -1,0 +1,89 @@
+# Callout Cards Pattern
+#
+section_callout_cards:
+  label: "Section Callout Cards"
+  description: "A horizontal list callout cards with icons"
+  variants:
+    dash_under:
+      label: "Dash Under Header"
+      description: "Dash under h2 or to the left?  Treat as boolean (true/false)"
+      default: has-dash-under
+      options:
+        has-dash-left: Left
+        has-dash-under: Under
+    is_centered:
+      label: Centered
+      description: "Flag to determine whether h2 should be centered.  Treat as boolean (true/false)."
+      default: left-aligned
+      options:
+        left-aligned: Left Aligned
+        is-centered: Centered
+    is_featured:
+      label: "Dash With Emphasis"
+      description: "Dash has emphasis or default brand color?  Treat as boolean (true/false)"
+      default: no-emphasis
+      options:
+        no-emphasis: No Branding
+        has-dash-emphasis: Brand color
+    centered_container:
+      label: "Centered Component"
+      description: "Center the component in a responsive container"
+      default: false
+      options:
+        true: "Centered"
+        0: "Normal"
+  fields:
+    items:
+      description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, and an image rendered as an html element."
+      label: "A list of simple image cards"
+      type: collection
+      preview:
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Rectilinear_minimum_spanning_tree.svg"
+          link: "https://www.stanford.edu"
+          title: "Geological Sciences"
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Rectilinear_minimum_spanning_tree.svg"
+          link: "https://www.stanford.edu"
+          title: "Energy Resources Engineering"
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Rectilinear_minimum_spanning_tree.svg"
+          link: "https://www.stanford.edu"
+          title: "Geophysics"
+        -
+          image:
+            alt: "this is a sample image"
+            theme: image
+            uri: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Rectilinear_minimum_spanning_tree.svg"
+          link: "https://www.stanford.edu"
+          title: "Earth Systems Program"
+    subhead:
+      description: "Subhead for the content card."
+      label: Subhead
+      preview: "<p>Today more than 7 billion people inhabit Earth and a billion lack adequate energy.</p>"
+      type: text
+    superhead:
+      description: "Title for the content card."
+      label: Superhead
+      preview: "Major Programs"
+      type: text
+  libraries:
+    -
+      section_callout_cards_library:
+        css:
+          component:
+            css/section-callout-cards.component.css: {}
+        dependencies:
+          - ui_patterns/section_header.section_header_library
+          - ui_patterns/callout_card.callout_card_library
+          - ui_patterns/callout_cards.callout_cards_library
+  use: "@stanford_components/organisms/section-callout-cards/section-callout-cards.html.twig"

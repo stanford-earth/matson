@@ -1,0 +1,14 @@
+{#
+/**
+ * @file
+ * Simple Columns pattern.
+ */
+#}
+
+{% if title|render|trim is not empty %}
+<h2 class="simple-columns__title">{{ title }}</h2>
+{% endif %}
+<div{{ attributes.addClass(['simple-columns', variants.columns]) }}>
+  {{ content }}
+  {{ link }}
+</div>

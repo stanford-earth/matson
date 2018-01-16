@@ -1,0 +1,45 @@
+.collapsible-menu {
+  text-align: center; }
+  .collapsible-menu .nav-items {
+    display: none; }
+    @media only screen and (min-width: 576px) {
+      .collapsible-menu .nav-items {
+        display: block; } }
+    @media only screen and (min-width: 1024px) {
+      .collapsible-menu .nav-items {
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
+    .collapsible-menu .nav-items li {
+      list-style: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      line-height: inherit; }
+  .collapsible-menu .nav-item {
+    color: #112;
+    display: block;
+    width: 100%;
+    padding: 16px; }
+    @media only screen and (min-width: 576px) {
+      .collapsible-menu .nav-item {
+        display: inline-block;
+        width: auto; } }
+    @media only screen and (min-width: 1024px) {
+      .collapsible-menu .nav-item {
+        max-width: 150px; } }
+
+.collapsible-menu__toggle {
+  display: block;
+  padding: 1.5em; }
+  @media only screen and (min-width: 576px) {
+    .collapsible-menu__toggle {
+      display: none; } }
+  .collapsible-menu__toggle:hover, .collapsible-menu__toggle:active, .collapsible-menu__toggle:focus {
+    cursor: pointer; }
+  .collapsible-menu__toggle svg {
+    vertical-align: middle;
+    margin-left: 1em;
+    margin-top: -3px; }
+
+/*# sourceMappingURL=collapsible-menu.component.css.map */

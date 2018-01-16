@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Section Header Columns pattern.
+ */
+#}
+
+{% set attributes = attributes.addClass(['section-header-columns']) %}
+{% set header_vars = {'superhead': superhead, 'subhead': subhead, 'context': context} %}
+{% set content_vars = {'content': content, 'link': link} %}
+
+<div{{ attributes }} >
+  <div class="section-header-columns__header">
+    {{ pattern('section_header', header_vars) }}
+  </div>
+  <div class="section-header-columns__container">
+    {{ pattern('simple_columns', content_vars) }}
+  </div>
+</div>

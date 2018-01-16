@@ -1,0 +1,50 @@
+# Collapsible Menu Pattern
+#
+collapsible_menu:
+  label: "Collapsible Menu"
+  description: "A menu of links that collapses on mobile"
+  fields:
+    items:
+      description: "This template iterates over the items to produce a menu of links."
+      label: "A list of simple links"
+      type: collection
+      preview:
+        -
+          link: "https://www.stanford.edu"
+          name: "Climate Change"
+        -
+          link: "https://www.stanford.edu"
+          name: "Food & Agriculture"
+        -
+          link: "https://www.stanford.edu"
+          name: "Dynamic Earth"
+        -
+          link: "https://www.stanford.edu"
+          name: Energy
+        -
+          link: "https://www.stanford.edu"
+          name: "Human Dimensions & Sustainability"
+        -
+          link: "https://www.stanford.edu"
+          name: "Natural Hazards"
+        -
+          link: "https://www.stanford.edu"
+          name: "Fresh Water Resources"
+        -
+          link: "https://www.stanford.edu"
+          name: "Evolution of Earth & Life"
+        -
+          link: "https://www.stanford.edu"
+          name: Oceans
+  libraries:
+    -
+      collapsible_menu_library:
+        css:
+          component:
+            css/collapsible-menu.component.css: {}
+            css/collapsible-menu.states.css: {}
+        js:
+          js/collapsible-menu.js: {}
+        dependencies:
+          - ui_patterns/nav_item.nav_item_library
+  use: "@stanford_components/molecules/collapsible-menu/collapsible-menu.html.twig"

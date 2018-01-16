@@ -1,0 +1,130 @@
+@media only screen and (max-width: 575px) {
+  .simple-columns__title {
+    padding: 1em calc(((50% /12) * 0) + 15px); }
+    .simple-columns__title::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .simple-columns__title {
+    padding: 1em calc(((50% /12) * 0) + 15px); }
+    .simple-columns__title::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .simple-columns__title {
+    padding: 1em calc(((50% /12) * 0) + 30px); }
+    .simple-columns__title::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .simple-columns__title {
+    padding: 1em calc(((50% /12) * 0) + 30px); }
+    .simple-columns__title::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1200px) {
+  .simple-columns__title {
+    padding: 1em calc(50% - (750px - 60px)); }
+    .simple-columns__title::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only print {
+  .simple-columns__title {
+    padding: 1em calc(((50% /12) * 0) + 0.25in); }
+    .simple-columns__title::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1024px) {
+  .simple-columns__title {
+    margin-left: 200px;
+    padding-top: 0;
+    padding-bottom: 0; } }
+
+@media only screen and (min-width: 576px) {
+  .simple-columns__title {
+    padding-top: 0;
+    padding-bottom: 0; } }
+
+.simple-columns::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+@media only screen and (max-width: 575px) {
+  .simple-columns {
+    padding: 1em calc(((50% /12) * 0) + 15px); }
+    .simple-columns::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .simple-columns {
+    padding: 1em calc(((50% /12) * 0) + 15px); }
+    .simple-columns::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .simple-columns {
+    padding: 1em calc(((50% /12) * 0) + 30px); }
+    .simple-columns::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .simple-columns {
+    padding: 1em calc(((50% /12) * 0) + 30px); }
+    .simple-columns::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1200px) {
+  .simple-columns {
+    padding: 1em calc(50% - (750px - 60px)); }
+    .simple-columns::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only print {
+  .simple-columns {
+    padding: 1em calc(((50% /12) * 0) + 0.25in); }
+    .simple-columns::after {
+      clear: both;
+      content: "";
+      display: block; } }
+
+@media only screen and (min-width: 1024px) {
+  .simple-columns {
+    margin: 0 200px; } }
+
+@media only screen and (min-width: 576px) {
+  .simple-columns {
+    column-count: 2;
+    column-gap: 27px; } }
+
+@media only screen and (min-width: 576px) {
+  .simple-columns.three-columns {
+    column-count: 3; } }
+
+@media only screen and (min-width: 576px) {
+  .simple-columns.four-columns {
+    column-count: 4; } }
+
+/*# sourceMappingURL=simple-columns.component.css.map */

@@ -1,0 +1,63 @@
+@charset 'UTF-8';
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.photo-tile {
+  margin-bottom: 20px;
+  max-width: 380px;
+}
+
+.photo-tile__action {
+  @include image-overlay;
+  position: relative;
+  display: block;
+  color: color(white);
+  z-index: 2;
+
+  @include on-event {
+    color: color(white);
+    text-decoration: none;
+
+    &::before {
+      opacity: 0;
+      transition: all 0.5s;
+    }
+  }
+}
+
+.photo-tile__thumbnail {
+  img {
+    display: block;
+  }
+}
+
+.photo-tile__header {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.photo-tile__title {
+  margin-bottom: 1em;
+}
+
+.photo-tile__description {
+  padding-right: 25px;
+}
+
+.photo-tile__arrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  svg {
+    vertical-align: middle;
+    display: inline;
+    margin-left: 5px;
+  }
+}

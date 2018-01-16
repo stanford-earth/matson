@@ -1,0 +1,22 @@
+# Tag item
+tag_item:
+  label: "Tag item"
+  description: "A single tag item"
+  fields:
+    link:
+      description: "URI that points somewhere"
+      label: Link
+      preview: "https://stanford.edu"
+      type: url
+    tag:
+      description: "Link name."
+      label: Title
+      preview: "Link title"
+      type: text
+  libraries:
+    -
+      tag_item_library:
+        css:
+          component:
+            css/tag-item.component.css: {}
+  use: "@stanford_components/atoms/tag-item/tag-item.html.twig"

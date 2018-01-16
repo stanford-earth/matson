@@ -1,0 +1,33 @@
+@charset 'UTF-8';
+
+
+@import 'decanter/core/utilities/decanter-utilities';
+
+// Grab our mixins.
+@import 'patterns/utilities/utilities';
+
+.photo-social {
+  position: relative;
+  max-width: 380px;
+  max-height: 380px;
+
+  .photo-social__action {
+    position: relative;
+    display: block;
+    color: color(white);
+    z-index: 2;
+
+    @include on-event {
+      color: color(white);
+      text-decoration: none;
+    }
+  }
+
+  img.social-media__badge {
+    position: absolute;
+    z-index: 5;
+    bottom: 15px;
+    left: 15px;
+  }
+
+}
