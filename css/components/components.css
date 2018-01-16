@@ -1962,7 +1962,7 @@
       color: rgba(255, 255, 255, 0.65); }
     .masonry-block.is-action .masonry-block__footer, .masonry-block.is-inverted .masonry-block__footer, .masonry-block.has-background .masonry-block__footer {
       border-top: 1px solid rgba(255, 255, 255, 0.5);
-      margin: 0 15px; }
+      margin: 0 11px; }
     .masonry-block.is-action .masonry-block__arrow:hover svg use, .masonry-block.is-action .masonry-block__arrow:active svg use, .masonry-block.is-action .masonry-block__arrow:focus svg use,
     .masonry-block.is-action .masonry-block__social-link:hover svg use,
     .masonry-block.is-action .masonry-block__social-link:active svg use,
@@ -2047,7 +2047,7 @@
 .masonry-block__footer {
   border-top: 1px solid #D8D8D8;
   color: #D8D8D8;
-  margin: 0 30px;
+  margin: 0 11px;
   padding: 15px 0; }
 
 .masonry-block__social-link:hover svg use, .masonry-block__social-link:active svg use, .masonry-block__social-link:focus svg use {
