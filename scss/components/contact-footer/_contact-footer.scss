@@ -188,7 +188,7 @@
       font-weight: 800;
       letter-spacing: 3px;
       padding: 1em 0;
-      opacity: .5;
+      opacity: .8;
       text-transform: uppercase;
 
       @include grid-media($media-md) {
@@ -254,3 +254,6 @@
     }
   }
 }
+
+
+

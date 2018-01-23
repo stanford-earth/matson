@@ -30,8 +30,12 @@
   margin-bottom: 0;
 }
 
+.film-card__link {
+	color: color(white);
+}
+
 .film-card__description {
-  color: color(ash);
+  color: color(stone);
   letter-spacing: .5px;
   padding-top: 5px;
   margin-bottom: 0;
