@@ -1,4 +1,4 @@
-.content-type__header .social-actions::after, .dash-header::after {
+.dash-header::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -6,7 +6,7 @@
   display: block;
   z-index: 2; }
 
-.content-type__header .social-actions::after, .dash-header::after {
+.dash-header::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -20,13 +20,11 @@
   .content-type__header .page-title {
     margin-top: 10px; }
   .content-type__header .social-actions {
-    margin-bottom: 1.25em;
-    position: relative; }
-    .content-type__header .social-actions::after {
-      background-color: #8c1515;
-      bottom: -.5em;
-      left: 50%;
-      transform: translateX(-50%); }
+    position: relative;
+    border-bottom: 0.5px solid #9c9d9e;
+    border-top: 0.5px solid #9c9d9e;
+    padding: 10px;
+    margin-top: 10px; }
     .content-type__header .social-actions::after {
       left: 0;
       transform: none; }
