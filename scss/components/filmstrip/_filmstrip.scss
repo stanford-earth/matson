@@ -13,6 +13,7 @@
 .filmstrip {
   .filmstrip__title {
     position: relative;
+    color: color(stone);
 
     &::before {
       content: '';
