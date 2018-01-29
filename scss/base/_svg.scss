@@ -16,8 +16,8 @@
   fill: currentcolor;
   position: relative;
   stroke-width: 0;
-  height: 1em;
-  width: 1em;
+  height: 2em;
+  width: 2em;
 
   &.is-red {
     use {
@@ -47,8 +47,8 @@
 .i-svg--twitter,
 .i-svg--fb,
 .i-svg--instagram {
-  height: em(18px);
-  width: em(18px);
+  height: em(30px);
+  width: em(30px);
 }
 
 .i-svg--player {

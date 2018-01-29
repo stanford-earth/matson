@@ -1,4 +1,4 @@
-.content-type__header .social-actions::after, .block--field-s-news-date::after, .field-p-wysiwyg h2::after {
+.field-p-wysiwyg h2::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -6,7 +6,7 @@
   display: block;
   z-index: 2; }
 
-.content-type__header .social-actions::after, .block--field-s-news-date::after, .field-p-wysiwyg h2::after {
+.field-p-wysiwyg h2::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -20,13 +20,11 @@
   .content-type__header .page-title {
     margin-top: 10px; }
   .content-type__header .social-actions {
-    margin-bottom: 1.25em;
-    position: relative; }
-    .content-type__header .social-actions::after {
-      background-color: #8c1515;
-      bottom: -.5em;
-      left: 50%;
-      transform: translateX(-50%); }
+    position: relative;
+    border-bottom: 0.5px solid #9c9d9e;
+    border-top: 0.5px solid #9c9d9e;
+    padding: 10px;
+    margin-top: 10px; }
     .content-type__header .social-actions::after {
       left: 0;
       transform: none; }
@@ -161,7 +159,7 @@
   color: #4d4f53; }
 
 .field-s-news-top-media {
-  color: #9c9d9e;
+  color: #4d4f53;
   margin-top: 50px; }
 
 h1 {
@@ -175,13 +173,11 @@ h1 {
       padding-left: 110px; } }
 
 .block--field-s-news-date {
-  margin-bottom: 1.25em;
-  position: relative; }
-  .block--field-s-news-date::after {
-    background-color: #8c1515;
-    bottom: -.5em;
-    left: 50%;
-    transform: translateX(-50%); }
+  position: relative;
+  border-bottom: 0.5px solid #9c9d9e;
+  border-top: 0.5px solid #9c9d9e;
+  padding: 10px;
+  margin-top: 10px; }
   @media only screen and (min-width: 1024px) {
     .block--field-s-news-date {
       margin-left: 110px; } }
@@ -191,7 +187,9 @@ h1 {
   .block--field-s-news-date .field--field-s-news-date {
     display: inline-block; }
     .block--field-s-news-date .field--field-s-news-date svg {
-      margin-right: .5rem; }
+      margin-right: .5rem;
+      height: 1.6em;
+      color: #017c92; }
   .block--field-s-news-date .field--field-s-news-date__actions {
     display: inline-block;
     padding-right: 5px;
@@ -203,10 +201,13 @@ h1 {
     padding: 0 5px;
     color: #4d4f53; }
   .block--field-s-news-date svg {
-    height: 13px;
+    height: 1.6em;
     vertical-align: middle;
     display: inline;
-    margin-top: -3px; }
+    margin-top: -3px;
+    color: #017c92; }
+    .block--field-s-news-date svg:hover {
+      opacity: .8; }
 
 .field-earth-matters-topic {
   text-transform: uppercase; }
@@ -324,8 +325,8 @@ figure.align-center .figure-container {
   text-decoration: underline; }
 
 .field-p-responsive-image-cred {
-  color: #9c9d9e;
-  text-align: right; }
+  color: #4d4f53;
+  text-align: left; }
 
 .simple-columns {
   color: #4d4f53; }

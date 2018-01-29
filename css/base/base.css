@@ -753,8 +753,8 @@ dl > dt {
   fill: currentcolor;
   position: relative;
   stroke-width: 0;
-  height: 1em;
-  width: 1em; }
+  height: 2em;
+  width: 2em; }
   .i-svg.is-red use {
     fill: #8c1515; }
   .i-svg.is-white use {
@@ -767,8 +767,8 @@ dl > dt {
 .i-svg--twitter,
 .i-svg--fb,
 .i-svg--instagram {
-  height: 1.125em;
-  width: 1.125em; }
+  height: 1.875em;
+  width: 1.875em; }
 
 .i-svg--player {
   height: 4.0625em;

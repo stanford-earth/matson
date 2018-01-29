@@ -1969,7 +1969,7 @@
       color: rgba(255, 255, 255, 0.65); }
     .masonry-block.is-action .masonry-block__footer, .masonry-block.is-inverted .masonry-block__footer, .masonry-block.has-background .masonry-block__footer {
       border-top: 1px solid rgba(255, 255, 255, 0.5);
-      margin: 0 11px; }
+      margin: 0 15px; }
     .masonry-block.is-action .masonry-block__arrow:hover svg use, .masonry-block.is-action .masonry-block__arrow:active svg use, .masonry-block.is-action .masonry-block__arrow:focus svg use,
     .masonry-block.is-action .masonry-block__social-link:hover svg use,
     .masonry-block.is-action .masonry-block__social-link:active svg use,
@@ -3357,10 +3357,13 @@
   padding: 0 10px 0 0; }
 
 .social-actions svg {
-  height: 13px;
+  height: 1.6em;
+  color: #017c92;
   vertical-align: middle;
   display: inline;
   margin-top: -3px; }
+  .social-actions svg:hover {
+    opacity: .8; }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;

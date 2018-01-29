@@ -16,9 +16,14 @@
   }
 
   svg {
-    height: 13px;
+    height: 1.6em;
+    color: color(action);
     vertical-align: middle;
     display: inline;
     margin-top: -3px;
+
+    &:hover {
+      opacity: .8;
+    }
   }
 }
