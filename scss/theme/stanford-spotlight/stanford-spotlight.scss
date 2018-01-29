@@ -31,7 +31,7 @@
 figcaption {
   display: table-caption;
   caption-side: bottom;
-  color: color(ash);
+  color: color(stone);
   text-align: right;
 }
 
@@ -89,6 +89,14 @@ figcaption {
           }
         }
 
+      }
+      .photo-credit {
+        margin: -15px 25px 10px 0px;
+        color: color(ash);
+
+        &::after {
+          @include dash-under ($dash-color: brand);
+        }
       }
     }
   }
