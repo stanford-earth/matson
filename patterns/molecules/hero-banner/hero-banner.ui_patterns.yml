@@ -39,20 +39,6 @@ hero_banner:
       options:
         is-tall: "Tall"
         is-short: "Short"
-    racing_stripe:
-      label: "Include lockup and racing stripe"
-      description: "Add a stripe to the header that includes the main site logotype."
-      default: false
-      options:
-        no-racing-stripe: "No"
-        has-racing-stripe: "Yes"
-    stripe_block:
-      label: "Include a block in the racing stripe"
-      description: provide a block machine name to render in the stripe.
-      default: false
-      text_input: true
-      options:
-        system_branding: "System Branding Block"
   fields:
     cite:
       description: "Citation for hero banner background image."
@@ -80,11 +66,6 @@ hero_banner:
       description: "The super large heading text."
       label: "Super Head"
       preview: "Overlay title"
-      type: text
-    racing_stripe:
-      label: "Racing Stripe"
-      description: "Content for the racing stripe bar when used"
-      preview: ~
       type: text
   libraries:
     -

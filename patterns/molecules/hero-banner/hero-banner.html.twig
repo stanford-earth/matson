@@ -16,7 +16,7 @@
 {% endif %}
 
 {# WRAPPING DIV ATTRIBUTES #}
-{% set attributes = attributes.addClass(['hero-banner', variants.has_tint, variants.racing_stripe, 'has-' ~ asset_type]) %}
+{% set attributes = attributes.addClass(['hero-banner', variants.has_tint, 'has-' ~ asset_type]) %}
 
 {# INNER DIV ATTRIBUTES #}
 {% set inner_attributes = create_attribute({'class': ['hero-banner__inner', variants.is_tall]}) %}
@@ -30,14 +30,6 @@
     {{ image }}
   </div>
 
-  {% if variants.racing_stripe %}
-    <div class="hero-banner__racing_stripe">
-      {% if variants.stripe_block is not empty %}
-        {{ drupal_block(variants.stripe_block) }}
-      {% endif %}
-      {{ racing_stripe }}
-    </div>
-  {% endif %}
   <div{{ inner_attributes }}>
     <div class="hero-banner__container">
       <div{{ header_attributes }}>

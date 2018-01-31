@@ -7,19 +7,15 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-// reset variables
-
-// Pop out the tabs from the dom flow so they hover over.
-@include hero-banner-node;
-
 // MY components.
 @import
-  "subsite/header",
   "subsite/editorial-sidebar",
   "subsite/filmstrip",
   "subsite/floating-sidebar",
+  "subsite/hero-banner",
   "subsite/layout-basic",
   "subsite/link-banner",
+  "subsite/page-title",
   "subsite/postcard",
   "subsite/section-header",
   "subsite/section-callout-blocks",

@@ -1,0 +1,4 @@
+.node-title {
+  @include centered-container();
+  @include container-offset-left;
+}
