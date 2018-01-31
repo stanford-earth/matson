@@ -200,6 +200,9 @@
 .page-subtitle h2 {
   font-size: 28px; }
 
+.page-subtitle .s-person-name__name {
+  font-weight: bolder; }
+
 .page-subtitle span {
   display: block; }
 
@@ -270,8 +273,10 @@ figcaption {
       width: 150vw; } }
 
 .content-type__media-container.left-align-media .content-type__media .photo-credit, .content-type__media-container.centered-media .content-type__media .photo-credit {
-  margin: -15px 25px 10px 0px;
-  color: #9c9d9e; }
+  margin: -15px 30px 10px 0px;
+  color: #4d4f53;
+  line-height: 1.1em;
+  font-size: .8em; }
   .content-type__media-container.left-align-media .content-type__media .photo-credit::after, .content-type__media-container.centered-media .content-type__media .photo-credit::after {
     margin-bottom: 1.25em; }
     .content-type__media-container.left-align-media .content-type__media .photo-credit::after::after, .content-type__media-container.centered-media .content-type__media .photo-credit::after::after {

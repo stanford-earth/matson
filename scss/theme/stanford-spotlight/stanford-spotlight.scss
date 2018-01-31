@@ -23,6 +23,10 @@
     font-size: 28px;
   }
 
+  .s-person-name__name {
+    font-weight:bolder;
+  }
+
   span {
     display: block;
   }
@@ -91,8 +95,10 @@ figcaption {
 
       }
       .photo-credit {
-        margin: -15px 25px 10px 0px;
-        color: color(ash);
+        margin: -15px 30px 10px 0px;
+        color: color(stone);
+        line-height: 1.1em;
+        font-size: .8em;
 
         &::after {
           @include dash-under ($dash-color: brand);
