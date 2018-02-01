@@ -23,6 +23,10 @@
     font-size: 28px;
   }
 
+  .s-person-name__name {
+    font-weight: bolder;
+  }
+
   span {
     display: block;
   }
@@ -31,7 +35,7 @@
 figcaption {
   display: table-caption;
   caption-side: bottom;
-  color: color(ash);
+  color: color(stone);
   text-align: right;
 }
 
@@ -89,6 +93,16 @@ figcaption {
           }
         }
 
+      }
+      .photo-credit {
+        margin: -15px 30px 10px 0;
+        color: color(stone);
+        line-height: 1.1em;
+        font-size: .8em;
+
+        &::after {
+          @include dash-under ($dash-color: brand);
+        }
       }
     }
   }
