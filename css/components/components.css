@@ -2455,6 +2455,13 @@
 .pager__item--last .i-svg-arrow {
   width: 1.5625em; }
 
+.pager__item--first .i-svg,
+.pager__item--next .i-svg,
+.pager__item--previous .i-svg,
+.pager__item--first .i-svg,
+.pager__item--last .i-svg {
+  fill: #8c1515; }
+
 .pager__item--first,
 .pager__item--previous {
   margin-right: 1.0625em; }

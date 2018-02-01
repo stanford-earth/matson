@@ -73,6 +73,10 @@
   .i-svg-arrow {
     width: em(25px);
   }
+
+  .i-svg {
+    fill: color(brand);
+  }
 }
 
 .pager__item--first,
