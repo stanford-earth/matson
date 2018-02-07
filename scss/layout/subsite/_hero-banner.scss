@@ -10,7 +10,10 @@
   }
 }
 
-
 #hero-banner:first-child:not(.component-centered-container-margins) {
   margin-bottom: 0px;
+}
+
+.hero-banner__header.is-right .hero-banner__hgroup {
+  width: auto;
 }

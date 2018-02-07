@@ -152,6 +152,9 @@
 #hero-banner:first-child:not(.component-centered-container-margins) {
   margin-bottom: 0px; }
 
+.hero-banner__header.is-right .hero-banner__hgroup {
+  width: auto; }
+
 @media only screen and (min-width: 768px) {
   .layout--basic {
     padding-left: calc(((50% /12) * 0) + 280px);
