@@ -253,6 +253,9 @@ h1 {
   .field-s-news-summary > :last-child {
     margin-bottom: 0; }
 
+.section-news .field--body {
+  padding-bottom: 0px; }
+
 @media only screen and (min-width: 576px) {
   .layout--basic .field-p-wysiwyg {
     padding: 0 80px 20px; } }
@@ -338,7 +341,7 @@ figure.align-center .figure-container {
   .highlight-card h5 {
     text-transform: uppercase; }
   .highlight-card p {
-    color: #9c9d9e; }
+    color: #4d4f53; }
   .highlight-card h5,
   .highlight-card p {
     font-size: 13px; }

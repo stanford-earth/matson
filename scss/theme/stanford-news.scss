@@ -166,6 +166,10 @@ h1 {
   }
 }
 
+.section-news .field--body {
+    padding-bottom: 0px;
+}
+
 // Layout spacing
 .layout--basic {
   .field-p-wysiwyg {
@@ -250,7 +254,7 @@ figure.align-center .figure-container {
   }
 
   p {
-    color: color(ash);
+    color: color(stone);
   }
 
   h5,

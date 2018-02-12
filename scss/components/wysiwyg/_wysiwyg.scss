@@ -19,7 +19,7 @@
   }
 
   p {
-    margin-bottom: 30px;
+    margin-bottom: 1em;
   }
 
   p + h2 {
@@ -35,9 +35,9 @@
     margin-top: modular-scale(0);
   }
 
-  @media only screen and (min-width: 576px) {
   h2 {
-      font-size: 1.8em;/* for barb. didn't want to change global line-height, etc*/
+    font-size: 1.8em;/* for barb. didn't want to change global line-height, etc*/
+    @include dash-left-offset;
   }
   h3 {
     font-size: 1.6em;
@@ -114,4 +114,29 @@
     clear: both;
   }
 
+//Special styles for Barb to use
+h3.teal, h2.teal {
+  color: #017c92;
+}
+
+h2.cardinal, h3.cardinal {
+  color: #8c1515;
+}
+
+div.well-insert {
+  background-color: #F9F6EF;
+  float: left;
+  clear: none;
+  width: 30%;
+  padding: 15px;
+  margin: 15px;
+}
+
+div.well-insert-right {
+  background-color: #F9F6EF;
+  float: right;
+  clear: none;
+  width: 30%;
+  padding: 15px;
+  margin: 15px;
 }
