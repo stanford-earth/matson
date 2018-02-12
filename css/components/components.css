@@ -3648,7 +3648,7 @@ ul.tabs {
   .field-p-wysiwyg p {
     margin-bottom: 30px; }
   .field-p-wysiwyg p + h2 {
-    margin-top: 50px; }
+    margin-top: 25px; }
   .field-p-wysiwyg blockquote + h1,
   .field-p-wysiwyg blockquote + h2,
   .field-p-wysiwyg blockquote + h3,
@@ -3656,6 +3656,12 @@ ul.tabs {
   .field-p-wysiwyg blockquote + h5,
   .field-p-wysiwyg blockquote + h6 {
     margin-top: 1em; }
+  @media only screen and (min-width: 576px) {
+    .field-p-wysiwyg h2 {
+      font-size: 1.8em;
+      /* for barb. didn't want to change global line-height, etc*/ }
+    .field-p-wysiwyg h3 {
+      font-size: 1.6em; } }
   .field-p-wysiwyg figure {
     display: table;
     margin-bottom: 30px; }

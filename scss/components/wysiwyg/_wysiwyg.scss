@@ -23,7 +23,7 @@
   }
 
   p + h2 {
-    margin-top: 50px;
+    margin-top: 25px;
   }
 
   blockquote + h1,
@@ -34,6 +34,16 @@
   blockquote + h6, {
     margin-top: modular-scale(0);
   }
+
+  @media only screen and (min-width: 576px) {
+  h2 {
+      font-size: 1.8em;/* for barb. didn't want to change global line-height, etc*/
+  }
+  h3 {
+    font-size: 1.6em;
+  }
+  }
+
 
   // Floated images
   figure {
