@@ -2983,6 +2983,9 @@
   display: block;
   z-index: 2; }
 
+.highlight-card__action:hover {
+  color: #016779; }
+
 .section-highlight-cards__container .highlight-cards .highlight-card {
   box-shadow: none; }
 
