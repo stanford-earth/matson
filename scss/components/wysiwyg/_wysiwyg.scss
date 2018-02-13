@@ -36,26 +36,27 @@
   }
 
   h2 {
-    font-size: 1.8em;/* for barb. didn't want to change global line-height, etc*/
     @include dash-left-offset;
+    font-size: 1.8em;
   }
+
   h3 {
     font-size: 1.6em;
   }
-  }
+
 
 
   // Floated images
-  figure {
-    display: table;
-    margin-bottom: 30px;
+figure {
+  display: table;
+  margin-bottom: 30px;
 
-    &.align-right {
-      margin-left: 30px;
+  &.align-right {
+    margin-left: 30px;
     }
 
-    &.align-left {
-      margin-right: 30px;
+  &.align-left {
+    margin-right: 30px;
     }
   }
 
@@ -70,7 +71,7 @@
   figcaption {
     display: table-caption;
     caption-side: bottom;
-    color: color(ash);
+    color: color(stone);
     text-align: left;
   }
 
@@ -115,28 +116,31 @@
   }
 
 //Special styles for Barb to use
-h3.teal, h2.teal {
-  color: #017c92;
+  h3.teal,
+  h2.teal {
+    color: #017c92;
 }
 
-h2.cardinal, h3.cardinal {
-  color: #8c1515;
+   h2.cardinal,
+   h3.cardinal {
+     color: #8c1515;
 }
 
-div.well-insert {
-  background-color: #F9F6EF;
-  float: left;
-  clear: none;
-  width: 30%;
-  padding: 15px;
-  margin: 15px;
+  div.well-insert {
+    background-color: #F9F6EF;
+    float: left;
+    clear: none;
+    width: 30%;
+    padding: 15px;
+    margin: 15px;
 }
 
-div.well-insert-right {
-  background-color: #F9F6EF;
-  float: right;
-  clear: none;
-  width: 30%;
-  padding: 15px;
-  margin: 15px;
+  div.well-insert-right {
+    background-color: #F9F6EF;
+    float: right;
+    clear: none;
+    width: 30%;
+    padding: 15px;
+    margin: 15px;
+}
 }
