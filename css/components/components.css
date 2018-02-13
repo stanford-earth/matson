@@ -2899,6 +2899,15 @@
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .section-expandable-banner .section-header {
       text-align: left; } }
+  .section-expandable-banner .section-header h2, .section-expandable-banner .section-header h3 {
+    color: #fff; }
+  .section-expandable-banner .section-header ul li {
+    color: #fff; }
+  .section-expandable-banner .section-header a {
+    color: #fff;
+    opacity: .8; }
+    .section-expandable-banner .section-header a:hover {
+      opacity: 1; }
   .section-expandable-banner .section-header p {
     color: #fff;
     letter-spacing: .5px;
