@@ -11,6 +11,17 @@
 
 // Stanford Earth styling for the filmstrip top-border
 .filmstrip {
+  &__header {
+    ul {
+      margin-left: 15%;
+
+      li {
+      text-align: left;
+    }
+    }
+
+  }
+
   .filmstrip__title {
     position: relative;
     color: color(stone);

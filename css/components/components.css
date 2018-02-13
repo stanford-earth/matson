@@ -1238,6 +1238,11 @@
   display: block;
   z-index: 2; }
 
+.filmstrip__header ul {
+  margin-left: 15%; }
+  .filmstrip__header ul li {
+    text-align: left; }
+
 .filmstrip .filmstrip__title {
   position: relative;
   color: #4d4f53; }
