@@ -1866,6 +1866,13 @@
     @media only screen and (min-width: 1024px) {
       .link-banner__header p {
         margin: 0; } }
+  .link-banner__header a {
+    color: #FFFFFF;
+    opacity: .8; }
+    .link-banner__header a:hover {
+      opacity: 1; }
+  .link-banner__header ul li {
+    color: #FFFFFF; }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
@@ -3259,6 +3266,9 @@
 
 .simple-block__thumbnail {
   margin-bottom: .5em; }
+
+.simple-block__content p {
+  margin: 0px 0px 0px 0px; }
 
 .simple-block__tag {
   background-color: rgba(0, 0, 0, 0.5);

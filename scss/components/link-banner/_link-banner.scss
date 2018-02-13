@@ -32,4 +32,17 @@
       margin: 0;
     }
   }
+  a {
+    color: #FFFFFF;
+    opacity: .8;
+
+    &:hover {
+      opacity: 1;
+    }
+}
+ul li {
+  color: #FFFFFF;
+
+}
+
 }
