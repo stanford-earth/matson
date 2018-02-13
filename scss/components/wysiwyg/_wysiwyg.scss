@@ -47,9 +47,9 @@
 
 
   // Floated images
-figure {
-  display: table;
-  margin-bottom: 30px;
+  figure {
+    display: table;
+    margin-bottom: 30px;
 
   &.align-right {
     margin-left: 30px;
@@ -121,8 +121,8 @@ figure {
     color: #017c92;
 }
 
-   h2.cardinal,
-   h3.cardinal {
+  h2.cardinal,
+  h3.cardinal {
      color: #8c1515;
 }
 
