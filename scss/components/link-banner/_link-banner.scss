@@ -34,7 +34,7 @@
   }
 
   a {
-    color: #FFF;
+    color: color(white);
     opacity: .8;
 
     &:hover {
@@ -44,8 +44,6 @@
 }
 
   ul li {
-    color: #FFF;
-
-}
-
+    color: color(white);
+  }
 }

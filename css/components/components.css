@@ -1872,12 +1872,12 @@
       .link-banner__header p {
         margin: 0; } }
   .link-banner__header a {
-    color: #FFF;
+    color: #fff;
     opacity: .8; }
     .link-banner__header a:hover {
       opacity: 1; }
   .link-banner__header ul li {
-    color: #FFF; }
+    color: #fff; }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;

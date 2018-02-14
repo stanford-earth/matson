@@ -31,7 +31,7 @@
   blockquote + h3,
   blockquote + h4,
   blockquote + h5,
-  blockquote + h6, {
+  blockquote + h6 {
     margin-top: modular-scale(0);
   }
 
@@ -43,8 +43,6 @@
   h3 {
     font-size: 1.6em;
   }
-
-
 
   // Floated images
   figure {
@@ -118,22 +116,22 @@
 //Special styles for Barb to use
   h3.teal,
   h2.teal {
-    color: #017c92;
-}
+    color: color(action);
+  }
 
   h2.cardinal,
   h3.cardinal {
-    color: #8c1515;
-}
+    color: color(brand);
+  }
 
   div.well-insert {
-    background-color: #F9F6EF;
+    background-color: color(sandstone-light);
     float: left;
     clear: none;
     width: 30%;
     padding: 15px;
     margin: 15px;
-}
+  }
 
   div.well-insert-right {
     background-color: #F9F6EF;
@@ -142,5 +140,5 @@
     width: 30%;
     padding: 15px;
     margin: 15px;
-}
+  }
 }
