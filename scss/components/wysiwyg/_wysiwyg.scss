@@ -19,11 +19,11 @@
   }
 
   p {
-    margin-bottom: 30px;
+    margin-bottom: 1em;
   }
 
   p + h2 {
-    margin-top: 50px;
+    margin-top: 25px;
   }
 
   blockquote + h1,
@@ -31,8 +31,17 @@
   blockquote + h3,
   blockquote + h4,
   blockquote + h5,
-  blockquote + h6, {
+  blockquote + h6 {
     margin-top: modular-scale(0);
+  }
+
+  h2 {
+    @include dash-left-offset;
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.6em;
   }
 
   // Floated images
@@ -60,7 +69,7 @@
   figcaption {
     display: table-caption;
     caption-side: bottom;
-    color: color(ash);
+    color: color(stone);
     text-align: left;
   }
 
@@ -104,4 +113,32 @@
     clear: both;
   }
 
+//Special styles for Barb to use
+  h3.teal,
+  h2.teal {
+    color: color(action);
+  }
+
+  h2.cardinal,
+  h3.cardinal {
+    color: color(brand);
+  }
+
+  div.well-insert {
+    background-color: color(sandstone-light);
+    float: left;
+    clear: none;
+    width: 30%;
+    padding: 15px;
+    margin: 15px;
+  }
+
+  div.well-insert-right {
+    background-color: #F9F6EF;
+    float: right;
+    clear: none;
+    width: 30%;
+    padding: 15px;
+    margin: 15px;
+  }
 }

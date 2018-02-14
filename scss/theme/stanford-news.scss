@@ -49,8 +49,8 @@ h1 {
 // Date field.
 .block--field-s-news-date {
   position: relative;
-  border-bottom: .5px solid color(ash);
-  border-top: .5px solid color(ash);
+  border-bottom: .5px solid color(stone);
+  border-top: .5px solid color(stone);
   padding: 10px;
   margin-top: 10px;
 
@@ -166,6 +166,10 @@ h1 {
   }
 }
 
+.section-news .field--body {
+  padding-bottom: 0;
+}
+
 // Layout spacing
 .layout--basic {
   .field-p-wysiwyg {
@@ -250,7 +254,7 @@ figure.align-center .figure-container {
   }
 
   p {
-    color: color(ash);
+    color: color(stone);
   }
 
   h5,

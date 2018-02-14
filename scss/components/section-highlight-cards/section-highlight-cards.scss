@@ -12,6 +12,9 @@
 // .section-highlight-cards__header {
 //
 // }
+.highlight-card__action:hover {
+  color: color(action-active);
+}
 
 .section-highlight-cards__container {
   .highlight-cards {

@@ -18,6 +18,24 @@
       text-align: left;
     }
 
+    h2,
+    h3 {
+      color: color(white);
+    }
+
+    ul li {
+      color: color(white);
+    }
+
+    a {
+      color: color(white);
+      opacity: .8;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
     p {
       color: color(white);
       letter-spacing: .5px;
