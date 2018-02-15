@@ -187,7 +187,7 @@ module.exports = function(grunt) {
           // LAYOUT.
           'css/layout/stanford-complex-page.css':           'scss/layout/stanford-complex-page.scss',
           'css/layout/research-area.css':                   'scss/layout/research-area.scss',
-          'css/layout/stanford-department.css':             'scss/layout/stanford-department.scss',
+          'css/layout/stanford-subsite.css':                'scss/layout/stanford-subsite.scss',
           'css/layout/stanford-view-page.css':              'scss/layout/stanford-view-page.scss',
           'css/layout/home.css':                            'scss/layout/home.scss',
           'css/layout/layout.css':                          'scss/layout/layout.scss',

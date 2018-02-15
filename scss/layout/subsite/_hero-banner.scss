@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+// Custom for subsite
+.field-s-subsite-hero-banner,
+.dynamic-block-fieldnode-subsite-banner {
+  margin-top: -121px;
+
+  @include grid-media($header-md) {
+    margin-top: -126px;
+  }
+}
+
+#hero-banner:first-child:not(.component-centered-container-margins) {
+  margin-bottom: 0px;
+}
+
+.hero-banner__header.is-right .hero-banner__hgroup {
+  width: auto;
+}

@@ -143,7 +143,7 @@
 
         default:
           // Leave this in as a catch-all.
-          toastr.info("Sorry, something went wrong, I'm just not sure what");
+          toastr.info("Sorry, something went wrong. You provided an incorrect message status for " + message);
           break;
       }
     })

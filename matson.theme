@@ -89,8 +89,8 @@ function matson_page_attachments_alter(array &$attachments) {
         $attachments['#attached']['library'][] = 'matson/stanford_complex_page';
         break;
 
-      case 'stanford_department':
-        $attachments['#attached']['library'][] = 'matson/stanford_department';
+      case 'stanford_subsite':
+        $attachments['#attached']['library'][] = 'matson/stanford_subsite';
         break;
 
       case 'stanford_news':
@@ -112,7 +112,7 @@ function matson_page_attachments_alter(array &$attachments) {
       case 'stanford_spotlight':
         $attachments['#attached']['library'][] = 'matson/stanford_spotlight';
         break;
-        
+
       case 'stanford_view_page':
         $attachments['#attached']['library'][] = 'matson/stanford_view_page';
         break;
