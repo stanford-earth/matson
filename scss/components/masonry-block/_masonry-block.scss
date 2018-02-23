@@ -138,6 +138,34 @@
   }
 }
 
+// For stamps.
+.stamp {
+  @extend .masonry-block;
+}
+
+// JS Enabled only.
+.js {
+  .stamp {
+    @include grid-media($media-md) {
+      position: absolute;
+
+      &.stamp-1 {
+        left: 0;
+        top: 0;
+      }
+      &.stamp-2 {
+        left: 25%;
+        top: 0;
+      }
+      &.stamp-3 {
+        right: 30px;
+        top: 0;
+      }
+    }
+  }
+}
+
+
 .masonry-block__title {
   font-size: 20px;
   line-height: 1.4;

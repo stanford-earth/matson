@@ -32,8 +32,19 @@ image|get_img_src is not empty ? random(['has-image-right','has-image-left'])
   {% set classes = ['is-column-width'] %}
 {% endif %}
 
+{# Add the classes from the random options if not a stamp. #}
+{% if variants.stamp is empty or variants.stamp == "0" %}
+  {% set attributes = attributes.addClass(classes) %}
+{% endif %}
 
-<div{{ attributes.addClass(classes) }}>
+{# Add the stamp classes if set. #}
+{% if variants.stamp is not empty and variants.stamp != "0" %}
+  {% set attributes = attributes.removeClass("masonry-block") %}
+  {% set attributes = attributes.removeClass("js-masonry-item") %}
+  {% set attributes = attributes.addClass(['stamp', 'stamp-' ~ variants.stamp, 'is-inverted']) %}
+{% endif %}
+
+<div{{ attributes }}>
   {% if image|get_img_src is not empty %}
     <div class="masonry-block__image">
       <div class="masonry-block__thumbnail">

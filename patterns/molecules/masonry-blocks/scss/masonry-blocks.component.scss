@@ -6,6 +6,8 @@
 @import 'patterns/utilities/utilities';
 
 .masonry-blocks {
+  position: relative;
+  
   $simple-blocks-grid: (
     columns: 12,
     gutter: 30px,
@@ -19,7 +21,8 @@
     max-width: none;
   }
 
-  .masonry-block {
+  .masonry-block,
+  .stamp {
     margin-bottom: 30px;
     width: 100%;
 

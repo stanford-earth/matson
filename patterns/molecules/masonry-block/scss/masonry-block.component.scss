@@ -168,6 +168,10 @@
   }
 }
 
+.stamp {
+  @extend .masonry-block;
+}
+
 .masonry-block__link {
   position: relative;
   display: block;

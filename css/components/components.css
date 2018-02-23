@@ -1963,84 +1963,97 @@
   display: block;
   z-index: 2; }
 
-.masonry-block {
+.masonry-block, .stamp {
   background-color: #fff; }
-  .masonry-block.is-action, .masonry-block.is-inverted, .masonry-block.has-background {
+  .masonry-block.is-action, .is-action.stamp, .masonry-block.is-inverted, .is-inverted.stamp, .masonry-block.has-background, .has-background.stamp {
     background-color: #8c1515;
     color: #fff; }
-    .masonry-block.is-action .masonry-block__description,
-    .masonry-block.is-action .masonry-block__link,
-    .masonry-block.is-action .masonry-block__footer, .masonry-block.is-inverted .masonry-block__description,
-    .masonry-block.is-inverted .masonry-block__link,
-    .masonry-block.is-inverted .masonry-block__footer, .masonry-block.has-background .masonry-block__description,
-    .masonry-block.has-background .masonry-block__link,
-    .masonry-block.has-background .masonry-block__footer {
+    .masonry-block.is-action .masonry-block__description, .is-action.stamp .masonry-block__description,
+    .masonry-block.is-action .masonry-block__link, .is-action.stamp .masonry-block__link,
+    .masonry-block.is-action .masonry-block__footer, .is-action.stamp .masonry-block__footer, .masonry-block.is-inverted .masonry-block__description, .is-inverted.stamp .masonry-block__description,
+    .masonry-block.is-inverted .masonry-block__link, .is-inverted.stamp .masonry-block__link,
+    .masonry-block.is-inverted .masonry-block__footer, .is-inverted.stamp .masonry-block__footer, .masonry-block.has-background .masonry-block__description, .has-background.stamp .masonry-block__description,
+    .masonry-block.has-background .masonry-block__link, .has-background.stamp .masonry-block__link,
+    .masonry-block.has-background .masonry-block__footer, .has-background.stamp .masonry-block__footer {
       position: relative;
       color: #fff; }
-    .masonry-block.is-action .masonry-block__link:hover, .masonry-block.is-action .masonry-block__link:active, .masonry-block.is-action .masonry-block__link:focus, .masonry-block.is-inverted .masonry-block__link:hover, .masonry-block.is-inverted .masonry-block__link:active, .masonry-block.is-inverted .masonry-block__link:focus, .masonry-block.has-background .masonry-block__link:hover, .masonry-block.has-background .masonry-block__link:active, .masonry-block.has-background .masonry-block__link:focus {
+    .masonry-block.is-action .masonry-block__link:hover, .is-action.stamp .masonry-block__link:hover, .masonry-block.is-action .masonry-block__link:active, .is-action.stamp .masonry-block__link:active, .masonry-block.is-action .masonry-block__link:focus, .is-action.stamp .masonry-block__link:focus, .masonry-block.is-inverted .masonry-block__link:hover, .is-inverted.stamp .masonry-block__link:hover, .masonry-block.is-inverted .masonry-block__link:active, .is-inverted.stamp .masonry-block__link:active, .masonry-block.is-inverted .masonry-block__link:focus, .is-inverted.stamp .masonry-block__link:focus, .masonry-block.has-background .masonry-block__link:hover, .has-background.stamp .masonry-block__link:hover, .masonry-block.has-background .masonry-block__link:active, .has-background.stamp .masonry-block__link:active, .masonry-block.has-background .masonry-block__link:focus, .has-background.stamp .masonry-block__link:focus {
       color: rgba(255, 255, 255, 0.65); }
-    .masonry-block.is-action .masonry-block__footer, .masonry-block.is-inverted .masonry-block__footer, .masonry-block.has-background .masonry-block__footer {
+    .masonry-block.is-action .masonry-block__footer, .is-action.stamp .masonry-block__footer, .masonry-block.is-inverted .masonry-block__footer, .is-inverted.stamp .masonry-block__footer, .masonry-block.has-background .masonry-block__footer, .has-background.stamp .masonry-block__footer {
       border-top: 1px solid rgba(255, 255, 255, 0.5);
       margin: 0 15px; }
-    .masonry-block.is-action .masonry-block__arrow:hover svg use, .masonry-block.is-action .masonry-block__arrow:active svg use, .masonry-block.is-action .masonry-block__arrow:focus svg use,
-    .masonry-block.is-action .masonry-block__social-link:hover svg use,
-    .masonry-block.is-action .masonry-block__social-link:active svg use,
-    .masonry-block.is-action .masonry-block__social-link:focus svg use, .masonry-block.is-inverted .masonry-block__arrow:hover svg use, .masonry-block.is-inverted .masonry-block__arrow:active svg use, .masonry-block.is-inverted .masonry-block__arrow:focus svg use,
-    .masonry-block.is-inverted .masonry-block__social-link:hover svg use,
-    .masonry-block.is-inverted .masonry-block__social-link:active svg use,
-    .masonry-block.is-inverted .masonry-block__social-link:focus svg use, .masonry-block.has-background .masonry-block__arrow:hover svg use, .masonry-block.has-background .masonry-block__arrow:active svg use, .masonry-block.has-background .masonry-block__arrow:focus svg use,
-    .masonry-block.has-background .masonry-block__social-link:hover svg use,
-    .masonry-block.has-background .masonry-block__social-link:active svg use,
-    .masonry-block.has-background .masonry-block__social-link:focus svg use {
+    .masonry-block.is-action .masonry-block__arrow:hover svg use, .is-action.stamp .masonry-block__arrow:hover svg use, .masonry-block.is-action .masonry-block__arrow:active svg use, .is-action.stamp .masonry-block__arrow:active svg use, .masonry-block.is-action .masonry-block__arrow:focus svg use, .is-action.stamp .masonry-block__arrow:focus svg use,
+    .masonry-block.is-action .masonry-block__social-link:hover svg use, .is-action.stamp .masonry-block__social-link:hover svg use,
+    .masonry-block.is-action .masonry-block__social-link:active svg use, .is-action.stamp .masonry-block__social-link:active svg use,
+    .masonry-block.is-action .masonry-block__social-link:focus svg use, .is-action.stamp .masonry-block__social-link:focus svg use, .masonry-block.is-inverted .masonry-block__arrow:hover svg use, .is-inverted.stamp .masonry-block__arrow:hover svg use, .masonry-block.is-inverted .masonry-block__arrow:active svg use, .is-inverted.stamp .masonry-block__arrow:active svg use, .masonry-block.is-inverted .masonry-block__arrow:focus svg use, .is-inverted.stamp .masonry-block__arrow:focus svg use,
+    .masonry-block.is-inverted .masonry-block__social-link:hover svg use, .is-inverted.stamp .masonry-block__social-link:hover svg use,
+    .masonry-block.is-inverted .masonry-block__social-link:active svg use, .is-inverted.stamp .masonry-block__social-link:active svg use,
+    .masonry-block.is-inverted .masonry-block__social-link:focus svg use, .is-inverted.stamp .masonry-block__social-link:focus svg use, .masonry-block.has-background .masonry-block__arrow:hover svg use, .has-background.stamp .masonry-block__arrow:hover svg use, .masonry-block.has-background .masonry-block__arrow:active svg use, .has-background.stamp .masonry-block__arrow:active svg use, .masonry-block.has-background .masonry-block__arrow:focus svg use, .has-background.stamp .masonry-block__arrow:focus svg use,
+    .masonry-block.has-background .masonry-block__social-link:hover svg use, .has-background.stamp .masonry-block__social-link:hover svg use,
+    .masonry-block.has-background .masonry-block__social-link:active svg use, .has-background.stamp .masonry-block__social-link:active svg use,
+    .masonry-block.has-background .masonry-block__social-link:focus svg use, .has-background.stamp .masonry-block__social-link:focus svg use {
       fill: rgba(255, 255, 255, 0.5); }
-    .masonry-block.is-action .masonry-block__arrow svg use,
-    .masonry-block.is-action .masonry-block__social-link svg use, .masonry-block.is-inverted .masonry-block__arrow svg use,
-    .masonry-block.is-inverted .masonry-block__social-link svg use, .masonry-block.has-background .masonry-block__arrow svg use,
-    .masonry-block.has-background .masonry-block__social-link svg use {
+    .masonry-block.is-action .masonry-block__arrow svg use, .is-action.stamp .masonry-block__arrow svg use,
+    .masonry-block.is-action .masonry-block__social-link svg use, .is-action.stamp .masonry-block__social-link svg use, .masonry-block.is-inverted .masonry-block__arrow svg use, .is-inverted.stamp .masonry-block__arrow svg use,
+    .masonry-block.is-inverted .masonry-block__social-link svg use, .is-inverted.stamp .masonry-block__social-link svg use, .masonry-block.has-background .masonry-block__arrow svg use, .has-background.stamp .masonry-block__arrow svg use,
+    .masonry-block.has-background .masonry-block__social-link svg use, .has-background.stamp .masonry-block__social-link svg use {
       fill: #fff; }
-    .masonry-block.is-action .masonry-block__date, .masonry-block.is-inverted .masonry-block__date, .masonry-block.has-background .masonry-block__date {
+    .masonry-block.is-action .masonry-block__date, .is-action.stamp .masonry-block__date, .masonry-block.is-inverted .masonry-block__date, .is-inverted.stamp .masonry-block__date, .masonry-block.has-background .masonry-block__date, .has-background.stamp .masonry-block__date {
       border-right: 1px solid #fff; }
-    .masonry-block.is-action .masonry-block__social-links, .masonry-block.is-inverted .masonry-block__social-links, .masonry-block.has-background .masonry-block__social-links {
+    .masonry-block.is-action .masonry-block__social-links, .is-action.stamp .masonry-block__social-links, .masonry-block.is-inverted .masonry-block__social-links, .is-inverted.stamp .masonry-block__social-links, .masonry-block.has-background .masonry-block__social-links, .has-background.stamp .masonry-block__social-links {
       border-right: 1px solid #fff; }
-  .masonry-block.is-wide .tag-item, .masonry-block.has-image .tag-item, .masonry-block.is-action .tag-item, .masonry-block.is-inverted .tag-item, .masonry-block.has-background .tag-item {
+  .masonry-block.is-wide .tag-item, .is-wide.stamp .tag-item, .masonry-block.has-image .tag-item, .has-image.stamp .tag-item, .masonry-block.is-action .tag-item, .is-action.stamp .tag-item, .masonry-block.is-inverted .tag-item, .is-inverted.stamp .tag-item, .masonry-block.has-background .tag-item, .has-background.stamp .tag-item {
     border-color: #fff;
     color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
-    .masonry-block.is-wide .tag-item:hover, .masonry-block.is-wide .tag-item:active, .masonry-block.is-wide .tag-item:focus, .masonry-block.has-image .tag-item:hover, .masonry-block.has-image .tag-item:active, .masonry-block.has-image .tag-item:focus, .masonry-block.is-action .tag-item:hover, .masonry-block.is-action .tag-item:active, .masonry-block.is-action .tag-item:focus, .masonry-block.is-inverted .tag-item:hover, .masonry-block.is-inverted .tag-item:active, .masonry-block.is-inverted .tag-item:focus, .masonry-block.has-background .tag-item:hover, .masonry-block.has-background .tag-item:active, .masonry-block.has-background .tag-item:focus {
+    .masonry-block.is-wide .tag-item:hover, .is-wide.stamp .tag-item:hover, .masonry-block.is-wide .tag-item:active, .is-wide.stamp .tag-item:active, .masonry-block.is-wide .tag-item:focus, .is-wide.stamp .tag-item:focus, .masonry-block.has-image .tag-item:hover, .has-image.stamp .tag-item:hover, .masonry-block.has-image .tag-item:active, .has-image.stamp .tag-item:active, .masonry-block.has-image .tag-item:focus, .has-image.stamp .tag-item:focus, .masonry-block.is-action .tag-item:hover, .is-action.stamp .tag-item:hover, .masonry-block.is-action .tag-item:active, .is-action.stamp .tag-item:active, .masonry-block.is-action .tag-item:focus, .is-action.stamp .tag-item:focus, .masonry-block.is-inverted .tag-item:hover, .is-inverted.stamp .tag-item:hover, .masonry-block.is-inverted .tag-item:active, .is-inverted.stamp .tag-item:active, .masonry-block.is-inverted .tag-item:focus, .is-inverted.stamp .tag-item:focus, .masonry-block.has-background .tag-item:hover, .has-background.stamp .tag-item:hover, .masonry-block.has-background .tag-item:active, .has-background.stamp .tag-item:active, .masonry-block.has-background .tag-item:focus, .has-background.stamp .tag-item:focus {
       background-color: #fff;
       color: #4d4f53; }
-  .masonry-block.is-wide.has-image-right:not(.has-background) .masonry-block__link, .masonry-block.is-column-width.has-image-right .masonry-block__link {
+  .masonry-block.is-wide.has-image-right:not(.has-background) .masonry-block__link, .is-wide.has-image-right.stamp:not(.has-background) .masonry-block__link, .masonry-block.is-column-width.has-image-right .masonry-block__link, .is-column-width.has-image-right.stamp .masonry-block__link {
     color: #9c9d9e; }
-  .masonry-block.has-columns .masonry-block__description, .masonry-block.is-full-width .masonry-block__description {
+  .masonry-block.has-columns .masonry-block__description, .has-columns.stamp .masonry-block__description, .masonry-block.is-full-width .masonry-block__description, .is-full-width.stamp .masonry-block__description {
     color: #FFF; }
     @media only screen and (min-width: 576px) {
-      .masonry-block.has-columns .masonry-block__description, .masonry-block.is-full-width .masonry-block__description {
+      .masonry-block.has-columns .masonry-block__description, .has-columns.stamp .masonry-block__description, .masonry-block.is-full-width .masonry-block__description, .is-full-width.stamp .masonry-block__description {
         color: #9c9d9e; } }
-  .masonry-block.has-columns .tag-item, .masonry-block.is-full-width .tag-item {
+  .masonry-block.has-columns .tag-item, .has-columns.stamp .tag-item, .masonry-block.is-full-width .tag-item, .is-full-width.stamp .tag-item {
     border-color: #fff;
     color: #fff; }
     @media only screen and (min-width: 768px) {
-      .masonry-block.has-columns .tag-item, .masonry-block.is-full-width .tag-item {
+      .masonry-block.has-columns .tag-item, .has-columns.stamp .tag-item, .masonry-block.is-full-width .tag-item, .is-full-width.stamp .tag-item {
         border-color: #017c92;
         color: #017c92; } }
-    .masonry-block.has-columns .tag-item:hover, .masonry-block.has-columns .tag-item:active, .masonry-block.has-columns .tag-item:focus, .masonry-block.is-full-width .tag-item:hover, .masonry-block.is-full-width .tag-item:active, .masonry-block.is-full-width .tag-item:focus {
+    .masonry-block.has-columns .tag-item:hover, .has-columns.stamp .tag-item:hover, .masonry-block.has-columns .tag-item:active, .has-columns.stamp .tag-item:active, .masonry-block.has-columns .tag-item:focus, .has-columns.stamp .tag-item:focus, .masonry-block.is-full-width .tag-item:hover, .is-full-width.stamp .tag-item:hover, .masonry-block.is-full-width .tag-item:active, .is-full-width.stamp .tag-item:active, .masonry-block.is-full-width .tag-item:focus, .is-full-width.stamp .tag-item:focus {
       background-color: #017c92;
       color: #fff; }
-  .masonry-block.is-action {
+  .masonry-block.is-action, .is-action.stamp {
     background-color: #017c92;
     padding-top: 15px;
     padding-bottom: 15px; }
-    .masonry-block.is-action .masonry-block__title {
+    .masonry-block.is-action .masonry-block__title, .is-action.stamp .masonry-block__title {
       margin-bottom: 30px; }
   @media only screen and (min-width: 768px) {
-    .masonry-block.is-wide .masonry-block__title {
+    .masonry-block.is-wide .masonry-block__title, .is-wide.stamp .masonry-block__title {
       font-size: 30px; } }
-  .masonry-block.is-full-width .masonry-block__title {
+  .masonry-block.is-full-width .masonry-block__title, .is-full-width.stamp .masonry-block__title {
     padding-top: 13px; }
     @media only screen and (min-width: 768px) {
-      .masonry-block.is-full-width .masonry-block__title {
+      .masonry-block.is-full-width .masonry-block__title, .is-full-width.stamp .masonry-block__title {
         font-size: 32px; } }
+
+@media only screen and (min-width: 768px) {
+  .js .stamp {
+    position: absolute; }
+    .js .stamp.stamp-1 {
+      left: 0;
+      top: 0; }
+    .js .stamp.stamp-2 {
+      left: 25%;
+      top: 0; }
+    .js .stamp.stamp-3 {
+      right: 30px;
+      top: 0; } }
 
 .masonry-block__title {
   font-size: 20px;
@@ -2095,8 +2108,7 @@
 #toast-container > div.toast.toast-error {
   display: block;
   opacity: 1;
-  font-size: 14px;
-  width: 80%; }
+  font-size: 14px; }
 
 #toast-container {
   padding-top: 165px; }
@@ -2107,12 +2119,8 @@
   #toast-container .toast-error {
     background-color: rgba(205, 69, 51, 0.9); }
 
-.js #highlighted {
-  display: none; }
-
 #highlighted {
-  order: -60;
-  margin: 0 auto; }
+  order: -60; }
   #highlighted .messages a {
     color: #fff;
     font-weight: bold; }

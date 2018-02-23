@@ -16,6 +16,15 @@ masonry_block:
         random: Random
         simple: Simple
         tall: "Tall Photo"
+    stamp:
+      default: 0
+      description: "Do you want to place as a stamp"
+      label: Stamp
+      options:
+        0: "None"
+        1: "Top Left"
+        2: "Top Center"
+        3: "Top Right"
   fields:
     date:
       description: "Simple Block date"
