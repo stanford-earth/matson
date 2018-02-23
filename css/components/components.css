@@ -2050,10 +2050,12 @@
       top: 0; }
     .js .stamp.stamp-2 {
       left: 25%;
-      top: 0; }
+      top: 0;
+      width: calc(50% - 45px); }
     .js .stamp.stamp-3 {
       right: 30px;
-      top: 0; } }
+      top: 0;
+      background-color: #017c92; } }
 
 .masonry-block__title {
   font-size: 20px;

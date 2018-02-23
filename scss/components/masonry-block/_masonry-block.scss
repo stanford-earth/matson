@@ -156,10 +156,12 @@
       &.stamp-2 {
         left: 25%;
         top: 0;
+        width: calc(50% - 45px);
       }
       &.stamp-3 {
         right: 30px;
         top: 0;
+        background-color: color(action);
       }
     }
   }
