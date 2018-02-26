@@ -141,6 +141,9 @@
 // For stamps.
 .stamp {
   @extend .masonry-block;
+  &.stamp-3 {
+    background: color(action);
+  }
 }
 
 // JS Enabled only.
@@ -161,7 +164,7 @@
       &.stamp-3 {
         right: 30px;
         top: 0;
-        background-color: color(action);
+        background: color(action);
       }
     }
   }

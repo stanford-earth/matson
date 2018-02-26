@@ -2042,6 +2042,9 @@
       .masonry-block.is-full-width .masonry-block__title, .is-full-width.stamp .masonry-block__title {
         font-size: 32px; } }
 
+.stamp.stamp-3 {
+  background: #017c92; }
+
 @media only screen and (min-width: 768px) {
   .js .stamp {
     position: absolute; }
@@ -2055,7 +2058,7 @@
     .js .stamp.stamp-3 {
       right: 30px;
       top: 0;
-      background-color: #017c92; } }
+      background: #017c92; } }
 
 .masonry-block__title {
   font-size: 20px;
