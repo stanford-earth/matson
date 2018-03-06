@@ -165,7 +165,7 @@
 
 .masonry-block__footer {
   border-top: 1px solid color(smoke);
-  color: color(smoke);
+  color: color(stone);
   margin: 0 11px;
   padding: 15px 0;
 }
@@ -173,21 +173,21 @@
 .masonry-block__social-link {
   @include on-event {
     svg use {
-      fill: color(ash);
+      fill: color(smoke);
     }
   }
 
   svg use {
-    fill: color(smoke);
+    fill: color(stone);
   }
 }
 
 .masonry-block__date {
-  border-right: 1px solid color(smoke);
+  border-right: 1px solid color(ash);
 }
 
 .masonry-block__social-links {
-  border-right: 1px solid color(smoke);
+  border-right: 1px solid color(ash);
 }
 
 .masonry-block__arrow svg {
