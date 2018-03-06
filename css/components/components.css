@@ -2041,11 +2041,6 @@
     @media only screen and (min-width: 768px) {
       .masonry-block.is-full-width .masonry-block__title {
         font-size: 32px; } }
-  .masonry-block.stamp a {
-    color: #fff; }
-    .masonry-block.stamp a.button {
-      border: 1px solid #fff;
-      width: 100%; }
 
 .masonry-block__title {
   font-size: 20px;
@@ -2094,6 +2089,11 @@
 
 .section-masonry-blocks {
   background-color: #dad7cb; }
+  .section-masonry-blocks.stamp a {
+    color: #fff; }
+    .section-masonry-blocks.stamp a.button {
+      border: 1px solid #fff;
+      width: 100%; }
 
 #toast-container > div.toast.toast-success,
 #toast-container > div.toast.toast-warning,
