@@ -57,7 +57,6 @@
       >  a {
           color: #222328;
           padding: 16px;
-          font-size: font-size(16px);
           font-weight: 600;
           text-transform: uppercase;
         }
@@ -93,6 +92,7 @@
           text-transform: uppercase;
           letter-spacing: 1px;
           font-weight: 600;
+          font-size: .75em;
           line-height: 1em;
           padding: em(15px) em(15px);
           -webkit-transition: background 0.5s; // Safari.
