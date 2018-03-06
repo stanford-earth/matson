@@ -10,7 +10,7 @@ module.exports = function(grunt) {
       // This is where we set up all the tasks we'd like grunt to watch for changes.
       scripts: {
         files: ['js/source/**/*.js'],
-        tasks: ['uglify', 'drush:ccall'],
+        tasks: ['uglify'],
         options: {
           spawn: false,
         },
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
       },
       twig: {
         files: ['templates/**/*.html.twig'],
-        tasks: ['uglify', 'svgmin', 'imagemin', 'sass', 'drush:ccall']
+        tasks: ['uglify', 'svgmin', 'imagemin', 'sass']
       }
     },
     uglify: {
