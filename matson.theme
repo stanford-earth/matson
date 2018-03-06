@@ -36,6 +36,18 @@ function matson_preprocess_field(&$variables, $hook) {
       $pitem['attributes']['class'][] = $ptype;
     }
   }
+
+  // Node titles.
+  try {
+    $node = \Drupal::request()->attributes->get('node');
+    if ($node) {
+      $variables['node_title'] = $node->getTitle();
+    }
+  }
+  catch (Exception $e) {
+    // Do nothing. We don't care.
+  }
+
 }
 
 /**

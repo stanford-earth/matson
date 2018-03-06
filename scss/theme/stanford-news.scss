@@ -66,6 +66,9 @@ h1 {
   // Date icon
   .field--field-s-news-date {
     display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+    line-height: 50px;
 
     svg {
       margin-right: .5rem;
@@ -77,16 +80,29 @@ h1 {
   // Social icons
   .field--field-s-news-date__actions {
     display: inline-block;
+    height: 50px;
+    line-height: 50px;
     padding-right: 5px;
-    border-left: 1px solid color(fog);
-    margin-left: .75rem;
-    padding-left: .25rem;
+    vertical-align: middle;
+    display: block;
+
+    @include grid-media($media-sm) {
+      display: inline-block;
+      border-left: 1px solid color(fog);
+      margin-left: 20px;
+      padding-left: 20px;
+    }
+
   }
 
   .field--field-s-news-date__action {
     display: inline-block;
-    padding: 0 5px;
     color: color(text-active);
+    vertical-align: top;
+  }
+
+  .email-popup {
+    margin-right: 25px;
   }
 
   svg {
@@ -331,50 +347,64 @@ figure.align-center .figure-container {
   }
 }
 
-.sharrre .box{
-  float:left;
+// Social Sharing Icons.
+.sharrre {
+  margin-right: 10px;
+
+  .box {
+    overflow: hidden;
+    height: 50px;
+    width: 55px;
+    text-align: left;
+    margin: 0;
+    position: relative;
+
+    .count {
+      font-size: 18px;
+      color: #7d9395;
+      font-weight: normal;
+      font-weight: normal;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      line-height: 18px;
+      height: 18px;
+    }
+
+    .share {
+      color: color(action);
+      background: transparent;
+      font-weight: normal;
+      line-height: 1;
+      text-align: center;
+    }
+  }
+
+  .fa {
+    font-size: em(40px);
+    line-height: 40px;
+    margin-top: 4px;
+  }
+
+  .buttons {
+    display:none;
+    position:absolute;
+    margin-left:50px;
+    z-index:10;
+    background-color:#fff;
+  }
+
+  .button {
+    float:left;
+    max-width:50px;
+    margin-left:10px;
+  }
 }
-.sharrre .count {
-  color:#444444;
-  display:block;
-  font-size:17px;
-  line-height:34px;
-  height:34px;
-  padding:4px 0;
-  position:relative;
-  text-align:center;
-  text-decoration:none;
-  width:50px;
-  background-color:#eee;
-  -webkit-border-radius:4px;
-  -moz-border-radius:4px;
-  border-radius:4px;
-}
-.sharrre .share {
-  color:#FFFFFF;
-  display:block;
-  font-size:11px;
-  height:16px;
-  line-height:16px;
-  margin-top:3px;
-  padding:0;
-  text-align:center;
-  text-decoration:none;
-  width:50px;
-  background-color:#9CCE39;
-  -webkit-border-radius:4px;
-  -moz-border-radius:4px;
-  border-radius:4px;
-}
-.sharrre .buttons {
-  display:none;
-  position:absolute;
-  margin-left:50px;
-  z-index:10;
-  background-color:#fff;
-}
-.sharrre .button {
-  float:left;
-  max-width:50px;
-  margin-left:10px;
+
+.facebook-popup {
+  .box {
+    .count {
+      right: 18px;
+    }
+  }
 }

@@ -185,21 +185,33 @@ h1 {
     left: 0;
     transform: none; }
   .block--field-s-news-date .field--field-s-news-date {
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+    line-height: 50px; }
     .block--field-s-news-date .field--field-s-news-date svg {
       margin-right: .5rem;
       height: 1.6em;
       color: #017c92; }
   .block--field-s-news-date .field--field-s-news-date__actions {
     display: inline-block;
+    height: 50px;
+    line-height: 50px;
     padding-right: 5px;
-    border-left: 1px solid #dad7cb;
-    margin-left: .75rem;
-    padding-left: .25rem; }
+    vertical-align: middle;
+    display: block; }
+    @media only screen and (min-width: 576px) {
+      .block--field-s-news-date .field--field-s-news-date__actions {
+        display: inline-block;
+        border-left: 1px solid #dad7cb;
+        margin-left: 20px;
+        padding-left: 20px; } }
   .block--field-s-news-date .field--field-s-news-date__action {
     display: inline-block;
-    padding: 0 5px;
-    color: #4d4f53; }
+    color: #4d4f53;
+    vertical-align: top; }
+  .block--field-s-news-date .email-popup {
+    margin-right: 25px; }
   .block--field-s-news-date svg {
     height: 1.6em;
     vertical-align: middle;
@@ -395,51 +407,47 @@ figure.align-center .figure-container {
   margin: 0.13em 0.2em 0 0;
   line-height: 0.7; }
 
-.sharrre .box {
-  float: left; }
+.sharrre {
+  margin-right: 10px; }
+  .sharrre .box {
+    overflow: hidden;
+    height: 50px;
+    width: 55px;
+    text-align: left;
+    margin: 0;
+    position: relative; }
+    .sharrre .box .count {
+      font-size: 18px;
+      color: #7d9395;
+      font-weight: normal;
+      font-weight: normal;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      line-height: 18px;
+      height: 18px; }
+    .sharrre .box .share {
+      color: #017c92;
+      background: transparent;
+      font-weight: normal;
+      line-height: 1;
+      text-align: center; }
+  .sharrre .fa {
+    font-size: 2.5em;
+    line-height: 40px;
+    margin-top: 4px; }
+  .sharrre .buttons {
+    display: none;
+    position: absolute;
+    margin-left: 50px;
+    z-index: 10;
+    background-color: #fff; }
+  .sharrre .button {
+    float: left;
+    max-width: 50px;
+    margin-left: 10px; }
 
-.sharrre .count {
-  color: #444444;
-  display: block;
-  font-size: 17px;
-  line-height: 34px;
-  height: 34px;
-  padding: 4px 0;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  width: 50px;
-  background-color: #eee;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px; }
-
-.sharrre .share {
-  color: #FFFFFF;
-  display: block;
-  font-size: 11px;
-  height: 16px;
-  line-height: 16px;
-  margin-top: 3px;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-  width: 50px;
-  background-color: #9CCE39;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px; }
-
-.sharrre .buttons {
-  display: none;
-  position: absolute;
-  margin-left: 50px;
-  z-index: 10;
-  background-color: #fff; }
-
-.sharrre .button {
-  float: left;
-  max-width: 50px;
-  margin-left: 10px; }
+.facebook-popup .box .count {
+  right: 18px; }
 
 /*# sourceMappingURL=stanford-news.css.map */
