@@ -2068,6 +2068,8 @@
   color: #D8D8D8;
   margin: 0 11px;
   padding: 15px 0; }
+  .masonry-block__footer i-svg {
+    width: 1em; }
 
 .masonry-block__social-link:hover svg use, .masonry-block__social-link:active svg use, .masonry-block__social-link:focus svg use {
   fill: #9c9d9e; }
