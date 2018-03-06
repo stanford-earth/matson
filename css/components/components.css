@@ -2065,21 +2065,21 @@
 
 .masonry-block__footer {
   border-top: 1px solid #D8D8D8;
-  color: #D8D8D8;
+  color: #4d4f53;
   margin: 0 11px;
   padding: 15px 0; }
 
 .masonry-block__social-link:hover svg use, .masonry-block__social-link:active svg use, .masonry-block__social-link:focus svg use {
-  fill: #9c9d9e; }
-
-.masonry-block__social-link svg use {
   fill: #D8D8D8; }
 
+.masonry-block__social-link svg use {
+  fill: #4d4f53; }
+
 .masonry-block__date {
-  border-right: 1px solid #D8D8D8; }
+  border-right: 1px solid #9c9d9e; }
 
 .masonry-block__social-links {
-  border-right: 1px solid #D8D8D8; }
+  border-right: 1px solid #9c9d9e; }
 
 .masonry-block__arrow svg use {
   fill: #8c1515; }
