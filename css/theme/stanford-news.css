@@ -173,6 +173,9 @@ h1 {
       padding-left: 110px; } }
 
 .block--field-s-news-date {
+  width: calc(58.3333333333% - 23.75px);
+  float: left;
+  margin-left: 15px;
   position: relative;
   border-bottom: 0.5px solid #4d4f53;
   border-top: 0.5px solid #4d4f53;
@@ -211,7 +214,8 @@ h1 {
     color: #4d4f53;
     vertical-align: top; }
   .block--field-s-news-date .email-popup {
-    margin-right: 25px; }
+    border-left: solid 1px #dad7cb;
+    padding-left: 25px; }
   .block--field-s-news-date svg {
     height: 1.6em;
     vertical-align: middle;
@@ -389,7 +393,8 @@ figure.align-center .figure-container {
     color: #4d4f53; }
 
 .field-s-news-source {
-  position: relative; }
+  position: relative;
+  clear: both; }
   @media only screen and (min-width: 1024px) {
     .field-s-news-source {
       margin-left: 110px; } }
@@ -449,5 +454,26 @@ figure.align-center .figure-container {
 
 .facebook-popup .box .count {
   right: 18px; }
+
+.subscribe-wrapper {
+  width: calc(25% - 18.75px);
+  float: left;
+  margin-left: 15px;
+  margin-top: 10px; }
+  @media only screen and (min-width: 768px) {
+    .subscribe-wrapper {
+      width: calc(33.3333333333% - 40px);
+      float: left;
+      margin-left: 30px; } }
+  .subscribe-wrapper a {
+    text-transform: capitalize; }
+  .subscribe-wrapper span {
+    display: block;
+    font-weight: bold;
+    font-size: 1.125em;
+    line-height: 16px; }
+  .subscribe-wrapper .sup,
+  .subscribe-wrapper .suf {
+    font-size: 0.75em; }
 
 /*# sourceMappingURL=stanford-news.css.map */

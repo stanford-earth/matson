@@ -48,6 +48,7 @@ h1 {
 
 // Date field.
 .block--field-s-news-date {
+  @include grid-column(7 of 12);
   position: relative;
   border-bottom: .5px solid color(stone);
   border-top: .5px solid color(stone);
@@ -102,7 +103,8 @@ h1 {
   }
 
   .email-popup {
-    margin-right: 25px;
+    border-left: solid 1px color(fog);
+    padding-left: 25px;
   }
 
   svg {
@@ -323,6 +325,7 @@ figure.align-center .figure-container {
 // Source field.
 .field-s-news-source {
   position: relative;
+  clear: both;
   @include grid-media($media-lg) {
     margin-left: 110px;
   }
@@ -406,5 +409,28 @@ figure.align-center .figure-container {
     .count {
       right: 18px;
     }
+  }
+}
+
+.subscribe-wrapper {
+  @include grid-column(3 of 12);
+  @include grid-media($media-md) {
+    @include grid-column(4 of 12);
+  }
+  margin-top: 10px;
+  a {
+    text-transform: capitalize;
+  }
+
+  span {
+    display: block;
+    font-weight: bold;
+    font-size: em(18px);
+    line-height: 16px;
+  }
+
+  .sup,
+  .suf {
+    font-size: em(12px);
   }
 }

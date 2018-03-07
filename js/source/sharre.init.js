@@ -17,7 +17,13 @@
         enableCounter: true,
         enableHover: false,
         enableTracking: true,
-        buttons: { twitter: { via: 'StanfordEarth', url: '//opensharecount.com/count.json?url=' + newurl, count: true } },
+        buttons: {
+          twitter: {
+            via: 'StanfordEarth',
+            url: '//opensharecount.com/count.json?url=' + newurl,
+            count: true
+          }
+        },
         click: function(api, options) {
           api.simulateClick(".tweet-popup");
           api.openPopup('twitter');

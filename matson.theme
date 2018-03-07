@@ -20,6 +20,13 @@ function matson_preprocess_html(&$variables) {
  */
 function matson_preprocess_field(&$variables, $hook) {
 
+  // Add field specific hook.
+  $field_name = $variables['element']['#field_name'];
+  $funct = 'matson_preprocess_field_' . $field_name;
+  if (function_exists($funct)) {
+    $funct($variables, $hook);
+  }
+
   $first_item = isset($variables['element'][0]) ? $variables['element'][0] : NULL;
   $is_paragraph = isset($first_item['#paragraph']) ? $first_item['#paragraph'] : FALSE;
   $has_items = isset($variables['items']) ? count($variables['items']) : FALSE;
@@ -48,6 +55,25 @@ function matson_preprocess_field(&$variables, $hook) {
     // Do nothing. We don't care.
   }
 
+}
+
+/**
+ * Preprocess for field_s_news_date
+ *
+ * Check to see if the node has been tagged with the earth matters term.
+ * If it has set a template variable so that we can use it in the template.
+ *
+ */
+function matson_preprocess_field_field_s_news_date(&$variables, $hook) {
+  $node = $variables['element']['#object'];
+  $terms = $node->get('field_s_news_category')->getValue();
+  // TID 81 == Earth Matters.
+  foreach ($terms as $index => $value) {
+    if ($value['target_id'] == 81) {
+      $variables['is_earth_matters'] = TRUE;
+      break;
+    }
+  }
 }
 
 /**
