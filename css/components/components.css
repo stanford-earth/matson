@@ -2107,6 +2107,11 @@
 
 .section-masonry-blocks {
   background-color: #dad7cb; }
+  .section-masonry-blocks.stamp a {
+    color: #fff; }
+    .section-masonry-blocks.stamp a.button {
+      border: 1px solid #fff;
+      width: 100%; }
 
 #toast-container > div.toast.toast-success,
 #toast-container > div.toast.toast-warning,

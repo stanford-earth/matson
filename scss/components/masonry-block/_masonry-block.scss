@@ -235,4 +235,13 @@
 
 .section-masonry-blocks {
   background-color: color(fog);
+  &.stamp {
+    a {
+      color: color(white);
+      &.button {
+        border: 1px solid color(white);
+        width: 100%;
+      }
+    }
+  }
 }
