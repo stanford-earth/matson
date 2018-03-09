@@ -103,50 +103,50 @@
     }
 
     // Js to turn Drupal messages into a toastr popup.
-    toastr.options = {
-      "closeButton": true,
-      "debug": false,
-      "newestOnTop": false,
-      "progressBar": false,
-      "positionClass": "toast-top-full-width",
-      "preventDuplicates": false,
-      "onclick": null,
-      "showDuration": "300",
-      "hideDuration": "1000",
-      "timeOut": "0",
-      "extendedTimeOut": "1000",
-      "showEasing": "swing",
-      "hideEasing": "linear",
-      "showMethod": "fadeIn",
-      "hideMethod": "fadeOut"
-    };
-
-    // Hide the non-js message region.
-    $('div.messages').hide();
-
-    // Everybody do the toastr!
-    $('div.messages').each(function () {
-      var message = $(this).html();
-      var type = $(this).attr('role');
-      switch (type) {
-        case 'Status message':
-          toastr.success(message);
-          break;
-
-        case 'Warning message':
-          toastr.warning(message);
-          break;
-
-        case 'Error message':
-          toastr.error(message);
-          break;
-
-        default:
-          // Leave this in as a catch-all.
-          toastr.info("Sorry, something went wrong. You provided an incorrect message status for " + message);
-          break;
-      }
-    })
+    // toastr.options = {
+    //   "closeButton": true,
+    //   "debug": false,
+    //   "newestOnTop": false,
+    //   "progressBar": false,
+    //   "positionClass": "toast-top-full-width",
+    //   "preventDuplicates": false,
+    //   "onclick": null,
+    //   "showDuration": "300",
+    //   "hideDuration": "1000",
+    //   "timeOut": "0",
+    //   "extendedTimeOut": "1000",
+    //   "showEasing": "swing",
+    //   "hideEasing": "linear",
+    //   "showMethod": "fadeIn",
+    //   "hideMethod": "fadeOut"
+    // };
+    //
+    // // Hide the non-js message region.
+    // $('div.messages').hide();
+    //
+    // // Everybody do the toastr!
+    // $('div.messages').each(function () {
+    //   var message = $(this).html();
+    //   var type = $(this).attr('role');
+    //   switch (type) {
+    //     case 'Status message':
+    //       toastr.success(message);
+    //       break;
+    //
+    //     case 'Warning message':
+    //       toastr.warning(message);
+    //       break;
+    //
+    //     case 'Error message':
+    //       toastr.error(message);
+    //       break;
+    //
+    //     default:
+    //       // Leave this in as a catch-all.
+    //       toastr.info("Sorry, something went wrong. You provided an incorrect message status for " + message);
+    //       break;
+    //   }
+    // })
 
   });
 

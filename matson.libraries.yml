@@ -100,10 +100,10 @@ matson:
     theme:
       css/theme/theme.css: {}
       css/theme/print.css: { media: print }
-      js/vendor/toastr/build/toastr.css: {}
+      # js/vendor/toastr/build/toastr.css: {}
   js:
     js/vendor/modernizr.js: {}
-    js/vendor/toastr/build/toastr.min.js: {}
+    # js/vendor/toastr/build/toastr.min.js: {}
     js/build/scripts.js: {}
   dependencies:
     - core/jquery
