@@ -102,52 +102,6 @@
       }
     }
 
-    // Js to turn Drupal messages into a toastr popup.
-    // toastr.options = {
-    //   "closeButton": true,
-    //   "debug": false,
-    //   "newestOnTop": false,
-    //   "progressBar": false,
-    //   "positionClass": "toast-top-full-width",
-    //   "preventDuplicates": false,
-    //   "onclick": null,
-    //   "showDuration": "300",
-    //   "hideDuration": "1000",
-    //   "timeOut": "0",
-    //   "extendedTimeOut": "1000",
-    //   "showEasing": "swing",
-    //   "hideEasing": "linear",
-    //   "showMethod": "fadeIn",
-    //   "hideMethod": "fadeOut"
-    // };
-    //
-    // // Hide the non-js message region.
-    // $('div.messages').hide();
-    //
-    // // Everybody do the toastr!
-    // $('div.messages').each(function () {
-    //   var message = $(this).html();
-    //   var type = $(this).attr('role');
-    //   switch (type) {
-    //     case 'Status message':
-    //       toastr.success(message);
-    //       break;
-    //
-    //     case 'Warning message':
-    //       toastr.warning(message);
-    //       break;
-    //
-    //     case 'Error message':
-    //       toastr.error(message);
-    //       break;
-    //
-    //     default:
-    //       // Leave this in as a catch-all.
-    //       toastr.info("Sorry, something went wrong. You provided an incorrect message status for " + message);
-    //       break;
-    //   }
-    // })
-
   });
 
   $(window).resize(Drupal.debounce(function () {
@@ -157,37 +111,5 @@
       $(document).trigger({ type: 'navbar:close', navbarExpanded: true })
     }
   }, 400));
-
-  $(".facebook-popup, .linkedin-popup").click(function(e) {
-    e.preventDefault();
-    var url = this.href;
-    var opts = 'toolbar=0,scrollbars=1,status=0,menubar=0,resizable=1,width=575,height=400,left=' + (($(window).width() - 575) / 2) + ",top=" + (($(window).height() - 400) / 2);
-    window.open(url, this.title, opts);
-    return false;
-  });
-
-  /**
-   * Pop up twitter links.
-   * @param  {[type]} event [description]
-   * @return {[type]}       [description]
-   */
-  $('.tweet-popup').click(function(event) {
-    event.preventDefault();
-    var url = create_twitter_share_url(this);
-    var opts = 'toolbar=0,scrollbars=1,status=0,menubar=0,resizable=1,width=575,height=400,left=' + (($(window).width() - 575) / 2) + ",top=" + (($(window).height() - 400) / 2);
-    window.open(url, 'twitter', opts);
-    return false;
-  });
-
-  /**
-   * Creates a url for sharing.
-   */
-  function create_twitter_share_url(uri) {
-    var hostname = uri.hostname;
-    if (hostname !== "twitter.com") {
-      return "https://twitter.com/intent/tweet?url=" + encodeURI(uri.href);
-    }
-    return uri.href;
-  };
 
 } (Drupal, jQuery, this));
