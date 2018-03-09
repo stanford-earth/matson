@@ -48,14 +48,19 @@ h1 {
 
 // Date field.
 .block--field-s-news-date {
-  @include grid-column(7 of 12);
   position: relative;
   border-bottom: .5px solid color(stone);
   border-top: .5px solid color(stone);
   padding: 10px;
   margin-top: 10px;
 
+  @include grid-media($media-md) {
+    @include grid-column(8 of 12);
+    margin-left: 0px;
+  }
+
   @include grid-media($media-lg) {
+    @include grid-column(7 of 12);
     margin-left: 110px;
   }
 
@@ -83,15 +88,14 @@ h1 {
     display: inline-block;
     height: 50px;
     line-height: 50px;
-    padding-right: 5px;
     vertical-align: middle;
     display: block;
 
     @include grid-media($media-sm) {
       display: inline-block;
       border-left: 1px solid color(fog);
-      margin-left: 20px;
-      padding-left: 20px;
+      margin-left: 18px;
+      padding-left: 15px;
     }
 
   }
@@ -355,7 +359,6 @@ figure.align-center .figure-container {
   margin-right: 10px;
 
   .box {
-    overflow: hidden;
     height: 50px;
     width: 55px;
     text-align: left;
@@ -372,6 +375,7 @@ figure.align-center .figure-container {
       right: 0px;
       line-height: 18px;
       height: 18px;
+      width: 15px;
     }
 
     .share {
@@ -405,20 +409,30 @@ figure.align-center .figure-container {
 }
 
 .facebook-popup {
+  width: 45px;
   .box {
     .count {
-      right: 18px;
+      right: 13px;
     }
   }
 }
 
 .subscribe-wrapper {
-  @include grid-column(3 of 12);
+  width: 100%;
+  margin-top: 10px;
+
   @include grid-media($media-md) {
     @include grid-column(4 of 12);
+    margin-left: 20px;
   }
-  margin-top: 10px;
+  @include grid-media($media-lg) {
+    @include grid-column(3 of 12);
+    margin-left: 20px;
+  }
+
   a {
+    display: block;
+    width: 100%;
     text-transform: capitalize;
   }
 

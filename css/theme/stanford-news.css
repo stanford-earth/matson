@@ -173,16 +173,22 @@ h1 {
       padding-left: 110px; } }
 
 .block--field-s-news-date {
-  width: calc(58.3333333333% - 23.75px);
-  float: left;
-  margin-left: 15px;
   position: relative;
   border-bottom: 0.5px solid #4d4f53;
   border-top: 0.5px solid #4d4f53;
   padding: 10px;
   margin-top: 10px; }
+  @media only screen and (min-width: 768px) {
+    .block--field-s-news-date {
+      width: calc(66.6666666667% - 50px);
+      float: left;
+      margin-left: 30px;
+      margin-left: 0px; } }
   @media only screen and (min-width: 1024px) {
     .block--field-s-news-date {
+      width: calc(58.3333333333% - 47.5px);
+      float: left;
+      margin-left: 30px;
       margin-left: 110px; } }
   .block--field-s-news-date::after {
     left: 0;
@@ -200,15 +206,14 @@ h1 {
     display: inline-block;
     height: 50px;
     line-height: 50px;
-    padding-right: 5px;
     vertical-align: middle;
     display: block; }
     @media only screen and (min-width: 576px) {
       .block--field-s-news-date .field--field-s-news-date__actions {
         display: inline-block;
         border-left: 1px solid #dad7cb;
-        margin-left: 20px;
-        padding-left: 20px; } }
+        margin-left: 18px;
+        padding-left: 15px; } }
   .block--field-s-news-date .field--field-s-news-date__action {
     display: inline-block;
     color: #4d4f53;
@@ -415,7 +420,6 @@ figure.align-center .figure-container {
 .sharrre {
   margin-right: 10px; }
   .sharrre .box {
-    overflow: hidden;
     height: 50px;
     width: 55px;
     text-align: left;
@@ -430,7 +434,8 @@ figure.align-center .figure-container {
       top: 0px;
       right: 0px;
       line-height: 18px;
-      height: 18px; }
+      height: 18px;
+      width: 15px; }
     .sharrre .box .share {
       color: #017c92;
       background: transparent;
@@ -452,20 +457,29 @@ figure.align-center .figure-container {
     max-width: 50px;
     margin-left: 10px; }
 
-.facebook-popup .box .count {
-  right: 18px; }
+.facebook-popup {
+  width: 45px; }
+  .facebook-popup .box .count {
+    right: 13px; }
 
 .subscribe-wrapper {
-  width: calc(25% - 18.75px);
-  float: left;
-  margin-left: 15px;
+  width: 100%;
   margin-top: 10px; }
   @media only screen and (min-width: 768px) {
     .subscribe-wrapper {
       width: calc(33.3333333333% - 40px);
       float: left;
-      margin-left: 30px; } }
+      margin-left: 30px;
+      margin-left: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    .subscribe-wrapper {
+      width: calc(25% - 37.5px);
+      float: left;
+      margin-left: 30px;
+      margin-left: 20px; } }
   .subscribe-wrapper a {
+    display: block;
+    width: 100%;
     text-transform: capitalize; }
   .subscribe-wrapper span {
     display: block;
