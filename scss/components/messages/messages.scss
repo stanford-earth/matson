@@ -14,7 +14,7 @@
   display: block;
   opacity: 1;
   font-size: 14px;
-  width: 80%;
+  // width: 80%;
 }
 
 #toast-container {
@@ -33,13 +33,13 @@
   }
 }
 
-.js #highlighted {
-  display: none;
-}
+// .js #highlighted {
+//   display: none;
+// }
 
 #highlighted {
   order: -60;
-  margin: 0 auto;
+  // margin: 0 auto;
 
   .messages {
     a {

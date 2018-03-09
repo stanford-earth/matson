@@ -138,6 +138,39 @@
   }
 }
 
+// For stamps.
+.stamp {
+  @extend .masonry-block;
+  &.stamp-3 {
+    background: color(action);
+  }
+}
+
+// JS Enabled only.
+.js {
+  .stamp {
+    @include grid-media($media-md) {
+      position: absolute;
+
+      &.stamp-1 {
+        left: 0;
+        top: 0;
+      }
+      &.stamp-2 {
+        left: 25%;
+        top: 0;
+        width: calc(50% - 45px);
+      }
+      &.stamp-3 {
+        right: 30px;
+        top: 0;
+        background: color(action);
+      }
+    }
+  }
+}
+
+
 .masonry-block__title {
   font-size: 20px;
   line-height: 1.4;
@@ -206,4 +239,13 @@
 
 .section-masonry-blocks {
   background-color: color(fog);
+  &.stamp {
+    a {
+      color: color(white);
+      &.button {
+        border: 1px solid color(white);
+        width: 100%;
+      }
+    }
+  }
 }

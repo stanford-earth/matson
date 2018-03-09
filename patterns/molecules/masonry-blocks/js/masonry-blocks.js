@@ -6,12 +6,16 @@
       // set itemSelector so .grid-sizer is not used in layout
       // columnWidth: '.is-column-width',
       // percentPosition: true
-      itemSelector: '.masonry-block'
+      itemSelector: '.masonry-block',
+      // stamp elements.
+      stamp: '.stamp'
     });
 
     $('.masonry-blocks.reorder').packery({
       // options...
-      itemSelector: '.masonry-block'
+      itemSelector: '.masonry-block',
+      // stamp elements.
+      stamp: '.stamp'
     });
 
   };

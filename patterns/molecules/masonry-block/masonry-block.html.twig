@@ -32,8 +32,19 @@ image|get_img_src is not empty ? random(['has-image-right','has-image-left'])
   {% set classes = ['is-column-width'] %}
 {% endif %}
 
+{# Add the classes from the random options if not a stamp. #}
+{% if variants.stamp is empty or variants.stamp == "0" %}
+  {% set attributes = attributes.addClass(classes) %}
+{% endif %}
 
-<div{{ attributes.addClass(classes) }}>
+{# Add the stamp classes if set. #}
+{% if variants.stamp is not empty and variants.stamp != "0" %}
+  {% set attributes = attributes.removeClass("masonry-block") %}
+  {% set attributes = attributes.removeClass("js-masonry-item") %}
+  {% set attributes = attributes.addClass(['stamp', 'stamp-' ~ variants.stamp, 'is-inverted']) %}
+{% endif %}
+
+<div{{ attributes }}>
   {% if image|get_img_src is not empty %}
     <div class="masonry-block__image">
       <div class="masonry-block__thumbnail">
@@ -60,8 +71,11 @@ image|get_img_src is not empty ? random(['has-image-right','has-image-left'])
     {% endif %}
     <div class="masonry-block__header">
       {% if title is not empty %}
+      {% if variants.stamp is empty or variants.stamp == "0" %}
+
         <h3 class="masonry-block__title"><a class="masonry-block__link"
                                             href="{{ link|render|striptags|trim|raw }}">{{ title }}</a></h3>
+      {% endif %}
       {% endif %}
       {% if description is not empty %}
         <span class="masonry-block__description">{{ description }}</span>
@@ -70,9 +84,9 @@ image|get_img_src is not empty ? random(['has-image-right','has-image-left'])
         {{ link|openlink({class: 'masonry-block__button button__hollow--white'}) }}{{ action }}{{ link|closelink }}
       {% endif %}
     </div>
-    {% if date is not empty %}
-
+      {% if variants.stamp is empty or variants.stamp == "0" %}
       <div class="masonry-block__footer">
+        {% if date is not empty %}
         <div class="masonry-block__date">
           <svg class="i-svg"><use xlink:href="#i-clock" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
           </svg>{{ date }}</div>
@@ -89,8 +103,8 @@ image|get_img_src is not empty ? random(['has-image-right','has-image-left'])
             {{ link|openlink({'aria-label': "Navigate to "|t ~ title|render|striptags|preg_replace(":", "") }) }}<span class="masonry-block__arrow"><svg class="i-svg i-svg--arrow-right" role="img"><title>{{ 'Navigate to item'|t }}</title><use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>{{ link|closelink }}
           </div>
         {% endif %}
-
+        {% endif %}
       </div>
-    {% endif %}
+      {% endif %}
   </div>
 </div>
