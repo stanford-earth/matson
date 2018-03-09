@@ -183,7 +183,7 @@ h1 {
       width: calc(66.6666666667% - 50px);
       float: left;
       margin-left: 30px;
-      margin-left: 0px; } }
+      margin-left: 0; } }
   @media only screen and (min-width: 1024px) {
     .block--field-s-news-date {
       width: calc(58.3333333333% - 47.5px);
@@ -203,7 +203,6 @@ h1 {
       height: 1.6em;
       color: #017c92; }
   .block--field-s-news-date .field--field-s-news-date__actions {
-    display: inline-block;
     height: 50px;
     line-height: 50px;
     vertical-align: middle;
@@ -429,10 +428,9 @@ figure.align-center .figure-container {
       font-size: 18px;
       color: #7d9395;
       font-weight: normal;
-      font-weight: normal;
       position: absolute;
-      top: 0px;
-      right: 0px;
+      top: 0;
+      right: 0;
       line-height: 18px;
       height: 18px;
       width: 15px; }

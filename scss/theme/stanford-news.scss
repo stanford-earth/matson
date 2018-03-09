@@ -56,7 +56,7 @@ h1 {
 
   @include grid-media($media-md) {
     @include grid-column(8 of 12);
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   @include grid-media($media-lg) {
@@ -85,7 +85,6 @@ h1 {
 
   // Social icons
   .field--field-s-news-date__actions {
-    display: inline-block;
     height: 50px;
     line-height: 50px;
     vertical-align: middle;
@@ -369,10 +368,9 @@ figure.align-center .figure-container {
       font-size: 18px;
       color: #7d9395;
       font-weight: normal;
-      font-weight: normal;
       position: absolute;
-      top: 0px;
-      right: 0px;
+      top: 0;
+      right: 0;
       line-height: 18px;
       height: 18px;
       width: 15px;
@@ -394,17 +392,17 @@ figure.align-center .figure-container {
   }
 
   .buttons {
-    display:none;
-    position:absolute;
-    margin-left:50px;
-    z-index:10;
-    background-color:#fff;
+    display: none;
+    position: absolute;
+    margin-left: 50px;
+    z-index: 10;
+    background-color: #fff;
   }
 
   .button {
-    float:left;
-    max-width:50px;
-    margin-left:10px;
+    float: left;
+    max-width: 50px;
+    margin-left: 10px;
   }
 }
 
