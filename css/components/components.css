@@ -1599,7 +1599,7 @@
 
 .hero-banner__footer {
   text-align: center;
-  margin-top: 0px; }
+  margin-top: 0; }
   @media only screen and (max-width: 575px) {
     .hero-banner__footer {
       padding: 1em calc(((50% /12) * 0) + 15px); }
