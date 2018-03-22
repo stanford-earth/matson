@@ -84,11 +84,11 @@ $hero-max-width-lg: 1500px;
 .hero-banner__footer {
   @include responsive-container($default-container);
   @include grid-media($media-md) {
-    text-align: right;
+    text-align: left;
   }
 
   text-align: center;
-  margin-top: -60px;
+  margin-top: 0;
 }
 
 .hero-banner.component-centered-container-margins.has-video {
