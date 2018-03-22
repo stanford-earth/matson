@@ -296,4 +296,32 @@ figcaption {
 .content-type-content > .layout--basic {
   padding: 0; }
 
+.content-type-date__actions.social-actions {
+  height: 69px;
+  line-height: 50px;
+  vertical-align: middle;
+  display: block; }
+
+.sharrre {
+  display: inline-block;
+  color: #4d4f53;
+  vertical-align: top; }
+  .sharrre a {
+    text-decoration: none; }
+  .sharrre svg {
+    height: 1.6em;
+    vertical-align: middle;
+    display: inline;
+    margin-top: -3px;
+    color: #017c92; }
+    .sharrre svg:hover {
+      opacity: .8; }
+
+.email-popup {
+  display: inline-block;
+  color: #4d4f53;
+  vertical-align: top;
+  border-left: solid 1px #dad7cb;
+  padding-left: 25px; }
+
 /*# sourceMappingURL=stanford-spotlight.css.map */
