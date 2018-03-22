@@ -46,15 +46,18 @@ image|get_img_src is not empty ? random(['has-image-right','has-image-left'])
 
 <div{{ attributes }}>
   {% if image|get_img_src is not empty %}
+  {% if variants.stamp is empty or variants.stamp == "0" %}
     <div class="masonry-block__image">
       <div class="masonry-block__thumbnail">
         {{ image }}
       </div>
     </div>
   {% endif %}
+  {% endif %}
 
   <div class="masonry-block__content">
     {% if tags is not empty %}
+    {% if variants.stamp is empty or variants.stamp == "0" %}
       <div class="masonry-block__tags">
 
         {% if tags is iterable %}
@@ -69,13 +72,18 @@ image|get_img_src is not empty ? random(['has-image-right','has-image-left'])
 
       </div>
     {% endif %}
+    {% endif %}
     <div class="masonry-block__header">
       {% if title is not empty %}
-      {% if variants.stamp is empty or variants.stamp == "0" %}
-
-        <h3 class="masonry-block__title"><a class="masonry-block__link"
-                                            href="{{ link|render|striptags|trim|raw }}">{{ title }}</a></h3>
-      {% endif %}
+        <h3 class="masonry-block__title">
+          {% if variants.stamp is empty or variants.stamp == "0" %}
+          <a class="masonry-block__link" href="{{ link|render|striptags|trim|raw }}">
+          {% endif %}
+          {{ title }}
+          {% if variants.stamp is empty or variants.stamp == "0" %}
+          </a>
+          {% endif %}
+        </h3>
       {% endif %}
       {% if description is not empty %}
         <span class="masonry-block__description">{{ description }}</span>
