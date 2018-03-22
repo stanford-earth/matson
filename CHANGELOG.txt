@@ -1,3 +1,9 @@
+Version 8.x-1.1-alpha5                                                2018-03-22
+--------------------------------------------------------------------------------
+- Sharrre code on events and spotlights.
+- Added font awesome so that it shows up.
+- Split out sharrre code so that it is re-used everywhere it is used.
+
 Version 8.x-1.1-alpha4                                                2018-03-22
 --------------------------------------------------------------------------------
 
