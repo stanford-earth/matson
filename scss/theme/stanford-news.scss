@@ -353,68 +353,6 @@ figure.align-center .figure-container {
   }
 }
 
-// Social Sharing Icons.
-.sharrre {
-  margin-right: 10px;
-
-  .box {
-    height: 50px;
-    width: 55px;
-    text-align: left;
-    margin: 0;
-    position: relative;
-
-    .count {
-      font-size: 18px;
-      color: #7d9395;
-      font-weight: normal;
-      position: absolute;
-      top: 0;
-      right: 0;
-      line-height: 18px;
-      height: 18px;
-      width: 15px;
-    }
-
-    .share {
-      color: color(action);
-      background: transparent;
-      font-weight: normal;
-      line-height: 1;
-      text-align: center;
-    }
-  }
-
-  .fa {
-    font-size: em(40px);
-    line-height: 40px;
-    margin-top: 4px;
-  }
-
-  .buttons {
-    display: none;
-    position: absolute;
-    margin-left: 50px;
-    z-index: 10;
-    background-color: #fff;
-  }
-
-  .button {
-    float: left;
-    max-width: 50px;
-    margin-left: 10px;
-  }
-}
-
-.facebook-popup {
-  width: 45px;
-  .box {
-    .count {
-      right: 13px;
-    }
-  }
-}
-
 .subscribe-wrapper {
   width: 100%;
   margin-top: 10px;

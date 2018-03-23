@@ -127,14 +127,6 @@ stanford_news:
   css:
     theme:
       css/theme/stanford-news.css: {}
-  js:
-    https://platform.twitter.com/widgets.js: { type: external, weight: 0 }
-    https://platform.linkedin.com/in.js: { type: external, weight: 0 }
-    js/vendor/jquery.sharrre.min.js: {}
-    js/build/sharre.init.js: {}
-  dependencies:
-    - core/drupal
-    - core/jquery
 
 sharrre:
   version: VERSION
