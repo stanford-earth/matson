@@ -130,3 +130,41 @@ figcaption {
     padding: 0;
   }
 }
+
+.content-type-date__actions.social-actions {
+  height: 69px;
+  line-height: 50px;
+  vertical-align: middle;
+  display: block;
+}
+
+.sharrre {
+  display: inline-block;
+  color: color(text-active);
+  vertical-align: top;
+
+  a {
+    text-decoration: none;
+  }
+
+  svg {
+    height: 1.6em;
+    vertical-align: middle;
+    display: inline;
+    margin-top: -3px;
+    color: color(action);
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+}
+
+.email-popup {
+  display: inline-block;
+  color: color(text-active);
+  vertical-align: top;
+  border-left: solid 1px color(fog);
+  padding-left: 25px;
+}
