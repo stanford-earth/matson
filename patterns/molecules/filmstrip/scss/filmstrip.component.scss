@@ -104,7 +104,7 @@
       @include grid-media($media-lg) {
         @include grid-column(4, $callout-filmstrip-flexible);
         &:nth-child(4n) {
-          clear: left;
+          clear: none;
         }
       }
 
