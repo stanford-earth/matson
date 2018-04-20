@@ -1,3 +1,8 @@
+Version 8.x-1.1-alpha6                                                2018-04-20
+--------------------------------------------------------------------------------
+- Updated title and alt-text on logo to reflect School Name
+- Added 1/4-size image style to media widget.
+
 Version 8.x-1.1-alpha5                                                2018-03-22
 --------------------------------------------------------------------------------
 - Sharrre code on events and spotlights.
