@@ -7,9 +7,12 @@
 {% set attributes = attributes.addClass("calendar-blocks") %}
 <div{{ attributes }}>
   {# Break up the individual items in to the appropriate template var. #}
-  {% for item in items %}
-    {% set item = item|merge({'context': context}) %}
-    {# Pass vars through to include template. #}
-    {{ pattern('calendar_block', item) }}
-  {% endfor %}
+  {% if items.0 and items.0.title %}
+    {% for item in items %}
+      {% set item = item|merge({'context': context}) %}
+      {{ pattern('calendar_block', item) }}
+    {% endfor %}
+  {% else %}
+    {{ items }}
+  {% endif %}
 </div>

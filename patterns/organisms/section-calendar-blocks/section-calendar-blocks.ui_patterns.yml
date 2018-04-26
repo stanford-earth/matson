@@ -7,7 +7,7 @@ section_calendar_blocks:
     dash_under:
       label: "Dash Under Header"
       description: "Dash under h2 or to the left?  Treat as boolean (true/false)"
-      default: has-dash-under
+      default: has-dash-left
       options:
         has-dash-left: Left
         has-dash-under: Under
