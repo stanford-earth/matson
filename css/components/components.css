@@ -2045,6 +2045,31 @@
 .stamp.stamp-3 {
   background: #017c92; }
 
+.stamp a {
+  text-align: center;
+  width: 100%;
+  color: #fff; }
+  .stamp a:hover {
+    color: #f9b002; }
+
+.stamp .button {
+  margin-bottom: 10px;
+  font-size: 1.6em;
+  border-color: #fff;
+  width: 100%;
+  text-align: center; }
+  .stamp .button:hover {
+    background-color: #f9b002;
+    color: #fff; }
+
+.stamp .about {
+  width: 100%;
+  text-align: center;
+  font-size: .8em; }
+
+.stamp .masonry-block__description {
+  font-size: .8em; }
+
 @media only screen and (min-width: 768px) {
   .js .stamp {
     position: absolute; }
