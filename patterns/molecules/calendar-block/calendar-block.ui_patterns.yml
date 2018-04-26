@@ -19,6 +19,16 @@ calendar_block:
       label: Month
       preview: April
       type: text
+    time:
+      description: time
+      label: Time
+      preview: "3:30pm"
+      type: text
+    location:
+      description: Location
+      label: Location
+      preview: "Touring Hall - 203 B"
+      type: text
     subtitle:
       description: "Block subtitle."
       label: Subtitle

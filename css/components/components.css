@@ -325,19 +325,27 @@
   line-height: 1; }
 
 .calendar-block__month {
-  font-size: 0.75em;
+  font-size: 0.875em;
   color: #017c92;
   text-transform: uppercase;
-  letter-spacing: .9px; }
+  letter-spacing: .9px;
+  font-weight: bold; }
 
 .calendar-block__title {
   color: #4d4f53;
   line-height: 1.25;
-  margin: 0; }
+  margin: 0;
+  font-size: 1.5em; }
 
-.calendar-block__subtitle {
+.calendar-block__subtitle,
+.calendar-block__time,
+.calendar-block__location {
   color: #9c9d9e;
   letter-spacing: .5px; }
+  .calendar-block__subtitle .label,
+  .calendar-block__time .label,
+  .calendar-block__location .label {
+    font-weight: bold; }
 
 .calendar-block__arrow {
   position: absolute;

@@ -13,7 +13,19 @@
     </div>
     <div class="calendar-block__header">
       <h3 class="calendar-block__title">{{ title }}</h3>
+
+      {% if time is not empty %}
+      <div class="calendar-block__time"><span class="label">Time:</span> {{ time }}</div>
+      {% endif %}
+
+      {% if subtitle is not empty %}
       <span class="calendar-block__subtitle">{{ subtitle }}</span>
+      {% endif %}
+
+      {% if location is not empty %}
+      <div class="calendar-block__location"><span class="label">Location:</span> {{ location }}</div>
+      {% endif %}
+
     </div>
     <div class="calendar-block__arrow">
       <svg class="i-svg i-svg--arrow-right" role="img"><title>{{ 'Navigate to item'|t }}</title><use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use> </svg>

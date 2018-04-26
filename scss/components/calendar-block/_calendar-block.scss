@@ -46,22 +46,30 @@
 }
 
 .calendar-block__month {
-  font-size: em(12px);
+  font-size: em(14px);
   color: color(action);
   text-transform: uppercase;
   letter-spacing: .9px;
-
+  font-weight: bold;
 }
 
 .calendar-block__title {
   color: color(text-active);
   line-height: 1.25;
   margin: 0;
+  font-size: em(24px);
 }
 
-.calendar-block__subtitle {
+.calendar-block__subtitle,
+.calendar-block__time,
+.calendar-block__location {
   color: color(ash);
   letter-spacing: .5px;
+
+  .label {
+    font-weight: bold;
+  }
+
 }
 
 .calendar-block__arrow {
