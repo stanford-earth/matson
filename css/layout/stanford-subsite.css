@@ -293,13 +293,13 @@
 
 @media only screen and (min-width: 768px) {
   .section-callout-blocks {
-    padding-left: calc(((50% /12) * 0) + 280px);
-    padding-right: calc(((50% /12) * 0) + 50px); } }
+    margin-left: calc(((50% /12) * 0) + 280px);
+    margin-right: calc(((50% /12) * 0) + 50px); } }
 
 @media only screen and (min-width: 1500px) {
   .section-callout-blocks {
-    padding-left: calc(50% - (750px - 320px));
-    padding-right: calc(50% - (750px - 60px)); } }
+    margin-left: calc(50% - (750px - 320px));
+    margin-right: calc(50% - (750px - 60px)); } }
 
 @media only screen and (min-width: 768px) {
   .section-callout-blocks .section-header {
