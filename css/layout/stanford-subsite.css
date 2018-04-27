@@ -52,6 +52,16 @@
   font-size: 20px;
   color: #4d4f53; }
 
+@media only screen and (min-width: 768px) {
+  .filmstrip {
+    margin-left: calc(((50% /12) * 0) + 280px);
+    margin-right: calc(((50% /12) * 0) + 50px); } }
+
+@media only screen and (min-width: 1500px) {
+  .filmstrip {
+    margin-left: calc(50% - (750px - 320px));
+    margin-right: calc(50% - (750px - 60px)); } }
+
 .filmstrip.is-flexible {
   max-width: 420px; }
   @media only screen and (min-width: 768px) {
@@ -689,13 +699,13 @@
 
 @media only screen and (min-width: 768px) {
   .section-tall-filmstrip {
-    padding-left: calc(((50% /12) * 0) + 280px);
-    padding-right: calc(((50% /12) * 0) + 50px); } }
+    margin-left: calc(((50% /12) * 0) + 280px);
+    margin-right: calc(((50% /12) * 0) + 50px); } }
 
 @media only screen and (min-width: 1500px) {
   .section-tall-filmstrip {
-    padding-left: calc(50% - (750px - 320px));
-    padding-right: calc(50% - (750px - 60px)); } }
+    margin-left: calc(50% - (750px - 320px));
+    margin-right: calc(50% - (750px - 60px)); } }
 
 @media only screen and (min-width: 768px) {
   .section-tall-filmstrip .filmstrip.is-tall .film-card {

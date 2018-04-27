@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .section-tall-filmstrip {
-  @include container-offset-left;
+  @include container-offset-left-margin;
 
   .filmstrip {
     &.is-tall {
