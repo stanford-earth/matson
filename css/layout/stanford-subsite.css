@@ -166,6 +166,16 @@
   width: auto; }
 
 @media only screen and (min-width: 768px) {
+  .hero-banner__container {
+    margin-left: calc(((50% /12) * 0) + 280px);
+    margin-right: calc(((50% /12) * 0) + 50px); } }
+
+@media only screen and (min-width: 1500px) {
+  .hero-banner__container {
+    margin-left: calc(50% - (750px - 320px));
+    margin-right: calc(50% - (750px - 60px)); } }
+
+@media only screen and (min-width: 768px) {
   .hero-banner__footer {
     margin-left: calc(((50% /12) * 0) + 280px);
     margin-right: calc(((50% /12) * 0) + 50px); } }
