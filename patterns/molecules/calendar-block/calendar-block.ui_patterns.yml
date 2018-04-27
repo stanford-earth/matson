@@ -4,6 +4,14 @@ calendar_block:
   label: "Calendar block"
   description: "A single of calendar block"
   fields:
+    image:
+      description: "Image."
+      label: Image
+      preview:
+        alt: "this is a sample image"
+        theme: image
+        uri: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Rectilinear_minimum_spanning_tree.svg"
+      type: image
     day:
       description: Day.
       label: Day
