@@ -16,6 +16,7 @@
 
 .calendar-block__action {
   color: inherit;
+  display: inline-block;
 
   @include on-event {
     color: inherit;

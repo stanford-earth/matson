@@ -6,15 +6,15 @@
 #}
 {% set attributes = attributes.addClass("calendar-block") %}
 <div{{ attributes }}>
-  {% if image is not empty %}
-  {{ image }}
-  {% endif %}
   {{ link|openlink({class:"calendar-block__action", "aria-label": title|render|striptags|preg_replace(":", "") ~ '. on '|t ~ month ~ ' ' ~ day}) }}
     <div class="calendar-block__date">
       <span class="calendar-block__day">{{ day }}</span>
       <span class="calendar-block__month">{{ month }}</span>
     </div>
     <div class="calendar-block__header">
+      {% if image is not empty %}
+        {{ image }}
+      {% endif %}
       <h3 class="calendar-block__title">{{ title }}</h3>
 
       {% if time is not empty %}
