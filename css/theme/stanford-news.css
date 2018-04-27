@@ -403,12 +403,12 @@ figure.align-center .figure-container {
     .field-s-news-source {
       margin-left: 110px; } }
 
-.field-s-news-rich-content .field-p-wysiwyg:nth-of-type(1) > p:first-of-type::first-line {
+.field-s-news-rich-content .ptype-stanford-wysiwyg:first-of-type .field-p-wysiwyg > p:first-of-type::first-line {
   position: relative;
   font-size: 1em;
   letter-spacing: normal; }
 
-.field-s-news-rich-content .field-p-wysiwyg:nth-of-type(1) > p:first-child::first-letter {
+.field-s-news-rich-content .ptype-stanford-wysiwyg:first-of-type .field-p-wysiwyg > p:first-child::first-letter {
   letter-spacing: 0;
   font-size: 3em;
   font-weight: bold;
