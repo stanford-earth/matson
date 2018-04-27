@@ -17,3 +17,11 @@
 .hero-banner__header.is-right .hero-banner__hgroup {
   width: auto;
 }
+
+.hero-banner__inner {
+  @include container-offset-left-margin;
+}
+
+.hero-banner__footer {
+  @include container-offset-left-margin;
+}
