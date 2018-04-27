@@ -302,7 +302,8 @@
 
 .calendar-block {
   color: #4d4f53;
-  padding-bottom: 3em; }
+  padding-bottom: 3em;
+  position: relative; }
 
 .calendar-block__action {
   color: inherit;

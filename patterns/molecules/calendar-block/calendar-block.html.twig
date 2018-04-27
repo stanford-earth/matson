@@ -11,10 +11,10 @@
       <span class="calendar-block__day">{{ day }}</span>
       <span class="calendar-block__month">{{ month }}</span>
     </div>
+    {% if image is not empty %}
+      {{ image }}
+    {% endif %}
     <div class="calendar-block__header">
-      {% if image is not empty %}
-        {{ image }}
-      {% endif %}
       <h3 class="calendar-block__title">{{ title }}</h3>
 
       {% if time is not empty %}
