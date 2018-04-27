@@ -335,7 +335,7 @@ figure.align-center .figure-container {
 }
 
 
-.field-s-news-rich-content .field-p-wysiwyg:nth-of-type(1) {
+.field-s-news-rich-content .ptype-stanford-wysiwyg:first-of-type .field-p-wysiwyg {
   // Drop Cap
   > p:first-of-type::first-line {
     position: relative;
