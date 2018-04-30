@@ -4,6 +4,14 @@ calendar_block:
   label: "Calendar block"
   description: "A single of calendar block"
   fields:
+    image:
+      description: "Image."
+      label: Image
+      preview:
+        alt: "this is a sample image"
+        theme: image
+        uri: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Rectilinear_minimum_spanning_tree.svg"
+      type: image
     day:
       description: Day.
       label: Day
@@ -18,6 +26,16 @@ calendar_block:
       description: Month.
       label: Month
       preview: April
+      type: text
+    time:
+      description: time
+      label: Time
+      preview: "3:30pm"
+      type: text
+    location:
+      description: Location
+      label: Location
+      preview: "Touring Hall - 203 B"
       type: text
     subtitle:
       description: "Block subtitle."
