@@ -6,8 +6,8 @@
       var newurl = document.location.href;
       // Strip paramaters
       newurl = newurl.replace(window.location.search, "");
-      // Force protocol to http.
-      newurl = newurl.replace(/.*?:\/\//g, "http://");
+      // Force protocol to https.
+      newurl = newurl.replace(/.*?:\/\//g, "https://");
 
       $('.tweet-popup', context).sharrre({
         share: {
@@ -19,7 +19,7 @@
         enableTracking: true,
         buttons: {
           twitter: {
-            via: 'StanfordEarth',
+            via: 'sheamcktest',
             url: '//opensharecount.com/count.json?url=' + newurl,
             count: true
           }
