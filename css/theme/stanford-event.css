@@ -198,6 +198,9 @@
   .block-matson-content .definition-list {
     margin-bottom: 20px; }
 
+.content-type__date {
+  margin-top: 0px; }
+
 .content-type__timestamp {
   font-size: 22px;
   text-align: right;
@@ -241,11 +244,12 @@
         bottom: -40px;
         margin-left: -100vw; } }
 
-.content-type-date__actions.social-actions {
+.content-type__media .content-type-date__actions.social-actions {
   height: 69px;
   line-height: 50px;
   vertical-align: middle;
-  display: block; }
+  display: block;
+  margin-left: 40px; }
 
 .sharrre {
   display: inline-block;
