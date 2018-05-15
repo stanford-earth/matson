@@ -47,7 +47,8 @@
       <h2>
         {{ sub_title }}
       </h2>
-
+      </div>
+      {% endif %}
       <dl class="definition-list">
         {% if when|render|striptags|trim is not empty %}
         <dt>{{ 'When'|t }}:</dt>
@@ -84,8 +85,7 @@
         </dd>
         {% endif %}
       </dl>
-    </div>
-    {% endif %}
+
   </div>
 
 </div>
