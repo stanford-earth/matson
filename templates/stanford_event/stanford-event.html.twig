@@ -11,8 +11,47 @@
       <h2>
         {{ sub_title }}
       </h2>
+
+      <dl class="definition-list">
+        {% if when|render|striptags|trim is not empty %}
+        <dt>{{ 'When'|t }}:</dt>
+        <dd>
+          {{ when }}
+        </dd>
+        {% endif %}
+        {% if where|render|striptags|trim is not empty %}
+        <dt>{{ 'Where'|t }}:</dt>
+        <dd>
+          {{ where }}
+        </dd>
+        {% endif %}
+        {% if tags|render|striptags|trim is not empty %}
+        <dt>{{ 'Tags'|t }}:</dt>
+        <dd>
+        {% if tags is iterable %}
+        {% set rendered_tags = "" %}
+          {% for field in tags %}
+            {% for key, item in field if key|first != '#' %}
+              {% set rendered_tags = rendered_tags ~ "#{item|render}, "  %}
+            {% endfor %}
+          {% endfor %}
+          {{ rendered_tags|trim|slice(0, -1)|raw }}
+        {% else %}
+          {{ tags }}
+        {% endif %}
+        </dd>
+        {% endif %}
+        {% if more_info|render|striptags|trim is not empty %}
+        <dt>{{ 'More Info'|t }}:</dt>
+        <dd>
+          {{ more_info }}
+        </dd>
+        {% endif %}
+      </dl>
     </div>
     {% endif %}
+
+
     <div class="content-type-date">
       <div class="content-type-date__actions social-actions">
         <div class="tweet-popup sharrre" data-title="<i class='fa fa-twitter' aria-hidden='true'></i>" data-text="{{ node_title|render|striptags|trim }}" data-url="{{ url("<current>") }}">
@@ -62,47 +101,13 @@
   {% endif %}
 
   <dl class="definition-list">
-    {% if when|render|striptags|trim is not empty %}
-    <dt>{{ 'When'|t }}:</dt>
-    <dd>
-      {{ when }}
-    </dd>
-    {% endif %}
-    {% if where|render|striptags|trim is not empty %}
-    <dt>{{ 'Where'|t }}:</dt>
-    <dd>
-      {{ where }}
-    </dd>
-    {% endif %}
-    {% if tags|render|striptags|trim is not empty %}
-    <dt>{{ 'Tags'|t }}:</dt>
-    <dd>
-    {% if tags is iterable %}
-    {% set rendered_tags = "" %}
-      {% for field in tags %}
-        {% for key, item in field if key|first != '#' %}
-          {% set rendered_tags = rendered_tags ~ "#{item|render}, "  %}
-        {% endfor %}
-      {% endfor %}
-      {{ rendered_tags|trim|slice(0, -1)|raw }}
-    {% else %}
-      {{ tags }}
-    {% endif %}
-    </dd>
-    {% endif %}
     {% if audience|render|striptags|trim is not empty %}
     <dt>{{ 'Audience'|t }}:</dt>
     <dd>
       {{ audience }}
     </dd>
     {% endif %}
-    {% if more_info|render|striptags|trim is not empty %}
-    <dt>{{ 'More Info'|t }}:</dt>
-    <dd>
-      {{ more_info }}
-    </dd>
-    {% endif %}
   </dl>
-
+  
   {{ content }}
 </div>
