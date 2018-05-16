@@ -29,6 +29,7 @@
       <a href="#" class="expandable-container__toggle js-expandable-container__toggle">
         <span class="visually-hidden">Show More</span><span class="expandable-container__open"><svg class="i-svg i-svg--plus" role="img"><title>{{ 'Expand for more items'|t }}</title><use xlink:href="#i-plus" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
       </a>
+      <span class="aria-alert hidden">Item list expanded. There are now {{ field_count(items) }} in this list. Selecting item 5</span>
     {% endif %}
   </div>
 </div>
