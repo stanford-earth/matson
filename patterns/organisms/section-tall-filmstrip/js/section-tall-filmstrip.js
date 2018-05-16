@@ -9,7 +9,7 @@
         .find(".aria-alert")
         .toggleClass('hidden')
         .attr("role", "alert")
-        .fadeOut(1);
+        .fadeOut(100);
 
         $(this).parent(".js-expandable-container")
           .parent()
