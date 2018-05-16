@@ -2,9 +2,9 @@
   Drupal.behaviors.matson_sharrre = {
     attach: function (context, settings) {
 
-      // Get the current url for twitter
+      // Get the current url for twitter.
       var newurl = document.location.href;
-      // Strip paramaters
+      // Strip paramaters.
       newurl = newurl.replace(window.location.search, "");
       // Force protocol to https.
       newurl = newurl.replace(/.*?:\/\//g, "https://");
@@ -19,7 +19,7 @@
         enableTracking: true,
         buttons: {
           twitter: {
-            via: 'sheamcktest',
+            via: 'StanfordEarth',
             url: '//opensharecount.com/count.json?url=' + newurl,
             count: true
           }
