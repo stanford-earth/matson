@@ -131,8 +131,9 @@ stanford_news:
 sharrre:
   version: VERSION
   js:
-    https://platform.twitter.com/widgets.js: { type: external, weight: 0 }
-    https://platform.linkedin.com/in.js: { type: external, weight: 0 }
+    # https://platform.twitter.com/widgets.js: { type: external, weight: 0 }
+    # https://platform.linkedin.com/in.js: { type: external, weight: 0 }
+    https://www.googletagmanager.com/gtm.js?id=GTM-TH49579: { type: external, weight: 0 }
     js/vendor/jquery.sharrre.min.js: {}
     js/build/sharre.init.js: {}
   dependencies:
