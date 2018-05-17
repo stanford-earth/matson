@@ -67,13 +67,6 @@
       float: left;
       margin-left: 30px;
       max-width: none; } }
-  @media only screen and (min-width: 1024px) {
-    .filmstrip.is-double .film-card {
-      width: calc(33.3333333333% - 40px);
-      float: left;
-      margin-left: 30px; }
-      .filmstrip.is-double .film-card:nth-child(4n) {
-        clear: left; } }
   .filmstrip.is-double .film-card .film-card__thumbnail {
     position: relative;
     width: 100%;
