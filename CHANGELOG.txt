@@ -1,3 +1,17 @@
+Version 8.x-1.1-alpha7                                                2018-05-17
+--------------------------------------------------------------------------------
+- Added patterns directory to compiler [SCSS, Twig]
+- "Drupalized" calendar-block patterns
+- Removed responsive breakpoint on filmstrip pattern
+- Adjusted masonry block title for stamps
+- Updated calendar block patterns scss
+- Updated masonry block stamp button styles
+- Updated social icon styles (pattern)
+- Fixes to subsite patterns css
+- Adjustments to events and news styles
+- Add linkedin to the footer
+- Re-arrangement of the stanford_events template adjusting positions of fields.
+
 Version 8.x-1.1-alpha6                                                2018-04-20
 --------------------------------------------------------------------------------
 - Updated title and alt-text on logo to reflect School Name
