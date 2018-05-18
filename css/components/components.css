@@ -3317,6 +3317,9 @@
   .facebook-popup .box .count {
     right: 13px; }
 
+.linkedin-popup .box .count {
+  display: none; }
+
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);

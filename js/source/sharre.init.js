@@ -50,7 +50,8 @@
         },
         url: newurl,
         enableHover: false,
-        enableTracking: true,
+        enableTracking: false,
+        count: false,
         buttons: { linkedin: {action: 'share', title: 'Share'}},
         click: function(api, options) {
           api.simulateClick('linkedin-popup');
