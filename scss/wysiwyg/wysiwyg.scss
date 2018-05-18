@@ -12,6 +12,11 @@ body {
 }
 
 // Fixes for image styles so they kind of look like what we want.
+img[data-responsive-image-style="small_scaled"] {
+  width: 25%;
+}
+
+// Fixes for image styles so they kind of look like what we want.
 img[data-responsive-image-style="portrait"],
 img[data-responsive-image-style="landscape"] {
   width: 48%;

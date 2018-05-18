@@ -75,15 +75,13 @@ image|get_img_src is not empty ? random(['has-image-right','has-image-left'])
     {% endif %}
     <div class="masonry-block__header">
       {% if title is not empty %}
-        <h3 class="masonry-block__title">
-          {% if variants.stamp is empty or variants.stamp == "0" %}
+        {% if variants.stamp is empty or variants.stamp == "0" %}
+          <h3 class="masonry-block__title">
           <a class="masonry-block__link" href="{{ link|render|striptags|trim|raw }}">
-          {% endif %}
-          {{ title }}
-          {% if variants.stamp is empty or variants.stamp == "0" %}
+            {{ title }}
           </a>
-          {% endif %}
-        </h3>
+          </h3>
+        {% endif %}
       {% endif %}
       {% if description is not empty %}
         <span class="masonry-block__description">{{ description }}</span>

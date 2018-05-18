@@ -6,6 +6,9 @@ body {
   padding: 0;
   display: block; }
 
+img[data-responsive-image-style="small_scaled"] {
+  width: 25%; }
+
 img[data-responsive-image-style="portrait"],
 img[data-responsive-image-style="landscape"] {
   width: 48%; }

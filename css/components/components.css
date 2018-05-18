@@ -302,10 +302,12 @@
 
 .calendar-block {
   color: #4d4f53;
-  padding-bottom: 3em; }
+  padding-bottom: 3em;
+  position: relative; }
 
 .calendar-block__action {
-  color: inherit; }
+  color: inherit;
+  display: inline-block; }
   .calendar-block__action:hover, .calendar-block__action:active, .calendar-block__action:focus {
     color: inherit;
     text-decoration: none; }
@@ -325,19 +327,27 @@
   line-height: 1; }
 
 .calendar-block__month {
-  font-size: 0.75em;
+  font-size: 0.875em;
   color: #017c92;
   text-transform: uppercase;
-  letter-spacing: .9px; }
+  letter-spacing: .9px;
+  font-weight: bold; }
 
 .calendar-block__title {
   color: #4d4f53;
   line-height: 1.25;
-  margin: 0; }
+  margin: 0;
+  font-size: 1.5em; }
 
-.calendar-block__subtitle {
+.calendar-block__subtitle,
+.calendar-block__time,
+.calendar-block__location {
   color: #9c9d9e;
   letter-spacing: .5px; }
+  .calendar-block__subtitle .label,
+  .calendar-block__time .label,
+  .calendar-block__location .label {
+    font-weight: bold; }
 
 .calendar-block__arrow {
   position: absolute;
@@ -2045,6 +2055,31 @@
 .stamp.stamp-3 {
   background: #017c92; }
 
+.stamp a {
+  text-align: center;
+  width: 100%;
+  color: #fff; }
+  .stamp a:hover {
+    color: #f9b002; }
+
+.stamp .button {
+  margin-bottom: 10px;
+  font-size: 1.6em;
+  border-color: #fff;
+  width: 100%;
+  text-align: center; }
+  .stamp .button:hover {
+    background-color: #f9b002;
+    color: #fff; }
+
+.stamp .about {
+  width: 100%;
+  text-align: center;
+  font-size: .8em; }
+
+.stamp .masonry-block__description {
+  font-size: .8em; }
+
 @media only screen and (min-width: 768px) {
   .js .stamp {
     position: absolute; }
@@ -3454,18 +3489,23 @@
   display: block;
   z-index: 2; }
 
-.social-actions a {
-  color: #4d4f53;
-  padding: 0 10px 0 0; }
-
-.social-actions svg {
-  height: 1.6em;
-  color: #017c92;
-  vertical-align: middle;
-  display: inline;
-  margin-top: -3px; }
-  .social-actions svg:hover {
-    opacity: .8; }
+.social-actions {
+  position: relative;
+  border-bottom: 0.5px solid #9c9d9e;
+  border-top: 0.5px solid #9c9d9e;
+  padding: 10px;
+  margin-top: 10px; }
+  .social-actions a {
+    color: #4d4f53;
+    padding: 0 10px 0 0; }
+  .social-actions svg {
+    height: 1.6em;
+    color: #017c92;
+    vertical-align: middle;
+    display: inline;
+    margin-top: -3px; }
+    .social-actions svg:hover {
+      opacity: .8; }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;

@@ -13,14 +13,16 @@ calendar_blocks:
           day: "9"
           link: "https://www.stanford.edu"
           month: April
-          subtitle: "Room 104, Green Earth Sciences Building, 367 Panama Street, Stanford"
           title: "ERE Seminar: NO SEMINAR"
+          time: "3:30pm"
+          location: "Room 104, Green Earth Sciences Building"
         -
           day: "10"
           link: "https://www.stanford.edu"
           month: April
-          subtitle: "All are welcome. Y2E2 226"
           title: "Monday E-IPER Tea"
+          time: "9:00am - 5:00pm"
+          location: "TBD"
         -
           day: "21"
           link: "https://www.stanford.edu"

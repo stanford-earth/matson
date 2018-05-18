@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .section-callout-blocks {
-  @include container-offset-left;
+  @include container-offset-left-margin;
 
   .section-header {
     @include grid-media($media-md) {
