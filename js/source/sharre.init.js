@@ -2,14 +2,14 @@
   Drupal.behaviors.matson_sharrre = {
     attach: function (context, settings) {
 
-      // Get the current url for twitter
+      // Get the current url for twitter.
       var newurl = document.location.href;
-      // Strip paramaters
+      // Strip paramaters.
       newurl = newurl.replace(window.location.search, "");
-      // Force protocol to http.
-      newurl = newurl.replace(/.*?:\/\//g, "http://");
+      // Force protocol to https.
+      newurl = newurl.replace(/.*?:\/\//g, "https://");
 
-      $('.tweet-popup').sharrre({
+      $('.tweet-popup', context).sharrre({
         share: {
           twitter: true
         },
@@ -25,33 +25,36 @@
           }
         },
         click: function(api, options) {
-          api.simulateClick(".tweet-popup");
+          api.simulateClick("tweet-popup");
           api.openPopup('twitter');
         }
       });
 
-      $('.facebook-popup').sharrre({
+      $('.facebook-popup', context).sharrre({
         share: {
           facebook: true
         },
+        url: newurl,
         enableHover: false,
         enableTracking: true,
         buttons: { facebook: {action: 'share', title: 'Share'}},
         click: function(api, options) {
-          api.simulateClick('.facebook-popup');
+          api.simulateClick('facebook-popup');
           api.openPopup('facebook');
         }
       });
 
-      $('.linkedin-popup').sharrre({
+      $('.linkedin-popup', context).sharrre({
         share: {
           linkedin: true
         },
+        url: newurl,
         enableHover: false,
-        enableTracking: true,
+        enableTracking: false,
+        count: false,
         buttons: { linkedin: {action: 'share', title: 'Share'}},
         click: function(api, options) {
-          api.simulateClick('.linkedin-popup');
+          api.simulateClick('linkedin-popup');
           api.openPopup('linkedin');
         }
       });
