@@ -95,6 +95,19 @@ $hero-max-width-lg: 1500px;
   .hero-banner__container {
     border: 0;
   }
+
+  .video {
+    @include grid-media($media-md) {
+      padding-right: 110px;
+      padding-left: 110px;
+    }
+    @include grid-media($media-sm) {
+      padding: 0 80px;
+    }
+  }
+  .hero-banner__inner .hero-banner__container {
+    margin: 0 80px;
+  }
 }
 
 .hero-banner.has-video {
