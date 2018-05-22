@@ -1,3 +1,7 @@
+Version 8.x-1.1-alpha8                                                2018-05-22
+--------------------------------------------------------------------------------
+- Fixes missing share library updates
+
 Version 8.x-1.1-alpha7                                                2018-05-17
 --------------------------------------------------------------------------------
 - Added patterns directory to compiler [SCSS, Twig]
