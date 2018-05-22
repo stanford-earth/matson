@@ -101,9 +101,11 @@ $hero-max-width-lg: 1500px;
       padding-right: 110px;
       padding-left: 110px;
     }
+
     @include grid-media($media-sm) {
       padding: 0 80px;
     }
+    
   }
   .hero-banner__inner .hero-banner__container {
     margin: 0 80px;
