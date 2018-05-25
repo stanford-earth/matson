@@ -1431,7 +1431,8 @@
         padding-top: 0; } }
     #footer__global-footer #global-footer__info .vcard {
       font-size: 1em;
-      font-weight: normal; }
+      font-weight: normal;
+      margin-bottom: 7px; }
       #footer__global-footer #global-footer__info .vcard .adr {
         margin-left: 0.3750937734em;
         margin-right: 0.7501875469em; }
@@ -1441,7 +1442,7 @@
           #footer__global-footer #global-footer__info .vcard .copyright-links {
             display: inline; } }
         #footer__global-footer #global-footer__info .vcard .copyright-links a {
-          margin-right: 0.3750937734em; }
+          margin-right: 0.7501875469em; }
   @media only screen and (min-width: 768px) {
     #footer__global-footer #global-footer__nav,
     #footer__global-footer #global-footer__info {

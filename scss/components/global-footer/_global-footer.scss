@@ -126,6 +126,7 @@
     .vcard {
       @include font-size(16px);
       font-weight: normal;
+      margin-bottom: 7px;
 
       .adr {
         margin-left: $small-spacing / 2;
@@ -140,7 +141,7 @@
         }
 
         a {
-          margin-right: $small-spacing / 2;
+          margin-right: $small-spacing;
         }
       }
     }
