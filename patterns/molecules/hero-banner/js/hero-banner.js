@@ -40,7 +40,8 @@ function onYouTubeIframeAPIReady() {
 /**
  * When the youtube players are ready to be acted on.
  *
- * @param  {[type]} event [description]
+ * @param  object event
+ *  Object from youtube api with event information.
  */
 function onPlayerReady(event) {
   // console.log(event);
@@ -49,7 +50,7 @@ function onPlayerReady(event) {
 /**
  * When a youtube video state has been changed.
  *
- * @param  {[type]} event
+ * @param object event
  * event.data
  *   -1 unstarted
  *    0 ended
@@ -75,27 +76,35 @@ function onPlayerStateChange(event) {
 }
 
 /**
- * [matson_hero_banner_get_target_title description]
- * @param  {[type]} target [description]
- * @return {[type]}        [description]
+ * Matson_hero_banner_get_target_title.
+ *
+ * @param object target
+ *   DOM Object to act upon.
+ *
+ * @return Object
+ *   Jquery object containing the hero-banner__inner text container.
  */
 function matson_hero_banner_get_target_title(target) {
   return jQuery(target).parents(".hero-banner").find('.hero-banner__inner');
 }
 
 /**
- * [matson_hero_banner_hide_video_title description]
- * @param  {[type]} target [description]
- * @return {[type]}        [description]
+ * Matson_hero_banner_hide_video_title.
+ *
+ * @param object target
+ *   Jquery object to run function on.
  */
 function matson_hero_banner_hide_video_title(target) {
-  target.fadeOut(500);
+  if (window.innerWidth > 767) {
+    target.fadeOut(500);
+  }
 }
 
 /**
- * [matson_hero_banner_show_video_title description]
- * @param  {[type]} target [description]
- * @return {[type]}        [description]
+ * Matson_hero_banner_show_video_title.
+ *
+ * @param object target
+ *   Jquery object to run function on.
  */
 function matson_hero_banner_show_video_title(target) {
   target.fadeIn(500);
