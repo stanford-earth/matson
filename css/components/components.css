@@ -1672,11 +1672,37 @@
 .hero-banner.component-centered-container-margins.has-video .hero-banner__inner .hero-banner__container {
   margin: 0 80px; }
 
-.hero-banner.has-video .hero-banner__inner {
-  display: none; }
-  @media only screen and (min-width: 768px) {
-    .hero-banner.has-video .hero-banner__inner {
-      display: block; } }
+@media only screen and (max-width: 767px) {
+  .hero-banner.has-video .hero-banner__inner,
+  .hero-banner.has-video .hero-banner__container,
+  .hero-banner.has-video .hero-banner__header,
+  .hero-banner.has-video .hero-banner__hgroup {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    color: #4d4f53;
+    text-shadow: none;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    float: none;
+    top: 0;
+    bottom: auto;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    left: 0; } }
+
+@media only screen and (max-width: 767px) {
+  .hero-banner.has-video .hero-banner__inner .hero-banner__hgroup,
+  .hero-banner.has-video .hero-banner__container .hero-banner__hgroup,
+  .hero-banner.has-video .hero-banner__header .hero-banner__hgroup,
+  .hero-banner.has-video .hero-banner__hgroup .hero-banner__hgroup {
+    width: 80%;
+    left: 10%;
+    text-align: center; } }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
