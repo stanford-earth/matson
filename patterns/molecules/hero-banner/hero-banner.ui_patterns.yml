@@ -73,4 +73,6 @@ hero_banner:
         css:
           component:
             css/hero-banner.component.css: {}
+        js:
+          js/hero-banner.js: {}
   use: "@stanford_components/molecules/hero-banner/hero-banner.html.twig"
