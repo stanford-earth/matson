@@ -13,13 +13,13 @@
   max-width: 250px; }
   @media only screen and (min-width: 768px) {
     .calendar-blocks .calendar-block {
-      width: calc(50% - 45px);
+      width: calc(100% - 60px);
       float: left;
       margin-left: 30px;
       max-width: none; } }
   @media only screen and (min-width: 1024px) {
     .calendar-blocks .calendar-block {
-      width: calc(20% - 36px);
+      width: calc(30% - 39px);
       float: left;
       margin-left: 30px; } }
 
