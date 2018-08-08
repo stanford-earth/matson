@@ -23,12 +23,12 @@
     max-width: 250px;
 
     @include grid-media($media-md) {
-      @include grid-column(5, $calendar-cards-grid);
+      @include grid-column(10, $calendar-cards-grid);
       max-width: none;
     }
 
     @include grid-media($media-lg) {
-      @include grid-column(2, $calendar-cards-grid);
+      @include grid-column(3, $calendar-cards-grid);
     }
   }
 }
