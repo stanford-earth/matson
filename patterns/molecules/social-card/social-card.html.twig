@@ -4,7 +4,7 @@
  * Social Card pattern.
  */
 #}
-{% set arialabel = description|render|striptags|preg_replace(":", "") %}
+{% set arialabel = description|render|striptags|preg_replace("/:/", "") %}
 <div{{ attributes.addClass('social-card') }}>
   <div class="social-card__content">
     {{ handle_link|openlink({class: "social-card__name", 'aria-label': arialabel}) }}

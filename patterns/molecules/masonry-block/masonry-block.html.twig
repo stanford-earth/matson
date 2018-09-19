@@ -106,7 +106,7 @@ image|get_img_src is not empty ? random(['has-image-right','has-image-left'])
               <a class='masonry-block__social-link masonry-block--facebook facebook-popup' aria-label="{{ 'Share on Facebook'|t }}" title="{{ 'Share on facebook'|t }}" href="https://www.facebook.com/sharer/sharer.php?u={{ get_tag_attribute(link|openlink|render, "a", "href") }}"><svg class="i-svg" role="img"><title>{{ 'Facebook'|t }}</title><use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
             </span>
 
-            {{ link|openlink({'aria-label': "Navigate to "|t ~ title|render|striptags|preg_replace(":", "") }) }}<span class="masonry-block__arrow"><svg class="i-svg i-svg--arrow-right" role="img"><title>{{ 'Navigate to item'|t }}</title><use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>{{ link|closelink }}
+            {{ link|openlink({'aria-label': "Navigate to "|t ~ title|render|striptags|preg_replace("/:/", "") }) }}<span class="masonry-block__arrow"><svg class="i-svg i-svg--arrow-right" role="img"><title>{{ 'Navigate to item'|t }}</title><use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>{{ link|closelink }}
           </div>
         {% endif %}
         {% endif %}
