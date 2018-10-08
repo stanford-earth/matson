@@ -57,6 +57,11 @@ node_stanford_event:
       label: "Audience"
       type: "text"
       preview: "Faculty, Staff, Sponsors"
+    sponsor:
+      description: "Who sponsored this event"
+      label: "Sponsor"
+      type: "text"
+      preview: "School of Earth"
     more_info:
       description: "A link to more information"
       label: "More information"
