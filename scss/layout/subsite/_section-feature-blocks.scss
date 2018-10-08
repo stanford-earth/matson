@@ -1,8 +1,11 @@
 @charset "UTF-8";
 
 .section-feature-blocks {
-  @include container-offset-left-collapse;
-  @include vertical-spacing-margin;
+
+  &.component-centered-container {
+    @include container-offset-left-collapse;
+    @include vertical-spacing-margin;
+  }
 
   .feature-blocks__header {
     .component-centered-container {
