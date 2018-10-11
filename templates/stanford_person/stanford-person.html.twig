@@ -8,7 +8,7 @@
 
     <div class="content-type__header">
       <div class="page-title"><h1>{{ first_name }} {{ last_name }}</h1></div>
-      {% if sub_title is not empty %}
+      {% if sub_title|render|striptags|trim is not empty %}
       <div class="page-subtitle">
         <h2>
           {{ sub_title }}
@@ -17,25 +17,25 @@
       {% endif %}
 
       <dl class="definition-list">
-        {% if email is not empty %}
+        {% if email|render|striptags|trim is not empty %}
         <dt>{{ "Email"|t }}:</dt>
         <dd>
           {{ email }}
         </dd>
         {% endif %}
-        {% if phone is not empty %}
+        {% if phone|render|striptags|trim is not empty %}
         <dt>{{ "Phone"|t }}:</dt>
         <dd>
           {{ phone }}
         </dd>
         {% endif %}
-        {% if office is not empty %}
+        {% if office|render|striptags|trim is not empty %}
         <dt>{{ "Office"|t }}:</dt>
         <dd>
           {{ office }}
         </dd>
         {% endif %}
-        {% if links is not empty %}
+        {% if links|render|striptags|trim is not empty %}
         <dt>{{ "Links"|t }}:</dt>
         <dd>
           {{ links }}
