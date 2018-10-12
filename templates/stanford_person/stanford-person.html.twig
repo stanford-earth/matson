@@ -41,13 +41,12 @@
           {{ links }}
         </dd>
         {% endif %}
-        {% if profile_link|render|striptags|trim is not empty %}
-        <dt>{{ " "|t }}:</dt>
-        <dd>
-          {{ profile_link }}
-        </dd>
-        {% endif %}
       </dl>
+
+      {% if profile_link|render|striptags|trim is not empty %}
+        {{ profile_link }}
+      {% endif %}
+      
     </div>
   </div>
 
