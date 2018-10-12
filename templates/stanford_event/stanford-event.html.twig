@@ -84,6 +84,18 @@
           {{ more_info }}
         </dd>
         {% endif %}
+        {% if audience|render|striptags|trim is not empty %}
+        <dt>{{ 'Audience'|t }}:</dt>
+        <dd>
+          {{ audience }}
+        </dd>
+        {% endif %}
+        {% if sponsor|render|striptags|trim is not empty %}
+        <dt>{{ 'Sponsor'|t }}:</dt>
+        <dd>
+          {{ sponsor }}
+        </dd>
+        {% endif %}
       </dl>
 
   </div>
@@ -97,15 +109,6 @@
     {{ description }}
   </div>
   {% endif %}
-
-  <dl class="definition-list">
-    {% if audience|render|striptags|trim is not empty %}
-    <dt>{{ 'Audience'|t }}:</dt>
-    <dd>
-      {{ audience }}
-    </dd>
-    {% endif %}
-  </dl>
 
   {{ content }}
 </div>
