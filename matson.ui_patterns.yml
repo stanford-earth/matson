@@ -169,7 +169,7 @@ node_stanford_spotlight:
       description: "Sub title"
       label: "Sub title"
       type: "text"
-      preview: "Sponsor or Important Details Could Go Here"
+      preview: "Academic Titles go here"
     department:
       description: "Department"
       label: "Department"
