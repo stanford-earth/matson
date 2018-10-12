@@ -122,6 +122,11 @@ node_stanford_person:
       label: "Links"
       type: "text"
       preview: "<a href=\"#\">Example link one</a> <a href=\"#\">Example link two</a>"
+    profile_link:
+      description: "Link to Stanford Profile"
+      label: "Profile"
+      type: "text"
+      preview: "<a href=\"#\">Link to Publications</a>"
     bio:
       description: "Biography."
       label: "Biography"
@@ -174,7 +179,7 @@ node_stanford_spotlight:
       description: "Sub title"
       label: "Sub title"
       type: "text"
-      preview: "Sponsor or Important Details Could Go Here"
+      preview: "Academic Titles go here"
     department:
       description: "Department"
       label: "Department"
