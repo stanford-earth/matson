@@ -175,6 +175,11 @@ node_stanford_spotlight:
       label: "Department"
       type: "text"
       preview: "Geological Sciences"
+    profile_link:
+       description: "Link to Stanford Profile"
+       label: "Profile"
+       type: "text"
+       preview: "<a href=\"#\">Link to Publications</a>"
     created:
       description: "Published date"
       label: "Published"
