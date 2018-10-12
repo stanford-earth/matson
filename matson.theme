@@ -145,19 +145,17 @@ function matson_page_attachments_alter(array &$attachments) {
         $attachments['#attached']['library'][] = 'matson/sharrre';
         break;
 
-      case 'stanford_person':
-        $attachments['#attached']['library'][] = 'matson/stanford_person';
-        break;
-
       case 'stanford_spotlight':
         $attachments['#attached']['library'][] = 'matson/stanford_spotlight';
         $attachments['#attached']['library'][] = 'matson/sharrre';
         break;
-
-      case 'stanford_view_page':
-        $attachments['#attached']['library'][] = 'matson/stanford_view_page';
-        break;
     }
+  }
+
+  // User types.
+  $user = \Drupal::routeMatch()->getParameter('user');
+  if (is_object($user)) {
+    $attachments['#attached']['library'][] = 'matson/stanford_person';
   }
 
   // Attach home page library.
