@@ -1,3 +1,7 @@
+Version 8.x-1.1-alpha13                                               2018-10-16
+--------------------------------------------------------------------------------
+- Hide "Bio" column in person display if empty.
+
 Version 8.x-1.1-alpha12                                               2018-10-15
 --------------------------------------------------------------------------------
 - Load person css library for user entities

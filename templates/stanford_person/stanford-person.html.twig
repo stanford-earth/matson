@@ -50,8 +50,10 @@
     </div>
   </div>
 
-  <div class="content-type-person_bio">
-    <h3 class="dash-header">{{ "Biography"|t }}</h3>
-    {{ bio }}
-  </div>
+  {% if bio|render|striptags|trim is not empty %}
+    <div class="content-type-person_bio">
+      <h3 class="dash-header">{{ "Biography"|t }}</h3>
+      {{ bio }}
+    </div>
+  {% endif %}
 </div>
