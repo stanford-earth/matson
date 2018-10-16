@@ -1,3 +1,11 @@
+Version 8.x-1.1-alpha12                                               2018-10-15
+--------------------------------------------------------------------------------
+- Load person css library for user entities
+- Update global-footer.html.twig to work with twig-tweaks 2.0
+- Fix feature block for subsites
+- Add Event Sponsor field and move it and audience field to top of page
+- Various template fixes.
+
 Version 8.x-1.1-alpha11                                               2018-10-03
 --------------------------------------------------------------------------------
 - Update to twig_tweaks 2.0 per SITES-979
