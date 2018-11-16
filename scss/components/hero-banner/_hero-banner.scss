@@ -120,7 +120,6 @@ $hero-max-width-lg: 1500px;
   .hero-banner__hgroup {
 
     @include grid-media($media-sm-max) {
-      order: 1;
       position: relative;
       width: 100%;
       text-align: left;
