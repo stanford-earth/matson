@@ -3,6 +3,8 @@
  */
 module.exports = function(grunt) {
 
+  const sass = require('node-sass');
+
   // This is where we configure each task that we'd like to run.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -88,9 +90,8 @@ module.exports = function(grunt) {
       }
     },
     sass: {
-      // This will compile all of our sass files
-      // Additional configuration options can be found at https://github.com/sindresorhus/grunt-sass
       options: {
+        implementation: sass,
         includePaths: [
           "scss",
           "node_modules/bourbon/core",
@@ -111,7 +112,7 @@ module.exports = function(grunt) {
       dist: {
         files: {
           // COMPONENTS.
-          'css/components/components.css':  'scss/components/components.scss',
+          'css/components/components.css':                                                    'scss/components/components.scss',
           'css/components/component-centered-container/component-centered-container.css':     'scss/components/component-centered-container/component-centered-container.scss',
 
           // Atoms.
@@ -143,7 +144,6 @@ module.exports = function(grunt) {
           'patterns/molecules/masonry-block/css/masonry-block.component.css':                 'patterns/molecules/masonry-block/scss/masonry-block.component.scss',
           'patterns/molecules/masonry-blocks/css/masonry-blocks.component.css':               'patterns/molecules/masonry-blocks/scss/masonry-blocks.component.scss',
           'patterns/molecules/postcard/css/postcard.component.css':                           'patterns/molecules/postcard/scss/postcard.component.scss',
-          'patterns/molecules/postcard/css/postcard.theme.css':                               'patterns/molecules/postcard/scss/postcard.theme.scss',
           'patterns/molecules/section-header/css/section-header.component.css':               'patterns/molecules/section-header/scss/section-header.component.scss',
           'patterns/molecules/photo-tile/css/photo-tile.component.css':                       'patterns/molecules/photo-tile/scss/photo-tile.component.scss',
           'patterns/molecules/photo-tiles/css/photo-tiles.component.css':                     'patterns/molecules/photo-tiles/scss/photo-tiles.component.scss',
@@ -171,7 +171,7 @@ module.exports = function(grunt) {
           'patterns/organisms/section-expandable-banner/css/section-expandable-banner.states.css':      'patterns/organisms/section-expandable-banner/scss/section-expandable-banner.states.scss',
           'patterns/organisms/section-feature-blocks/css/section-feature-blocks.component.css':         'patterns/organisms/section-feature-blocks/scss/section-feature-blocks.component.scss',
           'patterns/organisms/section-highlight-banner/css/section-highlight-banner.component.css':     'patterns/organisms/section-highlight-banner/scss/section-highlight-banner.component.scss',
-          'patterns/organisms/section-highlight-cards/css/section-highlight-cards.component.css':     'patterns/organisms/section-highlight-cards/scss/section-highlight-cards.component.scss',
+          'patterns/organisms/section-highlight-cards/css/section-highlight-cards.component.css':       'patterns/organisms/section-highlight-cards/scss/section-highlight-cards.component.scss',
           'patterns/organisms/section-masonry-blocks/css/section-masonry-blocks.component.css':         'patterns/organisms/section-masonry-blocks/scss/section-masonry-blocks.component.scss',
           'patterns/organisms/section-photo-mosaic/css/section-photo-mosaic.component.css':             'patterns/organisms/section-photo-mosaic/scss/section-photo-mosaic.component.scss',
           'patterns/organisms/section-photo-mosaic-quotes/css/section-photo-mosaic-quotes.component.css':      'patterns/organisms/section-photo-mosaic-quotes/scss/section-photo-mosaic-quotes.component.scss',

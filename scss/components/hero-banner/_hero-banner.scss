@@ -92,6 +92,7 @@ $hero-max-width-lg: 1500px;
 }
 
 .hero-banner.component-centered-container-margins.has-video {
+
   .hero-banner__container {
     border: 0;
   }
@@ -117,7 +118,9 @@ $hero-max-width-lg: 1500px;
   .hero-banner__container,
   .hero-banner__header,
   .hero-banner__hgroup {
+
     @include grid-media($media-sm-max) {
+      order: 1;
       position: relative;
       width: 100%;
       text-align: left;
@@ -136,11 +139,38 @@ $hero-max-width-lg: 1500px;
       transform: translate(0, 0);
       left: 0;
     }
-    .hero-banner__hgroup {
-      @include grid-media($media-sm-max) {
-        width: 80%;
-        left: 10%;
-        text-align: center;
+  }
+
+  .hero-banner__hgroup {
+    @include grid-media($media-sm-max) {
+      width: 80%;
+      left: 10%;
+      text-align: center;
+    }
+  }
+
+}
+
+// For hero video players that are the first content item on the page, we want
+// the text content to flow below.
+.system-main-block {
+  &:first-child {
+    > div:first-child {
+      > .hero-banner.has-video:first-child {
+        @include grid-media($media-sm-max) {
+          display: flex;
+          flex-flow: row wrap;
+
+          .video {
+            order: 1;
+            width: 100%;
+          }
+
+          .hero-banner__inner {
+            order: 2;
+            width: 100%;
+          }
+        }
       }
     }
   }
