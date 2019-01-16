@@ -1,4 +1,4 @@
-.dash-header::after {
+.content-type-person .dash-header::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -6,7 +6,7 @@
   display: block;
   z-index: 2; }
 
-.dash-header::after {
+.content-type-person .dash-header::after {
   position: absolute;
   height: 2px;
   width: 20px;
@@ -203,8 +203,6 @@
 
 .page-subtitle {
   margin-bottom: 30px; }
-  .page-subtitle h2 {
-    font-size: 28px; }
   .page-subtitle span {
     display: block; }
 
@@ -236,56 +234,49 @@ figcaption {
     .content-type-person {
       padding-right: 100px;
       padding-left: 70px; } }
-  @media only screen and (min-width: 1024px) {
-    .content-type-person .content-type-person_profile {
-      width: calc(45.4545454545% - 43.6363636364px);
-      float: left;
-      margin-left: 30px; } }
   .content-type-person .content-type-person_profile a {
     text-decoration: underline;
     display: block; }
   .content-type-person .content-type-person_bio {
     border: 1px solid #dad7cb;
-    padding: 40px; }
-    @media only screen and (min-width: 1024px) {
-      .content-type-person .content-type-person_bio {
-        width: calc(54.5454545455% - 46.3636363636px);
-        float: left;
-        margin-left: 30px; } }
-    .content-type-person .content-type-person_bio p,
-    .content-type-person .content-type-person_bio h2 {
+    padding: 40px;
+    clear: both; }
+    .content-type-person .content-type-person_bio p {
       font-size: 18px; }
       @media only screen and (min-width: 768px) {
-        .content-type-person .content-type-person_bio p,
-        .content-type-person .content-type-person_bio h2 {
+        .content-type-person .content-type-person_bio p {
           font-size: 22px; } }
-    .content-type-person .content-type-person_bio h2 {
-      font-weight: bold; }
-
-.content-type__media {
-  margin-bottom: 15px; }
-
-.content-type__header .definition-list {
-  margin-bottom: 50px; }
-  .content-type__header .definition-list dt {
-    width: 90px; }
-
-.dash-header {
-  margin-bottom: 1.25em;
-  font-size: 12px;
-  text-transform: uppercase;
-  position: relative; }
-  .dash-header::after {
-    background-color: #8c1515;
-    bottom: -.5em;
-    left: 50%;
-    transform: translateX(-50%); }
-  .dash-header::after {
-    bottom: -1em;
-    left: 0;
-    transform: none; }
-
-.definition-list {
-  line-height: 1.75; }
+  .content-type-person .content-type__media {
+    margin-bottom: 15px; }
+    @media only screen and (min-width: 1024px) {
+      .content-type-person .content-type__media {
+        width: calc(45.4545454545% - 43.6363636364px);
+        float: left;
+        margin-left: 30px; } }
+  @media only screen and (min-width: 1024px) {
+    .content-type-person .content-type__header {
+      width: calc(54.5454545455% - 46.3636363636px);
+      float: left;
+      margin-left: 30px; } }
+  .content-type-person .content-type__header .definition-list {
+    margin-bottom: 30px; }
+    .content-type-person .content-type__header .definition-list dt {
+      width: 90px; }
+  .content-type-person .dash-header {
+    margin-bottom: 1.25em;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative; }
+    .content-type-person .dash-header::after {
+      background-color: #8c1515;
+      bottom: -.5em;
+      left: 50%;
+      transform: translateX(-50%); }
+    .content-type-person .dash-header::after {
+      bottom: -1em;
+      left: 0;
+      transform: none; }
+  .content-type-person .definition-list {
+    line-height: 1.75; }
 
 /*# sourceMappingURL=stanford-person.css.map */

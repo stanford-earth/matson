@@ -24,10 +24,6 @@
 .page-subtitle {
   margin-bottom: 30px;
 
-  h2 {
-    font-size: 28px;
-  }
-
   span {
     display: block;
   }
@@ -68,9 +64,6 @@ figcaption {
   }
 
   .content-type-person_profile {
-    @include grid-media($media-lg) {
-      @include grid-column(5, $person-grid);
-    }
 
     a {
       text-decoration: underline;
@@ -81,53 +74,52 @@ figcaption {
   .content-type-person_bio {
     border: 1px solid color(fog);
     padding: 40px;
+    clear: both;
 
-    @include grid-media($media-lg) {
-      @include grid-column(6, $person-grid);
-    }
-
-    p,
-    h2 {
+    p {
       font-size: 18px;
 
       @include grid-media($media-md) {
         font-size: 22px;
       }
     }
+  }
 
-    h2 {
-      font-weight: bold;
+  .content-type__media {
+    margin-bottom: 15px;
+    @include grid-media($media-lg){
+      @include grid-column(5, $person-grid);
     }
   }
-}
 
-.content-type__media {
-  margin-bottom: 15px;
-}
+  .content-type__header {
+    @include grid-media($media-lg){
+      @include grid-column(6, $person-grid);
+    }
 
-.content-type__header {
-  .definition-list {
-    margin-bottom: 50px;
+    .definition-list {
+      margin-bottom: 30px;
 
-    dt {
-      width: 90px;
+      dt {
+        width: 90px;
+      }
     }
   }
-}
 
-.dash-header {
-  @include dash-under;
-  font-size: 12px;
-  text-transform: uppercase;
-  position: relative;
+  .dash-header {
+   @include dash-under;
+   font-size: 12px;
+   text-transform: uppercase;
+   position: relative;
 
-  &::after {
+   &::after {
     bottom: -1em;
     left: 0;
     transform: none;
+   }
   }
-}
 
-.definition-list {
-  line-height: 1.75;
+  .definition-list {
+    line-height: 1.75;
+  }
 }
