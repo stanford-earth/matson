@@ -152,6 +152,28 @@ $hero-max-width-lg: 1500px;
 
 // For hero video players that are the first content item on the page, we want
 // the text content to flow below.
+
+.system-main-block {
+  > div {
+    > .hero-banner.has-video {
+    @include grid-media($media-sm-max) {
+    display: flex;
+    flex-flow: row wrap;
+
+      .video {
+      order: 2;
+      width: 100%;
+      }
+
+      .hero-banner__inner {
+      order: 1;
+      width: 100%;
+      }
+     }
+    }
+  }
+}
+
 .system-main-block {
   &:first-child {
     > div:first-child {

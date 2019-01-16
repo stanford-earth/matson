@@ -1677,7 +1677,6 @@
   .hero-banner.has-video .hero-banner__container,
   .hero-banner.has-video .hero-banner__header,
   .hero-banner.has-video .hero-banner__hgroup {
-    order: 1;
     position: relative;
     width: 100%;
     text-align: left;
@@ -1701,6 +1700,17 @@
     width: 80%;
     left: 10%;
     text-align: center; } }
+
+@media only screen and (max-width: 767px) {
+  .system-main-block > div > .hero-banner.has-video {
+    display: flex;
+    flex-flow: row wrap; }
+    .system-main-block > div > .hero-banner.has-video .video {
+      order: 2;
+      width: 100%; }
+    .system-main-block > div > .hero-banner.has-video .hero-banner__inner {
+      order: 1;
+      width: 100%; } }
 
 @media only screen and (max-width: 767px) {
   .system-main-block:first-child > div:first-child > .hero-banner.has-video:first-child {
