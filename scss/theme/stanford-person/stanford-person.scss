@@ -87,13 +87,15 @@ figcaption {
 
   .content-type__media {
     margin-bottom: 15px;
-    @include grid-media($media-lg){
+
+    @include grid-media($media-lg) {
       @include grid-column(5, $person-grid);
     }
   }
 
   .content-type__header {
-    @include grid-media($media-lg){
+
+    @include grid-media($media-lg) {
       @include grid-column(6, $person-grid);
     }
 
@@ -107,16 +109,16 @@ figcaption {
   }
 
   .dash-header {
-   @include dash-under;
-   font-size: 12px;
-   text-transform: uppercase;
-   position: relative;
+    @include dash-under;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
 
-   &::after {
-    bottom: -1em;
-    left: 0;
-    transform: none;
-   }
+    &::after {
+     bottom: -1em;
+     left: 0;
+     transform: none;
+    }
   }
 
   .definition-list {
