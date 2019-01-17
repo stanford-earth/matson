@@ -21,8 +21,6 @@
     margin-top: 10px; }
   .content-type__header .social-actions {
     position: relative;
-    border-bottom: 0.5px solid #9c9d9e;
-    border-top: 0.5px solid #9c9d9e;
     padding: 10px;
     margin-top: 10px; }
     .content-type__header .social-actions::after {
@@ -174,8 +172,6 @@ h1 {
 
 .block--field-s-news-date {
   position: relative;
-  border-bottom: 0.5px solid #4d4f53;
-  border-top: 0.5px solid #4d4f53;
   padding: 10px;
   margin-top: 10px; }
   @media only screen and (min-width: 768px) {
