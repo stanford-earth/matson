@@ -43,6 +43,6 @@
   {% endif %}
 
   {% if description %}
-    <p class="film-card__description">{{ description|render|striptags("<br><a><strong><b><i><em><img><span><ul><li>")|trim|raw }}</p>
+    <p class="film-card__description">{{ description|render|striptags("<br><a><strong><b><i><em><img><span><ul><li><ol><p><dl><dd>")|trim|raw }}</p>
   {% endif %}
 </div>
