@@ -206,7 +206,6 @@ h1 {
     @media only screen and (min-width: 576px) {
       .block--field-s-news-date .field--field-s-news-date__actions {
         display: inline-block;
-        border-left: 1px solid #dad7cb;
         margin-left: 18px;
         padding-left: 15px; } }
   .block--field-s-news-date .field--field-s-news-date__action {

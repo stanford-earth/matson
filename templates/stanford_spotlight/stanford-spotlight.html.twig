@@ -48,7 +48,38 @@
         <span>{{ "Published"|t }}</span>
         <time>{{ created }}</time>
         <div class="content-type-date__actions social-actions">
-          <div class="getsocial gs-inline-group"></div>
+          <div class="tweet-popup sharrre" data-title="<i class='fa fa-twitter' aria-hidden='true'></i>" data-text="{{ node_title|render|striptags|trim }}" data-url="{{ url("<current>") }}">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="tweet-popup">
+              <svg class="i-svg" role="img">
+                <title>{{ 'twitter'|t }}</title>
+                <use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="facebook-popup sharrre" data-title="<i class='fa fa-facebook' aria-hidden='true'></i>" data-text="{{ node_title|render|striptags|trim }}" data-url="{{ url("<current>") }}">
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ url('<current>') }}" class="facebook-popup">
+              <svg class="i-svg" role="img">
+                <title>{{ 'facebook'|t }}</title>
+                <use xlink:href="#i-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="linkedin-popup sharrre" data-title="<i class='fa fa-linkedin' aria-hidden='true'></i>" data-text="{{ node_title|render|striptags|trim }}" data-url="{{ url("<current>") }}">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ url('<current>') }}&title={{ node_title|render|striptags|trim|url_encode }}&source=LinkedIn" class="linkedin-popup">
+              <svg class="i-svg" role="img">
+                <title>{{ 'linkedin'|t }}</title>
+                <use xlink:href="#i-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="email-popup">
+            <a href="mailto:?subject={{ 'I wanted you to see this news article'|t }}&amp;body={{ 'Read more about:'|t }} at {{ node_title|render|striptags|trim }} {{ url("<current>") }}" title="{{ 'Share by Email'|t }}">
+              <svg class="i-svg" role="img">
+                <title>{{ 'mail'|t }}</title>
+                <use xlink:href="#i-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
