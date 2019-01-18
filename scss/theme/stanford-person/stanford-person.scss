@@ -23,7 +23,6 @@
 
 .page-subtitle {
   font-size: 22px;
-  margin-bottom: 30px;
 
   span {
     display: block;
@@ -64,15 +63,21 @@ figcaption {
     @include padding(null 100px null 70px);
   }
 
-  .content-type-person_profile {
+  &_profile {
 
     a {
       text-decoration: underline;
-      display: block;
     }
   }
 
-  .content-type-person_bio {
+  &__profilelink {
+
+    a {
+      font-size: 22px;
+    }
+  }
+
+  &_bio {
     border: 1px solid color(fog);
     padding: 40px;
     clear: both;
