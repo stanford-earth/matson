@@ -22,6 +22,7 @@
 }
 
 .page-subtitle {
+  font-size: 22px;
   margin-bottom: 30px;
 
   span {
@@ -101,6 +102,7 @@ figcaption {
 
     .definition-list {
       margin-bottom: 30px;
+      font-size: 22px;
 
       dt {
         width: 90px;
@@ -123,5 +125,29 @@ figcaption {
 
   .definition-list {
     line-height: 1.25;
+    a {
+      display: block;
+    }
   }
+}
+
+/*Additional for views below people profile*/
+
+.user-info-block {
+  background-color: color(sandstone-light);
+  padding: 40px;
+}
+
+.earth-people-links.block-1 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.earthuser h3 {
+ font-size: 1.4em;
+
+ .media-mentions {
+   width: 100%;
+   padding: 20px 0;
+ }
 }

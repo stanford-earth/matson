@@ -202,6 +202,7 @@
     font-size: 42px; }
 
 .page-subtitle {
+  font-size: 22px;
   margin-bottom: 30px; }
   .page-subtitle span {
     display: block; }
@@ -259,7 +260,8 @@ figcaption {
       float: left;
       margin-left: 30px; } }
   .content-type-person .content-type__header .definition-list {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-size: 22px; }
     .content-type-person .content-type__header .definition-list dt {
       width: 90px; }
   .content-type-person .dash-header {
@@ -278,5 +280,22 @@ figcaption {
       transform: none; }
   .content-type-person .definition-list {
     line-height: 1.25; }
+    .content-type-person .definition-list a {
+      display: block; }
+
+/*Additional for views below people profile*/
+.user-info-block {
+  background-color: #F9F6EF;
+  padding: 40px; }
+
+.earth-people-links.block-1 {
+  margin-top: 0;
+  padding-top: 0; }
+
+.earthuser h3 {
+  font-size: 1.4em; }
+  .earthuser h3 .media-mentions {
+    width: 100%;
+    padding: 20px 0; }
 
 /*# sourceMappingURL=stanford-person.css.map */
