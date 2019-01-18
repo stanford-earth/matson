@@ -156,9 +156,9 @@ $hero-max-width-lg: 1500px;
 .system-main-block {
   > div {
     > .hero-banner.has-video {
-    @include grid-media($media-sm-max) {
-    display: flex;
-    flex-flow: row wrap;
+      @include grid-media($media-sm-max) {
+      display: flex;
+      flex-flow: row wrap;
 
       .video {
       order: 2;
