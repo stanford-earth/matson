@@ -157,19 +157,19 @@ $hero-max-width-lg: 1500px;
   > div {
     > .hero-banner.has-video {
       @include grid-media($media-sm-max) {
-      display: flex;
-      flex-flow: row wrap;
+        display: flex;
+        flex-flow: row wrap;
 
-      .video {
-      order: 2;
-      width: 100%;
-      }
+        .video {
+          order: 2;
+          width: 100%;
+        }
 
-      .hero-banner__inner {
-      order: 1;
-      width: 100%;
+        .hero-banner__inner {
+          order: 1;
+          width: 100%;
+        }
       }
-     }
     }
   }
 }
