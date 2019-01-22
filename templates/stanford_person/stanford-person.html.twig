@@ -7,12 +7,10 @@
     {% endif %}
 
     <div class="content-type__header">
-      <div class="page-title"><h1>{{ first_name }} {{ last_name }}</h1></div>
+      <div class="page-title"><h1>{{ first_name }}</h1></div>
       {% if sub_title|render|striptags|trim is not empty %}
       <div class="page-subtitle">
-        <h2>
-          {{ sub_title }}
-        </h2>
+      {{ sub_title }}
       </div>
       {% endif %}
 
@@ -46,13 +44,12 @@
       {% if profile_link|render|striptags|trim is not empty %}
         {{ profile_link }}
       {% endif %}
-      
+
     </div>
   </div>
 
   {% if bio|render|striptags|trim is not empty %}
     <div class="content-type-person_bio">
-      <h3 class="dash-header">{{ "Biography"|t }}</h3>
       {{ bio }}
     </div>
   {% endif %}

@@ -22,11 +22,7 @@
 }
 
 .page-subtitle {
-  margin-bottom: 50px;
-
-  h2 {
-    font-size: 28px;
-  }
+  font-size: 22px;
 
   span {
     display: block;
@@ -67,67 +63,97 @@ figcaption {
     @include padding(null 100px null 70px);
   }
 
-  .content-type-person_profile {
-    @include grid-media($media-lg) {
-      @include grid-column(5, $person-grid);
-    }
+  &_profile {
 
     a {
       text-decoration: underline;
-      display: block;
     }
   }
 
-  .content-type-person_bio {
+  &__profilelink {
+
+    a {
+      font-size: 22px;
+    }
+  }
+
+  &_bio {
     border: 1px solid color(fog);
     padding: 40px;
+    clear: both;
 
-    @include grid-media($media-lg) {
-      @include grid-column(6, $person-grid);
-    }
-
-    p,
-    h2 {
+    p {
       font-size: 18px;
 
       @include grid-media($media-md) {
         font-size: 22px;
       }
     }
+  }
 
-    h2 {
-      font-weight: bold;
+  .content-type__media {
+    margin-bottom: 15px;
+
+    @include grid-media($media-lg) {
+      @include grid-column(5, $person-grid);
     }
   }
-}
 
-.content-type__media {
-  margin-bottom: 15px;
-}
+  .content-type__header {
 
-.content-type__header {
+    @include grid-media($media-lg) {
+      @include grid-column(6, $person-grid);
+    }
+
+    .definition-list {
+      margin-bottom: 30px;
+      font-size: 22px;
+
+      dt {
+        width: 90px;
+      }
+    }
+  }
+
+  .dash-header {
+    @include dash-under;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+
+    &::after {
+      bottom: -1em;
+      left: 0;
+      transform: none;
+    }
+  }
+
   .definition-list {
-    margin-bottom: 50px;
+    line-height: 1.25;
 
-    dt {
-      width: 90px;
+    a {
+      display: block;
     }
   }
 }
 
-.dash-header {
-  @include dash-under;
-  font-size: 12px;
-  text-transform: uppercase;
-  position: relative;
+//Additional for views below people profile
 
-  &::after {
-    bottom: -1em;
-    left: 0;
-    transform: none;
-  }
+.user-info-block {
+  background-color: color(sandstone-light);
+  padding: 40px;
 }
 
-.definition-list {
-  line-height: 1.75;
+.earth-people-links.block-1 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.earthuser h3 {
+  font-size: 1.4em;
+
+  .media-mentions {
+    width: 100%;
+    padding: 20px 0;
+ }
 }
