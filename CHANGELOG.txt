@@ -1,3 +1,9 @@
+Version 8.x-1.1-alpha14                                               2019-01-22
+--------------------------------------------------------------------------------
+- Update Profile Page display template (EARTH-892)
+- Fix Video Headers on resize/mobile (EARTH-1019)
+- Fix filmcard/striptags (EARTH-1023)
+
 Version 8.x-1.1-alpha13                                               2018-10-16
 --------------------------------------------------------------------------------
 - Hide "Bio" column in person display if empty.
