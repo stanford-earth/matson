@@ -90,33 +90,15 @@
   }
 }
 
-.content-type__media .content-type-date__actions.social-actions {
-  height: 69px;
+// Social icons
+.section-events .content-type-date__actions.social-actions {
+  height: 50px;
   line-height: 50px;
-  vertical-align: middle;
-  display: block;
-  margin-left: 40px;
-}
+  margin: 10px auto 20px auto;
+  width: 250px;
 
-.sharrre {
-  display: inline-block;
-  color: color(text-active);
-  vertical-align: top;
-
-  a {
-    text-decoration: none;
-  }
-
-  svg {
-    height: 1.6em;
-    vertical-align: middle;
-    display: inline;
-    margin-top: -3px;
-    color: color(action);
-
-    &:hover {
-      opacity: .8;
-    }
+  @include grid-media($media-lg) {
+    margin: 10px 0 20px 0;
   }
 
 }
