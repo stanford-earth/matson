@@ -24,7 +24,13 @@
         {% if where|render|striptags|trim is not empty %}
         <dt>{{ 'Where'|t }}:</dt>
         <dd>
-          {{ where }}
+          {% if mapurl|render|striptags|trim is not empty %}
+          <A href="{{ mapurl }}">
+          {% endif %}
+            {{ where }}
+          {% if mapurl|render|striptags|trim is not empty %}
+          </A>
+          {% endif %}
         </dd>
         {% endif %}
         {% if tags|render|striptags|trim is not empty %}
