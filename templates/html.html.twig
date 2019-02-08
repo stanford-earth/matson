@@ -47,13 +47,6 @@
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
-    <script>
-(function() {
-var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-po.src = '//api.at.getsocial.io/get/v1/41bb2968/gs_async.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-})();
-</script>
   </head>
   {% set classes = [is_front ? 'front' : 'not-front'] %}
   {% for role in user.roles %}

@@ -25,11 +25,11 @@
         <dt>{{ 'Where'|t }}:</dt>
         <dd>
           {% if mapurl|render|striptags|trim is not empty %}
-          <A href="{{ mapurl }}">
+          <a href="{{ mapurl|render|striptags|trim }}">
           {% endif %}
             {{ where }}
           {% if mapurl|render|striptags|trim is not empty %}
-          </A>
+          </a>
           {% endif %}
         </dd>
         {% endif %}
