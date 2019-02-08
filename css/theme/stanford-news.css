@@ -223,12 +223,12 @@ h1 {
       .block--field-s-news-date .field--field-s-news-date__actions {
         width: 250px;
         display: inline-block;
-        margin-bottom: 0px; } }
+        margin-bottom: 0; } }
     @media only screen and (min-width: 1024px) {
       .block--field-s-news-date .field--field-s-news-date__actions {
         width: 50%;
         display: inline-block;
-        margin-bottom: 0px; } }
+        margin-bottom: 0; } }
   .block--field-s-news-date .field--field-s-news-date__action {
     display: inline-block;
     color: #4d4f53;
@@ -459,7 +459,7 @@ figure.align-center .figure-container {
     font-size: 1.125em;
     line-height: 16px; }
   .subscribe-wrapper .button {
-    border: none;
+    border: 0;
     padding: 2px; }
   .subscribe-wrapper .sup,
   .subscribe-wrapper .suf {
