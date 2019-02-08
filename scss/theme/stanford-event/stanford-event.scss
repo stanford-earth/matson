@@ -95,12 +95,13 @@
   height: 50px;
   line-height: 50px;
   margin: 10px auto 20px auto;
+  padding-bottom: 0;
   width: 250px;
 
   @include grid-media($media-lg) {
-    margin: 10px 0 20px 0;
+    height: 100px;
+    margin: 0;
   }
-
 }
 
 .email-popup {
