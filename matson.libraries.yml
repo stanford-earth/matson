@@ -140,6 +140,11 @@ sharrre:
     - core/drupal
     - core/jquery
 
+getsocial:
+  version: VERSION
+  js:
+    js/build/getsocial.js: {}
+
 research_area:
   version: VERSION
   css:
