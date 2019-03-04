@@ -142,6 +142,7 @@ sharrre:
 
 getsocial:
   version: VERSION
+  header: true
   js:
     js/build/getsocial.js: {}
 
