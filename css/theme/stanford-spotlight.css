@@ -300,21 +300,6 @@ figcaption {
   vertical-align: middle;
   display: block; }
 
-.sharrre {
-  display: inline-block;
-  color: #4d4f53;
-  vertical-align: top; }
-  .sharrre a {
-    text-decoration: none; }
-  .sharrre svg {
-    height: 1.6em;
-    vertical-align: middle;
-    display: inline;
-    margin-top: -3px;
-    color: #017c92; }
-    .sharrre svg:hover {
-      opacity: .8; }
-
 .email-popup {
   display: inline-block;
   color: #4d4f53;

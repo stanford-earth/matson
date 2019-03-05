@@ -138,29 +138,6 @@ figcaption {
   display: block;
 }
 
-.sharrre {
-  display: inline-block;
-  color: color(text-active);
-  vertical-align: top;
-
-  a {
-    text-decoration: none;
-  }
-
-  svg {
-    height: 1.6em;
-    vertical-align: middle;
-    display: inline;
-    margin-top: -3px;
-    color: color(action);
-
-    &:hover {
-      opacity: .8;
-    }
-  }
-
-}
-
 .email-popup {
   display: inline-block;
   color: color(text-active);
