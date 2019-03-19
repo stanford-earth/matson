@@ -103,7 +103,6 @@ h1 {
     height: 50px;
     line-height: 50px;
     margin: 10px auto;
-    width: 250px;
 
     @include grid-media($media-md) {
       width: 250px;
