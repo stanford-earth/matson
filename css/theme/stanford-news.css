@@ -21,8 +21,6 @@
     margin-top: 10px; }
   .content-type__header .social-actions {
     position: relative;
-    border-bottom: 0.5px solid #9c9d9e;
-    border-top: 0.5px solid #9c9d9e;
     padding: 10px;
     margin-top: 10px; }
     .content-type__header .social-actions::after {
@@ -174,10 +172,14 @@ h1 {
 
 .block--field-s-news-date {
   position: relative;
-  border-bottom: 0.5px solid #4d4f53;
-  border-top: 0.5px solid #4d4f53;
   padding: 10px;
   margin-top: 10px; }
+  @media only screen and (min-width: 576px) {
+    .block--field-s-news-date {
+      width: calc(100% - 30px);
+      float: left;
+      margin-left: 15px;
+      margin-left: 0; } }
   @media only screen and (min-width: 768px) {
     .block--field-s-news-date {
       width: calc(66.6666666667% - 50px);
@@ -197,7 +199,17 @@ h1 {
     display: inline-block;
     vertical-align: middle;
     height: 50px;
-    line-height: 50px; }
+    line-height: 50px;
+    width: 100%;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .block--field-s-news-date .field--field-s-news-date {
+        width: 40%;
+        text-align: left; } }
+    @media only screen and (min-width: 1024px) {
+      .block--field-s-news-date .field--field-s-news-date {
+        width: 40%;
+        text-align: left; } }
     .block--field-s-news-date .field--field-s-news-date svg {
       margin-right: .5rem;
       height: 1.6em;
@@ -205,14 +217,17 @@ h1 {
   .block--field-s-news-date .field--field-s-news-date__actions {
     height: 50px;
     line-height: 50px;
-    vertical-align: middle;
-    display: block; }
-    @media only screen and (min-width: 576px) {
+    margin: 10px auto; }
+    @media only screen and (min-width: 768px) {
       .block--field-s-news-date .field--field-s-news-date__actions {
+        width: 250px;
         display: inline-block;
-        border-left: 1px solid #dad7cb;
-        margin-left: 18px;
-        padding-left: 15px; } }
+        margin-bottom: 0; } }
+    @media only screen and (min-width: 1024px) {
+      .block--field-s-news-date .field--field-s-news-date__actions {
+        width: 50%;
+        display: inline-block;
+        margin-bottom: 0; } }
   .block--field-s-news-date .field--field-s-news-date__action {
     display: inline-block;
     color: #4d4f53;
@@ -263,9 +278,6 @@ h1 {
   color: #4d4f53;
   font-size: 20px;
   padding-top: 20px; }
-  @media only screen and (min-width: 576px) {
-    .field-s-news-summary {
-      padding: 40px 80px 20px; } }
   @media only screen and (min-width: 1024px) {
     .field-s-news-summary {
       padding-right: 110px;
@@ -417,29 +429,37 @@ figure.align-center .figure-container {
   line-height: 0.7; }
 
 .subscribe-wrapper {
-  width: 100%;
   margin-top: 10px; }
+  @media only screen and (min-width: 576px) {
+    .subscribe-wrapper {
+      width: calc(100% - 30px);
+      float: left;
+      margin-left: 15px;
+      margin: 10px auto; } }
   @media only screen and (min-width: 768px) {
     .subscribe-wrapper {
       width: calc(33.3333333333% - 40px);
       float: left;
       margin-left: 30px;
-      margin-left: 20px; } }
+      margin-left: 30px;
+      margin-top: 20px; } }
   @media only screen and (min-width: 1024px) {
     .subscribe-wrapper {
       width: calc(25% - 37.5px);
       float: left;
       margin-left: 30px;
-      margin-left: 20px; } }
+      margin-left: 30px; } }
   .subscribe-wrapper a {
     display: block;
-    width: 100%;
     text-transform: capitalize; }
   .subscribe-wrapper span {
     display: block;
     font-weight: bold;
     font-size: 1.125em;
     line-height: 16px; }
+  .subscribe-wrapper .button {
+    border: 0;
+    padding: 2px; }
   .subscribe-wrapper .sup,
   .subscribe-wrapper .suf {
     font-size: 0.75em; }

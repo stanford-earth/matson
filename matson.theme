@@ -133,7 +133,7 @@ function matson_page_attachments_alter(array &$attachments) {
 
       case 'stanford_news':
         $attachments['#attached']['library'][] = 'matson/stanford_news';
-        $attachments['#attached']['library'][] = 'matson/sharrre';
+        $attachments['#attached']['library'][] = 'matson/getsocial';
         break;
 
       case 'research_area':
@@ -142,12 +142,12 @@ function matson_page_attachments_alter(array &$attachments) {
 
       case 'stanford_event':
         $attachments['#attached']['library'][] = 'matson/stanford_event';
-        $attachments['#attached']['library'][] = 'matson/sharrre';
+        $attachments['#attached']['library'][] = 'matson/getsocial';
         break;
 
       case 'stanford_spotlight':
         $attachments['#attached']['library'][] = 'matson/stanford_spotlight';
-        $attachments['#attached']['library'][] = 'matson/sharrre';
+        $attachments['#attached']['library'][] = 'matson/getsocial';
         break;
     }
   }

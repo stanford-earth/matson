@@ -5,8 +5,6 @@
     margin-top: 10px; }
   .content-type__header .social-actions {
     position: relative;
-    border-bottom: 0.5px solid #9c9d9e;
-    border-top: 0.5px solid #9c9d9e;
     padding: 10px;
     margin-top: 10px; }
     .content-type__header .social-actions::after {
@@ -244,27 +242,16 @@
         bottom: -40px;
         margin-left: -100vw; } }
 
-.content-type__media .content-type-date__actions.social-actions {
-  height: 69px;
+.section-events .content-type-date__actions.social-actions {
+  height: 50px;
   line-height: 50px;
-  vertical-align: middle;
-  display: block;
-  margin-left: 40px; }
-
-.sharrre {
-  display: inline-block;
-  color: #4d4f53;
-  vertical-align: top; }
-  .sharrre a {
-    text-decoration: none; }
-  .sharrre svg {
-    height: 1.6em;
-    vertical-align: middle;
-    display: inline;
-    margin-top: -3px;
-    color: #017c92; }
-    .sharrre svg:hover {
-      opacity: .8; }
+  margin: 10px auto 20px auto;
+  padding-bottom: 0;
+  width: 250px; }
+  @media only screen and (min-width: 1024px) {
+    .section-events .content-type-date__actions.social-actions {
+      height: 100px;
+      margin: 0; } }
 
 .email-popup {
   display: inline-block;

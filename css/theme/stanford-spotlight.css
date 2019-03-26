@@ -21,8 +21,6 @@
     margin-top: 10px; }
   .content-type__header .social-actions {
     position: relative;
-    border-bottom: 0.5px solid #9c9d9e;
-    border-top: 0.5px solid #9c9d9e;
     padding: 10px;
     margin-top: 10px; }
     .content-type__header .social-actions::after {
@@ -301,21 +299,6 @@ figcaption {
   line-height: 50px;
   vertical-align: middle;
   display: block; }
-
-.sharrre {
-  display: inline-block;
-  color: #4d4f53;
-  vertical-align: top; }
-  .sharrre a {
-    text-decoration: none; }
-  .sharrre svg {
-    height: 1.6em;
-    vertical-align: middle;
-    display: inline;
-    margin-top: -3px;
-    color: #017c92; }
-    .sharrre svg:hover {
-      opacity: .8; }
 
 .email-popup {
   display: inline-block;
