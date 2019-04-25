@@ -3077,6 +3077,9 @@ dl > dt {
   float: left;
   width: calc(100% - 130px); }
 
+figure.align-center {
+  width: fit-content; }
+
 .i-svg {
   display: inline-block;
   fill: currentcolor;
