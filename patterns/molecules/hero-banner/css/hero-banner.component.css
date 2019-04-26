@@ -14,12 +14,15 @@
     position: absolute;
     width: 100%;
     height: 100%; }
-  .hero-banner .image {
+  .hero-banner .image,
+  .hero-banner .entity-reference {
     position: absolute;
     width: 100%;
     height: 100%; }
     .hero-banner .image img,
-    .hero-banner .image picture {
+    .hero-banner .image picture,
+    .hero-banner .entity-reference img,
+    .hero-banner .entity-reference picture {
       object-fit: cover;
       object-position: 50% 50%;
       height: 100%;
