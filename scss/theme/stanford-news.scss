@@ -222,7 +222,7 @@ h1 {
   position: initial;
 }
 
-
+.field-p-responsive-media,
 .field-p-responsive-image,
 .field-p-responsive-image-cred,
 .field-p-video-url {
@@ -236,6 +236,7 @@ h1 {
 }
 
 // Responsive Image
+.field-p-responsive-media picture,
 .field--responsive-image picture,
 .field--responsive-video,
 figure.align-center .figure-container {
