@@ -2897,11 +2897,13 @@
   display: block;
   z-index: 2; }
 
+.field-p-responsive-media picture,
 .field--responsive-image picture,
 .field--responsive-video {
   position: relative;
   margin-bottom: 20px;
   display: block; }
+  .field-p-responsive-media picture::after,
   .field--responsive-image picture::after,
   .field--responsive-video::after {
     content: '';
@@ -2915,6 +2917,7 @@
     margin-left: -50vw;
     margin-right: -50vw;
     z-index: -1; }
+  .field-p-responsive-media picture img,
   .field--responsive-image picture img,
   .field--responsive-video img {
     width: 100%;
