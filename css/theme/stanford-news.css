@@ -165,7 +165,9 @@ h1 {
   color: #4d4f53; }
 
 .field-s-news-author {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px; }
   @media only screen and (min-width: 1024px) {
     .field-s-news-author {
       padding-left: 110px; } }
