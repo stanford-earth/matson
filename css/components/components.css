@@ -3854,6 +3854,8 @@ ul.tabs {
       transform: translateY(-50%);
       background-color: #8c1515;
       left: 0; }
+    .field-p-wysiwyg h2::after {
+      top: .7em; }
   .field-p-wysiwyg h3 {
     font-size: 1.6em; }
   .field-p-wysiwyg figure {
