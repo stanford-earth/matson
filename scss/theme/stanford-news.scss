@@ -40,6 +40,8 @@ h1 {
 // Author field.
 .field-s-news-author {
   text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @include grid-media($media-lg) {
     padding-left: 110px;
