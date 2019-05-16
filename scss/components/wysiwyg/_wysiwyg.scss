@@ -38,6 +38,9 @@
   h2 {
     @include dash-left-offset;
     font-size: 1.8em;
+    &::after {
+      top: .7em;
+    }
   }
 
   h3 {
