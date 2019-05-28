@@ -27,7 +27,7 @@ $search-input-bg: #6e6f72;
   }
 }
 
-.search-toggle {
+#views-exposed-form-acquia-search-page {
   position: relative;
 
   input {
@@ -35,7 +35,11 @@ $search-input-bg: #6e6f72;
     margin: 13px 0;
   }
 
-  input[type=search] {
+  input[type=submit] {
+    display: none;
+  }
+
+  input[type=text] {
     background: $search-input-bg url('/themes/stanford/matson/img/source/search-white.svg') no-repeat 9px center;
     background-size: 17px 17px;
     box-sizing: border-box;
@@ -62,7 +66,7 @@ $search-input-bg: #6e6f72;
     display: none;
   }
 
-  input[type=search]:focus {
+  input[type=text]:focus {
     background-color: $search-input-bg;
     border: 0;
 
