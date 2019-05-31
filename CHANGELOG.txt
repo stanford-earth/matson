@@ -1,6 +1,6 @@
 Version 8.x-1.1-alpha16                                               2019-05-31
 --------------------------------------------------------------------------------
-- Updated for media fields replacing image fields.
+- Updated for media fields replacing image fields, added to css and templates.
 
 Version 8.x-1.1-alpha15                                               2019-03-26
 --------------------------------------------------------------------------------
