@@ -303,24 +303,28 @@ h1 {
   position: initial; }
 
 @media only screen and (min-width: 576px) {
+  .field-p-responsive-media,
   .field-p-responsive-image,
   .field-p-responsive-image-cred,
   .field-p-video-url {
     padding: 0 60px 20px; } }
 
 @media only screen and (min-width: 1024px) {
+  .field-p-responsive-media,
   .field-p-responsive-image,
   .field-p-responsive-image-cred,
   .field-p-video-url {
     padding-right: 60px;
     padding-left: 60px; } }
 
+.field-p-responsive-media picture,
 .field--responsive-image picture,
 .field--responsive-video,
 figure.align-center .figure-container {
   position: relative;
   margin-bottom: 20px;
   display: block; }
+  .field-p-responsive-media picture::after,
   .field--responsive-image picture::after,
   .field--responsive-video::after,
   figure.align-center .figure-container::after {
@@ -335,6 +339,7 @@ figure.align-center .figure-container {
     margin-left: -50vw;
     margin-right: -50vw;
     z-index: -1; }
+  .field-p-responsive-media picture img,
   .field--responsive-image picture img,
   .field--responsive-video img,
   figure.align-center .figure-container img {
