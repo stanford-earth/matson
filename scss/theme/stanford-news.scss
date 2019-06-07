@@ -390,7 +390,7 @@ figure.align-center .figure-container {
 
   a {
     display: block;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 
   span {
@@ -408,5 +408,9 @@ figure.align-center .figure-container {
   .sup,
   .suf {
     font-size: em(12px);
+  }
+
+  .suf {
+    text-transform: none;
   }
 }

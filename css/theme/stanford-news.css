@@ -458,7 +458,7 @@ figure.align-center .figure-container {
       margin-left: 30px; } }
   .subscribe-wrapper a {
     display: block;
-    text-transform: capitalize; }
+    text-transform: uppercase; }
   .subscribe-wrapper span {
     display: block;
     font-weight: bold;
@@ -470,5 +470,7 @@ figure.align-center .figure-container {
   .subscribe-wrapper .sup,
   .subscribe-wrapper .suf {
     font-size: 0.75em; }
+  .subscribe-wrapper .suf {
+    text-transform: none; }
 
 /*# sourceMappingURL=stanford-news.css.map */
