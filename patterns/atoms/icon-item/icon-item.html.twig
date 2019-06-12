@@ -9,6 +9,6 @@
   {# Set title to false so it doesnt change, since the text will be sufficient #}
   {{ link|openlink({class:"icon-item", title: false}) }}
     <span class="icon-item__image">{{ image }}</span>
-    <h5 class="icon-item__name">{{ link|render|striptags|trim|raw }} <span class="icon-item__arrow"><svg class="i-svg i-svg--arrow-right" role="img"><title>{{ 'follow link'|t }}</title><use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span></h5>
+    <h5 class="icon-item__name">{{ link|render|striptags|trim|raw }} <span class="icon-item__arrow"><svg class="i-svg i-svg--arrow-right" role="img" aria-labelledby="svg_followlink"><title id="svg_followlink">{{ 'follow link'|t }}</title><use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span></h5>
   {{ link|closelink }}
 {% endif %}

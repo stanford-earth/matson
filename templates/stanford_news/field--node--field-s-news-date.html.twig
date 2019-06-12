@@ -38,7 +38,7 @@
 #}
 <div class="block--field-s-news-date">
   {% for item in items %}
-    <div{{ item.attributes.addClass("field--field-s-news-date") }}><svg class="i-svg" role="img"><title>{{ 'Clock'|t }}</title><use xlink:href="#i-clock" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>{{ item.content }}</div>
+    <div{{ item.attributes.addClass("field--field-s-news-date") }}><svg class="i-svg" role="img" aria-labelledby="svg_clock"><title id="svg_clock">{{ 'Clock'|t }}</title><use xlink:href="#i-clock" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>{{ item.content }}</div>
   {% endfor %}
   <div class="field--field-s-news-date__actions">
     <div class="getsocial gs-inline-group"></div>

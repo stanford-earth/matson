@@ -14,7 +14,7 @@
 
     {{ link|openlink({class: "social-card__action tweet-popup", 'aria-label': 'Share on twitter'|t }) }}
       <div class="social-card__icon">
-        <svg class="i-svg i-svg--twitter" role="img"><title>{{ 'Twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
+        <svg class="i-svg i-svg--twitter" role="img" aria-labelledby="svg_twitter"><title id="svg_twitter">{{ 'Twitter'|t }}</title><use xlink:href="#i-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
       </div>
     {{ link|closelink }}
   </div>

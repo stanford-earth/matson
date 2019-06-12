@@ -30,7 +30,7 @@
       </div>
       {% if variants.arrow == 'has-arrow' and link|closelink is not empty%}
         <div class="film-card__arrow">
-          <svg class="i-svg i-svg--arrow-right" role="img"><title>{{ 'Navigate to item'|t }}</title><use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
+          <svg class="i-svg i-svg--arrow-right" role="img" aria-labelledby="svg_navigate_right"><title id="svg_navigate_right">{{ 'Navigate to item'|t }}</title><use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
         </div>
       {% endif %}
     </div>
