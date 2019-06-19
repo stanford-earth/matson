@@ -49,7 +49,7 @@
         {% if variants.has_arrow and link|render is not empty %}
           {{ link|openlink({"aria-label": "Navigate to "|t ~ arialabel}) }}
           <span class="simple-block__arrow">
-            <svg class="i-svg i-svg--arrow-right" role="img"><title>{{ "Navigate to "|t ~ arialabel}}</title>
+            <svg class="i-svg i-svg--arrow-right" role="img" aria-labelledby="svg_navigate_right"><title id="svg_navigate_right">{{ "Navigate to "|t ~ arialabel}}</title>
               <use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
             </svg>
           </span>

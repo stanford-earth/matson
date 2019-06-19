@@ -27,7 +27,7 @@
   </header>
 
   <a id="open-{{ attributes.id }}" href="?card={{ attributes.id }}#{{ attributes.id }}" class="expandable-card__toggle js-expandable-card__toggle expandable-card__open" title="Open" aria-label="Expand {{ title|render|striptags }} Menu" >
-    <span><svg class="i-svg i-svg--plus" role="img"><title>{{ 'Expand card'|t }}</title><use xlink:href="#i-plus" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
+    <span><svg class="i-svg i-svg--plus" role="img" aria-labelledby="svg_expand"><title id="svg_expand">{{ 'Expand card'|t }}</title><use xlink:href="#i-plus" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
   </a>
 
   <nav class="icon-items" aria-expanded="false" role="navigation">
@@ -43,6 +43,6 @@
   </nav>
 
   <a id="close-{{ attributes.id }}" href="?#{{ attributes.id }}" class="expandable-card__toggle js-expandable-card__toggle expandable-card__close" title="Close" aria-label="Collapse {{ title|render|striptags }} Menu">
-    <span><svg class="i-svg i-svg--minus" role="img"><title>{{ 'Collapse card'|t }}</title><use xlink:href="#i-minus" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
+    <span><svg class="i-svg i-svg--minus" role="img" aria-labelledby="svg_collpase"><title id="svg_collpase">{{ 'Collapse card'|t }}</title><use xlink:href="#i-minus" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
   </a>
 </div>
