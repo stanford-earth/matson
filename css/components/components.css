@@ -3177,7 +3177,7 @@
   z-index: 2; }
 
 .section-header {
-  color: #4d4f53;
+  color: green;
   padding-bottom: 20px; }
   @media only screen and (min-width: 1024px) {
     .section-header {
