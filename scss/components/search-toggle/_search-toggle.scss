@@ -66,10 +66,6 @@ $search-input-bg: #6e6f72;
       background-color: $search-input-bg;
       width: 620px;
     }
-
-    & + .basic-main-menu {
-      @include hide-visually;
-    }
   }
 
   input::-moz-placeholder {
@@ -83,4 +79,11 @@ $search-input-bg: #6e6f72;
 
 .search-toggle__text {
   @include hide-visually;
+}
+
+.navbar {
+  & + .navbar__search:focus {
+    //this doesn't work either
+    @include hide-visually;
+  }
 }
