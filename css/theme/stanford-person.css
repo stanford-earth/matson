@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .content-type-person .dash-header::after {
   position: absolute;
   height: 2px;
@@ -200,14 +201,15 @@
     font-size: 42px; }
 
 .page-subtitle {
-  font-size: 22px; }
+  font-size: 22px;
+  margin-bottom: 15px; }
   .page-subtitle span {
     display: block; }
 
 figcaption {
-  display: table-caption;
   caption-side: bottom;
   color: #9c9d9e;
+  display: table-caption;
   text-align: right; }
 
 .block-matson-content {
@@ -235,31 +237,47 @@ figcaption {
   .content-type-person_profile a {
     text-decoration: underline; }
   .content-type-person__profilelink a {
-    font-size: 22px; }
+    font-size: 20px; }
   .content-type-person_bio {
     border: 1px solid #dad7cb;
-    padding: 40px;
-    clear: both; }
+    clear: both;
+    margin-bottom: 15px;
+    padding: 40px; }
     .content-type-person_bio p {
       font-size: 18px; }
       @media only screen and (min-width: 768px) {
         .content-type-person_bio p {
           font-size: 22px; } }
+  .content-type-person a {
+    text-decoration: none; }
+  .content-type-person .earth-people__subtitle {
+    margin-bottom: 10px; }
+    .content-type-person .earth-people__subtitle:before {
+      content: "•";
+      margin-right: 20px; }
   .content-type-person .content-type__media {
     margin-bottom: 15px; }
+    @media only screen and (max-width: 1023px) {
+      .content-type-person .content-type__media {
+        margin: 0 20px;
+        width: calc(100% - 40px); } }
     @media only screen and (min-width: 1024px) {
       .content-type-person .content-type__media {
         width: calc(45.4545454545% - 43.6363636364px);
         float: left;
         margin-left: 30px; } }
+  @media only screen and (max-width: 1023px) {
+    .content-type-person .content-type__header {
+      margin: 0 20px;
+      width: calc(100% - 40px); } }
   @media only screen and (min-width: 1024px) {
     .content-type-person .content-type__header {
       width: calc(54.5454545455% - 46.3636363636px);
       float: left;
       margin-left: 30px; } }
   .content-type-person .content-type__header .definition-list {
-    margin-bottom: 30px;
-    font-size: 22px; }
+    font-size: 22px;
+    margin-bottom: 30px; }
     .content-type-person .content-type__header .definition-list dt {
       width: 90px; }
   .content-type-person .dash-header {
@@ -292,7 +310,10 @@ figcaption {
 .earthuser h3 {
   font-size: 1.4em; }
   .earthuser h3 .media-mentions {
-    width: 100%;
-    padding: 20px 0; }
+    padding: 20px 0;
+    width: 100%; }
+  .earthuser h3 .mmlist {
+    margin-bottom: 20px;
+    width: 100%; }
 
 /*# sourceMappingURL=stanford-person.css.map */

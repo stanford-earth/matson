@@ -23,6 +23,7 @@
 
 .page-subtitle {
   font-size: 22px;
+  margin-bottom: 15px;
 
   span {
     display: block;
@@ -30,9 +31,9 @@
 }
 
 figcaption {
-  display: table-caption;
   caption-side: bottom;
   color: color(ash);
+  display: table-caption;
   text-align: right;
 }
 
@@ -73,14 +74,15 @@ figcaption {
   &__profilelink {
 
     a {
-      font-size: 22px;
+      font-size: 20px;
     }
   }
 
   &_bio {
     border: 1px solid color(fog);
-    padding: 40px;
     clear: both;
+    margin-bottom: 15px;
+    padding: 40px;
 
     p {
       font-size: 18px;
@@ -91,8 +93,26 @@ figcaption {
     }
   }
 
+  a {
+    text-decoration: none;
+  }
+
+  .earth-people__subtitle {
+    margin-bottom: 10px;
+
+    &:before {
+      content: "•";
+      margin-right: 20px;
+    }
+  }
+
   .content-type__media {
     margin-bottom: 15px;
+
+    @include grid-media($media-md-max) {
+      margin: 0 20px;
+      width: calc(100% - 40px);
+    }
 
     @include grid-media($media-lg) {
       @include grid-column(5, $person-grid);
@@ -101,13 +121,18 @@ figcaption {
 
   .content-type__header {
 
+    @include grid-media($media-md-max) {
+      margin: 0 20px;
+      width: calc(100% - 40px);
+    }
+
     @include grid-media($media-lg) {
       @include grid-column(6, $person-grid);
     }
 
     .definition-list {
-      margin-bottom: 30px;
       font-size: 22px;
+      margin-bottom: 30px;
 
       dt {
         width: 90px;
@@ -153,7 +178,11 @@ figcaption {
   font-size: 1.4em;
 
   .media-mentions {
-    width: 100%;
     padding: 20px 0;
- }
+    width: 100%;
+  }
+  .mmlist {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 }
