@@ -13,16 +13,18 @@
   {{ attach_library('matson/component_centered_container') }}
   {% set attributes = attributes.addClass('component-centered-container') %}
 {% endif %}
+{% if superhead %}
+  {% set attributes = attributes.addClass(['section-header', variants.is_centered, variants.dash_under]) %}
 
-{% set attributes = attributes.addClass(['section-header', variants.is_centered, variants.dash_under]) %}
-
-{% set h2classes = ['drop-cap-title', variants.dash_under, variants.is_featured] %}
-
+  {% set h2classes = ['drop-cap-title', variants.dash_under, variants.is_featured] %}
+{% endif %}
 <header{{ attributes }}>
-  <h2{{ create_attribute({'class': h2classes}) }}>
-    <span class="drop-cap-title__name">{{ superhead }}</span>
-    <span class="drop-cap-title__drop-cap" aria-hidden="true">{{ superhead|first_char }}</span>
-  </h2>
+  {% if superhead %}
+    <h2{{ create_attribute({'class': h2classes}) }}>
+      <span class="drop-cap-title__name">{{ superhead }}</span>
+      <span class="drop-cap-title__drop-cap" aria-hidden="true">{{ superhead|first_char }}</span>
+    </h2>
+  {% endif %}
   {% if subhead %}
     {{ subhead|raw }}
   {% endif %}
