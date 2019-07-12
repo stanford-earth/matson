@@ -9,14 +9,17 @@
   Center the container if variant is true by including the library/css and adding
   a class to the main wrapping div.
 #}
-{% if variants.centered_container %}
-  {{ attach_library('matson/component_centered_container') }}
-  {% set attributes = attributes.addClass('component-centered-container') %}
-{% endif %}
-{% if superhead|render|trim is not empty %}
-  {% set attributes = attributes.addClass(['section-header', variants.is_centered, variants.dash_under]) %
-  {% set h2classes = ['drop-cap-title', variants.dash_under, variants.is_featured] %}
-{% endif %}
+
+  {% if variants.centered_container %}
+    {{ attach_library('matson/component_centered_container') }}
+    {% set attributes = attributes.addClass('component-centered-container') %}
+  {% endif %}
+
+  {% if superhead|render|trim is not empty %}
+    {% set attributes = attributes.addClass(['section-header', variants.is_centered, variants.dash_under]) %}
+
+    {% set h2classes = ['drop-cap-title', variants.dash_under, variants.is_featured] %}
+  {% endif %}
 <header{{ attributes }}>
   {% if superhead|render|trim is not empty %}
     <h2{{ create_attribute({'class': h2classes}) }}>

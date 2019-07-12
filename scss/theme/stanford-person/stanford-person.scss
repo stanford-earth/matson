@@ -1,8 +1,6 @@
-@charset 'UTF-8';
-// Grab our mixins.
+@charset 'UTF-8'; // Grab our mixins.
 @import "utilities/utilities";
 @import "components/content-type/content-type";
-
 // Comment out to avoid centering the whole container.
 .main-container {
   @include responsive-container($default-container);
@@ -55,23 +53,19 @@ figcaption {
     columns: 11,
     gutter: 30px,
   );
-
   @include grid-container;
   @include grid-collapse;
-
   @include grid-media($media-lg) {
     @include padding(null 100px null 70px);
   }
 
   &_profile {
-
     a {
       text-decoration: underline;
     }
   }
 
   &__profilelink {
-
     a {
       font-size: 22px;
     }
@@ -84,7 +78,6 @@ figcaption {
 
     p {
       font-size: 18px;
-
       @include grid-media($media-md) {
         font-size: 22px;
       }
@@ -93,14 +86,12 @@ figcaption {
 
   .content-type__media {
     margin-bottom: 15px;
-
     @include grid-media($media-lg) {
       @include grid-column(5, $person-grid);
     }
   }
 
   .content-type__header {
-
     @include grid-media($media-lg) {
       @include grid-column(6, $person-grid);
     }
@@ -136,9 +127,7 @@ figcaption {
     }
   }
 }
-
 //Additional for views below people profile
-
 .user-info-block {
   background-color: color(sandstone-light);
   padding: 40px;
@@ -155,5 +144,5 @@ figcaption {
   .media-mentions {
     width: 100%;
     padding: 20px 0;
- }
+  }
 }
