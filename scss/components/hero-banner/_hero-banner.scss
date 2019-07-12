@@ -168,6 +168,9 @@ $hero-max-width-lg: 1500px;
         .hero-banner__inner {
           order: 1;
           width: 100%;
+          .hero-banner__container{
+            margin: 0;
+          }
         }
       }
     }
