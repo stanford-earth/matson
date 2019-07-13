@@ -205,9 +205,9 @@
   display: block; }
 
 figcaption {
-  display: table-caption;
   caption-side: bottom;
   color: #4d4f53;
+  display: table-caption;
   text-align: right; }
 
 .lead-text {
@@ -236,9 +236,9 @@ figcaption {
 
 @media only screen and (min-width: 1024px) {
   .content-type__media-container {
+    margin-top: 50px;
     outline: 1px solid #999;
-    outline-offset: 30px;
-    margin-top: 50px; } }
+    outline-offset: 30px; } }
 
 .content-type__media-container.left-align-media .content-type__header::after, .content-type__media-container.centered-media .content-type__header::after {
   clear: none; }
@@ -271,10 +271,15 @@ figcaption {
       width: 150vw; } }
 
 .content-type__media-container.left-align-media .content-type__media .photo-credit, .content-type__media-container.centered-media .content-type__media .photo-credit {
-  margin: -15px 30px 10px 0;
+  clear: both;
   color: #4d4f53;
+  font-size: .8em;
   line-height: 1.1em;
-  font-size: .8em; }
+  margin: 10px 30px 10px 0;
+  text-align: left; }
+  @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+    .content-type__media-container.left-align-media .content-type__media .photo-credit, .content-type__media-container.centered-media .content-type__media .photo-credit {
+      margin: 0 30px 10px 0; } }
   .content-type__media-container.left-align-media .content-type__media .photo-credit::after, .content-type__media-container.centered-media .content-type__media .photo-credit::after {
     margin-bottom: 1.25em; }
     .content-type__media-container.left-align-media .content-type__media .photo-credit::after::after, .content-type__media-container.centered-media .content-type__media .photo-credit::after::after {
@@ -295,16 +300,16 @@ figcaption {
   padding: 0; }
 
 .content-type-date__actions.social-actions {
+  display: block;
   height: 69px;
   line-height: 50px;
-  vertical-align: middle;
-  display: block; }
+  vertical-align: middle; }
 
 .email-popup {
-  display: inline-block;
-  color: #4d4f53;
-  vertical-align: top;
   border-left: solid 1px #dad7cb;
-  padding-left: 25px; }
+  color: #4d4f53;
+  display: inline-block;
+  padding-left: 25px;
+  vertical-align: top; }
 
 /*# sourceMappingURL=stanford-spotlight.css.map */
