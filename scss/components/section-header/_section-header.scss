@@ -4,7 +4,7 @@
 @import "utilities/utilities";
 
 .section-header {
-  color: green;
+  color: color(text-active);
   padding-bottom: 20px;
   @include grid-media($media-lg) {
     padding-bottom: 0;
