@@ -1,7 +1,6 @@
 @charset 'UTF-8'; // Grab our mixins.
 @import "utilities/utilities";
-@import "components/content-type/content-type";
-// The expectation of the complex page is that the hero banner will be at the
+@import "components/content-type/content-type"; // The expectation of the complex page is that the hero banner will be at the
 // top of the page each time a complex page is rendered. A few things have to
 // move around to ensure that the banner is in the right place.
 
@@ -16,20 +15,24 @@
   }
 }
 // Text and style
+
 .node--type-stanford_news {
   color: color(text-active);
 }
 // Top media and Banner caption
+
 .field-s-news-top-media {
   color: color(stone);
   margin-top: 50px;
 }
 // Title field.
+
 h1 {
   font-size: 42px;
   color: color(text-active);
 }
 // Author field.
+
 .field-s-news-author {
   text-transform: uppercase;
   padding-top: 10px;
@@ -39,6 +42,7 @@ h1 {
   }
 }
 // Date field.
+
 .block--field-s-news-date {
   position: relative;
   padding: 10px;
@@ -124,6 +128,7 @@ h1 {
   }
 }
 // Earth matters field.
+
 .field-earth-matters-topic {
   text-transform: uppercase;
   @include grid-media($media-lg) {
@@ -158,12 +163,14 @@ h1 {
   }
 }
 // Category Block.
+
 .field--field-s-news-category {
   display: inline-block;
   text-transform: uppercase;
   padding: 0 10px 0 0;
 }
 // Body field.
+
 .field-s-news-summary {
   color: color(text-active);
   font-size: 20px;
@@ -181,6 +188,7 @@ h1 {
   padding-bottom: 0;
 }
 // Layout spacing
+
 .layout--basic {
   .field-p-wysiwyg {
     @include grid-media($media-sm) {
@@ -208,6 +216,7 @@ h1 {
   }
 }
 // Responsive Image
+
 .field--responsive-image picture,
 .field--responsive-video,
 .field-p-responsive-media picture,
@@ -244,10 +253,12 @@ figure.align-center .figure-container {
   text-align: left;
 }
 // Simple columns
+
 .simple-columns {
   color: color(text-active);
 }
 // Highlight card
+
 .highlight-card {
   color: color(text-active);
 
@@ -269,6 +280,7 @@ figure.align-center .figure-container {
   }
 }
 // Editorial Slat
+
 .editorial-sidebar.simple-slat.is-narrow {
   margin: 0;
 
@@ -306,6 +318,7 @@ figure.align-center .figure-container {
   }
 }
 // Source field.
+
 .field-s-news-source {
   position: relative;
   clear: both;
