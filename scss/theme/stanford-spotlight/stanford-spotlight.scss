@@ -33,9 +33,9 @@
 }
 
 figcaption {
-  display: table-caption;
   caption-side: bottom;
   color: color(stone);
+  display: table-caption;
   text-align: right;
 }
 
@@ -60,9 +60,9 @@ figcaption {
 .content-type__media-container {
 
   @include grid-media($media-lg) {
+    margin-top: 50px;
     outline: 1px solid #999;
     outline-offset: 30px;
-    margin-top: 50px;
   }
 
   &.left-align-media,
@@ -95,10 +95,16 @@ figcaption {
 
       }
       .photo-credit {
-        margin: -15px 30px 10px 0;
+        clear: both;
         color: color(stone);
-        line-height: 1.1em;
         font-size: .8em;
+        line-height: 1.1em;
+        margin: 10px 30px 10px 0;
+        text-align: left;
+
+        @include grid-media($media-lg-only) {
+          margin: 0 30px 10px 0;
+        }
 
         &::after {
           @include dash-under ($dash-color: brand);
@@ -132,16 +138,16 @@ figcaption {
 }
 
 .content-type-date__actions.social-actions {
+  display: block;
   height: 69px;
   line-height: 50px;
   vertical-align: middle;
-  display: block;
 }
 
 .email-popup {
-  display: inline-block;
-  color: color(text-active);
-  vertical-align: top;
   border-left: solid 1px color(fog);
+  color: color(text-active);
+  display: inline-block;
   padding-left: 25px;
+  vertical-align: top;
 }
