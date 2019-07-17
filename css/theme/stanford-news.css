@@ -213,7 +213,7 @@ h1 {
         width: 40%;
         text-align: left; } }
     .block--field-s-news-date .field--field-s-news-date svg {
-      margin-right: .5rem;
+      margin-right: 0.5rem;
       height: 1.6em;
       color: #017c92; }
   .block--field-s-news-date .field--field-s-news-date__actions {
@@ -244,7 +244,7 @@ h1 {
     margin-top: -3px;
     color: #017c92; }
     .block--field-s-news-date svg:hover {
-      opacity: .8; }
+      opacity: 0.8; }
 
 .field-earth-matters-topic {
   text-transform: uppercase; }
@@ -265,7 +265,7 @@ h1 {
       text-decoration: underline;
       display: inline-block;
       white-space: nowrap;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       font-weight: normal; }
       @media only screen and (min-width: 768px) {
         .field-earth-matters-topic .field--field-earth-matters-topic a {
@@ -303,30 +303,30 @@ h1 {
   position: initial; }
 
 @media only screen and (min-width: 576px) {
-  .field-p-responsive-media,
   .field-p-responsive-image,
   .field-p-responsive-image-cred,
+  .field-p-responsive-media,
   .field-p-video-url {
     padding: 0 60px 20px; } }
 
 @media only screen and (min-width: 1024px) {
-  .field-p-responsive-media,
   .field-p-responsive-image,
   .field-p-responsive-image-cred,
+  .field-p-responsive-media,
   .field-p-video-url {
     padding-right: 60px;
     padding-left: 60px; } }
 
-.field-p-responsive-media picture,
 .field--responsive-image picture,
 .field--responsive-video,
+.field-p-responsive-media picture,
 figure.align-center .figure-container {
   position: relative;
   margin-bottom: 20px;
   display: block; }
-  .field-p-responsive-media picture::after,
   .field--responsive-image picture::after,
   .field--responsive-video::after,
+  .field-p-responsive-media picture::after,
   figure.align-center .figure-container::after {
     content: '';
     background-color: #F9F6EF;
@@ -339,9 +339,9 @@ figure.align-center .figure-container {
     margin-left: -50vw;
     margin-right: -50vw;
     z-index: -1; }
-  .field-p-responsive-media picture img,
   .field--responsive-image picture img,
   .field--responsive-video img,
+  .field-p-responsive-media picture img,
   figure.align-center .figure-container img {
     width: 100%;
     max-width: none;
@@ -458,7 +458,7 @@ figure.align-center .figure-container {
       margin-left: 30px; } }
   .subscribe-wrapper a {
     display: block;
-    text-transform: capitalize; }
+    text-transform: uppercase; }
   .subscribe-wrapper span {
     display: block;
     font-weight: bold;
@@ -467,8 +467,9 @@ figure.align-center .figure-container {
   .subscribe-wrapper .button {
     border: 0;
     padding: 2px; }
-  .subscribe-wrapper .sup,
-  .subscribe-wrapper .suf {
-    font-size: 0.75em; }
+  .subscribe-wrapper .suf,
+  .subscribe-wrapper .sup {
+    font-size: 0.75em;
+    text-transform: none; }
 
 /*# sourceMappingURL=stanford-news.css.map */

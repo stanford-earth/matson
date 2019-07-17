@@ -1,18 +1,11 @@
-@charset 'UTF-8';
-
-// My Config.
-@import "config/config";
-
-// Decanter config.
-@import "decanter/core/utilities/decanter-utilities";
-
-// Grab our mixins.
+@charset 'UTF-8'; // My Config.
+@import "config/config"; // Decanter config.
+@import "decanter/core/utilities/decanter-utilities"; // Grab our mixins.
 @import "utilities/utilities";
 
 .section-header {
   color: color(text-active);
   padding-bottom: 20px;
-
   @include grid-media($media-lg) {
     padding-bottom: 0;
   }
@@ -43,25 +36,21 @@
     letter-spacing: 0.15px;
   }
 }
-
 // .section-header.left-aligned,
 // .header-to-left .section-header {
 //   h2.has-dash-under {
 //     @include dash-left($dash-color: brand);
 //   }
 // }
-
 // .header-to-top .section-header.left-aligned {
 //   h2.has-dash-under {
 //     @include dash-under($dash-color: brand);
 //     position: relative;
-
 //     &::after {
 //       top: auto;
 //     }
 //   }
 // }
-
 // .header-to-left .section-header {
 //   @include grid-media($media-md-only) {
 //     text-align: left;
