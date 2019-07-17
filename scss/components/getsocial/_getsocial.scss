@@ -9,6 +9,24 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
-.getsocial {
+html .getsocial {
   margin-top: -15px;
+
+  .gs-buttons.gs-left {
+    text-align: center !important;
+
+    @include grid-media($media-lg-only) {
+      text-align: left !important;
+    }
+  }
+}
+
+.section-spotlights {
+  .getsocial {
+    margin-top: 0;
+  }
+
+  .content-type-date__actions.social-actions {
+    margin-bottom: 15px;
+  }
 }

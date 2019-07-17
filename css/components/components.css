@@ -1317,8 +1317,19 @@
   display: block;
   z-index: 2; }
 
-.getsocial {
+html .getsocial {
   margin-top: -15px; }
+  html .getsocial .gs-buttons.gs-left {
+    text-align: center !important; }
+    @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+      html .getsocial .gs-buttons.gs-left {
+        text-align: left !important; } }
+
+.section-spotlights .getsocial {
+  margin-top: 0; }
+
+.section-spotlights .content-type-date__actions.social-actions {
+  margin-bottom: 15px; }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
