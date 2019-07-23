@@ -4,156 +4,189 @@
 @import "components/content-type/content-type";
 
 // Comment out to avoid centering the whole container.
-.main-container {
-  @include responsive-container($default-container);
-  margin-top: 20px;
-}
+.section-people {
 
-.block--page-title {
-  @include padding(null 0);
-}
-
-.page-title {
-  @include padding(0 0);
-
-  h1 {
-    font-size: 42px;
-  }
-}
-
-.page-subtitle {
-  font-size: 22px;
-
-  span {
-    display: block;
-  }
-}
-
-figcaption {
-  display: table-caption;
-  caption-side: bottom;
-  color: color(ash);
-  text-align: right;
-}
-
-.block-matson-content {
-  color: color(text-active);
-
-  a {
-    text-decoration: underline;
-  }
-}
-
-.breadcrumbs-container {
-  @include grid-media($media-lg) {
-    @include margin(null 100px);
-  }
-}
-
-.content-type-person {
-  $person-grid: (
-    columns: 11,
-    gutter: 30px,
-  );
-
-  @include grid-container;
-  @include grid-collapse;
-
-  @include grid-media($media-lg) {
-    @include padding(null 100px null 70px);
+  .main-container {
+    @include responsive-container($default-container);
+    margin-top: 20px;
   }
 
-  &_profile {
+  .block--page-title {
+    @include padding(null 0);
+  }
+
+  .page-title {
+    @include padding(0 0);
+
+    h1 {
+      font-size: 42px;
+    }
+  }
+
+  .page-subtitle {
+    font-size: 22px;
+    margin-bottom: 15px;
+
+    span {
+      display: block;
+    }
+  }
+
+  figcaption {
+    caption-side: bottom;
+    color: color(ash);
+    display: table-caption;
+    text-align: right;
+  }
+
+  .block-matson-content {
+    color: color(text-active);
 
     a {
       text-decoration: underline;
     }
   }
 
-  &__profilelink {
-
-    a {
-      font-size: 22px;
+  .breadcrumbs-container {
+    @include grid-media($media-lg) {
+      @include margin(null 100px);
     }
   }
 
-  &_bio {
-    border: 1px solid color(fog);
-    padding: 40px;
-    clear: both;
 
-    p {
-      font-size: 18px;
+  .content-type-person {
+    $person-grid: (
+    columns: 11,
+    gutter: 30px,
+    );
 
-      @include grid-media($media-md) {
-        font-size: 22px;
+    @include grid-container;
+    @include grid-collapse;
+
+    @include grid-media($media-lg) {
+      @include padding(null 100px null 70px);
+    }
+
+    &_profile {
+
+      a {
+        text-decoration: underline;
       }
     }
-  }
 
-  .content-type__media {
-    margin-bottom: 15px;
+    &__profilelink {
 
-    @include grid-media($media-lg) {
-      @include grid-column(5, $person-grid);
+      a {
+        font-size: 20px;
+      }
     }
-  }
 
-  .content-type__header {
+    &_bio {
+      border: 1px solid color(fog);
+      clear: both;
+      margin-bottom: 15px;
+      padding: 40px;
 
-    @include grid-media($media-lg) {
-      @include grid-column(6, $person-grid);
+      p {
+        font-size: 18px;
+
+        @include grid-media($media-md) {
+          font-size: 22px;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .earth-people__subtitle {
+      margin-bottom: 10px;
+
+      &:before {
+        content: "•";
+        margin-right: 20px;
+      }
+    }
+
+    .content-type__media {
+      margin-bottom: 15px;
+
+      @include grid-media($media-md-max) {
+        margin: 0 20px;
+        width: calc(100% - 40px);
+      }
+
+      @include grid-media($media-lg) {
+        @include grid-column(5, $person-grid);
+      }
+    }
+
+    .content-type__header {
+
+      @include grid-media($media-md-max) {
+        margin: 0 20px;
+        width: calc(100% - 40px);
+      }
+
+      @include grid-media($media-lg) {
+        @include grid-column(6, $person-grid);
+      }
+
+      .definition-list {
+        font-size: 22px;
+        margin-bottom: 30px;
+
+        dt {
+          width: 90px;
+        }
+      }
+    }
+
+    .dash-header {
+      @include dash-under;
+      font-size: 12px;
+      text-transform: uppercase;
+      position: relative;
+
+      &::after {
+        bottom: -1em;
+        left: 0;
+        transform: none;
+      }
     }
 
     .definition-list {
-      margin-bottom: 30px;
-      font-size: 22px;
+      line-height: 1.25;
 
-      dt {
-        width: 90px;
+      a {
+        display: block;
       }
     }
   }
 
-  .dash-header {
-    @include dash-under;
-    font-size: 12px;
-    text-transform: uppercase;
-    position: relative;
+  //Additional for views below people profile
 
-    &::after {
-      bottom: -1em;
-      left: 0;
-      transform: none;
-    }
+  .user-info-block {
+    background-color: color(sandstone-light);
+    padding: 40px;
   }
 
-  .definition-list {
-    line-height: 1.25;
+  .earth-people-links.block-1 {
+    margin-top: 0;
+    padding-top: 0;
+  }
 
-    a {
-      display: block;
+  .earthuser h3 {
+    font-size: 1.4em;
+
+    .media-mentions {
+      padding: 20px 0;
+      width: 100%;
+    }
+    .mmlist {
+      margin-bottom: 20px;
+      width: 100%;
     }
   }
-}
-
-//Additional for views below people profile
-
-.user-info-block {
-  background-color: color(sandstone-light);
-  padding: 40px;
-}
-
-.earth-people-links.block-1 {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.earthuser h3 {
-  font-size: 1.4em;
-
-  .media-mentions {
-    width: 100%;
-    padding: 20px 0;
- }
 }
