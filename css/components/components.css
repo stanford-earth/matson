@@ -1743,7 +1743,9 @@
       width: 100%; }
     .system-main-block > div > .hero-banner.has-video .hero-banner__inner {
       order: 1;
-      width: 100%; } }
+      width: 100%; }
+      .system-main-block > div > .hero-banner.has-video .hero-banner__inner .hero-banner__container {
+        margin: 0; } }
 
 @media only screen and (max-width: 767px) {
   .system-main-block:first-child > div:first-child > .hero-banner.has-video:first-child {

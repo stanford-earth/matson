@@ -1,15 +1,11 @@
-@charset 'UTF-8';
-// Grab our mixins.
+@charset 'UTF-8'; // Grab our mixins.
 @import "utilities/utilities";
-@import "components/content-type/content-type";
-
-// The expectation of the complex page is that the hero banner will be at the
+@import "components/content-type/content-type"; // The expectation of the complex page is that the hero banner will be at the
 // top of the page each time a complex page is rendered. A few things have to
 // move around to ensure that the banner is in the right place.
 
 .field-s-news-top-media #hero-banner:not(.component-centered-container-margins) {
   margin-top: -170px;
-
   @include grid-media($header-md) {
     margin-top: -176px;
   }
@@ -18,52 +14,47 @@
     border: 0;
   }
 }
-
 // Text and style
+
 .node--type-stanford_news {
   color: color(text-active);
 }
-
 // Top media and Banner caption
+
 .field-s-news-top-media {
   color: color(stone);
   margin-top: 50px;
 }
-
 // Title field.
+
 h1 {
   font-size: 42px;
-  color: color(text-active)
+  color: color(text-active);
 }
-
-
 // Author field.
+
 .field-s-news-author {
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
-
   @include grid-media($media-lg) {
     padding-left: 110px;
   }
 }
-
 // Date field.
+
 .block--field-s-news-date {
   position: relative;
   padding: 10px;
   margin-top: 10px;
-
   @include grid-media($media-sm) {
     @include grid-column(12 of 12);
     margin-left: 0;
   }
-
   @include grid-media($media-md) {
     @include grid-column(8 of 12);
     margin-left: 0;
   }
-
   @include grid-media($media-lg) {
     @include grid-column(7 of 12);
     margin-left: 110px;
@@ -73,7 +64,6 @@ h1 {
     left: 0;
     transform: none;
   }
-
   // Date icon
   .field--field-s-news-date {
     display: inline-block;
@@ -82,36 +72,31 @@ h1 {
     line-height: 50px;
     width: 100%;
     text-align: center;
-
     @include grid-media($media-md) {
       width: 40%;
       text-align: left;
     }
-
     @include grid-media($media-lg) {
       width: 40%;
       text-align: left;
     }
 
     svg {
-      margin-right: .5rem;
+      margin-right: 0.5rem;
       height: 1.6em;
       color: color(action);
     }
   }
-
   // Social icons
   .field--field-s-news-date__actions {
     height: 50px;
     line-height: 50px;
     margin: 10px auto;
-
     @include grid-media($media-md) {
       width: 250px;
       display: inline-block;
       margin-bottom: 0;
     }
-
     @include grid-media($media-lg) {
       width: 50%;
       display: inline-block;
@@ -138,15 +123,14 @@ h1 {
     color: color(action);
 
     &:hover {
-      opacity: .8;
+      opacity: 0.8;
     }
   }
 }
-
 // Earth matters field.
+
 .field-earth-matters-topic {
   text-transform: uppercase;
-
   @include grid-media($media-lg) {
     padding-left: 110px;
   }
@@ -170,30 +154,27 @@ h1 {
       text-decoration: underline;
       display: inline-block;
       white-space: nowrap;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       font-weight: normal;
-
       @include grid-media($media-md) {
         margin-bottom: 0;
       }
     }
   }
 }
-
 // Category Block.
+
 .field--field-s-news-category {
   display: inline-block;
   text-transform: uppercase;
   padding: 0 10px 0 0;
 }
-
-
 // Body field.
+
 .field-s-news-summary {
   color: color(text-active);
   font-size: 20px;
   padding-top: 20px;
-
   @include grid-media($media-lg) {
     @include padding(null 110px);
   }
@@ -206,14 +187,13 @@ h1 {
 .section-news .field--body {
   padding-bottom: 0;
 }
-
 // Layout spacing
+
 .layout--basic {
   .field-p-wysiwyg {
     @include grid-media($media-sm) {
       @include padding(0 80px 20px 80px);
     }
-
     @include grid-media($media-lg) {
       @include padding(null 110px);
     }
@@ -224,23 +204,22 @@ h1 {
   position: initial;
 }
 
-.field-p-responsive-media,
 .field-p-responsive-image,
 .field-p-responsive-image-cred,
+.field-p-responsive-media,
 .field-p-video-url {
   @include grid-media($media-sm) {
     @include padding(0 60px 20px 60px);
   }
-
   @include grid-media($media-lg) {
     @include padding(null 60px);
   }
 }
-
 // Responsive Image
-.field-p-responsive-media picture,
+
 .field--responsive-image picture,
 .field--responsive-video,
+.field-p-responsive-media picture,
 figure.align-center .figure-container {
   position: relative;
   margin-bottom: 20px;
@@ -273,13 +252,13 @@ figure.align-center .figure-container {
   color: color(stone);
   text-align: left;
 }
-
 // Simple columns
+
 .simple-columns {
   color: color(text-active);
 }
-
 // Highlight card
+
 .highlight-card {
   color: color(text-active);
 
@@ -300,8 +279,8 @@ figure.align-center .figure-container {
     font-size: 13px;
   }
 }
-
 // Editorial Slat
+
 .editorial-sidebar.simple-slat.is-narrow {
   margin: 0;
 
@@ -309,12 +288,10 @@ figure.align-center .figure-container {
     @include grid-container;
     background-color: color(fog);
     padding: 30px;
-
     @include grid-media($media-sm) {
       @include margin(0 20px 20px 20px);
       padding-left: 0;
     }
-
     @include grid-media($media-lg) {
       @include margin(null 110px);
     }
@@ -322,7 +299,6 @@ figure.align-center .figure-container {
 
   .simple-block__image {
     margin-bottom: 20px;
-
     @include grid-media($media-md) {
       margin-bottom: 0;
     }
@@ -341,8 +317,8 @@ figure.align-center .figure-container {
     color: color(text-active);
   }
 }
-
 // Source field.
+
 .field-s-news-source {
   position: relative;
   clear: both;
@@ -350,7 +326,6 @@ figure.align-center .figure-container {
     margin-left: 110px;
   }
 }
-
 
 .field-s-news-rich-content .ptype-stanford-wysiwyg:first-of-type .field-p-wysiwyg {
   // Drop Cap
@@ -372,12 +347,10 @@ figure.align-center .figure-container {
 
 .subscribe-wrapper {
   margin-top: 10px;
-
   @include grid-media($media-sm) {
     @include grid-column(12 of 12);
     margin: 10px auto;
   }
-
   @include grid-media($media-md) {
     @include grid-column(4 of 12);
     margin-left: 30px;
@@ -390,7 +363,7 @@ figure.align-center .figure-container {
 
   a {
     display: block;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 
   span {
@@ -405,8 +378,9 @@ figure.align-center .figure-container {
     padding: 2px;
   }
 
-  .sup,
-  .suf {
+  .suf,
+  .sup {
     font-size: em(12px);
+    text-transform: none;
   }
 }
