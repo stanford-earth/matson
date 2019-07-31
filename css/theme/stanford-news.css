@@ -172,6 +172,9 @@ h1 {
     .field-s-news-author {
       padding-left: 110px; } }
 
+.section-news .field-s-news-author {
+  display: block; }
+
 .block--field-s-news-date {
   position: relative;
   padding: 10px;
