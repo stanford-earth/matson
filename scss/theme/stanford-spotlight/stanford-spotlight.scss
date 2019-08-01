@@ -1,0 +1,152 @@
+@charset 'UTF-8';
+// Grab our mixins.
+@import "utilities/utilities";
+@import "components/content-type/content-type";
+
+// Comment out to avoid centering the whole container.
+.main-container {
+  @include responsive-container($default-container);
+  margin-bottom: 80px;
+}
+
+.page-title {
+  @include padding(0 0);
+
+  h1 {
+    font-size: 42px;
+  }
+}
+
+.page-subtitle {
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .s-person-name__name {
+    font-weight: bolder;
+  }
+
+  span {
+    display: block;
+  }
+}
+
+figcaption {
+  caption-side: bottom;
+  color: color(stone);
+  display: table-caption;
+  text-align: right;
+}
+
+.lead-text {
+  @include drop-cap-inline;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+.block-matson-content {
+  color: color(text-active);
+
+  @include grid-media($media-lg) {
+    @include margin(null 100px);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.content-type__media-container {
+
+  @include grid-media($media-lg) {
+    margin-top: 50px;
+    outline: 1px solid #999;
+    outline-offset: 30px;
+  }
+
+  &.left-align-media,
+  &.centered-media {
+
+    .content-type__header {
+      &::after {
+        clear: none;
+        @include grid-media($media-lg) {
+          left: 0;
+        }
+      }
+    }
+
+    .content-type__media-header::after {
+      clear: none;
+    }
+
+    .content-type__media {
+      figure,
+      picture {
+        position: relative;
+
+        @include grid-media($media-sm) {
+          &::after {
+            @include fullpage-stripe;
+            width: 150vw;
+          }
+        }
+      }
+
+      .photo-credit {
+        clear: both;
+        color: color(stone);
+        font-size: .8em;
+        line-height: 1.1em;
+        margin: 10px 30px 10px 0;
+        text-align: left;
+
+        @include grid-media($media-lg-only) {
+          margin: 0 30px 10px 0;
+        }
+
+        &::after {
+          @include dash-under ($dash-color: brand);
+        }
+      }
+    }
+  }
+
+  .content-type-date {
+    margin-top: 10px;
+  }
+
+  &.right-align-media {
+    .content-type__media {
+      figure,
+      picture {
+        &::after {
+          margin-left: -100vw;
+          width: 150vw;
+        }
+      }
+    }
+  }
+}
+
+.content-type-content {
+  > .layout--basic {
+    padding: 0;
+  }
+}
+
+.content-type-date__actions.social-actions {
+  display: block;
+  height: 69px;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+.email-popup {
+  border-left: solid 1px color(fog);
+  color: color(text-active);
+  display: inline-block;
+  padding-left: 25px;
+  vertical-align: top;
+}
