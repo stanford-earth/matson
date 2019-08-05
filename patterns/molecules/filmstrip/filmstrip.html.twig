@@ -12,7 +12,7 @@
 {% set attributes = attributes.addClass(['filmstrip', variants.card_widths, variants.height, variants.tight, variants.double]) %}
 
 <div{{ attributes }} >
-  {% if title %}
+  {% if title|render|trim is not empty %}
     <h6 class="filmstrip__title">{{ title }}</h6>
   {% endif %}
 
