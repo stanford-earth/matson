@@ -28,12 +28,14 @@ $search-input-bg: #6e6f72;
     margin: 13px 0;
   }
 
-  input[type=submit] {
+  input[type="submit"] {
     display: none;
   }
 
-  input[type=text] {
-    background: $search-input-bg url('/themes/stanford/matson/img/source/search-white.svg') no-repeat 9px center;
+  input[type="text"] {
+    background: $search-input-bg
+      url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px
+      center;
     background-size: 17px 17px;
     box-sizing: border-box;
     border: 0;
@@ -58,7 +60,7 @@ $search-input-bg: #6e6f72;
     display: none;
   }
 
-  input[type=text]:focus {
+  input[type="text"]:focus {
     background-color: $search-input-bg;
     border: 0;
     @include grid-media($header-md) {
@@ -81,9 +83,6 @@ $search-input-bg: #6e6f72;
   @include hide-visually;
 }
 
-.navbar {
-  & + .navbar__search:focus {
-    //this doesn't work either
-    @include hide-visually;
-  }
+.navbar + .navbar__search:focus {
+  @include hide-visually;
 }
