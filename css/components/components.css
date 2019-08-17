@@ -3811,6 +3811,18 @@ ul.tabs {
     text-decoration: none;
     color: white; }
 
+.webform-submission-form .form-required::after {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 0.3em;
+  content: "";
+  vertical-align: super;
+  /* Use a background image to prevent screen readers from announcing the text. */
+  background-image: url(../../img/optimized/required.svg);
+  background-repeat: no-repeat;
+  background-size: 6px 6px; }
+
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
