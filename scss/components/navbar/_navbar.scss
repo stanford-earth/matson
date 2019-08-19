@@ -20,14 +20,49 @@ $nav-bar-height: em(80px);
 
 .navbar__container {
   $nav-container: (
-    xs: (columns: 12, grid-media: $media-xs-only, v-space: 0, max-width: false, grid-collapse: false),
-    sm: (columns: 12, grid-media: $media-sm-only, v-space: 0, max-width: false, grid-collapse: false),
-    md: (columns: 12, grid-media: $media-md-only, v-space: 0, max-width: false, grid-collapse: false),
-    lg: (columns: 12, grid-media: $media-lg-only, v-space: 0, max-width: false, grid-collapse: false),
-    xl: (columns: 12, grid-media: $media-xl, v-space: 0, max-width: true, grid-collapse: false),
-    print: (columns: 12, grid-media: $media-print, v-space: 0, max-width: false, grid-collapse: false),
-  )
-  !default;
+    xs: (
+      columns: 12,
+      grid-media: $media-xs-only,
+      v-space: 0,
+      max-width: false,
+      grid-collapse: false
+    ),
+    sm: (
+      columns: 12,
+      grid-media: $media-sm-only,
+      v-space: 0,
+      max-width: false,
+      grid-collapse: false
+    ),
+    md: (
+      columns: 12,
+      grid-media: $media-md-only,
+      v-space: 0,
+      max-width: false,
+      grid-collapse: false
+    ),
+    lg: (
+      columns: 12,
+      grid-media: $media-lg-only,
+      v-space: 0,
+      max-width: false,
+      grid-collapse: false
+    ),
+    xl: (
+      columns: 12,
+      grid-media: $media-xl,
+      v-space: 0,
+      max-width: true,
+      grid-collapse: false
+    ),
+    print: (
+      columns: 12,
+      grid-media: $media-print,
+      v-space: 0,
+      max-width: false,
+      grid-collapse: false
+    )
+  ) !default;
   @include responsive-container($nav-container);
 }
 
@@ -86,7 +121,7 @@ $nav-bar-height: em(80px);
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 40px; //matches hairline
   min-width: $nav-bar-height;
   padding-left: 20px;
   padding-right: 20px;
@@ -96,8 +131,14 @@ $nav-bar-height: em(80px);
     bottom: auto;
     left: auto;
     top: 0;
-    right: 0;
+    right: 20px;
     padding-left: 0;
     padding-right: 0;
+  }
+  @include grid-media($media-sm-max) {
+    @include hide-visually; //disappears until we can place it properly in dropdown mobile menu
+  }
+  label {
+    @include hide-visually; //not sure why block label refuses to disappear when set to not show.
   }
 }
