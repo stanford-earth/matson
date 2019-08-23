@@ -28,15 +28,16 @@
 // Title field.
 
 h1 {
-  font-size: 42px;
   color: color(text-active);
+  font-size: 42px;
 }
 // Author field.
 
 .field-s-news-author {
-  text-transform: uppercase;
-  padding-top: 10px;
+  display: block;
   padding-bottom: 10px;
+  padding-top: 10px;
+  text-transform: uppercase;
   @include grid-media($media-lg) {
     padding-left: 110px;
   }
@@ -44,9 +45,9 @@ h1 {
 // Date field.
 
 .block--field-s-news-date {
-  position: relative;
-  padding: 10px;
   margin-top: 10px;
+  padding: 10px;
+  position: relative;
   @include grid-media($media-sm) {
     @include grid-column(12 of 12);
     margin-left: 0;
@@ -67,24 +68,24 @@ h1 {
   // Date icon
   .field--field-s-news-date {
     display: inline-block;
-    vertical-align: middle;
     height: 50px;
     line-height: 50px;
-    width: 100%;
     text-align: center;
+    vertical-align: middle;
+    width: 100%;
     @include grid-media($media-md) {
-      width: 40%;
       text-align: left;
+      width: 40%;
     }
     @include grid-media($media-lg) {
-      width: 40%;
       text-align: left;
+      width: 40%;
     }
 
     svg {
-      margin-right: 0.5rem;
-      height: 1.6em;
       color: color(action);
+      height: 1.6em;
+      margin-right: 0.5rem;
     }
   }
   // Social icons
@@ -93,20 +94,20 @@ h1 {
     line-height: 50px;
     margin: 10px auto;
     @include grid-media($media-md) {
-      width: 250px;
       display: inline-block;
       margin-bottom: 0;
+      width: 250px;
     }
     @include grid-media($media-lg) {
-      width: 50%;
       display: inline-block;
       margin-bottom: 0;
+      width: 50%;
     }
   }
 
   .field--field-s-news-date__action {
-    display: inline-block;
     color: color(text-active);
+    display: inline-block;
     vertical-align: top;
   }
 
@@ -116,11 +117,11 @@ h1 {
   }
 
   svg {
-    height: 1.6em;
-    vertical-align: middle;
-    display: inline;
-    margin-top: -3px;
     color: color(action);
+    display: inline;
+    height: 1.6em;
+    margin-top: -3px;
+    vertical-align: middle;
 
     &:hover {
       opacity: 0.8;
@@ -137,8 +138,8 @@ h1 {
 
   .field-label {
     color: color(action);
-    text-decoration: underline;
     display: inline-block;
+    text-decoration: underline;
     margin-right: 1rem;
 
     &::after {
@@ -151,11 +152,11 @@ h1 {
     margin-right: 5px;
 
     a {
-      text-decoration: underline;
       display: inline-block;
-      white-space: nowrap;
-      margin-bottom: 0.5rem;
       font-weight: normal;
+      margin-bottom: 0.5rem;
+      text-decoration: underline;
+      white-space: nowrap;
       @include grid-media($media-md) {
         margin-bottom: 0;
       }
@@ -166,8 +167,8 @@ h1 {
 
 .field--field-s-news-category {
   display: inline-block;
-  text-transform: uppercase;
   padding: 0 10px 0 0;
+  text-transform: uppercase;
 }
 // Body field.
 
@@ -221,19 +222,19 @@ h1 {
 .field--responsive-video,
 .field-p-responsive-media picture,
 figure.align-center .figure-container {
-  position: relative;
-  margin-bottom: 20px;
   display: block;
+  margin-bottom: 20px;
+  position: relative;
 
   &::after {
     @include fullpage-stripe;
   }
 
   img {
-    width: 100%;
-    max-width: none;
-    margin-bottom: 0;
     display: block;
+    margin-bottom: 0;
+    max-width: none;
+    width: 100%;
   }
 }
 
@@ -313,15 +314,15 @@ figure.align-center .figure-container {
   }
 
   .simple-block__description {
-    font-size: 20px;
     color: color(text-active);
+    font-size: 20px;
   }
 }
 // Source field.
 
 .field-s-news-source {
-  position: relative;
   clear: both;
+  position: relative;
   @include grid-media($media-lg) {
     margin-left: 110px;
   }
@@ -330,18 +331,19 @@ figure.align-center .figure-container {
 .field-s-news-rich-content .ptype-stanford-wysiwyg:first-of-type .field-p-wysiwyg {
   // Drop Cap
   > p:first-of-type::first-line {
-    position: relative;
     font-size: 1em;
     letter-spacing: normal;
+    position: relative;
   }
+    letter-spacing: normal;
 
   > p:first-child::first-letter {
-    letter-spacing: 0;
+    float: left;
     font-size: 3em;
     font-weight: bold;
-    float: left;
-    margin: 0.13em 0.2em 0 0;
+    letter-spacing: 0;
     line-height: 0.7;
+    margin: 0.13em 0.2em 0 0;
   }
 }
 
@@ -368,8 +370,8 @@ figure.align-center .figure-container {
 
   span {
     display: block;
-    font-weight: bold;
     font-size: em(18px);
+    font-weight: bold;
     line-height: 16px;
   }
 

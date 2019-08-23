@@ -161,21 +161,22 @@
   margin-top: 50px; }
 
 h1 {
-  font-size: 42px;
-  color: #4d4f53; }
+  color: #4d4f53;
+  font-size: 42px; }
 
 .field-s-news-author {
-  text-transform: uppercase;
+  display: block;
+  padding-bottom: 10px;
   padding-top: 10px;
-  padding-bottom: 10px; }
+  text-transform: uppercase; }
   @media only screen and (min-width: 1024px) {
     .field-s-news-author {
       padding-left: 110px; } }
 
 .block--field-s-news-date {
-  position: relative;
+  margin-top: 10px;
   padding: 10px;
-  margin-top: 10px; }
+  position: relative; }
   @media only screen and (min-width: 576px) {
     .block--field-s-news-date {
       width: calc(100% - 30px);
@@ -199,50 +200,50 @@ h1 {
     transform: none; }
   .block--field-s-news-date .field--field-s-news-date {
     display: inline-block;
-    vertical-align: middle;
     height: 50px;
     line-height: 50px;
-    width: 100%;
-    text-align: center; }
+    text-align: center;
+    vertical-align: middle;
+    width: 100%; }
     @media only screen and (min-width: 768px) {
       .block--field-s-news-date .field--field-s-news-date {
-        width: 40%;
-        text-align: left; } }
+        text-align: left;
+        width: 40%; } }
     @media only screen and (min-width: 1024px) {
       .block--field-s-news-date .field--field-s-news-date {
-        width: 40%;
-        text-align: left; } }
+        text-align: left;
+        width: 40%; } }
     .block--field-s-news-date .field--field-s-news-date svg {
-      margin-right: 0.5rem;
+      color: #017c92;
       height: 1.6em;
-      color: #017c92; }
+      margin-right: 0.5rem; }
   .block--field-s-news-date .field--field-s-news-date__actions {
     height: 50px;
     line-height: 50px;
     margin: 10px auto; }
     @media only screen and (min-width: 768px) {
       .block--field-s-news-date .field--field-s-news-date__actions {
-        width: 250px;
         display: inline-block;
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        width: 250px; } }
     @media only screen and (min-width: 1024px) {
       .block--field-s-news-date .field--field-s-news-date__actions {
-        width: 50%;
         display: inline-block;
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        width: 50%; } }
   .block--field-s-news-date .field--field-s-news-date__action {
-    display: inline-block;
     color: #4d4f53;
+    display: inline-block;
     vertical-align: top; }
   .block--field-s-news-date .email-popup {
     border-left: solid 1px #dad7cb;
     padding-left: 25px; }
   .block--field-s-news-date svg {
-    height: 1.6em;
-    vertical-align: middle;
+    color: #017c92;
     display: inline;
+    height: 1.6em;
     margin-top: -3px;
-    color: #017c92; }
+    vertical-align: middle; }
     .block--field-s-news-date svg:hover {
       opacity: 0.8; }
 
@@ -253,8 +254,8 @@ h1 {
       padding-left: 110px; } }
   .field-earth-matters-topic .field-label {
     color: #017c92;
-    text-decoration: underline;
     display: inline-block;
+    text-decoration: underline;
     margin-right: 1rem; }
     .field-earth-matters-topic .field-label::after {
       content: ": "; }
@@ -262,19 +263,19 @@ h1 {
     display: inline-block;
     margin-right: 5px; }
     .field-earth-matters-topic .field--field-earth-matters-topic a {
-      text-decoration: underline;
       display: inline-block;
-      white-space: nowrap;
+      font-weight: normal;
       margin-bottom: 0.5rem;
-      font-weight: normal; }
+      text-decoration: underline;
+      white-space: nowrap; }
       @media only screen and (min-width: 768px) {
         .field-earth-matters-topic .field--field-earth-matters-topic a {
           margin-bottom: 0; } }
 
 .field--field-s-news-category {
   display: inline-block;
-  text-transform: uppercase;
-  padding: 0 10px 0 0; }
+  padding: 0 10px 0 0;
+  text-transform: uppercase; }
 
 .field-s-news-summary {
   color: #4d4f53;
@@ -321,9 +322,9 @@ h1 {
 .field--responsive-video,
 .field-p-responsive-media picture,
 figure.align-center .figure-container {
-  position: relative;
+  display: block;
   margin-bottom: 20px;
-  display: block; }
+  position: relative; }
   .field--responsive-image picture::after,
   .field--responsive-video::after,
   .field-p-responsive-media picture::after,
@@ -343,10 +344,10 @@ figure.align-center .figure-container {
   .field--responsive-video img,
   .field-p-responsive-media picture img,
   figure.align-center .figure-container img {
-    width: 100%;
-    max-width: none;
+    display: block;
     margin-bottom: 0;
-    display: block; }
+    max-width: none;
+    width: 100%; }
 
 .field-p-wysiwyg h2 {
   position: relative;
@@ -412,28 +413,29 @@ figure.align-center .figure-container {
   .editorial-sidebar.simple-slat.is-narrow .simple-block__image-caption {
     color: #9c9d9e; }
   .editorial-sidebar.simple-slat.is-narrow .simple-block__description {
-    font-size: 20px;
-    color: #4d4f53; }
+    color: #4d4f53;
+    font-size: 20px; }
 
 .field-s-news-source {
-  position: relative;
-  clear: both; }
+  clear: both;
+  position: relative; }
   @media only screen and (min-width: 1024px) {
     .field-s-news-source {
       margin-left: 110px; } }
 
-.field-s-news-rich-content .ptype-stanford-wysiwyg:first-of-type .field-p-wysiwyg > p:first-of-type::first-line {
-  position: relative;
-  font-size: 1em;
+.field-s-news-rich-content .ptype-stanford-wysiwyg:first-of-type .field-p-wysiwyg {
   letter-spacing: normal; }
-
-.field-s-news-rich-content .ptype-stanford-wysiwyg:first-of-type .field-p-wysiwyg > p:first-child::first-letter {
-  letter-spacing: 0;
-  font-size: 3em;
-  font-weight: bold;
-  float: left;
-  margin: 0.13em 0.2em 0 0;
-  line-height: 0.7; }
+  .field-s-news-rich-content .ptype-stanford-wysiwyg:first-of-type .field-p-wysiwyg > p:first-of-type::first-line {
+    font-size: 1em;
+    letter-spacing: normal;
+    position: relative; }
+  .field-s-news-rich-content .ptype-stanford-wysiwyg:first-of-type .field-p-wysiwyg > p:first-child::first-letter {
+    float: left;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 0.7;
+    margin: 0.13em 0.2em 0 0; }
 
 .subscribe-wrapper {
   margin-top: 10px; }
@@ -461,8 +463,8 @@ figure.align-center .figure-container {
     text-transform: uppercase; }
   .subscribe-wrapper span {
     display: block;
-    font-weight: bold;
     font-size: 1.125em;
+    font-weight: bold;
     line-height: 16px; }
   .subscribe-wrapper .button {
     border: 0;
