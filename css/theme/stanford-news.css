@@ -165,15 +165,13 @@ h1 {
   font-size: 42px; }
 
 .field-s-news-author {
+  display: block;
   padding-bottom: 10px;
   padding-top: 10px;
   text-transform: uppercase; }
   @media only screen and (min-width: 1024px) {
     .field-s-news-author {
       padding-left: 110px; } }
-
-.section-news .field-s-news-author {
-  display: block; }
 
 .block--field-s-news-date {
   margin-top: 10px;
