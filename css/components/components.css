@@ -1971,6 +1971,13 @@ html .getsocial {
     z-index: 1; }
   .link-banner img {
     display: block; }
+  .link-banner .link-item {
+    transition: all .3s ease; }
+    .link-banner .link-item:hover, .link-banner .link-item:active, .link-banner .link-item:focus {
+      color: inherit;
+      text-decoration: none;
+      margin-top: -1em;
+      margin-bottom: 1em; }
 
 .link-banner__header {
   padding-top: 2.25em;
