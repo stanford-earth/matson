@@ -3418,13 +3418,6 @@ hr {
     top: 12px;
     left: -24px;
     content: '‘‘'; }
-  .text-with-summary .pullquote-large::after,
-  .text-with-summary blockquote::after,
-  .text-with-summary q::after {
-    content: '’’';
-    position: absolute;
-    right: 0px;
-    bottom: -21px; }
 
 .lead-text {
   font-size: 1.776889em;
