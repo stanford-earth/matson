@@ -2426,7 +2426,44 @@ html .getsocial {
     display: none; }
 
 .navbar__search {
-  display: none; }
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 40px;
+  min-width: 5em;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 5; }
+  @media only screen and (min-width: 860px) {
+    .navbar__search {
+      background: transparent;
+      bottom: auto;
+      left: auto;
+      top: 0;
+      right: 20px;
+      padding-left: 0;
+      padding-right: 0; } }
+  @media only screen and (max-width: 1023px) {
+    .navbar__search {
+      border: 0;
+      clip: rect(1px, 1px, 1px, 1px);
+      clip-path: inset(100%);
+      height: 1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px; } }
+  .navbar__search label {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px; }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
@@ -2994,12 +3031,14 @@ html .getsocial {
     .search-toggle__icon .i-svg use {
       fill: #fff; }
 
-.search-toggle {
+#views-exposed-form-acquia-search-page {
   position: relative; }
-  .search-toggle input {
+  #views-exposed-form-acquia-search-page input {
     outline: none;
     margin: 13px 0; }
-  .search-toggle input[type=search] {
+  #views-exposed-form-acquia-search-page input[type="submit"] {
+    display: none; }
+  #views-exposed-form-acquia-search-page input[type="text"] {
     background: #6e6f72 url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px center;
     background-size: 17px 17px;
     box-sizing: border-box;
@@ -3009,29 +3048,29 @@ html .getsocial {
     font-family: inherit;
     font-size: 100%;
     padding: 10px 10px 10px 40px;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    transition: all .5s; }
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s; }
     @media only screen and (min-width: 860px) {
-      .search-toggle input[type=search] {
+      #views-exposed-form-acquia-search-page input[type="text"] {
         background-color: transparent;
         background-position: center center;
         border: 0;
         width: 0; } }
-  .search-toggle input::-webkit-search-decoration,
-  .search-toggle input::-webkit-search-cancel-button {
+  #views-exposed-form-acquia-search-page input::-webkit-search-cancel-button,
+  #views-exposed-form-acquia-search-page input::-webkit-search-decoration {
     display: none; }
-  .search-toggle input[type=search]:focus {
+  #views-exposed-form-acquia-search-page input[type="text"]:focus {
     background-color: #6e6f72;
     border: 0; }
     @media only screen and (min-width: 860px) {
-      .search-toggle input[type=search]:focus {
+      #views-exposed-form-acquia-search-page input[type="text"]:focus {
         background-position: 9px center;
         background-color: #6e6f72;
         width: 620px; } }
-  .search-toggle input::-moz-placeholder {
+  #views-exposed-form-acquia-search-page input::-moz-placeholder {
     color: #fff; }
-  .search-toggle input::-webkit-input-placeholder {
+  #views-exposed-form-acquia-search-page input::-webkit-input-placeholder {
     color: #fff; }
 
 .search-toggle__text {

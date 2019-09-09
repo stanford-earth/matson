@@ -1,14 +1,7 @@
-@charset 'UTF-8';
-
-// My Config.
-@import "config/config";
-
-// Decanter config.
-@import "decanter/core/utilities/decanter-utilities";
-
-// Grab our mixins.
+@charset 'UTF-8'; // My Config.
+@import "config/config"; // Decanter config.
+@import "decanter/core/utilities/decanter-utilities"; // Grab our mixins.
 @import "utilities/utilities";
-
 $search-input-bg: #6e6f72;
 
 .search-toggle__icon {
@@ -27,7 +20,7 @@ $search-input-bg: #6e6f72;
   }
 }
 
-.search-toggle {
+#views-exposed-form-acquia-search-page {
   position: relative;
 
   input {
@@ -35,8 +28,14 @@ $search-input-bg: #6e6f72;
     margin: 13px 0;
   }
 
-  input[type=search] {
-    background: $search-input-bg url('/themes/stanford/matson/img/source/search-white.svg') no-repeat 9px center;
+  input[type="submit"] {
+    display: none;
+  }
+
+  input[type="text"] {
+    background: $search-input-bg
+      url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px
+      center;
     background-size: 17px 17px;
     box-sizing: border-box;
     border: 0;
@@ -45,10 +44,9 @@ $search-input-bg: #6e6f72;
     font-family: inherit;
     font-size: 100%;
     padding: 10px 10px 10px 40px;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    transition: all .5s;
-
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
     @include grid-media($header-md) {
       background-color: transparent;
       background-position: center center;
@@ -57,15 +55,14 @@ $search-input-bg: #6e6f72;
     }
   }
 
-  input::-webkit-search-decoration,
-  input::-webkit-search-cancel-button {
+  input::-webkit-search-cancel-button,
+  input::-webkit-search-decoration {
     display: none;
   }
 
-  input[type=search]:focus {
+  input[type="text"]:focus {
     background-color: $search-input-bg;
     border: 0;
-
     @include grid-media($header-md) {
       background-position: 9px center;
       background-color: $search-input-bg;
