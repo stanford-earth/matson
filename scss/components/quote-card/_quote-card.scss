@@ -32,6 +32,11 @@
     font-size: em(26px);
     letter-spacing: .5px;
     line-height: 1.3em;
+
+  &:first-of-type {
+    @include grid-media($media-sm-max) {
+      margin-bottom: 0;
+    }
   }
 }
 
