@@ -483,7 +483,8 @@
   text-align: center; }
   .callout-card .callout-card__title {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
+    top: .7em;
     margin-top: auto;
     margin-bottom: auto;
     left: 50%;
@@ -519,7 +520,8 @@
       fill: #8c1515; }
   .callout-card .callout-card__icon {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
+    top: .7em;
     margin-top: auto;
     margin-bottom: auto;
     left: 50%;
@@ -616,10 +618,9 @@
   font-size: 1.625em;
   letter-spacing: .5px;
   line-height: 1.3em; }
-
-@media only screen and (max-width: 767px) {
-  .quote-card__quote p:first-of-type {
-    margin-bottom: 0; } }
+  @media only screen and (max-width: 767px) {
+    .quote-card__quote p:first-of-type {
+      margin-bottom: 0; } }
 
 .quote-card__source {
   position: relative; }
@@ -972,7 +973,8 @@
   user-select: none; }
   .drop-cap-title__drop-cap.drop-cap--is-centered {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
+    top: .7em;
     margin-top: auto;
     margin-bottom: auto;
     left: 50%;
@@ -3669,7 +3671,8 @@ html .getsocial {
 @media only screen and (min-width: 1024px) {
   .social-card__content {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
+    top: .7em;
     margin-top: auto;
     margin-bottom: auto;
     -webkit-transform: translateY(-50%);
@@ -3925,7 +3928,8 @@ ul.tabs {
     font-size: 1.8em; }
     .field-p-wysiwyg h2::after {
       position: absolute;
-      top: 50%;
+      /* top: 50%; */
+      top: .7em;
       margin-top: auto;
       margin-bottom: auto;
       -webkit-transform: translateY(-50%);

@@ -4,7 +4,8 @@
   position: absolute;
 
   @if $axis != x {
-    top: 50%;
+    /* top: 50%; */
+    top: .7em;
     margin-top: auto;
     margin-bottom: auto;
   }
