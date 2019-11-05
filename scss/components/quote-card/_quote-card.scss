@@ -39,28 +39,29 @@
       }
     }
   }
-}
 
-.quote-card__source {
-  position: relative;
 
-  &::before {
-    background-color: color(smoke);
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70px;
-    height: 1px;
-  }
+  .quote-card__source {
+    position: relative;
 
-  strong {
-    color: color(dark-red);
-    display: block;
-    font-style: normal;
-    font-size: em(12px);
-    letter-spacing: .9px;
-    text-transform: uppercase;
+    &::before {
+      background-color: color(smoke);
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70px;
+      height: 1px;
+    }
+
+    strong {
+      color: color(dark-red);
+      display: block;
+      font-style: normal;
+      font-size: em(12px);
+      letter-spacing: .9px;
+      text-transform: uppercase;
+    }
   }
 }

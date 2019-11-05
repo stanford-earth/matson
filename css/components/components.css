@@ -622,9 +622,9 @@
     .quote-card__quote p:first-of-type {
       margin-bottom: 0; } }
 
-.quote-card__source {
+.quote-card__quote .quote-card__source {
   position: relative; }
-  .quote-card__source::before {
+  .quote-card__quote .quote-card__source::before {
     background-color: #D8D8D8;
     content: '';
     display: block;
@@ -633,7 +633,7 @@
     left: 0;
     width: 70px;
     height: 1px; }
-  .quote-card__source strong {
+  .quote-card__quote .quote-card__source strong {
     color: #8c1414;
     display: block;
     font-style: normal;
