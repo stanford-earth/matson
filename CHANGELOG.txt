@@ -1,3 +1,8 @@
+Version 8.x-1.1-alpha20                                               2019-12-04
+--------------------------------------------------------------------------------
+- EARTH-1199 Accessibility fixes.
+- EARTH-000 Component security updates.
+
 Version 8.x-1.1-alpha19                                               2019-09-10
 - Various styling updates from Dena Debry and Caryl Westerberg.
 
