@@ -30,36 +30,37 @@
   p {
     font-weight: 200;
     font-size: em(26px);
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     line-height: 1.3em;
 
-  &:first-of-type {
-    @include grid-media($media-sm-max) {
-      margin-bottom: 0;
+    &:first-of-type {
+      @include grid-media($media-sm-max) {
+        margin-bottom: 0;
+      }
     }
   }
-}
 
-.quote-card__source {
-  position: relative;
+  .quote-card__source {
+    position: relative;
 
-  &::before {
-    background-color: color(smoke);
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70px;
-    height: 1px;
-  }
+    &::before {
+      background-color: color(smoke);
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70px;
+      height: 1px;
+    }
 
-  strong {
-    color: color(dark-red);
-    display: block;
-    font-style: normal;
-    font-size: em(12px);
-    letter-spacing: .9px;
-    text-transform: uppercase;
+    strong {
+      color: color(dark-red);
+      display: block;
+      font-style: normal;
+      font-size: em(12px);
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
   }
 }

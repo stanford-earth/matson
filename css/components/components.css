@@ -614,30 +614,29 @@
 .quote-card__quote p {
   font-weight: 200;
   font-size: 1.625em;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   line-height: 1.3em; }
+  @media only screen and (max-width: 767px) {
+    .quote-card__quote p:first-of-type {
+      margin-bottom: 0; } }
 
-@media only screen and (max-width: 767px) {
-  .quote-card__quote p:first-of-type {
-    margin-bottom: 0; } }
-
-.quote-card__source {
+.quote-card__quote .quote-card__source {
   position: relative; }
-  .quote-card__source::before {
+  .quote-card__quote .quote-card__source::before {
     background-color: #D8D8D8;
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     width: 70px;
     height: 1px; }
-  .quote-card__source strong {
+  .quote-card__quote .quote-card__source strong {
     color: #8c1414;
     display: block;
     font-style: normal;
     font-size: 0.75em;
-    letter-spacing: .9px;
+    letter-spacing: 0.9px;
     text-transform: uppercase; }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
@@ -2743,6 +2742,11 @@ html .getsocial {
       vertical-align: middle; }
     .postcard .postcard__more use {
       fill: #8c1515; }
+    .postcard .postcard__more:hover svg {
+      transition: all 0.3s ease;
+      margin-top: -1em; }
+      .postcard .postcard__more:hover svg use {
+        fill: #4d4f53; }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;

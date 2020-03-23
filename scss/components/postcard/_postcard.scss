@@ -46,5 +46,14 @@
     use {
       fill: color(brand);
     }
+    &:hover {
+      svg {
+        transition: all 0.3s ease;
+        margin-top: -1em;
+        use {
+          fill: color(stone);
+        }
+      }
+    }
   }
 }
