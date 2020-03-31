@@ -616,14 +616,13 @@
   font-size: 1.625em;
   letter-spacing: .5px;
   line-height: 1.3em; }
+  @media only screen and (max-width: 767px) {
+    .quote-card__quote p:first-of-type {
+      margin-bottom: 0; } }
 
-@media only screen and (max-width: 767px) {
-  .quote-card__quote p:first-of-type {
-    margin-bottom: 0; } }
-
-.quote-card__source {
+.quote-card__quote .quote-card__source {
   position: relative; }
-  .quote-card__source::before {
+  .quote-card__quote .quote-card__source::before {
     background-color: #D8D8D8;
     content: '';
     display: block;
@@ -632,7 +631,7 @@
     left: 0;
     width: 70px;
     height: 1px; }
-  .quote-card__source strong {
+  .quote-card__quote .quote-card__source strong {
     color: #8c1414;
     display: block;
     font-style: normal;
@@ -3924,13 +3923,9 @@ ul.tabs {
     padding-left: .9em;
     font-size: 1.8em; }
     .field-p-wysiwyg h2::after {
-      position: absolute;
-      top: 50%;
+      top: .7em;
       margin-top: auto;
       margin-bottom: auto;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
       background-color: #8c1515;
       left: 0; }
     .field-p-wysiwyg h2::after {
