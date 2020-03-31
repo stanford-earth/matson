@@ -73,7 +73,10 @@
 
   &::after {
     @extend %dash-under;
-    @include center-transform(y);
+    // @include center-transform(y);
+    top: .7em;
+    margin-top: auto;
+    margin-bottom: auto;
     background-color: color($dash-color);
     left: 0;
   }

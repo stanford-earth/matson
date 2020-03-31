@@ -40,12 +40,13 @@
     }
   }
 
+
   .quote-card__source {
     position: relative;
 
     &::before {
       background-color: color(smoke);
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       top: 0;
