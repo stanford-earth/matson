@@ -354,13 +354,9 @@ figure.align-center .figure-container {
   padding-left: .9em;
   margin-bottom: 20px; }
   .field-p-wysiwyg h2::after {
-    position: absolute;
-    top: 50%;
+    top: .7em;
     margin-top: auto;
     margin-bottom: auto;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
     background-color: #8c1515;
     left: 0; }
 
