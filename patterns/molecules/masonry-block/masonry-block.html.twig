@@ -94,7 +94,7 @@ image|get_img_src is not empty ? random(['has-image-right','has-image-left'])
       <div class="masonry-block__footer">
         {% if date is not empty %}
         <div class="masonry-block__date">
-          <svg class="i-svg"><use xlink:href="#i-clock" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          <svg class="i-svg"><title>{{ 'Clock'|t }}</title><use xlink:href="#i-clock" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
           </svg>{{ date }}</div>
 
         {% if link|closelink %}
