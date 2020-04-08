@@ -19,8 +19,8 @@
 
         {% if linkurl|openlink %}
           {{ linkurl|openlink({class:'postcard__more', 'aria-label': "Read more about "|t ~ title|render|striptags|preg_replace("/:/", "") }) }}
-            <svg class="i-svg i-svg--arrow-right" role="img" aria-labelledby="svg_navigate_right">
-              <title id="svg_navigate_right">{{ 'Navigate to item'|t }}</title>
+            <svg class="i-svg i-svg--arrow-right" role="img">
+              <title>{{ 'Navigate to item'|t }}</title>
               <use xlink:href="#i-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
             </svg>
           {{ linkurl|closelink }}
