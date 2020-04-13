@@ -6,7 +6,7 @@
 #}
 
 <footer id="footer__container">
-  <section class="contact-footer" style="background-image:url('{{ base_path ~ directory }}/img/optimized/footer-bg.jpg')";>
+  <section class="contact-footer b-lazy bg" data-src="{{ base_path ~ directory }}/img/optimized/footer-bg.jpg";>
     <div class="contact-footer__brand">
       {{ drupal_entity('block', 'matson_branding')|render|preg_replace("/(block-matson-branding)/", "footer__block-matson-branding")|raw }}
     </div>
