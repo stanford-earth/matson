@@ -1,3 +1,9 @@
+Version 8.x-1.1-alpha22                                               2020-04-13
+--------------------------------------------------------------------------------
+- EARTH-642 SVG accessibility titles
+- EARTH-1032: change centering of hyphen
+- EARTH-000: Set Node version to 10.14.2
+
 Version 8.x-1.1-alpha21                                               2020-02-10
 --------------------------------------------------------------------------------
 - EARTH-642 SVG accessibility issue
