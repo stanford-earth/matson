@@ -322,3 +322,22 @@ $su-brand-Stanford: "\1f57d";
 body {
   color: color(stone);
 }
+
+// Styling for inline links
+.field-p-wysiwyg p a,
+li:not(.menu-item) a,
+.field-p-wysiwyg a {
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px dotted transparent;
+  transition: .25s;
+}
+
+.field-p-wysiwyg a:hover,
+.field-p-wysiwyg a:active,
+p a:hover,
+p a:active,
+li:not(.menu-item) a:hover,
+li:not(.menu-item) a:active {
+  border-color: #f9b002;
+}
