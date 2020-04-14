@@ -4,9 +4,9 @@
  * Link banner pattern.
  */
 #}
-{% set attributes = attributes.addClass('link-banner') %}
+{% set attributes = attributes.addClass('link-banner b-lazy bg') %}
 {% if image|get_img_src is not empty %}
-  {% set attributes = attributes.setAttribute('style', ['background-image:url(' ~ image|get_img_src ~ ')']) %}
+  {% set attributes = attributes.setAttribute('data-src', image|get_img_src ) %}
 {% endif %}
 
 <div{{ attributes }}>
