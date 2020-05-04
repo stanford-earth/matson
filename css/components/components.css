@@ -2101,8 +2101,6 @@ html .getsocial {
     .masonry-block.has-background .masonry-block__footer, .has-background.stamp .masonry-block__footer {
       position: relative;
       color: #fff; }
-    .masonry-block.is-action .masonry-block__link:hover, .is-action.stamp .masonry-block__link:hover, .masonry-block.is-action .masonry-block__link:active, .is-action.stamp .masonry-block__link:active, .masonry-block.is-action .masonry-block__link:focus, .is-action.stamp .masonry-block__link:focus, .masonry-block.is-inverted .masonry-block__link:hover, .is-inverted.stamp .masonry-block__link:hover, .masonry-block.is-inverted .masonry-block__link:active, .is-inverted.stamp .masonry-block__link:active, .masonry-block.is-inverted .masonry-block__link:focus, .is-inverted.stamp .masonry-block__link:focus, .masonry-block.has-background .masonry-block__link:hover, .has-background.stamp .masonry-block__link:hover, .masonry-block.has-background .masonry-block__link:active, .has-background.stamp .masonry-block__link:active, .masonry-block.has-background .masonry-block__link:focus, .has-background.stamp .masonry-block__link:focus {
-      color: rgba(255, 255, 255, 0.65); }
     .masonry-block.is-action .masonry-block__footer, .is-action.stamp .masonry-block__footer, .masonry-block.is-inverted .masonry-block__footer, .is-inverted.stamp .masonry-block__footer, .masonry-block.has-background .masonry-block__footer, .has-background.stamp .masonry-block__footer {
       border-top: 1px solid rgba(255, 255, 255, 0.5);
       margin: 0 15px; }
