@@ -25,12 +25,6 @@
       color: color(white);
     }
 
-    .masonry-block__link {
-      @include on-event {
-        color: rgba(255, 255, 255, .65);
-      }
-    }
-
     .masonry-block__footer {
       border-top: 1px solid rgba(255, 255, 255, .5);
       margin: 0 15px;
@@ -76,20 +70,13 @@
     }
   }
 
-  &.is-wide.has-image-right:not(.has-background),
-  &.is-column-width.has-image-right {
-    .masonry-block__link {
-      color: color(ash);
-    }
-  }
-
   &.has-columns,
   &.is-full-width {
 
     .masonry-block__description {
       color: #FFF;
       @include grid-media($media-sm) {
-        color: color(ash);
+        color: color(text-active);
       }
     }
 
@@ -207,6 +194,7 @@
 
 .masonry-block__title {
   font-size: 20px;
+  font-weight: 600;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -224,7 +212,6 @@
 }
 
 .masonry-block__description {
-  color: color(ash);
   letter-spacing: .5px;
   margin-bottom: 4px;
   line-height: 2em;

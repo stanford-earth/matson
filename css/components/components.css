@@ -624,7 +624,7 @@
   position: relative; }
   .quote-card__quote .quote-card__source::before {
     background-color: #D8D8D8;
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     top: 0;
@@ -2101,8 +2101,6 @@ html .getsocial {
     .masonry-block.has-background .masonry-block__footer, .has-background.stamp .masonry-block__footer {
       position: relative;
       color: #fff; }
-    .masonry-block.is-action .masonry-block__link:hover, .is-action.stamp .masonry-block__link:hover, .masonry-block.is-action .masonry-block__link:active, .is-action.stamp .masonry-block__link:active, .masonry-block.is-action .masonry-block__link:focus, .is-action.stamp .masonry-block__link:focus, .masonry-block.is-inverted .masonry-block__link:hover, .is-inverted.stamp .masonry-block__link:hover, .masonry-block.is-inverted .masonry-block__link:active, .is-inverted.stamp .masonry-block__link:active, .masonry-block.is-inverted .masonry-block__link:focus, .is-inverted.stamp .masonry-block__link:focus, .masonry-block.has-background .masonry-block__link:hover, .has-background.stamp .masonry-block__link:hover, .masonry-block.has-background .masonry-block__link:active, .has-background.stamp .masonry-block__link:active, .masonry-block.has-background .masonry-block__link:focus, .has-background.stamp .masonry-block__link:focus {
-      color: rgba(255, 255, 255, 0.65); }
     .masonry-block.is-action .masonry-block__footer, .is-action.stamp .masonry-block__footer, .masonry-block.is-inverted .masonry-block__footer, .is-inverted.stamp .masonry-block__footer, .masonry-block.has-background .masonry-block__footer, .has-background.stamp .masonry-block__footer {
       border-top: 1px solid rgba(255, 255, 255, 0.5);
       margin: 0 15px; }
@@ -2134,13 +2132,11 @@ html .getsocial {
     .masonry-block.is-wide .tag-item:hover, .is-wide.stamp .tag-item:hover, .masonry-block.is-wide .tag-item:active, .is-wide.stamp .tag-item:active, .masonry-block.is-wide .tag-item:focus, .is-wide.stamp .tag-item:focus, .masonry-block.has-image .tag-item:hover, .has-image.stamp .tag-item:hover, .masonry-block.has-image .tag-item:active, .has-image.stamp .tag-item:active, .masonry-block.has-image .tag-item:focus, .has-image.stamp .tag-item:focus, .masonry-block.is-action .tag-item:hover, .is-action.stamp .tag-item:hover, .masonry-block.is-action .tag-item:active, .is-action.stamp .tag-item:active, .masonry-block.is-action .tag-item:focus, .is-action.stamp .tag-item:focus, .masonry-block.is-inverted .tag-item:hover, .is-inverted.stamp .tag-item:hover, .masonry-block.is-inverted .tag-item:active, .is-inverted.stamp .tag-item:active, .masonry-block.is-inverted .tag-item:focus, .is-inverted.stamp .tag-item:focus, .masonry-block.has-background .tag-item:hover, .has-background.stamp .tag-item:hover, .masonry-block.has-background .tag-item:active, .has-background.stamp .tag-item:active, .masonry-block.has-background .tag-item:focus, .has-background.stamp .tag-item:focus {
       background-color: #fff;
       color: #4d4f53; }
-  .masonry-block.is-wide.has-image-right:not(.has-background) .masonry-block__link, .is-wide.has-image-right.stamp:not(.has-background) .masonry-block__link, .masonry-block.is-column-width.has-image-right .masonry-block__link, .is-column-width.has-image-right.stamp .masonry-block__link {
-    color: #9c9d9e; }
   .masonry-block.has-columns .masonry-block__description, .has-columns.stamp .masonry-block__description, .masonry-block.is-full-width .masonry-block__description, .is-full-width.stamp .masonry-block__description {
     color: #FFF; }
     @media only screen and (min-width: 576px) {
       .masonry-block.has-columns .masonry-block__description, .has-columns.stamp .masonry-block__description, .masonry-block.is-full-width .masonry-block__description, .is-full-width.stamp .masonry-block__description {
-        color: #9c9d9e; } }
+        color: #4d4f53; } }
   .masonry-block.has-columns .tag-item, .has-columns.stamp .tag-item, .masonry-block.is-full-width .tag-item, .is-full-width.stamp .tag-item {
     border-color: #fff;
     color: #fff; }
@@ -2211,6 +2207,7 @@ html .getsocial {
 
 .masonry-block__title {
   font-size: 20px;
+  font-weight: 600;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -2225,7 +2222,6 @@ html .getsocial {
     text-decoration: none; }
 
 .masonry-block__description {
-  color: #9c9d9e;
   letter-spacing: .5px;
   margin-bottom: 4px;
   line-height: 2em; }
