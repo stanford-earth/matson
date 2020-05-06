@@ -1,3 +1,18 @@
+Version 8.x-1.1-alpha23                                               2020-05-06
+--------------------------------------------------------------------------------
+- EARTH-642 SVG accessibility titles
+- EARTH-1409 Adding b-lazy class to <iframe> element.
+- EARTH-1414: earth matters teasers contrast and no title hover
+- Removing hover effect from headers due to low contrast.
+- Replace ash text color with standard test color to improve contrast.
+- EARTH-1356: change highlight card intro color
+- Replaced Mailchimp form in the footer with a link
+- EARTH-1303: hover state on postcard
+- EARTH-1356: change highlight card intro color
+- Adding styling for inline links within the body content areas.
+- EARTH-1398: merging in package-lock
+- Adding styling for inline links within the body content areas.
+
 Version 8.x-1.1-alpha22                                               2020-04-13
 --------------------------------------------------------------------------------
 - EARTH-642 SVG accessibility titles
