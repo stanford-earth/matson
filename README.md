@@ -10,6 +10,7 @@ Run 'grunt' to make sure gulp is installed and available.
 
 Run 'grunt devmode' to watch files, process scss to css and perform other tasks.
 
+Remember that each new scss file to be processed needs to be added specifically to the gruntfile at the root of the theme folder.
 
 ## Troubleshooting Problems
 
