@@ -4,7 +4,7 @@ Matson is a custom Stanford theme for Stanford Earth.
 
 ## Developing with Matson
 
-To get started developing in this theme, make sure npm is installed and you've run 'npm install' in this theme directory.
+To get started developing in this theme, make sure npm is installed and you've run 'npm install' in this theme directory. Note that usually the project runs this step for the theme, but in this case you must do this manually.
 
 Run 'grunt' to make sure gulp is installed and available.
 
