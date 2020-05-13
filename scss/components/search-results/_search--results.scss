@@ -1,0 +1,93 @@
+/* These styles should NOT affect the header search block at all   */
+
+.main-container {
+    background: pink;
+    /* test to get this loading */
+
+    .search-results--search-form h2.block__title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    /* search form wrapper */
+
+    #views-exposed-form-acquia-search-page .js-form-item.form-item.js-form-type-textfield.form-item-search.js-form-item-search {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    label[for=edit-search] {
+        text-align: center;
+        font-size: 14px;
+        display: flex;
+        order: 2;
+        padding: 10px 80px;
+        background: #017c92;
+        color: white;
+        text-transform: uppercase;
+        font-weight: normal;
+        letter-spacing: 1px;
+    }
+
+    /* includes overridding focus styles inheriting from header search styles */
+    .search-results--search-form #views-exposed-form-acquia-search-page input[type="text"]:focus,
+    input#edit-search,
+    input#edit-search:focus {
+        text-align: left;
+        display: flex;
+        order: 2;
+        width: 100%;
+        padding-left: 40px;
+        background: #fff;
+        color: #4D4F53;
+        border: 1px solid #4D4F53;
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+
+    /* Search result entries */
+
+    /* numbers */
+    .search-result--wrapper.view.acquia-search.page .views-field.views-field-counter {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    /* first line fields */
+    .search-result--wrapper.view.acquia-search.page .views-field.views-field-title,
+    .search-result--wrapper.view.acquia-search.page .field-content.search-result--display-name {
+        font-weight: 600;
+        font-size: 20px;
+        display: inline-block;
+        margin: 0px 10px 25px;
+    }
+
+    /* second row of content fields */
+
+    .search-result--line-2 {
+        padding: 0 0 30px 25px;
+    }
+
+    /* component paragraph styling */
+    .js .search-result--paragraph-component .paragraphs-description .paragraphs-content-wrapper {
+        float: left;
+    }
+
+    .js .search-result--paragraph-component .paragraphs-description .paragraphs-content-wrapper::after {
+        color: gray;
+        background: #fff;
+        content: "...";
+        display: inline;
+        float: left;
+    }
+
+    /* -- hiding anything for search results -- */
+    .search-result--wrapper .views-field-field-s-page-ft-img-media,
+    /* when the super heading is empty, hide to remove extra unwanted space */
+    .complex-slat__super-heading:empty {
+        display: none;
+    }
+
+}

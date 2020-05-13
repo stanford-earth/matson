@@ -65,12 +65,15 @@
           {% block content %}
             {{ content }}
           {% endblock %}
+        {{ drupal_block('views_exposed_filter_block:acquia_search-page') }}
+
         </nav>
         <!-- <div class="navbar__search">
           <form class="search-toggle">
             <input type="search" placeholder="Search">
           </form>
         </div> -->
+        
       </div>
     </div>
   </div>
