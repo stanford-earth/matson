@@ -11,8 +11,8 @@ Run 'grunt' to make sure gulp is installed and available.
 Run 'grunt devmode' to watch files, process scss to css and perform other tasks.
 
 ### Adding new files
-If you add a partial "\_newfile.scss" 
-inside scss/components folder, it will be included automatically.
+If you add a partial "src/scss/components/\_newfile.scss" 
+you should add it to the @import list in components.scss
 
 Remember that each new scss file to be processed needs to be added specifically to the gruntfile at the root of the theme folder.
 
