@@ -5,10 +5,10 @@
  */
 #}
 
-{% set classes = ['section-expandable-banner', 'js-section-expandable-banner'] %}
+{% set classes = ['section-expandable-banner', 'js-section-expandable-banner', 'b-lazy', 'bg'] %}
 {% set header_vars = {'superhead': superhead, 'subhead': subhead, 'context': context} %}
 
-<div{{ attributes.addClass(classes) }} style="background-image:url({{ image|get_img_src }})">
+<div{{ attributes.addClass(classes) }} data-src="{{ image|get_img_src }}">
   <div class="expandable-banner__header">
     {{ pattern('section_header', header_vars) }}
   </div>
