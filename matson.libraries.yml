@@ -104,6 +104,7 @@ matson:
   js:
     js/vendor/modernizr.js: {}
     # js/vendor/toastr/build/toastr.min.js: {}
+    js/build/search.js: {}
     js/build/scripts.js: {}
   dependencies:
     - core/jquery
