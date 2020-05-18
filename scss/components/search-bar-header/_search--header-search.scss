@@ -1,6 +1,5 @@
 /* navigation adjustment for adding search inside the navigation divs */
 
-
 @media only screen and (min-width: 860px) {
   .navbar__group {
     display: block;
@@ -122,7 +121,7 @@
   color: #fff;
   font-family: inherit;
   font-size: 100%;
-  padding: 6px 75px 7px 30px;
+  padding: 6px 75px 7px 40px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
@@ -157,9 +156,9 @@
 }
 
 #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"],
-#views-exposed-form-acquia-search-page:hover input[type="text"],
-#views-exposed-form-acquia-search-page:focus input[type="text"] {
-  background: url("/themes/stanford/matson/img/source/search-gray.svg") no-repeat 15px 10px;
+#views-exposed-form-acquia-search-page:hover #edit-search,
+#views-exposed-form-acquia-search-page:focus #edit-search {
+  background: url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 10px;
   background-size: 14px;
 }
 

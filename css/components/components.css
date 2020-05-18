@@ -2994,6 +2994,295 @@ html .getsocial {
   color: #4d4f53;
   text-align: right; }
 
+/* navigation adjustment for adding search inside the navigation divs */
+@media only screen and (min-width: 860px) {
+  .navbar__group {
+    display: block;
+    float: right;
+    padding-bottom: 0;
+    padding-top: 0;
+    display: flex; } }
+
+.navbar__search {
+  position: relative;
+  /*bottom: 0;*/
+  /*left: 0;*/
+  /*right: 40px;*/
+  min-width: 5em;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 5; }
+
+@media only screen and (min-width: 860px) {
+  .navbar__search {
+    background: transparent;
+    /*bottom: auto;*/
+    /*left: auto;*/
+    /*top: 0;*/
+    /*right: 20px;*/
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 20px;
+    /* creates space between menu nav links and search */ } }
+
+@media only screen and (max-width: 1023px) {
+  .navbar__search {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    /*position: absolute;*/
+    white-space: nowrap;
+    width: 1px; } }
+
+.navbar__search label {
+  border: 0;
+  clip: unset;
+  clip-path: unset;
+  height: auto;
+  /*overflow: hidden;*/
+  padding: 0;
+  /*position: absolute;*/
+  /*white-space: nowrap;*/
+  width: auto;
+  margin-left: 38px;
+  /*margin-top: 6px;*/
+  font-size: 0.75em;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 0.11875em;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase; }
+
+.navbar__search .expanded label {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
+  display: none; }
+
+#views-exposed-form-acquia-search-page {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 17px;
+  /*right: 60px;  /* needed for adding search icon and button */
+  /*right: 160px;*/
+  /*top: 6px;  /* needed after small font change */ }
+
+#views-exposed-form-acquia-search-page.expanded {
+  margin-top: 15px; }
+
+#views-exposed-form-acquia-search-page > * {
+  /* 2 form inner sections */
+  display: flex;
+  align-items: center; }
+
+#views-exposed-form-acquia-search-page > .form-item.form-item-search {
+  max-height: 35px; }
+
+#header .views-exposed-filter-block.acquia-search-page .block__title {
+  display: none; }
+
+#views-exposed-form-acquia-search-page input {
+  outline: none;
+  margin: 13px 0; }
+
+#views-exposed-form-acquia-search-page input[type="text"] {
+  /*background: #6e6f72 url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px center; */
+  background-size: 14px 14px;
+  box-sizing: border-box;
+  border: 0;
+  box-shadow: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 100%;
+  padding: 6px 75px 7px 40px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s; }
+
+@media only screen and (min-width: 860px) {
+  #views-exposed-form-acquia-search-page input[type="text"] {
+    /*background-color: transparent; */
+    background-position: 15px 10px;
+    border: 0;
+    width: 0; } }
+
+#views-exposed-form-acquia-search-page:hover > .form-item-search,
+#views-exposed-form-acquia-search-page:focus > .form-item-search,
+#views-exposed-form-acquia-search-page:hover #views-exposed-form-acquia-search-page input[type="text"],
+#views-exposed-form-acquia-search-page:focus #views-exposed-form-acquia-search-page input[type="text"] {
+  background: #fff;
+  color: #6e6f72;
+  transition: 0.3s; }
+
+.navbar__search:hover label,
+.navbar__search:focus label {
+  text-shadow: none; }
+
+.navbar__search #views-exposed-form-acquia-search-page:hover label,
+.navbar__search #views-exposed-form-acquia-search-page:focus label {
+  color: #6e6f72; }
+
+#block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"],
+#views-exposed-form-acquia-search-page:hover #edit-search,
+#views-exposed-form-acquia-search-page:focus #edit-search {
+  background: url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 10px;
+  background-size: 14px; }
+
+#views-exposed-form-acquia-search-page input[type="submit"] {
+  visibility: hidden;
+  background: #6e6f72;
+  display: block; }
+
+#header #views-exposed-form-acquia-search-page.expanded input[type="submit"]#edit-submit-acquia-search {
+  visibility: visible;
+  background: #6e6f72; }
+
+/*@media only screen and (min-width: 860px) {*/
+/*  #views-exposed-form-acquia-search-page:hover #views-exposed-form-acquia-search-page input[type="text"],*/
+/*  #views-exposed-form-acquia-search-page:focus #views-exposed-form-acquia-search-page input[type="text"] {*/
+/*    background: #6e6f72;*/
+/*  }*/
+/*}*/
+/*  For large screen sizes, adding clickable button area */
+@media only screen and (min-width: 860px) {
+  /*#header #views-exposed-form-acquia-search-page.expanded .js-form-item.form-item.js-form-type-textfield.form-item-search.js-form-item-search:after {*/
+  /*  content: " ";*/
+  /*  width: 30px;*/
+  /*  height: 30px;*/
+  /*  display: block;*/
+  /*  position: relative;*/
+  /*  top: -47px;*/
+  /*  left: 94%;*/
+  /*}*/
+  #header #views-exposed-form-acquia-search-page #edit-actions {
+    /* button container */
+    margin-top: 0;
+    position: relative;
+    /*top: -1px;*/
+    max-height: 35px;
+    /*top: -46px;  */
+    /*left: 20px;*/ }
+  #header #views-exposed-form-acquia-search-page.expanded #edit-actions {
+    /*left: 0px; */
+    /*left: 485px;*/
+    /*padding-left: 30px;*/
+    margin: 0; }
+  /*  -- removed expanded*/
+  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search {
+    display: block;
+    /*background: #6e6f72;*/
+    height: 33px;
+    position: relative;
+    /*top: -51px;*/
+    /*left: 104%;*/
+    /*right: 0px;*/
+    /*left: 435px; /* don't want this hard coded exactly though  - change to flex?  */
+    /*top: 5px;*/
+    padding: 5px 15px 5px;
+    border: none;
+    z-index: auto;
+    font-size: 0.75em;
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    letter-spacing: 0.11875em;
+    /*line-height: 20px;*/
+    color: #fff;
+    text-transform: uppercase; }
+  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search {
+    background-color: transparent;
+    /* overrides default blue button color when we're not setting gray background for hover */ } }
+
+/* end of media query */
+#views-exposed-form-acquia-search-page input::-webkit-search-cancel-button,
+#views-exposed-form-acquia-search-page input::-webkit-search-decoration {
+  display: none; }
+
+#views-exposed-form-acquia-search-page input[type="text"]:focus {
+  background-color: #6e6f72;
+  border: 0; }
+
+@media only screen and (min-width: 860px) {
+  #views-exposed-form-acquia-search-page input[type="text"]:focus {
+    /*background-position: 98% center;*/
+    background-position: 9px center;
+    /*padding: 10px 40px 10px 20px;*/
+    background-color: #fff;
+    color: #6e6f72;
+    width: 520px; } }
+
+#views-exposed-form-acquia-search-page input::-moz-placeholder {
+  color: #fff; }
+
+#views-exposed-form-acquia-search-page input::-webkit-input-placeholder {
+  color: #fff; }
+
+/* These styles should NOT affect the header search block at all   */
+.main-container {
+  /* test to get this loading */
+  /* search form wrapper */
+  /* includes overridding focus styles inheriting from header search styles */
+  /* Search result entries */
+  /* numbers */
+  /* first line fields */
+  /* second row of content fields */
+  /* component paragraph styling */
+  /* -- hiding anything for search results -- */ }
+  .main-container .search-results--search-form h2.block__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px; }
+  .main-container #views-exposed-form-acquia-search-page .js-form-item.form-item.js-form-type-textfield.form-item-search.js-form-item-search {
+    display: flex;
+    flex-wrap: wrap; }
+  .main-container label[for=edit-search] {
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    order: 2;
+    padding: 10px 80px;
+    background: #017c92;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1px; }
+  .main-container .search-results--search-form #views-exposed-form-acquia-search-page input[type="text"]:focus,
+  .main-container input#edit-search,
+  .main-container input#edit-search:focus {
+    text-align: left;
+    display: flex;
+    order: 2;
+    width: 100%;
+    padding-left: 40px;
+    background: #fff;
+    color: #4D4F53;
+    border: 1px solid #4D4F53;
+    order: 1;
+    margin-bottom: 30px; }
+  .main-container .search-result--wrapper.view.acquia-search.page .views-field.views-field-counter {
+    font-weight: 600;
+    font-size: 20px; }
+  .main-container .search-result--wrapper.view.acquia-search.page .views-field.views-field-title,
+  .main-container .search-result--wrapper.view.acquia-search.page .field-content.search-result--display-name {
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0px 10px 25px; }
+  .main-container .search-result--line-2 {
+    padding: 0 0 30px 25px; }
+  .main-container .js .search-result--paragraph-component .paragraphs-description .paragraphs-content-wrapper {
+    float: left; }
+  .main-container .js .search-result--paragraph-component .paragraphs-description .paragraphs-content-wrapper::after {
+    color: gray;
+    background: #fff;
+    content: "...";
+    display: inline;
+    float: left; }
+  .main-container .search-result--wrapper .views-field-field-s-page-ft-img-media,
+  .main-container .complex-slat__super-heading:empty {
+    display: none; }
+
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -3023,6 +3312,9 @@ html .getsocial {
   content: '';
   display: block;
   z-index: 2; }
+
+.katria-test {
+  background: purple; }
 
 .search-toggle__icon {
   position: absolute;
@@ -3992,5 +4284,294 @@ ul.tabs {
     width: 30%;
     padding: 15px;
     margin: 15px; }
+
+/* These styles should NOT affect the header search block at all   */
+.main-container {
+  /* test to get this loading */
+  /* search form wrapper */
+  /* includes overridding focus styles inheriting from header search styles */
+  /* Search result entries */
+  /* numbers */
+  /* first line fields */
+  /* second row of content fields */
+  /* component paragraph styling */
+  /* -- hiding anything for search results -- */ }
+  .main-container .search-results--search-form h2.block__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px; }
+  .main-container #views-exposed-form-acquia-search-page .js-form-item.form-item.js-form-type-textfield.form-item-search.js-form-item-search {
+    display: flex;
+    flex-wrap: wrap; }
+  .main-container label[for=edit-search] {
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    order: 2;
+    padding: 10px 80px;
+    background: #017c92;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1px; }
+  .main-container .search-results--search-form #views-exposed-form-acquia-search-page input[type="text"]:focus,
+  .main-container input#edit-search,
+  .main-container input#edit-search:focus {
+    text-align: left;
+    display: flex;
+    order: 2;
+    width: 100%;
+    padding-left: 40px;
+    background: #fff;
+    color: #4D4F53;
+    border: 1px solid #4D4F53;
+    order: 1;
+    margin-bottom: 30px; }
+  .main-container .search-result--wrapper.view.acquia-search.page .views-field.views-field-counter {
+    font-weight: 600;
+    font-size: 20px; }
+  .main-container .search-result--wrapper.view.acquia-search.page .views-field.views-field-title,
+  .main-container .search-result--wrapper.view.acquia-search.page .field-content.search-result--display-name {
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0px 10px 25px; }
+  .main-container .search-result--line-2 {
+    padding: 0 0 30px 25px; }
+  .main-container .js .search-result--paragraph-component .paragraphs-description .paragraphs-content-wrapper {
+    float: left; }
+  .main-container .js .search-result--paragraph-component .paragraphs-description .paragraphs-content-wrapper::after {
+    color: gray;
+    background: #fff;
+    content: "...";
+    display: inline;
+    float: left; }
+  .main-container .search-result--wrapper .views-field-field-s-page-ft-img-media,
+  .main-container .complex-slat__super-heading:empty {
+    display: none; }
+
+/* navigation adjustment for adding search inside the navigation divs */
+@media only screen and (min-width: 860px) {
+  .navbar__group {
+    display: block;
+    float: right;
+    padding-bottom: 0;
+    padding-top: 0;
+    display: flex; } }
+
+.navbar__search {
+  position: relative;
+  /*bottom: 0;*/
+  /*left: 0;*/
+  /*right: 40px;*/
+  min-width: 5em;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 5; }
+
+@media only screen and (min-width: 860px) {
+  .navbar__search {
+    background: transparent;
+    /*bottom: auto;*/
+    /*left: auto;*/
+    /*top: 0;*/
+    /*right: 20px;*/
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 20px;
+    /* creates space between menu nav links and search */ } }
+
+@media only screen and (max-width: 1023px) {
+  .navbar__search {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    /*position: absolute;*/
+    white-space: nowrap;
+    width: 1px; } }
+
+.navbar__search label {
+  border: 0;
+  clip: unset;
+  clip-path: unset;
+  height: auto;
+  /*overflow: hidden;*/
+  padding: 0;
+  /*position: absolute;*/
+  /*white-space: nowrap;*/
+  width: auto;
+  margin-left: 38px;
+  /*margin-top: 6px;*/
+  font-size: 0.75em;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 0.11875em;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase; }
+
+.navbar__search .expanded label {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
+  display: none; }
+
+#views-exposed-form-acquia-search-page {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 17px;
+  /*right: 60px;  /* needed for adding search icon and button */
+  /*right: 160px;*/
+  /*top: 6px;  /* needed after small font change */ }
+
+#views-exposed-form-acquia-search-page.expanded {
+  margin-top: 15px; }
+
+#views-exposed-form-acquia-search-page > * {
+  /* 2 form inner sections */
+  display: flex;
+  align-items: center; }
+
+#views-exposed-form-acquia-search-page > .form-item.form-item-search {
+  max-height: 35px; }
+
+#header .views-exposed-filter-block.acquia-search-page .block__title {
+  display: none; }
+
+#views-exposed-form-acquia-search-page input {
+  outline: none;
+  margin: 13px 0; }
+
+#views-exposed-form-acquia-search-page input[type="text"] {
+  /*background: #6e6f72 url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px center; */
+  background-size: 14px 14px;
+  box-sizing: border-box;
+  border: 0;
+  box-shadow: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 100%;
+  padding: 6px 75px 7px 40px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s; }
+
+@media only screen and (min-width: 860px) {
+  #views-exposed-form-acquia-search-page input[type="text"] {
+    /*background-color: transparent; */
+    background-position: 15px 10px;
+    border: 0;
+    width: 0; } }
+
+#views-exposed-form-acquia-search-page:hover > .form-item-search,
+#views-exposed-form-acquia-search-page:focus > .form-item-search,
+#views-exposed-form-acquia-search-page:hover #views-exposed-form-acquia-search-page input[type="text"],
+#views-exposed-form-acquia-search-page:focus #views-exposed-form-acquia-search-page input[type="text"] {
+  background: #fff;
+  color: #6e6f72;
+  transition: 0.3s; }
+
+.navbar__search:hover label,
+.navbar__search:focus label {
+  text-shadow: none; }
+
+.navbar__search #views-exposed-form-acquia-search-page:hover label,
+.navbar__search #views-exposed-form-acquia-search-page:focus label {
+  color: #6e6f72; }
+
+#block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"],
+#views-exposed-form-acquia-search-page:hover #edit-search,
+#views-exposed-form-acquia-search-page:focus #edit-search {
+  background: url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 10px;
+  background-size: 14px; }
+
+#views-exposed-form-acquia-search-page input[type="submit"] {
+  visibility: hidden;
+  background: #6e6f72;
+  display: block; }
+
+#header #views-exposed-form-acquia-search-page.expanded input[type="submit"]#edit-submit-acquia-search {
+  visibility: visible;
+  background: #6e6f72; }
+
+/*@media only screen and (min-width: 860px) {*/
+/*  #views-exposed-form-acquia-search-page:hover #views-exposed-form-acquia-search-page input[type="text"],*/
+/*  #views-exposed-form-acquia-search-page:focus #views-exposed-form-acquia-search-page input[type="text"] {*/
+/*    background: #6e6f72;*/
+/*  }*/
+/*}*/
+/*  For large screen sizes, adding clickable button area */
+@media only screen and (min-width: 860px) {
+  /*#header #views-exposed-form-acquia-search-page.expanded .js-form-item.form-item.js-form-type-textfield.form-item-search.js-form-item-search:after {*/
+  /*  content: " ";*/
+  /*  width: 30px;*/
+  /*  height: 30px;*/
+  /*  display: block;*/
+  /*  position: relative;*/
+  /*  top: -47px;*/
+  /*  left: 94%;*/
+  /*}*/
+  #header #views-exposed-form-acquia-search-page #edit-actions {
+    /* button container */
+    margin-top: 0;
+    position: relative;
+    /*top: -1px;*/
+    max-height: 35px;
+    /*top: -46px;  */
+    /*left: 20px;*/ }
+  #header #views-exposed-form-acquia-search-page.expanded #edit-actions {
+    /*left: 0px; */
+    /*left: 485px;*/
+    /*padding-left: 30px;*/
+    margin: 0; }
+  /*  -- removed expanded*/
+  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search {
+    display: block;
+    /*background: #6e6f72;*/
+    height: 33px;
+    position: relative;
+    /*top: -51px;*/
+    /*left: 104%;*/
+    /*right: 0px;*/
+    /*left: 435px; /* don't want this hard coded exactly though  - change to flex?  */
+    /*top: 5px;*/
+    padding: 5px 15px 5px;
+    border: none;
+    z-index: auto;
+    font-size: 0.75em;
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    letter-spacing: 0.11875em;
+    /*line-height: 20px;*/
+    color: #fff;
+    text-transform: uppercase; }
+  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search {
+    background-color: transparent;
+    /* overrides default blue button color when we're not setting gray background for hover */ } }
+
+/* end of media query */
+#views-exposed-form-acquia-search-page input::-webkit-search-cancel-button,
+#views-exposed-form-acquia-search-page input::-webkit-search-decoration {
+  display: none; }
+
+#views-exposed-form-acquia-search-page input[type="text"]:focus {
+  background-color: #6e6f72;
+  border: 0; }
+
+@media only screen and (min-width: 860px) {
+  #views-exposed-form-acquia-search-page input[type="text"]:focus {
+    /*background-position: 98% center;*/
+    background-position: 9px center;
+    /*padding: 10px 40px 10px 20px;*/
+    background-color: #fff;
+    color: #6e6f72;
+    width: 520px; } }
+
+#views-exposed-form-acquia-search-page input::-moz-placeholder {
+  color: #fff; }
+
+#views-exposed-form-acquia-search-page input::-webkit-input-placeholder {
+  color: #fff; }
 
 /*# sourceMappingURL=components.css.map */
