@@ -32,11 +32,11 @@ $search-input-bg: #6e6f72;
     margin: 13px 0;
   }
 
-  input[type="submit"] {
+  input#edit-reset {
     display: none;
   }
 
-  input[type="text"] {
+  input[type="submit"] {
     background: $search-input-bg
       url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px
       center;

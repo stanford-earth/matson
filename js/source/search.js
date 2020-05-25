@@ -1,7 +1,7 @@
 (function($) {
     if ($('#header #views-exposed-form-acquia-search-page #edit-search')) {
       $('#header #views-exposed-form-acquia-search-page #edit-search').focus(function(){
-        // document.getElementById("edit-search").value = '';
+        document.getElementById("edit-search").value = '';
         console.log('focusing on the input');
         $('#header #views-exposed-form-acquia-search-page').addClass('expanded');
         $("#header .navigation__main-menu .basic-main-menu").fadeOut(500);
@@ -23,4 +23,9 @@
       $('#header #views-exposed-form-acquia-search-page').submit();
     });
     
+  // Search Results
+  if ($('.main-container #views-exposed-form-acquia-search-page label[for=edit-search]')) {
+    console.log('it found search page form');
+  }
+
   })(jQuery);
