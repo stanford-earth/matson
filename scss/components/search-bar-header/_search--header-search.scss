@@ -1,8 +1,7 @@
-/* navigation adjustment for adding search inside the navigation divs */
+// navigation adjustment for adding search inside the navigation divs 
 
 @media only screen and (min-width: 860px) {
   .navbar__group {
-    display: block;
     float: right;
     padding-bottom: 0;
     padding-top: 0;
@@ -24,7 +23,7 @@
     padding-left: 0;
     padding-right: 0;
     margin-left: 20px;
-    /* creates space between menu nav links and search */
+    // creates space between menu nav links and search 
   }
 }
 
@@ -36,7 +35,7 @@
     height: 1px;
     overflow: hidden;
     padding: 0;
-    /*position: absolute;*/
+    //position: absolute;
     white-space: nowrap;
     width: 1px;
   }
@@ -47,7 +46,7 @@
   clip: unset;
   clip-path: unset;
   height: auto;
-  /*overflow: hidden;*/
+  //overflow: hidden;
   padding: 0;
   width: auto;
   margin-left: 38px;
@@ -80,7 +79,7 @@
   }
   
   #views-exposed-form-acquia-search-page>* {
-    /* 2 form inner sections */
+    // 2 form inner sections 
     display: flex;
     align-items: center;
   }
@@ -115,7 +114,7 @@
   
   @media only screen and (min-width: 860px) {
     #views-exposed-form-acquia-search-page input[type="text"] {
-      /*background-color: transparent; */
+      //background-color: transparent; 
       background-position: 15px 10px;
       border: 0;
       width: 0;
@@ -162,11 +161,11 @@
       background: #6e6f72;
     }
     
-    /*  For large screen sizes, adding clickable button area */
+    //  For large screen sizes, adding clickable button area 
     @media only screen and (min-width: 860px) {
     
       #edit-actions {
-        /* button container */
+        // button container 
         margin-top: 0;
         position: relative;
         max-height: 35px;
@@ -176,7 +175,7 @@
         margin: 0;
       }
     
-      /*  -- removed expanded*/
+      //  -- removed expanded
       input[type="submit"]#edit-submit-acquia-search {
         display: block;
         height: 33px;
@@ -194,12 +193,12 @@
     
       input[type="submit"]#edit-submit-acquia-search {
         background-color: transparent;
-        /* overrides default blue button color when we're not setting gray background for hover */
+        // overrides default blue button color when we're not setting gray background for hover 
       }
     
     }
     
-    /* end of media query */
+    // end of media query 
     input::-webkit-search-cancel-button,
     input::-webkit-search-decoration {
       display: none;
@@ -212,9 +211,9 @@
     
     @media only screen and (min-width: 860px) {
       input[type="text"]:focus {
-        /*background-position: 98% center;*/
+        //background-position: 98% center;
         background-position: 9px center;
-        /*padding: 10px 40px 10px 20px;*/
+        //padding: 10px 40px 10px 20px;
         background-color: #fff;
         color: #6e6f72;
         width: 520px;

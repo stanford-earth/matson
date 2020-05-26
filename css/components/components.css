@@ -2994,10 +2994,8 @@ html .getsocial {
   color: #4d4f53;
   text-align: right; }
 
-/* navigation adjustment for adding search inside the navigation divs */
 @media only screen and (min-width: 860px) {
   .navbar__group {
-    display: block;
     float: right;
     padding-bottom: 0;
     padding-top: 0;
@@ -3015,8 +3013,7 @@ html .getsocial {
     background: transparent;
     padding-left: 0;
     padding-right: 0;
-    margin-left: 20px;
-    /* creates space between menu nav links and search */ } }
+    margin-left: 20px; } }
 
 @media only screen and (max-width: 1023px) {
   .navbar__search {
@@ -3026,7 +3023,6 @@ html .getsocial {
     height: 1px;
     overflow: hidden;
     padding: 0;
-    /*position: absolute;*/
     white-space: nowrap;
     width: 1px; } }
 
@@ -3035,7 +3031,6 @@ html .getsocial {
   clip: unset;
   clip-path: unset;
   height: auto;
-  /*overflow: hidden;*/
   padding: 0;
   width: auto;
   margin-left: 38px;
@@ -3061,7 +3056,6 @@ html .getsocial {
   margin-top: 15px; }
 
 #header #views-exposed-form-acquia-search-page > * {
-  /* 2 form inner sections */
   display: flex;
   align-items: center; }
 
@@ -3091,7 +3085,6 @@ html .getsocial {
 
 @media only screen and (min-width: 860px) {
   #header #views-exposed-form-acquia-search-page input[type="text"] {
-    /*background-color: transparent; */
     background-position: 15px 10px;
     border: 0;
     width: 0; } }
@@ -3119,122 +3112,117 @@ html .getsocial {
   background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
   background-size: 14px; }
 
-#header #views-exposed-form-acquia-search-page {
-  /*  For large screen sizes, adding clickable button area */
-  /* end of media query */ }
-  #header #views-exposed-form-acquia-search-page input[type="submit"] {
-    visibility: hidden;
-    background: #6e6f72;
-    display: block; }
-  #header #views-exposed-form-acquia-search-page.expanded input[type="submit"]#edit-submit-acquia-search {
-    visibility: visible;
-    background: #6e6f72; }
-  @media only screen and (min-width: 860px) {
-    #header #views-exposed-form-acquia-search-page {
-      /*  -- removed expanded*/ }
-      #header #views-exposed-form-acquia-search-page #edit-actions {
-        /* button container */
-        margin-top: 0;
-        position: relative;
-        max-height: 35px; }
-      #header #views-exposed-form-acquia-search-page.expanded #edit-actions {
-        margin: 0; }
-      #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search {
-        display: block;
-        height: 33px;
-        position: relative;
-        padding: 5px 15px 5px;
-        min-width: 120px;
-        border: none;
-        z-index: auto;
-        font-size: 0.75em;
-        font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-        letter-spacing: 0.11875em;
-        color: #fff;
-        text-transform: uppercase; }
-      #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search {
-        background-color: transparent;
-        /* overrides default blue button color when we're not setting gray background for hover */ } }
-  #header #views-exposed-form-acquia-search-page input::-webkit-search-cancel-button,
-  #header #views-exposed-form-acquia-search-page input::-webkit-search-decoration {
-    display: none; }
-  #header #views-exposed-form-acquia-search-page input[type="text"]:focus {
-    background-color: #6e6f72;
-    border: 0; }
-  @media only screen and (min-width: 860px) {
-    #header #views-exposed-form-acquia-search-page input[type="text"]:focus {
-      /*background-position: 98% center;*/
-      background-position: 9px center;
-      /*padding: 10px 40px 10px 20px;*/
-      background-color: #fff;
-      color: #6e6f72;
-      width: 520px; } }
-  #header #views-exposed-form-acquia-search-page input::-moz-placeholder {
-    color: #fff; }
-  #header #views-exposed-form-acquia-search-page input::-webkit-input-placeholder {
-    color: #fff; }
+#header #views-exposed-form-acquia-search-page input[type="submit"] {
+  visibility: hidden;
+  background: #6e6f72;
+  display: block; }
 
-/* These styles should NOT affect the header search block at all   */
-.main-container {
-  /* test to get this loading */
-  /* Search result entries */
-  /* numbers */
-  /* first line fields */
-  /* second row of content fields */
-  /* component paragraph styling */
-  /* -- hiding anything for search results -- */ }
-  .main-container .search-results--search-form h2.block__title {
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 20px; }
-  .main-container #views-exposed-form-acquia-search-page {
-    /* search form wrapper */ }
-    .main-container #views-exposed-form-acquia-search-page .js-form-item.form-item.js-form-type-textfield.form-item-search.js-form-item-search {
-      display: flex;
-      flex-wrap: wrap; }
-    .main-container #views-exposed-form-acquia-search-page label[for=edit-search] {
-      display: none !important; }
-    .main-container #views-exposed-form-acquia-search-page input#edit-search {
-      background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 12px 18px;
-      background-size: 17px; }
-    .main-container #views-exposed-form-acquia-search-page #edit-actions {
-      margin: 0 0 20px 0; }
-    .main-container #views-exposed-form-acquia-search-page input[type="submit"] {
-      text-align: center;
-      font-size: 14px;
-      display: block;
-      padding: 10px;
-      margin: 0 0 30px 0;
-      min-width: 150px;
-      background: #017c92;
-      color: white;
-      text-transform: uppercase;
-      font-weight: normal;
-      letter-spacing: 1px; }
-    .main-container #views-exposed-form-acquia-search-page #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"] {
-      background: url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
-      background-size: 14px; }
-  .main-container .search-result--wrapper.view.acquia-search.page .views-field.views-field-counter {
-    font-weight: 600;
-    font-size: 20px; }
-  .main-container .search-result--wrapper.view.acquia-search.page .views-field.views-field-title,
-  .main-container .search-result--wrapper.view.acquia-search.page .field-content.search-result--display-name {
-    font-weight: 600;
-    font-size: 20px;
-    display: inline-block;
-    margin: 0px 10px 25px; }
-  .main-container .search-result--line-2 {
-    padding: 0 0 30px 25px; }
-  .main-container .js .search-result--paragraph-component .paragraphs-description .paragraphs-content-wrapper {
-    float: left; }
-  .main-container .js .search-result--paragraph-component .paragraphs-description .paragraphs-content-wrapper::after {
-    color: gray;
-    background: #fff;
-    content: "...";
-    display: inline; }
-  .main-container .search-result--wrapper .views-field-field-s-page-ft-img-media,
-  .main-container .complex-slat__super-heading:empty {
-    display: none; }
+#header #views-exposed-form-acquia-search-page.expanded input[type="submit"]#edit-submit-acquia-search {
+  visibility: visible;
+  background: #6e6f72; }
+
+@media only screen and (min-width: 860px) {
+  #header #views-exposed-form-acquia-search-page #edit-actions {
+    margin-top: 0;
+    position: relative;
+    max-height: 35px; }
+  #header #views-exposed-form-acquia-search-page.expanded #edit-actions {
+    margin: 0; }
+  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search {
+    display: block;
+    height: 33px;
+    position: relative;
+    padding: 5px 15px 5px;
+    min-width: 120px;
+    border: none;
+    z-index: auto;
+    font-size: 0.75em;
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    letter-spacing: 0.11875em;
+    color: #fff;
+    text-transform: uppercase; }
+  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search {
+    background-color: transparent; } }
+
+#header #views-exposed-form-acquia-search-page input::-webkit-search-cancel-button,
+#header #views-exposed-form-acquia-search-page input::-webkit-search-decoration {
+  display: none; }
+
+#header #views-exposed-form-acquia-search-page input[type="text"]:focus {
+  background-color: #6e6f72;
+  border: 0; }
+
+@media only screen and (min-width: 860px) {
+  #header #views-exposed-form-acquia-search-page input[type="text"]:focus {
+    background-position: 9px center;
+    background-color: #fff;
+    color: #6e6f72;
+    width: 520px; } }
+
+#header #views-exposed-form-acquia-search-page input::-moz-placeholder {
+  color: #fff; }
+
+#header #views-exposed-form-acquia-search-page input::-webkit-input-placeholder {
+  color: #fff; }
+
+.main-container .search-results--search-form h2.block__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px; }
+
+.main-container #views-exposed-form-acquia-search-page .js-form-item.form-item.js-form-type-textfield.form-item-search.js-form-item-search {
+  display: flex;
+  flex-wrap: wrap; }
+
+.main-container #views-exposed-form-acquia-search-page label[for=edit-search] {
+  display: none !important; }
+
+.main-container #views-exposed-form-acquia-search-page input#edit-search {
+  background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 12px 18px;
+  background-size: 17px; }
+
+.main-container #views-exposed-form-acquia-search-page #edit-actions {
+  margin: 0 0 20px 0; }
+
+.main-container #views-exposed-form-acquia-search-page input[type="submit"] {
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  padding: 10px;
+  margin: 0 0 30px 0;
+  min-width: 150px;
+  background: #017c92;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px; }
+
+.main-container #views-exposed-form-acquia-search-page #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"] {
+  background: url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
+  background-size: 14px; }
+
+.main-container .search-result--wrapper.view.acquia-search.page .views-field.views-field-title,
+.main-container .search-result--wrapper.view.acquia-search.page .field-content.search-result--display-name {
+  font-weight: 600;
+  font-size: 20px;
+  display: inline-block;
+  margin: 0px 10px 25px; }
+
+.main-container .search-result--line-2 {
+  padding: 0 0 30px 25px; }
+
+.main-container .js .search-result--paragraph-component .paragraphs-description .paragraphs-content-wrapper {
+  float: left; }
+
+.main-container .js .search-result--paragraph-component .paragraphs-description .paragraphs-content-wrapper::after {
+  color: gray;
+  background: #fff;
+  content: "...";
+  display: inline; }
+
+.main-container .search-result--wrapper .views-field-field-s-page-ft-img-media,
+.main-container .complex-slat__super-heading:empty {
+  display: none; }
 
 .block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
   border: 0;
@@ -4238,72 +4226,67 @@ ul.tabs {
     padding: 15px;
     margin: 15px; }
 
-/* These styles should NOT affect the header search block at all   */
-.main-container {
-  /* test to get this loading */
-  /* Search result entries */
-  /* numbers */
-  /* first line fields */
-  /* second row of content fields */
-  /* component paragraph styling */
-  /* -- hiding anything for search results -- */ }
-  .main-container .search-results--search-form h2.block__title {
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 20px; }
-  .main-container #views-exposed-form-acquia-search-page {
-    /* search form wrapper */ }
-    .main-container #views-exposed-form-acquia-search-page .js-form-item.form-item.js-form-type-textfield.form-item-search.js-form-item-search {
-      display: flex;
-      flex-wrap: wrap; }
-    .main-container #views-exposed-form-acquia-search-page label[for=edit-search] {
-      display: none !important; }
-    .main-container #views-exposed-form-acquia-search-page input#edit-search {
-      background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 12px 18px;
-      background-size: 17px; }
-    .main-container #views-exposed-form-acquia-search-page #edit-actions {
-      margin: 0 0 20px 0; }
-    .main-container #views-exposed-form-acquia-search-page input[type="submit"] {
-      text-align: center;
-      font-size: 14px;
-      display: block;
-      padding: 10px;
-      margin: 0 0 30px 0;
-      min-width: 150px;
-      background: #017c92;
-      color: white;
-      text-transform: uppercase;
-      font-weight: normal;
-      letter-spacing: 1px; }
-    .main-container #views-exposed-form-acquia-search-page #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"] {
-      background: url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
-      background-size: 14px; }
-  .main-container .search-result--wrapper.view.acquia-search.page .views-field.views-field-counter {
-    font-weight: 600;
-    font-size: 20px; }
-  .main-container .search-result--wrapper.view.acquia-search.page .views-field.views-field-title,
-  .main-container .search-result--wrapper.view.acquia-search.page .field-content.search-result--display-name {
-    font-weight: 600;
-    font-size: 20px;
-    display: inline-block;
-    margin: 0px 10px 25px; }
-  .main-container .search-result--line-2 {
-    padding: 0 0 30px 25px; }
-  .main-container .js .search-result--paragraph-component .paragraphs-description .paragraphs-content-wrapper {
-    float: left; }
-  .main-container .js .search-result--paragraph-component .paragraphs-description .paragraphs-content-wrapper::after {
-    color: gray;
-    background: #fff;
-    content: "...";
-    display: inline; }
-  .main-container .search-result--wrapper .views-field-field-s-page-ft-img-media,
-  .main-container .complex-slat__super-heading:empty {
-    display: none; }
+.main-container .search-results--search-form h2.block__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px; }
 
-/* navigation adjustment for adding search inside the navigation divs */
+.main-container #views-exposed-form-acquia-search-page .js-form-item.form-item.js-form-type-textfield.form-item-search.js-form-item-search {
+  display: flex;
+  flex-wrap: wrap; }
+
+.main-container #views-exposed-form-acquia-search-page label[for=edit-search] {
+  display: none !important; }
+
+.main-container #views-exposed-form-acquia-search-page input#edit-search {
+  background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 12px 18px;
+  background-size: 17px; }
+
+.main-container #views-exposed-form-acquia-search-page #edit-actions {
+  margin: 0 0 20px 0; }
+
+.main-container #views-exposed-form-acquia-search-page input[type="submit"] {
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  padding: 10px;
+  margin: 0 0 30px 0;
+  min-width: 150px;
+  background: #017c92;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px; }
+
+.main-container #views-exposed-form-acquia-search-page #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"] {
+  background: url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
+  background-size: 14px; }
+
+.main-container .search-result--wrapper.view.acquia-search.page .views-field.views-field-title,
+.main-container .search-result--wrapper.view.acquia-search.page .field-content.search-result--display-name {
+  font-weight: 600;
+  font-size: 20px;
+  display: inline-block;
+  margin: 0px 10px 25px; }
+
+.main-container .search-result--line-2 {
+  padding: 0 0 30px 25px; }
+
+.main-container .js .search-result--paragraph-component .paragraphs-description .paragraphs-content-wrapper {
+  float: left; }
+
+.main-container .js .search-result--paragraph-component .paragraphs-description .paragraphs-content-wrapper::after {
+  color: gray;
+  background: #fff;
+  content: "...";
+  display: inline; }
+
+.main-container .search-result--wrapper .views-field-field-s-page-ft-img-media,
+.main-container .complex-slat__super-heading:empty {
+  display: none; }
+
 @media only screen and (min-width: 860px) {
   .navbar__group {
-    display: block;
     float: right;
     padding-bottom: 0;
     padding-top: 0;
@@ -4321,8 +4304,7 @@ ul.tabs {
     background: transparent;
     padding-left: 0;
     padding-right: 0;
-    margin-left: 20px;
-    /* creates space between menu nav links and search */ } }
+    margin-left: 20px; } }
 
 @media only screen and (max-width: 1023px) {
   .navbar__search {
@@ -4332,7 +4314,6 @@ ul.tabs {
     height: 1px;
     overflow: hidden;
     padding: 0;
-    /*position: absolute;*/
     white-space: nowrap;
     width: 1px; } }
 
@@ -4341,7 +4322,6 @@ ul.tabs {
   clip: unset;
   clip-path: unset;
   height: auto;
-  /*overflow: hidden;*/
   padding: 0;
   width: auto;
   margin-left: 38px;
@@ -4367,7 +4347,6 @@ ul.tabs {
   margin-top: 15px; }
 
 #header #views-exposed-form-acquia-search-page > * {
-  /* 2 form inner sections */
   display: flex;
   align-items: center; }
 
@@ -4397,7 +4376,6 @@ ul.tabs {
 
 @media only screen and (min-width: 860px) {
   #header #views-exposed-form-acquia-search-page input[type="text"] {
-    /*background-color: transparent; */
     background-position: 15px 10px;
     border: 0;
     width: 0; } }
@@ -4425,59 +4403,57 @@ ul.tabs {
   background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
   background-size: 14px; }
 
-#header #views-exposed-form-acquia-search-page {
-  /*  For large screen sizes, adding clickable button area */
-  /* end of media query */ }
-  #header #views-exposed-form-acquia-search-page input[type="submit"] {
-    visibility: hidden;
-    background: #6e6f72;
-    display: block; }
-  #header #views-exposed-form-acquia-search-page.expanded input[type="submit"]#edit-submit-acquia-search {
-    visibility: visible;
-    background: #6e6f72; }
-  @media only screen and (min-width: 860px) {
-    #header #views-exposed-form-acquia-search-page {
-      /*  -- removed expanded*/ }
-      #header #views-exposed-form-acquia-search-page #edit-actions {
-        /* button container */
-        margin-top: 0;
-        position: relative;
-        max-height: 35px; }
-      #header #views-exposed-form-acquia-search-page.expanded #edit-actions {
-        margin: 0; }
-      #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search {
-        display: block;
-        height: 33px;
-        position: relative;
-        padding: 5px 15px 5px;
-        min-width: 120px;
-        border: none;
-        z-index: auto;
-        font-size: 0.75em;
-        font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-        letter-spacing: 0.11875em;
-        color: #fff;
-        text-transform: uppercase; }
-      #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search {
-        background-color: transparent;
-        /* overrides default blue button color when we're not setting gray background for hover */ } }
-  #header #views-exposed-form-acquia-search-page input::-webkit-search-cancel-button,
-  #header #views-exposed-form-acquia-search-page input::-webkit-search-decoration {
-    display: none; }
+#header #views-exposed-form-acquia-search-page input[type="submit"] {
+  visibility: hidden;
+  background: #6e6f72;
+  display: block; }
+
+#header #views-exposed-form-acquia-search-page.expanded input[type="submit"]#edit-submit-acquia-search {
+  visibility: visible;
+  background: #6e6f72; }
+
+@media only screen and (min-width: 860px) {
+  #header #views-exposed-form-acquia-search-page #edit-actions {
+    margin-top: 0;
+    position: relative;
+    max-height: 35px; }
+  #header #views-exposed-form-acquia-search-page.expanded #edit-actions {
+    margin: 0; }
+  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search {
+    display: block;
+    height: 33px;
+    position: relative;
+    padding: 5px 15px 5px;
+    min-width: 120px;
+    border: none;
+    z-index: auto;
+    font-size: 0.75em;
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    letter-spacing: 0.11875em;
+    color: #fff;
+    text-transform: uppercase; }
+  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search {
+    background-color: transparent; } }
+
+#header #views-exposed-form-acquia-search-page input::-webkit-search-cancel-button,
+#header #views-exposed-form-acquia-search-page input::-webkit-search-decoration {
+  display: none; }
+
+#header #views-exposed-form-acquia-search-page input[type="text"]:focus {
+  background-color: #6e6f72;
+  border: 0; }
+
+@media only screen and (min-width: 860px) {
   #header #views-exposed-form-acquia-search-page input[type="text"]:focus {
-    background-color: #6e6f72;
-    border: 0; }
-  @media only screen and (min-width: 860px) {
-    #header #views-exposed-form-acquia-search-page input[type="text"]:focus {
-      /*background-position: 98% center;*/
-      background-position: 9px center;
-      /*padding: 10px 40px 10px 20px;*/
-      background-color: #fff;
-      color: #6e6f72;
-      width: 520px; } }
-  #header #views-exposed-form-acquia-search-page input::-moz-placeholder {
-    color: #fff; }
-  #header #views-exposed-form-acquia-search-page input::-webkit-input-placeholder {
-    color: #fff; }
+    background-position: 9px center;
+    background-color: #fff;
+    color: #6e6f72;
+    width: 520px; } }
+
+#header #views-exposed-form-acquia-search-page input::-moz-placeholder {
+  color: #fff; }
+
+#header #views-exposed-form-acquia-search-page input::-webkit-input-placeholder {
+  color: #fff; }
 
 /*# sourceMappingURL=components.css.map */
