@@ -115,7 +115,7 @@
   @media only screen and (min-width: 860px) {
     #views-exposed-form-acquia-search-page input[type="text"] {
       //background-color: transparent;
-      background-position: 15px 10px;
+      background-position: 15px 9px;
       border: 0;
       width: 0;
     }
@@ -229,4 +229,10 @@
       color: #fff;
     }
   }
+}
+
+// placeholder  - apply to header and main-container for search page results form
+
+input#edit-search::placeholder {
+	color: gray;
 }

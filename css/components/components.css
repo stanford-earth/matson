@@ -3085,7 +3085,7 @@ html .getsocial {
 
 @media only screen and (min-width: 860px) {
   #header #views-exposed-form-acquia-search-page input[type="text"] {
-    background-position: 15px 10px;
+    background-position: 15px 9px;
     border: 0;
     width: 0; } }
 
@@ -3165,6 +3165,9 @@ html .getsocial {
 #header #views-exposed-form-acquia-search-page input::-webkit-input-placeholder {
   color: #fff; }
 
+input#edit-search::placeholder {
+  color: gray; }
+
 .main-container .search-results--search-form h2.block__title {
   font-size: 16px;
   font-weight: 600;
@@ -3175,7 +3178,7 @@ html .getsocial {
   flex-wrap: wrap; }
 
 .main-container #views-exposed-form-acquia-search-page label[for=edit-search] {
-  display: none !important; }
+  display: none; }
 
 .main-container #views-exposed-form-acquia-search-page input#edit-search {
   background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 12px 18px;
@@ -3206,7 +3209,7 @@ html .getsocial {
   font-weight: 600;
   font-size: 20px;
   display: inline-block;
-  margin: 0px 10px 25px; }
+  margin: 0 10px 25px; }
 
 .main-container .search-result--line-2 {
   padding: 0 0 30px 25px; }
@@ -4236,7 +4239,7 @@ ul.tabs {
   flex-wrap: wrap; }
 
 .main-container #views-exposed-form-acquia-search-page label[for=edit-search] {
-  display: none !important; }
+  display: none; }
 
 .main-container #views-exposed-form-acquia-search-page input#edit-search {
   background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 12px 18px;
@@ -4267,7 +4270,7 @@ ul.tabs {
   font-weight: 600;
   font-size: 20px;
   display: inline-block;
-  margin: 0px 10px 25px; }
+  margin: 0 10px 25px; }
 
 .main-container .search-result--line-2 {
   padding: 0 0 30px 25px; }
@@ -4376,7 +4379,7 @@ ul.tabs {
 
 @media only screen and (min-width: 860px) {
   #header #views-exposed-form-acquia-search-page input[type="text"] {
-    background-position: 15px 10px;
+    background-position: 15px 9px;
     border: 0;
     width: 0; } }
 
@@ -4455,5 +4458,8 @@ ul.tabs {
 
 #header #views-exposed-form-acquia-search-page input::-webkit-input-placeholder {
   color: #fff; }
+
+input#edit-search::placeholder {
+  color: gray; }
 
 /*# sourceMappingURL=components.css.map */

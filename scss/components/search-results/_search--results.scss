@@ -16,7 +16,7 @@
 
     // hide label
     label[for=edit-search] {
-      display: none !important;
+      display: none;
     }
 
     // search input
@@ -58,7 +58,7 @@
     font-weight: 600;
     font-size: 20px;
     display: inline-block;
-    margin: 0px 10px 25px;
+    margin: 0 10px 25px;
   }
 
   // second row of content fields
