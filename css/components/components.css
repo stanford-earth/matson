@@ -2960,12 +2960,16 @@ html .getsocial {
 
 .field-p-responsive-media picture,
 .field--responsive-image picture,
+.field-p-responsive-media .media,
+.field--responsive-image .media,
 .field--responsive-video {
   position: relative;
   margin-bottom: 20px;
   display: block; }
   .field-p-responsive-media picture::after,
   .field--responsive-image picture::after,
+  .field-p-responsive-media .media::after,
+  .field--responsive-image .media::after,
   .field--responsive-video::after {
     content: '';
     background-color: #F9F6EF;
@@ -2980,6 +2984,8 @@ html .getsocial {
     z-index: -1; }
   .field-p-responsive-media picture img,
   .field--responsive-image picture img,
+  .field-p-responsive-media .media img,
+  .field--responsive-image .media img,
   .field--responsive-video img {
     width: 100%;
     max-width: none;
