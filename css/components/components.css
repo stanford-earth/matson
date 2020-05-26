@@ -3166,7 +3166,7 @@ html .getsocial {
   color: #fff; }
 
 input#edit-search::placeholder {
-  color: gray; }
+  color: #666; }
 
 .main-container .search-results--search-form h2.block__title {
   font-size: 16px;
@@ -4460,6 +4460,6 @@ ul.tabs {
   color: #fff; }
 
 input#edit-search::placeholder {
-  color: gray; }
+  color: #666; }
 
 /*# sourceMappingURL=components.css.map */
