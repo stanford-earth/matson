@@ -3005,9 +3005,6 @@ html .getsocial {
 
 .navbar__search {
   position: relative;
-  /*bottom: 0;*/
-  /*left: 0;*/
-  /*right: 40px;*/
   min-width: 5em;
   padding-left: 20px;
   padding-right: 20px;
@@ -3119,7 +3116,7 @@ html .getsocial {
 #header #views-exposed-form-acquia-search-page.expanded #edit-search,
 #header #views-exposed-form-acquia-search-page:hover #edit-search,
 #header #views-exposed-form-acquia-search-page:focus #edit-search {
-  background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 10px;
+  background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
   background-size: 14px; }
 
 #header #views-exposed-form-acquia-search-page {
@@ -3180,7 +3177,6 @@ html .getsocial {
 /* These styles should NOT affect the header search block at all   */
 .main-container {
   /* test to get this loading */
-  /* includes overridding focus styles inheriting from header search styles */
   /* Search result entries */
   /* numbers */
   /* first line fields */
@@ -3198,14 +3194,16 @@ html .getsocial {
       flex-wrap: wrap; }
     .main-container #views-exposed-form-acquia-search-page label[for=edit-search] {
       display: none !important; }
+    .main-container #views-exposed-form-acquia-search-page input#edit-search {
+      background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 12px 18px;
+      background-size: 17px; }
     .main-container #views-exposed-form-acquia-search-page #edit-actions {
       margin: 0 0 20px 0; }
     .main-container #views-exposed-form-acquia-search-page input[type="submit"] {
       text-align: center;
       font-size: 14px;
-      display: flex;
-      order: 2;
-      padding: 10px 40px;
+      display: block;
+      padding: 10px;
       margin: 0 0 30px 0;
       min-width: 150px;
       background: #017c92;
@@ -3214,7 +3212,7 @@ html .getsocial {
       font-weight: normal;
       letter-spacing: 1px; }
     .main-container #views-exposed-form-acquia-search-page #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"] {
-      background: url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 10px;
+      background: url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
       background-size: 14px; }
   .main-container .search-result--wrapper.view.acquia-search.page .views-field.views-field-counter {
     font-weight: 600;
@@ -4243,7 +4241,6 @@ ul.tabs {
 /* These styles should NOT affect the header search block at all   */
 .main-container {
   /* test to get this loading */
-  /* includes overridding focus styles inheriting from header search styles */
   /* Search result entries */
   /* numbers */
   /* first line fields */
@@ -4261,14 +4258,16 @@ ul.tabs {
       flex-wrap: wrap; }
     .main-container #views-exposed-form-acquia-search-page label[for=edit-search] {
       display: none !important; }
+    .main-container #views-exposed-form-acquia-search-page input#edit-search {
+      background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 12px 18px;
+      background-size: 17px; }
     .main-container #views-exposed-form-acquia-search-page #edit-actions {
       margin: 0 0 20px 0; }
     .main-container #views-exposed-form-acquia-search-page input[type="submit"] {
       text-align: center;
       font-size: 14px;
-      display: flex;
-      order: 2;
-      padding: 10px 40px;
+      display: block;
+      padding: 10px;
       margin: 0 0 30px 0;
       min-width: 150px;
       background: #017c92;
@@ -4277,7 +4276,7 @@ ul.tabs {
       font-weight: normal;
       letter-spacing: 1px; }
     .main-container #views-exposed-form-acquia-search-page #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"] {
-      background: url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 10px;
+      background: url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
       background-size: 14px; }
   .main-container .search-result--wrapper.view.acquia-search.page .views-field.views-field-counter {
     font-weight: 600;
@@ -4312,9 +4311,6 @@ ul.tabs {
 
 .navbar__search {
   position: relative;
-  /*bottom: 0;*/
-  /*left: 0;*/
-  /*right: 40px;*/
   min-width: 5em;
   padding-left: 20px;
   padding-right: 20px;
@@ -4426,7 +4422,7 @@ ul.tabs {
 #header #views-exposed-form-acquia-search-page.expanded #edit-search,
 #header #views-exposed-form-acquia-search-page:hover #edit-search,
 #header #views-exposed-form-acquia-search-page:focus #edit-search {
-  background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 10px;
+  background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
   background-size: 14px; }
 
 #header #views-exposed-form-acquia-search-page {

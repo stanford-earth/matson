@@ -19,6 +19,13 @@
             display: none!important;
         }
 
+        // search input 
+        input#edit-search {
+            background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 12px 18px;
+            background-size: 17px;
+        }
+
+
         // container of submit button
         #edit-actions {
             margin: 0 0 20px 0;
@@ -27,9 +34,8 @@
         input[type="submit"] {
             text-align: center;
             font-size: 14px;
-            display: flex;
-            order: 2;
-            padding: 10px 40px;
+            display: block;
+            padding: 10px;
             margin: 0 0 30px 0;
             min-width: 150px;        
             background: #017c92;
@@ -39,26 +45,10 @@
             letter-spacing: 1px;
         }
         #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"] {
-        background: url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 10px;
+        background: url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
         background-size: 14px;
         }
     }
-
-    /* includes overridding focus styles inheriting from header search styles */
-    // .search-results--search-form #views-exposed-form-acquia-search-page input[type="text"]:focus,
-    // input#edit-submit-acquia-search,
-    // input#edit-search:focus {
-        // text-align: left;
-        // display: flex;
-        // order: 2;
-        // width: 100%;
-        // padding-left: 40px;
-        // background: #fff;
-        // color: #4D4F53;
-        // border: 1px solid #4D4F53;
-        // order: 1;
-        // margin-bottom: 30px;
-    // }
 
 
     /* Search result entries */
