@@ -3134,7 +3134,7 @@ html .getsocial {
     position: relative;
     padding: 5px 15px 5px;
     min-width: 120px;
-    border: none;
+    border: 0;
     z-index: auto;
     font-size: 0.75em;
     font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -4425,7 +4425,7 @@ ul.tabs {
     position: relative;
     padding: 5px 15px 5px;
     min-width: 120px;
-    border: none;
+    border: 0;
     z-index: auto;
     font-size: 0.75em;
     font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
