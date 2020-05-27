@@ -11,8 +11,7 @@
 {% endif %}
 
 {% if image|get_img_src is not empty %}
-  {% set attributes = attributes.addClass('b-lazy bg') %}
-  {% set attributes = attributes.setAttribute('data-src', image|get_img_src ) %}
+  {% set attributes = attributes.setAttribute('style', ['background-image:url(' ~ image|get_img_src ~ ')']) %}
 {% endif %}
 
 {% set header_vars = {'superhead': superhead, 'subhead': subhead, 'context': context} %}
