@@ -7,7 +7,7 @@
 {% set attributes = attributes.addClass(['postcard', variants.image_orientation, variants._text_orientation]) %}
 
 <div{{ attributes }}> {# has-image-right, has-text-offset, has-text-inset #}
-  <div class="postcard__image b-lazy bg" data-src="{{ image|get_img_src }}"></div>
+  <div class="postcard__image" style="background-image:url('{{ image|get_img_src }}')"></div>
   <div class="postcard__content">
     <div class="postcard__content-inner">
       <div class="postcard__content-text">
