@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
 .filmstrip {
-  @include container-offset-left-margin;
+	@include container-offset-left;
+	&.component-centered-container {
+		@include container-offset-left; // need to be specific in overridding
+	}
   &.is-flexible {
     max-width: 420px;
 
