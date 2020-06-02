@@ -3035,6 +3035,7 @@ html .getsocial {
   width: auto;
   margin-left: 38px;
   font-size: 0.75em;
+  font-weight: 500;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   letter-spacing: 0.11875em;
   line-height: 20px;
@@ -4329,6 +4330,7 @@ ul.tabs {
   width: auto;
   margin-left: 38px;
   font-size: 0.75em;
+  font-weight: 500;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   letter-spacing: 0.11875em;
   line-height: 20px;
