@@ -321,14 +321,16 @@ h1 {
 .field--responsive-image picture,
 .field--responsive-video,
 .field-p-responsive-media picture,
-figure.align-center .figure-container {
+figure.align-center .figure-container,
+.stanford-wysiwyg figure.align-center {
   display: block;
   margin-bottom: 20px;
   position: relative; }
   .field--responsive-image picture::after,
   .field--responsive-video::after,
   .field-p-responsive-media picture::after,
-  figure.align-center .figure-container::after {
+  figure.align-center .figure-container::after,
+  .stanford-wysiwyg figure.align-center::after {
     content: '';
     background-color: #F9F6EF;
     position: absolute;
@@ -343,7 +345,8 @@ figure.align-center .figure-container {
   .field--responsive-image picture img,
   .field--responsive-video img,
   .field-p-responsive-media picture img,
-  figure.align-center .figure-container img {
+  figure.align-center .figure-container img,
+  .stanford-wysiwyg figure.align-center img {
     display: block;
     margin-bottom: 0;
     max-width: none;
