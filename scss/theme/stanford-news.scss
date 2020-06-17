@@ -326,9 +326,7 @@ figure.align-center .figure-container,
   }
 }
 
-.field-s-news-rich-content
-  .ptype-stanford-wysiwyg:first-of-type
-  .field-p-wysiwyg {
+.field-s-news-rich-content .ptype-stanford-wysiwyg:first-of-type .field-p-wysiwyg {
   // Drop Cap
   > p:first-of-type::first-line {
     font-size: 1em;
