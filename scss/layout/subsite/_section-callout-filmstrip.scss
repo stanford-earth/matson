@@ -42,12 +42,6 @@
     @include responsive-container($default-container);
     @include container-offset-left;
 
-    .component-centered-container {
-      @include grid-media($media-lg) {
-        padding: 0;
-      }
-    }
-
     .section-header {
       @include responsive-container($default-container);
     }
