@@ -3,7 +3,7 @@
 .filmstrip {
   @include container-offset-left;
   &.component-centered-container {
-	  @include container-offset-left; // need to be specific in overridding
+    @include container-offset-left; // need to be specific in overridding
   }
 
   &.is-flexible {
