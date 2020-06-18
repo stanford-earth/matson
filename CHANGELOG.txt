@@ -1,3 +1,14 @@
+Version 8.x-1.1-alpha25                                               2020-06-17
+--------------------------------------------------------------------------------
+- EARTH-1218 UL fix.
+- EARTH-1405 Blazy background images - remove semicolon.
+- EARTH-1421 Responsive image bg
+- EARTH-1312 Image template with b-lazy class.
+- EARTH-1425 Reverting lazy-load for background images.
+- EARTH-1183 Subsite style filmstrip padding.
+- EARTH-0000 Add info to readme
+- EARTH-1438 bg and caption fixes for updated media module.
+
 Version 8.x-1.1-alpha24                                               2020-05-13
 --------------------------------------------------------------------------------
 - EARTH-1405 Blazy background images
