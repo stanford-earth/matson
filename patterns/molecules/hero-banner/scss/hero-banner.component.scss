@@ -3,19 +3,55 @@
 ////
 
 // Decant
-@import 'decanter/core/utilities/decanter-utilities';
+@import "decanter/core/utilities/decanter-utilities";
 
 // Grab our mixins & config.
-@import 'patterns/utilities/utilities';
+@import "patterns/utilities/utilities";
 
 // OOO Issue with the variables being translated too early.
 $default-container: (
-  xs: (columns: 12, grid-media: $media-xs-only,  v-space: 1em, max-width: false, grid-collapse: false),
-  sm: (columns: 12, grid-media: $media-sm-only,  v-space: 1em, max-width: false, grid-collapse: false),
-  md: (columns: 12, grid-media: $media-md-only,  v-space: 1em, max-width: false, grid-collapse: false),
-  lg: (columns: 12, grid-media: $media-lg-only,  v-space: 1em, max-width: false, grid-collapse: false),
-  xl: (columns: 12, grid-media: $media-xl,       v-space: 1em, max-width: true,  grid-collapse: false),
-  print: (columns: 12, grid-media: $media-print, v-space: 1em, max-width: false, grid-collapse: false),
+  xs: (
+    columns: 12,
+    grid-media: $media-xs-only,
+    v-space: 1em,
+    max-width: false,
+    grid-collapse: false
+  ),
+  sm: (
+    columns: 12,
+    grid-media: $media-sm-only,
+    v-space: 1em,
+    max-width: false,
+    grid-collapse: false
+  ),
+  md: (
+    columns: 12,
+    grid-media: $media-md-only,
+    v-space: 1em,
+    max-width: false,
+    grid-collapse: false
+  ),
+  lg: (
+    columns: 12,
+    grid-media: $media-lg-only,
+    v-space: 1em,
+    max-width: false,
+    grid-collapse: false
+  ),
+  xl: (
+    columns: 12,
+    grid-media: $media-xl,
+    v-space: 1em,
+    max-width: true,
+    grid-collapse: false
+  ),
+  print: (
+    columns: 12,
+    grid-media: $media-print,
+    v-space: 1em,
+    max-width: false,
+    grid-collapse: false
+  )
 );
 
 // Variables.
@@ -30,10 +66,25 @@ $hero-max-width: 1380px;
 /// @require $neat-grid
 ///
 /// @link http://neat.bourbon.io Neat
-@mixin centered-abs-container($columns: null, $v-space: 1em, $max-width: false, $grid-collapse: false, $grid: $neat-grid) {
-  $columns: _neat-column-default($grid, $columns); // Retrieves max columns from specified grid if empty, or the specified number of columns otherwise
-  $_grid-columns: _retrieve-neat-setting($grid, columns); // Retrieves the number of max columns from the specified grid
-  $_grid-gutter: _retrieve-neat-setting($grid, gutter); // Retrieves the gutter from the specified grid
+@mixin centered-abs-container(
+  $columns: null,
+  $v-space: 1em,
+  $max-width: false,
+  $grid-collapse: false,
+  $grid: $neat-grid
+) {
+  $columns: _neat-column-default(
+    $grid,
+    $columns
+  ); // Retrieves max columns from specified grid if empty, or the specified number of columns otherwise
+  $_grid-columns: _retrieve-neat-setting(
+    $grid,
+    columns
+  ); // Retrieves the number of max columns from the specified grid
+  $_grid-gutter: _retrieve-neat-setting(
+    $grid,
+    gutter
+  ); // Retrieves the gutter from the specified grid
 
   @include grid-container;
   @if $grid-collapse == true {
@@ -55,11 +106,16 @@ $hero-max-width: 1380px;
     $_grid-collapse: map-get($_map, grid-collapse);
 
     @include grid-media($_grid) {
-      @include centered-abs-container($_cols, $_v-space, $_max-width, $_grid-collapse, $_grid);
+      @include centered-abs-container(
+        $_cols,
+        $_v-space,
+        $_max-width,
+        $_grid-collapse,
+        $_grid
+      );
     }
   }
 }
-
 
 // Styles
 
@@ -78,7 +134,7 @@ $hero-max-width: 1380px;
   &.has-tint {
     .image::before {
       @extend %absolute-fill;
-      content: '';
+      content: "";
       display: block;
       background-color: rgba(0, 0, 0, 0.35);
       position: absolute;
@@ -117,6 +173,10 @@ $hero-max-width: 1380px;
         margin-bottom: em(58px);
       }
     }
+  }
+
+  article.contextual-region {
+    position: unset;
   }
 }
 

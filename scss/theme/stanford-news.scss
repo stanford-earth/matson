@@ -4,7 +4,8 @@
 // top of the page each time a complex page is rendered. A few things have to
 // move around to ensure that the banner is in the right place.
 
-.field-s-news-top-media #hero-banner:not(.component-centered-container-margins) {
+.field-s-news-top-media
+  #hero-banner:not(.component-centered-container-margins) {
   margin-top: -170px;
   @include grid-media($header-md) {
     margin-top: -176px;
@@ -221,7 +222,8 @@ h1 {
 .field--responsive-image picture,
 .field--responsive-video,
 .field-p-responsive-media picture,
-figure.align-center .figure-container {
+figure.align-center .figure-container,
+.stanford-wysiwyg figure.align-center {
   display: block;
   margin-bottom: 20px;
   position: relative;
@@ -243,7 +245,6 @@ figure.align-center .figure-container {
     @include dash-left-offset;
     margin-bottom: 20px;
   }
-
 }
 
 .field-p-responsive-image-cred {
@@ -332,7 +333,7 @@ figure.align-center .figure-container {
     letter-spacing: normal;
     position: relative;
   }
-    letter-spacing: normal;
+  letter-spacing: normal;
 
   > p:first-child::first-letter {
     float: left;

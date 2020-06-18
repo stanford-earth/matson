@@ -208,7 +208,7 @@ figcaption {
   caption-side: bottom;
   color: #4d4f53;
   display: table-caption;
-  text-align: right; }
+  text-align: left; }
 
 .lead-text {
   font-size: 22px;
@@ -273,7 +273,7 @@ figcaption {
 .content-type__media-container.left-align-media .content-type__media .photo-credit, .content-type__media-container.centered-media .content-type__media .photo-credit {
   clear: both;
   color: #4d4f53;
-  font-size: .8em;
+  font-size: 0.8em;
   line-height: 1.1em;
   margin: 10px 30px 10px 0;
   text-align: left; }
