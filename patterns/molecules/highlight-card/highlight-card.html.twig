@@ -12,7 +12,9 @@
     <span class="highlight-card__intro">{{ intro }}</span>
     {% endif %}
 
+    {% if title is not empty %}
     <h4 class="highlight-card__title">{{ title }}</h4>
+    {% endif %}
 
     {% if sub_title is not empty %}
     <h5>{{ sub_title }}</h5>
