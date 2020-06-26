@@ -12,7 +12,7 @@
     <span class="highlight-card__intro">{{ intro }}</span>
     {% endif %}
 
-    {% if title is not empty %}
+    {% if title|render|striptags|trim is not empty %}
     <h4 class="highlight-card__title">{{ title }}</h4>
     {% endif %}
 
