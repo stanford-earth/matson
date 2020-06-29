@@ -30,6 +30,7 @@
 
     <div class="content-type__header">
       <div class="page-title"><h1>{{ title }}</h1></div>
+      {% if first_name|render|striptags|trim is not empty or last_name|render|striptags|trim is not empty or department|render|striptags|trim is not empty %}
       <div class="page-subtitle">
         <h2>
           {% if first_name is not empty or last_name is not empty %}
@@ -43,7 +44,8 @@
           {% endif %}
         </h2>
       </div>
-
+      {% endif %}
+      
       <div class="content-type-date">
         <span>{{ "Published"|t }}</span>
         <time>{{ created }}</time>

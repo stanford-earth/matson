@@ -39,7 +39,7 @@
   {% endif %}
   <div class="simple-block__content">
 
-    {% if title is not empty %}
+    {% if title|render|striptags|trim is not empty %}
       <h3 class="simple-block__title">{{ link|openlink({class:"simple-block__link"}) }}{{ title }}{{ link|closelink }}</h3>
     {% endif %}
 

@@ -6,7 +6,10 @@
 #}
 {# Set title to false so it doesnt change, since the text will be sufficient #}
 {{ link|openlink({class: 'link-item', title: false}) }}
-  <span class="link-item__title">{{ title }}
+  <span class="link-item__title">
+    {% if title is not empty %}
+    {{ title }}
+    {% endif %}
     {% if subtitle is not empty %}
     <span class="link-item__subtitle">{{ subtitle }}</span>
     {% endif %}
