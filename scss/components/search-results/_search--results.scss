@@ -1,0 +1,87 @@
+// These styles should NOT affect the header search block at all
+.main-container {
+  .search-results--search-form h2.block__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  #views-exposed-form-acquia-search-page {
+
+    // search form wrapper
+    .js-form-item.form-item.js-form-type-textfield.form-item-search.js-form-item-search {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    // hide label
+    label[for=edit-search] {
+      display: none;
+    }
+
+    // search input
+    input#edit-search {
+      background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 12px 18px;
+      background-size: 17px;
+    }
+
+    // container of submit button
+    #edit-actions {
+      margin: 0 0 20px 0;
+    }
+
+    input[type="submit"] {
+      text-align: center;
+      font-size: 14px;
+      display: block;
+      padding: 10px;
+      margin: 0 0 30px 0;
+      min-width: 150px;
+      background: #017c92;
+      color: white;
+      text-transform: uppercase;
+      font-weight: normal;
+      letter-spacing: 1px;
+    }
+
+    #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"] {
+      background: url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
+      background-size: 14px;
+    }
+  }
+
+  // Search result entries
+
+  // first line fields
+  .search-result--wrapper.view.acquia-search.page .views-field.views-field-title,
+  .search-result--wrapper.view.acquia-search.page .field-content.search-result--display-name {
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 10px 25px;
+  }
+
+  // second row of content fields
+  .search-result--line-2 {
+    padding: 0 0 30px 25px;
+  }
+
+  // component paragraph styling
+  .js .search-result--paragraph-component .paragraphs-description .paragraphs-content-wrapper {
+    float: left;
+  }
+
+  .js .search-result--paragraph-component .paragraphs-description .paragraphs-content-wrapper::after {
+    color: gray;
+    background: #fff;
+    content: "...";
+    display: inline;
+  }
+
+  // -- hiding anything for search results --
+  .search-result--wrapper .views-field-field-s-page-ft-img-media,
+  // when the super heading is empty, hide to remove extra unwanted space
+  .complex-slat__super-heading:empty {
+    display: none;
+  }
+}

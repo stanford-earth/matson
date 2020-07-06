@@ -1,0 +1,240 @@
+// navigation adjustment for adding search inside the navigation divs
+
+@media only screen and (min-width: 860px) {
+  .navbar__group {
+    float: right;
+    padding-bottom: 0;
+    padding-top: 0;
+    display: flex;
+  }
+}
+
+.navbar__search {
+  position: relative;
+  min-width: 5em;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 5;
+}
+
+@media only screen and (min-width: 860px) {
+  .navbar__search {
+    background: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 20px;
+    // creates space between menu nav links and search
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .navbar__search {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    //position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+
+.navbar__search label {
+  border: 0;
+  clip: unset;
+  clip-path: unset;
+  height: auto;
+  //overflow: hidden;
+  padding: 0;
+  width: auto;
+  margin-left: 38px;
+	font-size: 0.75em;
+	font-weight: 500;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 0.11875em;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar__search .expanded label {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
+  display: none;
+}
+
+
+// only apply to search bar in the header
+#header {
+  #views-exposed-form-acquia-search-page {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 17px;
+  }
+
+  #views-exposed-form-acquia-search-page.expanded {
+    margin-top: 15px;
+  }
+
+  #views-exposed-form-acquia-search-page>* {
+    // 2 form inner sections
+    display: flex;
+    align-items: center;
+  }
+
+  #views-exposed-form-acquia-search-page>.form-item.form-item-search {
+    max-height: 35px;
+  }
+
+  .views-exposed-filter-block.acquia-search-page .block__title {
+    display: none;
+  }
+
+  #views-exposed-form-acquia-search-page input {
+    outline: none;
+    margin: 13px 0;
+  }
+
+  #views-exposed-form-acquia-search-page input[type="text"] {
+    background: transparent url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px center;
+    background-size: 14px 14px;
+    box-sizing: border-box;
+    border: 0;
+    box-shadow: none;
+    color: #fff;
+    font-family: inherit;
+    font-size: 100%;
+    padding: 6px 75px 7px 40px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  @media only screen and (min-width: 860px) {
+    #views-exposed-form-acquia-search-page input[type="text"] {
+      //background-color: transparent;
+      background-position: 15px 9px;
+      border: 0;
+      width: 0;
+    }
+  }
+
+  #views-exposed-form-acquia-search-page:hover>.form-item-search,
+  #views-exposed-form-acquia-search-page:focus>.form-item-search,
+  #views-exposed-form-acquia-search-page:hover #views-exposed-form-acquia-search-page input[type="text"],
+  #views-exposed-form-acquia-search-page:focus #views-exposed-form-acquia-search-page input[type="text"] {
+    background: #fff;
+    color: #6e6f72;
+    transition: 0.3s;
+  }
+
+  .navbar__search:hover label,
+  .navbar__search:focus label {
+    text-shadow: none;
+  }
+
+  // search text that shows before search is opened
+  .navbar__search #views-exposed-form-acquia-search-page:hover label,
+  .navbar__search #views-exposed-form-acquia-search-page:focus label {
+    color: #6e6f72;
+  }
+
+  // opened search form
+  #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"],
+  #views-exposed-form-acquia-search-page.expanded #edit-search,
+  #views-exposed-form-acquia-search-page:hover #edit-search,
+  #views-exposed-form-acquia-search-page:focus #edit-search {
+    background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
+    background-size: 14px;
+  }
+
+  #views-exposed-form-acquia-search-page {
+    input[type="submit"] {
+      visibility: hidden;
+      background: #6e6f72;
+      display: block;
+    }
+
+    &.expanded input[type="submit"]#edit-submit-acquia-search {
+      visibility: visible;
+      background: #6e6f72;
+    }
+
+    //  For large screen sizes, adding clickable button area
+    @media only screen and (min-width: 860px) {
+
+      #edit-actions {
+        // button container
+        margin-top: 0;
+        position: relative;
+        max-height: 35px;
+      }
+
+      &.expanded #edit-actions {
+        margin: 0;
+      }
+
+      //  -- removed expanded
+      input[type="submit"]#edit-submit-acquia-search {
+        display: block;
+        height: 33px;
+        position: relative;
+        padding: 5px 15px 5px;
+        min-width: 120px;
+        border: 0;
+        z-index: auto;
+        font-size: 0.75em;
+        font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        letter-spacing: 0.11875em;
+        color: #fff;
+        text-transform: uppercase;
+      }
+
+      input[type="submit"]#edit-submit-acquia-search {
+        background-color: transparent;
+        // overrides default blue button color when we're not setting gray background for hover
+      }
+
+    }
+
+    // end of media query
+    input::-webkit-search-cancel-button,
+    input::-webkit-search-decoration {
+      display: none;
+    }
+
+    input[type="text"]:focus {
+      background-color: #6e6f72;
+      border: 0;
+    }
+
+    @media only screen and (min-width: 860px) {
+      input[type="text"]:focus {
+        //background-position: 98% center;
+        background-position: 9px center;
+        //padding: 10px 40px 10px 20px;
+        background-color: #fff;
+        color: #6e6f72;
+        color: color(steel);
+        width: 520px;
+      }
+    }
+
+    input::-moz-placeholder {
+      color: #fff;
+    }
+
+    input::-webkit-input-placeholder {
+      color: #fff;
+    }
+  }
+}
+
+// placeholder  - apply to header and main-container for search page results form
+
+input#edit-search::placeholder {
+  color: #666;
+}
