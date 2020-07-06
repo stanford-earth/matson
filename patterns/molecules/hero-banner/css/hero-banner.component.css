@@ -8,7 +8,7 @@
 .hero-banner {
   position: relative; }
   .hero-banner.has-tint .image::before {
-    content: '';
+    content: "";
     display: block;
     background-color: rgba(0, 0, 0, 0.35);
     position: absolute;
@@ -36,6 +36,8 @@
     pointer-events: none; }
   .hero-banner.has-video.component-centered-container-margins .video {
     margin-bottom: 4.4615384615em; }
+  .hero-banner article.contextual-region {
+    position: unset; }
 
 .hero-banner__inner {
   position: relative;

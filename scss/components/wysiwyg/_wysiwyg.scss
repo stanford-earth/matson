@@ -39,7 +39,7 @@
     @include dash-left-offset;
     font-size: 1.8em;
     &::after {
-      top: .7em;
+      top: 0.7em;
     }
   }
 
@@ -50,14 +50,15 @@
   // Floated images
   figure {
     display: table;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 
     &.align-right {
-      margin-left: 30px;
+      margin-left: 15px;
     }
 
     &.align-left {
-      margin-right: 30px;
+      margin-right: 15px;
     }
   }
 
@@ -74,10 +75,11 @@
     caption-side: bottom;
     color: color(stone);
     text-align: left;
+    font-size: 16px;
   }
 
   img {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 
     &.align-right {
       margin-left: 20px;
@@ -116,7 +118,7 @@
     clear: both;
   }
 
-//Special styles for Barb to use
+  //Special styles for Barb to use
   h3.teal,
   h2.teal {
     color: color(action);
@@ -137,11 +139,30 @@
   }
 
   div.well-insert-right {
-    background-color: #F9F6EF;
+    background-color: #f9f6ef;
     float: right;
     clear: none;
     width: 30%;
     padding: 15px;
     margin: 15px;
+  }
+}
+
+.stanford-wysiwyg {
+  .align-right .media--type-image picture {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+
+  .align-left .media--type-image picture {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+  }
+
+  .align-center .media--type-image picture {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
