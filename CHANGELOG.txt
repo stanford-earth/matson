@@ -1,3 +1,9 @@
+Version 8.x-1.1-alpha26                                               2020-07-08
+--------------------------------------------------------------------------------
+- EARTH-1088 Added search functionality.
+- EARTH-1407 Update lazy attribute to support native lazy-loading.
+- EARTH-1439 Fix empty headers.
+
 Version 8.x-1.1-alpha25                                               2020-06-17
 --------------------------------------------------------------------------------
 - EARTH-1218 UL fix.
