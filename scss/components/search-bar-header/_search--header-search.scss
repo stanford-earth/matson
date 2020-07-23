@@ -51,9 +51,10 @@
   width: auto;
   margin-left: 38px;
   margin-bottom: 0;
-	font-size: 0.75em;
-	font-weight: 500;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 0.75em;
+  font-weight: 500;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
   letter-spacing: 0.11875em;
   line-height: 20px;
   color: #fff;
@@ -65,7 +66,6 @@
   clip-path: inset(100%);
   display: none;
 }
-
 
 // only apply to search bar in the header
 #header {
@@ -80,13 +80,13 @@
     margin-top: 15px;
   }
 
-  #views-exposed-form-acquia-search-page>* {
+  #views-exposed-form-acquia-search-page > * {
     // 2 form inner sections
     display: flex;
     align-items: center;
   }
 
-  #views-exposed-form-acquia-search-page>.form-item.form-item-search {
+  #views-exposed-form-acquia-search-page > .form-item.form-item-search {
     max-height: 35px;
   }
 
@@ -100,7 +100,9 @@
   }
 
   #views-exposed-form-acquia-search-page input[type="text"] {
-    background: transparent url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px center;
+    background: transparent
+      url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px
+      center;
     background-size: 14px 14px;
     box-sizing: border-box;
     border: 0;
@@ -123,10 +125,14 @@
     }
   }
 
-  #views-exposed-form-acquia-search-page:hover>.form-item-search,
-  #views-exposed-form-acquia-search-page:focus>.form-item-search,
-  #views-exposed-form-acquia-search-page:hover #views-exposed-form-acquia-search-page input[type="text"],
-  #views-exposed-form-acquia-search-page:focus #views-exposed-form-acquia-search-page input[type="text"] {
+  #views-exposed-form-acquia-search-page:hover > .form-item-search,
+  #views-exposed-form-acquia-search-page:focus > .form-item-search,
+  #views-exposed-form-acquia-search-page:hover
+    #views-exposed-form-acquia-search-page
+    input[type="text"],
+  #views-exposed-form-acquia-search-page:focus
+    #views-exposed-form-acquia-search-page
+    input[type="text"] {
     background: #fff;
     color: #6e6f72;
     transition: 0.3s;
@@ -144,11 +150,14 @@
   }
 
   // opened search form
-  #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"],
+  #block-exposedformacquia-searchpage-2
+    #views-exposed-form-acquia-search-page
+    input[type="text"],
   #views-exposed-form-acquia-search-page.expanded #edit-search,
   #views-exposed-form-acquia-search-page:hover #edit-search,
   #views-exposed-form-acquia-search-page:focus #edit-search {
-    background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
+    background: #fff url("/themes/stanford/matson/img/source/search.svg")
+      no-repeat 15px 9px;
     background-size: 14px;
   }
 
@@ -166,7 +175,6 @@
 
     //  For large screen sizes, adding clickable button area
     @media only screen and (min-width: 860px) {
-
       #edit-actions {
         // button container
         margin-top: 0;
@@ -188,7 +196,8 @@
         border: 0;
         z-index: auto;
         font-size: 0.75em;
-        font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial",
+          sans-serif;
         letter-spacing: 0.11875em;
         color: #fff;
         text-transform: uppercase;
@@ -198,7 +207,6 @@
         background-color: transparent;
         // overrides default blue button color when we're not setting gray background for hover
       }
-
     }
 
     // end of media query
