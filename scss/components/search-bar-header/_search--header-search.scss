@@ -127,11 +127,8 @@
 
   #views-exposed-form-acquia-search-page:hover > .form-item-search,
   #views-exposed-form-acquia-search-page:focus > .form-item-search,
-  #views-exposed-form-acquia-search-page:hover
-    #views-exposed-form-acquia-search-page
-    input[type="text"],
-  #views-exposed-form-acquia-search-page:focus
-    #views-exposed-form-acquia-search-page
+  #views-exposed-form-acquia-search-page:hover #views-exposed-form-acquia-search-page input[type="text"],
+  #views-exposed-form-acquia-search-page:focus #views-exposed-form-acquia-search-page
     input[type="text"] {
     background: #fff;
     color: #6e6f72;
@@ -150,9 +147,7 @@
   }
 
   // opened search form
-  #block-exposedformacquia-searchpage-2
-    #views-exposed-form-acquia-search-page
-    input[type="text"],
+  #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"],
   #views-exposed-form-acquia-search-page.expanded #edit-search,
   #views-exposed-form-acquia-search-page:hover #edit-search,
   #views-exposed-form-acquia-search-page:focus #edit-search {
