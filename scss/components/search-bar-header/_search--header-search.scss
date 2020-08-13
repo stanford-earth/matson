@@ -50,6 +50,7 @@
   padding: 0;
   width: auto;
   margin-left: 38px;
+  margin-bottom: 0;
 	font-size: 0.75em;
 	font-weight: 500;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -83,6 +84,7 @@
     // 2 form inner sections
     display: flex;
     align-items: center;
+    margin: 0;
   }
 
   #views-exposed-form-acquia-search-page>.form-item.form-item-search {
