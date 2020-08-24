@@ -144,14 +144,16 @@
     color: #6e6f72;
   }
 
-  // opened search form
+  // opened search form & hovering over search button
+
   #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"],
-  #views-exposed-form-acquia-search-page.expanded #edit-search,
-  #views-exposed-form-acquia-search-page:hover #edit-search,
-  #views-exposed-form-acquia-search-page:focus #edit-search {
-    background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
-    background-size: 14px;
+  #views-exposed-form-acquia-search-page.expanded input[data-drupal-selector="edit-search"],
+  #views-exposed-form-acquia-search-page:hover input[data-drupal-selector="edit-search"],
+  #views-exposed-form-acquia-search-page:focus input[data-drupal-selector="edit-search"] {
+    background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px!important;
+    background-size: 14px!important;
   }
+
 
   #views-exposed-form-acquia-search-page {
     input[type="submit"] {
