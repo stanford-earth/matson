@@ -64,14 +64,22 @@
       $(".hero-banner__header").show();
     })
 
-    //Lazy load CSS background images
-    console.log('lazy load js start')
-    var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
+    // Lazy load CSS background images
+      var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
 
-    if ("IntersectionObserver" in window) {
-      
-    }
-    console.log('lazy load js end')
+      if ("IntersectionObserver" in window) {
+        var lazyBackgroundObserver = new IntersectionObserver(function (entries, observer) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              lazyBackgroundObserver.unobserve(entry.target);
+            }
+          });
+        });
+        lazyBackgrounds.forEach(function (lazyBackground) {
+          lazyBackgroundObserver.observe(lazyBackground);
+        });
+      }
 
     function addParents() {
       $(".js-nav-item-expandable li a").each(function() { // basic-main-menu.
