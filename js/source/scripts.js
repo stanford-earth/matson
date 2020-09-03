@@ -64,6 +64,15 @@
       $(".hero-banner__header").show();
     })
 
+    //Lazy load CSS background images
+    console.log('lazy load js start')
+    var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
+
+    if ("IntersectionObserver" in window) {
+      
+    }
+    console.log('lazy load js end')
+
     function addParents() {
       $(".js-nav-item-expandable li a").each(function() { // basic-main-menu.
         if ($(this).next().length > 0) {

@@ -4,11 +4,16 @@
  * Link banner pattern.
  */
 #}
+
 {% set attributes = attributes.addClass('link-banner') %}
 {% if image|get_img_src is not empty %}
-  {% set attributes = attributes.setAttribute('style', ['background-image:url(' ~ image|get_img_src ~ ')']) %}
+  {% set paragraph_id = 'paraID' ~ random() %}
+  {% set attributes = attributes.setAttribute('id', paragraph_id) %}
+  {% set attributes = attributes.addClass('lazy-background') %}
 {% endif %}
-
+<style>
+  #{{ paragraph_id}}.visible {background-image:url('{{~ image|get_img_src ~}}')};
+</style>
 <div{{ attributes }}>
   <header class="link-banner__header">
     <h3>{{ title }}</h3>
