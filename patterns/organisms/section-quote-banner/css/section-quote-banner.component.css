@@ -1,6 +1,7 @@
 .section-quote-banner {
   background-size: cover;
   background-position: center center;
+  background-color: #112;
   overflow: hidden;
   display: block;
   min-height: 280px;
