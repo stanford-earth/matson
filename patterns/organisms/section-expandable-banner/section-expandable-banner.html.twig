@@ -5,10 +5,16 @@
  */
 #}
 
-{% set classes = ['section-expandable-banner', 'js-section-expandable-banner'] %}
+{% set classes = ['section-expandable-banner', 'js-section-expandable-banner', 'lazy-background'] %}
 {% set header_vars = {'superhead': superhead, 'subhead': subhead, 'context': context} %}
+{% set paragraph_id = 'paraID' ~ random() %}
+{% set attributes = attributes.setAttribute('id', paragraph_id) %}
 
-<div{{ attributes.addClass(classes) }} style="background-image:url({{ image|get_img_src }})">
+<style>
+  #{{ paragraph_id}}.visible {background-image:url('{{~ image|get_img_src ~}}')};
+</style>
+
+<div{{ attributes.addClass(classes) }} {{ attributes }}>
   <div class="expandable-banner__header">
     {{ pattern('section_header', header_vars) }}
   </div>

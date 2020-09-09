@@ -11,11 +11,16 @@
 {% endif %}
 
 {% if image|get_img_src is not empty %}
-  {% set attributes = attributes.setAttribute('style', ['background-image:url(' ~ image|get_img_src ~ ')']) %}
+  {% set paragraph_id = 'paraID' ~ random() %}
+  {% set attributes = attributes.setAttribute('id', paragraph_id) %}
+  {% set attributes = attributes.addClass('lazy-background') %}
 {% endif %}
 
 {% set header_vars = {'superhead': superhead, 'subhead': subhead, 'context': context} %}
 
+<style>
+  #{{ paragraph_id}}.visible {background-image:url('{{~ image|get_img_src ~}}')};
+</style>
 <div{{ attributes }} >
   <div class="highlight-banner__header">
     {{ pattern('section_header', header_vars) }}
