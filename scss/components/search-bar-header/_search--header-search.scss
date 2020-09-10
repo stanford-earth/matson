@@ -53,8 +53,7 @@
   margin-bottom: 0;
   font-size: 0.75em;
   font-weight: 500;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial",
-    sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   letter-spacing: 0.11875em;
   line-height: 20px;
   color: #fff;
@@ -84,6 +83,7 @@
     // 2 form inner sections
     display: flex;
     align-items: center;
+    margin: 0;
   }
 
   #views-exposed-form-acquia-search-page > .form-item.form-item-search {
@@ -100,9 +100,7 @@
   }
 
   #views-exposed-form-acquia-search-page input[type="text"] {
-    background: transparent
-      url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px
-      center;
+    background: transparent url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px center;
     background-size: 14px 14px;
     box-sizing: border-box;
     border: 0;
@@ -145,14 +143,15 @@
     color: #6e6f72;
   }
 
-  // opened search form
+  // opened search form & hovering over search button
+
   #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"],
-  #views-exposed-form-acquia-search-page.expanded #edit-search,
-  #views-exposed-form-acquia-search-page:hover #edit-search,
-  #views-exposed-form-acquia-search-page:focus #edit-search {
-    background: #fff url("/themes/stanford/matson/img/source/search.svg")
-      no-repeat 15px 9px;
-    background-size: 14px;
+  #views-exposed-form-acquia-search-page.expanded input[data-drupal-selector="edit-search"],
+  #views-exposed-form-acquia-search-page:hover input[data-drupal-selector="edit-search"],
+  #views-exposed-form-acquia-search-page:focus input[data-drupal-selector="edit-search"] {
+    //because we aren't using the id anymore, and instead using data-drupal-selector values, these lines need !important to be able to override.
+    background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px !important;
+    background-size: 14px !important;
   }
 
   #views-exposed-form-acquia-search-page {
@@ -169,6 +168,7 @@
 
     //  For large screen sizes, adding clickable button area
     @media only screen and (min-width: 860px) {
+
       #edit-actions {
         // button container
         margin-top: 0;
@@ -190,8 +190,7 @@
         border: 0;
         z-index: auto;
         font-size: 0.75em;
-        font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial",
-          sans-serif;
+        font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
         letter-spacing: 0.11875em;
         color: #fff;
         text-transform: uppercase;
@@ -201,6 +200,7 @@
         background-color: transparent;
         // overrides default blue button color when we're not setting gray background for hover
       }
+
     }
 
     // end of media query

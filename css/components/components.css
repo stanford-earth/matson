@@ -3065,7 +3065,8 @@ html .getsocial {
 
 #header #views-exposed-form-acquia-search-page > * {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin: 0; }
 
 #header #views-exposed-form-acquia-search-page > .form-item.form-item-search {
   max-height: 35px; }
@@ -3114,11 +3115,11 @@ html .getsocial {
   color: #6e6f72; }
 
 #header #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"],
-#header #views-exposed-form-acquia-search-page.expanded #edit-search,
-#header #views-exposed-form-acquia-search-page:hover #edit-search,
-#header #views-exposed-form-acquia-search-page:focus #edit-search {
-  background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
-  background-size: 14px; }
+#header #views-exposed-form-acquia-search-page.expanded input[data-drupal-selector="edit-search"],
+#header #views-exposed-form-acquia-search-page:hover input[data-drupal-selector="edit-search"],
+#header #views-exposed-form-acquia-search-page:focus input[data-drupal-selector="edit-search"] {
+  background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px !important;
+  background-size: 14px !important; }
 
 #header #views-exposed-form-acquia-search-page input[type="submit"] {
   visibility: hidden;
@@ -4378,7 +4379,8 @@ ul.tabs {
 
 #header #views-exposed-form-acquia-search-page > * {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin: 0; }
 
 #header #views-exposed-form-acquia-search-page > .form-item.form-item-search {
   max-height: 35px; }
@@ -4427,11 +4429,11 @@ ul.tabs {
   color: #6e6f72; }
 
 #header #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"],
-#header #views-exposed-form-acquia-search-page.expanded #edit-search,
-#header #views-exposed-form-acquia-search-page:hover #edit-search,
-#header #views-exposed-form-acquia-search-page:focus #edit-search {
-  background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
-  background-size: 14px; }
+#header #views-exposed-form-acquia-search-page.expanded input[data-drupal-selector="edit-search"],
+#header #views-exposed-form-acquia-search-page:hover input[data-drupal-selector="edit-search"],
+#header #views-exposed-form-acquia-search-page:focus input[data-drupal-selector="edit-search"] {
+  background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px !important;
+  background-size: 14px !important; }
 
 #header #views-exposed-form-acquia-search-page input[type="submit"] {
   visibility: hidden;
