@@ -22,6 +22,7 @@
 @mixin image-banner($image-min-height: 280px) {
   background-size: cover;
   background-position: center center;
+  background-color: color(text);
   overflow: hidden;
   display: block;
   min-height: $image-min-height;

@@ -5,5 +5,11 @@
  */
 #}
 {% set attributes = attributes.addClass("photo-banner") %}
-{% set attributes = attributes.setAttribute('style', "background-image:url('" ~ image|render|striptags|trim ~ "')") %}
+{% set paragraph_id = 'paraID' ~ random() %}
+{% set attributes = attributes.setAttribute('id', paragraph_id) %}
+{% set attributes = attributes.addClass('lazy-background') %}
+
+<style>
+  #{{ paragraph_id}}.visible {background-image:url('{{~ image|get_img_src ~}}')};
+</style>
 <div{{ attributes }}></div>

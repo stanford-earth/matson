@@ -8,6 +8,7 @@
 .section-expandable-banner {
   @include responsive-container($default-container);
   background-size: cover;
+  background-color: color(text);
   padding-bottom: em(30px);
   padding-top: em(30px);
   position: relative;

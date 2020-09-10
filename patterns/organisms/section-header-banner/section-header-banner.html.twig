@@ -11,11 +11,15 @@
 {% endif %}
 
 {% if image|get_img_src is not empty %}
-  {% set attributes = attributes.setAttribute('style', ['background-image:url(' ~ image|get_img_src ~ ')']) %}
+  {% set paragraph_id = 'paraID' ~ random() %}
+  {% set attributes = attributes.setAttribute('id', paragraph_id) %}
+  {% set attributes = attributes.addClass('lazy-background') %}
 {% endif %}
 
 {% set header_vars = {'superhead': superhead, 'subhead': subhead, 'context': context, 'link': link} %}
-
+<style>
+  #{{ paragraph_id}}.visible {background-image:url('{{~ image|get_img_src ~}}')};
+</style>
 <div{{ attributes }} >
   {{ pattern('header_card', header_vars) }}
 </div>

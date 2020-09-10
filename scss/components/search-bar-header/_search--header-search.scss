@@ -51,6 +51,11 @@
   width: auto;
   margin-left: 38px;
   margin-bottom: 0;
+  font-size: 0.75em;
+  font-weight: 500;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  margin-bottom: 0;
 	font-size: 0.75em;
 	font-weight: 500;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -66,7 +71,6 @@
   display: none;
 }
 
-
 // only apply to search bar in the header
 #header {
   #views-exposed-form-acquia-search-page {
@@ -80,14 +84,14 @@
     margin-top: 15px;
   }
 
-  #views-exposed-form-acquia-search-page>* {
+  #views-exposed-form-acquia-search-page > * {
     // 2 form inner sections
     display: flex;
     align-items: center;
     margin: 0;
   }
 
-  #views-exposed-form-acquia-search-page>.form-item.form-item-search {
+  #views-exposed-form-acquia-search-page > .form-item.form-item-search {
     max-height: 35px;
   }
 
@@ -124,8 +128,8 @@
     }
   }
 
-  #views-exposed-form-acquia-search-page:hover>.form-item-search,
-  #views-exposed-form-acquia-search-page:focus>.form-item-search,
+  #views-exposed-form-acquia-search-page:hover > .form-item-search,
+  #views-exposed-form-acquia-search-page:focus > .form-item-search,
   #views-exposed-form-acquia-search-page:hover #views-exposed-form-acquia-search-page input[type="text"],
   #views-exposed-form-acquia-search-page:focus #views-exposed-form-acquia-search-page input[type="text"] {
     background: #fff;
@@ -153,7 +157,6 @@
     background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px!important;
     background-size: 14px!important;
   }
-
 
   #views-exposed-form-acquia-search-page {
     input[type="submit"] {

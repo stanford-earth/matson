@@ -5,8 +5,11 @@
 */
 #}
 
+<style media="screen">
+  #footer__container .contact-footer.visible {background-image:url('{{ base_path ~ directory }}/img/optimized/footer-bg.jpg');}
+</style>
 <footer id="footer__container">
-  <section class="contact-footer" style="background-image:url('{{ base_path ~ directory }}/img/optimized/footer-bg.jpg')";>
+  <section class="contact-footer lazy-background">
     <div class="contact-footer__brand">
       {{ drupal_entity('block', 'matson_branding')|render|preg_replace("/(block-matson-branding)/", "footer__block-matson-branding")|raw }}
     </div>
@@ -33,7 +36,7 @@
     <div class="contact-footer__subscribe">
       <h2>{{ 'Subscribe to Stanford Earth Matters'|trans }}</h2>
       <p>{{ 'Our Monthly Research News Alert'|trans }}</p>
-      <a class="button__hollow" href="https://stanford.us7.list-manage.com/subscribe/post?u=167e9da7acec83c4cc802b3e7&id=69d6fa9e3a">Subscribe</a>
+      <a class="button__hollow" href="/earth-matters/subscribe">Subscribe</a>
     </div>
 
 
