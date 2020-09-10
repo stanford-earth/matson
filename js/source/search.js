@@ -1,7 +1,6 @@
 (function($) {
   if ($('#header #views-exposed-form-acquia-search-page input[data-drupal-selector="edit-search"]')) {
     $('#header #views-exposed-form-acquia-search-page input[data-drupal-selector="edit-search"]').focus(function(){
-      console.log('search input in focus');
       if (document.getElementById('edit-search') !== null) {
         document.getElementById('edit-search').value = '';
       } else if (document.getElementById('edit-search--2' !== null)) {
@@ -16,7 +15,6 @@
     });
   }
   $('#header #views-exposed-form-acquia-search-page #edit-submit-acquia-search').click(function(){
-    console.log('header submit button was clicked');
     $('#header #views-exposed-form-acquia-search-page').submit();
   });
   if ($('body').hasClass('page-search')) {
