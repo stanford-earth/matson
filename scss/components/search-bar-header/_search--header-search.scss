@@ -53,11 +53,6 @@
   margin-bottom: 0;
   font-size: 0.75em;
   font-weight: 500;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial",
-    sans-serif;
-  margin-bottom: 0;
-	font-size: 0.75em;
-	font-weight: 500;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   letter-spacing: 0.11875em;
   line-height: 20px;
@@ -154,8 +149,8 @@
   #views-exposed-form-acquia-search-page.expanded input[data-drupal-selector="edit-search"],
   #views-exposed-form-acquia-search-page:hover input[data-drupal-selector="edit-search"],
   #views-exposed-form-acquia-search-page:focus input[data-drupal-selector="edit-search"] {
-    background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px!important;
-    background-size: 14px!important;
+    background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px !important;
+    background-size: 14px;
   }
 
   #views-exposed-form-acquia-search-page {
