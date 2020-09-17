@@ -3126,18 +3126,22 @@ html .getsocial {
   background: #6e6f72;
   display: block; }
 
-#header #views-exposed-form-acquia-search-page.expanded input[type="submit"]#edit-submit-acquia-search {
+#header #views-exposed-form-acquia-search-page.expanded input[type="submit"]#edit-submit-acquia-search,
+#header #views-exposed-form-acquia-search-page.expanded input[type="submit"]#edit-submit-acquia-search--2 {
   visibility: visible;
   background: #6e6f72; }
 
 @media only screen and (min-width: 860px) {
-  #header #views-exposed-form-acquia-search-page #edit-actions {
+  #header #views-exposed-form-acquia-search-page #edit-actions,
+  #header #views-exposed-form-acquia-search-page #edit-actions--2 {
     margin-top: 0;
     position: relative;
     max-height: 35px; }
-  #header #views-exposed-form-acquia-search-page.expanded #edit-actions {
+  #header #views-exposed-form-acquia-search-page.expanded #edit-actions,
+  #header #views-exposed-form-acquia-search-page.expanded #edit-actions--2 {
     margin: 0; }
-  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search {
+  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search,
+  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search--2 {
     display: block;
     height: 33px;
     position: relative;
@@ -3150,7 +3154,8 @@ html .getsocial {
     letter-spacing: 0.11875em;
     color: #fff;
     text-transform: uppercase; }
-  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search {
+  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search,
+  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search--2 {
     background-color: transparent; } }
 
 #header #views-exposed-form-acquia-search-page input::-webkit-search-cancel-button,
@@ -3175,7 +3180,8 @@ html .getsocial {
 #header #views-exposed-form-acquia-search-page input::-webkit-input-placeholder {
   color: #fff; }
 
-input#edit-search::placeholder {
+input#edit-search::placeholder,
+input#edit-search--2::placeholder {
   color: #666; }
 
 .main-container .search-results--search-form h2.block__title {
@@ -4440,18 +4446,22 @@ ul.tabs {
   background: #6e6f72;
   display: block; }
 
-#header #views-exposed-form-acquia-search-page.expanded input[type="submit"]#edit-submit-acquia-search {
+#header #views-exposed-form-acquia-search-page.expanded input[type="submit"]#edit-submit-acquia-search,
+#header #views-exposed-form-acquia-search-page.expanded input[type="submit"]#edit-submit-acquia-search--2 {
   visibility: visible;
   background: #6e6f72; }
 
 @media only screen and (min-width: 860px) {
-  #header #views-exposed-form-acquia-search-page #edit-actions {
+  #header #views-exposed-form-acquia-search-page #edit-actions,
+  #header #views-exposed-form-acquia-search-page #edit-actions--2 {
     margin-top: 0;
     position: relative;
     max-height: 35px; }
-  #header #views-exposed-form-acquia-search-page.expanded #edit-actions {
+  #header #views-exposed-form-acquia-search-page.expanded #edit-actions,
+  #header #views-exposed-form-acquia-search-page.expanded #edit-actions--2 {
     margin: 0; }
-  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search {
+  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search,
+  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search--2 {
     display: block;
     height: 33px;
     position: relative;
@@ -4464,7 +4474,8 @@ ul.tabs {
     letter-spacing: 0.11875em;
     color: #fff;
     text-transform: uppercase; }
-  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search {
+  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search,
+  #header #views-exposed-form-acquia-search-page input[type="submit"]#edit-submit-acquia-search--2 {
     background-color: transparent; } }
 
 #header #views-exposed-form-acquia-search-page input::-webkit-search-cancel-button,
@@ -4489,7 +4500,8 @@ ul.tabs {
 #header #views-exposed-form-acquia-search-page input::-webkit-input-placeholder {
   color: #fff; }
 
-input#edit-search::placeholder {
+input#edit-search::placeholder,
+input#edit-search--2::placeholder {
   color: #666; }
 
 /*# sourceMappingURL=components.css.map */
