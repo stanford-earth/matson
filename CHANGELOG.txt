@@ -1,3 +1,8 @@
+Version 8.x-1.1-alpha29                                                2020-09-16
+--------------------------------------------------------------------------------
+- EARTH-1450 Search updates.
+- EARTH-1462 Background image loading.
+
 Version 8.x-1.1-alpha28                                               2020-08-12
 --------------------------------------------------------------------------------
 - EARTH-1459 Update Earth Matters subscription link.
