@@ -1,4 +1,4 @@
-// navigation adjustment for adding search inside the navigation divs
+// navigation adjustment for adding search inside the navigation divs hopefully
 
 @media only screen and (min-width: 860px) {
   .navbar__group {
@@ -161,7 +161,8 @@
       display: block;
     }
 
-    &.expanded input[type="submit"]#edit-submit-acquia-search {
+    &.expanded input[type="submit"]#edit-submit-acquia-search,
+    &.expanded input[type="submit"]#edit-submit-acquia-search--2 {
       visibility: visible;
       background: #6e6f72;
     }
@@ -169,19 +170,22 @@
     //  For large screen sizes, adding clickable button area
     @media only screen and (min-width: 860px) {
 
-      #edit-actions {
+      #edit-actions,
+      #edit-actions--2 {
         // button container
         margin-top: 0;
         position: relative;
         max-height: 35px;
       }
 
-      &.expanded #edit-actions {
+      &.expanded #edit-actions,
+      &.expanded #edit-actions--2 {
         margin: 0;
       }
 
       //  -- removed expanded
-      input[type="submit"]#edit-submit-acquia-search {
+      input[type="submit"]#edit-submit-acquia-search,
+      input[type="submit"]#edit-submit-acquia-search--2 {
         display: block;
         height: 33px;
         position: relative;
@@ -196,7 +200,8 @@
         text-transform: uppercase;
       }
 
-      input[type="submit"]#edit-submit-acquia-search {
+      input[type="submit"]#edit-submit-acquia-search,
+      input[type="submit"]#edit-submit-acquia-search--2 {
         background-color: transparent;
         // overrides default blue button color when we're not setting gray background for hover
       }
@@ -238,6 +243,7 @@
 
 // placeholder  - apply to header and main-container for search page results form
 
-input#edit-search::placeholder {
+input#edit-search::placeholder,
+input#edit-search--2::placeholder {
   color: #666;
 }
