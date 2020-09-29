@@ -18,27 +18,39 @@
 
 
         {% if email|render|striptags|trim is not empty %}
+      <div class="person-metadata">
         <h2>{{ "Email"|t }}</h2>
-
+        <ul>
           {{ email }}
+        </ul>
+        </div>
 
         {% endif %}
         {% if phone|render|striptags|trim is not empty %}
+        <div class="person-metadata">
         <h2>{{ "Phone"|t }}</h2>
-
+        <ul>
           {{ phone }}
+        </ul>
+          </div>
 
         {% endif %}
         {% if office|render|striptags|trim is not empty %}
+        <div class="person-metadata">
         <h2>{{ "Office"|t }}</h2>
-
+        <ul>
           {{ office }}
+        </ul>
+          </div>
 
         {% endif %}
         {% if links|render|striptags|trim is not empty %}
+        <div class="person-metadata">
         <h2>{{ "Links"|t }}</h2>
-
-          <ul>{{ links }}</ul>
+        <ul>
+          {{ links }}
+        </ul>
+          </div>
 
         {% endif %}
 
