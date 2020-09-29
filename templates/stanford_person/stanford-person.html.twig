@@ -11,37 +11,50 @@
       {% if sub_title|render|striptags|trim is not empty %}
       <div class="page-subtitle">
         <ul>
-          {{ sub_title }}  
+          {{ sub_title }}
         </ul>
       </div>
       {% endif %}
 
-      <dl class="definition-list">
+
         {% if email|render|striptags|trim is not empty %}
-        <dt>{{ "Email"|t }}:</dt>
-        <dd>
+      <div class="person-metadata">
+        <h2>{{ "Email"|t }}</h2>
+        <ul>
           {{ email }}
-        </dd>
+        </ul>
+        </div>
+
         {% endif %}
         {% if phone|render|striptags|trim is not empty %}
-        <dt>{{ "Phone"|t }}:</dt>
-        <dd>
+        <div class="person-metadata">
+        <h2>{{ "Phone"|t }}</h2>
+        <ul>
           {{ phone }}
-        </dd>
+        </ul>
+          </div>
+
         {% endif %}
         {% if office|render|striptags|trim is not empty %}
-        <dt>{{ "Office"|t }}:</dt>
-        <dd>
+        <div class="person-metadata">
+        <h2>{{ "Office"|t }}</h2>
+        <ul>
           {{ office }}
-        </dd>
+        </ul>
+          </div>
+
         {% endif %}
         {% if links|render|striptags|trim is not empty %}
-        <dt>{{ "Links"|t }}:</dt>
-        <dd>
+        <div class="person-metadata">
+        <h2>{{ "Links"|t }}</h2>
+        <ul>
           {{ links }}
-        </dd>
+        </ul>
+          </div>
+
         {% endif %}
-      </dl>
+
+
 
       {% if profile_link|render|striptags|trim is not empty %}
         {{ profile_link }}

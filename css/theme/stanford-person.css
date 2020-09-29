@@ -299,6 +299,19 @@
     .section-people .content-type-person .definition-list a {
       display: block; }
 
+.section-people .person-metadata {
+  display: flex;
+  flex-wrap: wrap; }
+  .section-people .person-metadata h2 {
+    text-transform: uppercase;
+    color: #8c1414;
+    font-size: 22px; }
+  .section-people .person-metadata li {
+    list-style: none; }
+  .section-people .person-metadata h2:after {
+    content: ":";
+    margin: 0 .25em; }
+
 .section-people .user-info-block {
   background-color: #F9F6EF;
   padding: 40px; }

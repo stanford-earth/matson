@@ -165,6 +165,23 @@
     }
   }
 
+  .person-metadata {
+    display: flex;
+    flex-wrap: wrap;
+    h2 {
+      text-transform: uppercase;
+      color: color(dark-red);
+      font-size: 22px;
+    }
+    li {
+      list-style: none;
+    }
+    h2:after {
+      content: ":";
+      margin: 0 .25em;
+    }
+  }
+
   //Additional for views below people profile
 
   .user-info-block {
