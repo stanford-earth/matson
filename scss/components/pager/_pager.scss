@@ -38,6 +38,12 @@
       color: color(white);
       text-decoration: none;
     }
+
+//infinite scroll button for views to match load more on EM
+    &.button {
+      color: color(white);
+      padding: 20px;
+    }
   }
 
   &.is-active,
