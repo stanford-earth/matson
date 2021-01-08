@@ -201,10 +201,7 @@
 }
 
 .masonry-block__link {
-  color: #FFF;
-  @include grid-media($media-sm) {
-    color: color(text-active);
-  }
+  color: color(text-active);
   @include on-event {
     color: inherit;
     text-decoration: none;
