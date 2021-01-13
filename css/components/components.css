@@ -2627,6 +2627,9 @@ html .getsocial {
       background-color: #4d4f53;
       color: #fff;
       text-decoration: none; }
+    .pager__item a.button {
+      color: #fff;
+      padding: 20px; }
   .pager__item.is-active a, .pager__item.pager__item--active a {
     background-color: #8c1515;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
