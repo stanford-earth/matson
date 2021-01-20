@@ -1,3 +1,9 @@
+Version 8.x-1.1-alpha32                                                2021-01-19 
+--------------------------------------------------------------------------------
+- EARTH-1499 adding button padding and color to button in view
+- EARTH-1501 missing gray em titles
+- EARTH-1507 switching skip link from navigation to main content
+
 Version 8.x-1.1-alpha31                                                2020-11-18 
 --------------------------------------------------------------------------------
 - EARTH-1410 Sidebar image updates, etc.
