@@ -1,8 +1,10 @@
 {% set main_menu = page.primary_menu|render %}
 {% set secondary_menu = page.secondary_menu|render %}
 
+
   <!-- ______________________ HEADER _______________________ -->
 
+<div{{ attributes }}>
   {% if page.highlighted|render is not empty %}
     <div id="highlighted">{{ page.highlighted }}</div>
   {% endif %}
@@ -53,3 +55,4 @@
       {{ page.footer }}
     </footer><!-- /#footer -->
   {% endif %}
+</div>
