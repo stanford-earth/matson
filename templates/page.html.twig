@@ -3,6 +3,7 @@
 
   <!-- ______________________ HEADER _______________________ -->
 
+<div{{ attributes }}>
   {% if page.highlighted|render is not empty %}
     <div id="highlighted">{{ page.highlighted }}</div>
   {% endif %}
@@ -53,3 +54,4 @@
       {{ page.footer }}
     </footer><!-- /#footer -->
   {% endif %}
+</div>

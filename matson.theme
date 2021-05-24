@@ -77,10 +77,18 @@ function matson_preprocess_field_field_s_news_date(&$variables, $hook) {
 }
 
 /**
- * Prepares non node/panel pages to be in a single column.
+ * Add 'earth-matters' class to all Earth Matters news items.
  */
 function matson_preprocess_page(&$vars) {
-  // Nothing to see here.
+  if(
+    isset($vars['node']) && 
+    $vars['node'] instanceof \Drupal\node\NodeInterface && 
+    $vars['node']->bundle() == 'stanford_news' &&
+    $vars['node']->get('field_s_news_category')->getString() == '81'
+    // TID 81 == Earth Matters.
+  ){
+    $vars['attributes']['class'][] = 'earth-matters';
+  }
 }
 
 /**
