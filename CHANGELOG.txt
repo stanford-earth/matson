@@ -1,3 +1,8 @@
+Version 8.x-1.1-alpha33                                                2021-05-26
+--------------------------------------------------------------------------------
+- Add class to Earth Matters News pages (#227).
+- Various security updates via dependabot.
+
 Version 8.x-1.1-alpha32                                                2021-01-19 
 --------------------------------------------------------------------------------
 - EARTH-1499 adding button padding and color to button in view
