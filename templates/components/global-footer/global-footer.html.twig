@@ -7,8 +7,60 @@
 
 <style media="screen">
   #footer__container .contact-footer.visible {background-image:url('{{ base_path ~ directory }}/img/optimized/footer-bg.jpg');}
+  #footer__container .earth-matters-footer.visible {background-image:url('{{ base_path ~ directory }}/img/optimized/earth-matters-footer-bg.jpg');}
 </style>
 <footer id="footer__container">
+
+
+  <section class="earth-matters-footer contact-footer lazy-background">
+    <div>
+      <h1>Stanford Earth Matters magazine</h1>
+      <hr>
+    </div>
+    <div class="earth-matters-footer__links-container">
+      <div class="contact-footer__links">
+        <ul>
+          <li><a href="https://earth.stanford.edu/">School of Earth, Energy & Environmental Sciences</a></li>
+          <li><a href="https://energy.stanford.edu/">Precourt Institute for Energy</a></li>
+          <li><a href="https://woods.stanford.edu/">Stanford Woods Institute for the Environment</a></li>
+        </ul>
+      </div>
+      <div class="contact-footer__links">
+        <h2>{{ 'Join the conversation'|trans }}</h2>
+        {{ drupal_menu('earth-matters-footer') }}
+      </div>
+      <div class="earth-matters-footer__subscribe-container">
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <h2>{{ 'Subscribe to Stanford Earth Matters Magazine'|trans }}</h2>
+          <form action="https://stanford.us7.list-manage.com/subscribe/post?u=167e9da7acec83c4cc802b3e7&amp;id=69d6fa9e3a" class="validate" id="mc-embedded-subscribe-form" method="post" name="mc-embedded-subscribe-form" novalidate="">
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group" size="25">
+                {# <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label> #}
+                <input class="required email" id="mce-EMAIL" name="EMAIL" placeholder="name@stanford.edu" type="email" value="" />
+                <input class="button" id="mc-embedded-subscribe" name="subscribe" type="submit" value="Subscribe" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="clear" id="mce-responses">
+          <div class="response" id="mce-error-response" style="display:none">&nbsp;</div>
+          <div class="response" id="mce-success-response" style="display:none">&nbsp;</div>
+        </div>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+          <input name="b_167e9da7acec83c4cc802b3e7_69d6fa9e3a" tabindex="-1" type="text" value="" />
+        </div>
+        <div class="clear">&nbsp;</div>
+        <!--End mc_embed_signup-->
+      </div>
+    </div>
+    <div>
+      <p>555 Street Name, Room 555 &nbsp; | &nbsp; Stanford, CA 94305 &nbsp; | &nbsp; 650-555-5555</p>
+    </div>
+  </section>
+
+
   <section class="contact-footer lazy-background">
     <div class="contact-footer__brand">
       {{ drupal_entity('block', 'matson_branding')|render|preg_replace("/(block-matson-branding)/", "footer__block-matson-branding")|raw }}
