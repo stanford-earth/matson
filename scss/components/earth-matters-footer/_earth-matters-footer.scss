@@ -1,0 +1,76 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.earth-matters-footer {
+    color: #ffffff;
+    // background-image: linear-gradient(rgba(47,36,36,0.8), rgba(47,36,36,0.8)), url(../img/earth-matters-footer-bg.png);
+    background-size: cover;
+    background-position: center;
+  
+    grid-column: full-start / full-end;
+    padding: 90px calc(50% - (625px - 30px));
+  
+    .earth-matters-footer__menu-item:link, .earth-matters-footer__menu-item:visited {
+      /* font-size: 1.4rem; */
+      font-size: 2rem;
+      color: #fff;
+      text-decoration: none;
+      /* font-family: "Josefin Sans", sans-serif; */
+      font-family: 'Source Sans Pro', sans-serif;
+      text-transform: uppercase;
+      /* text-align: center; */
+      padding: 1rem;
+      /* padding-top: 1rem; */
+      display: block;
+      transition: all .2s;
+      line-height: 2.4rem;
+    }
+  
+    &__logo {
+      display: inline-block;
+      font-family: 'Source Serif Pro', serif;
+      font-weight: 600;
+      font-size: 4.6rem;
+      color: #F9F6EF;
+      line-height: 5.5rem;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+    }
+    
+    &__logo-2 {
+      font-weight: 400;
+      font-size: 4rem;
+      margin-left: 1rem;
+    }
+  
+    &__links-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 6rem;
+        align-items: start;
+        margin-top: 4rem;
+    }
+  
+    &__address {
+      text-align: center;
+      color: #F9F6EF;
+      margin-top: 6rem;
+      font-size: 2rem;
+    }
+  
+    &__links {
+      list-style: none;
+    }
+  
+    &__subscribe-container {
+      display: flex;
+    }
+  }

@@ -1028,6 +1028,85 @@
     margin: 0.13em 0.2em 0 0;
     line-height: 0.7; }
 
+.block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+.block--lockup__site-name-and-slogan, .block--lockup__site-slogan {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after, .field-p-wysiwyg h2::after {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  content: '';
+  display: block;
+  z-index: 2; }
+
+.earth-matters-footer {
+  color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  grid-column: full-start / full-end;
+  padding: 90px calc(50% - (625px - 30px)); }
+  .earth-matters-footer .earth-matters-footer__menu-item:link, .earth-matters-footer .earth-matters-footer__menu-item:visited {
+    /* font-size: 1.4rem; */
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    /* font-family: "Josefin Sans", sans-serif; */
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    /* text-align: center; */
+    padding: 1rem;
+    /* padding-top: 1rem; */
+    display: block;
+    transition: all .2s;
+    line-height: 2.4rem; }
+  .earth-matters-footer__logo {
+    display: inline-block;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    font-size: 4.6rem;
+    color: #F9F6EF;
+    line-height: 5.5rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem; }
+  .earth-matters-footer__logo-2 {
+    font-weight: 400;
+    font-size: 4rem;
+    margin-left: 1rem; }
+  .earth-matters-footer__links-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 6rem;
+    align-items: start;
+    margin-top: 4rem; }
+  .earth-matters-footer__address {
+    text-align: center;
+    color: #F9F6EF;
+    margin-top: 6rem;
+    font-size: 2rem; }
+  .earth-matters-footer__links {
+    list-style: none; }
+  .earth-matters-footer__subscribe-container {
+    display: flex; }
+
 .editorial-sidebar .simple-block {
   background-color: #F9F6EF;
   padding: 30px; }
