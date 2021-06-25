@@ -1059,7 +1059,6 @@
   z-index: 2; }
 
 .earth-matters-footer {
-  color: #fff;
   background-size: cover;
   background-position: center;
   padding: 90px calc(50% - (625px - 30px)); }
@@ -1124,6 +1123,7 @@
     margin-top: 6rem;
     font-size: 2rem; }
   .earth-matters-footer__list-heading {
+    color: #fff;
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
