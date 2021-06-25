@@ -42,6 +42,12 @@
       fill: color(fog);
     }
   }
+  
+  &.is-yellow {
+    use {
+      fill: color(yellow-light);
+    }
+  }
 }
 
 .i-svg--twitter,
