@@ -2938,6 +2938,9 @@ a {
 .color-sandstone-light {
   color: #F9F6EF; }
 
+.color-yellow-light {
+  color: #FEC51D; }
+
 [type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea,
 select {
   appearance: none;
@@ -3095,6 +3098,8 @@ figure.align-center {
     fill: #FEFEFE; }
   .i-svg.is-fog use {
     fill: #dad7cb; }
+  .i-svg.is-yellow use {
+    fill: #FEC51D; }
 
 .i-svg--twitter,
 .i-svg--fb,
