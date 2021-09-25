@@ -26,10 +26,6 @@ libraries-override:
       theme:
         css/theme/theme.css: false
         css/theme/print.css: false
-component-libraries:
-  stanford_components:
-    paths:
-      - patterns
 ckeditor_stylesheets:
   - css/base/base.css
   - css/layout/layout.css
