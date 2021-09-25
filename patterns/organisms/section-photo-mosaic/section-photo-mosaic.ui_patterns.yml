@@ -26,12 +26,12 @@ section_photo_mosaic:
         no-emphasis: No Branding
         has-dash-emphasis: Brand color
   fields:
-    subhead:
+    subhead2:
       description: "Subhead for the content card."
       label: Subhead
       preview: "<p>We are scientists! Undergraduates, graduate students, professors, educational staff, and alumni working professionals. We build community in our field trips.</p>"
       type: text
-    superhead:
+    superhead2:
       description: "Title for the photo tile."
       label: Superhead
       preview: "Undergraduate Spotlights"
@@ -51,7 +51,6 @@ section_photo_mosaic:
           link: "https://www.stanford.edu"
           title: "Students"
           is_right: true
-          classes: photo-mosaic--thumbs-down
           items:
             -
               image:
@@ -87,7 +86,6 @@ section_photo_mosaic:
           link: "https://www.stanford.edu"
           title: "Students Advisors"
           is_right: false
-          classes: photo-mosaic--thumbs-up
           items:
             -
               image:
