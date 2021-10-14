@@ -1095,10 +1095,6 @@
     @media only screen and (max-width: 768px) {
       .earth-matters-footer__logo {
         margin: 0; } }
-  .earth-matters-footer__logo-2 {
-    font-weight: 400;
-    font-size: 4rem;
-    margin-left: 1rem; }
   .earth-matters-footer__links-container {
     padding: 0 7rem 0 7rem;
     display: grid;

@@ -741,11 +741,8 @@
     width: calc(25% - 37.5px);
     float: left;
     margin-left: 30px; }
-    .section-tall-filmstrip .filmstrip.is-tall .film-card:nth-child(2), .section-tall-filmstrip .filmstrip.is-tall .film-card:nth-child(4), .section-tall-filmstrip .filmstrip.is-tall .film-card:nth-child(5n) {
-      margin-top: -2em; }
-    .section-tall-filmstrip .filmstrip.is-tall .film-card:nth-child(5n) {
-      margin-left: calc(25% - 37.5px + 60px);
-      clear: left; } }
+    .section-tall-filmstrip .filmstrip.is-tall .film-card:nth-child(2), .section-tall-filmstrip .filmstrip.is-tall .film-card:nth-child(4) {
+      margin-top: -2em; } }
 
 .section-tall-filmstrip .filmstrip__header .component-centered-container {
   padding-right: 0;
