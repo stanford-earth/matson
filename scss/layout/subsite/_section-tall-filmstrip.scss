@@ -20,14 +20,8 @@
           @include grid-column(3, $callout-filmstrip-flexible);
 
           &:nth-child(2),
-          &:nth-child(4),
-          &:nth-child(5n) {
+          &:nth-child(4) {
             margin-top: -2em;
-          }
-
-          &:nth-child(5n) {
-            @include grid-push(3, $callout-filmstrip-flexible);
-            clear: left;
           }
         }
       }
