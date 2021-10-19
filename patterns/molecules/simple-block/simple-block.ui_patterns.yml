@@ -9,8 +9,8 @@ simple_block:
       description: "Render arrow on card."
       default: true
       options:
-        true: "Has arrow"
-        0: "Does not have arrow"
+        "true": "Has arrow"
+        "0": "Does not have arrow"
   fields:
     description:
       description: "Block description."
