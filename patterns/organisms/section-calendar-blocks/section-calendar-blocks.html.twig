@@ -4,6 +4,9 @@
  * Callout blocks pattern.
  */
 #}
+{%  if variants is empty %}
+  {% set variants = [] %}
+{%  endif %}
 {% set attributes = attributes.addClass("section-calendar-blocks") %}
 {% set variants = variants|merge({dash_under:'has-dash-left',is_featured:'has-dash-emphasis'}) %}
 <div{{ attributes }}>

@@ -12,19 +12,19 @@ section_callout_filmstrip:
         has-dash-left: Left
         has-dash-under: Under
     is_centered:
-      label: Centered
+      label: "Centered"
       description: "Flag to determine whether h2 should be centered.  Treat as boolean (true/false)."
       default: left-aligned
       options:
-        left-aligned: Left Aligned
-        is-centered: Centered
+        left-aligned: "Left Aligned"
+        is-centered: "Centered"
     is_featured:
       label: "Dash With Emphasis"
       description: "Dash has emphasis or default brand color?  Treat as boolean (true/false)"
       default: no-emphasis
       options:
-        no-emphasis: No Branding
-        has-dash-emphasis: Brand color
+        no-emphasis: "No Branding"
+        has-dash-emphasis: "Brand color"
     card_widths:
       description: "Make cards have flexible rather than fixed widths."
       label: Flexible widths

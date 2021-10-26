@@ -3,8 +3,8 @@ type: theme
 base theme: stanford_basic
 description: 'Matson Theme.'
 package: Core
-version: 8.x-1.1-dev
-core: 8.x
+version: 8.x-2.0-dev
+core_version_requirement: ^8.9 || ^9
 dependencies:
   - components
   - ui_patterns
