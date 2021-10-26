@@ -17,13 +17,13 @@ libraries-override:
   stanford_basic/basic:
     css:
       base:
-        css/base/base.css: false
+        dist/css/base.css: false
       layout:
-        css/layout/layout.css: false
+        dist/css/layout.css: false
       component:
-        css/components/components.css: false
+        dist/css/components.css: false
       state:
-        css/states/states.css: false
+        dist/css/state.css: false
       theme:
         css/theme/theme.css: false
         css/theme/print.css: false
