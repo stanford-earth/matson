@@ -38,4 +38,4 @@ callout_block:
         css:
           component:
             css/callout-block.component.css: {}
-  use: "@stanford_components/molecules/callout-block/callout-block.html.twig"
+  use: "themes/custom/matson/patterns/molecules/callout-block/callout-block.html.twig"

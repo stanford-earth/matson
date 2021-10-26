@@ -71,4 +71,4 @@ section_social_media:
           - ui_patterns/section_header.section_header_library
           - ui_patterns/photo_social.photo_social_library
           - ui_patterns/social_card.social_card_library
-  use: "@stanford_components/organisms/section-social-media/section-social-media.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-social-media/section-social-media.html.twig"

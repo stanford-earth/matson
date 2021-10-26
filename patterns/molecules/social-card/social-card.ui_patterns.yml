@@ -29,4 +29,4 @@ social_card:
         css:
           component:
             css/social-card.component.css: {}
-  use: "@stanford_components/molecules/social-card/social-card.html.twig"
+  use: "theme/custom/matson/patterns/molecules/social-card/social-card.html.twig"

@@ -99,4 +99,4 @@ section_feature_blocks:
           - ui_patterns/section_header.section_header_library
           - ui_patterns/simple_block.simple_block_library
           - ui_patterns/feature_blocks.feature_blocks_library
-  use: "@stanford_components/organisms/section-feature-blocks/section-feature-blocks.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-feature-blocks/section-feature-blocks.html.twig"

@@ -74,4 +74,4 @@ section_highlight_banner:
         dependencies:
           - ui_patterns/section_header.section_header_library
           - ui_patterns/highlight_cards.highlight_cards_library
-  use: "@stanford_components/organisms/section-highlight-banner/section-highlight-banner.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-highlight-banner/section-highlight-banner.html.twig"

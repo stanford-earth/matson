@@ -113,4 +113,4 @@ section_callout_filmstrip:
         dependencies:
           - ui_patterns/section_header.section_header_library
           - ui_patterns/filmstrip.filmstrip_library
-  use: "@stanford_components/organisms/section-callout-filmstrip/section-callout-filmstrip.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-callout-filmstrip/section-callout-filmstrip.html.twig"

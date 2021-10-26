@@ -47,4 +47,4 @@ calendar_blocks:
             css/calendar-blocks.component.css: {}
         dependencies:
           - ui_patterns/callout_block.calendar_block_library
-  use: "@stanford_components/molecules/calendar-blocks/calendar-blocks.html.twig"
+  use: "themes/custom/matson/patterns/molecules/calendar-blocks/calendar-blocks.html.twig"

@@ -86,4 +86,4 @@ section_callout_cards:
           - ui_patterns/section_header.section_header_library
           - ui_patterns/callout_card.callout_card_library
           - ui_patterns/callout_cards.callout_cards_library
-  use: "@stanford_components/organisms/section-callout-cards/section-callout-cards.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-callout-cards/section-callout-cards.html.twig"

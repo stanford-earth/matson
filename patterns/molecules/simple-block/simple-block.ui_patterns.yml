@@ -55,4 +55,4 @@ simple_block:
         css:
           component:
             css/simple-block.component.css: {}
-  use: "@stanford_components/molecules/simple-block/simple-block.html.twig"
+  use: "themes/custom/matson/patterns/molecules/simple-block/simple-block.html.twig"

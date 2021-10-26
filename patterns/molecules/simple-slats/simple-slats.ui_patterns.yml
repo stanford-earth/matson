@@ -40,4 +40,4 @@ simple_slats:
             css/simple-slats.component.css: {}
         dependencies:
           - ui_patterns/simple_slat.simple_slat_library
-  use: "@stanford_components/molecules/simple-slats/simple-slats.html.twig"
+  use: "themes/custom/matson/patterns/molecules/simple-slats/simple-slats.html.twig"

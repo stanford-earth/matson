@@ -37,4 +37,4 @@ photo_tile:
         css:
           component:
             css/photo-tile.component.css: {}
-  use: "@stanford_components/molecules/photo-tile/photo-tile.html.twig"
+  use: "themes/custom/matson/patterns/molecules/photo-tile/photo-tile.html.twig"

@@ -13,4 +13,4 @@ simple:
         css:
           component:
             css/simple.component.css: {}
-  use: "@stanford_components/templates/simple/simple.html.twig"
+  use: "themes/custom/matson/patterns/templates/simple/simple.html.twig"

@@ -83,4 +83,4 @@ photo_tiles:
         dependencies:
           - ui_patterns/photo_thumb.photo_thumb_library
           - ui_patterns/photo_tile.photo_tile_library
-  use: "@stanford_components/molecules/photo-tiles/photo-tiles.html.twig"
+  use: "themes/custom/matson/patterns/molecules/photo-tiles/photo-tiles.html.twig"

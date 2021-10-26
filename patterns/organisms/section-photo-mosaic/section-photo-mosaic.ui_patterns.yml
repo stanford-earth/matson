@@ -51,7 +51,6 @@ section_photo_mosaic:
           link: "https://www.stanford.edu"
           title: "Students"
           is_right: true
-          classes: photo-mosaic--thumbs-down
           items:
             -
               image:
@@ -87,7 +86,6 @@ section_photo_mosaic:
           link: "https://www.stanford.edu"
           title: "Students Advisors"
           is_right: false
-          classes: photo-mosaic--thumbs-up
           items:
             -
               image:
@@ -113,12 +111,12 @@ section_photo_mosaic:
                 theme: image
                 uri: "https://lorempixel.com/380/380/nature/10"
               link: "https://www.stanford.edu"
-    subhead:
+    subhead2:
       description: "Subhead for the content card."
       label: Subhead
       preview: "<p>We are scientists! Undergraduates, graduate students, professors, educational staff, and alumni working professionals. We build community in our field trips.</p>"
       type: text
-    superhead:
+    superhead2:
       description: "Title for the photo tile."
       label: Superhead
       preview: "Undergraduate Spotlights"
@@ -134,4 +132,4 @@ section_photo_mosaic:
           - ui_patterns/photo_thumb.photo_thumb_library
           - ui_patterns/photo_tile.photo_tile_library
           - ui_patterns/photo_tiles.photo_tiles_library
-  use: "@stanford_components/organisms/section-photo-mosaic/section-photo-mosaic.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-photo-mosaic/section-photo-mosaic.html.twig"

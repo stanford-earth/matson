@@ -152,4 +152,4 @@ section_tall_filmstrip:
           - ui_patterns/section_header.section_header_library
           - ui_patterns/filmstrip.filmstrip_library
           - ui_patterns/section_callout_filmstrip.section_callout_filmstrip_library
-  use: "@stanford_components/organisms/section-tall-filmstrip/section-tall-filmstrip.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-tall-filmstrip/section-tall-filmstrip.html.twig"

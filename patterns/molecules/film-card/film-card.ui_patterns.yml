@@ -46,4 +46,4 @@ film_card:
         css:
           component:
             css/film-card.component.css: {}
-  use: "@stanford_components/molecules/film-card/film-card.html.twig"
+  use: "themes/custom/matson/patterns/molecules/film-card/film-card.html.twig"

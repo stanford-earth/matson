@@ -94,4 +94,4 @@ filmstrip:
             css/filmstrip.component.css: {}
         dependencies:
           - ui_patterns/film_card.film_card_library
-  use: "@stanford_components/molecules/filmstrip/filmstrip.html.twig"
+  use: "themes/custom/matson/patterns/molecules/filmstrip/filmstrip.html.twig"

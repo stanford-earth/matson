@@ -68,4 +68,4 @@ masonry_block:
             css/masonry-block.component.css: {}
         dependencies:
           - ui_patterns/tag_item.tag_item_library
-  use: "@stanford_components/molecules/masonry-block/masonry-block.html.twig"
+  use: "themes/custom/matson/patterns/molecules/masonry-block/masonry-block.html.twig"

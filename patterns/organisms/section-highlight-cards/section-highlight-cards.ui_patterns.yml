@@ -58,4 +58,4 @@ section_highlight_cards:
         dependencies:
           - ui_patterns/highlight_cards.highlight_cards_library
           - ui_patterns/highlight_card.highlight_card_library
-  use: "@stanford_components/organisms/section-highlight-cards/section-highlight-cards.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-highlight-cards/section-highlight-cards.html.twig"

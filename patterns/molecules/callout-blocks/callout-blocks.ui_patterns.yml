@@ -44,4 +44,4 @@ callout_blocks:
             css/callout-blocks.component.css: {}
         dependencies:
           - ui_patterns/callout_block.callout_block_library
-  use: "@stanford_components/molecules/callout-blocks/callout-blocks.html.twig"
+  use: "themes/custom/matson/patterns/molecules/callout-blocks/callout-blocks.html.twig"

@@ -93,4 +93,4 @@ expandable_cards:
             css/expandable-cards.component.css: {}
         dependencies:
           - ui_patterns/expandable_card.expandable_card_library
-  use: "@stanford_components/molecules/expandable-cards/expandable-cards.html.twig"
+  use: "themes/custom/matson/patterns/molecules/expandable-cards/expandable-cards.html.twig"

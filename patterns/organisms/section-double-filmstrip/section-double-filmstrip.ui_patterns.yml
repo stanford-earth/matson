@@ -140,4 +140,4 @@ section_double_filmstrip:
           - ui_patterns/film_card.film_card_library
           - ui_patterns/filmstrip.filmstrip_library
           - ui_patterns/section_callout_filmstrip.section_callout_filmstrip_library
-  use: "@stanford_components/organisms/section-double-filmstrip/section-double-filmstrip.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-double-filmstrip/section-double-filmstrip.html.twig"

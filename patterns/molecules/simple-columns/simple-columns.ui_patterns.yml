@@ -34,4 +34,4 @@ simple_columns:
         css:
           component:
             css/simple-columns.component.css: {}
-  use: "@stanford_components/molecules/simple-columns/simple-columns.html.twig"
+  use: "themes/custom/matson/patterns/molecules/simple-columns/simple-columns.html.twig"

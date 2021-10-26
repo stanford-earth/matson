@@ -44,4 +44,4 @@ postcard:
         css:
           component:
             css/postcard.component.css: {}
-  use: "@stanford_components/molecules/postcard/postcard.html.twig"
+  use: "themes/custom/matson/patterns/molecules/postcard/postcard.html.twig"

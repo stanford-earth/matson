@@ -202,4 +202,4 @@ section_masonry_blocks:
           - ui_patterns/tag_item.tag_item_library
           - ui_patterns/masonry_block.masonry_block_library
           - ui_patterns/masonry_blocks.masonry_blocks_library
-  use: "@stanford_components/organisms/section-masonry-blocks/section-masonry-blocks.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-masonry-blocks/section-masonry-blocks.html.twig"

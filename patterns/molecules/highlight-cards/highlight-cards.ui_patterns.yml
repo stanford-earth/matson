@@ -35,4 +35,4 @@ highlight_cards:
             css/highlight-cards.component.css: {}
         dependencies:
           - ui_patterns/highlight_card.highlight_card_library
-  use: "@stanford_components/molecules/highlight-cards/highlight-cards.html.twig"
+  use: "themes/custom/matson/patterns/molecules/highlight-cards/highlight-cards.html.twig"
