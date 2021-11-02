@@ -9,26 +9,59 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
+.earth-matters-topic-bar__header-container {
+    height: 6.5rem;
+    background: #2F2424;
+    opacity: 0.9;
+    text-align: center;
+    display: flex;
+}
+
+.earth-matters-topic-bar__header {
+    margin: 0;
+    font-size: 3.6rem;
+    opacity: 1;
+}
+
 .c-block--earth-magazine {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     background: #FEC51D;
-    height: 4.125rem;
+    height: 5.5rem;
 }
 
 .topics-nav--earth-magazine {
     display: flex;
     flex-direction: row;
     padding-inline-start: 88px;
-}
+    margin: 0;
 
-.topics-nav--earth-magazine li {
-    display: inline;
-    list-style: none;
-    font-size: 22px;
-    text-transform: uppercase;
-    margin-right: 88px;
+    li {
+        display: inline;
+        list-style: none;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-right: 88px;
+
+        a {
+            color: black;
+            font-weight: 400;
+            transition: none;
+            border-bottom: none;
+
+            
+            @include on-event {
+                color: #820000;
+                border-bottom: 2px solid #820000;
+
+                &:active {
+                    color: black;
+                    border-bottom: 2px solid black;
+                }
+            }
+        }
+    }
 }
 
 .c-block--earth-magazine .container {
@@ -155,11 +188,11 @@
 
 .c-block__menu-title--earth-magazine {
     font-size: 1.375rem;
-    height: 4.125rem;
+    height: 5.5rem;
     line-height: 3.25;
     font-weight: bold;
     text-align: center;
-    width: 9.6875rem;
+    width: 16.5rem;
     padding: 0;
     background-color: transparent;
     border: none;
