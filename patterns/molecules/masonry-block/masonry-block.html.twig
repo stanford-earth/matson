@@ -62,7 +62,7 @@ image|get_img_src is not empty ? random(['has-image-right','has-image-left'])
 
         {% if tags is iterable %}
           {% for tag in tags %}
-            {% set tag = tag|merge({'context': context}) %}
+            {% set tag = [tag]|merge({'context': context}) %}
             {# Pass vars through to include template. #}
             {{ pattern('tag_item', tag) }}
           {% endfor %}
