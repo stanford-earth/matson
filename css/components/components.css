@@ -1685,7 +1685,7 @@ html .getsocial {
   z-index: 2; }
 
 #header {
-  background: #017c92 url("/themes/stanford/matson/img/optimized/header-bg.jpg") no-repeat center 20%;
+  background: #017c92 url("/themes/custom/matson/img/optimized/header-bg.jpg") no-repeat center 20%;
   background-size: 100%;
   position: relative; }
 
@@ -3218,7 +3218,7 @@ html .getsocial {
   margin: 13px 0; }
 
 #header #views-exposed-form-acquia-search-page input[type="text"] {
-  background: transparent url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px center;
+  background: transparent url("/themes/custom/matson/img/source/search-white.svg") no-repeat 9px center;
   background-size: 14px 14px;
   box-sizing: border-box;
   border: 0;
@@ -3257,7 +3257,7 @@ html .getsocial {
 #header #views-exposed-form-acquia-search-page.expanded input[data-drupal-selector="edit-search"],
 #header #views-exposed-form-acquia-search-page:hover input[data-drupal-selector="edit-search"],
 #header #views-exposed-form-acquia-search-page:focus input[data-drupal-selector="edit-search"] {
-  background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px !important;
+  background: #fff url("/themes/custom/matson/img/source/search.svg") no-repeat 15px 9px !important;
   background-size: 14px !important; }
 
 #header #views-exposed-form-acquia-search-page input[type="submit"] {
@@ -3336,7 +3336,7 @@ input#edit-search--2::placeholder {
   display: none; }
 
 .main-container #views-exposed-form-acquia-search-page input#edit-search {
-  background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 12px 18px;
+  background: #fff url("/themes/custom/matson/img/source/search.svg") no-repeat 12px 18px;
   background-size: 17px; }
 
 .main-container #views-exposed-form-acquia-search-page #edit-actions {
@@ -3356,7 +3356,7 @@ input#edit-search--2::placeholder {
   letter-spacing: 1px; }
 
 .main-container #views-exposed-form-acquia-search-page #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"] {
-  background: url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
+  background: url("/themes/custom/matson/img/source/search.svg") no-repeat 15px 9px;
   background-size: 14px; }
 
 .main-container .search-result--wrapper.view.acquia-search.page .views-field.views-field-title,
@@ -3434,7 +3434,7 @@ input#edit-search--2::placeholder {
   #views-exposed-form-acquia-search-page input#edit-reset {
     display: none; }
   #views-exposed-form-acquia-search-page input[type="submit"] {
-    background: #6e6f72 url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px center;
+    background: #6e6f72 url("/themes/custom/matson/img/source/search-white.svg") no-repeat 9px center;
     background-size: 17px 17px;
     box-sizing: border-box;
     border: 0;
@@ -4412,7 +4412,7 @@ ul.tabs {
   display: none; }
 
 .main-container #views-exposed-form-acquia-search-page input#edit-search {
-  background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 12px 18px;
+  background: #fff url("/themes/custom/matson/img/source/search.svg") no-repeat 12px 18px;
   background-size: 17px; }
 
 .main-container #views-exposed-form-acquia-search-page #edit-actions {
@@ -4432,7 +4432,7 @@ ul.tabs {
   letter-spacing: 1px; }
 
 .main-container #views-exposed-form-acquia-search-page #block-exposedformacquia-searchpage-2 #views-exposed-form-acquia-search-page input[type="text"] {
-  background: url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px;
+  background: url("/themes/custom/matson/img/source/search.svg") no-repeat 15px 9px;
   background-size: 14px; }
 
 .main-container .search-result--wrapper.view.acquia-search.page .views-field.views-field-title,
@@ -4537,7 +4537,7 @@ ul.tabs {
   margin: 13px 0; }
 
 #header #views-exposed-form-acquia-search-page input[type="text"] {
-  background: transparent url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px center;
+  background: transparent url("/themes/custom/matson/img/source/search-white.svg") no-repeat 9px center;
   background-size: 14px 14px;
   box-sizing: border-box;
   border: 0;
@@ -4576,7 +4576,7 @@ ul.tabs {
 #header #views-exposed-form-acquia-search-page.expanded input[data-drupal-selector="edit-search"],
 #header #views-exposed-form-acquia-search-page:hover input[data-drupal-selector="edit-search"],
 #header #views-exposed-form-acquia-search-page:focus input[data-drupal-selector="edit-search"] {
-  background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px !important;
+  background: #fff url("/themes/custom/matson/img/source/search.svg") no-repeat 15px 9px !important;
   background-size: 14px !important; }
 
 #header #views-exposed-form-acquia-search-page input[type="submit"] {

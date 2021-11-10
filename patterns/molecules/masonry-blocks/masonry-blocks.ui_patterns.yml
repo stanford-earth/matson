@@ -85,15 +85,7 @@ masonry_blocks:
     -
       packery:
         js:
-          https://unpkg.com/packery@2.1/dist/packery.pkgd.min.js:
-            minified: true
-            type: external
-        license:
-          gpl-compatible: true
-          name: "GNU GPL"
-          url: "https://github.com/metafizzy/packery"
-        remote: "https://unpkg.com/packery@2.1/dist/packery.pkgd.min.js"
-        version: "2.1.1"
+          https://unpkg.com/packery@2.1/dist/packery.pkgd.min.js: { type: external, minified: true }
     -
       masonry_blocks_library:
         css:
@@ -104,6 +96,7 @@ masonry_blocks:
           - ui_patterns/masonry_block.masonry_block_library
           - ui_patterns/masonry_block.packery
         js:
+          https://unpkg.com/packery@2.1/dist/packery.pkgd.min.js: { type: external, minified: true }
           ../../vendor/js/masonry.pkgd.min.js: {}
           js/masonry-blocks.js: {}
   use: "themes/custom/matson/patterns/molecules/masonry-blocks/masonry-blocks.html.twig"

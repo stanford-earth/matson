@@ -37,7 +37,7 @@
   display: block; }
 
 .js-nav-item-expandable li.is-open {
-  background: transparent url("/themes/stanford/matson/img/optimized/carrot-white.svg") no-repeat right center;
+  background: transparent url("/themes/custom/matson/img/optimized/carrot-white.svg") no-repeat right center;
   background-size: 8px 8px; }
 
 /*# sourceMappingURL=states.css.map */

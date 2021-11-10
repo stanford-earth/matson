@@ -17,20 +17,19 @@ libraries-override:
   stanford_basic/basic:
     css:
       base:
-        dist/css/base.css: false
+        css/base/base.css: false
       layout:
-        dist/css/layout.css: false
+        css/layout/layout.css: false
       component:
-        dist/css/components.css: false
+        css/components/components.css: false
       state:
-        dist/css/state.css: false
+        css/states/states.css: false
       theme:
         css/theme/theme.css: false
         css/theme/print.css: false
-component-libraries:
-  stanford_components:
-    paths:
-      - patterns
+components:
+  namespaces:
+    stanford_components: patterns
 ckeditor_stylesheets:
   - css/base/base.css
   - css/layout/layout.css

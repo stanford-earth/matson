@@ -19,7 +19,7 @@ Remember that each new scss file to be processed needs to be added specifically 
 ## Troubleshooting Problems
 
 If you get an error like this (possibly on a linux machine):
-Fatal error: watch /your/directories/Earth/se3_blt/docroot/themes/stanford/matson/css ENOSPC
+Fatal error: watch /your/directories/Earth/se3_blt/docroot/themes/custom/matson/css ENOSPC
 It is running out of space or thinks it is.
 
 Try running:
