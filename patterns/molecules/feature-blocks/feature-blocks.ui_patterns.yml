@@ -42,4 +42,4 @@ feature_blocks:
             css/feature-blocks.component.css: {}
         dependencies:
           - ui_patterns/simple_block.simple_block_library
-  use: "@stanford_components/molecules/feature-blocks/feature-blocks.html.twig"
+  use: "themes/custom/matson/patterns/molecules/feature-blocks/feature-blocks.html.twig"

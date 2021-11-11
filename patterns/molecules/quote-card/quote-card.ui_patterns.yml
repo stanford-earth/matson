@@ -31,4 +31,4 @@ quote_card:
         css:
           component:
             css/quote-card.component.css: {}
-  use: "@stanford_components/molecules/quote-card/quote-card.html.twig"
+  use: "themes/custom/matson/patterns/molecules/quote-card/quote-card.html.twig"

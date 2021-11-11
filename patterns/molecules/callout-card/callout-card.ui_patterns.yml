@@ -27,4 +27,4 @@ callout_card:
         css:
           component:
             css/callout-card.component.css: {}
-  use: "@stanford_components/molecules/callout-card/callout-card.html.twig"
+  use: "themes/custom/matson/patterns/molecules/callout-card/callout-card.html.twig"

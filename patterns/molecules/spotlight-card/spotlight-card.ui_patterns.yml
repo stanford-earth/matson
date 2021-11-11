@@ -31,4 +31,4 @@ spotlight_card:
         css:
           component:
             css/spotlight-card.component.css: {}
-  use: "@stanford_components/molecules/spotlight-card/spotlight-card.html.twig"
+  use: "theme/custom/matson/patterns/molecules/spotlight-card/spotlight-card.html.twig"

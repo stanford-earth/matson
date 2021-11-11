@@ -9,8 +9,8 @@ section_feature_blocks:
       description: "Center the component in a responsive container"
       default: true
       options:
-        true: "Centered"
-        0: "Full Width"
+        "true": "Centered"
+        "0": "Full Width"
     dash_under:
       label: "Dash Under Header"
       description: "Dash under h2 or to the left?  Treat as boolean (true/false)"
@@ -38,15 +38,15 @@ section_feature_blocks:
       description: "Render arrow on card.  Treat as boolean (true/false)."
       default: true
       options:
-        true: "Has arrow"
-        0: "Does not have arrow"
+        "true": "Has arrow"
+        "0": "Does not have arrow"
     is_slat:
       label: "Is a slat"
       description: "Render slat on medium and up screens.  Treat as boolean (true/false)."
       default: false
       options:
-        true: "Render as a slat"
-        0: "Render as a block"
+        "true": "Render as a slat"
+        "0": "Render as a block"
   fields:
     items:
       description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, and an image rendered as an html element."
@@ -99,4 +99,4 @@ section_feature_blocks:
           - ui_patterns/section_header.section_header_library
           - ui_patterns/simple_block.simple_block_library
           - ui_patterns/feature_blocks.feature_blocks_library
-  use: "@stanford_components/organisms/section-feature-blocks/section-feature-blocks.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-feature-blocks/section-feature-blocks.html.twig"

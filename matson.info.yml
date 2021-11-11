@@ -3,8 +3,8 @@ type: theme
 base theme: stanford_basic
 description: 'Matson Theme.'
 package: Core
-version: 8.x-1.1-dev
-core: 8.x
+version: 8.x-2.0-dev
+core_version_requirement: ^8.9 || ^9
 dependencies:
   - components
   - ui_patterns
@@ -17,13 +17,13 @@ libraries-override:
   stanford_basic/basic:
     css:
       base:
-        css/base/base.css: false
+        dist/css/base.css: false
       layout:
-        css/layout/layout.css: false
+        dist/css/layout.css: false
       component:
-        css/components/components.css: false
+        dist/css/components.css: false
       state:
-        css/states/states.css: false
+        dist/css/state.css: false
       theme:
         css/theme/theme.css: false
         css/theme/print.css: false

@@ -39,4 +39,4 @@ section_spotlight_banner:
             css/section-spotlight-banner.component.css: {}
         dependencies:
           - ui_patterns/spotlight_card.spotlight_card_library
-  use: "@stanford_components/organisms/section-spotlight-banner/section-spotlight-banner.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-spotlight-banner/section-spotlight-banner.html.twig"

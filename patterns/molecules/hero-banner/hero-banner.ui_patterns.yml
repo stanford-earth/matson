@@ -9,8 +9,8 @@ hero_banner:
       description: "Center the component in a responsive container"
       default: 0
       options:
-        0: "Normal"
-        1: "Centered"
+        "0": "Normal"
+        "1": "Centered"
     has_tint:
       label: "Has background tinting"
       description: "Slight shade over background image"
@@ -23,15 +23,15 @@ hero_banner:
       description: "Choose where you would like to see the text appear over the image"
       default: 'is-right'
       options:
-        0: "Centered"
+        "0": "Centered"
         is-right: "On the right"
     is_page_title:
       label: "Should the banner use an h1 page title?"
       description: "Use an h1 instead of an h2 for the superhead"
       default: 0
       options:
-        0: "Normal header"
-        1: "Page title"
+        "0": "Normal header"
+        "1": "Page title"
     is_tall:
       label: "Is the tall banner (homepage)"
       description: "The taller version of the hero banner when enabled."
@@ -75,4 +75,4 @@ hero_banner:
             css/hero-banner.component.css: {}
         js:
           js/hero-banner.js: {}
-  use: "@stanford_components/molecules/hero-banner/hero-banner.html.twig"
+  use: "themes/custom/matson/patterns/molecules/hero-banner/hero-banner.html.twig"

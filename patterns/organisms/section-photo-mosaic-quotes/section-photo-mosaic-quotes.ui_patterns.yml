@@ -155,4 +155,4 @@ section_photo_mosaic_quotes:
           - ui_patterns/photo_tile.photo_tile_library
           - ui_patterns/photo_tiles.photo_tiles_library
           - ui_patterns/section_photo_mosaic.section_photo_mosaic_library
-  use: "@stanford_components/organisms/section-photo-mosaic-quotes/section-photo-mosaic-quotes.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-photo-mosaic-quotes/section-photo-mosaic-quotes.html.twig"

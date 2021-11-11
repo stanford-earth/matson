@@ -30,8 +30,8 @@ section_header_banner:
       description: "Center the component in a responsive container"
       default: false
       options:
-        true: "Centered"
-        0: "Normal"
+        "true": "Centered"
+        "0": "Normal"
   fields:
     image:
       description: "Banner image."
@@ -59,4 +59,4 @@ section_header_banner:
         css:
           component:
             css/section-header-banner.component.css: {}
-  use: "@stanford_components/organisms/section-header-banner/section-header-banner.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-header-banner/section-header-banner.html.twig"

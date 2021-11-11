@@ -22,4 +22,4 @@ photo_thumb:
         css:
           component:
             css/photo-thumb.component.css: {}
-  use: "@stanford_components/atoms/photo-thumb/photo-thumb.html.twig"
+  use: "themes/custom/matson/patterns/atoms/photo-thumb/photo-thumb.html.twig"

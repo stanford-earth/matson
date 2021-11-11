@@ -87,4 +87,4 @@ section_calendar_blocks:
           - ui_patterns/section_header.section_header_library
           - ui_patterns/calendar_block.callout_block_library
           - ui_patterns/calendar_blocks.callout_blocks_library
-  use: "@stanford_components/organisms/section-calendar-blocks/section-calendar-blocks.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-calendar-blocks/section-calendar-blocks.html.twig"

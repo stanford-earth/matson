@@ -40,4 +40,4 @@ simple_blocks:
             css/simple-blocks.component.css: {}
         dependencies:
           - ui_patterns/simple_block.simple_block_library
-  use: "@stanford_components/molecules/simple-blocks/simple-blocks.html.twig"
+  use: "themes/custom/matson/patterns/molecules/simple-blocks/simple-blocks.html.twig"

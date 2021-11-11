@@ -101,8 +101,8 @@ module.exports = function(grunt) {
           "node_modules/decanter/core",
           "node_modules",
           // Parent theme directory.
-          "../",
-          "../stanford_basic/scss"
+          //  "../",
+          //   "../custom/stanford_basic"
         ],
         sourceMap: true,
         // This controls the compiled css and can be changed to nested, compact or compressed.

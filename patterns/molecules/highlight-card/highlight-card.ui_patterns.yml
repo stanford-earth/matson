@@ -34,4 +34,4 @@ highlight_card:
         css:
           component:
             css/highlight-card.component.css: {}
-  use: "@stanford_components/molecules/highlight-card/highlight-card.html.twig"
+  use: "themes/custom/matson/patterns/molecules/highlight-card/highlight-card.html.twig"

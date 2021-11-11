@@ -29,8 +29,8 @@ section_header:
       description: "Center the component in a responsive container"
       default: false
       options:
-        true: "Centered"
-        0: "Normal"
+        "true": "Centered"
+        "0": "Normal"
   fields:
     link:
       description: "Read More Link."
@@ -53,4 +53,4 @@ section_header:
         css:
           component:
             css/section-header.component.css: {}
-  use: "@stanford_components/molecules/section-header/section-header.html.twig"
+  use: "themes/custom/matson/patterns/molecules/section-header/section-header.html.twig"

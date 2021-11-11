@@ -40,4 +40,4 @@ section_quote_banner:
         dependencies:
           - ui_patterns/photo_banner.photo_banner_library
           - ui_patterns/quote_card.quote_card_library
-  use: "@stanford_components/organisms/section-quote-banner/section-quote-banner.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-quote-banner/section-quote-banner.html.twig"

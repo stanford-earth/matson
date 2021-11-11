@@ -123,4 +123,4 @@ section_expandable_banner:
         dependencies:
           - ui_patterns/section_header.section_header_library
           - ui_patterns/expandable_card.expandable_card_library
-  use: "@stanford_components/organisms/section-expandable-banner/section-expandable-banner.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-expandable-banner/section-expandable-banner.html.twig"

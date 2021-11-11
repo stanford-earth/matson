@@ -19,4 +19,4 @@ tag_item:
         css:
           component:
             css/tag-item.component.css: {}
-  use: "@stanford_components/atoms/tag-item/tag-item.html.twig"
+  use: "themes/custom/matson/patterns/atoms/tag-item/tag-item.html.twig"

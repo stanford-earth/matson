@@ -19,4 +19,4 @@ nav_item:
         css:
           component:
             css/nav-item.component.css: {}
-  use: "@stanford_components/atoms/nav-item/nav-item.html.twig"
+  use: "themes/custom/matson/patterns/atoms/nav-item/nav-item.html.twig"

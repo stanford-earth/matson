@@ -21,10 +21,10 @@ masonry_block:
       description: "Do you want to place as a stamp"
       label: Stamp
       options:
-        0: "None"
-        1: "Top Left"
-        2: "Top Center"
-        3: "Top Right"
+        "0": "None"
+        "1": "Top Left"
+        "2": "Top Center"
+        "3": "Top Right"
   fields:
     date:
       description: "Simple Block date"
@@ -68,4 +68,4 @@ masonry_block:
             css/masonry-block.component.css: {}
         dependencies:
           - ui_patterns/tag_item.tag_item_library
-  use: "@stanford_components/molecules/masonry-block/masonry-block.html.twig"
+  use: "themes/custom/matson/patterns/molecules/masonry-block/masonry-block.html.twig"

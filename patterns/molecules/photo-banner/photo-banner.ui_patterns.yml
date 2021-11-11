@@ -15,4 +15,4 @@ photo_banner:
         css:
           component:
             css/photo-banner.component.css: {}
-  use: "@stanford_components/molecules/photo-banner/photo-banner.html.twig"
+  use: "themes/custom/matson/patterns/molecules/photo-banner/photo-banner.html.twig"

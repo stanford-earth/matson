@@ -106,4 +106,4 @@ masonry_blocks:
         js:
           ../../vendor/js/masonry.pkgd.min.js: {}
           js/masonry-blocks.js: {}
-  use: "@stanford_components/molecules/masonry-blocks/masonry-blocks.html.twig"
+  use: "themes/custom/matson/patterns/molecules/masonry-blocks/masonry-blocks.html.twig"

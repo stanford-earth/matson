@@ -24,4 +24,4 @@ link_item:
         css:
           component:
             css/link-item.component.css: {}
-  use: "@stanford_components/atoms/link-item/link-item.html.twig"
+  use: "themes/custom/matson/patterns/atoms/link-item/link-item.html.twig"

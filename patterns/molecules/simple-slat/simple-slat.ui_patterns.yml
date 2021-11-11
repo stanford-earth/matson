@@ -65,4 +65,4 @@ simple_slat:
         dependencies:
           - ui_patterns/simple_block.simple_block_library
           - matson/component_centered_container
-  use: "@stanford_components/molecules/simple-slat/simple-slat.html.twig"
+  use: "themes/custom/matson/patterns/molecules/simple-slat/simple-slat.html.twig"

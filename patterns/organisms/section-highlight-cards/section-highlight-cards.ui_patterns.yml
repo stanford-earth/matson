@@ -9,8 +9,8 @@ section_highlight_cards:
       description: "Center the component in a responsive container"
       default: true
       options:
-        true: "Centered"
-        0: "Full Width"
+        "true": "Centered"
+        "0": "Full Width"
     card_width:
       label: Width
       description: "Width of the individual cards"
@@ -58,4 +58,4 @@ section_highlight_cards:
         dependencies:
           - ui_patterns/highlight_cards.highlight_cards_library
           - ui_patterns/highlight_card.highlight_card_library
-  use: "@stanford_components/organisms/section-highlight-cards/section-highlight-cards.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-highlight-cards/section-highlight-cards.html.twig"

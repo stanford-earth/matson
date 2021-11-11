@@ -30,8 +30,8 @@ section_callout_cards:
       description: "Center the component in a responsive container"
       default: false
       options:
-        true: "Centered"
-        0: "Normal"
+        "true": "Centered"
+        "0": "Normal"
   fields:
     items:
       description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, and an image rendered as an html element."
@@ -86,4 +86,4 @@ section_callout_cards:
           - ui_patterns/section_header.section_header_library
           - ui_patterns/callout_card.callout_card_library
           - ui_patterns/callout_cards.callout_cards_library
-  use: "@stanford_components/organisms/section-callout-cards/section-callout-cards.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-callout-cards/section-callout-cards.html.twig"

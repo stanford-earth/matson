@@ -69,4 +69,4 @@ expandable_card:
           js/expandable-card.js: {}
         dependencies:
           - ui_patterns/icon_item.icon_item_library
-  use: "@stanford_components/molecules/expandable-card/expandable-card.html.twig"
+  use: "themes/custom/matson/patterns/molecules/expandable-card/expandable-card.html.twig"

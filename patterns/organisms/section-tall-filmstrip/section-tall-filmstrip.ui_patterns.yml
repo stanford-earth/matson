@@ -37,8 +37,8 @@ section_tall_filmstrip:
       description: "Center the component in a responsive container"
       default: true
       options:
-        true: "Centered"
-        0: "Normal"
+        "true": "Centered"
+        "0": "Normal"
     card_widths:
       description: "Make cards have flexible rather than fixed widths."
       label: Flexible widths
@@ -73,8 +73,8 @@ section_tall_filmstrip:
       label: "Expanded by default"
       default: false
       options:
-        true: "Expanded by default"
-        0: "Collapsed by default"
+        "true": "Expanded by default"
+        "0": "Collapsed by default"
   fields:
     items:
       description: "This template iterates over the items to produce a nested unordered list of divs. Each item must have a url, title, and an image rendered as an html element."
@@ -152,4 +152,4 @@ section_tall_filmstrip:
           - ui_patterns/section_header.section_header_library
           - ui_patterns/filmstrip.filmstrip_library
           - ui_patterns/section_callout_filmstrip.section_callout_filmstrip_library
-  use: "@stanford_components/organisms/section-tall-filmstrip/section-tall-filmstrip.html.twig"
+  use: "themes/custom/matson/patterns/organisms/section-tall-filmstrip/section-tall-filmstrip.html.twig"

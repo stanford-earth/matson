@@ -53,4 +53,4 @@ calendar_block:
         css:
           component:
             css/calendar-block.component.css: {}
-  use: "@stanford_components/molecules/calendar-block/calendar-block.html.twig"
+  use: "themes/custom/matson/patterns/molecules/calendar-block/calendar-block.html.twig"

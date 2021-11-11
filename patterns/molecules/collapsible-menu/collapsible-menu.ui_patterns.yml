@@ -47,4 +47,4 @@ collapsible_menu:
           js/collapsible-menu.js: {}
         dependencies:
           - ui_patterns/nav_item.nav_item_library
-  use: "@stanford_components/molecules/collapsible-menu/collapsible-menu.html.twig"
+  use: "themes/custom/matson/patterns/molecules/collapsible-menu/collapsible-menu.html.twig"

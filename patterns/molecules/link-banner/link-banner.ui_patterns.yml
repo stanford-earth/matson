@@ -66,4 +66,4 @@ link_banner:
             css/link-banner.component.css: {}
         dependencies:
           - ui_patterns/link_item.link_item_library
-  use: "@stanford_components/molecules/link-banner/link-banner.html.twig"
+  use: "themes/custom/matson/patterns/molecules/link-banner/link-banner.html.twig"
