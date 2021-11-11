@@ -9,7 +9,7 @@
     "fibers": "^3.0.0",
     "font-awesome": "~4.7.0",
     "grunt": "^1.3.0",
-    "grunt-autoprefixer": "^3.0.3",
+    "grunt-autoprefixer": "^3.0.4",
     "grunt-available-tasks": "^0.6.3",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-concat": "^0.5.1",
@@ -26,5 +26,12 @@
   "description": "=========================== How to Use Grunt with matson ===========================",
   "main": "Gruntfile.js",
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "fiber": "^1.0.4"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.5",
+    "utf-8-validate": "^5.0.7"
+  }
 }
