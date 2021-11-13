@@ -25,6 +25,11 @@
         }
 
     }
+
+    @media (min-width: 768px) {
+        border-left: 1px solid #6D6C69;
+        border-right: 1px solid #6D6C69;
+    }
     
     .dropbtn {
         background-color: transparent;
@@ -34,6 +39,7 @@
         height: 5.5rem;
         border: none;
         text-transform: none;
+        line-height: normal;
     }
 
     .dropdown-content {
@@ -43,6 +49,9 @@
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
+        padding: 3rem 5rem 1rem 5rem;
+        text-align: right;
+        right: 0;
         
         @media (min-width: 1190px) {
             width: 45.0625rem;
@@ -50,9 +59,7 @@
         // width: 45.0625rem;
 
         li {
-            padding: 0;
-            line-height: 0;
-            margin: 0 0 1.125rem;
+            margin: 0 0 2.25rem;
             list-style: none;
             
             a {
@@ -64,14 +71,12 @@
                 transition: none;
                 border-bottom: none;
         
-                &:hover {
-                    @include on-event {
-                        border-bottom: 2px solid #fff;
-                
-                        &:active {
-                            color: #FEC51D;
-                            border-bottom: 1px solid #FEC51D;
-                        }
+                @include on-event {
+                    border-bottom: 2px solid #fff;
+            
+                    &:active {
+                        color: #FEC51D;
+                        border-bottom: 1px solid #FEC51D;
                     }
                 }
             }
