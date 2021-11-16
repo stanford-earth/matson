@@ -1198,6 +1198,91 @@
   display: block;
   z-index: 2; }
 
+.earth-matters-topic-bar__featured-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .earth-matters-topic-bar__featured-links-container {
+      justify-content: flex-start; } }
+  .earth-matters-topic-bar__featured-links-container > .menu {
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 88px;
+    margin: 0; }
+    .earth-matters-topic-bar__featured-links-container > .menu li {
+      display: inline;
+      list-style: none;
+      font-size: 22px;
+      text-transform: uppercase;
+      margin-right: 88px; }
+      .earth-matters-topic-bar__featured-links-container > .menu li a {
+        color: black;
+        font-weight: 400;
+        transition: none;
+        border-bottom: none; }
+        .earth-matters-topic-bar__featured-links-container > .menu li a:hover, .earth-matters-topic-bar__featured-links-container > .menu li a:active, .earth-matters-topic-bar__featured-links-container > .menu li a:focus {
+          color: #820000;
+          border-bottom: 2px solid #820000; }
+          .earth-matters-topic-bar__featured-links-container > .menu li a:hover:active, .earth-matters-topic-bar__featured-links-container > .menu li a:active:active, .earth-matters-topic-bar__featured-links-container > .menu li a:focus:active {
+            color: black;
+            border-bottom: 2px solid black; }
+  .earth-matters-topic-bar__featured-links-container .dropdown {
+    position: relative;
+    display: inline-block; }
+    .earth-matters-topic-bar__featured-links-container .dropdown:hover .earth-matters-topic-bar__all-links-container {
+      display: block; }
+    .earth-matters-topic-bar__featured-links-container .dropdown:hover .dropbtn {
+      background-color: #231f20;
+      color: #ffffff;
+      text-decoration: underline; }
+    @media (min-width: 768px) {
+      .earth-matters-topic-bar__featured-links-container .dropdown {
+        border-left: 1px solid #6D6C69;
+        border-right: 1px solid #6D6C69; } }
+    .earth-matters-topic-bar__featured-links-container .dropdown .dropbtn {
+      background-color: transparent;
+      color: #231f20;
+      font-size: 2.2rem;
+      font-weight: 600;
+      height: 5.5rem;
+      border: none;
+      text-transform: none;
+      line-height: normal; }
+    .earth-matters-topic-bar__featured-links-container .dropdown .earth-matters-topic-bar__all-links-container {
+      display: none;
+      position: absolute;
+      background-color: #231f20;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      padding: 3rem 5rem 1rem 5rem;
+      text-align: right;
+      right: 0; }
+      @media (min-width: 1190px) {
+        .earth-matters-topic-bar__featured-links-container .dropdown .earth-matters-topic-bar__all-links-container {
+          width: 45.0625rem; } }
+      .earth-matters-topic-bar__featured-links-container .dropdown .earth-matters-topic-bar__all-links-container ul {
+        display: block; }
+      .earth-matters-topic-bar__featured-links-container .dropdown .earth-matters-topic-bar__all-links-container li {
+        margin: 0 0 2.25rem;
+        list-style: none; }
+        .earth-matters-topic-bar__featured-links-container .dropdown .earth-matters-topic-bar__all-links-container li a {
+          color: #fff;
+          font-size: 2.2rem;
+          line-height: 1.6;
+          color: #fff;
+          font-weight: 600;
+          transition: none;
+          border-bottom: none; }
+          .earth-matters-topic-bar__featured-links-container .dropdown .earth-matters-topic-bar__all-links-container li a:hover, .earth-matters-topic-bar__featured-links-container .dropdown .earth-matters-topic-bar__all-links-container li a:active, .earth-matters-topic-bar__featured-links-container .dropdown .earth-matters-topic-bar__all-links-container li a:focus {
+            border-bottom: 2px solid #fff; }
+            .earth-matters-topic-bar__featured-links-container .dropdown .earth-matters-topic-bar__all-links-container li a:hover:active, .earth-matters-topic-bar__featured-links-container .dropdown .earth-matters-topic-bar__all-links-container li a:active:active, .earth-matters-topic-bar__featured-links-container .dropdown .earth-matters-topic-bar__all-links-container li a:focus:active {
+              color: #FEC51D;
+              border-bottom: 1px solid #FEC51D; }
+
 .dropdown {
   position: relative;
   display: inline-block; }
@@ -1207,6 +1292,10 @@
     background-color: #231f20;
     color: #ffffff;
     text-decoration: underline; }
+  @media (min-width: 768px) {
+    .dropdown {
+      border-left: 1px solid #6D6C69;
+      border-right: 1px solid #6D6C69; } }
   .dropdown .dropbtn {
     background-color: transparent;
     color: #231f20;
@@ -1214,21 +1303,23 @@
     font-weight: 600;
     height: 5.5rem;
     border: none;
-    text-transform: none; }
+    text-transform: none;
+    line-height: normal; }
   .dropdown .dropdown-content {
     display: none;
     position: absolute;
     background-color: #231f20;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1; }
+    z-index: 1;
+    padding: 3rem 5rem 1rem 5rem;
+    text-align: right;
+    right: 0; }
     @media (min-width: 1190px) {
       .dropdown .dropdown-content {
         width: 45.0625rem; } }
     .dropdown .dropdown-content li {
-      padding: 0;
-      line-height: 0;
-      margin: 0 0 1.125rem;
+      margin: 0 0 2.25rem;
       list-style: none; }
       .dropdown .dropdown-content li a {
         color: #fff;
@@ -1238,9 +1329,9 @@
         font-weight: 600;
         transition: none;
         border-bottom: none; }
-        .dropdown .dropdown-content li a:hover:hover, .dropdown .dropdown-content li a:hover:active, .dropdown .dropdown-content li a:hover:focus {
+        .dropdown .dropdown-content li a:hover, .dropdown .dropdown-content li a:active, .dropdown .dropdown-content li a:focus {
           border-bottom: 2px solid #fff; }
-          .dropdown .dropdown-content li a:hover:hover:active, .dropdown .dropdown-content li a:hover:active:active, .dropdown .dropdown-content li a:hover:focus:active {
+          .dropdown .dropdown-content li a:hover:active, .dropdown .dropdown-content li a:active:active, .dropdown .dropdown-content li a:focus:active {
             color: #FEC51D;
             border-bottom: 1px solid #FEC51D; }
 

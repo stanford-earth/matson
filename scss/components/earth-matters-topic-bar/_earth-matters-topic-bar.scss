@@ -9,6 +9,131 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
+.earth-matters-topic-bar__featured-links-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0;
+
+    @media (min-width: 768px) {
+        justify-content: flex-start;
+    }
+    
+    & > .menu {
+        display: flex;
+        flex-direction: row;
+        padding-inline-start: 88px;
+        margin: 0;
+
+        li {
+            display: inline;
+            list-style: none;
+            font-size: 22px;
+            text-transform: uppercase;
+            margin-right: 88px;
+
+            a {
+                color: black;
+                font-weight: 400;
+                transition: none;
+                border-bottom: none;
+
+                
+                @include on-event {
+                    color: #820000;
+                    border-bottom: 2px solid #820000;
+
+                    &:active {
+                        color: black;
+                        border-bottom: 2px solid black;
+                    }
+                }
+            }
+        }
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    
+        &:hover {
+            .earth-matters-topic-bar__all-links-container {
+                display: block;
+            }
+    
+            .dropbtn {
+                background-color: #231f20;
+                color: #ffffff;
+                text-decoration: underline;
+            }
+    
+        }
+    
+        @media (min-width: 768px) {
+            border-left: 1px solid #6D6C69;
+            border-right: 1px solid #6D6C69;
+        }
+        
+        .dropbtn {
+            background-color: transparent;
+            color: #231f20;
+            font-size: 2.2rem;
+            font-weight: 600;
+            height: 5.5rem;
+            border: none;
+            text-transform: none;
+            line-height: normal;
+        }
+    
+        .earth-matters-topic-bar__all-links-container {
+            display: none;
+            position: absolute;
+            background-color: #231f20;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            padding: 3rem 5rem 1rem 5rem;
+            text-align: right;
+            right: 0;
+            
+            @media (min-width: 1190px) {
+                width: 45.0625rem;
+            }
+            // width: 45.0625rem;
+
+            ul {
+                display: block;
+
+            }
+    
+            li {
+                margin: 0 0 2.25rem;
+                list-style: none;
+                
+                a {
+                    color: #fff;
+                    font-size: 2.2rem;
+                    line-height: 1.6;
+                    color: #fff;
+                    font-weight: 600;
+                    transition: none;
+                    border-bottom: none;
+            
+                    @include on-event {
+                        border-bottom: 2px solid #fff;
+                
+                        &:active {
+                            color: #FEC51D;
+                            border-bottom: 1px solid #FEC51D;
+                        }
+                    }
+                }
+            }
+        
+        }
+    }
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
