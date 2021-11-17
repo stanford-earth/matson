@@ -43,6 +43,7 @@
                 @include on-event {
                     color: #820000;
                     border-bottom: 2px solid #820000;
+                    text-decoration: none;
 
                     &:active {
                         color: black;
@@ -65,6 +66,13 @@
                 background-color: #231f20;
                 color: #ffffff;
                 text-decoration: underline;
+
+                &::after {
+                    background: transparent url('/themes/stanford/matson/img/optimized/carrot-white.svg') no-repeat right center;
+                    border-top: 1px solid #ffffff;
+                    transform: rotate(180deg);
+                    transition: all 150ms ease-in-out;
+                }
             }
     
         }
@@ -83,6 +91,15 @@
             border: none;
             text-transform: none;
             line-height: normal;
+
+            &:after {
+                background: transparent url('/themes/stanford/matson/img/optimized/carrot.svg') no-repeat right center;
+                content: "";
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                margin-left: 1.25rem;
+            }
         }
     
         .earth-matters-topic-bar__all-links-container {
@@ -104,31 +121,32 @@
             ul {
                 display: block;
 
-            }
-    
-            li {
-                margin: 0 0 2.25rem;
-                list-style: none;
+                li {
+                    margin: 0 0 2.25rem;
+                    list-style: none;
+                    
+                    a {
+                        color: #fff;
+                        font-size: 2.2rem;
+                        line-height: 1.6;
+                        color: #fff;
+                        font-weight: 600;
+                        transition: none;
+                        border-bottom: none;
+                        text-decoration: none;
                 
-                a {
-                    color: #fff;
-                    font-size: 2.2rem;
-                    line-height: 1.6;
-                    color: #fff;
-                    font-weight: 600;
-                    transition: none;
-                    border-bottom: none;
-            
-                    @include on-event {
-                        border-bottom: 2px solid #fff;
-                
-                        &:active {
-                            color: #FEC51D;
-                            border-bottom: 1px solid #FEC51D;
+                        @include on-event {
+                            border-bottom: 2px solid #fff;
+                    
+                            &:active {
+                                color: #FEC51D;
+                                border-bottom: 1px solid #FEC51D;
+                            }
                         }
                     }
                 }
             }
+    
         
         }
     }
@@ -428,34 +446,35 @@
     text-transform: none;
 }
 
-.c-block__menu-title--earth-magazine::after {
-    content: "^*";
-    // background: url("/themes/stanford/matson/img/optimized/carrot.svg") no-repeat right center;
-    display: inline;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    text-transform: none;
-    line-height: 1;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-family: 'icons';
-    font-size: 1rem;
-    margin-left: 0.3125rem;
-}
+// .c-block__menu-title--earth-magazine::after {
+//     content: "^*";
+//     content: "";
+//     background: url("/themes/stanford/matson/img/optimized/carrot.svg") no-repeat right center;
+//     display: inline;
+//     text-rendering: optimizeLegibility;
+//     -moz-osx-font-smoothing: grayscale;
+//     -webkit-font-smoothing: antialiased;
+//     text-transform: none;
+//     line-height: 1;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: normal;
+//     font-family: 'icons';
+//     font-size: 1rem;
+//     margin-left: 0.3125rem;
+// }
 
-.c-block__menu-title--earth-magazine:focus {
-    box-shadow: none;
-    outline: 1px dashed;
-}
+// .c-block__menu-title--earth-magazine:focus {
+//     box-shadow: none;
+//     outline: 1px dashed;
+// }
 
-.c-block__menu-title--earth-magazine::after {
-    font-size: 0.875rem !important;
-    margin-left: 1.25rem !important;
-    position: relative !important;
-    top: -0.1875rem;
-}
+// .c-block__menu-title--earth-magazine::after {
+//     font-size: 0.875rem !important;
+//     margin-left: 1.25rem !important;
+//     position: relative !important;
+//     top: -0.1875rem;
+// }
 
 // .c-block__search-wrapper--earth-magazine {
 //     display: flex;
