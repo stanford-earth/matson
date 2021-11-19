@@ -100,7 +100,7 @@
   }
 
   #views-exposed-form-acquia-search-page input[type="text"] {
-    background: transparent url("/themes/stanford/matson/img/source/search-white.svg") no-repeat 9px center;
+    background: transparent url("/themes/custom/matson/img/source/search-white.svg") no-repeat 9px center;
     background-size: 14px 14px;
     box-sizing: border-box;
     border: 0;
@@ -150,7 +150,7 @@
   #views-exposed-form-acquia-search-page:hover input[data-drupal-selector="edit-search"],
   #views-exposed-form-acquia-search-page:focus input[data-drupal-selector="edit-search"] {
     //because we aren't using the id anymore, and instead using data-drupal-selector values, these lines need !important to be able to override.
-    background: #fff url("/themes/stanford/matson/img/source/search.svg") no-repeat 15px 9px !important;
+    background: #fff url("/themes/custom/matson/img/source/search.svg") no-repeat 15px 9px !important;
     background-size: 14px !important;
   }
 
