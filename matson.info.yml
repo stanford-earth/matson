@@ -29,7 +29,7 @@ libraries-override:
         css/theme/print.css: false
 components:
   namespaces:
-    stanford_components: patterns
+    matson_components: patterns
 ckeditor_stylesheets:
   - css/base/base.css
   - css/layout/layout.css
