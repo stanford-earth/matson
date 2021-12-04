@@ -1198,6 +1198,16 @@
   display: block;
   z-index: 2; }
 
+.earth-matters-topic-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FEC51D;
+  height: 5.5rem; }
+  @media (min-width: 768px) {
+    .earth-matters-topic-bar {
+      justify-content: flex-start; } }
+
 .earth-matters-topic-bar__featured-links-container {
   display: flex;
   align-items: center;
@@ -1208,35 +1218,53 @@
     .earth-matters-topic-bar__featured-links-container {
       justify-content: flex-start; } }
   .earth-matters-topic-bar__featured-links-container > .menu {
-    display: flex;
-    flex-direction: row;
-    padding-inline-start: 88px;
+    display: none;
     margin: 0; }
+    @media (min-width: 768px) {
+      .earth-matters-topic-bar__featured-links-container > .menu {
+        display: flex;
+        flex-direction: row; } }
     .earth-matters-topic-bar__featured-links-container > .menu li {
       display: inline;
       list-style: none;
       font-size: 22px;
-      text-transform: uppercase;
-      margin-right: 88px; }
+      text-transform: uppercase; }
       .earth-matters-topic-bar__featured-links-container > .menu li a {
         color: black;
         font-weight: 400;
         transition: none;
-        border-bottom: none; }
+        border-bottom: none;
+        padding: 14px 15px; }
+        @media (min-width: 992px) {
+          .earth-matters-topic-bar__featured-links-container > .menu li a {
+            padding: 14px 40px; } }
+        @media (min-width: 1190px) {
+          .earth-matters-topic-bar__featured-links-container > .menu li a {
+            padding: 14px 60px; } }
         .earth-matters-topic-bar__featured-links-container > .menu li a:hover, .earth-matters-topic-bar__featured-links-container > .menu li a:active, .earth-matters-topic-bar__featured-links-container > .menu li a:focus {
-          color: #820000;
-          border-bottom: 2px solid #820000;
-          text-decoration: none; }
+          color: #fff;
+          text-decoration: none;
+          background-color: #585754;
+          padding: 14px 15px; }
+          @media (min-width: 992px) {
+            .earth-matters-topic-bar__featured-links-container > .menu li a:hover, .earth-matters-topic-bar__featured-links-container > .menu li a:active, .earth-matters-topic-bar__featured-links-container > .menu li a:focus {
+              padding: 14px 40px; } }
+          @media (min-width: 1190px) {
+            .earth-matters-topic-bar__featured-links-container > .menu li a:hover, .earth-matters-topic-bar__featured-links-container > .menu li a:active, .earth-matters-topic-bar__featured-links-container > .menu li a:focus {
+              padding: 14px 60px; } }
           .earth-matters-topic-bar__featured-links-container > .menu li a:hover:active, .earth-matters-topic-bar__featured-links-container > .menu li a:active:active, .earth-matters-topic-bar__featured-links-container > .menu li a:focus:active {
             color: black;
             border-bottom: 2px solid black; }
   .earth-matters-topic-bar__featured-links-container .dropdown {
     position: relative;
-    display: inline-block; }
+    display: inline-block;
+    border-left: 1px solid #6D6C69;
+    border-right: 1px solid #6D6C69;
+    width: max-content; }
     .earth-matters-topic-bar__featured-links-container .dropdown:hover .earth-matters-topic-bar__all-links-container {
       display: block; }
     .earth-matters-topic-bar__featured-links-container .dropdown:hover .dropbtn {
-      background-color: #231f20;
+      background-color: #585754;
       color: #ffffff;
       text-decoration: underline; }
       .earth-matters-topic-bar__featured-links-container .dropdown:hover .dropbtn::after {
@@ -1244,10 +1272,6 @@
         border-top: 1px solid #ffffff;
         transform: rotate(180deg);
         transition: all 150ms ease-in-out; }
-    @media (min-width: 768px) {
-      .earth-matters-topic-bar__featured-links-container .dropdown {
-        border-left: 1px solid #6D6C69;
-        border-right: 1px solid #6D6C69; } }
     .earth-matters-topic-bar__featured-links-container .dropdown .dropbtn {
       background-color: transparent;
       color: #231f20;
@@ -1256,7 +1280,17 @@
       height: 5.5rem;
       border: none;
       text-transform: none;
-      line-height: normal; }
+      line-height: normal;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media (min-width: 992px) {
+        .earth-matters-topic-bar__featured-links-container .dropdown .dropbtn {
+          padding-right: 40px;
+          padding-left: 40px; } }
+      @media (min-width: 1190px) {
+        .earth-matters-topic-bar__featured-links-container .dropdown .dropbtn {
+          padding-right: 60px;
+          padding-left: 60px; } }
       .earth-matters-topic-bar__featured-links-container .dropdown .dropbtn:after {
         background: transparent url("/themes/stanford/matson/img/optimized/carrot.svg") no-repeat right center;
         content: "";
@@ -1267,7 +1301,7 @@
     .earth-matters-topic-bar__featured-links-container .dropdown .earth-matters-topic-bar__all-links-container {
       display: none;
       position: absolute;
-      background-color: #231f20;
+      background-color: #585754;
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
@@ -1280,7 +1314,7 @@
       .earth-matters-topic-bar__featured-links-container .dropdown .earth-matters-topic-bar__all-links-container ul {
         display: block; }
         .earth-matters-topic-bar__featured-links-container .dropdown .earth-matters-topic-bar__all-links-container ul li {
-          margin: 0 0 2.25rem;
+          margin: 0 0 2.1rem;
           list-style: none; }
           .earth-matters-topic-bar__featured-links-container .dropdown .earth-matters-topic-bar__all-links-container ul li a {
             color: #fff;
@@ -1306,10 +1340,6 @@
     background-color: #231f20;
     color: #ffffff;
     text-decoration: underline; }
-  @media (min-width: 768px) {
-    .dropdown {
-      border-left: 1px solid #6D6C69;
-      border-right: 1px solid #6D6C69; } }
   .dropdown .dropbtn {
     background-color: transparent;
     color: #231f20;
@@ -1353,20 +1383,12 @@
   height: 6.5rem;
   background: #2F2424;
   opacity: 0.9;
-  text-align: center;
   display: flex; }
 
 .earth-matters-topic-bar__header {
   margin: 0;
   font-size: 3.6rem;
   opacity: 1; }
-
-.c-block--earth-magazine {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #FEC51D;
-  height: 5.5rem; }
 
 .topics-nav--earth-magazine {
   display: flex;
@@ -1390,17 +1412,6 @@
         .topics-nav--earth-magazine li a:hover:active, .topics-nav--earth-magazine li a:active:active, .topics-nav--earth-magazine li a:focus:active {
           color: black;
           border-bottom: 2px solid black; }
-
-.c-block--earth-magazine .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  padding: 0; }
-
-@media (min-width: 768px) {
-  .c-block--earth-magazine .container {
-    justify-content: flex-start; } }
 
 /* .c-block__title--earth-magazine {
     display: none;

@@ -9,6 +9,18 @@
 // Grab our mixins.
 @import "utilities/utilities";
 
+.earth-matters-topic-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FEC51D;
+    height: 5.5rem;
+
+    @media (min-width: 768px) {
+        justify-content: flex-start;
+    }
+}
+
 .earth-matters-topic-bar__featured-links-container {
     display: flex;
     align-items: center;
@@ -21,29 +33,52 @@
     }
     
     & > .menu {
-        display: flex;
-        flex-direction: row;
-        padding-inline-start: 88px;
+        display: none;
+        // padding-inline-start: 88px;
         margin: 0;
+        
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            // justify-content: flex-start;
+        }
 
         li {
             display: inline;
             list-style: none;
             font-size: 22px;
             text-transform: uppercase;
-            margin-right: 88px;
+            // margin-right: 88px;
 
             a {
                 color: black;
                 font-weight: 400;
                 transition: none;
                 border-bottom: none;
+                padding: 14px 15px;
 
+                @media (min-width: 992px) {
+                    padding: 14px 40px;
+                }
+
+                @media (min-width: 1190px) {
+                    padding: 14px 60px;
+                }
                 
                 @include on-event {
-                    color: #820000;
-                    border-bottom: 2px solid #820000;
+                    color: #fff;
+                    // border-bottom: 2px solid #820000;
                     text-decoration: none;
+                    background-color: #585754;
+                    padding: 14px 15px;
+
+                    @media (min-width: 992px) {
+                        padding: 14px 40px;
+                    }
+
+                    @media (min-width: 1190px) {
+                        padding: 14px 60px;
+                    }
 
                     &:active {
                         color: black;
@@ -56,6 +91,9 @@
     .dropdown {
         position: relative;
         display: inline-block;
+        border-left: 1px solid #6D6C69;
+        border-right: 1px solid #6D6C69;
+        width: max-content;
     
         &:hover {
             .earth-matters-topic-bar__all-links-container {
@@ -63,7 +101,8 @@
             }
     
             .dropbtn {
-                background-color: #231f20;
+                // background-color: #231f20;
+                background-color: #585754;
                 color: #ffffff;
                 text-decoration: underline;
 
@@ -77,10 +116,10 @@
     
         }
     
-        @media (min-width: 768px) {
-            border-left: 1px solid #6D6C69;
-            border-right: 1px solid #6D6C69;
-        }
+        // @media (min-width: 768px) {
+        //     border-left: 1px solid #6D6C69;
+        //     border-right: 1px solid #6D6C69;
+        // }
         
         .dropbtn {
             background-color: transparent;
@@ -91,6 +130,19 @@
             border: none;
             text-transform: none;
             line-height: normal;
+            padding-right: 15px;
+            padding-left: 15px;
+
+            @media (min-width: 992px) {
+                padding-right: 40px;
+                padding-left: 40px;
+            }
+
+            @media (min-width: 1190px) {
+                padding-right: 60px;
+                padding-left: 60px;
+            }
+            
 
             &:after {
                 background: transparent url('/themes/stanford/matson/img/optimized/carrot.svg') no-repeat right center;
@@ -105,7 +157,8 @@
         .earth-matters-topic-bar__all-links-container {
             display: none;
             position: absolute;
-            background-color: #231f20;
+            // background-color: #231f20;
+            background-color: #585754;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
@@ -120,10 +173,13 @@
 
             ul {
                 display: block;
+                
 
                 li {
-                    margin: 0 0 2.25rem;
+                    margin: 0 0 2.1rem;
                     list-style: none;
+
+                    
                     
                     a {
                         color: #fff;
@@ -169,10 +225,10 @@
 
     }
 
-    @media (min-width: 768px) {
-        border-left: 1px solid #6D6C69;
-        border-right: 1px solid #6D6C69;
-    }
+    // @media (min-width: 768px) {
+    //     border-left: 1px solid #6D6C69;
+    //     border-right: 1px solid #6D6C69;
+    // }
     
     .dropbtn {
         background-color: transparent;
@@ -232,7 +288,7 @@
     height: 6.5rem;
     background: #2F2424;
     opacity: 0.9;
-    text-align: center;
+    // text-align: center;
     display: flex;
 }
 
@@ -242,14 +298,14 @@
     opacity: 1;
 }
 
-.c-block--earth-magazine {
-    display: flex;
-    align-items: center;
-    // justify-content: flex-start;
-    justify-content: center;
-    background: #FEC51D;
-    height: 5.5rem;
-}
+// .c-block--earth-magazine {
+//     display: flex;
+//     align-items: center;
+//     // justify-content: flex-start;
+//     justify-content: center;
+//     background: #FEC51D;
+//     height: 5.5rem;
+// }
 
 .topics-nav--earth-magazine {
     display: flex;
@@ -284,19 +340,19 @@
     }
 }
 
-.c-block--earth-magazine .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    padding: 0;
-}
+// .c-block--earth-magazine .container {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     height: 100%;
+//     padding: 0;
+// }
 
-@media (min-width: 768px) {
-    .c-block--earth-magazine .container {
-        justify-content: flex-start;
-    }
-}
+// @media (min-width: 768px) {
+//     .c-block--earth-magazine .container {
+//         justify-content: flex-start;
+//     }
+// }
 
 /* .c-block__title--earth-magazine {
     display: none;
