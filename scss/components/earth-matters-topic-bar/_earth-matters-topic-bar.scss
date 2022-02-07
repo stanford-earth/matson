@@ -165,18 +165,21 @@
             padding: 3rem 5rem 1rem 5rem;
             text-align: right;
             right: 0;
+            width: 45.0625rem;
             
-            @media (min-width: 1190px) {
-                width: 45.0625rem;
+            @media (max-width: 768px) {
+                // width: 45.0625rem;
+                width: calc(100% + 60rem);
+                text-align: center;
+                right: -29rem;
             }
-            // width: 45.0625rem;
 
             ul {
                 display: block;
                 
 
                 li {
-                    margin: 0 0 2.1rem;
+                    margin: 0 0 1.75rem;
                     list-style: none;
 
                     
