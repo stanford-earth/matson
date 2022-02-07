@@ -1,0 +1,877 @@
+@charset 'UTF-8';
+
+// My Config.
+@import "config/config";
+
+// Decanter config.
+@import "decanter/core/utilities/decanter-utilities";
+
+// Grab our mixins.
+@import "utilities/utilities";
+
+.earth-matters-topic-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FEC51D;
+    height: 5.5rem;
+
+    @media (min-width: 768px) {
+        justify-content: flex-start;
+    }
+}
+
+.earth-matters-topic-bar__featured-links-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0;
+
+    @media (min-width: 768px) {
+        justify-content: flex-start;
+    }
+    
+    & > .menu {
+        display: none;
+        // padding-inline-start: 88px;
+        margin: 0;
+        
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            // justify-content: flex-start;
+        }
+
+        li {
+            display: inline;
+            list-style: none;
+            font-size: 22px;
+            text-transform: uppercase;
+            // margin-right: 88px;
+
+            a {
+                color: black;
+                font-weight: 400;
+                transition: none;
+                border-bottom: none;
+                padding: 14px 15px;
+
+                @media (min-width: 992px) {
+                    padding: 14px 40px;
+                }
+
+                @media (min-width: 1190px) {
+                    padding: 14px 60px;
+                }
+                
+                @include on-event {
+                    color: #fff;
+                    // border-bottom: 2px solid #820000;
+                    text-decoration: none;
+                    background-color: #585754;
+                    padding: 14px 15px;
+
+                    @media (min-width: 992px) {
+                        padding: 14px 40px;
+                    }
+
+                    @media (min-width: 1190px) {
+                        padding: 14px 60px;
+                    }
+
+                    &:active {
+                        color: black;
+                        border-bottom: 2px solid black;
+                    }
+                }
+            }
+        }
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        border-left: 1px solid #6D6C69;
+        border-right: 1px solid #6D6C69;
+        width: max-content;
+    
+        &:hover {
+            .earth-matters-topic-bar__all-links-container {
+                display: block;
+            }
+    
+            .dropbtn {
+                // background-color: #231f20;
+                background-color: #585754;
+                color: #ffffff;
+                text-decoration: underline;
+
+                &::after {
+                    background: transparent url('/themes/stanford/matson/img/optimized/carrot-white.svg') no-repeat right center;
+                    border-top: 1px solid #ffffff;
+                    transform: rotate(180deg);
+                    transition: all 150ms ease-in-out;
+                }
+            }
+    
+        }
+    
+        // @media (min-width: 768px) {
+        //     border-left: 1px solid #6D6C69;
+        //     border-right: 1px solid #6D6C69;
+        // }
+        
+        .dropbtn {
+            background-color: transparent;
+            color: #231f20;
+            font-size: 2.2rem;
+            font-weight: 600;
+            height: 5.5rem;
+            border: none;
+            text-transform: none;
+            line-height: normal;
+            padding-right: 15px;
+            padding-left: 15px;
+
+            @media (min-width: 992px) {
+                padding-right: 40px;
+                padding-left: 40px;
+            }
+
+            @media (min-width: 1190px) {
+                padding-right: 60px;
+                padding-left: 60px;
+            }
+            
+
+            &:after {
+                background: transparent url('/themes/stanford/matson/img/optimized/carrot.svg') no-repeat right center;
+                content: "";
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                margin-left: 1.25rem;
+            }
+        }
+    
+        .earth-matters-topic-bar__all-links-container {
+            display: none;
+            position: absolute;
+            // background-color: #231f20;
+            background-color: #585754;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            padding: 3rem 5rem 1rem 5rem;
+            text-align: right;
+            right: 0;
+            width: 45.0625rem;
+            
+            @media (max-width: 768px) {
+                // width: 45.0625rem;
+                width: calc(100% + 60rem);
+                text-align: center;
+                right: -29rem;
+            }
+
+            ul {
+                display: block;
+                
+
+                li {
+                    margin: 0 0 1.75rem;
+                    list-style: none;
+
+                    
+                    
+                    a {
+                        color: #fff;
+                        font-size: 2.2rem;
+                        line-height: 1.6;
+                        color: #fff;
+                        font-weight: 600;
+                        transition: none;
+                        border-bottom: none;
+                        text-decoration: none;
+                
+                        @include on-event {
+                            border-bottom: 2px solid #fff;
+                    
+                            &:active {
+                                color: #FEC51D;
+                                border-bottom: 1px solid #FEC51D;
+                            }
+                        }
+                    }
+                }
+            }
+    
+        
+        }
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    &:hover {
+        .dropdown-content {
+            display: block;
+        }
+
+        .dropbtn {
+            background-color: #231f20;
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+    }
+
+    // @media (min-width: 768px) {
+    //     border-left: 1px solid #6D6C69;
+    //     border-right: 1px solid #6D6C69;
+    // }
+    
+    .dropbtn {
+        background-color: transparent;
+        color: #231f20;
+        font-size: 2.2rem;
+        font-weight: 600;
+        height: 5.5rem;
+        border: none;
+        text-transform: none;
+        line-height: normal;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #231f20;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        padding: 3rem 5rem 1rem 5rem;
+        text-align: right;
+        right: 0;
+        
+        @media (min-width: 1190px) {
+            width: 45.0625rem;
+        }
+        // width: 45.0625rem;
+
+        li {
+            margin: 0 0 2.25rem;
+            list-style: none;
+            
+            a {
+                color: #fff;
+                font-size: 2.2rem;
+                line-height: 1.6;
+                color: #fff;
+                font-weight: 600;
+                transition: none;
+                border-bottom: none;
+        
+                @include on-event {
+                    border-bottom: 2px solid #fff;
+            
+                    &:active {
+                        color: #FEC51D;
+                        border-bottom: 1px solid #FEC51D;
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+.earth-matters-topic-bar__header-container {
+    height: 6.5rem;
+    background: #2F2424;
+    opacity: 0.9;
+    // text-align: center;
+    display: flex;
+}
+
+.earth-matters-topic-bar__header {
+    margin: 0;
+    font-size: 3.6rem;
+    opacity: 1;
+}
+
+// .c-block--earth-magazine {
+//     display: flex;
+//     align-items: center;
+//     // justify-content: flex-start;
+//     justify-content: center;
+//     background: #FEC51D;
+//     height: 5.5rem;
+// }
+
+.topics-nav--earth-magazine {
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 88px;
+    margin: 0;
+
+    li {
+        display: inline;
+        list-style: none;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-right: 88px;
+
+        a {
+            color: black;
+            font-weight: 400;
+            transition: none;
+            border-bottom: none;
+
+            
+            @include on-event {
+                color: #820000;
+                border-bottom: 2px solid #820000;
+
+                &:active {
+                    color: black;
+                    border-bottom: 2px solid black;
+                }
+            }
+        }
+    }
+}
+
+// .c-block--earth-magazine .container {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     height: 100%;
+//     padding: 0;
+// }
+
+// @media (min-width: 768px) {
+//     .c-block--earth-magazine .container {
+//         justify-content: flex-start;
+//     }
+// }
+
+/* .c-block__title--earth-magazine {
+    display: none;
+    font-size: 2.125rem;
+    font-family: "NewsGothicBT", "Avant Garde", "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #231f20;
+    margin: 0 1.25rem 0 0;
+} */
+
+/* @media (min-width: 768px) {
+    .c-block__title--earth-magazine {
+        display: block;
+    }
+}
+
+.c-block__title--earth-magazine span {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .c-block__title--earth-magazine span {
+        display: inline;
+    }
+} */
+
+/* .c-block__title--earth-magazine .heading__link::after {
+    content: none;
+}
+
+.c-block__title--earth-magazine a {
+    color: inherit;
+}
+
+.c-block__title--earth-magazine a:hover {
+    text-decoration: none;
+    border-bottom: 0.0625rem solid #231f20;
+} */
+
+@media (min-width: 768px) {
+    .c-block__menu-wrapper--earth-magazine {
+        border-left: 1px solid #6D6C69;
+        border-right: 1px solid #6D6C69;
+    }
+}
+
+.c-block__menu-wrapper--earth-magazine .c-menu {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    padding: 1.625rem;
+    -moz-column-count: 1;
+    column-count: 1;
+    background: #231f20;
+}
+
+// @media (min-width: 992px) {
+//     .c-block__menu-wrapper--earth-magazine .c-menu {
+//         -moz-column-count: 3;
+//         column-count: 3;
+//     }
+// }
+
+@media (min-width: 1190px) {
+    .c-block__menu-wrapper--earth-magazine .c-menu {
+        width: 45.0625rem;
+    }
+}
+
+.c-block__menu-wrapper--earth-magazine .c-menu li {
+    padding: 0;
+    line-height: 0;
+    margin: 0 0 1.125rem;
+    list-style: none;
+}
+
+.c-block__menu-wrapper--earth-magazine .c-menu a {
+    font-size: 2.2rem;
+    line-height: 1.6;
+    color: #fff;
+    font-weight: 600;
+    transition: none;
+    border-bottom: none;
+
+    @include on-event {
+        border-bottom: 2px solid #fff;
+
+        &:active {
+            color: #FEC51D;
+            border-bottom: 1px solid #FEC51D;
+        }
+    }
+}
+
+.c-block__menu-wrapper--earth-magazine.open .c-menu {
+    display: block;
+    text-align: right;
+    margin: 0;
+}
+
+.c-menu {
+    &:hover {
+        display: block;
+        text-align: right;
+        margin: 0;
+    }
+}
+
+.c-block__menu-wrapper--earth-magazine.open .c-block__menu-title {
+    background: #231f20;
+    color: #fff;
+    text-decoration: underline;
+    text-transform: none;
+    font-size: 2.2rem;
+    line-height: 5.5rem;
+}
+
+.c-block__menu-wrapper--earth-magazine.open .c-block__menu-title::after {
+    content: "^";
+    // background: transparent url("/themes/stanford/matson/img/optimized/carrot.svg") no-repeat right center;
+    display: inline;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-transform: none;
+    line-height: 1;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: 'icons';
+    font-size: 1rem;
+    margin-left: 0.3125rem;
+}
+
+.c-block__menu-title--earth-magazine {
+    font-size: 2.2rem;
+    height: 5.5rem;
+    line-height: 5.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 16.5rem;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: #000;
+    text-transform: none;
+}
+
+// .c-block__menu-title--earth-magazine::after {
+//     content: "^*";
+//     content: "";
+//     background: url("/themes/stanford/matson/img/optimized/carrot.svg") no-repeat right center;
+//     display: inline;
+//     text-rendering: optimizeLegibility;
+//     -moz-osx-font-smoothing: grayscale;
+//     -webkit-font-smoothing: antialiased;
+//     text-transform: none;
+//     line-height: 1;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: normal;
+//     font-family: 'icons';
+//     font-size: 1rem;
+//     margin-left: 0.3125rem;
+// }
+
+// .c-block__menu-title--earth-magazine:focus {
+//     box-shadow: none;
+//     outline: 1px dashed;
+// }
+
+// .c-block__menu-title--earth-magazine::after {
+//     font-size: 0.875rem !important;
+//     margin-left: 1.25rem !important;
+//     position: relative !important;
+//     top: -0.1875rem;
+// }
+
+// .c-block__search-wrapper--earth-magazine {
+//     display: flex;
+//     align-items: center;
+//     height: 100%;
+//     border-left: 1px solid #6D6C69;;
+// }
+
+// @media (min-width: 768px) {
+//     .c-block__search-wrapper--earth-magazine {
+//         border-left: none;
+//         border-right: 1px solid #6D6C69;;
+//     }
+// }
+
+// .c-block__search-wrapper--earth-magazine form {
+//     position: relative;
+//     display: none;
+// }
+
+// .c-block__search-wrapper--earth-magazine form.search-open {
+//     display: block;
+// }
+
+// .c-block__search-wrapper--earth-magazine label {
+//     display: none;
+// }
+
+// .c-block__search-wrapper--earth-magazine .icon--insights-search {
+//     position: relative;
+//     display: inline-block;
+//     top: 0.375rem;
+//     text-decoration: none !important;
+// }
+
+// .c-block__search-wrapper--earth-magazine .icon--insights-search::after {
+//     content: "^";
+//     // background: transparent url("/themes/stanford/matson/img/optimized/carrot.svg") no-repeat right center;
+//     display: inline;
+//     text-rendering: optimizeLegibility;
+//     -moz-osx-font-smoothing: grayscale;
+//     -webkit-font-smoothing: antialiased;
+//     text-transform: none;
+//     line-height: 1;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: normal;
+//     font-family: 'icons';
+//     font-size: 1rem;
+//     margin-left: 0.3125rem;
+// }
+
+// .c-block__search-wrapper--earth-magazine .icon--insights-search::after {
+//     font-size: 1.5rem;
+//     color: #231f20;
+//     margin: 0;
+//     padding: 0 1.3125rem;
+// }
+
+// .c-block__search-wrapper--earth-magazine .icon--insights-search.search-open {
+//     display: none;
+// }
+
+// .c-block__search-wrapper--earth-magazine .form-text {
+//     height: 4.125rem;
+//     border: 1px solid #8c8c8c;
+//     background: #f4f4f4;
+//     color: #666666;
+//     font-size: 1.25rem;
+//     width: 13.875rem;
+//     line-height: 1.5;
+//     padding: 0.4375rem 3.25rem 0.375rem 1.25rem;
+// }
+
+// @media (min-width: 992px) {
+//     .c-block__search-wrapper--earth-magazine .form-text {
+//         width: 22.75rem;
+//     }
+// }
+
+// .c-block__search-wrapper--earth-magazine .form-submit {
+//     position: absolute;
+//     top: 50%;
+//     right: 0.375rem;
+//     transform: translateY(-50%);
+//     width: 2.8125rem;
+//     height: 2.25rem;
+//     margin: 0;
+//     padding: 0;
+//     background: url("/themes/custom/gsb/dist/css/../images/icon-search-red.svg") no-repeat center;
+//     border-radius: 0;
+//     border: none;
+//     text-indent: 1000px;
+//     overflow: hidden;
+//     z-index: 99;
+// }
+
+// .c-block__search-wrapper--earth-magazine .form-submit:hover {
+//     background: transparent;
+//     background: url("/themes/custom/gsb/dist/css/../images/search-hover.svg") no-repeat center;
+// }
+
+/*.btn.icon--search,.btn.icon--search-button{display:inline-block;background:url("/themes/custom/gsb/dist/css/../images/icon-search-white.svg") no-repeat center/48% #8c1515;height:3.125rem;width:3.125rem;border-left:0.0625rem solid transparent;padding:0;font-size:0;}@media (min-width:1190px){.btn.icon--search,.btn.icon--search-button{background:url("/themes/custom/gsb/dist/css/../images/icon-search-red.svg") no-repeat center/40% #fff;background-size:40%;box-shadow:none;height:3.75rem;width:3.75rem;}.btn.icon--search:focus,.btn.icon--search-button:focus{box-shadow:#009cba 0 0 0.75rem;border-color:#009cba !important;outline:none;}}@media (min-width:1190px){.btn.icon--search:hover,.btn.icon--search-button:hover{background:url("/themes/custom/gsb/dist/css/../images/icon-search-white.svg") no-repeat center/40% #26639d;}}.btn.icon--search.open,.btn.icon--search-button.open{background:url("/themes/custom/gsb/dist/css/../images/icon-cancel-search.png") no-repeat center/50% #8c1515;}@media (min-width:1190px){.btn.icon--search.open,.btn.icon--search-button.open{background:url("/themes/custom/gsb/dist/css/../images/icon-cancel-search.png") no-repeat center/50% #8c1515;}}.btn.icon--search::after,.btn.icon--search-button::after{content:none;}.form-search-wrapper{display:none;position:absolute;top:0;bottom:auto;right:inherit;left:0;border:0;z-index:99;width:calc(100% - 47px);}@media (min-width:1190px){.form-search-wrapper{top:auto;right:0;left:inherit;bottom:-5.375rem;width:auto;max-width:none;}}.form-search-wrapper .form-item{margin:0;}.form-search-wrapper .form-search-input{-webkit-appearance:none;-moz-appearance:none;appearance:none;height:3.125rem;width:100%;max-width:none;border:0.0625rem solid #8c1515;border-radius:0;padding:0.625rem 2.1875rem 0.625rem 0.9375rem;outline:0;font-family:"NewsGothicBT","Avant Garde","Futura","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:1.125rem;color:#231f20;}@media (min-width:1190px){.form-search-wrapper .form-search-input{width:51.5625rem;height:3.75rem;padding:0.375rem 0.625rem;box-shadow:none;}}.form-search-wrapper .form-search-input:focus{border-color:#009cba;box-shadow:#009cba 0 0 0.75rem;}.form-search-wrapper .icon--search-button{position:absolute;right:0;top:0;background:url("/themes/custom/gsb/dist/css/../images/icon-search-red.svg") no-repeat center/40% #fff;margin:0;border-radius:0;box-shadow:none;}.form-search-wrapper.open .icon--search-button{border:0.0625rem solid #8c1515;border-left:0;}.form-search-wrapper.open .icon--search-button:focus{box-shadow:#009cba 0 0 0.75rem;border-color:#009cba !important;outline:none;}.active + .form-search-wrapper{display:inline-block;}.form-search{position:relative;}body.search-open .global-search{position:static;}@media (min-width:1190px){body.search-open .global-search{position:relative;}}@media (min-width:1190px){body.search-open .main-content,body.search-open .exced-main-content{opacity:0.1;}}body.search-open .form-search-wrapper{display:block;}@media (min-width:1190px){body.page-seed .form-search-wrapper,body.page-exec-ed .form-search-wrapper,body.page-exec-ed-search .form-search-wrapper{bottom:-4.6875rem;}}*/
+/*.c-menu--utility{font-size:1.125rem;}.c-menu__item--utility{margin:0;padding:0.8125rem 0.3125rem 0.8125rem 0;border-bottom:0.0625rem solid #f2f2f2;background:url("/themes/custom/gsb/dist/css/../images/arrow-utility-nav.svg") no-repeat;background-origin:content-box;background-position:right center;}.c-menu__item--utility:first-of-type{padding-top:0;}.c-menu__item--expanded.utility--expanded,.c-menu__item--active-trail.utility--expanded{padding:0.8125rem 0;border-bottom:none;background-position:99% 0.4375rem;}.c-menu__item--expanded.utility--expanded .c-menu,.c-menu__item--active-trail.utility--expanded .c-menu{margin:0.8125rem 0 0;border-top:0.0625rem solid #f2f2f2;}.c-menu__item-link--utility{padding:0;font-size:1.125rem;line-height:1.3;color:#231f20;text-decoration:none;}*/
+/*.c-menu--mega-child{list-style:none;}.c-menu__item--mega-child{display:list-item;margin:0;padding:0.625rem 0;box-sizing:border-box;}.c-menu__item--mega-child::before{content:none;}.c-menu__item--mega-child:first-child{padding-top:0;}.c-menu__item--expanded.mega-child--expanded,.c-menu__item--active-trail.mega-child--expanded{padding:0.625rem 0;}.c-menu__item--expanded.mega-child--expanded .c-menu,.c-menu__item--active-trail.mega-child--expanded .c-menu{margin:0.625rem 0 0;}.c-menu__item-link--mega-child{padding:0;font-family:"NewsGothicBT-Light","Avant Garde","Futura","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:1.125rem;line-height:1.3;color:#231f20;text-decoration:none;}.c-menu__item-link--mega-child.link-title{font-family:"NewsGothicBT","Avant Garde","Futura","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:1.25rem;font-weight:bold;}*/
+/*.layout{display:flex;flex-wrap:wrap;}.layout > .layout__column{padding-right:1.25rem;}.layout--twocol-section > .layout__column,.columns-2 > .layout__column{flex:0 1 50%;}@media (max-width:1189.98px){.layout--twocol-section > .layout__column,.columns-2 > .layout__column{flex:0 1 100%;}}.layout--threecol-section > .layout__column,.columns-3 > .layout__column{flex:0 1 33%;}@media (max-width:1189.98px){.layout--threecol-section > .layout__column,.columns-3 > .layout__column{flex:0 1 100%;}}.layout--fourcol-section > .layout__column,.columns-4 > .layout__column{flex:0 1 25%;}@media (max-width:1189.98px){.layout--fourcol-section > .layout__column,.columns-4 > .layout__column{flex:0 1 100%;}}*/
+.c-menu--mega-primary {
+    position: static;
+    border-bottom: 0.1875rem solid #231f20;
+    padding: 0.3125rem 0 0 0;
+}
+
+@media (min-width: 1190px) {
+    .c-menu--mega-primary {
+        border: none;
+    }
+}
+
+.c-menu__item--mega-primary.l-0 {
+    position: static;
+    display: list-item;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.c-menu__item--mega-primary.l-0::before {
+    content: none;
+}
+
+@media (min-width: 1190px) {
+    .c-menu__item--mega-primary.l-0:hover > a > span {
+        border-bottom: 0.375rem solid #8c1515;
+    }
+}
+
+.c-menu__item--mega-primary.l-0 > .menu_link_content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    transition: max-height 0.5s ease-in-out;
+}
+
+@media (min-width: 1190px) {
+    .c-menu__item--mega-primary.l-0 > .menu_link_content {
+        display: none;
+        position: absolute;
+        left: 0;
+    }
+}
+
+@media (min-width: 1190px) {
+    .c-menu__item--mega-primary.l-0 {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1190px) {
+    .c-menu__item--expanded.mega-primary--expanded.l-0:hover > .menu_link_content, .c-menu__item--expanded.mega-primary--expanded.l-0.show-menu > .menu_link_content, .c-menu__item--active-trail.mega-primary--expanded.l-0:hover > .menu_link_content, .c-menu__item--active-trail.mega-primary--expanded.l-0.show-menu > .menu_link_content {
+        display: block;
+        position: absolute;
+        left: auto;
+        right: 0;
+        max-height: none;
+        height: auto;
+        width: 100%;
+        padding: 2.8125rem 1.25rem 1.875rem;
+        z-index: 100;
+        background-color: transparent;
+        box-shadow: 0 0.625rem 0.9375rem -0.3125rem #808080;
+        border-bottom: 0.1875rem solid #231f20;
+    }
+
+    .c-menu__item--expanded.mega-primary--expanded.l-0:hover > .menu_link_content::before, .c-menu__item--expanded.mega-primary--expanded.l-0.show-menu > .menu_link_content::before, .c-menu__item--active-trail.mega-primary--expanded.l-0:hover > .menu_link_content::before, .c-menu__item--active-trail.mega-primary--expanded.l-0.show-menu > .menu_link_content::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 1.5625rem;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.c-menu__item--expanded.mega-primary--expanded.l-0 > a::after, .c-menu__item--active-trail.mega-primary--expanded.l-0 > a::after {
+    content: "ï„›";
+    display: inline;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-transform: none;
+    line-height: 1;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: 'icons';
+    font-size: 1rem;
+    margin-left: 0.3125rem;
+}
+
+.c-menu__item--expanded.mega-primary--expanded.l-0 > a::after, .c-menu__item--active-trail.mega-primary--expanded.l-0 > a::after {
+    color: #8c1515;
+    float: right;
+    font-size: 1.125rem;
+}
+
+@media (min-width: 1190px) {
+    .c-menu__item--expanded.mega-primary--expanded.l-0 > a::after, .c-menu__item--active-trail.mega-primary--expanded.l-0 > a::after {
+        content: none;
+    }
+}
+
+.c-menu__item--expanded.mega-primary--expanded.l-0 .c-menu, .c-menu__item--active-trail.mega-primary--expanded.l-0 .c-menu {
+    margin: 20px 0 0;
+}
+
+@media (min-width: 1190px) {
+    .c-menu__item--expanded.mega-primary--expanded.l-0 .c-menu, .c-menu__item--active-trail.mega-primary--expanded.l-0 .c-menu {
+        margin-top: 0;
+        padding-left: 0;
+    }
+}
+
+.c-menu__item--expanded.mega-primary--expanded.open > a::after, .c-menu__item--active-trail.mega-primary--expanded.open > a::after {
+    content: "ï„—";
+    display: inline;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-transform: none;
+    line-height: 1;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: 'icons';
+    font-size: 1rem;
+    margin-left: 0.3125rem;
+}
+
+@media (min-width: 1190px) {
+    .c-menu__item--expanded.mega-primary--expanded.open > a::after, .c-menu__item--active-trail.mega-primary--expanded.open > a::after {
+        content: none;
+    }
+}
+
+.c-menu__item--expanded.mega-primary--expanded.open > .menu_link_content, .c-menu__item--active-trail.mega-primary--expanded.open > .menu_link_content {
+    max-height: 100vh;
+}
+
+.c-menu__item--expanded.mega-primary--expanded > .c-menu, .c-menu__item--active-trail.mega-primary--expanded > .c-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 4.375rem;
+    min-width: 15.625rem;
+    background-color: #fff;
+    padding: 0 0.9375rem 0.9375rem;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+@media (min-width: 1190px) {
+    .c-menu__item--expanded.mega-primary--expanded:hover > .menu_link_content, .c-menu__item--active-trail.mega-primary--expanded:hover > .menu_link_content {
+        display: block;
+        max-height: -webkit-fit-content;
+        max-height: -moz-fit-content;
+        max-height: fit-content;
+    }
+
+    .c-menu__item--expanded.mega-primary--expanded:hover > .c-menu, .c-menu__item--active-trail.mega-primary--expanded:hover > .c-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .c-menu__item--expanded.mega-primary--expanded:hover > .c-menu::before, .c-menu__item--active-trail.mega-primary--expanded:hover > .c-menu::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3.125rem;
+        top: -3.125rem;
+    }
+}
+
+.c-menu__item-link--mega-primary.l-0 {
+    display: block;
+    margin: 0;
+    padding: 1.25rem;
+    background-color: #f4f4f4;
+    color: #8c1515;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: "NewsGothicBT-Demi", "Avant Garde", "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+@media (min-width: 1190px) {
+    .c-menu__item-link--mega-primary.l-0 {
+        font-size: 1.25rem;
+    }
+}
+
+.c-menu__item-link--mega-primary.l-0 > span {
+    padding: 0;
+}
+
+.c-menu__item-link--mega-primary.l-0:hover {
+    color: #231f20;
+    text-decoration: none;
+}
+
+.c-menu__item-link--mega-primary.l-0:hover > span {
+    border: none;
+}
+
+.c-menu__item-link--mega-primary.l-0[target='_blank']:hover::after {
+    color: #231f20;
+}
+
+@media (min-width: 1190px) {
+    .c-menu__item-link--mega-primary.l-0 {
+        border: none;
+        display: inline-block;
+        background-color: transparent;
+        padding: 0 0.9375rem;
+    }
+
+    .c-menu__item-link--mega-primary.l-0.active-trail {
+        color: #231f20;
+    }
+
+    .c-menu__item-link--mega-primary.l-0.active-trail > span {
+        border-bottom: 0.375rem solid #8c1515;
+    }
+
+    .c-menu__item-link--mega-primary.l-0 > span {
+        display: inline;
+        padding: 0 0 1.3125rem;
+    }
+}
