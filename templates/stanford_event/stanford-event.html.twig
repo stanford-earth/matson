@@ -27,7 +27,17 @@
           {% if mapurl|render|striptags|trim is not empty %}
           <a href="{{ mapurl|render|striptags|trim }}">
           {% endif %}
-            {{ where }}
+            {%  if where is iterable %}
+              {% set rendered_where = "" %}
+              {% for field in where %}
+                {% for key, item in field if key|first != '#' %}
+                  {% set rendered_where = rendered_where ~ "#{item|render}, "  %}
+                {% endfor %}
+              {% endfor %}
+              {{ rendered_where|trim|slice(0, -1)|raw }}
+            {% else %}
+              {{ where }}
+            {% endif %}
           {% if mapurl|render|striptags|trim is not empty %}
           </a>
           {% endif %}
