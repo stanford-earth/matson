@@ -62,9 +62,19 @@
         </dd>
         {% endif %}
         {% if sponsor|render|striptags|trim is not empty %}
-        <dt>{{ 'Sponsor'|t }}:</dt>
+        <dt>{{ 'Sponsors'|t }}:</dt>
         <dd>
+        {% if sponsor is iterable %}
+        {% set rendered_sponsor = "" %}
+          {% for field in sponsor %}
+            {% for key, item in field if key|first != '#' %}
+              {% set rendered_sponsor = rendered_sponsor ~ "#{item|render}, "  %}
+            {% endfor %}
+          {% endfor %}
+          {{ rendered_sponsor|trim|slice(0, -1)|raw }}
+        {% else %}
           {{ sponsor }}
+        {% endif %}
         </dd>
         {% endif %}
       </dl>
