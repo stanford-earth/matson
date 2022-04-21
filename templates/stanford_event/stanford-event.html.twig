@@ -18,7 +18,17 @@
         {% if when|render|striptags|trim is not empty %}
         <dt>{{ 'When'|t }}:</dt>
         <dd>
-          {{ when }}
+          {% if when is iterable %}
+            {% set rendered_when = "" %}
+            {% for field in when %}
+                {% for key, item in field if key|first != '#' %}
+                  {% set rendered_when = rendered_when ~ "#{item|render} - "  %}
+                {% endfor %}
+            {% endfor %}
+            {{ rendered_when|trim|slice(0, -1)|raw }}
+          {% else %}
+            {{ when }}
+          {% endif %}
         </dd>
         {% endif %}
         {% if where|render|striptags|trim is not empty %}
@@ -68,7 +78,17 @@
         {% if audience|render|striptags|trim is not empty %}
         <dt>{{ 'Audience'|t }}:</dt>
         <dd>
+          {% if audience is iterable %}
+          {% set rendered_audience = "" %}
+            {% for field in audience %}
+            {% for key, item in field if key|first != '#' %}
+              {% set rendered_audience = rendered_audience ~ "#{item|render}, "  %}
+            {% endfor %}
+          {% endfor %}
+          {{ rendered_audience|trim|slice(0, -1)|raw }}
+        {% else %}
           {{ audience }}
+        {% endif %}
         </dd>
         {% endif %}
         {% if sponsor|render|striptags|trim is not empty %}
@@ -98,7 +118,6 @@
 </div>
 
 <div class="block-matson-content">
-
   {% if description|render|striptags|trim is not empty %}
   <div class="content-description lead-text">
     {{ description }}
