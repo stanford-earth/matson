@@ -1,3 +1,7 @@
+Version 8.x-2.2                                                   2022-04-20
+----------------------------------------------------------------------------
+- EARTH-0000 Add audience and end-date/time fields to events template..
+
 Version 8.x-2.1                                                   2022-03-15
 ----------------------------------------------------------------------------
 - EARTH-0000 Stanford Events display updates.
