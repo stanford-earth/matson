@@ -169,7 +169,14 @@
 }
 
 .contact-footer__brand {
-  padding: 4em 0 1em;
+  padding: 3em 0 0;
+  /* padding: 4em 0 1em; */
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-footer__brand {
+      padding: 2em 0 2em;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -381,6 +388,66 @@ a:hover .simple-block__arrow svg use, a:active .simple-block__arrow svg use, a:f
 /* SDSS-115: Update Footer Background color */
 #footer__container .contact-footer.visible {
   background: #014240;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-footer__links .menu a {
+    font-size: 1.9rem;
+    padding: 0;
+  }
+}
+
+.contact-footer__links .menu > li:first-of-type {
+  line-height: inherit;
+  padding-top: 0;
+}
+
+.contact-footer__links .menu > li:first-of-type a {
+  padding-bottom: 0;
+}
+
+.contact-footer__links .menu a:hover, .contact-footer__links .menu a:active, .contact-footer__links .menu a:focus {
+  text-decoration: underline;
+  color: #66aaae;
+}
+
+.contact-footer__links .menu a {
+  font-weight: 600;
+  letter-spacing: 0;
+  padding: 0;
+  opacity: 1;
+  text-transform: capitalize;
+  font-size: 1.9rem;
+  text-decoration: underline;
+  color: #92d7dd;
+}
+
+.contact-footer h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  opacity: 1;
+  margin-bottom: 0;
+  text-transform: inherit;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-footer h2 {
+    font-size: 2.4rem;
+    letter-spacing: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-footer__subscribe {
+    padding-top: 4.8rem;
+  }
+}
+
+.contact-footer__subscribe p {
+  display: block;
+  opacity: 0.75;
+  font-weight: 600;
 }
 
 /* SDSS-116: Update beige/fog background-color */
