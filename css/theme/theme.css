@@ -128,3 +128,344 @@
   color: #820000; }
 
 /*# sourceMappingURL=theme.css.map */
+
+/* SDSS-115: Update Footer Background color */
+#footer__container .contact-footer.visible {
+  background: #014240;
+}
+
+/* SDSS-98: Update the lock-up logo */
+.hero-banner__container {
+  border: none;
+}
+
+@media screen and (max-width: 859px) {
+  .block--lockup {
+    width: 245px;
+    padding-top: 57px;
+    transform: translateY(-37px);
+  }
+}
+
+.block--lockup__site-logo-wrapper .block--lockup__site-logo img {
+  width: 245px;
+}
+
+@media only screen and (min-width: 860px) {
+  .block--lockup__site-logo-wrapper .block--lockup__site-logo img {
+      width: 245px;
+      padding-top: 46px;
+      transform: translateY(-34px);
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .navbar__group {
+    margin-right: 0;
+  }
+}
+
+
+/* SDSS-98: Footer Lockup */
+@media only screen and (min-width: 1024px) {
+  .contact-footer__brand {
+      width: calc(33.3333333333% - 40px);
+  }
+}
+
+.contact-footer__brand {
+  padding: 4em 0 1em;
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact-footer__brand {
+    padding: 0 0 4em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-footer__brand .block--lockup__site-name-and-slogan, .contact-footer__brand .block--lockup__site-logo-wrapper .block--lockup__site-logo img {
+      width: 245px;
+      transform: translateY(13px);
+      padding-top: 0;
+  }
+}
+
+/* SDSS-116: Update beige/fog background-color */
+.postcard {
+  background-color: #E9F7F8;
+}
+
+@media only screen and (min-width: 1024px) {
+  .postcard.has-image-right:after {
+    background-color: #E9F7F8;
+  }
+}
+
+.editorial-sidebar .simple-block {
+  background-color: #E9F7F8;
+}
+
+.ptype-stanford-slat .simple-block {
+  background-color: #E9F7F8;
+}
+
+.section-people .user-info-block {
+  background-color: #E9F7F8;
+}
+
+/* SDSS-100: Update all link colors to align with SDSS subtheme */
+.highlight-card__intro {
+  color: #155F65;
+}
+
+.highlight-card__action:hover .highlight-card__intro {
+  color: #5B8F93;
+}
+
+.highlight-card__title {
+  color: #155F65;
+}
+
+.highlight-card__action:hover .highlight-card__title {
+  color: #5B8F93;
+}
+
+.highlight-card__action:hover {
+  color: #5B8F93;
+  text-decoration: underline;
+}
+
+.highlight-card__arrow svg use {
+  fill: #155F65;
+}
+
+.highlight-card__action:hover .highlight-card__arrow svg use, .highlight-card__action:active .highlight-card__arrow svg use, .highlight-card__action:focus .highlight-card__arrow svg use {
+  fill: #5B8F93;
+}
+
+.postcard .postcard__more use {
+  fill: #155F65;
+}
+
+.postcard .postcard__more:hover svg use {
+  fill: #5B8F93;
+}
+
+.callout-block .callout-block__title a {
+  color: #155F65;
+}
+
+.callout-block .callout-block__action use {
+  fill: #155F65;
+}
+
+.callout-block .callout-block__action:hover use, .callout-block .callout-block__action:active use, .callout-block .callout-block__action:focus use {
+  fill: #5B8F93;
+}
+
+.calendar-block__arrow svg use {
+  fill: #155F65;
+}
+
+.calendar-block__action:hover .calendar-block__arrow svg use, .calendar-block__action:active .calendar-block__arrow svg use, .calendar-block__action:focus .calendar-block__arrow svg use {
+  fill: #5B8F93;
+}
+
+.calendar-block__action:hover .calendar-block__day, .calendar-block__action:active .calendar-block__day, .calendar-block__action:focus .calendar-block__day {
+  color: #155F65;
+}
+
+.expandable-card__toggle svg use {
+  fill: #155F65;
+}
+
+.expandable-card__toggle:hover svg use, .expandable-card__toggle:active svg use, .expandable-card__toggle:focus svg use {
+  fill: #5B8F93;
+}
+
+.icon-item__arrow svg use {
+  fill: #155F65;
+}
+
+.icon-item {
+  color: #155F65;
+}
+
+.icon-item:hover, .icon-item:active, .icon-item:focus {
+  color: #5B8F93;
+}
+
+
+a {
+  color: #155F65;
+}
+
+a:hover, a:active, a:focus {
+  color: #5B8F93;
+}
+
+.simple-block__arrow svg use {
+  fill: #155F65;
+}
+
+a:hover .simple-block__arrow svg use, a:active .simple-block__arrow svg use, a:focus .simple-block__arrow svg use {
+  fill: #5B8F93;
+}
+
+.contact-footer a:hover, .contact-footer a:active, .contact-footer a:focus {
+  color: #fff;
+}
+
+.simple-block__link {
+  color: #155F65;
+}
+
+.simple-block__link:hover, .simple-block__link:active, .simple-block__link:focus {
+  color: #5B8F93;
+}
+
+/* SDSS-117: Update any black overlays to SDSS-Dark Green: #014240 */
+.section-highlight-banner::before {
+  background-color: rgba(1, 66, 64, 0.5);
+}
+
+.link-banner::before {
+  background-color: rgba(1, 66, 64, 0.35);
+}
+
+.photo-tile__action::before {
+  background-color: rgba(1, 66, 64, 0.35);
+}
+
+.simple-block__tag {
+  background-color: rgba(1, 66, 64, 0.5);
+}
+
+/* SDSS-118: Remove the dash associated with all heading styles */
+.field-p-wysiwyg h2 {
+  padding-left: 0;
+}
+
+.field-p-wysiwyg h2::after {
+  padding-left: 0;
+}
+
+.field-p-wysiwyg p {
+  margin-left: 0;
+}
+
+.section-header h2.has-dash-under, .section-header h2.has-dash-left, .section-feature-blocks.left-aligned .section-header h2.has-dash-under, .photo-mosaic__header h2.has-dash-under, .field-p-wysiwyg h2 {
+  margin-bottom: 0.3167228541em;
+}
+
+.section-header h2.has-dash-under::after, .section-header h2.has-dash-left::after, .section-feature-blocks.left-aligned .section-header h2.has-dash-under::after, .photo-mosaic__header h2.has-dash-under::after, .field-p-wysiwyg h2::after {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-banner__header.is-right .hero-banner__title {
+      padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-banner__header.is-right .hero-banner__title::after {
+      display: none;
+  }
+}
+
+.filmstrip .filmstrip__title::before {
+  display: none;
+}
+
+.photo-tile__title::after {
+  display: none;
+}
+
+/* SDSS-119: Remove the “underlay” of the initial letter from all heading style */
+.drop-cap-title__drop-cap {
+  display: none;
+}
+
+/* SDSS-99: Update H1-H5 heading styles and if possible, other text styles to align with SDSS sub-theme */
+body {
+  color: #014240;
+}
+
+.field-p-wysiwyg {
+  color: #014240;
+}
+
+.section-header {
+  color: #014240;
+}
+
+.postcard .postcard__title {
+  color: #014240;
+}
+
+.postcard .postcard__content-text {
+  color: #014240;
+}
+
+.simple-block__description {
+  color: #014240;
+}
+
+.filmstrip .filmstrip__title {
+  color: #014240;
+}
+
+.callout-block .callout-block__intro {
+  color: #014240;
+}
+
+.expandable-card {
+  color: #014240;
+}
+
+.icon-item {
+  color: #014240;
+}
+
+.section-header p {
+  color: #014240;
+}
+
+.highlight-banner__container .highlight-cards .highlight-card p {
+  color: #014240;
+}
+
+.photo-tiles__quote {
+  color: #014240;
+}
+
+.photo-tiles__quote strong {
+  color: #014240;
+}
+
+.photo-tiles__quote svg use {
+  fill: #014240;
+}
+
+.calendar-block__title {
+  color: #014240;
+}
+
+.text-with-summary .pullquote-large::before, .text-with-summary .pullquote-large::after, .text-with-summary blockquote::before, .text-with-summary blockquote::after, .text-with-summary q::before, .text-with-summary q::after {
+  color: #014240;
+}
+
+.text-with-summary .pullquote-large::before, .text-with-summary blockquote::before, .text-with-summary q::before {
+  top: 20px;
+  left: -72px;
+}
+
+.text-with-summary .pullquote-large, .text-with-summary blockquote, .text-with-summary q {
+  font-family: 'Source Serif Pro';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+}
